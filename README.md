@@ -4,17 +4,21 @@
 
 # Foundations of Agentic AI Systems
 
-**The companion code of both volumes, by Fatih Nayebi**
+**The companion code of both volumes, by [Fatih Nayebi](https://fatihnayebi.com)**
 
 *Autonomy should rise only as evidence rises.*
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-0f172a?logo=python&logoColor=white)](pyproject.toml)
+[![CI](https://github.com/gradient-divergence/agentic-ai-systems/actions/workflows/ci.yml/badge.svg)](https://github.com/gradient-divergence/agentic-ai-systems/actions/workflows/ci.yml)
+[![Full suite](https://github.com/gradient-divergence/agentic-ai-systems/actions/workflows/full-suite.yml/badge.svg)](https://github.com/gradient-divergence/agentic-ai-systems/actions/workflows/full-suite.yml)
+[![Python 3.11, pinned](https://img.shields.io/badge/python-3.11%20pinned%20%C2%B7%203.10%2B-0f172a?logo=python&logoColor=white)](.python-version)
 [![License: MIT](https://img.shields.io/badge/license-MIT-0f172a)](LICENSE)
 [![Chapters: 41](https://img.shields.io/badge/chapters-41-811d35)](#chapters)
 [![Stored outputs: 411](https://img.shields.io/badge/stored%20outputs-411-811d35)](book_outputs/)
 [![Runs offline, no API keys](https://img.shields.io/badge/runs-offline%2C%20no%20API%20keys-0f172a)](#quick-start)
 
-[**Volume I on Amazon**](https://www.amazon.com/dp/1069422665) · [**Volume II on Amazon**](https://www.amazon.com/dp/1069422681) · [Quick start](#quick-start) · [Chapters](#chapters) · [Report an error](#report-an-error)
+[**Volume I on Amazon**](https://www.amazon.com/dp/1069422665) · [**Volume II on Amazon**](https://www.amazon.com/dp/1069422681)
+
+[Quick start](#quick-start) · [With the book](#use-it-with-the-book) · [Figures](#four-figures-from-the-books) · [Chapters](#chapters) · [Install](#install) · [Tests](#run-the-tests) · [The series](#the-series) · [Report an error](#report-an-error) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -43,6 +47,35 @@ flowchart LR
     class stored,book print
 ```
 
+## Quick start
+
+You need [uv](https://docs.astral.sh/uv/getting-started/installation/); it fetches Python 3.11 for you if you don't have it.
+
+```sh
+git clone https://github.com/gradient-divergence/agentic-ai-systems.git companion
+cd companion
+uv sync --frozen --extra dev            # Python 3.11 and the pinned packages
+source .venv/bin/activate
+
+python -m demos.agentic_loop_demo       # chapter 22: the seven outputs it prints, in about three seconds
+python -m refund_agent.run --seed 7     # the refund agent on its 40 public scenarios
+```
+
+> [!TIP]
+> Two details keep your run identical to the book's.
+> - **Clone into a folder named `companion`.** In the book's own repository the code lives in `companion/`, and a few modules still find their stored outputs through that name.
+> - **Install with `uv sync --frozen`.** It installs the pinned versions without rewriting `uv.lock`. Chapter 33 fingerprints that file, so a rewritten lock changes a number the book prints.
+
+> [!NOTE]
+> The stored outputs were produced on an Apple M4 Max. On another CPU, a few results in the machine-learning chapters can differ in their last digits, and chapter 41's demo, which checks its rebuilt selection against a sealed fingerprint bit for bit, stops with "selected score rebuild differs from the sealed selection fingerprint". [`tests/ci/README.md`](tests/ci/README.md) lists the tests involved.
+
+## Use it with the book
+
+1. **Read a chapter, then open its guide** in [`docs/chapters/`](docs/chapters/): what the demo shows, how to run it, what the output means and what the code leaves out.
+2. **Run its demo.** The printout holds the outputs the chapter quotes; [compare it](#compare-a-printout-with-the-stored-outputs) with the stored copies.
+3. **Do its exercises.** Each folder in [`exercises/`](exercises/) has a starter, inputs and acceptance tests, and its `README.md` says how to point the tests at your solution.
+4. **Change the code and run the chapter's tests.** Most chapters' tests compare the demo's output with the stored outputs, so they show what your change moved.
+
 ## Four figures from the books
 
 The refund agent begins by only drafting decisions for a person. Each kind of decision gets its own grant of authority: the three refund tiers all start at level 2 and end at three different levels.
@@ -70,20 +103,6 @@ The refund agent begins by only drafting decisions for a person. Each kind of de
 </tr>
 </table>
 
-## Quick start
-
-```sh
-git clone https://github.com/gradient-divergence/agentic-ai-systems.git
-cd agentic-ai-systems
-uv sync --extra dev                       # the core and the test tools
-source .venv/bin/activate
-
-python -m refund_agent.run --seed 7       # the refund agent on its 40 public scenarios
-python -m demos.batch_stream_demo         # one chapter's demo, chapter 31
-```
-
-Each chapter has a guide in [`docs/chapters/`](docs/chapters/) that says what its demo shows, how to run it, what the output means and what the code leaves out; the [chapter tables](#chapters) link them all.
-
 ## What is in the repository
 
 | Folder | What it holds |
@@ -98,9 +117,9 @@ Each chapter has a guide in [`docs/chapters/`](docs/chapters/) that says what it
 | [`supplement/`](supplement/) | Reading beyond the book: an EU AI Act supplement to chapter 37 |
 | [`docs/chapters/`](docs/chapters/) | One guide for each chapter |
 
-## Requirements
+## Install
 
-Python 3.10 or newer. The core dependencies are NumPy, pandas, Pydantic 2, scikit-learn, SciPy, DuckDB and Polars ([`pyproject.toml`](pyproject.toml) gives the versions). A few demos need optional groups of packages, called extras; a chapter's guide names the extra its demo needs, if any.
+The stored outputs were produced with Python 3.11, which [`.python-version`](.python-version) pins; the code needs Python 3.10 or newer. The core dependencies are NumPy, pandas, Pydantic 2, scikit-learn, SciPy, DuckDB and Polars ([`pyproject.toml`](pyproject.toml) gives the versions, [`uv.lock`](uv.lock) pins them). A few demos need optional groups of packages, called extras; a chapter's guide names the extra its demo needs, if any.
 
 <details>
 <summary>The extras</summary>
@@ -118,26 +137,27 @@ Python 3.10 or newer. The core dependencies are NumPy, pandas, Pydantic 2, sciki
 
 </details>
 
-## Install
-
-Run every command in this README from the repository's root.
-
-With [uv](https://docs.astral.sh/uv/), which reads the pinned versions in `uv.lock`:
+Run every command in this README from the repository's root. With [uv](https://docs.astral.sh/uv/):
 
 ```sh
-uv sync --extra dev          # the core and the test tools
-uv sync --all-extras         # or everything, the same as `make sync`
+uv sync --frozen --extra dev          # the core and the test tools
+uv sync --frozen --all-extras         # or everything, the same as `make sync`
 source .venv/bin/activate
 ```
 
-With pip and a virtual environment:
+<details>
+<summary>With pip instead of uv</summary>
+
+pip doesn't read `uv.lock`, so it may install newer versions than the ones the book's outputs were produced with.
 
 ```sh
-python3 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[dev]'
 python -m pip install -e '.[dev,ml,clustering,feature,autofeat,tsfresh,causal,opt]'   # optional: every extra
 ```
+
+</details>
 
 Either way the packages are installed in editable mode, so you don't need to set `PYTHONPATH`.
 
@@ -152,21 +172,21 @@ export BOOK_GOLDEN_DIRECTORY="$(mktemp -d)"
 
 ## Run one chapter's demo
 
-Each demo is a module of the `demos` package. For chapter 31, Batch and Streaming Pipelines:
+Each demo is a module of the `demos` package. For chapter 22, The Agentic Loop:
 
 ```sh
-python -m demos.batch_stream_demo
+python -m demos.agentic_loop_demo
 ```
 
-It prints, in order, every output chapter 31 quotes. A few chapters print some of their outputs from a second script, and some demos take options, such as a folder for a run's journal; each chapter's guide gives its commands.
+It prints, in order, every output chapter 22 quotes. A few chapters print some of their outputs from a second script, and some demos take options, such as a folder for a run's journal; each chapter's guide gives its commands. Many demos finish in seconds; some take minutes, chapter 31's about five.
 
 ## Compare a printout with the stored outputs
 
 Each file in `book_outputs/` holds the printout of one marked region of a demo, the lines between `# region book:fnd.<chapter>.<name> output` and its `# endregion`. To check every stored output of a chapter against a fresh run, save the printout and look for each file in it:
 
 ```sh
-python -m demos.batch_stream_demo > printout.txt
-python - batch-stream <<'EOF'
+python -m demos.agentic_loop_demo > printout.txt
+python - agentic-loop <<'EOF'
 import sys
 from pathlib import Path
 printout = Path("printout.txt").read_text()
@@ -175,20 +195,29 @@ for stored in sorted(Path("book_outputs").glob(f"_fnd.{sys.argv[1]}.*.txt")):
 EOF
 ```
 
-Replace `batch-stream` with the chapter's short name, the part of its guide's file name after the number. A file reported missing either differs from your run or comes from another script; the chapter's guide says which scripts print its outputs.
+Replace `agentic-loop` with the chapter's short name, the part of its guide's file name after the number. A file reported missing either differs from your run or comes from another script; the chapter's guide says which scripts print its outputs.
 
 ## Run the tests
 
-Some tests expect one thread and no bytecode caches, so set two variables first:
+The suite has about 7,300 tests and takes hours in one process, so CI runs it file by file, on macOS (where the stored outputs were produced) with Python 3.11:
+
+| Workflow | When | What it runs |
+|---|---|---|
+| [CI](.github/workflows/ci.yml) | every push and pull request | lint, and the 78 test files that each run in under 30 seconds |
+| [Full suite](.github/workflows/full-suite.yml) | pull requests and pushes that change code, and weekly | all 124 test files in five parallel shards |
+
+Run the same checks yourself:
 
 ```sh
 export OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
-python -m pytest                                   # the whole suite
-python -m pytest tests/refund_agent                # the refund agent's core
-python -m pytest tests/test_batch_stream_demo.py   # one chapter's demo
+make check                                          # what CI runs on every push: lint and the quick tests
+python -m pytest tests/test_agentic_loop_demo.py    # one chapter's tests
+python -m pytest tests/refund_agent                 # the refund agent's core
 ```
 
-With uv, `make test` runs the suite, `make lint` runs Ruff and `make type` runs the ty type checker; `make all` runs all three. Most chapters' demo tests also compare the demo's output with the stored files. An exercise's acceptance tests live in its folder; its `README.md` says how to point them at your solution.
+In a standalone clone, 12 tests that check the code against the book's own repository (its manuscript, figure scripts or history) are skipped; 37 tests that fail as of the first edition, and the tests that compare floating-point results byte for byte (another CPU can differ in the last digits), run as expected failures, so they stay visible. [`tests/ci/README.md`](tests/ci/README.md) lists them. Fixes are welcome; see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+An exercise's acceptance tests live in its folder; its `README.md` says how to point them at your solution. `make type` runs the ty type checker, an early release that still reports diagnostics, so it isn't part of CI.
 
 ## The refund agent
 
@@ -215,9 +244,16 @@ A run writes its scorecards, audits and traces to `refund-output/` (set another 
 <details>
 <summary><b>The Yelp review pipeline</b> (<code>spine/</code>)</summary>
 
-`spine/` runs over a 100,000-review subset of the Yelp dataset in `spine/data/subsets/yelp_100k/`. If those JSON files are Git LFS pointers, three short lines of text each, fetch the data with `git lfs pull` first.
+`spine/` runs over a 100,000-review subset of the [Yelp Open Dataset](https://business.yelp.com/data/resources/open-dataset/). The repository doesn't include the reviews: `spine/data/subsets/yelp_100k/` holds only placeholders. Download the dataset from Yelp under its own terms, then build the subset into that folder (the builder's defaults are 100,000 reviews and seed 13):
 
 ```sh
+python -m spine.data.build_yelp_subset --input-dir <your Yelp download> --output-dir spine/data/subsets/yelp_100k
+```
+
+The pipeline finds its data through the path `companion/spine/`, so run it from the folder that holds your `companion` clone:
+
+```sh
+cd ..
 python -m spine.run_spine
 python -m spine.ml.run_gbm_baseline --no-lightgbm
 python -m spine.ml.run_embedding_clustering
@@ -225,13 +261,13 @@ python -m spine.rl.run_policy_eval
 python -m spine.ops.run_capstone --no-lightgbm
 ```
 
-Results are written under `spine/outputs/`. To build the subset from your own copy of the Yelp download, see `python -m spine.data.build_yelp_subset --help`. Read the numbers with two limits in mind: the policy is a rule that reads the star rating of the review it scores, and the user and business features are aggregate statistics. So the metrics show neither that the model predicts without leakage nor that an agent is ready for use.
+Results are written under `spine/outputs/`. Read the numbers with two limits in mind: the policy is a rule that reads the star rating of the review it scores, and the user and business features are aggregate statistics. So the metrics show neither that the model predicts without leakage nor that an agent is ready for use.
 
 </details>
 
 ## Chapters
 
-Each title links to the chapter's guide, and each demo and exercise folder to its code. A chapter's stored outputs in `book_outputs/` take the name of its guide: chapter 31's guide is `31-batch-stream.md`, so its outputs are `_fnd.batch-stream.*.txt`.
+Each title links to the chapter's guide, and each demo and exercise folder to its code. A chapter's stored outputs in `book_outputs/` take the name of its guide: chapter 22's guide is `22-agentic-loop.md`, so its outputs are `_fnd.agentic-loop.*.txt`.
 
 <details>
 <summary><b>Volume I</b> · <i>Models, Learning, and Decisions, from First Principles</i> · chapters 1 to 21, Parts I to IV</summary>
@@ -326,40 +362,54 @@ Each title links to the chapter's guide, and each demo and exercise folder to it
 
 The appendix on mathematical foundations has its own demo, [`demos/appendix_math_demo.py`](demos/appendix_math_demo.py), and stored outputs, `_fnd.appendix-math-foundations.*`. A held-out evaluation package used for grading is not part of this code.
 
-## The books
+## The series
+
+*Foundations of Agentic AI* is a series of three books by Fatih Nayebi, each with its own companion code.
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-**[Volume I](https://www.amazon.com/dp/1069422665)** · *Models, Learning, and Decisions, from First Principles*
-
-*First principles for production agentic systems that can be judged.* Volume I follows one running example, a refund agent, from its first day, when it only drafts decisions for a person, to the day every proposal it makes stands beside its evidence, its baseline and a verdict. Each method arrives as something the agent must show before it may act: calibrated probabilities and the costs behind a threshold, causal effects, neural networks and language models, reinforcement learning and off-policy evaluation.
-
-Chapters 1 to 21, Parts I to IV<br>Hardcover · ISBN&nbsp;978-1-0694226-6-8<br>Paperback · ISBN&nbsp;978-1-0694226-3-7
-
+<td width="33%" align="center" valign="top">
+<a href="https://www.amazon.com/dp/1069422665"><img src="docs/assets/covers/volume-1.jpg" width="150" alt="Cover of Volume I"></a>
+<br><b>Foundations of Agentic AI Systems, Volume I</b>
+<br><sub><i>Models, Learning, and Decisions, from First Principles</i></sub>
+<br><sub>Chapters 1 to 21 · Hardcover ISBN&nbsp;978-1-0694226-6-8 · Paperback ISBN&nbsp;978-1-0694226-3-7</sub>
+<br><a href="https://www.amazon.com/dp/1069422665">Amazon</a> · code: this repository
 </td>
-<td width="50%" valign="top">
-
-**[Volume II](https://www.amazon.com/dp/1069422681)** · *Agents, Operations, and Governance, in Production*
-
-*Every grant of authority, earned on evidence named in advance.* Volume II builds the refund agent of Volume I for production. It gives the agent a loop that ends every run in a known way, a gate inside the call that pays, an independent verifier, and a release suite that earns shadow mode: every decision made and recorded, no money moved.
-
-Chapters 22 to 41, Parts V to VIII<br>Hardcover · ISBN&nbsp;978-1-0694226-8-2<br>Paperback · ISBN&nbsp;978-1-0694226-7-5
-
+<td width="33%" align="center" valign="top">
+<a href="https://www.amazon.com/dp/1069422681"><img src="docs/assets/covers/volume-2.jpg" width="150" alt="Cover of Volume II"></a>
+<br><b>Foundations of Agentic AI Systems, Volume II</b>
+<br><sub><i>Agents, Operations, and Governance, in Production</i></sub>
+<br><sub>Chapters 22 to 41 · Hardcover ISBN&nbsp;978-1-0694226-8-2 · Paperback ISBN&nbsp;978-1-0694226-7-5</sub>
+<br><a href="https://www.amazon.com/dp/1069422681">Amazon</a> · code: this repository
+</td>
+<td width="33%" align="center" valign="top">
+<a href="https://www.amazon.com/dp/1069422649"><img src="docs/assets/covers/retail-third-edition.jpg" width="150" alt="Cover of Foundations of Agentic AI for Retail, Third Edition"></a>
+<br><b>Foundations of Agentic AI for Retail</b>
+<br><sub><i>Designing, Building, and Operating Retail AI Agents, from First Principles to Production</i>, third edition</sub>
+<br><a href="https://www.amazon.com/dp/1069422649">Amazon</a> · <a href="https://github.com/gradient-divergence/agentic-retail-foundations">code</a>
 </td>
 </tr>
 </table>
 
-Published by Gradient Divergence, Montréal, 2026.
+**Volume I.** *First principles for production agentic systems that can be judged.* Volume I follows one running example, a refund agent, from its first day, when it only drafts decisions for a person, to the day every proposal it makes stands beside its evidence, its baseline and a verdict. Each method arrives as something the agent must show before it may act: calibrated probabilities and the costs behind a threshold, causal effects, neural networks and language models, reinforcement learning and off-policy evaluation.
+
+**Volume II.** *Every grant of authority, earned on evidence named in advance.* Volume II builds the refund agent of Volume I for production. It gives the agent a loop that ends every run in a known way, a gate inside the call that pays, an independent verifier, and a release suite that earns shadow mode: every decision made and recorded, no money moved.
+
+Both volumes are published by [Gradient Divergence](https://gradientdivergence.com), Montréal, 2026.
 
 ## About the author
 
 Fatih Nayebi is Assistant Professor in Information Systems at McGill University, where since 2019 he has taught the five graduate courses these volumes hold: Enterprise Data Science, Machine Learning in Production, Introduction to AI and Deep Learning, Applications and Architectures of Deep Learning, and Designing and Building Agentic AI Systems. As founder and CEO of OODARIS AI, he builds real-world, production multi-agent systems that make autonomous decisions, combining machine learning, ML engineering, deep reinforcement learning, operations research and software engineering, and that act only within the authority they have earned.
 
+[fatihnayebi.com](https://fatihnayebi.com) · [OODARIS AI](https://oodaris.ai) · [GitHub](https://github.com/conqueror) · [McGill showcases](https://github.com/conqueror/mcgill-showcases), student-friendly machine-learning projects for his McGill courses
+
 ## Report an error
 
-Found a mistake in the text, a figure, a listing or an output? Please [report it as an issue](https://github.com/gradient-divergence/agentic-ai-systems/issues/new?template=erratum.yml), with the volume, the chapter and the page. For a problem running the code, [open a code issue](https://github.com/gradient-divergence/agentic-ai-systems/issues/new?template=code-problem.yml).
+Known errors are listed in [`ERRATA.md`](ERRATA.md). Found one that isn't there, in the text, a figure, a listing or an output? Please [report it as an issue](https://github.com/gradient-divergence/agentic-ai-systems/issues/new?template=erratum.yml), with the volume, the chapter and the page. For a problem running the code, [open a code issue](https://github.com/gradient-divergence/agentic-ai-systems/issues/new?template=code-problem.yml).
+
+## Contributing
+
+Fixes are welcome; [`CONTRIBUTING.md`](CONTRIBUTING.md) explains the two rules that keep the printed outputs reproducible, and how to run the checks before a pull request. Everyone taking part follows the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Cite
 

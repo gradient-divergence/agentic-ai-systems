@@ -1,6 +1,7 @@
 """The grid's checks follow execution effects and the loop's refusal order."""
 
 import pytest
+
 from refund_agent.security.security_privacy_grid import reply_grid, tier3_grids
 from refund_agent.security.security_privacy_math import attempts_for, chance, zero_success_bound
 from refund_agent.tools import TOOL_NAMES

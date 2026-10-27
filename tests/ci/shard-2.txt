@@ -1,0 +1,26 @@
+# Shard 2 of 5 of the full suite: 25 test files, one pytest process per file.
+tests/refund_agent/test_audits_explanations_month.py
+tests/refund_agent/test_capstone_blueprint_decision.py
+tests/refund_agent/test_case_studies_domain_agnostic.py
+tests/refund_agent/test_future_directions_renewal.py
+tests/refund_agent/test_history.py
+tests/refund_agent/test_human_oversight_risk_lifecycle.py
+tests/refund_agent/test_memory.py
+tests/refund_agent/test_org_adoption_component.py
+tests/refund_agent/test_release_closure_cache.py
+tests/refund_agent/test_release_extensions.py
+tests/refund_agent/test_release_import_guard.py
+tests/refund_agent/test_release_revision.py
+tests/refund_agent/test_retrieval.py
+tests/refund_agent/test_runtime_swap.py
+tests/refund_agent/test_shadow.py
+tests/refund_agent/test_sixth_pass.py
+tests/test_appendix_math.py
+tests/test_backprop.py
+tests/test_data_systems_demo.py
+tests/test_generative_models_demo.py
+tests/test_ml_data_and_evaluation.py
+tests/test_modern_ai_stack_demo.py
+tests/test_multi_agent_systems_demo.py
+tests/test_packaging.py
+tests/test_preference_demo.py

@@ -1,0 +1,71 @@
+name: Full suite
+
+# Every test file, in parallel shards (tests/ci/shard-*.txt), with the core and the dev tools installed;
+# tests that need an optional extra skip and say which.
+# On pull requests and pushes to main that change code or tests, weekly, and on demand.
+
+on:
+  pull_request:
+    paths:
+      - "refund_agent/**"
+      - "demos/**"
+      - "exercises/**"
+      - "spine/**"
+      - "agents/**"
+      - "tests/**"
+      - "book_outputs/**"
+      - "conftest.py"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".python-version"
+      - ".github/workflows/full-suite.yml"
+  push:
+    branches: [main]
+    paths:
+      - "refund_agent/**"
+      - "demos/**"
+      - "exercises/**"
+      - "spine/**"
+      - "agents/**"
+      - "tests/**"
+      - "book_outputs/**"
+      - "conftest.py"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".python-version"
+      - ".github/workflows/full-suite.yml"
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: full-suite-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  OMP_NUM_THREADS: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  shard:
+    name: Shard ${{ matrix.shard }}
+    runs-on: macos-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: companion
+      - uses: astral-sh/setup-uv@v10.3.2
+      - name: Install the pinned dependencies
+        working-directory: companion
+        run: uv sync --frozen --extra dev
+      - name: Tests of shard ${{ matrix.shard }}
+        working-directory: companion
+        run: bash tests/ci/run-files.sh tests/ci/shard-${{ matrix.shard }}.txt

@@ -1,0 +1,26 @@
+# Shard 3 of 5 of the full suite: 25 test files, one pytest process per file.
+tests/refund_agent/test_adaptation.py
+tests/refund_agent/test_audits_explanations_holds.py
+tests/refund_agent/test_batch_stream.py
+tests/refund_agent/test_cloud_native_deployment_outputs.py
+tests/refund_agent/test_eighth_pass.py
+tests/refund_agent/test_future_directions_risk.py
+tests/refund_agent/test_future_directions_watch.py
+tests/refund_agent/test_human_oversight_risk_simulation.py
+tests/refund_agent/test_mlops_mle_bundle_contract.py
+tests/refund_agent/test_mlops_mle_promotion.py
+tests/refund_agent/test_release_harness.py
+tests/refund_agent/test_scenarios.py
+tests/refund_agent/test_security_privacy_integration.py
+tests/refund_agent/test_store_performance.py
+tests/refund_agent/test_tenth_pass.py
+tests/test_agent_frameworks_demo.py
+tests/test_agentic_loop_demo.py
+tests/test_batch_stream_review_fixes.py
+tests/test_computed_summary_lines.py
+tests/test_harness_demo.py
+tests/test_mlops_mle_demo.py
+tests/test_perception_tools_demo.py
+tests/test_security_privacy_demo.py
+tests/test_semi_self_supervised.py
+tests/test_smoke.py
