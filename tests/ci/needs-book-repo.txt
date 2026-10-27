@@ -1,0 +1,14 @@
+# Tests that check the code against the book's own repository: its manuscript, figure scripts or git history.
+# They pass there. In a standalone clone conftest.py skips them, with the reason "requires the book repository".
+tests/refund_agent/test_part78_review_regressions.py::test_producer_table_matches_available_final_chapter_headings
+tests/refund_agent/test_release.py::test_release_command_persists_the_actual_verdict[as-built]
+tests/refund_agent/test_verifier.py::test_earlier_demo_behavior_matches_committed_outputs[perception_tools_demo.py]
+tests/test_appendix_math.py::test_every_demo_region_is_printed_with_its_output
+tests/test_appendix_math.py::test_printed_output_matches_a_run_in_print_order
+tests/test_case_studies_domain_agnostic_demo.py::test_shared_demo_regions_outside_parts_7_8_are_identical
+tests/test_constrained_optimization_demo.py::test_printed_listings_run_in_chapter_order_without_hidden_setup
+tests/test_delegated_search_lab.py::test_trace_plot_refuses_changed_quoted_numbers
+tests/test_perception_tools_demo.py::test_enrichment_regions_run_independently_and_replay_stored_output[listing-01]
+tests/test_perception_tools_demo.py::test_generated_listing_retains_the_real_nullable_argument_schema
+tests/test_supervised_learning.py::test_printed_listings_run_in_chapter_order_on_their_own
+tests/test_typed_decisions.py::test_plotter_reads_generated_data_and_exports_pdf_png_and_grayscale

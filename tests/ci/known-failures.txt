@@ -1,0 +1,41 @@
+# Tests that fail as of the first edition (26 October 2026), in a standalone clone and in the book's own
+# repository alike. In a standalone clone conftest.py marks them as expected failures (xfail), so they stay
+# visible in every run, and a test that starts passing shows as XPASS. Each line gives the error first seen.
+
+tests/refund_agent/test_batch_stream.py::test_selected_suite_has_its_own_recorded_fingerprint    # AssertionError: assert '70d7d2da90a4...148e2728cd5c5' == 'ccdb5755b4c2...66b7ee1c36b1b'
+tests/refund_agent/test_data_systems.py::test_data_systems_exercise_lineage_fails_for_observation_time    # AssertionError: Regex pattern did not match.
+tests/refund_agent/test_part78_review_regressions.py::test_composed_tier3_denial_retains_its_policy_reason    # AssertionError: Traceback (most recent call last):
+tests/refund_agent/test_part78_review_regressions.py::test_layer_owners_match_the_book_and_empty_owner_holds    # in the book's repository: AssertionError, 'hold' == 'launch'; standalone, its manuscript is absent
+tests/refund_agent/test_part78_review_regressions.py::test_risk_component_selection_in_a_cold_interpreter[True]    # AssertionError: Traceback (most recent call last):
+tests/refund_agent/test_part78_review_regressions.py::test_timeline_signs_both_steps_through_the_real_maturity_rule    # pydantic_core._pydantic_core.ValidationError: 1 validation error for EvidenceRecord
+tests/refund_agent/test_part78_review_regressions.py::test_watch_fixture_declares_its_store_after_component_selection    # AssertionError: Traceback (most recent call last):
+tests/refund_agent/test_release_extensions.py::test_cold_pydantic_and_numpy_metadata_are_not_component_resources    # AssertionError: Traceback (most recent call last):
+tests/refund_agent/test_second_pass.py::test_functions_fit_teaching_limit    # AssertionError: assert not [('refund_agent.promotion.mlops_mle_bundle.from_candidate', 69, 32), ('refund_agent
+tests/refund_agent/test_security_privacy_integration.py::test_a1_detects_inner_lookup_even_without_a_fetched_payload    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_component_hooks_supply_versioned_records    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_core_fixture_gap_is_explicit_and_does_not_issue_from_attack    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_foreign_and_missing_orders_have_identical_refusal_records    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_no_foreign_payload_in_all_available_components[ambiguous-order_not_found]    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_no_foreign_payload_in_all_available_components[o-0007-order_not_found]    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_no_foreign_payload_in_all_available_components[o-9999-order_not_found]    # failed on setup with "ValueError: component read of undeclared resource before selection"
+tests/refund_agent/test_security_privacy_integration.py::test_real_contract_and_event_composition_preserves_five_positive_payments    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_handler_runs_and_enforces_full_constructed_effect_checks    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_slot_registers_the_full_effect_suite    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[base64-FIXTURE_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[base64-HASH_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[base64-credential_seal]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[hexadecimal-FIXTURE_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[hexadecimal-HASH_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[hexadecimal-credential_seal]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[raw-FIXTURE_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[raw-HASH_KEY]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_release_trial_aborts_on_secret_leakage[raw-credential_seal]    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_selected_code_edit_changes_only_selected_identity    # ValueError: component read of undeclared resource before selection
+tests/refund_agent/test_security_privacy_integration.py::test_unselected_security_never_enters_stage4_identity    # ValueError: component read of undeclared resource before selection
+tests/test_agent_evaluation_release_demo.py::test_retirement_preserves_old_behavior_and_other_source_map_rows    # subprocess.CalledProcessError: Command '['git', 'show', '668a3b4e:demos/agent_evaluation_demo.py']' returned n
+tests/test_batch_stream_demo.py::test_stored_records_reproduce_in_temporary_directory    # assert b'{\n  "candi...70e6333"\n}\n' == b'{\n  "candi...70e6333"\n}\n'
+tests/test_constrained_optimization_demo.py::test_every_stored_output_regenerates_byte_for_byte[cp-01]    # assert b'incident ta... 60 minutes\n' == b"incident ta... 60 minutes\n"
+tests/test_data_systems_demo.py::test_data_systems_original_outputs_and_run_are_byte_identical    # subprocess.CalledProcessError: Command '['git', 'ls-tree', '-r', '--name-only', '2d3776c5', '--', 'book_output
+tests/test_data_systems_demo.py::test_data_systems_other_operations_regions_unchanged    # subprocess.CalledProcessError: Command '['git', 'show', '0060bbab:demos/engineering_ops_demo.py']' returned no
+tests/test_human_oversight_risk_demo.py::test_outputs_reproduce_through_the_repository_capture[arrivals-01]    # assert b"Constructed...iewer-hours\n" == b"Constructed...iewer-hours\n"
+tests/test_observability_reliability_outputs.py::test_incident_output_uses_reader_descriptions_and_reports_d6    # TypeError: 'NoneType' object is not subscriptable

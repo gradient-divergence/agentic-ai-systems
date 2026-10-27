@@ -1,0 +1,54 @@
+name: CI
+
+# Every push and pull request: lint, and the quick tests in tests/ci/quick.txt.
+# The repository is checked out into a folder named companion, as a reader's clone is,
+# and installed with uv sync --frozen, so uv.lock stays as the book printed its fingerprint.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  OMP_NUM_THREADS: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: companion
+      - uses: astral-sh/setup-uv@v10
+      - name: Install the pinned dependencies
+        working-directory: companion
+        run: uv sync --frozen --extra dev
+      - name: Ruff
+        working-directory: companion
+        run: make lint
+
+  quick:
+    name: Quick tests (macOS, Python 3.11)
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: companion
+      - uses: astral-sh/setup-uv@v10
+      - name: Install the pinned dependencies
+        working-directory: companion
+        run: uv sync --frozen --extra dev
+      - name: Quick tests, one pytest process per file
+        working-directory: companion
+        run: make quick
