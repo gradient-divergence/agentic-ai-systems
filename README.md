@@ -66,6 +66,9 @@ python -m refund_agent.run --seed 7     # the refund agent on its 40 public scen
 > - **Clone into a folder named `companion`.** In the book's own repository the code lives in `companion/`, and a few modules still find their stored outputs through that name.
 > - **Install with `uv sync --frozen`.** It installs the pinned versions without rewriting `uv.lock`. Chapter 33 fingerprints that file, so a rewritten lock changes a number the book prints.
 
+> [!NOTE]
+> The stored outputs were produced on an Apple M4 Max. On another CPU, a few results in the machine-learning chapters can differ in their last digits, and chapter 41's demo, which checks its rebuilt selection against a sealed fingerprint bit for bit, stops with "selected score rebuild differs from the sealed selection fingerprint". [`tests/ci/README.md`](tests/ci/README.md) lists the tests involved.
+
 ## Use it with the book
 
 1. **Read a chapter, then open its guide** in [`docs/chapters/`](docs/chapters/): what the demo shows, how to run it, what the output means and what the code leaves out.
@@ -212,7 +215,7 @@ python -m pytest tests/test_agentic_loop_demo.py    # one chapter's tests
 python -m pytest tests/refund_agent                 # the refund agent's core
 ```
 
-In a standalone clone, 12 tests that check the code against the book's own repository (its manuscript, figure scripts or history) are skipped, and 37 tests that fail as of the first edition run as expected failures, so they stay visible; [`tests/ci/README.md`](tests/ci/README.md) lists both. Fixes are welcome; see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+In a standalone clone, 12 tests that check the code against the book's own repository (its manuscript, figure scripts or history) are skipped; 37 tests that fail as of the first edition, and the tests that compare floating-point results byte for byte (another CPU can differ in the last digits), run as expected failures, so they stay visible. [`tests/ci/README.md`](tests/ci/README.md) lists them. Fixes are welcome; see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 An exercise's acceptance tests live in its folder; its `README.md` says how to point them at your solution. `make type` runs the ty type checker, an early release that still reports diagnostics, so it isn't part of CI.
 
