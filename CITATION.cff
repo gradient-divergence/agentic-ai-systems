@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it, and the volume of the book it accompanies."
+type: software
+title: "Foundations of Agentic AI Systems: companion code"
+abstract: "The code of Foundations of Agentic AI Systems, a book in two volumes: the refund agent, the demos and exercises the book prints, the stored outputs they reproduce, and their tests."
+authors:
+  - family-names: Nayebi
+    given-names: Fatih
+license: MIT
+repository-code: "https://github.com/gradient-divergence/agentic-ai-systems"
+version: "1.0"
+date-released: 2026-10-26
+keywords:
+  - agentic AI
+  - AI agents
+  - machine learning
+  - reinforcement learning
+  - MLOps
+  - AI governance
+references:
+  - type: book
+    title: "Foundations of Agentic AI Systems, Volume I: Models, Learning, and Decisions, from First Principles"
+    authors:
+      - family-names: Nayebi
+        given-names: Fatih
+    publisher:
+      name: Gradient Divergence
+      city: "Montréal"
+    year: 2026
+    isbn: "978-1-0694226-6-8"
+  - type: book
+    title: "Foundations of Agentic AI Systems, Volume II: Agents, Operations, and Governance, in Production"
+    authors:
+      - family-names: Nayebi
+        given-names: Fatih
+    publisher:
+      name: Gradient Divergence
+      city: "Montréal"
+    year: 2026
+    isbn: "978-1-0694226-8-2"
