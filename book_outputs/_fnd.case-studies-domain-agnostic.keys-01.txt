@@ -1,0 +1,14 @@
+Exercise 1: packet a,c,e,h; refund answers b,d,f,g.
+Exercise 2: clock -> seconds/probe; coupling -> clinic allocation; rule -> bank
+actions.
+Exercise 3: rate 0.462098/hour; budget 2.623171 minutes; 30-minute chance
+0.206299
+Exercise 4: clear/refer 1/102 = 0.009804; refer/hold 1/7 = 0.142857
+risk 0.03: refer; clear/refer/hold $18.00/$7.70/$19.55
+risk 0.25: hold; clear/refer/hold $150.00/$27.50/$16.25
+24-hour wrongful hold: $360; hold edge: 4/5
+Exercise 5: copied label window 30 days; required 90 days; hold pending mature
+labels.
+Findings lost after 30 days: 0.4 ; four-check integration pending chapter 39.
+Exercise 6: cents/sessions and cents/follow-ups hold; money/money passes.
+The bank copy still holds on rule; units cannot validate a numeric cap.

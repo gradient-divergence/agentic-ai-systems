@@ -1,0 +1,662 @@
+{
+  "action_map": {
+    "cannot_tell": "refer",
+    "pay": "pay_if_gate_allows",
+    "review": "refer",
+    "third": "refer"
+  },
+  "band_edges": [
+    0.08,
+    0.8
+  ],
+  "calibration": {
+    "alpha": 0.1,
+    "july_sha256": "e577def6d287055080f7141dc003d3b899fb3fe4618180f9755108ac5d2476ad",
+    "model_sha256": "a7bbddfbdb13af9dc468a6d0983ff590c831186a27425e5ae34538990928c602",
+    "ranks": {
+      "marginal": 893,
+      "scripted": 893,
+      "sound": 848,
+      "wrong": 46
+    },
+    "requests": 991,
+    "thresholds": {
+      "marginal": 0.16266265955559991,
+      "scripted": 0.026869871087554974,
+      "sound": 0.1170470389591335,
+      "wrong": 0.9754787375136831
+    },
+    "verdict_rule": "lower >= 0.87: coverage shown; else upper < 0.90: undercoverage shown; else inconclusive; exact bounds below 50",
+    "window": "redrawn July 2026, policy 2026-07-01",
+    "wrong": 50
+  },
+  "class_weighted_version": "chapter5-balanced-boosted-seed7-v1",
+  "cost_matrix_version": "illustrative-review4-wrongdenial20-v1",
+  "history_rows": 36000,
+  "journals": {
+    "august": {
+      "access": [
+        {
+          "entry": 1,
+          "purpose": "thresholds fixed dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0; one proper-score, band, conformal and figure record",
+          "reader": "typed decision record",
+          "set": "typed-decisions-seed20-august"
+        }
+      ],
+      "manifest": {
+        "by_policy_version": {
+          "2026-07-01": 1022
+        },
+        "by_tier": {
+          "1": 1022
+        },
+        "first": "2026-08-01",
+        "label_policy": "outcome-1",
+        "last": "2026-08-31",
+        "name": "typed-decisions-seed20-august",
+        "requests": 1022,
+        "sha256": "486cb672c8685089ee58f65dd05301deeb06555167616f4d4197495d4baaea3c"
+      }
+    },
+    "september": {
+      "access": [
+        {
+          "entry": 1,
+          "purpose": "thresholds fixed dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0; one proper-score, band, conformal and figure record",
+          "reader": "typed decision record",
+          "set": "typed-decisions-seed20-september"
+        }
+      ],
+      "manifest": {
+        "by_policy_version": {
+          "2026-09-01": 952
+        },
+        "by_tier": {
+          "1": 952
+        },
+        "first": "2026-09-01",
+        "label_policy": "outcome-1",
+        "last": "2026-09-30",
+        "name": "typed-decisions-seed20-september",
+        "requests": 952,
+        "sha256": "f8296ed50fee1854c3c98859f6eab7e0fda3af1185ce40725e10838cb1de1b66"
+      }
+    }
+  },
+  "model_sha256": "a7bbddfbdb13af9dc468a6d0983ff590c831186a27425e5ae34538990928c602",
+  "model_version": "chapter5-boosted-platt-seed7-v1",
+  "population": "paid tier 1 requests, by decision date",
+  "question": {
+    "answers": [
+      "sound",
+      "wrong"
+    ],
+    "cannot_tell": true,
+    "kind": "true_false",
+    "name": "Is paying this tier 1 refund a wrong payment?"
+  },
+  "retest": {
+    "august": {
+      "bands": {
+        "class-weighted": {
+          "pay": {
+            "interval": [
+              0.0,
+              0.14312112541726274
+            ],
+            "observed": 0.0,
+            "planted_risk": 0.011244990743873265,
+            "predicted_loss": 0.7587639271608849,
+            "prediction": 0.06071838636640648,
+            "realized_loss": 0.0,
+            "requests": 23,
+            "weighted_observed": 0.0,
+            "weighted_prediction": 0.0669334956648654
+          },
+          "review": {
+            "interval": [
+              0.014673311815036857,
+              0.03394736847738978
+            ],
+            "observed": 0.022364217252396165,
+            "planted_risk": 0.025331855532253186,
+            "predicted_loss": 9.303662407339177,
+            "prediction": 0.35066278029415077,
+            "realized_loss": 0.7071139510117146,
+            "requests": 939,
+            "weighted_observed": 0.02760210696886896,
+            "weighted_prediction": 0.3631673291160486
+          },
+          "third": {
+            "interval": [
+              0.1055768903713613,
+              0.29919993226466285
+            ],
+            "observed": 0.18333333333333332,
+            "planted_risk": 0.15195302301416233,
+            "predicted_loss": 18.136743606412974,
+            "prediction": 0.8184925405989768,
+            "realized_loss": 3.7448333333333332,
+            "requests": 60,
+            "weighted_observed": 0.16865832970530395,
+            "weighted_prediction": 0.8168355199477404
+          }
+        },
+        "proposed": {
+          "pay": {
+            "interval": [
+              0.006845742096447415,
+              0.021776775962091318
+            ],
+            "observed": 0.012235817575083427,
+            "planted_risk": 0.017339300922075467,
+            "predicted_loss": 0.7942098522359186,
+            "prediction": 0.029850422620679846,
+            "realized_loss": 0.3724916573971079,
+            "requests": 899,
+            "weighted_observed": 0.01477263152415248,
+            "weighted_prediction": 0.0314975362989805
+          },
+          "review": {
+            "interval": [
+              0.1144659352748107,
+              0.2469423093389438
+            ],
+            "observed": 0.17073170731707318,
+            "planted_risk": 0.14288127629104655,
+            "predicted_loss": 3.9507307953623325,
+            "prediction": 0.16266713026506557,
+            "realized_loss": 4.5024390243902435,
+            "requests": 123,
+            "weighted_observed": 0.18583331375898043,
+            "weighted_prediction": 0.16306215175701638
+          },
+          "third": {
+            "requests": 0
+          }
+        }
+      },
+      "class-conditional": {
+        "covered": 926,
+        "interval": [
+          0.8866284503293242,
+          0.9224633236833497
+        ],
+        "rate": 0.9060665362035225,
+        "requests": 1022,
+        "sets": {
+          "both": 648,
+          "empty": 0,
+          "sound": 258,
+          "wrong": 116
+        },
+        "sound": {
+          "covered": 894,
+          "interval": [
+            0.8830087546568446,
+            0.9199361009418745
+          ],
+          "rate": 0.9030303030303031,
+          "requests": 990
+        },
+        "verdict": "coverage shown",
+        "wrong": {
+          "covered": 32,
+          "interval": [
+            0.8911188393206471,
+            1.0
+          ],
+          "rate": 1.0,
+          "requests": 32
+        }
+      },
+      "decomposition": {
+        "bins": [
+          {
+            "observed": 0.0,
+            "prediction": 0.017840775640988345,
+            "requests": 205
+          },
+          {
+            "observed": 0.004878048780487805,
+            "prediction": 0.025578744006639016,
+            "requests": 205
+          },
+          {
+            "observed": 0.004901960784313725,
+            "prediction": 0.030325188451892294,
+            "requests": 204
+          },
+          {
+            "observed": 0.03431372549019608,
+            "prediction": 0.036774906568070455,
+            "requests": 204
+          },
+          {
+            "observed": 0.11274509803921569,
+            "prediction": 0.11889297081744236,
+            "requests": 204
+          }
+        ],
+        "brier": 0.027983622300879092,
+        "reliability": 0.00028756956985314525,
+        "residual": -0.0008331905733790085,
+        "resolution": 0.0018015228921093036,
+        "uncertainty": 0.03033076619651426
+      },
+      "marginal": {
+        "covered": 938,
+        "interval": [
+          0.8993633165853605,
+          0.9331238822180414
+        ],
+        "rate": 0.9178082191780822,
+        "requests": 1022,
+        "sets": {
+          "both": 0,
+          "empty": 64,
+          "sound": 958,
+          "wrong": 0
+        },
+        "sound": {
+          "covered": 938,
+          "interval": [
+            0.9317679935644176,
+            0.9597221593935588
+          ],
+          "rate": 0.9474747474747475,
+          "requests": 990
+        },
+        "verdict": "coverage shown",
+        "wrong": {
+          "covered": 0,
+          "interval": [
+            0.0,
+            0.10888116067935288
+          ],
+          "rate": 0.0,
+          "requests": 32
+        }
+      },
+      "rate": 0.03131115459882583,
+      "rate_interval": [
+        0.02226519901676743,
+        0.04386742808667621
+      ],
+      "referrals": {
+        "bands": {
+          "cannot_tell": 0,
+          "interval": [
+            0.10181207368178688,
+            0.14173585808467684
+          ],
+          "referred": 123,
+          "requests": 1022,
+          "review": 123,
+          "share": 0.12035225048923678,
+          "third": 0
+        },
+        "class-conditional": {
+          "interval": [
+            0.7200265354251135,
+            0.7732270039127335
+          ],
+          "referred": 764,
+          "requests": 1022,
+          "share": 0.7475538160469667
+        },
+        "marginal": {
+          "interval": [
+            0.10181207368178688,
+            0.14173585808467684
+          ],
+          "referred": 123,
+          "requests": 1022,
+          "share": 0.12035225048923678
+        }
+      },
+      "requests": 1022,
+      "scores": {
+        "base rate": {
+          "brier": 0.03035514583503233,
+          "intrinsic": 0.02953272273490611,
+          "log": 0.1396360524868846,
+          "maximum": 0.03624872875199767,
+          "truth_error": 0.001877369676486728
+        },
+        "class-weighted": {
+          "brier": 0.16119551180939662,
+          "intrinsic": 0.02953272273490611,
+          "log": 0.507460685788366,
+          "maximum": 0.8571899849758701,
+          "truth_error": 0.13638239459783336
+        },
+        "proposed": {
+          "brier": 0.027983622300879092,
+          "intrinsic": 0.02953272273490611,
+          "log": 0.11722986963697289,
+          "maximum": 0.23120134878525686,
+          "truth_error": 0.0004280747804754971
+        }
+      },
+      "scripted": {
+        "covered": 941,
+        "interval": [
+          0.9025619874944416,
+          0.9357740675066423
+        ],
+        "rate": 0.9207436399217221,
+        "requests": 1022,
+        "sets": {
+          "both": 0,
+          "empty": 60,
+          "sound": 962,
+          "wrong": 0
+        },
+        "sound": {
+          "covered": 941,
+          "interval": [
+            0.9351665651851575,
+            0.9623607671382228
+          ],
+          "rate": 0.9505050505050505,
+          "requests": 990
+        },
+        "verdict": "coverage shown",
+        "wrong": {
+          "covered": 0,
+          "interval": [
+            0.0,
+            0.10888116067935288
+          ],
+          "rate": 0.0,
+          "requests": 32
+        }
+      },
+      "wrong": 32
+    },
+    "september": {
+      "bands": {
+        "class-weighted": {
+          "pay": {
+            "interval": [
+              0.008455769471923294,
+              0.22669816586235464
+            ],
+            "observed": 0.047619047619047616,
+            "planted_risk": 0.01771845129237593,
+            "predicted_loss": 0.3258960278963278,
+            "prediction": 0.05802333252633715,
+            "realized_loss": 1.499047619047619,
+            "requests": 21,
+            "weighted_observed": 0.31051489445650027,
+            "weighted_prediction": 0.06750657512155143
+          },
+          "review": {
+            "interval": [
+              0.040244243461388926,
+              0.07044759670891472
+            ],
+            "observed": 0.05336426914153132,
+            "planted_risk": 0.05279586245397714,
+            "predicted_loss": 9.030567452139527,
+            "prediction": 0.35515930546623403,
+            "realized_loss": 1.4704060324825987,
+            "requests": 862,
+            "weighted_observed": 0.05923417897508873,
+            "weighted_prediction": 0.36378948187766924
+          },
+          "third": {
+            "interval": [
+              0.2209460520472577,
+              0.4358434748165124
+            ],
+            "observed": 0.3188405797101449,
+            "planted_risk": 0.32719902382401395,
+            "predicted_loss": 22.028453206888262,
+            "prediction": 0.8154729983222153,
+            "realized_loss": 9.446231884057973,
+            "requests": 69,
+            "weighted_observed": 0.3495264856980449,
+            "weighted_prediction": 0.8150898611499964
+          }
+        },
+        "proposed": {
+          "pay": {
+            "interval": [
+              0.022979615973162094,
+              0.048005468735326025
+            ],
+            "observed": 0.03329223181257707,
+            "planted_risk": 0.03464702373671741,
+            "predicted_loss": 0.7835734122317456,
+            "prediction": 0.029788581527359474,
+            "realized_loss": 0.9993834771886559,
+            "requests": 811,
+            "weighted_observed": 0.0406518133316882,
+            "weighted_prediction": 0.03187333072118201
+          },
+          "review": {
+            "interval": [
+              0.2285618542344355,
+              0.37790479623062423
+            ],
+            "observed": 0.2978723404255319,
+            "planted_risk": 0.2862419667081372,
+            "predicted_loss": 4.083426774914051,
+            "prediction": 0.16588485255911856,
+            "realized_loss": 8.08695035460993,
+            "requests": 141,
+            "weighted_observed": 0.3327768860353131,
+            "weighted_prediction": 0.16803244572096343
+          },
+          "third": {
+            "requests": 0
+          }
+        }
+      },
+      "class-conditional": {
+        "covered": 853,
+        "interval": [
+          0.8749998132283434,
+          0.9138338177833221
+        ],
+        "rate": 0.8960084033613446,
+        "requests": 952,
+        "sets": {
+          "both": 568,
+          "empty": 0,
+          "sound": 252,
+          "wrong": 132
+        },
+        "sound": {
+          "covered": 792,
+          "interval": [
+            0.8751386439647045,
+            0.91530691023573
+          ],
+          "rate": 0.8969422423556059,
+          "requests": 883
+        },
+        "verdict": "coverage shown",
+        "wrong": {
+          "covered": 61,
+          "interval": [
+            0.7875404685083913,
+            0.940065734540416
+          ],
+          "rate": 0.8840579710144928,
+          "requests": 69
+        }
+      },
+      "decomposition": {
+        "bins": [
+          {
+            "observed": 0.03664921465968586,
+            "prediction": 0.01742685013125384,
+            "requests": 191
+          },
+          {
+            "observed": 0.04712041884816754,
+            "prediction": 0.0254279987382566,
+            "requests": 191
+          },
+          {
+            "observed": 0.015789473684210527,
+            "prediction": 0.030239166068971906,
+            "requests": 190
+          },
+          {
+            "observed": 0.015789473684210527,
+            "prediction": 0.039300655308268574,
+            "requests": 190
+          },
+          {
+            "observed": 0.24736842105263157,
+            "prediction": 0.13763400859880032,
+            "requests": 190
+          }
+        ],
+        "brier": 0.06023546819815018,
+        "reliability": 0.0027238041368443204,
+        "residual": -0.001940351796015316,
+        "resolution": 0.007773771516451877,
+        "uncertainty": 0.06722578737377305
+      },
+      "marginal": {
+        "covered": 829,
+        "interval": [
+          0.8479913566707661,
+          0.890624748759255
+        ],
+        "rate": 0.8707983193277311,
+        "requests": 952,
+        "sets": {
+          "both": 0,
+          "empty": 82,
+          "sound": 870,
+          "wrong": 0
+        },
+        "sound": {
+          "covered": 829,
+          "interval": [
+            0.9210591734062225,
+            0.9528285648324889
+          ],
+          "rate": 0.9388448471121178,
+          "requests": 883
+        },
+        "verdict": "undercoverage shown",
+        "wrong": {
+          "covered": 0,
+          "interval": [
+            0.0,
+            0.05273909414400562
+          ],
+          "rate": 0.0,
+          "requests": 69
+        }
+      },
+      "rate": 0.07247899159663866,
+      "rate_interval": [
+        0.05767034706265203,
+        0.09072411494862681
+      ],
+      "referrals": {
+        "bands": {
+          "cannot_tell": 0,
+          "interval": [
+            0.1269603053376067,
+            0.17208673341860561
+          ],
+          "referred": 141,
+          "requests": 952,
+          "review": 141,
+          "share": 0.148109243697479,
+          "third": 0
+        },
+        "class-conditional": {
+          "interval": [
+            0.7063635661281121,
+            0.7623333393005699
+          ],
+          "referred": 700,
+          "requests": 952,
+          "share": 0.7352941176470589
+        },
+        "marginal": {
+          "interval": [
+            0.1269603053376067,
+            0.17208673341860561
+          ],
+          "referred": 141,
+          "requests": 952,
+          "share": 0.148109243697479
+        }
+      },
+      "requests": 952,
+      "scores": {
+        "base rate": {
+          "brier": 0.06853841931956481,
+          "intrinsic": 0.0575604409614091,
+          "log": 0.27468421604917886,
+          "maximum": 0.03624872875199767,
+          "truth_error": 0.010450757032135655
+        },
+        "class-weighted": {
+          "brier": 0.1679611752653973,
+          "intrinsic": 0.0575604409614091,
+          "log": 0.5221929446301573,
+          "maximum": 0.8494686488684179,
+          "truth_error": 0.11085081161584222
+        },
+        "proposed": {
+          "brier": 0.06023546819815018,
+          "intrinsic": 0.0575604409614091,
+          "log": 0.2215798791120111,
+          "maximum": 0.2279451724750814,
+          "truth_error": 0.003019271757722981
+        }
+      },
+      "scripted": {
+        "covered": 790,
+        "interval": [
+          0.8046464182560882,
+          0.8523662081037606
+        ],
+        "rate": 0.8298319327731093,
+        "requests": 952,
+        "sets": {
+          "both": 0,
+          "empty": 135,
+          "sound": 817,
+          "wrong": 0
+        },
+        "sound": {
+          "covered": 790,
+          "interval": [
+            0.8726918404602442,
+            0.9132433254137968
+          ],
+          "rate": 0.8946772366930917,
+          "requests": 883
+        },
+        "verdict": "undercoverage shown",
+        "wrong": {
+          "covered": 0,
+          "interval": [
+            0.0,
+            0.05273909414400562
+          ],
+          "rate": 0.0,
+          "requests": 69
+        }
+      },
+      "wrong": 69
+    }
+  },
+  "seed": 20,
+  "signer_status": "illustrative, unsigned",
+  "state": "offline proposal; drafts only, a person executes; gate uses placeholder risk",
+  "threshold_sha256": "dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0"
+}

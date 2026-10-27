@@ -1,0 +1,16 @@
+exercise 1: mean log loss of (1, 0.9) and (0, 0.9): 1.2040; noise 0.1600, squared bias 0.0025, variance 0.0125, total 0.1750
+exercise 2a: an $8 refund: a needless review adds $4.00, a wrong payment adds $4.00, threshold 0.500; the mistakes themselves cost $4.00 and $8.00
+exercise 3a: page 1.76, wait 2.40 engineer-hours; page above 0.0909; at 0.12, page
+exercise 3b: call above 0.10; at 0.08, call 2.76 against 2.16: no call
+exercise 3b: call above 0.10; at 0.10, call 2.70 against 2.70: tie
+exercise 3b: call above 0.10; at 0.15, call 2.55 against 4.05: call
+exercise 5: $8: band 0.500 to 0.800; at 0.15, pay by its own edge, refer by the tier threshold
+exercise 5: $25: band 0.160 to 0.800; at 0.15, pay by its own edge, refer by the tier threshold
+exercise 5: $45: band 0.089 to 0.800; at 0.15, refer by its own edge, refer by the tier threshold
+exercise 6: 0.5 becomes 0.020; at or above 0.10 before: True, after: False
+exercise 6: 0.9 becomes 0.155; at or above 0.10 before: True, after: True
+exercise 6: 0.98 becomes 0.500; at or above 0.10 before: True, after: True
+exercise 7: reported error 0.0000, map fit on August itself; refit on the validation window, 0.0114
+exercise 7: honest bins [(187, 0.0153, 1), (364, 0.0266, 5), (237, 0.0293, 3), (211, 0.1286, 28)]
+exercise 8: threshold 0.080; error 0.0170; referred 125 of 999; cost 0.82 against the placeholder's 1.07; denied on a score: 0
+August: validation-calibrated proposed score with the review-cost rule saves $0.39 per request

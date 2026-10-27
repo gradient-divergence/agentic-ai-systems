@@ -1,0 +1,15 @@
+Constructed signed canary plan: cloud-native-deployment-01
+Cohort: 131 / 3262 requesters
+Realized share: 0.040159
+Hash share: 0.05
+Maximum per payment: 4999 cents
+Named worst day: 75000 cents
+Derived daily caps: 15 payments; 74985 cents
+Recheck: 4 hours; time box: 28 days
+Comparator: tier 1 outside cohort, same days, blind person.
+Over $500: named approver decides every request, denials included.
+Clean count: settled; pending counts neither clean nor failed
+Stops: recheck, correction, untrusted_record, owner, recheck_overdue
+Budget reference: not named
+Offer rule: fixed
+Signed: morgan 2026-10-10T23:59:59+00:00

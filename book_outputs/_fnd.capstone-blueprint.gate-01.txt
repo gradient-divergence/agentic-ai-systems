@@ -1,0 +1,10 @@
+Operating gate-01: unavailable; integration_missing
+Assembly day: unavailable; no shared-clock operating run completed.
+row 1: required records missing: comparison
+row 2: required records missing: boundary, scope, routing, tier3
+row 3: required records missing: loss_bound, exposure, data_contracts, authority_table, injection_suite, revocation_drill, segment_audit, explanation
+row 4: required records missing: evidence_requirements, release, shadow_window, promotion, error_budget
+row 5: required records missing: incident, incident_actions
+row 6: required records missing: review_design, rollout_plan, rollout_step, stop
+row 7: required records missing: rehearsal
+No launch admission or decision-owner signature.

@@ -1,0 +1,23 @@
+{
+  "scenario": "constructed refund threshold experiment; dollars illustrative",
+  "amount": 40,
+  "review_cost": 4.0,
+  "wrong_denial_cost": 20.0,
+  "pay_arm": {
+    "assigned": 400,
+    "paid": 400,
+    "found_false": 48
+  },
+  "refer_arm": {
+    "assigned": 400,
+    "denied": 80,
+    "paid": 320,
+    "found_false": 16,
+    "wrong_denials_on_second_reading": 50
+  },
+  "headline": {
+    "claim": "review cut wrong payments from 12% to 5%",
+    "pay_rate": 0.12,
+    "refer_paid_rate": 0.05
+  }
+}

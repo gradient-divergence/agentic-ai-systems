@@ -1,0 +1,184 @@
+{
+  "domain": "hospital",
+  "constructed": true,
+  "sources": [
+    {
+      "name": "discharge.read",
+      "refund_role": "order.lookup",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.01,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "schedule.lookup",
+      "refund_role": "shipment.status",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.01,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "protocol.retrieve",
+      "refund_role": "policy.retrieve",
+      "observed_at": "versioned document",
+      "rate_per_hour": null,
+      "basis": "version currency, as chapters 23 and 30",
+      "version_checked": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "booking.confirm",
+      "role": "execute",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "follow-ups",
+      "harm_dimension": "bookings",
+      "largest_loss": "1",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "discharge.read",
+      "role": "order.lookup",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "schedule.lookup",
+      "role": "shipment.status",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "protocol.retrieve",
+      "role": "policy.retrieve",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "booking.propose",
+      "role": "refund.propose",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "approval.request",
+      "role": "refer",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "audit.append",
+      "role": "audit.append",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    }
+  ],
+  "actions_on_score": [],
+  "cost_matrix": null,
+  "base_rate": null,
+  "tolerance": 0.01,
+  "shared_resources": [
+    {
+      "name": "slots",
+      "capacity": "21",
+      "unit": "follow-up slots",
+      "actions": [
+        "booking.confirm"
+      ],
+      "scope": "domain",
+      "requirement": "allocation",
+      "basis": "constructed: 3 slots/day for 7 days"
+    }
+  ],
+  "roles": {
+    "decision_owner": "clinic decision owner",
+    "release_owner": "clinic release owner",
+    "reviewer": "scheduler",
+    "named_approver": "clinician on duty"
+  },
+  "role_map": {
+    "order.lookup": "discharge.read",
+    "shipment.status": "schedule.lookup",
+    "policy.retrieve": "protocol.retrieve",
+    "refund.propose": "booking.propose",
+    "refund.execute": "booking.confirm",
+    "pay": "booking.confirm",
+    "refer": "approval.request",
+    "approval.request": "approval.request",
+    "audit.append": "audit.append"
+  },
+  "label_windows": {
+    "urgent_followup": 172800.0,
+    "routine_followup": 604800.0,
+    "readmission": 2592000.0
+  },
+  "clocks": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "urgent follow-up",
+      "kind": "window",
+      "seconds": 172800.0,
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "routine follow-up",
+      "kind": "window",
+      "seconds": 604800.0,
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "missed window",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "a missed follow-up window cannot be given back"
+    },
+    {
+      "name": "readmission",
+      "kind": "outcome",
+      "seconds": 2592000.0,
+      "basis": "chapter 4: 30-day readmission label"
+    }
+  ],
+  "planted_checks": [
+    "coupling"
+  ],
+  "notes": []
+}

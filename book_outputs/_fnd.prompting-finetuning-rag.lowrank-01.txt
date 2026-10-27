@@ -1,0 +1,11 @@
+seed 7; frozen 16-by-16 layer; needed rank 2
+training 768; held-out 2048; noise SD 0.1; noise floor 0.0100
+all methods: 4000 steps, step size 0.1; adapter constant 8
+update | trainable numbers | training MSE | held-out MSE
+rank 1 | 32 | 0.137353 | 0.151211
+rank 2 | 64 | 0.009971 | 0.010101
+rank 4 | 128 | 0.009950 | 0.010125
+rank 8 | 256 | 0.009914 | 0.010145
+full | 256 | 0.009839 | 0.010227
+rank 1 at least twice noise floor: True
+ranks 2, 4, 8 within 10% of full: True

@@ -1,0 +1,210 @@
+--- a/refund_agent/agent/__init__.py
++++ b/refund_agent/agent/__init__.py
+@@ -14,7 +14,8 @@
+ READ_NEXT = _ReadOnly(
+     {
+         c.Phase.ORDER: c.Phase.SHIPMENT,
+-        c.Phase.SHIPMENT: c.Phase.POLICY,
++        c.Phase.SHIPMENT: c.Phase.CARRIER,
++        c.Phase.CARRIER: c.Phase.POLICY,
+         c.Phase.POLICY: c.Phase.ASSESS,
+     }
+ )
+--- a/refund_agent/baseline.py
++++ b/refund_agent/baseline.py
+@@ -14,7 +14,7 @@
+     decisions = []
+     for request in data.requests if requests is None else requests:
+         state = State(request=request, trace_id=f"baseline-{request.request_id}")
+-        for name in ("order.lookup", "shipment.status", "policy.retrieve"):
++        for name in ("order.lookup", "shipment.status", "carrier.track", "policy.retrieve"):
+             result = tools.call(ToolCall(name=name), state)
+             if not result.ok:
+                 state.decision = decision(state, Outcome.REFER, result.reason)
+--- a/refund_agent/contracts.py
++++ b/refund_agent/contracts.py
+@@ -138,6 +138,7 @@
+ class Phase(str, Enum):
+     ORDER = "order"
+     SHIPMENT = "shipment"
++    CARRIER = "carrier"
+     POLICY = "policy"
+     ASSESS = "assess"
+     PROPOSE = "propose"
+@@ -151,6 +152,7 @@
+     {
+         Phase.ORDER: "order.lookup",
+         Phase.SHIPMENT: "shipment.status",
++        Phase.CARRIER: "carrier.track",
+         Phase.POLICY: "policy.retrieve",
+         Phase.PROPOSE: "refund.propose",
+         Phase.APPROVAL: "approval.request",
+@@ -206,6 +208,12 @@
+     events: list[ShipmentEvent]
+ 
+ 
++class CarrierEvent(Record):
++    order_id: str
++    observed_at: datetime
++    event: ShipmentEvent
++
++
+ class Policy(Record):
+     policy_id: Literal["refund_cap_v4"] = "refund_cap_v4"
+     version: str
+@@ -273,6 +281,7 @@
+     order: Order | None = None
+     refunded_cents: Nonnegative = 0  # Display snapshot derived from the payment ledger.
+     shipment_events: list[ShipmentEvent] = Field(default_factory=list)
++    carrier_event: CarrierEvent | None = None
+     policy: Policy | None = None
+     policy_version: str | None = None
+     freshness: dict[str, float] = Field(default_factory=dict)
+@@ -288,6 +297,7 @@
+ class Evidence(Record):
+     order: Order
+     shipment_events: list[ShipmentEvent]
++    carrier_event: CarrierEvent
+     policy: Policy
+     freshness: dict[str, float]
+     risk_score: float
+@@ -359,6 +369,7 @@
+     age_seconds: Annotated[float, Field(allow_inf_nan=False)] | None = None
+     order: Order | None = None
+     shipment: Shipment | None = None
++    carrier_event: CarrierEvent | None = None
+     policy: Policy | None = None
+     record_id: str | None = None
+ 
+--- a/refund_agent/data/generate.py
++++ b/refund_agent/data/generate.py
+@@ -21,6 +21,7 @@
+     orders: list[c.Order]
+     requests: list[c.Request]
+     shipments: list[c.Shipment]
++    carrier_events: list[c.CarrierEvent] = Field(default_factory=list)
+     policies: list[c.Policy]
+     retrievals: list[c.PolicySnapshot]
+     correct: list[c.Decision]
+@@ -203,6 +204,11 @@
+         shipment = _shipment(seed, index, at, order, failure)
+         data.orders.append(order)
+         data.shipments.append(shipment)
++        data.carrier_events.append(c.CarrierEvent(
++            order_id=order.order_id,
++            observed_at=order.observed_at - timedelta(seconds=240),
++            event=shipment.events[-1],
++        ))
+         if index >= requests:
+             continue
+         request = _request(seed, index, at, order, failure, prefix)
+@@ -225,7 +231,7 @@
+     held = _rows(instructor_seed, 20, 20, "instructor-")
+     combined = {
+         name: getattr(public, name) + getattr(held, name)
+-        for name in ("orders", "requests", "shipments", "retrievals", "correct")
++        for name in ("orders", "requests", "shipments", "carrier_events", "retrievals", "correct")
+     }
+     return public.model_copy(
+         update={**combined, "instructor_scenarios": [r.request_id for r in held.requests]}
+@@ -243,6 +249,7 @@
+         requests=requests,
+         policies=data.policies,
+         shipments=[s for s in data.shipments if s.order_id in order_ids],
++        carrier_events=[e for e in data.carrier_events if e.order_id in order_ids],
+         retrievals=[s for s in data.retrievals if s.request_id in ids],
+         correct=[d for d in data.correct if d.request_id in ids],
+         reviewers=data.reviewers,
+--- a/refund_agent/rules.py
++++ b/refund_agent/rules.py
+@@ -7,7 +7,8 @@
+ from refund_agent import contracts as c
+ from refund_agent.data.generate import Dataset
+ 
+-_FRESHNESS_LIMITS = _ReadOnly({"policy": 30 * 86400, "order": 30 * 60, "shipment": 30 * 60})
++_FRESHNESS_LIMITS = _ReadOnly({"policy": 30 * 86400, "order": 30 * 60,
++                             "shipment": 30 * 60, "carrier_event": 30 * 60})
+ _RISK_THRESHOLD = 0.2  # Fictional stage-1 threshold, not a calibrated estimate.
+ 
+ 
+@@ -69,18 +70,24 @@
+ 
+ def sources(
+     data: Dataset, state: c.State
+-) -> tuple[c.Order | None, c.Shipment | None, c.PolicySnapshot | None]:
++) -> tuple[c.Order | None, c.Shipment | None, c.PolicySnapshot | None, c.CarrierEvent | None]:
+     orders = [o for o in data.orders if state.request.order_reference in (o.order_id, o.reference)]
+     order = orders[0] if len(orders) == 1 else None
+     shipment = next((s for s in data.shipments if order and s.order_id == order.order_id), None)
+     snapshot = next((s for s in data.retrievals if s.request_id == state.request.request_id), None)
+-    return order, shipment, snapshot
++    carrier = max(
++        (e for e in data.carrier_events if order and e.order_id == order.order_id),
++        key=lambda event: event.observed_at,
++        default=None,
++    )
++    return order, shipment, snapshot, carrier
+ 
+ 
+ def refresh_summaries(data: Dataset, state: c.State) -> None:
+     """Summaries are display fields; timestamps and the scoring rule are authoritative."""
+-    order, shipment, snapshot = sources(data, state)
+-    observations = {"order": order, "shipment": shipment, "policy": snapshot}
++    order, shipment, snapshot, carrier = sources(data, state)
++    observations = {"order": order, "shipment": shipment, "policy": snapshot,
++                    "carrier_event": carrier}
+     state.freshness = {
+         name: ((state.execution_at or state.request.at) - source.observed_at).total_seconds()
+         for name, source in observations.items()
+@@ -107,9 +114,13 @@
+ def evidence_problem(data: Dataset, state: c.State) -> str | None:
+     if state.order is None or state.policy is None or not state.shipment_events:
+         return "missing_evidence"
+-    order, shipment, snapshot = sources(data, state)
++    order, shipment, snapshot, carrier = sources(data, state)
+     if order is None or shipment is None or snapshot is None:
+         return "missing_evidence"
++    if state.carrier_event is None:
++        return "missing_carrier_event"
++    if state.carrier_event != carrier:
++        return "evidence_mismatch"
+     if state.order != order or state.shipment_events != shipment.events:
+         return "evidence_mismatch"
+     try:
+--- a/refund_agent/tools.py
++++ b/refund_agent/tools.py
+@@ -600,6 +600,7 @@
+         handlers = {
+             "order.lookup": self._order,
+             "shipment.status": self._shipment,
++            "carrier.track": self._carrier,
+             "policy.retrieve": self._policy,
+             "refund.propose": self._propose,
+             "approval.request": self._review,
+@@ -641,6 +642,17 @@
+         state.shipment_events = _detach(shipment.events)
+         refresh_summaries(self._data, state)
+         return c.ToolResult(ok=True, shipment=shipment, age_seconds=state.freshness["shipment"])
++
++    def _carrier(self, call: c.ToolCall, state: c.State) -> c.ToolResult:
++        if state.order is None:
++            return c.ToolResult(ok=False, reason="missing_order")
++        carrier = sources(self._data, state)[3]
++        if carrier is None:
++            return c.ToolResult(ok=False, reason="carrier_event_not_found")
++        state.carrier_event = _detach(carrier)
++        refresh_summaries(self._data, state)
++        return c.ToolResult(ok=True, carrier_event=carrier,
++                            age_seconds=state.freshness["carrier_event"])
+ 
+     def _policy(self, call: c.ToolCall, state: c.State) -> c.ToolResult:
+         snapshot = sources(self._data, state)[2]
+@@ -779,7 +791,7 @@
+         if args.approval_id is not None and approval is None:
+             return c.ToolResult(ok=False, reason="invalid_approval")
+         state.execution_at = execution_time(state, approval)
+-        for name in ("order.lookup", "shipment.status", "policy.retrieve"):
++        for name in ("order.lookup", "shipment.status", "carrier.track", "policy.retrieve"):
+             result = self._dispatch(c.ToolCall(name=name), state)
+             if not result.ok:
+                 return result

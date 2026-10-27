@@ -1,0 +1,18 @@
+reranked identifier: counts [400, 257, 257, 257]
+  ret: 0.642500 [0.594381, 0.687908]
+  rank|ret: 1.000000 [0.985272, 1.000000]
+  kept|rank: 1.000000 [0.985272, 1.000000]
+  product 0.642500; end-to-end 0.642500
+reranked paraphrase: counts [400, 329, 329, 180]
+  ret: 0.822500 [0.782040, 0.856825]
+  rank|ret: 1.000000 [0.988458, 1.000000]
+  kept|rank: 0.547112 [0.493088, 0.600049]
+  product 0.450000; end-to-end 0.450000
+reranked plain: counts [400, 258, 258, 258]
+  ret: 0.645000 [0.596930, 0.690312]
+  rank|ret: 1.000000 [0.985329, 1.000000]
+  kept|rank: 1.000000 [0.985329, 1.000000]
+  product 0.645000; end-to-end 0.645000
+without reranking identifier: counts [400, 257, 129, 125]; product 0.312500
+without reranking paraphrase: counts [400, 329, 329, 197]; product 0.492500
+without reranking plain: counts [400, 258, 130, 125]; product 0.312500

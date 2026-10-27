@@ -1,0 +1,19 @@
+refund refund pass
+triage copy hold
+  clock alarm.read out-of-date chance exceeds tolerance
+  {"age_seconds": "1800.0", "budget_seconds": "8.69974181707", "chance":
+"0.875", "tolerance": "0.01"}
+triage redesign pass
+hospital copy hold
+  coupling slots resource constraint not enforced
+  {"capacity": "21", "decision_unit": "request", "recheck_at_execution":
+"True", "requires": "allocation", "unit": "follow-up slots"}
+hospital redesign pass
+bank copy hold
+  rule risk minimum cost; referral wins ties
+  [0.0114, 0.0800) exact 2/175..400/4999; clear vs refer
+  midpoint costs $18.29 vs $6.29
+  rule risk minimum cost; referral wins ties
+  (0.1667, 1.0000] exact 1/6..1; refer vs hold
+  midpoint costs $33.17 vs $8.17
+bank redesign pass

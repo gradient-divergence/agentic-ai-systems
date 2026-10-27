@@ -1,0 +1,6 @@
+The: 0.693
+sky: 1.386
+is: 0.693
+blue: 2.079
+mean loss: 1.213
+perplexity: 3.364

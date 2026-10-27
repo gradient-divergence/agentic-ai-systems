@@ -1,0 +1,6 @@
+Share resolved within the hour: switched 0.12 to 0.18; others 0.11 to 0.13
+Before and after at switched site +0.06; after only, switched less others +0.05
+Difference-in-differences: (0.18 - 0.12) - (0.13 - 0.11) = +0.04
+Switched site untreated after: 0.12 + (0.13 - 0.11) = 0.14; gap to 0.18 = +0.04
+Switched site's effect if: one action version; others untreated, unaffected;
+same kind of unit counted the same way; parallel trends; no anticipation.

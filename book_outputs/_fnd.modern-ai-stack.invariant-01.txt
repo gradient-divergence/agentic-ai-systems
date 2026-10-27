@@ -1,0 +1,3 @@
+orders whose paid_cents equals the items' total: 2000 of 2000
+the record in dollars: paid_cents 42, items 4200
+all amounts in dollars: paid_cents 42, items 42, accepted

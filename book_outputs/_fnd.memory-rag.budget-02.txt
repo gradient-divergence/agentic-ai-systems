@@ -1,0 +1,12 @@
+shipped: 2026-04-02T00:00:00+00:00
+lost: 2026-04-05T00:00:00+00:00
+resent: 2026-04-10T00:00:00+00:00
+delivered: 2026-04-16T00:00:00+00:00 (latest delivery)
+return_scan: 2026-05-02T00:00:00+00:00
+return_scan: 2026-05-03T00:00:00+00:00
+return_scan: 2026-05-04T00:00:00+00:00
+return_scan: 2026-05-05T00:00:00+00:00
+return_scan: 2026-05-06T00:00:00+00:00
+required facts: request_id: constructed-b; at: 2026-05-12T00:00:00+00:00; known_at: 2026-05-12T00:00:00+00:00; snapshot_at: 2026-05-11T23:00:00+00:00
+required facts: purchased_at: 2026-04-01T00:00:00+00:00; delivered_at: 2026-04-16T00:00:00+00:00; delivery_age_days: 26.0; future_evidence: False
+required facts: amount_cents: 2499; reason: changed_mind; balance_cents: 4999; policy_version: 2026-05-01; return_days: 30; cap_cents: 90000; named_approver: morgan

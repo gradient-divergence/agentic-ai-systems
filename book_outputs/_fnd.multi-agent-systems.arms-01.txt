@@ -1,0 +1,28 @@
+constructed mix: 400 tier 1 requests of 2499 cents; 24 contradictions, 16 false dates, 8 phrase trips, 352 plain
+fixture e0fc575c616c491018106037161e54db48689247f0c11a0b96c16a7e90784a37; seed 7
+pre-run commission bff49182f1c613deebcdb1e79005ca07d80916e5cae6490be12f7c99af0c079e; alpha 0.025; interval 97.5%; exact chance at most 2.5%
+authority: additional payments must be 0; tie keeps single; passing grants only eligibility for chapter 29's suite and shadow
+arm          correct  pays  wrong-pay  refers  additional-pay  changed  calls  words/call
+single           360   400         40       0               0        0      0        0.00
+agreeing         360   400         40       0               0        0    400      118.08
+independent      376   368         16      32               0       32    400       80.08
+agreeing: n+ 0; n- 0; lead 0.0000; SE 0.000000; 97.5% interval [0.0000, 0.0000]; exact chance 1.0000000; not adopted
+agreeing errors: 00=360, 01=0, 10=0, 11=40; rho_P 0.100; rho_V 0.100; pass 0.100; catches 0.000; covariance /n 0.090; correlation 1.000
+agreeing saving: $0.0000/request; SE $0.00000; 97.5% interval [$0.00000, $0.00000] = [$0.00, $0.00]; stopped wrong payments 0; false objections 0
+independent: n+ 24; n- 8; lead 0.0400; SE 0.014000; 97.5% interval [0.0086, 0.0714]; exact chance 0.0070004; accepted
+independent errors: 00=352, 01=8, 10=24, 11=16; rho_P 0.100; rho_V 0.060; pass 0.040; catches 0.060; covariance /n 0.034; correlation 0.477
+independent saving: $1.1794/request; SE $0.25181; 97.5% interval [$0.61499, $1.74381] = [$0.61, $1.74]; stopped wrong payments 24; false objections 8
+words are whitespace-separated words in the read JSON and request; they are not tokens
+illustrative costs: wrong payment loses 2499 cents; review 400 cents; a contradiction catch saves 2099 cents
+independent call price must be below $0.61499, about $0.61, for the interval's lower end to stay positive
+all 24 caught contradictions are not owed by construction; if a person pays one after review, that catch instead costs 400 cents
+events: single finished; agreeing finished; independent finished; truth consulted
+truth accesses 1; truth fingerprint c7c1a87da1d3e5220d02e3d5275e36364b743ca0ecc0f131e6811fa83da3ce9e
+truth access: {"entry": 1, "purpose": "score all completed arms; no fitting or tuning", "reader": "matched experiment", "set": "multi-agent-constructed-truth-v1"}
+public arm   cases  correct  payments  changed  additional-pay  calls  tier3-referrals
+single          40       26         4        0               0      0               15
+agreeing        40       26         4        0               0      4               15
+independent     40       26         4        0               0      4               15
+public agreement is 26/40: decision 1 refers 14 deny-labelled tier 3 requests; with the existing referral all 15 go to a named approver
+rare mix: 1 catch/200 requests, false objection rate 0.02: 2.495 cents = $0.02495/request before the call
+companion: simulated ledger; deployment: a person carries out every refund through Part V; autonomy unchanged

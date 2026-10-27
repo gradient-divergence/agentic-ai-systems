@@ -1,0 +1,6 @@
+Constructed: two 3000-cent requests against one 4000-cent order.
+First payment: 3000 cents
+Second assessment: approve ; execution attempts: 1 ; refused for balance: 1
+Second payment: None ; outcome: refer ; reason: amount_over_policy
+Total paid: 3000 cents; remaining: 1000 cents
+The existing refund gate rechecks the order balance at execution.

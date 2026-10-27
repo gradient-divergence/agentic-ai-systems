@@ -1,0 +1,12 @@
+Constructed event-time runs; credentials reissued at every resumed run.
+Must-pay: 5/5; cents: 62598
+positive-2499: eligible; paid 2499 cents
+positive-4999: eligible; paid 4999 cents
+positive-100: eligible; paid 100 cents
+positive-5000: eligible; paid 5000 cents
+positive-50000: eligible; paid 50000 cents
+Positive decision changes: 0
+Public decision changes: 1
+Public 40: approve 5; deny 8; refer 27
+r-7-0000: one authorized match; eligible; paid 2499 cents.
+Reviewer approvals authenticated; positive-100 waits for final evidence.

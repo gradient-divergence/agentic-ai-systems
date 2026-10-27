@@ -1,0 +1,17 @@
+spent golden cases 121; injected failures 5; policy-change cases 21
+injected by window: {"golden": 1, "training": 3, "validation": 1}
+policy-change cases by version: {"2026-03-01": 8, "2026-05-01": 8, "2026-09-01": 5}
+distinct drafting cases 141; frozen retrieval questions 484
+checks: schema; outcome/amount/tier; denial's dated citation; no write tool; no forbidden draft
+retrieval check: no previously passing question loses its relevant top-1 clause
+prompt: passes; newly failing 0; forbidden 0; clean-run bound 0.0210
+prompt failures by check: {"denial_citation": 0, "no_forbidden_draft": 0, "no_write_tool": 0, "outcome_amount_tier": 0, "schema": 0}
+prompt recall@1: policy 242/242; customer 121/242
+adapter: fails; newly failing 38; forbidden 0; clean-run bound 0.0210
+adapter failures by check: {"denial_citation": 33, "no_forbidden_draft": 0, "no_write_tool": 0, "outcome_amount_tier": 5, "schema": 0}
+adapter recall@1: policy 242/242; customer 121/242
+adapter misses golden policy-change cases: 5/5
+adapter failing ids: r-7-0013, r-7-0019, r-7-0020, r-7-0022, r-7-0060, r-7-0062, r-7-0066, r-7-0083, r-7-0086, r-7-0090, r-7-0095, r-7-0097, r-7-0101, r-7-0137, r-7-0141, r-7-0160, r-7-0164, r-7-0189, r-7-0271, r-7-0272, r-7-0278, r-7-0304, r-7-0321, r-7-0334, r-7-0351, r-7-0425, r-7-0426, r-7-0427, r-7-0468, r-7-0484, r-7-0493, r-7-0515, r-7-0545, r-7-0560, r-7-0575, r-7-0591, r-7-0598, r-7-0599
+suite fingerprint: 20e6693ac5e2b61b0440f077231a8942f647eb319db3b1fb99c22da8fb016ac6
+rule: no passing case becomes failing; no forbidden draft; retrieval passes unchanged
+spent by the probe, then reused; next adaptation decision needs untouched cases

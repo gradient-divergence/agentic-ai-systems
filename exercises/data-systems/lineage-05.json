@@ -1,0 +1,764 @@
+{
+  "constructed": true,
+  "lineage": {
+    "approvals": [],
+    "bundle": null,
+    "candidate": {
+      "adapter": {
+        "fingerprint": "6fcefd4f0efaeb0e267cf6532e100f93292ecc0416a8916be530ceaf182e682b",
+        "settings": {
+          "agent_budget": true,
+          "end_at_audit": true,
+          "max_steps": 12,
+          "no_retry": true,
+          "one_tool_per_phase": true,
+          "refer_on_failure": true,
+          "retries": 1
+        },
+        "version": "1"
+      },
+      "agent": {
+        "fingerprint": "6bb799e117d92274ad1463ec4b50513929aaeb9479bb9dc37461395fd09c1624",
+        "identity": "Agent"
+      },
+      "model": {
+        "fingerprint": "6698ca14e2930d8335bd441e50a0cec66d7c66808ac7e1fbe1550b4e8d53d500",
+        "identity": "ScriptedModel",
+        "settings": {
+          "decoding": "deterministic",
+          "seed": 7
+        },
+        "version": "1"
+      },
+      "name": "as-built",
+      "offer_policy": {
+        "candidates": {
+          "A": {
+            "decision": "hold",
+            "fingerprint": "992a25b4a88a815e6558e994208dbbedbfca6f6c9272b4d8e461f6fa2422e396",
+            "reasons": [
+              "candidate effective size below 400",
+              "improvement interval is not above zero",
+              "exact check exceeds 0.025"
+            ]
+          },
+          "B": {
+            "decision": "hold",
+            "fingerprint": "f0270f22f53a613157c8b57b08e86cbea45a26b36c5b11a630b15f976684d7cb",
+            "reasons": [
+              "improvement interval is not above zero",
+              "exact check exceeds 0.025"
+            ]
+          }
+        },
+        "evaluation_fingerprint": "b838763b47395cb49b0b2304209ebf0a062ac43150829dc288b693db59176143",
+        "fingerprint": "8b4e9a1656f92287f7edc597bf83786e73d791f5c4c45b563f39ef5d5d37a9d6",
+        "limits": [
+          "this window's customers, season and logger",
+          "human-changed offers excluded; no known action chance",
+          "no interference assumed",
+          "future drift and delayed outcomes can change value",
+          "normal intervals can mislead on heavy ratios",
+          "seeded redraws approximate the exact law"
+        ],
+        "name": "fixed",
+        "policy": {
+          "frozen_at": "2026-02-14T23:06:17+00:00",
+          "source_fingerprint": "b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f",
+          "tables": [
+            [
+              "changed_mind",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ],
+            [
+              "damaged",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ],
+            [
+              "not_delivered",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ]
+          ],
+          "version": "standard-notice-1"
+        },
+        "version": "standard-notice-1"
+      },
+      "runtime": {
+        "fingerprint": "a9e763a5040ec54151b8788a79338cae772edbe0c3049b8272c34357b6d80fff",
+        "identity": "own",
+        "version": "1"
+      },
+      "suite": {
+        "fingerprint": "c71124e4596dc6c404666ca67f9db0a91d059ad34225dcc29f54f38050d506a8",
+        "version": "refund-release-suite-2"
+      },
+      "tools_composition": {
+        "base": "as-built",
+        "components": [
+          {
+            "files": [
+              "../demos/data/generative_models_scenarios_listed.json",
+              "../demos/data/generative_models_scenarios_tau1.json",
+              "../demos/data/generative_models_scenarios_tau2.json",
+              "release/owners.json"
+            ],
+            "fingerprint": "6a0871d97c6e526af5f43d1dee9bf83aa5a95aefbf9f2e8b8aae06e10255cd89",
+            "module": "refund_agent.sources.data_systems_release",
+            "modules": [
+              "refund_agent",
+              "refund_agent.agent",
+              "refund_agent.contracts",
+              "refund_agent.data",
+              "refund_agent.data.generate",
+              "refund_agent.labels",
+              "refund_agent.memory",
+              "refund_agent.memory.memory",
+              "refund_agent.model",
+              "refund_agent.release",
+              "refund_agent.release.candidate",
+              "refund_agent.release.extensions",
+              "refund_agent.release.suite",
+              "refund_agent.rules",
+              "refund_agent.runtimes",
+              "refund_agent.runtimes.swap",
+              "refund_agent.selection",
+              "refund_agent.sources",
+              "refund_agent.sources.data_systems_budget",
+              "refund_agent.sources.data_systems_check",
+              "refund_agent.sources.data_systems_contract",
+              "refund_agent.sources.data_systems_lineage",
+              "refund_agent.sources.data_systems_registry",
+              "refund_agent.sources.data_systems_release",
+              "refund_agent.sources.data_systems_releases",
+              "refund_agent.sources.data_systems_tools",
+              "refund_agent.tools"
+            ],
+            "name": "data-systems.contracts",
+            "settings": {
+              "registry_fingerprint": "b9c5073b99e12a841cd3ca997f2928ecfe02ab4944dd82e96c3ea064a62bbf30",
+              "registry_version": "data-systems.registry@1"
+            },
+            "stores": [],
+            "version": "data-systems.contracts@1"
+          }
+        ],
+        "fingerprint": "0b063e018e26b2e52f3f0da94523434c3027ea2e091c2207da1011222668f703",
+        "verifier": "off",
+        "verifier_version": null,
+        "version": "release-tools-1"
+      }
+    },
+    "code_version": "6c5b026bc025f469346537b17d48fb4cb317194554f66a92792fc8ffb6ac18f3",
+    "decision": {
+      "amount_cents": 2499,
+      "executed": true,
+      "outcome": "approve",
+      "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+      "reason": "eligible",
+      "request_id": "r-7-0007",
+      "tier": 1
+    },
+    "decision_at": "2026-03-22T15:08:27Z",
+    "derivations": {
+      "balance": {
+        "paid_cents": 137006,
+        "receipt_ids": [],
+        "refunded_cents": 0,
+        "value_cents": 137006
+      },
+      "delivery_age_seconds": 1036800.0
+    },
+    "inputs": [
+      {
+        "age_seconds": 60.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "order@1",
+        "fingerprint": "87a079efb7c8c24a10b57ddc53e8fd81e9d4520d79294a128192bc79bc029583",
+        "observed_at": "2026-03-22T15:07:27Z",
+        "record_kind": "orders",
+        "source": "order",
+        "used": true
+      },
+      {
+        "age_seconds": -2400,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "shipment@1",
+        "fingerprint": "c34d599a1506521e23160c5e69a593b539fb8909e38838d856cda616a2230a8c",
+        "observed_at": "2026-03-22T15:48:27+00:00",
+        "record_kind": "shipments",
+        "source": "shipment",
+        "used": true
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "ab1474fe3ec09252326c8a2492cab71f749090f97f5ce772f8c73fcaf80a3f4e",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "policies",
+        "source": "policy",
+        "used": false
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "a86a2bc63fb07c911cc3d3c71ac275a3d2f6a67671dc84096df0376475c20b35",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "policies",
+        "source": "policy",
+        "used": true
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "e9faa77e95b757562e58ca1270ec01a9c9f32f0206c83137b9f0130463624eae",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "policies",
+        "source": "policy",
+        "used": false
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "b864550927277830bae4331c531f508eecdfb114dd77da8cfea0cf653f968182",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "policies",
+        "source": "policy",
+        "used": false
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "policies",
+        "source": "policy",
+        "used": false
+      },
+      {
+        "age_seconds": 3600.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "policy@1",
+        "fingerprint": "657f14564b336901960eca79eb5b35c11cd8378489ec573b49034e95b24704ce",
+        "observed_at": "2026-03-22T14:08:27Z",
+        "record_kind": "retrievals",
+        "source": "policy",
+        "used": true
+      },
+      {
+        "age_seconds": 0.0,
+        "captured_at": "2026-03-22T15:08:27Z",
+        "contract_version": "ledger@1",
+        "fingerprint": "176a295f7d63602386fc3d8723406f50c90fd6fcd831f844bc88baf62e5aa902",
+        "observed_at": "2026-03-22T15:08:27Z",
+        "record_kind": "ledger",
+        "source": "ledger",
+        "used": true
+      }
+    ],
+    "label_policy_version": "1",
+    "max_steps": 12,
+    "mode": "executed",
+    "model_errors": [],
+    "model_exchanges": [
+      {
+        "phase": "order",
+        "reply": {
+          "arguments": {
+            "amount_cents": null,
+            "approval_id": null,
+            "idempotency_key": null,
+            "order_id": null,
+            "reason": ""
+          },
+          "name": "order.lookup"
+        },
+        "request_id": "r-7-0007"
+      },
+      {
+        "phase": "shipment",
+        "reply": {
+          "arguments": {
+            "amount_cents": null,
+            "approval_id": null,
+            "idempotency_key": null,
+            "order_id": null,
+            "reason": ""
+          },
+          "name": "shipment.status"
+        },
+        "request_id": "r-7-0007"
+      },
+      {
+        "phase": "policy",
+        "reply": {
+          "arguments": {
+            "amount_cents": null,
+            "approval_id": null,
+            "idempotency_key": null,
+            "order_id": null,
+            "reason": ""
+          },
+          "name": "policy.retrieve"
+        },
+        "request_id": "r-7-0007"
+      },
+      {
+        "phase": "assess",
+        "reply": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "request_id": "r-7-0007"
+      },
+      {
+        "phase": "propose",
+        "reply": {
+          "arguments": {
+            "amount_cents": 2499,
+            "approval_id": null,
+            "idempotency_key": null,
+            "order_id": null,
+            "reason": "changed_mind"
+          },
+          "name": "refund.propose"
+        },
+        "request_id": "r-7-0007"
+      },
+      {
+        "phase": "execute",
+        "reply": {
+          "arguments": {
+            "amount_cents": 2499,
+            "approval_id": null,
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": null,
+            "reason": "changed_mind"
+          },
+          "name": "refund.execute"
+        },
+        "request_id": "r-7-0007"
+      }
+    ],
+    "model_proposal": {
+      "amount_cents": 2499,
+      "executed": false,
+      "outcome": "approve",
+      "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+      "reason": "eligible",
+      "request_id": "r-7-0007",
+      "tier": 1
+    },
+    "proposal": {
+      "amount_cents": 2499,
+      "created_at": "2026-03-22T15:08:27Z",
+      "evidence": {
+        "freshness": {
+          "order": 60.0,
+          "policy": 3600.0,
+          "shipment": 120.0
+        },
+        "order": {
+          "items": [
+            {
+              "name": "physical desk lamp",
+              "quantity": 1,
+              "unit_cents": 137006
+            }
+          ],
+          "observed_at": "2026-03-22T15:07:27Z",
+          "order_id": "o-0007",
+          "paid_cents": 137006,
+          "payment_id": "payment-0007",
+          "prior_refunds": [],
+          "purchased_at": "2026-03-05T15:08:27Z",
+          "reference": "o-0007"
+        },
+        "policy": {
+          "cap_cents": 80000,
+          "effective_at": "2026-03-01T00:00:00Z",
+          "named_approver": "morgan",
+          "policy_id": "refund_cap_v4",
+          "return_days": 21,
+          "text": "refund_cap_v4@2026-03-01: physical goods. #eligibility: damaged or changed_mind within 21 days of delivery; not_delivered if no delivery. #cap: at most 80000 cents and the unrefunded payment balance.",
+          "version": "2026-03-01"
+        },
+        "risk_score": 0.1,
+        "shipment_events": [
+          {
+            "at": "2026-03-06T15:08:27Z",
+            "status": "shipped"
+          },
+          {
+            "at": "2026-03-10T15:08:27Z",
+            "status": "delivered"
+          }
+        ],
+        "trace_id": "trace-r-7-0007"
+      },
+      "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+      "reason": "changed_mind",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-03-22T15:08:27Z",
+        "failure": null,
+        "order_reference": "o-0007",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0007",
+        "requester_id": "customer-7-0007",
+        "text": "Please review my refund request."
+      },
+      "request_id": "r-7-0007"
+    },
+    "registry": {
+      "entries": [
+        {
+          "announced_at": "2025-12-25T00:00:00Z",
+          "contract": {
+            "budget": {
+              "approver_role": "the order team",
+              "at": "2026-10-12T00:00:00Z",
+              "basis": "constructed quiet log: 0 changes in 6000 order-hours; spec limit retained",
+              "chance_estimate": 0.0,
+              "chance_upper": 0.0002496131975701323,
+              "count": 0,
+              "estimate": 0.0,
+              "exposure_hours": 6000.0,
+              "limit_seconds": 1800.0,
+              "upper": 0.0004992887122589983
+            },
+            "failure_response": "refer",
+            "fields": [
+              {
+                "field": "amounts",
+                "meaning": "one currency; prior refunds copy the ledger",
+                "unit": "USD cents"
+              }
+            ],
+            "invariants": [
+              "paid_equals_items",
+              "prior_within_paid"
+            ],
+            "notice": {
+              "basis": "constructed seven-day source-owner agreement",
+              "days": 7
+            },
+            "owner_role": "the order team",
+            "source": "order",
+            "version": "order@1",
+            "vocabularies": {}
+          },
+          "effective_at": "2026-01-01T00:00:00Z"
+        },
+        {
+          "announced_at": "2025-12-25T00:00:00Z",
+          "contract": {
+            "budget": {
+              "approver_role": "the carrier integration team",
+              "at": "2026-10-12T00:00:00Z",
+              "basis": "constructed: 48 first-delivery scans in 2400 transit parcel-hours",
+              "chance_estimate": 0.009950166250831947,
+              "chance_upper": 0.012639004028871843,
+              "count": 48,
+              "estimate": 0.02,
+              "exposure_hours": 2400.0,
+              "limit_seconds": 1800.0,
+              "upper": 0.02543911137704571
+            },
+            "failure_response": "refer",
+            "fields": [
+              {
+                "field": "status",
+                "meaning": "shipped or delivered to the customer",
+                "unit": "code"
+              },
+              {
+                "field": "at",
+                "meaning": "when the carrier made the scan",
+                "unit": "UTC instant"
+              },
+              {
+                "field": "observed_at",
+                "meaning": "when the source observed the record",
+                "unit": "UTC instant"
+              },
+              {
+                "field": "events",
+                "meaning": "complete: every scan the carrier made has been sent",
+                "unit": "scan history"
+              }
+            ],
+            "invariants": [
+              "time_order",
+              "delivery_after_shipping",
+              "not_after_observation"
+            ],
+            "notice": {
+              "basis": "constructed seven-day source-owner agreement",
+              "days": 7
+            },
+            "owner_role": "the carrier integration team",
+            "source": "shipment",
+            "version": "shipment@1",
+            "vocabularies": {
+              "status": [
+                "shipped",
+                "delivered"
+              ]
+            }
+          },
+          "effective_at": "2026-01-01T00:00:00Z"
+        },
+        {
+          "announced_at": "2025-12-25T00:00:00Z",
+          "contract": {
+            "budget": {
+              "approver_role": "the policy owner",
+              "at": "2026-10-12T00:00:00Z",
+              "basis": "specification judgment, no measured rate; effective dates use the register",
+              "chance_estimate": null,
+              "chance_upper": null,
+              "count": null,
+              "estimate": null,
+              "exposure_hours": null,
+              "limit_seconds": 2592000.0,
+              "upper": null
+            },
+            "failure_response": "refer",
+            "fields": [
+              {
+                "field": "version",
+                "meaning": "effective date of the policy content",
+                "unit": "date"
+              }
+            ],
+            "invariants": [
+              "version_equals_effective_date"
+            ],
+            "notice": {
+              "basis": "policy register",
+              "days": 7
+            },
+            "owner_role": "the policy owner",
+            "source": "policy",
+            "version": "policy@1",
+            "vocabularies": {}
+          },
+          "effective_at": "2026-01-01T00:00:00Z"
+        },
+        {
+          "announced_at": "2025-12-25T00:00:00Z",
+          "contract": {
+            "budget": {
+              "approver_role": "finance",
+              "at": "2026-10-12T00:00:00Z",
+              "basis": "execution-time authoritative read; no cached reuse",
+              "chance_estimate": null,
+              "chance_upper": null,
+              "count": null,
+              "estimate": null,
+              "exposure_hours": null,
+              "limit_seconds": 0.0,
+              "upper": null
+            },
+            "failure_response": "refer",
+            "fields": [
+              {
+                "field": "amount_cents",
+                "meaning": "money already paid",
+                "unit": "USD cents"
+              }
+            ],
+            "invariants": [
+              "positive_integer_cents",
+              "unique_idempotency_key"
+            ],
+            "notice": {
+              "basis": "constructed seven-day source-owner agreement",
+              "days": 7
+            },
+            "owner_role": "finance",
+            "source": "ledger",
+            "version": "ledger@1",
+            "vocabularies": {}
+          },
+          "effective_at": "2026-01-01T00:00:00Z"
+        }
+      ],
+      "pins": {
+        "ledger": "ledger@1",
+        "order": "order@1",
+        "policy": "policy@1",
+        "shipment": "shipment@1"
+      },
+      "version": "data-systems.registry@1"
+    },
+    "registry_version": "data-systems.registry@1",
+    "rejected_replies": [],
+    "replay_fingerprint": "4f9a6c3081a9359e55f483fcfcdc90a6012c743674f7ad9e3ad1ce35bd3d68fb",
+    "request": {
+      "amount_cents": 2499,
+      "at": "2026-03-22T15:08:27Z",
+      "failure": null,
+      "order_reference": "o-0007",
+      "preparer_id": "refund-agent",
+      "reason": "changed_mind",
+      "request_id": "r-7-0007",
+      "requester_id": "customer-7-0007",
+      "text": "Please review my refund request."
+    },
+    "reviewers": [
+      {
+        "name": "Alex",
+        "reviewer_id": "alex",
+        "role": "reviewer"
+      },
+      {
+        "name": "Morgan",
+        "reviewer_id": "morgan",
+        "role": "named_approver"
+      }
+    ],
+    "served_versions": {
+      "ledger": "ledger@1",
+      "order": "order@1",
+      "policy": "policy@1",
+      "shipment": "shipment@1"
+    },
+    "trace_id": "trace-r-7-0007"
+  },
+  "records": {
+    "176a295f7d63602386fc3d8723406f50c90fd6fcd831f844bc88baf62e5aa902": {
+      "receipts": []
+    },
+    "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c": {
+      "cap_cents": 100000,
+      "effective_at": "2026-09-01T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 45,
+      "text": "refund_cap_v4@2026-09-01: physical goods. #eligibility: damaged or changed_mind within 45 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+      "version": "2026-09-01"
+    },
+    "657f14564b336901960eca79eb5b35c11cd8378489ec573b49034e95b24704ce": {
+      "observed_at": "2026-03-22T14:08:27Z",
+      "request_id": "r-7-0007",
+      "version": "2026-03-01"
+    },
+    "87a079efb7c8c24a10b57ddc53e8fd81e9d4520d79294a128192bc79bc029583": {
+      "items": [
+        {
+          "name": "physical desk lamp",
+          "quantity": 1,
+          "unit_cents": 137006
+        }
+      ],
+      "observed_at": "2026-03-22T15:07:27Z",
+      "order_id": "o-0007",
+      "paid_cents": 137006,
+      "payment_id": "payment-0007",
+      "prior_refunds": [],
+      "purchased_at": "2026-03-05T15:08:27Z",
+      "reference": "o-0007"
+    },
+    "a86a2bc63fb07c911cc3d3c71ac275a3d2f6a67671dc84096df0376475c20b35": {
+      "cap_cents": 80000,
+      "effective_at": "2026-03-01T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 21,
+      "text": "refund_cap_v4@2026-03-01: physical goods. #eligibility: damaged or changed_mind within 21 days of delivery; not_delivered if no delivery. #cap: at most 80000 cents and the unrefunded payment balance.",
+      "version": "2026-03-01"
+    },
+    "ab1474fe3ec09252326c8a2492cab71f749090f97f5ce772f8c73fcaf80a3f4e": {
+      "cap_cents": 75000,
+      "effective_at": "2026-01-20T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 14,
+      "text": "refund_cap_v4@2026-01-20: physical goods. #eligibility: damaged or changed_mind within 14 days of delivery; not_delivered if no delivery. #cap: at most 75000 cents and the unrefunded payment balance.",
+      "version": "2026-01-20"
+    },
+    "b864550927277830bae4331c531f508eecdfb114dd77da8cfea0cf653f968182": {
+      "cap_cents": 100000,
+      "effective_at": "2026-07-01T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 30,
+      "text": "refund_cap_v4@2026-07-01: physical goods. #eligibility: damaged or changed_mind within 30 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+      "version": "2026-07-01"
+    },
+    "c34d599a1506521e23160c5e69a593b539fb8909e38838d856cda616a2230a8c": {
+      "events": [
+        {
+          "at": "2026-03-06T15:08:27Z",
+          "status": "shipped"
+        },
+        {
+          "at": "2026-03-10T15:08:27Z",
+          "status": "delivered"
+        }
+      ],
+      "observed_at": "2026-03-22T15:48:27+00:00",
+      "order_id": "o-0007"
+    },
+    "e9faa77e95b757562e58ca1270ec01a9c9f32f0206c83137b9f0130463624eae": {
+      "cap_cents": 90000,
+      "effective_at": "2026-05-01T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 30,
+      "text": "refund_cap_v4@2026-05-01: physical goods. #eligibility: damaged or changed_mind within 30 days of delivery; not_delivered if no delivery. #cap: at most 90000 cents and the unrefunded payment balance.",
+      "version": "2026-05-01"
+    }
+  }
+}

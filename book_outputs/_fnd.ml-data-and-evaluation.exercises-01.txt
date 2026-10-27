@@ -1,0 +1,16 @@
+exercise 3: precision 0.7500, recall 0.6667, F1 0.7059, accuracy 0.9750, false-positive rate 0.0105
+exercise 3, precision at a base rate of 0.005: 0.2424
+exercise 4, Wilson for 3 in 50: [0.0206, 0.1622]
+exercise 4, Wilson for 0 in 50: [0.0000, 0.0714]
+exercise 4, positives for recall near 0.8 within 0.05: 246
+exercise 4, requests at a base rate of 0.02, on average: 12,300
+exercise 5, median days since delivery: all 600 28.0, training 27.0
+exercise 5, July predictions that differ between the medians: 0 of 81
+exercise 6, manifest: {'name': 'golden-1-september', 'label_policy': '1', 'first': '2026-09-01', 'last': '2026-09-27', 'requests': 60, 'by_tier': {1: 15, 2: 16, 3: 29}, 'by_policy_version': {'2026-09-01': 60}, 'sha256': 'b8a8bafb1101c882', 'parent': 'golden-1', 'parent_sha256': 'a4b0ae12d8329eab'}
+exercise 6, requests before the cutoff plus the gap: 0, fingerprints recompute: slice True, parent True
+exercise 6, access log, entry 1 of 2: golden-1, stage 1 report, baseline and classifier
+exercise 6, access log, entry 2 of 2: golden-1-september, exercise 6, baseline and classifier, September slice
+exercise 6, tier 1: 15 requests, baseline errors 0 (0.000 to 0.204), forbidden 6, recall 1.00 (0.61 to 1.00), precision 0.50 (0.25 to 0.75)
+exercise 6, tier 2: 16 requests, baseline errors 0 (0.000 to 0.194), forbidden 13, recall 1.00 (0.77 to 1.00), precision 0.93 (0.69 to 0.99)
+exercise 6, tier 3: 29 requests, baseline errors 0 (0.000 to 0.117), forbidden 23, recall 1.00 (0.86 to 1.00), precision 0.92 (0.75 to 0.98)
+exercise 6, tier all: 60 requests, baseline errors 0 (0.000 to 0.060), forbidden 42, recall 1.00 (0.92 to 1.00), precision 0.82 (0.70 to 0.90)

@@ -1,0 +1,12 @@
+exercise 1: groups [1, 2], [8, 9]; centers [1.5, 8.5]; objective 2 then 1, four groups 0
+exercise 1b: group 4, observed rate 0.1712; the labels chose it
+exercise 2: soft-target gradient 0; equal three-candidate loss 1.0986
+exercise 3, step 1: groups [[0.0], [2.0, 10.0, 12.0]], objective 164; centers [0.0, 8.0], objective 56
+exercise 3, step 2: groups [[0.0, 2.0], [10.0, 12.0]], objective 24; centers [1.0, 11.0], objective 4
+exercise 3, step 3: groups [[0.0, 2.0], [10.0, 12.0]], objective 4; centers [1.0, 11.0], objective 4
+exercise 4a: 40 / (400 + 1600) = 0.020; at gate 0.080, referred at 0.100, paid at 0.020
+exercise 4b: temperature 1, loss 0.1698, gradient [-0.156, 0.114, 0.042]
+exercise 4b: temperature 0.5, loss 0.0206, gradient [-0.041, 0.036, 0.005]
+exercise 5: contaminated accuracies [0.795, 0.8, 0.801]; honest frozen-holdout accuracies [0.611, 0.616, 0.617]
+exercise 5: the pool slice was taken after round 1 and half its labels are guesses; replace that one evaluation defect with the frozen random holdout.
+exercise 6 reference, band [0.0181, 0.0544]: proposed 9277, share 1 0.0000, base rate 0.0362: stop before adding any; journal gains 0 entries

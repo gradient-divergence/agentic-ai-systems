@@ -1,0 +1,13 @@
+validation accepted as 0 before round 1: 890, wrong 26, rate 0.0292 (0.0200
+  to 0.0425)
+supervised: training loss 0.1289, validation loss 0.1683
+open: labeled base rate 0.0362; confidence 0.9, three rounds
+round  accepted  as 1  share 1  total pseudo  train loss  valid loss
+    1       869     0 0.0000          869      0.1228      0.1682
+    2         7     0 0.0000          876      0.1227      0.1681
+    3         0     0 0.0000          876      0.1227      0.1681
+refused tier 1: labeled base rate 0.0362; confidence 0.9, three rounds
+round  accepted  as 1  share 1  total pseudo  train loss  valid loss
+    1      9277     0 0.0000         9277      0.0806      0.1699
+    2       615     0 0.0000         9892      0.0792      0.1699
+    3         7     0 0.0000         9899      0.0792      0.1698

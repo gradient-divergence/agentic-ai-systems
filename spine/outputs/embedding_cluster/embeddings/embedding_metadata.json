@@ -1,0 +1,5 @@
+{
+  "model_type": "tfidf_svd",
+  "rows": 49998,
+  "embedding_dim": 128
+}

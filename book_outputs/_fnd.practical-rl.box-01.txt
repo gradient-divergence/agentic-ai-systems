@@ -1,0 +1,2 @@
+ratios 2, 1, 0.5; rewards 1, 0, 1
+IPS 0.833; SN 0.714; n_eff 2.333

@@ -1,0 +1,18 @@
+Constructed claims (excerpt)
+Already-delivered claims denied at once: 552
+fast: 700 claims, 148 paid, 8 contradicted
+rho_late 0.054054; Wilson 95% [0.027641, 0.103031]
+honest: 140 requests; mean 0.00 hours
+corrections by mode: {'executed': 8, 'shadow': 8}
+watermark: 700 claims, 144 paid, 4 contradicted
+rho_late 0.027778; Wilson 95% [0.010854, 0.069242]
+awaiting_absence: 148 requests
+honest: 140 requests; mean 9.06 hours
+corrections by mode: {'executed': 4, 'shadow': 4}
+final: 700 claims, 140 paid, 0 contradicted
+rho_late 0.000000; Wilson 95% [0.000000, 0.026706]
+awaiting_absence: 148 requests
+honest: 140 requests; mean 36.04 hours
+corrections by mode: {'executed': 0, 'shadow': 0}
+evidence_final: mean 36.06; longest 36.24 hours
+longest original scan delay 35.75 hours

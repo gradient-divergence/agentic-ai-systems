@@ -1,0 +1,14 @@
+silhouettes: [0.867, 0.846, 0.846, 0.867]; mean 0.856
+silhouettes: [0.857, 0.833, 0.0, 0.0]; mean 0.423
+Pr(first | x=4, x=5): [0.852, 0.5]
+density radius 1.5, min count 2: [[1, 2], [8, 9]]; noise []
+density radius 1.5, min count 3: []; noise [1, 2, 8, 9]
+refund: fit 15739; silhouette 1000 plotted rows; ten starts
+K  objective(full)  silhouette(plot)  adjusted Rand(full; seeds 7,17)
+2       19514.7455            0.3672  1.0000
+3       12363.5123            0.3997  0.9691
+4        7693.5354            0.4109  0.9968
+5        6492.8503            0.3859  0.9671
+6        5479.7361            0.3666  0.9974
+7        4625.6632            0.3810  0.9055
+8        3926.0323            0.3823  0.6910

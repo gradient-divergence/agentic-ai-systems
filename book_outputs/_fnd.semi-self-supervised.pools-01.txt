@@ -1,0 +1,5 @@
+history: 36,000; never paid: 18,296
+labeled by 1 August: 14,754 (training 13,766, validation 988)
+open paid pool before 1 August: 985
+refused before 1 August: 16,254; tier 1: 9,899; above tier 1: 6,355
+Refused requests above tier 1 are outside every labeled request's amount range.

@@ -1,0 +1,3 @@
+seven steps at 0.98: 0.868
+eight steps at 0.98: 0.851
+seven steps, one at 0.90: 0.797

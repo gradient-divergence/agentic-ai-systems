@@ -1,0 +1,22 @@
+scenario mu 0.5: pass@3 0.875000; mu 0.95: pass^5 0.773781
+box n=10, pass=3, k=5: 1-21/252=0.916667; plug-in 0.831930
+box n=10, pass=8, k=3: 56/120=0.466667; plug-in 0.512000
+| Suite | k | Exact pass@k | Estimate pass@k | Exact pass^k | Estimate pass^k |
+Pooled pass^k |
+|---|---:|---:|---:|---:|---:|---:|
+| A | 1 | 0.950000 | 0.950000 | 0.950000 | 0.950000 | 0.950000 |
+| A | 3 | 0.950000 | 0.950000 | 0.950000 | 0.950000 | 0.857375 |
+| A | 5 | 0.950000 | 0.950000 | 0.950000 | 0.950000 | 0.773781 |
+| A | 10 | 0.950000 | 0.950000 | 0.950000 | 0.950000 | 0.598737 |
+| B | 1 | 0.950000 | 0.938750 | 0.950000 | 0.938750 | 0.950000 |
+| B | 3 | 0.999875 | 0.999846 | 0.857375 | 0.826754 | 0.857375 |
+| B | 5 | 1.000000 | 1.000000 | 0.773781 | 0.727767 | 0.773781 |
+| B | 10 | 1.000000 | 1.000000 | 0.598737 | 0.530031 | 0.598737 |
+curves constructed; seed 7; 40 scenarios per suite; 20 trials per scenario; k 1
+through 10
+agent public effects: 40/40 on each of 5 trials; identical True;
+pass@5=pass^5=1.000000
+raw generated-label score 26/40; 15 tier 3 referrals, including 14
+deny-labelled cases; label comparison is separate from effect grading
+200 repeated deterministic public runs are 40 scenarios, not 200 independent
+new requests; this coverage suite bounds no live rate

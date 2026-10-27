@@ -1,0 +1,64 @@
+Constructed rollout settings; no deployed grant is issued.
+Plan: org-adoption-constructed-plan; signer: morgan; signed:
+  2026-10-28T00:00:00+00:00
+Hash namespace (constructed): org-adoption-fixed-hash; unchanged across steps.
+org-adoption-step-1 (constructed): requester share 25%; tiers (1, 2)
+Window (constructed): 2026-11-29T00:00:00+00:00 to 2026-12-13T00:00:00+00:00
+Closing snapshot (constructed): 2026-12-15T00:00:00+00:00; requests by received
+  time
+Threshold (constructed): governed share >= 99%; paid around path = 0
+Required (constructed reference): budget org-adoption-step-1-budget
+Required (constructed reference): approvals org-adoption-step-1-approvals
+Required (constructed reference): audit org-adoption-step-1-audit
+Audit period: 2026-10-01T00:00:00+00:00 to 2026-10-29T00:00:00+00:00; labels
+  mature 30 days later
+Required (constructed reference): queue org-adoption-step-1-queue
+Required (constructed reference): promotion org-adoption-step-1-promotion
+Owner (constructed): decision_owner=morgan; work: Sign the plan and each step's
+  evidence
+Owner (constructed): release_owner=morgan; work: Start and stop the grant,
+  preserving paid refunds
+Owner (constructed): reconciler=morgan; work: Reconcile daily and record each
+  cause, owner and disposition
+Owner (constructed): reviewer=alex; work: Decide every tier 2 proposal,
+  including denials
+Owner (constructed): absence_cover=morgan; work: Cover the reviewer's named
+  absent days
+Owner (constructed): named_approver=morgan; work: Decide every request over 500
+  dollars, including denials
+Manual route (constructed): authenticated review and audit; payment through
+  refund.execute
+org-adoption-step-2 (constructed): requester share 100%; tiers (1, 2)
+Window (constructed): 2027-01-14T00:00:00+00:00 to 2027-01-28T00:00:00+00:00
+Closing snapshot (constructed): 2027-01-30T00:00:00+00:00; requests by received
+  time
+Threshold (constructed): governed share >= 99%; paid around path = 0
+Required (constructed reference): budget org-adoption-step-2-budget
+Required (constructed reference): approvals org-adoption-step-2-approvals
+Required (constructed reference): audit org-adoption-step-2-audit
+Audit period: 2026-11-29T00:00:00+00:00 to 2026-12-13T00:00:00+00:00; labels
+  mature 30 days later
+Required (constructed reference): queue org-adoption-step-2-queue
+Required (constructed reference): promotion org-adoption-step-2-promotion
+Owner (constructed): decision_owner=morgan; work: Sign the plan and each step's
+  evidence
+Owner (constructed): release_owner=morgan; work: Start and stop the grant,
+  preserving paid refunds
+Owner (constructed): reconciler=morgan; work: Reconcile daily and record each
+  cause, owner and disposition
+Owner (constructed): reviewer=alex; work: Decide every tier 2 proposal,
+  including denials
+Owner (constructed): absence_cover=morgan; work: Cover the reviewer's named
+  absent days
+Owner (constructed): named_approver=morgan; work: Decide every request over 500
+  dollars, including denials
+Manual route (constructed): authenticated review and audit; payment through
+  refund.execute
+Rule (constructed): widen_rule = zero paid around and governed share at least
+  99 percent
+Rule (constructed): hold_rule = hold paid workaround, low share or absent
+  evidence; next window requires named change
+Rule (constructed): reverse_rule = forbidden payment, budget spent, tier2
+  payment without proposal-bound approval
+Structural fields: accepted
+Admission validation: hold; missing required record: org-adoption-step-1-budget

@@ -1,0 +1,7 @@
+Exercise 2: independent 0.2262; bound 0.2500
+Exercise 3: bound 0.0112; mean of 50 independent equals 0.0090; the lead of 0.006 is under both
+Exercise 3: a lead of 0.012 is over both, at 3.0 standard errors; by luck in one of 50 equals with chance 0.0653 if independent, at most 0.0675
+Exercise 4: 95% [-0.0392, -0.0008], accepted; split [-0.0420, 0.0020], not adopted; bound for 14 candidates 0.0225
+Exercise 4: a lead of 0.020 is 2.04 standard errors; by luck in one of 14 equals with chance 0.2535 if independent, at most 0.2893
+Exercise 5: 60 logged trials, 60 distinct, under a budget of 20; lowest loss of the first 20: 0.1666, of all 60: 0.1663; leads over the baseline's 0.1683: 0.0017 and 0.0019
+Exercise 5: bound on the expected best lead, in standard errors: 2.45 at 20 candidates, 2.86 at 60

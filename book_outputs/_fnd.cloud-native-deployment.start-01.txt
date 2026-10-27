@@ -1,0 +1,8 @@
+release: pass
+window: pass
+plan: pass
+error_budget: refused
+  error budget not named
+rehearsal: pass
+Canary: refused; binding remains shadow
+Promotion/scope checks join through selected start_checks hooks.

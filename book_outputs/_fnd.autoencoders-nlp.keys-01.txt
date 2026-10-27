@@ -1,0 +1,8 @@
+exercise 3: direction [0.6, 0.8]; code 5; reconstruction [3.0, 4.0]; squared error 0
+exercise 3: direction [0.0, 1.0]; code 4; reconstruction [0.0, 4.0]; squared error 9
+exercise 4: cosine 0.833
+exercise 4: recall@1 0.55; recall@3 0.85; Wilson [0.709, 0.929]
+exercise 6: rarity False; 20/20 boundary hits; out-of-interval 0; complete records True; 31-day read stale_policy; golden hits 242
+exercise 6 manifest: {"clauses": 12, "encoder": "f830d84abcbb66c7c398cf988657b40efefa85688048c8ca324d6ff1bfc2b61b", "observed_at": "2026-10-15T00:00:00+00:00", "policy_versions": ["2026-01-20", "2026-03-01", "2026-05-01", "2026-07-01", "2026-09-01", "2026-10-01"], "sha256": "e5fc7e4078a9ef03a4af389513123cc09edbda84400dce62be50800aaea38966"}
+exercise 6: rarity True; 20/20 boundary hits; out-of-interval 0; complete records True; 31-day read stale_policy; golden hits 242
+exercise 6 manifest: {"clauses": 12, "encoder": "f01c3b205c9079f8fd7d67e55791f1b498a13a9cd95d5ddcb1ca67d42b6be0d8", "observed_at": "2026-10-15T00:00:00+00:00", "policy_versions": ["2026-01-20", "2026-03-01", "2026-05-01", "2026-07-01", "2026-09-01", "2026-10-01"], "sha256": "b0dac794b9a6c36b568bde4f4269fbfa949c748323b43d20bf1f3008327d5f4d"}

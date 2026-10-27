@@ -1,0 +1,19 @@
+{
+  "n_clusters": 12,
+  "silhouette": -0.003571072047354847,
+  "cluster_sizes": [
+    1940,
+    2960,
+    14264,
+    1229,
+    5510,
+    10272,
+    2624,
+    864,
+    4140,
+    1607,
+    1460,
+    3128
+  ],
+  "output_dir": "foundations/companion/spine/outputs/embedding_cluster/clusters"
+}

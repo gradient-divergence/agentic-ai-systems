@@ -1,0 +1,9 @@
+constructed IT service desk; seed 7; 300 tickets, three queues; float64,
+  epsilon 0.00001
+minimum abs(hidden input): 0.000930257; entries whose nudge switched a unit: 0
+missing-gate training loss: 1.166706571 to 0.070292588
+W1: delegated gap 1.000e+00, corrected gap 1.131e-10
+b1: delegated gap 1.000e+00, corrected gap 1.805e-12
+W2: delegated gap 1.303e-09, corrected gap 1.303e-09
+b2: delegated gap 5.136e-11, corrected gap 5.136e-11
+decision: reject; corrected line: grad_u = grad_h * (f['u'] > 0)

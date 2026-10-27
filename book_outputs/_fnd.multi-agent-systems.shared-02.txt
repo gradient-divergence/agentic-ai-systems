@@ -1,0 +1,9 @@
+constructed probabilities; binary verdicts on matched cases
+simulation independent pair: seed 7; n 200000; exact 0.040000; observed
+  0.040040; SE 0.000438; deviation 0.091 SE
+simulation independent majority: seed 7; n 200000; exact 0.104000; observed
+  0.104275; SE 0.000683; deviation 0.403 SE
+simulation shared-cause majority: seed 7; n 200000; exact 0.130864; observed
+  0.130295; SE 0.000754; deviation -0.755 SE
+simulation identical errors: seed 7; n 200000; exact 0.200000; observed
+  0.201435; SE 0.000894; deviation 1.604 SE

@@ -1,0 +1,8 @@
+| Draft | Paid | Referred | Wrong payments paid | Cost per request | Saving |
+|---|---|---|---|---|---|
+| Placeholder rule | 999 | 0 | 37 (0.027 to 0.051) | 1.07 (0.72 to 1.44) | |
+| Tier | 880 | 119 | 12 (0.008 to | 0.80 (0.61 to | 0.27 (−0.01 to |
+| threshold, |  |  | 0.024) | 1.01) | 0.59) |
+| 0.080 |  |  |  |  |  |
+| Review-cost | 940 | 59 | 21 (0.015 to | 0.67 (0.46 to | 0.40 (0.13 to |
+| rule, \$4 |  |  | 0.034) | 0.89) | 0.71) |

@@ -1,0 +1,8 @@
+{
+  "data_quality_ok": true,
+  "model_eval_ok": true,
+  "policy_eval_ok": true,
+  "notes": [
+    "Capstone run generated metrics and policy eval."
+  ]
+}

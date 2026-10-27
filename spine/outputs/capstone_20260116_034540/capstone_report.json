@@ -1,0 +1,18 @@
+{
+  "data_rows": 10000,
+  "positive_rate": 0.6652,
+  "model_metrics": {
+    "accuracy": 0.836,
+    "roc_auc": 0.9113257575757577,
+    "model_type": "lightgbm"
+  },
+  "policy_metrics": {
+    "steps": 1000,
+    "average_reward": 0.376,
+    "promote_rate": 1.0,
+    "accuracy": 0.688,
+    "output_dir": "foundations/companion/spine/outputs/capstone_20260116_034540/policy_eval"
+  },
+  "metrics_path": "foundations/companion/spine/outputs/capstone_20260116_034540/ops/run_metrics.json",
+  "checklist_path": "foundations/companion/spine/outputs/capstone_20260116_034540/ops/governance_checklist.json"
+}

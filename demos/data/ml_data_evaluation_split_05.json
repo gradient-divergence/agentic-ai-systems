@@ -1,0 +1,36 @@
+{
+  "produced_by": "a data-preparation agent, asked for the refund agent's training set and golden set",
+  "data": "generate(7): 600 requests, 2026-01-21 to 2026-09-27",
+  "labels": {
+    "label_policy": "1",
+    "records": "the decision the refund policy required: outcome, amount, tier, reason, section",
+    "policy_version_used": "in force at each request's time"
+  },
+  "split": {
+    "order_by": "request time",
+    "gap_days": 0,
+    "training": {"from": "2026-01-21", "to": "2026-06-30", "requests": 398},
+    "validation": {"from": "2026-07-01", "to": "2026-07-31", "requests": 81},
+    "golden": {"from": "2026-08-01", "to": "2026-09-27", "requests": 121}
+  },
+  "inputs": [
+    {"name": "amount_cents", "record": "request"},
+    {"name": "reason", "record": "request"},
+    {"name": "balance_cents", "record": "order, as read at the request's time"},
+    {"name": "delivered", "record": "shipment, events at or before the request's time"},
+    {"name": "days_since_delivery", "record": "shipment, events at or before the request's time"},
+    {"name": "return_days", "record": "policy version in force at the request's time"},
+    {"name": "cap_cents", "record": "policy version in force at the request's time"}
+  ],
+  "fitted_statistics": [
+    {
+      "name": "median days_since_delivery, filled in where no delivered event was read",
+      "fitted_on": "all 600 requests",
+      "value": 28.0
+    }
+  ],
+  "golden_set": {
+    "sha256": "a4b0ae12d8329eab",
+    "access_log_entries": 0
+  }
+}

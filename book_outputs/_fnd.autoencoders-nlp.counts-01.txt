@@ -1,0 +1,14 @@
+clauses: 10; vocabulary: 26
+vocabulary: 100000, 14, 21, 30, 45, 75000, 80000, 90000, and, at, balance,
+  cents, changed_mind, damaged, days, delivery, if, most, no, not_delivered,
+  of, or, payment, the, unrefunded, within
+refund_cap_v4@2026-01-20#eligibility vs refund_cap_v4@2026-03-01#eligibility:
+  0.929
+refund_cap_v4@2026-05-01#eligibility vs refund_cap_v4@2026-07-01#eligibility:
+  1.000
+refund_cap_v4@2026-01-20#eligibility vs refund_cap_v4@2026-01-20#cap: 0.000
+question vs refund_cap_v4@2026-01-20#eligibility: 0.617
+question vs refund_cap_v4@2026-03-01#eligibility: 0.617
+question vs refund_cap_v4@2026-05-01#eligibility: 0.617
+question vs refund_cap_v4@2026-07-01#eligibility: 0.617
+question vs refund_cap_v4@2026-09-01#eligibility: 0.617

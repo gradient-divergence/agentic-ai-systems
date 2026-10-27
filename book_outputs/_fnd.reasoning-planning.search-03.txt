@@ -1,0 +1,164 @@
+Network; unit costs; FIFO ties; popped goals are not expanded.
+Duplicate fact states are not re-added; h+ work is excluded from totals.
+
+BFS
+
+Expansion 1: N0; g=0; h+=4; f=4
+  prefix: start
+  facts: backup_up, leased_up, link_up, traffic_on_link
+  reroute: child added N1; h+=4
+  reroute_leased: duplicate state, not added; held by N1
+  check_idle: refused: needs traffic_on_backup
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: refused: needs traffic_on_backup
+
+Expansion 2: N1; g=1; h+=4; f=5
+  prefix: reroute
+  facts: backup_up, leased_up, link_up, traffic_on_backup
+  reroute: duplicate state, not added; held by N1
+  reroute_leased: duplicate state, not added; held by N1
+  check_idle: child added N2; h+=3
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: duplicate state, not added; held by N0
+
+Expansion 3: N2; g=2; h+=3; f=5
+  prefix: reroute -> check_idle
+  facts: backup_up, leased_up, link_idle, link_up, traffic_on_backup
+  reroute: duplicate state, not added; held by N2
+  reroute_leased: duplicate state, not added; held by N2
+  check_idle: duplicate state, not added; held by N2
+  take_down: child added N3; h+=3
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: duplicate state, not added; held by N0
+
+Expansion 4: N3; g=3; h+=3; f=6
+  prefix: reroute -> check_idle -> take_down
+  facts: backup_up, leased_up, link_down, link_idle, traffic_on_backup
+  reroute: refused: needs link_up
+  reroute_leased: refused: needs link_up
+  check_idle: duplicate state, not added; held by N3
+  take_down: duplicate state, not added; held by N3
+  replace_optic: child added N4; h+=2
+  bring_up: refused: needs optic_new
+  restore: refused: needs link_up
+
+Expansion 5: N4; g=4; h+=2; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic
+  facts: backup_up, leased_up, link_down, link_idle, optic_new,
+    traffic_on_backup
+  reroute: refused: needs link_up
+  reroute_leased: refused: needs link_up
+  check_idle: duplicate state, not added; held by N4
+  take_down: duplicate state, not added; held by N4
+  replace_optic: duplicate state, not added; held by N4
+  bring_up: child added N5; h+=1
+  restore: refused: needs link_up
+
+Expansion 6: N5; g=5; h+=1; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic -> bring_up
+  facts: backup_up, leased_up, link_up, optic_new, traffic_on_backup
+  reroute: duplicate state, not added; held by N5
+  reroute_leased: duplicate state, not added; held by N5
+  check_idle: child added N6; h+=1
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: child added N7; h+=0
+
+Expansion 7: N6; g=6; h+=1; f=7
+  prefix: reroute -> check_idle -> take_down -> replace_optic -> bring_up ->
+    check_idle
+  facts: backup_up, leased_up, link_idle, link_up, optic_new, traffic_on_backup
+  reroute: duplicate state, not added; held by N6
+  reroute_leased: duplicate state, not added; held by N6
+  check_idle: duplicate state, not added; held by N6
+  take_down: duplicate state, not added; held by N4
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: duplicate state, not added; held by N7
+
+Goal popped: N7; g=6; h+=0; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic -> bring_up ->
+    restore
+  facts: backup_up, leased_up, link_up, optic_new, traffic_on_link
+Totals: expanded=7; calls=6
+
+A* (h+)
+
+Expansion 1: N0; g=0; h+=4; f=4
+  prefix: start
+  facts: backup_up, leased_up, link_up, traffic_on_link
+  reroute: child added N1; h+=4
+  reroute_leased: duplicate state, not added; held by N1
+  check_idle: refused: needs traffic_on_backup
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: refused: needs traffic_on_backup
+
+Expansion 2: N1; g=1; h+=4; f=5
+  prefix: reroute
+  facts: backup_up, leased_up, link_up, traffic_on_backup
+  reroute: duplicate state, not added; held by N1
+  reroute_leased: duplicate state, not added; held by N1
+  check_idle: child added N2; h+=3
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: duplicate state, not added; held by N0
+
+Expansion 3: N2; g=2; h+=3; f=5
+  prefix: reroute -> check_idle
+  facts: backup_up, leased_up, link_idle, link_up, traffic_on_backup
+  reroute: duplicate state, not added; held by N2
+  reroute_leased: duplicate state, not added; held by N2
+  check_idle: duplicate state, not added; held by N2
+  take_down: child added N3; h+=3
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: duplicate state, not added; held by N0
+
+Expansion 4: N3; g=3; h+=3; f=6
+  prefix: reroute -> check_idle -> take_down
+  facts: backup_up, leased_up, link_down, link_idle, traffic_on_backup
+  reroute: refused: needs link_up
+  reroute_leased: refused: needs link_up
+  check_idle: duplicate state, not added; held by N3
+  take_down: duplicate state, not added; held by N3
+  replace_optic: child added N4; h+=2
+  bring_up: refused: needs optic_new
+  restore: refused: needs link_up
+
+Expansion 5: N4; g=4; h+=2; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic
+  facts: backup_up, leased_up, link_down, link_idle, optic_new,
+    traffic_on_backup
+  reroute: refused: needs link_up
+  reroute_leased: refused: needs link_up
+  check_idle: duplicate state, not added; held by N4
+  take_down: duplicate state, not added; held by N4
+  replace_optic: duplicate state, not added; held by N4
+  bring_up: child added N5; h+=1
+  restore: refused: needs link_up
+
+Expansion 6: N5; g=5; h+=1; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic -> bring_up
+  facts: backup_up, leased_up, link_up, optic_new, traffic_on_backup
+  reroute: duplicate state, not added; held by N5
+  reroute_leased: duplicate state, not added; held by N5
+  check_idle: child added N6; h+=1
+  take_down: refused: needs link_idle
+  replace_optic: refused: needs link_down
+  bring_up: refused: needs link_down
+  restore: child added N7; h+=0
+
+Goal popped: N7; g=6; h+=0; f=6
+  prefix: reroute -> check_idle -> take_down -> replace_optic -> bring_up ->
+    restore
+  facts: backup_up, leased_up, link_up, optic_new, traffic_on_link
+Totals: expanded=6; calls=6

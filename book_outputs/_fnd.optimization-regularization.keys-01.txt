@@ -1,0 +1,18 @@
+exercise 1: loss doubles, eta*c 2.414214 (eta>0); level alternating 2.000000; loss falls 1%, same side 0.005013
+exercise 2: standardizing and penalty change curvature; Adam and warmup change the step
+Adam first step approaches eta for a nonzero gradient as delta -> 0; a zero gradient does not move
+exercise 3: limit 0.222222, condition 36
+eta 0.111111: flat-direction factor 0.972222, 82 steps for tenfold distance reduction
+eta 0.216216: flat-direction factor 0.945946, 42 steps for tenfold distance reduction
+standardized: curvatures 1, 1; eta 1, one step
+exercise 4: Adam 1.900000, penalty 1.900000, decoupled 1.860000
+uncorrected first step 0.316228
+exercise 5: curvatures 9, 0.25; steep factor -0.999500; distance lost per update 0.050000%
+rerun eta 0.111111, 60 steps: loss 0.068061
+exercise 6, Adam with decoupled decay; seed 7, eta 0.01, 2000 steps
+lambda: training loss, validation loss (validation spent on comparison)
+0: 0.098477, 6.008191
+0.01: 0.098478, 5.979392
+0.1: 0.098565, 5.727312
+exercise 6 judgment: validation chooses lambda 0.1, the lowest of these three losses
+selection spent validation; estimate new-data loss on an untouched test window

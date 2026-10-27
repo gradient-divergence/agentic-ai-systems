@@ -1,0 +1,10 @@
+constructed parcel: lost 0.100, daily delivery 0.600
+amount 49.99, waiting price 3.00, compulsory pay day 10, discount 1
+day | lost belief | next-day scan probability
+0 | 0.100 | 0.540
+1 | 0.217 | 0.470
+2 | 0.410 | 0.354
+3 | 0.635 | 0.219
+4 | 0.813 | 0.112
+5 | 0.916 | 0.051
+6 | 0.964 | 0.021

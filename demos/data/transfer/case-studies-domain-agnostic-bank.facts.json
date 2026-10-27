@@ -1,0 +1,233 @@
+{
+  "domain": "bank",
+  "constructed": true,
+  "sources": [
+    {
+      "name": "card.lookup",
+      "refund_role": "order.lookup",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.01,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "alert.read",
+      "refund_role": "shipment.status",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.01,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "rules.retrieve",
+      "refund_role": "policy.retrieve",
+      "observed_at": "versioned document",
+      "rate_per_hour": null,
+      "basis": "version currency, as chapters 23 and 30",
+      "version_checked": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "clear",
+      "role": "execute",
+      "effect": "write",
+      "reversible": false,
+      "undo_seconds": null,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "40000",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "refer",
+      "role": "refer",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "5400",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "hold",
+      "role": "protect",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 300.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "1400",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "account.close",
+      "role": "close",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 259200.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": null,
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "card.lookup",
+      "role": "order.lookup",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "alert.read",
+      "role": "shipment.status",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "rules.retrieve",
+      "role": "policy.retrieve",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "case.open",
+      "role": "refund.propose",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "approval.request",
+      "role": "approval.request",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "audit.append",
+      "role": "audit.append",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    }
+  ],
+  "actions_on_score": [
+    "clear",
+    "refer",
+    "hold"
+  ],
+  "cost_matrix": {
+    "outcomes": [
+      "legitimate",
+      "fraudulent"
+    ],
+    "entries": {
+      "clear": [
+        "0",
+        "400"
+      ],
+      "refer": [
+        "4",
+        "54"
+      ],
+      "hold": [
+        "14",
+        "4"
+      ]
+    },
+    "unit": "dollars per card",
+    "basis": "constructed card-level costs; $4 review + $150/hour during chapter 37 mm1(12,15).W"
+  },
+  "base_rate": "1/100",
+  "tolerance": 0.01,
+  "shared_resources": [],
+  "roles": {
+    "decision_owner": "fraud decision owner",
+    "release_owner": "fraud release owner",
+    "reviewer": "fraud analyst",
+    "named_approver": "fraud operations manager"
+  },
+  "role_map": {
+    "order.lookup": "card.lookup",
+    "shipment.status": "alert.read",
+    "policy.retrieve": "rules.retrieve",
+    "refund.propose": "case.open",
+    "refund.execute": "clear",
+    "pay": "clear",
+    "refer": "refer",
+    "approval.request": "approval.request",
+    "audit.append": "audit.append"
+  },
+  "label_windows": {
+    "card_fraud": 5184000.0
+  },
+  "clocks": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "analyst review",
+      "kind": "review",
+      "seconds": 1200.0,
+      "basis": "chapter 37 mm1(12,15).W * 3600; constructed arrivals and service per hour"
+    },
+    {
+      "name": "card hold",
+      "kind": "undo",
+      "seconds": 300.0,
+      "basis": "chapter 3: minutes, constructed as 5"
+    },
+    {
+      "name": "account closure",
+      "kind": "undo",
+      "seconds": 259200.0,
+      "basis": "chapter 3: days, constructed as 3"
+    },
+    {
+      "name": "card fraud / chargeback",
+      "kind": "outcome",
+      "seconds": 5184000.0,
+      "basis": "constructed, given in chapter 40"
+    }
+  ],
+  "planted_checks": [
+    "rule"
+  ],
+  "notes": [
+    "Score: probability a card is in fraudulent use within 60 days, given recent payments.",
+    "The flagged-payment precision 4/37 transfers only under this constructed card-level definition.",
+    "Human Oversight and Risk Management's mm1(12,15).W supplies the 20-minute review-open time; referral costs $4 per card, plus $150 times W if fraudulent, with W in hours; an unstable queue is refused.",
+    "Account closure is level 2, decided by the named approver."
+  ]
+}

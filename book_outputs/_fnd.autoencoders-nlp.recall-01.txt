@@ -1,0 +1,26 @@
+chosen on July: counts; k=3; ties prefer counts
+golden: 121 requests, 242 questions per wording; one consultation
+each comparison simulates a fresh policy read 3600 seconds before use
+reconstruction: mean squared row error on the ten centered clause vectors
+window | wording | representation | reconstruction | no dates R@1 | no dates R@3 | dated R@1 | dated R@3 | no dates MRR
+July | policy | counts | -- | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 162/162 = 1.000 [0.977, 1.000] | 162/162 = 1.000 [0.977, 1.000] | 0.000
+July | policy | linear-1 | 0.719541 | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 162/162 = 1.000 [0.977, 1.000] | 162/162 = 1.000 [0.977, 1.000] | 0.000
+July | policy | linear-2 | 0.559541 | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 162/162 = 1.000 [0.977, 1.000] | 162/162 = 1.000 [0.977, 1.000] | 0.000
+July | customer | counts | -- | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 81/162 = 0.500 [0.424, 0.576] | 81/162 = 0.500 [0.424, 0.576] | 0.000
+July | customer | linear-1 | 0.719541 | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 81/162 = 0.500 [0.424, 0.576] | 0.000
+July | customer | linear-2 | 0.559541 | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 0/162 = 0.000 [0.000, 0.023] | 81/162 = 0.500 [0.424, 0.576] | 0.000
+golden | policy | counts | -- | 0/242 = 0.000 [0.000, 0.016] | 1/242 = 0.004 [0.001, 0.023] | 242/242 = 1.000 [0.984, 1.000] | 242/242 = 1.000 [0.984, 1.000] | 0.002
+golden | policy | linear-1 | 0.719541 | 0/242 = 0.000 [0.000, 0.016] | 0/242 = 0.000 [0.000, 0.016] | 242/242 = 1.000 [0.984, 1.000] | 242/242 = 1.000 [0.984, 1.000] | 0.000
+golden | policy | linear-2 | 0.559541 | 0/242 = 0.000 [0.000, 0.016] | 60/242 = 0.248 [0.198, 0.306] | 242/242 = 1.000 [0.984, 1.000] | 242/242 = 1.000 [0.984, 1.000] | 0.083
+golden | customer | counts | -- | 0/242 = 0.000 [0.000, 0.016] | 1/242 = 0.004 [0.001, 0.023] | 121/242 = 0.500 [0.437, 0.563] | 121/242 = 0.500 [0.437, 0.563] | 0.002
+golden | customer | linear-1 | 0.719541 | 0/242 = 0.000 [0.000, 0.016] | 0/242 = 0.000 [0.000, 0.016] | 0/242 = 0.000 [0.000, 0.016] | 121/242 = 0.500 [0.437, 0.563] | 0.000
+golden | customer | linear-2 | 0.559541 | 0/242 = 0.000 [0.000, 0.016] | 0/242 = 0.000 [0.000, 0.016] | 0/242 = 0.000 [0.000, 0.016] | 121/242 = 0.500 [0.437, 0.563] | 0.000
+golden | policy | counts | no dates: 1 top-3 hits, 0 first; 1 tie with the clause listed above
+golden | policy | linear-2 | no dates: 60 top-3 hits, 0 first; 60 tie with the clause listed above
+golden | customer | counts | no dates: 1 top-3 hits, 0 first; 1 tie with the clause listed above
+arithmetic check: 242/242 = 1.000 [0.984, 1.000]
+arithmetic check: 0/242 = 0.000 [0.000, 0.016]
+arithmetic check: 18/20 = 0.900 [0.699, 0.972]
+pair-trained comparison omitted: Chapter 6 trains no encoder
+Wilson intervals treat questions as Bernoulli trials; two questions share each request
+access log: [{"entry": 1, "purpose": "report the fixed encoders and date filters", "reader": "representations-demo", "set": "golden-1"}]

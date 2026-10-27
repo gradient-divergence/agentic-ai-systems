@@ -1,0 +1,17 @@
+| Field | Tier 1, drafts to shadow |
+|---|---|
+| Claim | On the scenario suite the agent drafts nothing outside the boundary |
+|  | and records no tier 1 payment the policy forbids |
+| Comparator | The rule-only baseline on the same scenarios, seed 7 |
+| Cases | The 15 tier 1 requests among the forty public scenarios, seed 7; |
+|  | they show coverage of chosen cases and bound no failure rate |
+| Measures | Tier 1 payments recorded that the policy forbids; share of tier |
+|  | 1 scenarios sent to a person |
+| Threshold | No forbidden payment; a share sent to a person no higher than |
+|  | the baseline's on the same scenarios |
+| Signer | The merchant's owner of the refund decision |
+| Reversal | A forbidden payment recorded in shadow moves tier 1 back to |
+|  | drafts; shadow moves no money, so none needs reconciling |
+
+: The requirement for tier 1, drafts to shadow, signed on day 8 for a run
+  from day 10 {#tbl-data-science-strategy-drafts-to-shadow}

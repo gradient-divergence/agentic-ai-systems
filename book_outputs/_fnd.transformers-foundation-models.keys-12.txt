@@ -1,0 +1,27 @@
+LSTM exercise, constructed givens: x=0.5; h0=0.0; c0=0.0
+order: forget, input, output, candidate; no peepholes
+W_x=[1.0, 1.0, 1.0, 1.0]; W_h=[0.25, 0.25, 0.25, 0.25]
+biases=[0.0, -0.5, 0.0, 0.0]
+cell-path givens: forget held at 0.9; steps=20
+LSTM key gates: forget=0.622; input=0.500; output=0.622
+LSTM key values: candidate=0.462; cell=0.231; state=0.141
+cell-path key: 0.121577
+In-context exercise, constructed givens: d_k=1; query=0.5
+W_Q=W_K=W_V=[1]; keys equal inputs; values equal labels
+demonstration inputs: 0.0 1.0 2.0
+first labels: 2.0 4.0 8.0
+second labels: 2.0 10.0 8.0; only the middle label changed
+first key weights: 0.186324 0.307196 0.506480
+first key prediction: 5.653274
+second key weights: 0.186324 0.307196 0.506480
+second key prediction: 7.496449
+Attention weights and projection weights are unchanged.
+Serving exercise, illustrative givens:
+L=12; H=12; d_k=d_v=64; d=768; d_ff=3072; tokens/request=4096
+weight b=2 and 1; cache b=2 fixed; memory=2147483648 bytes (2 GiB)
+tail givens: calls=20; independent slow chance=1/50
+key matrix weights: 84934656
+key cache/request: 150994944 bytes; MiB=144.000
+key b=2: weights=169869312 bytes; MiB=162.000; bytes left=1977614336; n_req=13
+key b=1: weights=84934656 bytes; MiB=81.000; bytes left=2062548992; n_req=13
+key tail chance: 0.332392; percent=33.239

@@ -1,0 +1,3 @@
+Month: passing denial explanations 661/661.
+Forty public scenarios: passing denial explanations 5/5.
+Two-clause and exhausted-balance record checks: see checks-01.

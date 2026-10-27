@@ -1,0 +1,17 @@
+Constructed join: live request times; generated carrier delays/copies.
+Generated person/30-day labels stand in immediately; blind to agent.
+Frozen eligible request identifiers in arrival order: 299
+Terminal decisions awaited: 299
+Forbidden payments: 0
+Referral share: agent 87/299; baseline 87/299
+Wrongful denials: agent 0; baseline 0
+forbidden_payments: pass
+referral_share: pass
+wrongful_denials: pass
+Measures: pass
+Decision-owner signature: morgan 2026-10-10 22:32:58+00:00
+Deployed labels mature at: 2026-11-09T22:32:57+00:00
+Suite: 334 cases; sha256:
+272f37cf0363301d75394b02015ec06d9675eb9dbf120a69c7e871e89fced589
+Candidate sha256:
+85adf7398b8f42a5c495b0ce4b6007252fc37f9d518f1b97ed60eee3324e1ad5

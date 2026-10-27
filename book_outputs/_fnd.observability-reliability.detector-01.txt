@@ -1,0 +1,10 @@
+Constructed: three regions, 5.555556 scans/hour each; window 672 hours
+tolerance .1/region/window: threshold 1.894976 hours
+quiet 1 hours: expected false pages 14.432769
+quiet 2 hours: expected false pages 0.055796
+last-arrival page 2026-10-05T22:13:56.121708+00:00
+region 0: replayed pages 0
+region 1: replayed pages 0
+region 2: replayed pages 1
+observed gap 48.004969 hours; one page per gap
+regional stale-age alternative: 44.444444 referrals (forecast)

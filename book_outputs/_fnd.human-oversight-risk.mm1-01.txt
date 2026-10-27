@@ -1,0 +1,29 @@
+Constructed M/M/1; hours; homogeneous Poisson arrivals,
+independent exponential service, continuous FCFS, unlimited queue.
+bank lambda=12 mu=15: u=0.800
+  p0=0.200 L=4.000
+  W=0.333h wait=0.267h
+  P(T>1h)=0.049787
+  Little relative gap=0
+  P(wait>1h)=0.039830
+reviewer lambda=1 mu=2: u=0.500
+  p0=0.500 L=1.000
+  W=1.000h wait=0.500h
+  P(T>4h)=0.018316
+  Little relative gap=0
+  P(wait>4h)=0.009158
+reviewer lambda=1.5 mu=2: u=0.750
+  p0=0.250 L=3.000
+  W=2.000h wait=1.500h
+  P(T>4h)=0.135335
+  Little relative gap=0
+  P(wait>4h)=0.101501
+reviewer lambda=1.8 mu=2: u=0.900
+  p0=0.100 L=9.000
+  W=5.000h wait=4.500h
+  P(T>4h)=0.449329
+  Little relative gap=0
+  P(wait>4h)=0.404396
+bank lambda=18 mu=15: unstable
+  stationary u,p0,L,W,W_wait: None None None None None
+At 4.4 reviews/h the available minutes each are 13.636

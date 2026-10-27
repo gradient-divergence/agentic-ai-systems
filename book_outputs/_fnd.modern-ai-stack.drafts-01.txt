@@ -1,0 +1,8 @@
+request r-7-0007: 3800 cents, changed_mind, order o-0007
+as sent: balance 4200 cents; approve, tier 1, eligible
+  cites refund_cap_v4@2026-03-01#eligibility
+renamed field: data load stopped, 0 of 600 drafted
+  orders.7.paid_cents: Field required
+  orders.7.amount_paid_cents: Extra inputs are not permitted
+in dollars: balance 42 cents; deny, tier 1, amount_over_policy
+  cites refund_cap_v4@2026-03-01#cap

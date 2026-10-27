@@ -1,0 +1,10 @@
+name: history-august
+label_policy: outcome-1
+first: 2026-08-01
+last: 2026-08-31
+requests: 999
+by_tier: {1: 999}
+by_policy_version: {'2026-07-01': 999}
+sha256: a7a7cf68978cc0c8
+access log, every entry:
+  1: history-august, stage 1 report, the proposed score's August record

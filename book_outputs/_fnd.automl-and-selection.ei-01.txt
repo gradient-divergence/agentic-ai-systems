@@ -1,0 +1,2 @@
+given best 0.1666: EI(A)=0.00060; EI(B)=0.00092
+try B next (larger expected improvement)

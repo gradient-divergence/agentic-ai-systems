@@ -1,0 +1,14 @@
+Operating held-decision record: unavailable; launched bundle and packet absent.
+Stage 6 authority: unavailable; no grants fabricated. Signed by: nobody.
+condition | withdraws | returns to | owner roles | mechanism
+forbidden_payment | tier1 | tier 1 shadow; a person decides | decision_owner | observe.monitor:forbidden_payment
+budget_spent | tier1 | tier 1 shadow; new candidate needs a new canary | decision_owner | observe.monitor:budget_spent
+tier2_unbound_approval | tier2 | a person decides; the agent drafts | decision_owner | launch.scan:tier2_unbound_approval
+tier3_without_named_approver | all | a person decides up to $500; named
+  approver decides every request over $500, denials included | release_owner |
+  launch.scan:tier3_without_named_approver
+launch_gate_held | launch | stage 6 under its own conditions | decision_owner, release_owner | promotion.registry:launch_gate
+Payments already made stand under every reversal.
+The first four conditions govern stage 6; the fifth governs a signed launch.
+Open joins: monthly audit, daily reconciliation and budget monitor with their actual owners.
+A replacement model shown better than rules would require a new decision and gate.

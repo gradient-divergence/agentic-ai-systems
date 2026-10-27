@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-09-15T00:00:00+00:00",
+  "counts": {
+    "distinct": 121,
+    "kept": 196,
+    "overruled": 89,
+    "proposed": 200,
+    "rejected": 4,
+    "unseen_in_training": 23
+  },
+  "failure_values": [
+    "none",
+    "ambiguous_order",
+    "cached_policy",
+    "stale_carrier",
+    "stale_retrieval",
+    "hidden_instruction"
+  ],
+  "golden_reads": 0,
+  "human_review": {
+    "sample_size": 5,
+    "seed": 31,
+    "status": "pending"
+  },
+  "model_sha256": "b5080b7eff51296812cf70a0d09bf8a908785cb45d3aa2f4dffa1dc7d91205ff",
+  "number_drawn": 200,
+  "origin": "generated",
+  "policy_version": "2026-09-01",
+  "seed": 7,
+  "tau": 1,
+  "training": {
+    "cut": "2026-07-01T00:00:00+00:00",
+    "first": "2026-01-21T05:38:37+00:00",
+    "last": "2026-06-30T05:27:53+00:00",
+    "policy_versions": [
+      "2026-01-20",
+      "2026-03-01",
+      "2026-05-01"
+    ],
+    "records_sha256": "65dfbf683fc4334a03a61141fe40bf8098099cdb7c5e792e6d2d2d72e3c6da62",
+    "requests": 395,
+    "seed": 7,
+    "sha256": "abdedf006cf639d4efc847b3694d5583fd8fb9a09142199dad020b5ab2fa4b0b"
+  },
+  "training_sha256": "abdedf006cf639d4efc847b3694d5583fd8fb9a09142199dad020b5ab2fa4b0b"
+}

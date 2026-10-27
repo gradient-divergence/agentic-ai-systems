@@ -1,0 +1,3 @@
+public scenarios: 40
+refund.execute attempts: 4, refused by the gate: 0
+payments: 4, against the generated labels: 0

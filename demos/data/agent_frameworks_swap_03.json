@@ -1,0 +1,1439 @@
+{
+  "cases": [
+    {
+      "allowed_cents": 2499,
+      "case_id": "public-r-7-0007",
+      "different_fields": [],
+      "kind": "public",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    },
+    {
+      "allowed_cents": 0,
+      "case_id": "refusal-4-ambiguous_order",
+      "different_fields": [],
+      "kind": "refusal",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "refer",
+              "policy_citation": null,
+              "reason": "ambiguous_order",
+              "request_id": "r-7-0000",
+              "tier": 1
+            },
+            "event": "decision",
+            "failure_detail": "ambiguous_order",
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": null,
+            "reason": "ambiguous_order",
+            "receipt_id": null
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "refer",
+          "policy_citation": null,
+          "reason": "ambiguous_order",
+          "request_id": "r-7-0000",
+          "tier": 1
+        },
+        "executed": false,
+        "failure_detail": "ambiguous_order",
+        "ledger_receipts": [],
+        "outcome": "refer",
+        "reason": "ambiguous_order",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "refer",
+              "policy_citation": null,
+              "reason": "ambiguous_order",
+              "request_id": "r-7-0000",
+              "tier": 1
+            },
+            "event": "decision",
+            "failure_detail": "ambiguous_order",
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": null,
+            "reason": "ambiguous_order",
+            "receipt_id": null
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "refer",
+          "policy_citation": null,
+          "reason": "ambiguous_order",
+          "request_id": "r-7-0000",
+          "tier": 1
+        },
+        "executed": false,
+        "failure_detail": "ambiguous_order",
+        "ledger_receipts": [],
+        "outcome": "refer",
+        "reason": "ambiguous_order",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    },
+    {
+      "allowed_cents": 2499,
+      "case_id": "execute-before",
+      "different_fields": [
+        "decision",
+        "outcome",
+        "reason",
+        "executed",
+        "tool_calls",
+        "ledger_receipts",
+        "audits",
+        "failure_detail"
+      ],
+      "kind": "fault",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "refer",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "tool_error",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "decision",
+            "failure_detail": "tool_error:refund.execute:TimeoutError",
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "tool_error",
+            "receipt_id": null
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "refer",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "tool_error",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": false,
+        "failure_detail": "tool_error:refund.execute:TimeoutError",
+        "ledger_receipts": [],
+        "outcome": "refer",
+        "reason": "tool_error",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    },
+    {
+      "allowed_cents": 2499,
+      "case_id": "execute-after",
+      "different_fields": [
+        "tool_calls",
+        "audits",
+        "failure_detail"
+      ],
+      "kind": "fault",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": "tool_error:refund.execute:TimeoutError",
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": "tool_error:refund.execute:TimeoutError",
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    },
+    {
+      "allowed_cents": 2499,
+      "case_id": "shipment-timeout",
+      "different_fields": [
+        "decision",
+        "outcome",
+        "reason",
+        "executed",
+        "tool_calls",
+        "ledger_receipts",
+        "audits",
+        "failure_detail"
+      ],
+      "kind": "fault",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "refer",
+              "policy_citation": null,
+              "reason": "tool_error",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "decision",
+            "failure_detail": "tool_error:shipment.status:TimeoutError",
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": null,
+            "reason": "tool_error",
+            "receipt_id": null
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "refer",
+          "policy_citation": null,
+          "reason": "tool_error",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": false,
+        "failure_detail": "tool_error:shipment.status:TimeoutError",
+        "ledger_receipts": [],
+        "outcome": "refer",
+        "reason": "tool_error",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    },
+    {
+      "allowed_cents": 2499,
+      "case_id": "budget-four",
+      "different_fields": [
+        "decision",
+        "outcome",
+        "reason",
+        "executed",
+        "tool_calls",
+        "ledger_receipts",
+        "audits"
+      ],
+      "kind": "fault",
+      "named_denial": false,
+      "own": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "refer",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "step_budget_exhausted",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "decision",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": null,
+            "reason": "step_budget_exhausted",
+            "receipt_id": null
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": false,
+          "outcome": "refer",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "step_budget_exhausted",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": false,
+        "failure_detail": null,
+        "ledger_receipts": [],
+        "outcome": "refer",
+        "reason": "step_budget_exhausted",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      },
+      "second": {
+        "amount_cents": 2499,
+        "audits": [
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": false,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "intent",
+            "failure_detail": null,
+            "money_moved": false,
+            "paid_amount_cents": 0,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": null
+          },
+          {
+            "approval_ids": [],
+            "decision": {
+              "amount_cents": 2499,
+              "executed": true,
+              "outcome": "approve",
+              "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+              "reason": "eligible",
+              "request_id": "r-7-0007",
+              "tier": 1
+            },
+            "event": "confirmation",
+            "failure_detail": null,
+            "money_moved": true,
+            "paid_amount_cents": 2499,
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "reason": "eligible",
+            "receipt_id": "refund-r-7-0007"
+          }
+        ],
+        "decision": {
+          "amount_cents": 2499,
+          "executed": true,
+          "outcome": "approve",
+          "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+          "reason": "eligible",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        "executed": true,
+        "failure_detail": null,
+        "ledger_receipts": [
+          {
+            "amount_cents": 2499,
+            "approvals": [],
+            "idempotency_key": "execute-r-7-0007",
+            "order_id": "o-0007",
+            "policy_version": "2026-03-01",
+            "proposal_id": "proposal-1a500fb604bde3c7e4a7eabc",
+            "receipt_id": "refund-r-7-0007",
+            "request_id": "r-7-0007"
+          }
+        ],
+        "outcome": "approve",
+        "reason": "eligible",
+        "tier": 1,
+        "tool_calls": [
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "order.lookup"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "shipment.status"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "policy.retrieve"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.propose"
+          },
+          {
+            "arguments": {
+              "amount_cents": 2499,
+              "approval_id": null,
+              "idempotency_key": "execute-r-7-0007",
+              "order_id": null,
+              "reason": "changed_mind"
+            },
+            "name": "refund.execute"
+          },
+          {
+            "arguments": {
+              "amount_cents": null,
+              "approval_id": null,
+              "idempotency_key": null,
+              "order_id": null,
+              "reason": ""
+            },
+            "name": "audit.append"
+          }
+        ]
+      }
+    }
+  ],
+  "configuration": "referral ending",
+  "fields_compared": [
+    "decision",
+    "outcome",
+    "reason",
+    "tier",
+    "amount_cents",
+    "executed",
+    "tool_calls",
+    "ledger_receipts",
+    "audits",
+    "failure_detail"
+  ],
+  "settings": {
+    "agent_budget": false,
+    "end_at_audit": true,
+    "max_steps": 12,
+    "no_retry": false,
+    "one_tool_per_phase": true,
+    "refer_on_failure": true,
+    "retries": 1
+  }
+}

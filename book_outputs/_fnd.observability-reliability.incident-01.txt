@@ -1,0 +1,25 @@
+Constructed tier 1 shadow control and actual cohort rehearsal
+region 2; last arrival 2026-10-05T20:13:56.121708+00:00
+batch 2026-10-07T20:14:14.010709+00:00; 267 distinct scans
+observed no-arrival gap 48.004969 hours
+shadow-control corrections 2; rehearsed cohort corrections 1
+affected requests 59; held past batch 9; policy referrals 7
+watermark lag range 9.000003..9.478677 hours
+late scans share 4.857143%
+corrected receipts' shipment ages seconds: (0.0,)
+cash loss 4999 cents; hypothetical shadow exposure 7498 cents
+illustrative review cost 2800 cents
+corrections: 2 bad / 442 eligible; allowance 56/5; pending 0
+timeliness: 0 bad / 936 eligible; allowance 112/3; pending 0
+bundle count 2; unstamped lineage 0
+registry promotions/rollbacks during the fortnight: 0
+D6 unavailable: paired baseline decisions and mature person-payment labels
+unavailable
+cohort exposure 1 payments; 4999 cents, including the trigger
+cohort stop 2026-10-07T20:14:14.010709Z: correction paused; further payments 0
+Hourly regional arrivals: two regions keep sending while one falls silent
+Budget admission fields pass chapter 32's start reader; no start issued
+Unknown: batch completeness and cause of silence
+Action: release_owner: regional watermark and silence regression
+Action: the carrier integration team: supply independently reconciled regional
+counts

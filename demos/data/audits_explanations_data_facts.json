@@ -1,0 +1,370 @@
+{
+  "blockers": [
+    "Chapter34 region records and observational component absent",
+    "Chapter33 promotion component absent",
+    "Chapter35 outermost ScopedTools and disclosure records absent",
+    "Chapter29 authenticated fixture issuance remains a separate owner gap",
+    "Chapter37 review tickets and Chapter38 rollout authority require integration"
+  ],
+  "listing_pointer_changes": {
+    "fnd.audits-explanations.audit-01": "fnd.audits-explanations.audit-core-01",
+    "fnd.audits-explanations.explain-01": "fnd.audits-explanations.explain-core-01"
+  },
+  "outputs": {
+    "attrib": {
+      "lines": 10,
+      "path": "book_outputs/_fnd.audits-explanations.attrib-01.txt",
+      "text": "Constructed lender. Weights (3.0, 0.5, -0.2), intercept -3.0.\nApplicant (0.9, 4, 3). Log-odds 1.1.\nReference average: (0.3, 1, 8).\nAttributions: 1.8, 1.5, 1.0\nSum 4.3, log-odds gap 4.3.\nPrincipal reason: utilization.\nReference best possible: (0, 0, 20).\nAttributions: 2.7, 2.0, 3.4\nSum 8.1, log-odds gap 8.1.\nPrincipal reason: years of history.\n"
+    },
+    "boundaries": {
+      "lines": 16,
+      "path": "book_outputs/_fnd.audits-explanations.boundaries-01.txt",
+      "text": "Constructed finite-population boundaries, not a month's observed counts.\nk=3, N=239, owed=395, m=80: Kceil=3, tail=0.036566928.\nEntitlement denominator status: assessable.\nk=4, N=239, owed=395, m=80: Kceil=3, tail=0.000000000.\nEntitlement denominator status: assessable.\nk=4, N=239, owed=396, m=80: Kceil=4, tail=0.011930735.\nEntitlement denominator status: assessable.\nk=5, N=5, owed=990, m=5: Kceil=5, tail=1.000000000.\nEntitlement denominator status: assessable.\nk=0, N=5, owed=0, m=5: Kceil=0, tail=1.000000000.\nEntitlement denominator status: unassessable.\nGiven N=239 and owed=395: true wrongful=21, exact power=0.961851039.\nGiven N=239 and owed=395: true wrongful=22, exact power=0.971905296.\nGiven N=239 and owed=395: true wrongful=23, exact power=0.979469765.\nGiven N=239 and owed=395: true wrongful=4, exact power=0.011930735.\nProbability of all 3 in sample: 0.036566928.\n"
+    },
+    "checks": {
+      "lines": 19,
+      "path": "book_outputs/_fnd.audits-explanations.checks-01.txt",
+      "text": "Explicit chapter-36 record fixtures. Partner integration is not asserted.\ntwo-clause: reasons amount_over_policy, outside_return_window.\nCounterfactual eligible, distance 2.\nRequired approval reviewer, granted False.\nReplay 6/6. Execution asserted False.\nAmounts 5200 to 4000 cents.\nSubmission day 29, execution day 31, counterfactual evaluation day 30.\nexhausted: reasons amount_over_policy.\nCounterfactual no_admissible_change, distance 0.\nRequired approval none, granted False.\nReplay 6/6. Execution asserted False.\ntier2: reasons already_delivered.\nCounterfactual eligible, distance 1.\nRequired approval reviewer, granted False.\nReplay 6/6. Execution asserted False.\ntier3: reasons already_delivered.\nCounterfactual eligible, distance 1.\nRequired approval named_approver:morgan, granted False.\nReplay 6/6. Execution asserted False.\n"
+    },
+    "identity": {
+      "lines": 9,
+      "path": "book_outputs/_fnd.audits-explanations.identity-01.txt",
+      "text": "Constructed hospitals, 1000 patients each. Shared PPV .5 and TPR .8.\nbase 0.10: FPR 0.088888889. TP 80, FP 80, FN 20.\nPPV=1 boundary: TP 80, FP 0, FN 20. TPR .8.\nbase 0.30: FPR 0.342857143. TP 240, FP 240, FN 60.\nPPV=1 boundary: TP 240, FP 0, FN 60. TPR .8.\nFPR ratio second/first: 3.857143\nConstructed not-delivered settings A: base 0.80, PPV 0.994923858.\nConstructed not-delivered settings B: base 0.90, PPV 0.997737557.\nShared error rates: TPR .98 and FPR .02. Realized counts await regions.\n"
+    },
+    "keys": {
+      "lines": 15,
+      "path": "book_outputs/_fnd.audits-explanations.keys-01.txt",
+      "text": "Exercise 1: compare oracle counts in month-01, not the settings alone.\nExercise 2: replay tests fidelity and eligibility, not truth or usefulness.\nExercise 3: constructed branches, 3000 applicants each.\nbase 0.10: FPR 0.051851852. TP 210, false declines 140.\nbase 0.25: FPR 0.155555556. TP 525, false declines 350.\nSecond branch PPV at first branch FPR, TPR .7: 0.818181818\nExercise 4: D, decided 600, denied 240, paid 360, found false 12.\nSample 3/80 = 0.037500. Wilson 0.012834336 to 0.104548920.\nOwed-denial estimate 0.025210084.\nConditional range 0.008773609 to 0.067253541.\nOwed payments 348. Ceiling count 3. Exact tail 0.036109841.\nFamily level .05/3. Breach False.\nExercise 5: reconstruct from blind readings, not appeals.\nCanonical seed-11 fixture awaits chapter 34's region records.\nExercise 6: retain all clauses, evaluation clock, and required approvals.\n"
+    },
+    "release": {
+      "lines": 9,
+      "path": "book_outputs/_fnd.audits-explanations.release-01.txt",
+      "text": "Constructed hold-release example: N=239 proposals, owed payments=395.\nClean readings 80: exact 95% upper wrongful count 7.\nUpper owed-denial share 0.017412935. Release: False.\nClean readings 125: exact 95% upper wrongful count 4.\nUpper owed-denial share 0.010025063. Release: False.\nClean readings 126: exact 95% upper wrongful count 3.\nUpper owed-denial share 0.007537688. Release: True.\nMinimum clean sample for release: 126.\nNondetection with 80 reads keeps the hold. Review continues.\n"
+    }
+  },
+  "pending_expected_results": {
+    "audit-01": {
+      "actual": null,
+      "expected": "C7/80,owed395,Kceil3,tail0,estimate5%,range2.5%-9.3%; A/B no breach; A/B ranges to2.3%/2.7%; C already-delivered hold about196"
+    },
+    "audit_report_05.json": {
+      "actual": null,
+      "expected": "seed11, same settings; wrongly-denied appeals.5, rightly-denied A/C.02 B.10; B appeals about10%,C6.5%,A2.2%; blind audit C breach, B no breach"
+    },
+    "explain-01": {
+      "actual": null,
+      "expected": "first C wrongful already-delivered case, six checks, sourceage120 seconds, policy clause and person route"
+    },
+    "explain-02": {
+      "actual": "8/8 public isolated denial replays and composed event-time regressions verified; canonical month acceptance explicitly skipped until the artifact exists",
+      "expected": "all month/public denial replays, with named two-clause/exhausted cases"
+    },
+    "month-01": {
+      "actual": null,
+      "expected": "2000 requests; about644 decided/region; denials A217(33.7%),B239(37%),C239(37%); true wrongful .9/.4/22.2; FPR .21%/.11%/5.33%; wrong shares .41%/.19%/9.3%; C owed not-delivered denial about.50; illustrative cost about444 dollars"
+    },
+    "power-01": {
+      "actual": null,
+      "expected": "actual month C about.97; A/B0; C one above ceiling about.012"
+    }
+  },
+  "review_fixes": {
+    "blind_B_rate_endpoints": {
+      "callouts": {
+        "owed_share": 7,
+        "return": 8,
+        "wrong_share": 6
+      },
+      "conversion_lines": 8,
+      "fix": "Accept denied shares in the closed interval [0, 1]; use the existing formula to return 0 or 1 when entitlement is positive and None for a zero entitlement denominator.",
+      "location": "refund_agent/audit/audits_explanations_rates.py:48",
+      "red_proof": "On 2bf3d2a8, all four endpoint cases raise ValueError at the strict interior range check.",
+      "region": "fnd.audits-explanations.audit-core-01",
+      "region_callouts": {
+        "16": 4,
+        "17": 5,
+        "23": 6,
+        "6": 1,
+        "7": 2,
+        "8": 3
+      },
+      "region_lines": 23,
+      "severity": "MINOR",
+      "test_location": "tests/refund_agent/test_audits_explanations_rates.py:236",
+      "tests": [
+        "test_conversion_accepts_denied_share_endpoints",
+        "test_conversion_rejects_denied_shares_outside_unit_interval"
+      ],
+      "verified": "Denied share 0 returns 0; denied share 1 with positive wrongful share returns 1; both endpoints return None without entitlement; out-of-range shares still raise. Constant time and memory are unchanged."
+    },
+    "blind_C_held_failed_explanation": {
+      "fix": "A held observation uses ExplanationAttachment.proposed_decision.reason. The effective trace retains the referral reason explanation_failed, failure detail, and failed disclosure replay.",
+      "location": "refund_agent/audit/audits_explanations_month.py:314",
+      "red_proof": "On 2bf3d2a8, a public already_delivered request in a held segment with disclosure denied raises AuditObservation validation: held proposal must retain a denial reason.",
+      "severity": "MAJOR",
+      "test_location": "tests/refund_agent/test_audits_explanations_stage6.py:294",
+      "tests": [
+        "test_held_failed_explanation_retains_proposed_reason_in_month_audit"
+      ],
+      "verified": "The real month runner builds the held observation and monthly AuditRecord, counts the proposal as a denial, and retains already_delivered as the breaching held reason. No payment is executed."
+    },
+    "exercise6_population": {
+      "canonical_location": "exercises/audits-explanations/test_acceptance.py:182",
+      "canonical_status": "skipped: canonical seed-7 run absent; chapters 33-35 integration pending",
+      "fix": "Run the selected solution on independently constructed delivery, effective-clock expiry, amount-cap and exhausted-balance denials, checking all six replays. Iterate every canonical month denial using its retained evaluation record when the seed-7 run exists; otherwise explicitly skip with a reason.",
+      "location": "exercises/audits-explanations/test_acceptance.py:142",
+      "mutation_proof": "A fixture-only solution passes the original two-clause fixture but fails completeness on the independent delivery case. The reference passes; the starter still fails its two-clause acceptance and its diagnostic confirms completeness and counterfactual failures.",
+      "tests": [
+        "test_solution_handles_independent_denial_reasons",
+        "test_fixture_only_solution_is_rejected_by_independent_case",
+        "test_solution_replays_every_canonical_seed7_denial",
+        "test_starter_has_the_two_designed_failures"
+      ]
+    },
+    "fill_P3_computed_days": {
+      "changed_output_lines": [],
+      "fix": "Compute submission, execution and counterfactual days from the case records relative to their latest delivery event.",
+      "location": "demos/audits_explanations_demo.py:186",
+      "output": "book_outputs/_fnd.audits-explanations.checks-01.txt",
+      "red_proof": "On 2bf3d2a8, valid records changed to submission day 28, execution day 32, counterfactual day 29 still print the hard-coded 29/31/30 line.",
+      "severity": "P3",
+      "test_location": "tests/test_audits_explanations_demo.py:100",
+      "tests": [
+        "test_checks_days_follow_submission_execution_and_counterfactual_records"
+      ],
+      "verified": "The changed records print 28/32/29 with all four cases replaying 6/6. Default checks-01 remains byte-identical, including line 7 with 29/31/30."
+    },
+    "producer_bootstrap": {
+      "capture_location": "demos/audits_explanations_integrated_capture.py:12",
+      "constructed_capture": "All five printed regions run through repository capture on a typed constructed one-request run. This isolates chapter-36 serialization/printing by patching its validator in the test only. Unpatched production validation refuses that nonintegrated run; no predecessor component is substituted.",
+      "fix": "Keep importable producers and parameterized printers separate from executable capture regions; the capture reader supports an explicit run path, and missing-artifact tests select an absent temporary path.",
+      "producer_location": "demos/audits_explanations_integrated_demo.py:123",
+      "red_proof": "The import test failed on the original top-level print_month call with canonical run absent.",
+      "tests": [
+        "test_producers_import_without_canonical_artifact",
+        "test_producer_writes_constructed_records_and_printed_regions_capture_them",
+        "test_canonical_capture_refuses_missing_partner_artifact"
+      ]
+    },
+    "scheduled_release_context": {
+      "extension_point_gap": null,
+      "fix": "Register fixture_context through chapter 29 extensions. Consume required partner source, segment, disclosure and review records and create AuditInputs with the declared append hold store. Missing records refuse explicitly.",
+      "location": "refund_agent/audit/audits_explanations_component.py:70",
+      "partner_contribution_keys": [
+        "audits_explanations_segments",
+        "audits_explanations_register",
+        "audits_explanations_history",
+        "audits_explanations_disclosure",
+        "audits_explanations_review_routes"
+      ],
+      "production_base": "Partner records from chapters 34, 35 and 37 remain absent. Scheduling without those records refuses; constructed test records do not establish full partner integration.",
+      "red_proof": "The real core case scheduling test initially failed during composition with source, disclosure, review and hold inputs required. The fixed hook runs the case and core grading reports no failures.",
+      "tests": [
+        "test_registered_case_schedules_through_core_with_partner_records",
+        "test_fixture_context_refuses_each_absent_record"
+      ]
+    },
+    "source_binding": {
+      "fix": "Capture a detached EvaluationRecord beside the core assessment, inside partner source views; retain it on the explanation attachment and compare replay with its observation times and the effective state freshness.",
+      "location": "refund_agent/audit/audits_explanations_stage6.py:50",
+      "red_proof": "The original code reported 120 rather than 60 seconds and referred the later-scan denial. A tool-read-only capture was also rejected by the 60-second read/30-second evaluation regression.",
+      "replay_location": "refund_agent/audit/audits_explanations_explain.py:178",
+      "tests": [
+        "test_composed_explanation_cites_the_shipment_age_the_rule_read",
+        "test_later_arriving_scan_does_not_refer_a_correctly_explained_denial",
+        "test_replay_independently_rejects_a_rebuilt_observation_time",
+        "test_retained_snapshot_is_taken_at_rule_evaluation_not_the_prior_read"
+      ]
+    }
+  },
+  "status": "partial: canonical partner integration pending",
+  "timestamp_utc": "2026-10-14T03:02:10.318234+00:00",
+  "validation": {
+    "all_stored_output_hashes": {
+      "added": [],
+      "changed": [],
+      "chapter36_outputs": 6,
+      "predecessor_outputs": 299,
+      "removed": [],
+      "total": 305,
+      "unchanged": 305
+    },
+    "baseline_regressions": {
+      "endpoint_failures": 4,
+      "head": "2bf3d2a8",
+      "held_failed_explanation_failures": 1,
+      "typed_day_line_failures": 1
+    },
+    "branch": "phase2/code-audits-explanations-2026-10-13",
+    "chapter29_capture": {
+      "evidence": ".tmp-sol/ch36-blind-review-fixes-20261013/chapter29-capture.json",
+      "mismatches": [],
+      "outputs_reproduced": 7
+    },
+    "chapter29_shared_files_changed": [],
+    "chapter36_capture": {
+      "changed_lines": [],
+      "evidence": ".tmp-sol/ch36-blind-review-fixes-20261013/chapter36-capture.json",
+      "line_counts": {
+        "fnd.audits-explanations.attrib-01": 10,
+        "fnd.audits-explanations.boundaries-01": 16,
+        "fnd.audits-explanations.checks-01": 19,
+        "fnd.audits-explanations.identity-01": 9,
+        "fnd.audits-explanations.keys-01": 15,
+        "fnd.audits-explanations.release-01": 9
+      },
+      "mismatches": [],
+      "outputs_reproduced": 6
+    },
+    "checks_skipped": 1,
+    "commits_made": [],
+    "controlled_mutations_detected": [
+      "missing population clamp",
+      "request-only expiry clock"
+    ],
+    "evidence_directory": ".tmp-sol/ch36-blind-review-fixes-20261013",
+    "existing_output_hashes": {
+      "changed": [],
+      "total": 305,
+      "unchanged": 305
+    },
+    "git_status_porcelain": [
+      " M companion/demos/audits_explanations_demo.py",
+      " M companion/demos/data/audits_explanations_data_facts.json",
+      " M companion/refund_agent/audit/audits_explanations_month.py",
+      " M companion/refund_agent/audit/audits_explanations_rates.py",
+      " M companion/tests/refund_agent/test_audits_explanations_rates.py",
+      " M companion/tests/refund_agent/test_audits_explanations_stage6.py",
+      " M companion/tests/test_audits_explanations_demo.py",
+      "?? .tmp-sol/"
+    ],
+    "git_writes": false,
+    "head": "2bf3d2a8",
+    "listing_execution": "Both chapter-36 core regions pass their source-dependency execution test; all five integrated capture regions run on a constructed record in a temporary directory.",
+    "new_checks_passed": 72,
+    "printed_width": {
+      "audit_callouts": {
+        "16": 4,
+        "17": 5,
+        "23": 6,
+        "6": 1,
+        "7": 2,
+        "8": 3
+      },
+      "chapter36_regions": 13,
+      "included_width_violations": 0,
+      "line_limit": 79,
+      "maximum_region_width": 74
+    },
+    "printed_width_gate_passed": 1,
+    "pytest_command": "PYTHONPATH=<worktree>:<worktree>/companion OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 TMPDIR=<worktree>/.tmp-sol/ch36-blind-review-fixes-20261013/tmp /Users/fatih/dev/foundations-of-agentic-ai-systems/companion/.venv/bin/python -m pytest -q <one file> -p no:cacheprovider --junitxml=<receipt>",
+    "repository_listing_check": {
+      "outcome": "not run",
+      "reason": "scripts/snippets/check_listings.py is explicitly prohibited for this task"
+    },
+    "ruff": "pass: six changed Python files",
+    "seal": "No sealed directory opened, listed or walked; no prohibited scripts, network, installs or git writes.",
+    "skip_reason": "canonical seed-7 run absent; chapters 33-35 integration pending",
+    "starter_run": {
+      "expected_failed": 1,
+      "passed": 7,
+      "reason": "two-clause completeness; diagnostic also verifies counterfactual failure",
+      "skipped": 1
+    },
+    "test_files": {
+      "exercises/audits-explanations/test_acceptance.py": {
+        "passed": 8,
+        "skipped": 1
+      },
+      "tests/refund_agent/test_audits_explanations_explain.py": {
+        "passed": 13
+      },
+      "tests/refund_agent/test_audits_explanations_holds.py": {
+        "passed": 2
+      },
+      "tests/refund_agent/test_audits_explanations_month.py": {
+        "passed": 3
+      },
+      "tests/refund_agent/test_audits_explanations_rates.py": {
+        "passed": 21
+      },
+      "tests/refund_agent/test_audits_explanations_stage6.py": {
+        "passed": 17
+      },
+      "tests/test_audits_explanations_demo.py": {
+        "passed": 8
+      }
+    },
+    "ty": "pass: six changed Python files"
+  },
+  "verified_expected_results": {
+    "attribution": {
+      "expected": "1.8,1.5,1.0 sum4.3 utilization; 2.7,2.0,3.4 sum8.1 history",
+      "lines": [
+        1,
+        10
+      ],
+      "source": "attrib"
+    },
+    "counterfactuals": {
+      "expected": "all six checks; two-clause5200/4000, two changed fields; exhausted has no admissible change; approvals retained; submission29 execution31",
+      "lines": [
+        1,
+        19
+      ],
+      "source": "checks"
+    },
+    "exact_power_given_brief_counts": {
+      "expected": ".96/.97/.98 for21/22/23 wrongful among239; one above ceiling about .012",
+      "lines": [
+        12,
+        16
+      ],
+      "source": "boundaries"
+    },
+    "exercise_3": {
+      "expected": "3000 applicants; false declines140/350; FPR .0519/.1556; equalized-FPR PPV .818",
+      "lines": [
+        3,
+        6
+      ],
+      "source": "keys"
+    },
+    "exercise_4": {
+      "expected": "D sample3/80; estimate .025; range .009-.067; Kceil3; tail .036; no breach",
+      "lines": [
+        7,
+        12
+      ],
+      "source": "keys"
+    },
+    "hold_release": {
+      "expected": "exact one-sided95% safety bound, nondetection does not release",
+      "lines": [
+        1,
+        9
+      ],
+      "source": "release"
+    },
+    "identity": {
+      "expected": "FPR .0889/.3429; ratio 3.857; TP/FP 80/80,240/240; PPV=1 misses20/60",
+      "lines": [
+        1,
+        9
+      ],
+      "source": "identity"
+    },
+    "population_boundary": {
+      "expected": "owed990,N5 clampsKceil5, tail1; zero-owed zero-found unassessable",
+      "lines": [
+        8,
+        11
+      ],
+      "source": "boundaries"
+    },
+    "public_replay": {
+      "actual": "8/8 in real Agent/build_tools tests with constructed records; ScopedTools integration remains unverified",
+      "expected": "8/8 denial explanations"
+    }
+  }
+}

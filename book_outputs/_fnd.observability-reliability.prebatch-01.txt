@@ -1,0 +1,2 @@
+pre-batch arrived scans: 21/2462 late; 0.852965%
+fortnight: 272/5600 late; 4.857143%

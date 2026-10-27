@@ -1,0 +1,19 @@
+constructed batch costs: decide 2.00; delay/referral to each desk 1.50
+charge/referral 0.00; cells are (A cost, B cost)
+A \ B       decide       refer
+decide      (2.00, 2.00)  (3.50, 1.50)
+refer       (1.50, 3.50)  (3.00, 3.00)
+A given B=decide: best response refer
+A given B=refer: best response refer
+B given A=decide: best response refer
+B given A=refer: best response refer
+Nash equilibrium refer/refer; costs (3.00, 3.00)
+charge/referral 1.50; cells are (A cost, B cost)
+A \ B       decide       refer
+decide      (2.00, 2.00)  (3.50, 3.00)
+refer       (3.00, 3.50)  (4.50, 4.50)
+A given B=decide: best response decide
+A given B=refer: best response decide
+B given A=decide: best response decide
+B given A=refer: best response decide
+Nash equilibrium decide/decide; costs (2.00, 2.00)

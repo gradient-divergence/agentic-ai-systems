@@ -1,0 +1,26 @@
+Constructed unit vectors; no model outputs; fixed illustrative tau=0.1
+image 1: 1.0 0.0 0.0
+image 2: 0.0 1.0 0.0
+image 3: 0.0 0.0 1.0
+caption 1: 0.8 0.6 0.0
+caption 2: 0.0 0.8 0.6
+caption 3: 0.6 0.0 0.8
+Swap captions 2 and 3; keep the diagonal as the target pairing.
+matched cosine row 1: 0.800000 0.000000 0.600000
+matched cosine row 2: 0.600000 0.800000 0.000000
+matched cosine row 3: 0.000000 0.600000 0.800000
+matched row softmax row 1: 0.880537 0.000295 0.119168
+matched row softmax row 2: 0.119168 0.880537 0.000295
+matched row softmax row 3: 0.000295 0.119168 0.880537
+matched image-to-caption loss: 0.127223
+matched caption-to-image loss: 0.127223
+matched symmetric loss: 0.127223
+swapped cosine row 1: 0.800000 0.600000 0.000000
+swapped cosine row 2: 0.600000 0.000000 0.800000
+swapped cosine row 3: 0.000000 0.800000 0.600000
+swapped row softmax row 1: 0.880537 0.119168 0.000295
+swapped row softmax row 2: 0.119168 0.000295 0.880537
+swapped row softmax row 3: 0.000295 0.880537 0.119168
+swapped image-to-caption loss: 3.460557
+swapped caption-to-image loss: 3.460557
+swapped symmetric loss: 3.460557

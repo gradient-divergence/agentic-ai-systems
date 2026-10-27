@@ -1,0 +1,10 @@
+| Measure | Group 1 | Group 2 | Group 3 | Group 4 |
+|---|---|---|---|---|
+| Share of damage claims | 1.00 | 0.00 | 0.81 | 0.92 |
+| Share of changes of mind | 0.00 | 1.00 | 0.00 | 0.00 |
+| Mean days since delivery | 9.53 | 6.54 | 2.05 | 6.05 |
+| Mean earlier refunds | 0.00 | 0.20 | 0.00 | 1.00 |
+| Wrong payments | 8 of 263 | 2 of 295 | 2 of 295 | 25 of 146 |
+| Rate | 0.030 | 0.007 | 0.007 | 0.171 |
+| 95% lower | 0.015 | 0.002 | 0.002 | 0.119 |
+| Upper | 0.059 | 0.024 | 0.024 | 0.241 |

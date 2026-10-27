@@ -1,0 +1,13 @@
+200 noise columns, seed 7: rank single-column additions; refit the best five
+  jointly
+wrong: rank on validation; right: last fifth of training, earlier labels
+  final before it
+logistic reference validation log loss 0.168515; noise selected 0/5
+validation-chosen  validation log loss 0.165846; lead over logistic reference
+  +0.002669; noise selected 5/5
+training-chosen    validation log loss 0.170847; lead over logistic reference
+  -0.002333; noise selected 5/5
+generator's expectation on a fresh June draw (2,026 requests, seed 71;
+  planted risk), lead over logistic reference: validation-chosen=-0.000336;
+  training-chosen=-0.000713
+Validation-chosen inputs lower validation loss in this run.

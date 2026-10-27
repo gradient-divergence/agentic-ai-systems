@@ -1,0 +1,831 @@
+{
+  "budget": 20,
+  "fresh_requests": 2026,
+  "fresh_seed": 71,
+  "grid_definition": "grid: logistic C={0.01,0.1,1,10}; boosted max_iter={50,200} x learning_rate={0.025,0.1} x max_leaf_nodes={3,15} x min_samples_leaf={50,200}; l2_regularization=1",
+  "model_based_start": "random arm's first three configurations, in order",
+  "seed": 7,
+  "training_requests": 13766,
+  "trials": {
+    "grid": [
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 1,
+        "loss": 0.16784549233699633,
+        "settings": {
+          "C": 0.01,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 2,
+        "loss": 0.1684039209606537,
+        "settings": {
+          "C": 0.1,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 3,
+        "loss": 0.1685147496077953,
+        "settings": {
+          "C": 1.0,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 4,
+        "loss": 0.16852662661423856,
+        "settings": {
+          "C": 10.0,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 5,
+        "loss": 0.16794216515545535,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 6,
+        "loss": 0.16794216515545535,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16784549233699633,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 7,
+        "loss": 0.16804876694700552,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16712818734138965,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 8,
+        "loss": 0.16712818734138965,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16712818734138965,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 9,
+        "loss": 0.16729240606925264,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16712818734138965,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 10,
+        "loss": 0.16719360882665932,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16712818734138965,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 11,
+        "loss": 0.16800437202356994,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "baseline_loss": 0.16826479443135714,
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 12,
+        "loss": 0.16663476199956206,
+        "measured_lead": 0.0016300324317950754,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        },
+        "true_lead": -0.001209516143234668
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 13,
+        "loss": 0.16727230100875062,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 200,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 14,
+        "loss": 0.16732431545085155,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 200,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 15,
+        "loss": 0.1682531635061025,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 200,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 16,
+        "loss": 0.16819411558087727,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 200,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 17,
+        "loss": 0.16842210130895538,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 18,
+        "loss": 0.16812643022014376,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 19,
+        "loss": 0.17048012492576672,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.16663476199956206,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 20,
+        "loss": 0.1728844329672695,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      }
+    ],
+    "model-based": [
+      {
+        "best_so_far": 0.16781107587842314,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 1,
+        "loss": 0.16781107587842314,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.16781107587842314,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 2,
+        "loss": 0.16812858269162526,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 3,
+        "loss": 0.1671945569721232,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 4,
+        "loss": 0.16834508573468285,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 5,
+        "loss": 0.16795057926285634,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "baseline_loss": 0.16826479443135714,
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 6,
+        "loss": 0.16660836694400186,
+        "measured_lead": 0.0016564274873552831,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100
+        },
+        "true_lead": 6.0046367550858903e-05
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 7,
+        "loss": 0.16668454327670645,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 8,
+        "loss": 0.16690563078511075,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 9,
+        "loss": 0.16723010723589402,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 10,
+        "loss": 0.16663020462211092,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 11,
+        "loss": 0.16739459991732647,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 12,
+        "loss": 0.16757881905855798,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 13,
+        "loss": 0.1685278225806164,
+        "settings": {
+          "C": 100.0,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 14,
+        "loss": 0.16886331781387504,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 15,
+        "loss": 0.16712818734138965,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 16,
+        "loss": 0.1673530633418992,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 17,
+        "loss": 0.16686243294231975,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 18,
+        "loss": 0.16743765303526867,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 19,
+        "loss": 0.16721768241304039,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.16660836694400186,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 20,
+        "loss": 0.16711188260868454,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 200
+        }
+      }
+    ],
+    "random": [
+      {
+        "best_so_far": 0.16781107587842314,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 1,
+        "loss": 0.16781107587842314,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.16781107587842314,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 2,
+        "loss": 0.16812858269162526,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 3,
+        "loss": 0.1671945569721232,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 4,
+        "loss": 0.1685147496077953,
+        "settings": {
+          "C": 1.0,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 5,
+        "loss": 0.16723010723589402,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 6,
+        "loss": 0.16826479443135714,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 7,
+        "loss": 0.1728844329672695,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 8,
+        "loss": 0.1685278225806164,
+        "settings": {
+          "C": 100.0,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 9,
+        "loss": 0.1684039209606537,
+        "settings": {
+          "C": 0.1,
+          "family": "logistic"
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 10,
+        "loss": 0.16959134333903292,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50
+        }
+      },
+      {
+        "best_so_far": 0.1671945569721232,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 11,
+        "loss": 0.16784549233699633,
+        "settings": {
+          "C": 0.01,
+          "family": "logistic"
+        }
+      },
+      {
+        "baseline_loss": 0.16826479443135714,
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 12,
+        "loss": 0.1666105328620896,
+        "measured_lead": 0.00165426156926754,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        },
+        "true_lead": -0.0038018726795196744
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 13,
+        "loss": 0.16812858269162526,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 14,
+        "loss": 0.16682072255795574,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 15,
+        "loss": 0.16721519631687276,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 16,
+        "loss": 0.16747952752373524,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 200,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 17,
+        "loss": 0.16839638783651178,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 0.0,
+          "learning_rate": 0.025,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 18,
+        "loss": 0.16794621816546898,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 200
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 19,
+        "loss": 0.16730488038889918,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 1.0,
+          "learning_rate": 0.025,
+          "max_iter": 100,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 100
+        }
+      },
+      {
+        "best_so_far": 0.1666105328620896,
+        "commission": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+        "entry": 20,
+        "loss": 0.16812858269162526,
+        "settings": {
+          "family": "boosted",
+          "l2_regularization": 10.0,
+          "learning_rate": 0.025,
+          "max_iter": 50,
+          "max_leaf_nodes": 3,
+          "min_samples_leaf": 100
+        }
+      }
+    ]
+  },
+  "validation_requests": 988
+}

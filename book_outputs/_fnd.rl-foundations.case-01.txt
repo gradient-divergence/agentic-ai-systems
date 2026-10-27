@@ -1,0 +1,30 @@
+Should the refund agent learn approve, deny or refer? (version 1, 2026-10-10)
+question | answer | evidence | source
+--- | --- | --- | ---
+| sequential | no | Each request has its own customer; the generator does not condition a request on earlier desk decisions. | companion/refund_agent/data/history.py:147; 178 |
+| feedback | no | Only policy-payable tier 1 claims have a paid-only 30-day outcome; denied and referred outcomes are unobserved. | companion/refund_agent/data/history.py:58 |
+| choice | no | The fictional refund policy labels the permitted answer; a learner cannot choose to alter eligibility. | companion/refund_agent/data/generate.py:165 |
+| safety | no | The history supplies no evidence of the cost of changing the desk's decision on a customer. | companion/refund_agent/data/history.py:156; 137 |
+| value | no | The expected-cost score and fixed tier threshold already support an offline one-request comparison, without a sequential learner. | companion/refund_agent/model/history_baseline.py:91; 30 |
+learned: No sequential policy; the chapter 5 risk estimate is fitted offline.
+coded: Eligibility rules, fixed tier threshold, audit and person approval; the chapter 5 expected-cost comparison stays an offline proposal.
+forbidden: Changing eligibility, approvals or execution authority through a learned value.
+next_steps: Retain the existing fixed rule; treat one-request scores as supervised predictions.
+revisit_when: A repeated-customer decision is shown to change future state, alternatives have supported feedback, and a permitted safe choice beats the fixed baseline.
+owner: refund_cap_v4 policy owner; verdict: not yet; stage 3, autonomy unchanged: drafts only, a person executes
+
+Should the refund agent learn when a late-parcel claim is payable? (version 1, 2026-10-10)
+question | answer | evidence | source
+--- | --- | --- | ---
+| sequential | yes | Waiting changes the next day's evidence and incurs a waiting cost; paying ends this constructed claim. | companion/demos/rl_foundations_demo.py:parcel_mdp |
+| feedback | unknown | Current history stops reading the carrier at the request; it contains no post-request carrier path or customer's reaction to waiting. | companion/refund_agent/data/history.py:122 |
+| choice | unknown | Waiting is outside the current three outcomes; only the policy owner can decide when such a claim is payable. | companion/refund_agent/data/generate.py:165 |
+| safety | unknown | The price of a customer's waiting day is unmeasured; constructed costs cannot establish that waiting is safe. | companion/book_outputs/_fnd.rl-foundations.model-01.txt:2 |
+| value | no | Exploring at planned values costs 2.937578 extra per claim; planning from 200 followed claims costs 0.096413 extra on average in 200 simulated logs. | companion/book_outputs/_fnd.rl-foundations.learn-01.txt:5; 9 |
+learned: Carrier probabilities could be estimated offline after follow-up logging; no live sequential policy.
+coded: The finite model, backward planning, a fixed stopping rule if the policy owner adopts it.
+forbidden: A fourth agent outcome, changing refund_cap_v4 without its owner, live exploration or new payment authority.
+next_steps: Propose continued carrier reads after a not-delivered claim; estimate the model offline.; Have the policy owner set the waiting price or authorize a capped test.; If adopted, deploy a fixed rule and judge it on supported logs.
+revisit_when: Post-request carrier paths exist; the owner permits waiting and its price is justified.; A permitted policy beats the planned baseline under stated support and an agreed exposure cap.
+owner: refund_cap_v4 policy owner; verdict: not yet; stage 3, autonomy unchanged: drafts only, a person executes
+

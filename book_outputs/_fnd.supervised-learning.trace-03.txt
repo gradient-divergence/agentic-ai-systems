@@ -1,0 +1,6 @@
+boosted trees as trained 0.065682; after validation Platt map 0.085512
+expected cost: pay $2.599550; review $4.00
+mapped drafts: tier threshold 0.080 -> refer; cost rule -> pay; denied on a
+  score: 0
+specification permits: drafts only; a person executes
+Decision snapshot ends

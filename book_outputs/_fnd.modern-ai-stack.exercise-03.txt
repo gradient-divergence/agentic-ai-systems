@@ -1,0 +1,13 @@
+paid as text: rejected
+  paid_cents: Input should be a valid integer
+payment pending: rejected
+  paid_cents: Input should be greater than 0
+local time: balance 4200 cents; approve, tier 1, eligible
+  cites refund_cap_v4@2026-03-01#eligibility
+hundredths: balance 420000 cents; approve, tier 1, eligible
+  cites refund_cap_v4@2026-03-01#eligibility
+the same request at 5000 cents:
+as sent: balance 4200 cents; deny, tier 2, amount_over_policy
+  cites refund_cap_v4@2026-03-01#cap
+hundredths: balance 420000 cents; refer, tier 2, approval_required
+  cites refund_cap_v4@2026-03-01#eligibility

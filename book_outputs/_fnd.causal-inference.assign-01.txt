@@ -1,0 +1,7 @@
+rehearsal only, seed 7; cap $10.00
+set: 59; pay 31; refer 28; each logs probability 0.5
+fair coin's central 95% pay-count range: 22 to 37; inside: True
+outside: 929; pay 882; refer 47; each logs probability 1
+records carry request, customer, action, probability, set,
+policy versions, seed, decision time, score and inputs
+no payment, referral, agent run or frozen-window consultation

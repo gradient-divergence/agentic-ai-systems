@@ -1,0 +1,5 @@
+student support: seed 7; trajectories 1000; action A_t followed by reward R_(t+1)
+steps expected_matches ratio observed_matches n_eff
+1 500.000000 2 523 523.000
+4 62.500000 16 73 73.000
+10 0.976562 1024 0 0.000

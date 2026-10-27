@@ -1,0 +1,5 @@
+refund.execute times out before acting; audit ending and refusal handling carried, retry left on.
+own: refer tool_error; paid 0 cents; execute calls 1; receipts 0
+  failure detail: tool_error:refund.execute:TimeoutError
+second: approve eligible; paid 2499 cents; execute calls 2; receipts 1
+  failure detail: none

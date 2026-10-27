@@ -1,0 +1,18 @@
+{
+  "after_record": true,
+  "policies": {
+    "A": {
+      "improvement": 0.0358869941460932,
+      "value": 0.8460167981674727
+    },
+    "B": {
+      "improvement": 0.004835836090608336,
+      "value": 0.8149656401119878
+    },
+    "fixed": {
+      "improvement": 0.0,
+      "value": 0.8101298040213795
+    }
+  },
+  "reads": 1
+}

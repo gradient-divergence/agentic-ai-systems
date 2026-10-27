@@ -1,0 +1,9 @@
+exercise 1: all five dated; pseudo-regret 0.00; a live desk does not know the true rates
+exercise 2: UCB1 probabilities 0 or 1; mix a known positive coin to restore support
+exercise 3: indices 0.8389, 1.0262, 1.0895; C; fixed-count radius 0.1731
+exercise 4 (instructor): caps 0.017647, 0.10; learner/month 120; floor 0.006667; largest weight 150
+exercise 5 (instructor): standard; sent 1909/2000; frequency 0.9545; logged 0.100; applied 0.955
+exercise 5 (instructor): dated; sent 78/2000; frequency 0.0390; logged 0.800; applied 0.040
+exercise 5 (instructor): referenced; sent 13/2000; frequency 0.0065; logged 0.100; applied 0.005
+exercise 5: new-notice probabilities overstated 20 times; weights understated 20 times
+exercise 6: amount contexts <2500 and >=2500 cents; caps 0.05 and 0.20; validate both logs, maturity and reproducibility

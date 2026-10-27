@@ -1,0 +1,3 @@
+2,499 cents: approve eligible, paid
+  audit intent       money_moved=no paid_cents=0
+  audit confirmation money_moved=yes paid_cents=2499

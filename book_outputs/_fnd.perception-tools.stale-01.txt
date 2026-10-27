@@ -1,0 +1,4 @@
+request r-7-0002: 2499 cents, damaged
+shipment record age at use: 1,801 s; limit 1,800 s
+decision: refer, stale_shipment, tier 1
+audit records: 1; money moved: false

@@ -1,0 +1,3 @@
+constructed absence: Monday alex 0 minutes, morgan 60; 6 tier 1 and 2 tier 3; Tuesday 2 new tier 3, alex back
+count_then_wait: Monday 7, Tuesday 2; answered 9 / 10; waiting into Wednesday 1
+tier3_first: Monday 2, Tuesday 8; answered 10 / 10; waiting into Wednesday 0

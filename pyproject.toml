@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foundations-companion"
+version = "0.1.0"
+description = "Companion demos and spine utilities for Foundations of Agentic AI Systems."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "pydantic>=2.0",
+  "scikit-learn>=1.4",
+  "scipy>=1.9",
+  "duckdb>=0.9",
+  "polars>=0.20",
+]
+
+[project.optional-dependencies]
+ml = [
+  "torch>=2.1",
+  "lightning>=2.2",
+  "sentence-transformers>=2.2",
+  "lightgbm>=4.0",
+]
+clustering = [
+  "umap-learn>=0.5",
+  "hdbscan>=0.8",
+]
+feature = [
+  "featuretools>=1.30",
+]
+autofeat = [
+  "autofeat>=2.1",
+]
+tsfresh = [
+  "tsfresh>=0.20",
+]
+causal = [
+  "dowhy>=0.11",
+]
+opt = [
+  "optuna>=3.5",
+  "ortools>=9.7",
+]
+
+dev = [
+  "setuptools>=61.0",
+  "ruff>=0.4.0",
+  "ty>=0.0.1a19",
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agents*", "demos*", "spine*", "refund_agent*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"refund_agent.data" = ["positive.json"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = [
+  "spine/data",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"demos/*.py" = ["E402"]
+"spine/**/run_*.py" = ["E402"]
+"spine/ml/text_embeddings.py" = ["E402"]
+"spine/rl/environment.py" = ["E402"]
+"spine/rl/policy_eval.py" = ["E402"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["sealed: accesses canonical sealed evidence; requires FND_ALLOW_SEALED=1"]

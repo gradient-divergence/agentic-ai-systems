@@ -1,0 +1,20 @@
+exercise 5: ages at payment {'order': 1771.0, 'shipment': 1831.0, 'policy': 5311.0}; stale_shipment
+exercise 5: evidence expired 1680 s after the request
+exercise 6: cross-correlation [+8 -1] [+0 +7]
+exercise 6: convolution [+6 -3] [+3 +7]
+exercise 6: output size 32; parameters 1,216
+exercise 6: receptive field 11
+exercise 7(a): fp 0.1: 0.155; 1,160 flags
+exercise 7(a): fp 0.25: 0.068; 2,630 flags
+exercise 7(b): 36/40 = 0.90; 95% Wilson [0.769479, 0.960421]
+exercise 7(b): at 0.02 defects, expected parts 2,000
+exercise 8: offset 10; IoU 0.391304; refuse
+exercise 8: offset 4; IoU 0.680672; accept
+exercise 8: unchecked_all_right 0.358486
+exercise 8: checked_all_right 0.864566
+exercise 8: checked_silent_completed 0.095704
+exercise 8: checked_stopped 0.039730
+exercise 8: checked_any_silent 0.097606
+exercise 4: missing key -> idempotency_key_required; repeat receipt True
+exercise 4: changed binding -> idempotency_conflict; payments 1
+exercise 4: gate -> stale_shipment; payments 0

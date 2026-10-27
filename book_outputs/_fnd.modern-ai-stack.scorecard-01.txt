@@ -1,0 +1,4 @@
+| Forty public scenarios | Agree | Approve | Deny | Refer | Paid |
+|---|---:|---:|---:|---:|---:|
+| Before the release | 40/40 | 4 | 22 | 14 | 0 |
+| After the release | 16/40 | 0 | 35 | 5 | 0 |

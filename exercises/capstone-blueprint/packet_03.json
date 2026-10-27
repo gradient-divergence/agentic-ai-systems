@@ -1,0 +1,98 @@
+{
+  "label": "constructed exercise; record verdicts and signatures are given",
+  "launched_bundle": "B3",
+  "promotions": [
+    {
+      "candidate": "B1",
+      "changes": [
+        "scope"
+      ],
+      "day": 4,
+      "incumbent": "B0"
+    },
+    {
+      "candidate": "B2",
+      "changes": [
+        "explanation"
+      ],
+      "day": 6,
+      "incumbent": "B1"
+    },
+    {
+      "candidate": "B3",
+      "changes": [
+        "routing"
+      ],
+      "day": 8,
+      "incumbent": "B2"
+    }
+  ],
+  "records": [
+    {
+      "bundle": "B0",
+      "day": 1,
+      "kind": "rehearsal",
+      "rule": "strict",
+      "signed_by": "morgan",
+      "signed_day": 0,
+      "verdict": "pass"
+    },
+    {
+      "bundle": "B0",
+      "day": 2,
+      "kind": "injection_suite",
+      "rule": "covered",
+      "signed_by": "morgan",
+      "signed_day": 0,
+      "verdict": "pass"
+    },
+    {
+      "bundle": "B0",
+      "day": 3,
+      "kind": "shadow_window",
+      "rule": "covered",
+      "signed_by": "morgan",
+      "signed_day": 0,
+      "verdict": "pass"
+    },
+    {
+      "bundle": "B3",
+      "day": 8,
+      "kind": "explanation",
+      "rule": "strict",
+      "signed_by": "morgan",
+      "signed_day": 7,
+      "verdict": "pass"
+    },
+    {
+      "bundle": null,
+      "day": 1,
+      "kind": "review_design",
+      "rule": "any",
+      "signed_by": "morgan",
+      "signed_day": 0,
+      "verdict": "pass"
+    },
+    {
+      "bundle": null,
+      "day": 1,
+      "kind": "boundary",
+      "rule": "any",
+      "signed_by": "morgan",
+      "signed_day": 0,
+      "verdict": "ok"
+    }
+  ],
+  "requirements": {
+    "explanation": [
+      "explanation"
+    ],
+    "routing": [
+      "release",
+      "tier3"
+    ],
+    "scope": [
+      "injection_suite"
+    ]
+  }
+}

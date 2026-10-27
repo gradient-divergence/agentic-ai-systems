@@ -1,0 +1,34 @@
+second draw: seed 20, 36000 requests; paid tier 1, by decision date
+
+| Measure | Redrawn August | Redrawn September |
+|---|---|---|
+| Paid tier 1 requests | 1022 | 952 |
+| Wrong payments | 32 | 69 |
+| Wrong payment rate | 0.031311 | 0.072479 |
+| Brier, proposed | 0.027984 | 0.060235 |
+| Log loss, nats, proposed | 0.117230 | 0.221580 |
+| Brier, class-weighted | 0.161196 | 0.167961 |
+| Log loss, nats, class-weighted | 0.507461 | 0.522193 |
+| Brier, base rate | 0.030355 | 0.068538 |
+| Log loss, nats, base rate | 0.139636 | 0.274684 |
+| Reliability (REL), proposed | 0.000288 | 0.002724 |
+| Resolution (RES), proposed | 0.001802 | 0.007774 |
+| Uncertainty (UNC), proposed | 0.030331 | 0.067226 |
+| Within-bin residual, proposed | -0.000833 | -0.001940 |
+| Equal-count bin 1: count / forecast / rate | 205 / 0.017841 / 0.000000 | 191 / 0.017427 / 0.036649 |
+| Equal-count bin 2: count / forecast / rate | 205 / 0.025579 / 0.004878 | 191 / 0.025428 / 0.047120 |
+| Equal-count bin 3: count / forecast / rate | 204 / 0.030325 / 0.004902 | 190 / 0.030239 / 0.015789 |
+| Equal-count bin 4: count / forecast / rate | 204 / 0.036775 / 0.034314 | 190 / 0.039301 / 0.015789 |
+| Equal-count bin 5: count / forecast / rate | 204 / 0.118893 / 0.112745 | 190 / 0.137634 / 0.247368 |
+| Generator squared probability error, proposed | 0.000428 | 0.003019 |
+| Generator intrinsic uncertainty, proposed | 0.029533 | 0.057560 |
+| Generator expected Brier, proposed | 0.029961 | 0.060580 |
+| Generator squared probability error, class-weighted | 0.136382 | 0.110851 |
+| Generator intrinsic uncertainty, class-weighted | 0.029533 | 0.057560 |
+| Generator expected Brier, class-weighted | 0.165915 | 0.168411 |
+| Generator squared probability error, base rate | 0.001877 | 0.010451 |
+| Generator intrinsic uncertainty, base rate | 0.029533 | 0.057560 |
+| Generator expected Brier, base rate | 0.031410 | 0.068011 |
+
+ten-forecast inputs: five at 0.10 with 1 event; five at 0.70 with 3 events; constant forecast 0.40
+ten-forecast example: 0.21 = 0.01 - 0.04 + 0.24; base-rate Brier 0.24

@@ -1,0 +1,7 @@
+input: (5, 8)
+attention: (5, 8)
+attention add/norm: (5, 8)
+feed-forward hidden: (5, 16)
+feed-forward output: (5, 8)
+block output: (5, 8)
+matrix weights (d=512, d_ff=2048): 3145728

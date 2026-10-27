@@ -1,0 +1,5 @@
+expected runs out of 1000; seven conditional step probabilities of 0.98
+checker: catches 0.90 of wrong runs; refers 0.02 of right runs
+without checker: correct=868.126, referred=0.000, wrong=131.874
+with checker: correct=850.763, referred=136.050, wrong=13.187
+with checker, every step right: 0.851

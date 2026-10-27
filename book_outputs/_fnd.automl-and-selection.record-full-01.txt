@@ -1,0 +1,726 @@
+{
+  "checks": {
+    "agent delivery": {
+      "findings": [
+        "label-built input outside the decision-time allowlist",
+        "statistic includes validation rows or each training row's own outcome"
+      ],
+      "honest_loss": 0.17540713686323411,
+      "reproduced_loss": 0.15056354025568894,
+      "results": [
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    "boosted trees with map": {
+      "findings": [],
+      "honest_loss": 0.16826479443135714,
+      "reproduced_loss": 0.16826479443135714,
+      "results": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "clean agent": {
+      "findings": [],
+      "honest_loss": 0.17540713686323411,
+      "reproduced_loss": 0.17540713686323411,
+      "results": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "logistic regression": {
+      "findings": [],
+      "honest_loss": 0.1685147496077953,
+      "reproduced_loss": 0.1685147496077953,
+      "results": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "search winner": {
+      "findings": [],
+      "honest_loss": 0.1666105328620896,
+      "reproduced_loss": 0.1666105328620896,
+      "results": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  "commission": {
+    "acceptance": "all checks pass; paired cost difference < 0 and its 95% upper bound < 0; tie keeps baseline",
+    "alpha": 0.05,
+    "baseline": "boosted trees with map",
+    "budget": 20,
+    "challengers": [
+      "logistic regression",
+      "search winner",
+      "agent delivery"
+    ],
+    "delegate_changes": "search: declared family/settings; agent: pipeline and allowed derived inputs",
+    "inputs": [
+      "amount_cents",
+      "reason",
+      "delivery_age_days",
+      "prior_refund_count",
+      "paid_cents",
+      "order_evidence_age_seconds",
+      "shipment_evidence_age_seconds"
+    ],
+    "label_policy": "outcome-1",
+    "measure": "raw validation log loss",
+    "review_cost": 4.0,
+    "seed": 7,
+    "sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+    "space": {
+      "boosted": {
+        "l2_regularization": [
+          0.0,
+          1.0,
+          10.0
+        ],
+        "learning_rate": [
+          0.025,
+          0.05,
+          0.1
+        ],
+        "max_iter": [
+          50,
+          100,
+          200
+        ],
+        "max_leaf_nodes": [
+          3,
+          7,
+          15
+        ],
+        "min_samples_leaf": [
+          50,
+          100,
+          200
+        ]
+      },
+      "logistic": {
+        "C": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ]
+      }
+    },
+    "threshold": 0.08,
+    "windows": {
+      "training": {
+        "first": "2025-04-01",
+        "last": "2026-05-31",
+        "requests": 13766,
+        "row_sha256": "fd5dd02ec8c67576a82e5543ee8328b32784c2ccfc92832f81fc84a6ab84aea8"
+      },
+      "validation": {
+        "first": "2026-06-01",
+        "last": "2026-07-01",
+        "requests": 988,
+        "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa"
+      }
+    }
+  },
+  "decisions": {
+    "agent delivery": "sent back",
+    "logistic regression": "not adopted",
+    "search winner": "not adopted"
+  },
+  "deliveries": [
+    {
+      "builder": "person",
+      "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+      "name": "boosted trees with map",
+      "reported_loss": 0.16826479443135714,
+      "seed": 7,
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 100
+      },
+      "statistics": {
+        "calibration": {
+          "intercept": -0.010783351542429626,
+          "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa",
+          "slope": 0.888487109359104,
+          "window": "validation"
+        },
+        "fit_rows": 13766,
+        "inputs": [
+          "amount_cents",
+          "reason",
+          "delivery_age_days",
+          "prior_refund_count",
+          "paid_cents",
+          "order_evidence_age_seconds",
+          "shipment_evidence_age_seconds"
+        ],
+        "own_label_left_out": true,
+        "row_sha256": "c7988cf4a8f344497a599301bac274a8a699cdff72a36d33ce08e40acd29bea2"
+      },
+      "trials": [
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 1,
+          "loss": 0.16826479443135714,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 100
+          }
+        }
+      ]
+    },
+    {
+      "builder": "person",
+      "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+      "name": "logistic regression",
+      "reported_loss": 0.1685147496077953,
+      "seed": 7,
+      "settings": {
+        "C": 1.0,
+        "family": "logistic"
+      },
+      "statistics": {
+        "calibration": {
+          "intercept": -0.15106437518771387,
+          "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa",
+          "slope": 0.851912242941547,
+          "window": "validation"
+        },
+        "fit_rows": 13766,
+        "inputs": [
+          "amount_cents",
+          "reason",
+          "delivery_age_days",
+          "prior_refund_count",
+          "paid_cents",
+          "order_evidence_age_seconds",
+          "shipment_evidence_age_seconds"
+        ],
+        "own_label_left_out": true,
+        "row_sha256": "c7988cf4a8f344497a599301bac274a8a699cdff72a36d33ce08e40acd29bea2"
+      },
+      "trials": [
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 1,
+          "loss": 0.1685147496077953,
+          "seed": 7,
+          "settings": {
+            "C": 1.0,
+            "family": "logistic"
+          }
+        }
+      ]
+    },
+    {
+      "builder": "seeded search",
+      "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+      "name": "search winner",
+      "reported_loss": 0.1666105328620896,
+      "seed": 7,
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 200
+      },
+      "statistics": {
+        "calibration": {
+          "intercept": -0.19323408479015725,
+          "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa",
+          "slope": 0.8143280224614593,
+          "window": "validation"
+        },
+        "fit_rows": 13766,
+        "inputs": [
+          "amount_cents",
+          "reason",
+          "delivery_age_days",
+          "prior_refund_count",
+          "paid_cents",
+          "order_evidence_age_seconds",
+          "shipment_evidence_age_seconds"
+        ],
+        "own_label_left_out": true,
+        "row_sha256": "c7988cf4a8f344497a599301bac274a8a699cdff72a36d33ce08e40acd29bea2"
+      },
+      "trials": [
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 1,
+          "loss": 0.16781107587842314,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.1,
+            "max_iter": 100,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 2,
+          "loss": 0.16812858269162526,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.025,
+            "max_iter": 50,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 50
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 3,
+          "loss": 0.1671945569721232,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.05,
+            "max_iter": 50,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 50
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 4,
+          "loss": 0.1685147496077953,
+          "seed": 7,
+          "settings": {
+            "C": 1.0,
+            "family": "logistic"
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 5,
+          "loss": 0.16723010723589402,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 0.0,
+            "learning_rate": 0.05,
+            "max_iter": 50,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 6,
+          "loss": 0.16826479443135714,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 7,
+          "loss": 0.1728844329672695,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.1,
+            "max_iter": 200,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 8,
+          "loss": 0.1685278225806164,
+          "seed": 7,
+          "settings": {
+            "C": 100.0,
+            "family": "logistic"
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 9,
+          "loss": 0.1684039209606537,
+          "seed": 7,
+          "settings": {
+            "C": 0.1,
+            "family": "logistic"
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 10,
+          "loss": 0.16959134333903292,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 0.0,
+            "learning_rate": 0.1,
+            "max_iter": 50,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 50
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 11,
+          "loss": 0.16784549233699633,
+          "seed": 7,
+          "settings": {
+            "C": 0.01,
+            "family": "logistic"
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 12,
+          "loss": 0.1666105328620896,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.1,
+            "max_iter": 100,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 13,
+          "loss": 0.16812858269162526,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.025,
+            "max_iter": 50,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 14,
+          "loss": 0.16682072255795574,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 0.0,
+            "learning_rate": 0.1,
+            "max_iter": 50,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 15,
+          "loss": 0.16721519631687276,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 0.0,
+            "learning_rate": 0.05,
+            "max_iter": 200,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 16,
+          "loss": 0.16747952752373524,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.025,
+            "max_iter": 200,
+            "max_leaf_nodes": 7,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 17,
+          "loss": 0.16839638783651178,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 0.0,
+            "learning_rate": 0.025,
+            "max_iter": 100,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 18,
+          "loss": 0.16794621816546898,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.05,
+            "max_iter": 100,
+            "max_leaf_nodes": 15,
+            "min_samples_leaf": 200
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 19,
+          "loss": 0.16730488038889918,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 1.0,
+            "learning_rate": 0.025,
+            "max_iter": 100,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 100
+          }
+        },
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 20,
+          "loss": 0.16812858269162526,
+          "seed": 7,
+          "settings": {
+            "family": "boosted",
+            "l2_regularization": 10.0,
+            "learning_rate": 0.025,
+            "max_iter": 50,
+            "max_leaf_nodes": 3,
+            "min_samples_leaf": 100
+          }
+        }
+      ]
+    },
+    {
+      "builder": "constructed agent",
+      "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+      "name": "agent delivery",
+      "reported_loss": 0.15056354025568894,
+      "seed": 7,
+      "settings": {
+        "C": 1.0,
+        "clean": false,
+        "family": "group"
+      },
+      "statistics": {
+        "calibration": {
+          "intercept": 1.6015564173256451,
+          "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa",
+          "slope": 1.4273806696037274,
+          "window": "validation"
+        },
+        "fit_rows": 14754,
+        "inputs": [
+          "reason",
+          "prior_refund_count",
+          "delivery_age_days",
+          "amount_cents",
+          "found_false_30d"
+        ],
+        "own_label_left_out": false,
+        "row_sha256": "7851dc2700339a3ad5030d5ae360705f40e0500b497a09248d1dbfb9080f2106",
+        "statistics_sha256": "609d369bc9a2adeb0b4fa6e72b16362517a8854fe70b16942b6b0287afb3256f"
+      },
+      "trials": [
+        {
+          "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+          "entry": 1,
+          "loss": 0.15056354025568894,
+          "seed": 7,
+          "settings": {
+            "C": 1.0,
+            "clean": false,
+            "family": "group"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    "calibration record",
+    "tier threshold",
+    "threshold experiment plan"
+  ],
+  "evidence": [
+    {
+      "calibration_error": 0.014670812978173032,
+      "cost": [
+        0.8148748748748749,
+        0.6266081081081081,
+        1.035776276276276
+      ],
+      "difference": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frozen_loss": 0.12588771220866596,
+      "name": "boosted trees with map",
+      "referred": 123,
+      "split_difference": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "validation_loss": 0.16826479443135714,
+      "wrong_paid": 12
+    },
+    {
+      "calibration_error": 0.012933648161220687,
+      "cost": [
+        0.8669269269269269,
+        0.6796146146146147,
+        1.0884597097097097
+      ],
+      "difference": [
+        0.05205205205205205,
+        0.02002002002002002,
+        0.08808808808808809
+      ],
+      "frozen_loss": 0.12434818158534103,
+      "name": "logistic regression",
+      "referred": 136,
+      "split_difference": [
+        0.05205205205205205,
+        0.016016016016016016,
+        0.09346012679346025
+      ],
+      "validation_loss": 0.1685147496077953,
+      "wrong_paid": 12
+    },
+    {
+      "calibration_error": 0.013180778680756493,
+      "cost": [
+        0.9015815815815816,
+        0.7060793293293294,
+        1.120426926926927
+      ],
+      "difference": [
+        0.08670670670670672,
+        0.044044044044044044,
+        0.13213213213213212
+      ],
+      "frozen_loss": 0.12827590732723326,
+      "name": "search winner",
+      "referred": 144,
+      "split_difference": [
+        0.08670670670670672,
+        0.036036036036036036,
+        0.14056423089756429
+      ],
+      "validation_loss": 0.1666105328620896,
+      "wrong_paid": 13
+    },
+    {
+      "calibration_error": 0.01646571788708978,
+      "cost": [
+        0.8891891891891892,
+        0.6446181181181182,
+        1.1559329329329326
+      ],
+      "difference": [
+        0.07431431431431432,
+        -0.0719622122122122,
+        0.2491776776776775
+      ],
+      "frozen_loss": 0.14053159410803065,
+      "name": "agent delivery",
+      "referred": 88,
+      "split_difference": [
+        0.07431431431431432,
+        -0.09414731398064732,
+        0.29163997330664015
+      ],
+      "validation_loss": 0.15056354025568894,
+      "wrong_paid": 21
+    }
+  ],
+  "frozen": {
+    "by_policy_version": {
+      "2026-07-01": 999
+    },
+    "by_tier": {
+      "1": 999
+    },
+    "first": "2026-08-01",
+    "label_policy": "outcome-1",
+    "last": "2026-08-31",
+    "name": "history-august",
+    "requests": 999,
+    "sha256": "a7a7cf68978cc0c8d0c88a4f86938ac5a3be35fe8f05abc165fa93b8fd6ae741"
+  },
+  "grants": "none; drafts only, a person executes",
+  "log": [
+    {
+      "entry": 1,
+      "purpose": "the proposed score's August record",
+      "reader": "stage 1 report",
+      "set": "history-august"
+    },
+    {
+      "entry": 2,
+      "purpose": "K=4, ten starts, seed 7, training-standardized eight inputs; nearest-center cutoff at training percentile 98; boosted comparator and self-training on open and refused tier 1 pools, confidence 0.9, three rounds, gate 0.080; all fits fixed",
+      "reader": "stage 1 report",
+      "set": "history-august"
+    },
+    {
+      "entry": 3,
+      "purpose": "fixed commission 7f2e91bf7c78c6da; deliveries and checks f9b14846b5ee8b9c; one paired cost comparison",
+      "reader": "selection record",
+      "set": "history-august"
+    }
+  ],
+  "receipt": "f9b14846b5ee8b9c554e45eae06355a0e0b4bbc1f8b52c564f38a8cd44156276",
+  "selected": "boosted trees with map",
+  "sha256": "b85ab6eab3fbd2726a169640abea4d4db2b296b7f4f661ecbf8f9938f1e819a1",
+  "signer": "model owner; illustrative costs await the decision owner's signature",
+  "spent": "history-august spent for these candidates"
+}

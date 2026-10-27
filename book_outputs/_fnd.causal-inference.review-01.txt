@@ -1,0 +1,8 @@
+assumed reviewer errors; no reviewer effect was observed
+validation 988; referred by cost rule 60; found false 12; no finding 48
+wrong-payment dollars in that set $454.29; review $4.00; wrong denial $20.00
+missed false  wrongly deny sound -> dollars saved per request; break-even denial share
+q=0.0: 0.0: +0.2169; 0.1: +0.1197; 0.2: +0.0226; 0.3: -0.0746; 0.4: -0.1718; 0.5: -0.2689; break-even f=0.2232
+q=0.2: 0.0: +0.1249; 0.1: +0.0278; 0.2: -0.0694; 0.3: -0.1666; 0.4: -0.2637; 0.5: -0.3609; break-even f=0.1286
+q=0.4: 0.0: +0.0330; 0.1: -0.0642; 0.2: -0.1614; 0.3: -0.2585; 0.4: -0.3557; 0.5: -0.4529; break-even f=0.0339
+q=0.2, f=0.1: $0.0278 saved per request

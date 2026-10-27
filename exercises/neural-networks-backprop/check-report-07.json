@@ -1,0 +1,21 @@
+{
+  "scenario": "constructed clinic message routing",
+  "classes": [
+    "appointments",
+    "prescriptions",
+    "billing"
+  ],
+  "seed": 7,
+  "initialization_seed": 19,
+  "messages": 100,
+  "precision": "float64",
+  "epsilon": 1e-05,
+  "minimum_abs_hidden_input": 0.0009302571763912804,
+  "entries_whose_nudge_switched_a_unit": 0,
+  "checked_arrays": {
+    "W1": 2.604283696033683e-09,
+    "W2": 1.4169611171136257e-09
+  },
+  "largest_relative_gap": 2.604283696033683e-09,
+  "conclusion": "gradient check passed"
+}

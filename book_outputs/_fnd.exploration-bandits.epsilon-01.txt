@@ -1,0 +1,4 @@
+four answers averaging 0.3; fifth answer 1: 0.44
+epsilon 0.1, probabilities (standard, dated, referenced): 0.033333, 0.933333, 0.033333
+away from the leader: 0.066667
+seed 7 choice: dated; propensity 0.933333

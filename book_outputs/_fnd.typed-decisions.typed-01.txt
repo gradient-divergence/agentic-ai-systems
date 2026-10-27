@@ -1,0 +1,6 @@
+Is paying this tier 1 refund a wrong payment?
+declared answers: sound, wrong; declared refusal: cannot tell
+$40.00: wrong probability 0.03, band pay, action pay_if_gate_allows
+$40.00: wrong probability 0.12, band review, action refer
+$75.00: cannot tell, band cannot_tell, action refer
+refused: probabilities must cover exactly the declared answers

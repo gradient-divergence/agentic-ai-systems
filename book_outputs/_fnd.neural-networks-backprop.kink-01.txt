@@ -1,0 +1,11 @@
+corner counts: [0.000000 0.000000 1.000000 0.000000]
+corner hidden input: [-1.000000  0.000000]
+corner probabilities: [0.333333 0.333333 0.333333]
+unit 2 bias: backward 0.000000, central -0.499998
+left slope 0.000000, right slope -0.999997
+entries whose nudge switched a unit: W1(1, 2), b1(1,)
+unit 2 bias moved to 0.000004: hidden input 0.000004, backward -0.999997
+epsilon 0.000010: central -0.699997, entries whose nudge switched a unit: 2
+epsilon 0.000001: central -0.999997, entries whose nudge switched a unit: 0
+requests with a unit exactly at zero: 229 of 300
+all 300 at the hand-set weights: entries whose nudge switched a unit: 10 of 19

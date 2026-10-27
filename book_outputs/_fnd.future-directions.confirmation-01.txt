@@ -1,0 +1,4 @@
+Constructed: independent homogeneous all-paid monthly batches of 2,000.
+Confirmation consumes the next month's separate batch; twelve batches, start clear.
+Yearly false reversal: single 0.492947676; confirmation 0.031339779
+Pending at year end 0.050657384; heterogeneous paid subsets require other probabilities.

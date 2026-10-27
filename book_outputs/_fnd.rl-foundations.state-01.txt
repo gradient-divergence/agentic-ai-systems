@@ -1,0 +1,4 @@
+carriers X and Y: mixture 0.5 each; X lost 0.10, delivery 0.60; Y lost 0.02, delivery 0.25
+X: day 5 lost belief 0.916, pay day 5
+Y: day 5 lost belief 0.079, pay day 10
+pooled day-only rule pays day 10; cost 13.98, carrier-aware 13.43, gap 0.54

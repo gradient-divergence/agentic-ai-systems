@@ -1,0 +1,17 @@
+name: history-august
+label_policy: outcome-1
+first: 2026-08-01
+last: 2026-08-31
+requests: 999
+by_tier: {1: 999}
+by_policy_version: {'2026-07-01': 999}
+sha256: a7a7cf68978cc0c8
+access log, every entry:
+  1: history-august, stage 1 report, the proposed score's August record
+  2: history-august, stage 1 report, K=4, ten starts, seed 7,
+    training-standardized eight inputs; nearest-center cutoff at training
+    percentile 98; boosted comparator and self-training on open and refused
+    tier 1 pools, confidence 0.9, three rounds, gate 0.080; all fits fixed
+  3: history-august, selection record, fixed commission 7f2e91bf7c78c6da;
+    deliveries and checks f9b14846b5ee8b9c; one paired cost comparison
+fingerprint intact: True; consultations: 3

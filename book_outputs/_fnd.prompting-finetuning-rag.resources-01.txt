@@ -1,0 +1,5 @@
+| Arm | Context words | Draft words |
+|---|---|---|
+| prompt | 469.16 | 44.92 |
+| retrieval | 535.75 | 44.92 |
+| adapter | 409.65 | 44.92 |

@@ -1,0 +1,26 @@
+{
+  "constructed": true,
+  "domain": "insurer",
+  "label_window_days": 30,
+  "label_window_basis": "copied refund found-false window",
+  "facts": {
+    "fraud_findings_after_30_days": 0.4,
+    "all_findings_mature_by_days": 90,
+    "basis": "constructed, given in exercise 5"
+  },
+  "other_answers": {
+    "document_rate_per_hour": "1/100",
+    "document_limit_seconds": 1800,
+    "tolerance": "1/100",
+    "costs_dollars": {"pay": ["0", "100"], "refer": ["5", "5"]},
+    "pay_below": "1/20",
+    "ceiling_cents": 10000,
+    "ceiling_dimension": "money",
+    "above_ceiling_role": "named_approver",
+    "shared_resource": "claim_balance",
+    "resource_requirement": "limit",
+    "recheck_at_execution": true,
+    "basis": "constructed insurer answers; refilled for this exercise"
+  },
+  "integration": "Chapter 39's actual rows are required before a four-check packet verdict exists."
+}

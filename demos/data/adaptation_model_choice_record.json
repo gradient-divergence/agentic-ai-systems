@@ -1,0 +1,23 @@
+{
+  "adaptation_selection_record": "15c59490fe5117e74c5dc4abd148b457c05f79a3b64fd45e34048ea2d1de5ecf",
+  "budget": {
+    "margin": 148,
+    "over_budget": "refer; never drop shipment events",
+    "shares": [
+      300,
+      600,
+      150,
+      250,
+      200,
+      400
+    ],
+    "window": 2048
+  },
+  "cost": {
+    "context_words_per_draft": 469.1570247933884,
+    "count_unit": "words, standing in for tokens",
+    "draft_share": 400,
+    "latency_and_price": "not measured by a scripted drafter"
+  },
+  "family": "decoder"
+}

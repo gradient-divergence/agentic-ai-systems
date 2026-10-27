@@ -1,0 +1,5 @@
+| Month and units | Flagged | Wrong flagged | Precision | 95% interval |
+|---|---|---|---|---|
+| August, seconds | 27 of 999 | 0 of 37 | 0.000 | 0.000 to 0.125 |
+| August, milliseconds | 999 of 999 | 37 of 37 | 0.037 | 0.027 to 0.051 |
+| September, seconds | 15 of 966 | 0 of 63 | 0.000 | 0.000 to 0.204 |

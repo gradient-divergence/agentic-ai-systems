@@ -1,0 +1,581 @@
+{
+  "timestamp_utc": "2026-10-11T18:16:39.747553+00:00",
+  "python": "3.11.15",
+  "command": "<repository>/companion/.venv/bin/python companion/exercises/generative-models/reference.py --write-report",
+  "exercise": 7,
+  "runs": [
+    {
+      "tau": 1,
+      "sha256": "94e19e97b6d807c58c679288d15a0a324004b4c0518bf53e0e288c6df811a863",
+      "counts": {
+        "proposed": 200,
+        "rejected": 4,
+        "overruled": 89,
+        "distinct": 121,
+        "unseen_in_training": 23,
+        "kept": 196
+      },
+      "checks": {
+        "seven_tokens": true,
+        "independent_labels": true,
+        "failure_referrals": true,
+        "failure_draws": true,
+        "six_token_counts_unchanged": true,
+        "training_manifest_unchanged": true,
+        "golden_reads_zero": true,
+        "regenerates_byte_for_byte": true
+      }
+    },
+    {
+      "tau": 2,
+      "sha256": "aaebf3d74f7b5e2c86e7d477f7a77506a8d60fb9951861e90c6c670ca7ca379f",
+      "counts": {
+        "proposed": 200,
+        "rejected": 28,
+        "overruled": 110,
+        "distinct": 121,
+        "unseen_in_training": 29,
+        "kept": 172
+      },
+      "checks": {
+        "seven_tokens": true,
+        "independent_labels": true,
+        "failure_referrals": true,
+        "failure_draws": true,
+        "six_token_counts_unchanged": true,
+        "training_manifest_unchanged": true,
+        "golden_reads_zero": true,
+        "regenerates_byte_for_byte": true
+      }
+    }
+  ],
+  "human_review": "pending",
+  "verification": {
+    "timestamp_utc": "2026-10-11T18:29:00.048275+00:00",
+    "python": "3.11.15",
+    "pytest_options": [
+      "-p",
+      "no:cacheprovider",
+      "--import-mode=importlib"
+    ],
+    "solution_files": [
+      "companion/exercises/generative-models/reference.py",
+      "companion/exercises/transformers-foundation-models/reference.py",
+      "companion/exercises/autoencoders-nlp/reference.py"
+    ],
+    "passing_suites": [
+      {
+        "suite": "references_and_scenarios",
+        "passed": 54,
+        "failed": 0,
+        "skipped": 0,
+        "by_module": {
+          "exercises.autoencoders-nlp.test_acceptance": 9,
+          "exercises.generative-models.test_acceptance": 8,
+          "exercises.generative-models.test_reference": 11,
+          "exercises.transformers-foundation-models.test_acceptance": 4,
+          "tests.refund_agent.test_scenarios": 22
+        },
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "--import-mode=importlib",
+          "companion/exercises/generative-models/test_acceptance.py",
+          "companion/exercises/generative-models/test_reference.py",
+          "companion/exercises/transformers-foundation-models/test_acceptance.py",
+          "companion/exercises/autoencoders-nlp/test_acceptance.py",
+          "companion/tests/refund_agent/test_scenarios.py"
+        ],
+        "environment": {
+          "GENERATIVE_MODELS_SOLUTION": "<repository>/companion/exercises/generative-models/reference.py",
+          "TRANSFORMERS_SOLUTION": "<repository>/companion/exercises/transformers-foundation-models/reference.py",
+          "AUTOENCODERS_NLP_SOLUTION": "<repository>/companion/exercises/autoencoders-nlp/reference.py"
+        }
+      },
+      {
+        "suite": "adaptation_demo_and_contracts",
+        "passed": 65,
+        "failed": 0,
+        "skipped": 0,
+        "by_module": {
+          "tests.refund_agent.test_adaptation": 40,
+          "tests.test_adaptation_demo": 25
+        },
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "--import-mode=importlib",
+          "companion/tests/test_adaptation_demo.py",
+          "companion/tests/refund_agent/test_adaptation.py"
+        ],
+        "environment": {
+          "OMP_NUM_THREADS": "1"
+        }
+      }
+    ],
+    "starters": [
+      {
+        "timestamp_utc": "2026-10-11T18:20:37.688293+00:00",
+        "exercise": "generative-models",
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "--import-mode=importlib",
+          "companion/exercises/generative-models/test_acceptance.py"
+        ],
+        "exit_code": 1,
+        "tests": 8,
+        "designed_incomplete": 8,
+        "unexpected_failures": 0
+      },
+      {
+        "timestamp_utc": "2026-10-11T18:20:37.905982+00:00",
+        "exercise": "transformers-foundation-models",
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "--import-mode=importlib",
+          "companion/exercises/transformers-foundation-models/test_acceptance.py"
+        ],
+        "exit_code": 1,
+        "tests": 4,
+        "designed_incomplete": 4,
+        "unexpected_failures": 0
+      },
+      {
+        "timestamp_utc": "2026-10-11T18:20:42.790190+00:00",
+        "exercise": "autoencoders-nlp",
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "--import-mode=importlib",
+          "companion/exercises/autoencoders-nlp/test_acceptance.py"
+        ],
+        "exit_code": 1,
+        "tests": 9,
+        "designed_incomplete": 9,
+        "unexpected_failures": 0
+      }
+    ],
+    "environment": {
+      "directory": "<repository>",
+      "python_executable": "<repository>/companion/.venv/bin/python",
+      "PYTHONPATH": "<repository>:<repository>/companion",
+      "head": "d225faef",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "solution_environment": {
+      "GENERATIVE_MODELS_SOLUTION": "companion/exercises/generative-models/reference.py",
+      "TRANSFORMERS_SOLUTION": "companion/exercises/transformers-foundation-models/reference.py",
+      "AUTOENCODERS_NLP_SOLUTION": "companion/exercises/autoencoders-nlp/reference.py"
+    },
+    "book_gates": {
+      "snippet_extraction": {
+        "command": [
+          "python3",
+          "scripts/snippets/extract_snippets.py",
+          "--mode",
+          "write"
+        ],
+        "exit_code": 0,
+        "snippets": 288
+      },
+      "source_lint": {
+        "command": [
+          "python3",
+          "scripts/source_lint.py"
+        ],
+        "fail": 0,
+        "warn": 739
+      },
+      "listings": {
+        "command": [
+          "<repository>/companion/.venv/bin/python",
+          "scripts/snippets/check_listings.py"
+        ],
+        "exit_code": 0,
+        "listings": 96,
+        "chapters_passed": 34,
+        "chapters_total": 34
+      }
+    },
+    "solver_json": {
+      "command": [
+        "<repository>/companion/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "companion/tests/test_constrained_optimization_demo.py",
+        "-k",
+        "all_json_artifacts_regenerate_byte_for_byte"
+      ],
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "path": "companion/book_outputs/_fnd.constrained-optimization.solve-records.json",
+      "regeneration": "demos.constrained_optimization_demo.write_data in a temporary directory",
+      "environment": {
+        "OMP_NUM_THREADS": "1"
+      }
+    },
+    "byte_identity": {
+      "timestamp_utc": "2026-10-11T18:51:06.360930+00:00",
+      "total_files": 183,
+      "stdout_files": 182,
+      "solver_json_files": 1,
+      "unchanged_from_head": 181,
+      "intentionally_regenerated": [
+        "companion/book_outputs/_fnd.prompting-finetuning-rag.experiment-01.txt",
+        "companion/book_outputs/_fnd.prompting-finetuning-rag.results-01.txt"
+      ],
+      "capture_function": "scripts.snippets.extract_snippets.capture_outputs",
+      "capture_python": "<repository>/companion/.venv/bin/python",
+      "initial_agentic_loop_timeouts_seconds": [
+        300,
+        300
+      ],
+      "capture_environment": {
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "other_sources_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "adaptation": {
+        "ids": [
+          "fnd.prompting-finetuning-rag.experiment-01",
+          "fnd.prompting-finetuning-rag.keys-01",
+          "fnd.prompting-finetuning-rag.lora-01",
+          "fnd.prompting-finetuning-rag.lowrank-01",
+          "fnd.prompting-finetuning-rag.objective-01",
+          "fnd.prompting-finetuning-rag.paired-01",
+          "fnd.prompting-finetuning-rag.prompt-01",
+          "fnd.prompting-finetuning-rag.results-01",
+          "fnd.prompting-finetuning-rag.suite-01"
+        ],
+        "regenerated": [
+          "fnd.prompting-finetuning-rag.experiment-01",
+          "fnd.prompting-finetuning-rag.results-01"
+        ],
+        "unchanged": 7,
+        "elapsed_seconds": 4.52123379195109,
+        "output_timeout_seconds": 300
+      },
+      "agentic_loop": {
+        "ids": [
+          "fnd.agentic-loop.audits-01",
+          "fnd.agentic-loop.compound-01",
+          "fnd.agentic-loop.endings-01",
+          "fnd.agentic-loop.scorecard-01",
+          "fnd.agentic-loop.trace-01"
+        ],
+        "elapsed_seconds": 402.71,
+        "output_timeout_seconds": 1200,
+        "initial_timeout_seconds": 300
+      },
+      "other_sources": [
+        {
+          "source": "companion/demos/appendix_math_demo.py",
+          "ids": [
+            "fnd.appendix-math-foundations.crossentropy-01",
+            "fnd.appendix-math-foundations.matmul-01",
+            "fnd.appendix-math-foundations.scale-01",
+            "fnd.appendix-math-foundations.shift-01",
+            "fnd.appendix-math-foundations.softmax-01"
+          ],
+          "elapsed_seconds": 0.23
+        },
+        {
+          "source": "companion/demos/autoencoders_nlp_demo.py",
+          "ids": [
+            "fnd.autoencoders-nlp.autoencoder-01",
+            "fnd.autoencoders-nlp.counts-01",
+            "fnd.autoencoders-nlp.index-01",
+            "fnd.autoencoders-nlp.keys-01",
+            "fnd.autoencoders-nlp.recall-01",
+            "fnd.autoencoders-nlp.recall-02",
+            "fnd.autoencoders-nlp.versions-01"
+          ],
+          "elapsed_seconds": 4.86
+        },
+        {
+          "source": "companion/demos/backprop_demo.py",
+          "ids": [
+            "fnd.neural-networks-backprop.backward-01",
+            "fnd.neural-networks-backprop.check-01",
+            "fnd.neural-networks-backprop.curves-01",
+            "fnd.neural-networks-backprop.delegated-01",
+            "fnd.neural-networks-backprop.depth-01",
+            "fnd.neural-networks-backprop.epsilon-01",
+            "fnd.neural-networks-backprop.forward-01",
+            "fnd.neural-networks-backprop.keys-01",
+            "fnd.neural-networks-backprop.kink-01",
+            "fnd.neural-networks-backprop.scalar-01",
+            "fnd.neural-networks-backprop.train-01"
+          ],
+          "elapsed_seconds": 0.89
+        },
+        {
+          "source": "companion/demos/causal_inference_demo.py",
+          "ids": [
+            "fnd.causal-inference.adjust-01",
+            "fnd.causal-inference.assign-01",
+            "fnd.causal-inference.did-01",
+            "fnd.causal-inference.figures-01",
+            "fnd.causal-inference.keys-01",
+            "fnd.causal-inference.numbers-01",
+            "fnd.causal-inference.plan-01",
+            "fnd.causal-inference.plan-02",
+            "fnd.causal-inference.review-01",
+            "fnd.causal-inference.size-01",
+            "fnd.causal-inference.support-01"
+          ],
+          "elapsed_seconds": 6.52
+        },
+        {
+          "source": "companion/demos/constrained_optimization_demo.py",
+          "ids": [
+            "fnd.constrained-optimization.absence-01",
+            "fnd.constrained-optimization.branches-01",
+            "fnd.constrained-optimization.certificate-01",
+            "fnd.constrained-optimization.cp-01",
+            "fnd.constrained-optimization.keys-01",
+            "fnd.constrained-optimization.plan-01",
+            "fnd.constrained-optimization.relax-01",
+            "fnd.constrained-optimization.relief-01",
+            "fnd.constrained-optimization.robust-01",
+            "fnd.constrained-optimization.window-01"
+          ],
+          "elapsed_seconds": 3.58
+        },
+        {
+          "source": "companion/demos/data_science_strategy_demo.py",
+          "ids": [
+            "fnd.data-science-strategy.bound-01",
+            "fnd.data-science-strategy.keys-01",
+            "fnd.data-science-strategy.record-01",
+            "fnd.data-science-strategy.scorecard-01"
+          ],
+          "elapsed_seconds": 334.31
+        },
+        {
+          "source": "companion/demos/deep_learning_demo.py",
+          "ids": [
+            "fnd.transformers-foundation-models.block-01",
+            "fnd.transformers-foundation-models.bptt-01",
+            "fnd.transformers-foundation-models.core-01",
+            "fnd.transformers-foundation-models.example-01",
+            "fnd.transformers-foundation-models.keys-07",
+            "fnd.transformers-foundation-models.loss-01",
+            "fnd.transformers-foundation-models.positions-01",
+            "fnd.transformers-foundation-models.recurrence-01",
+            "fnd.transformers-foundation-models.rollout-01",
+            "fnd.transformers-foundation-models.scale-01",
+            "fnd.transformers-foundation-models.sota-01"
+          ],
+          "elapsed_seconds": 0.48
+        },
+        {
+          "source": "companion/demos/delegated_model_demo.py",
+          "ids": [
+            "fnd.automl-and-selection.commission-01",
+            "fnd.automl-and-selection.frozen-01",
+            "fnd.automl-and-selection.frozen-02",
+            "fnd.automl-and-selection.inspect-01",
+            "fnd.automl-and-selection.keys-01",
+            "fnd.automl-and-selection.optimism-01",
+            "fnd.automl-and-selection.power-01",
+            "fnd.automl-and-selection.record-01",
+            "fnd.automl-and-selection.search-01",
+            "fnd.automl-and-selection.truth-01"
+          ],
+          "elapsed_seconds": 36.62
+        },
+        {
+          "source": "companion/demos/generative_models_demo.py",
+          "ids": [
+            "fnd.generative-models.diffusion-01",
+            "fnd.generative-models.elbo-01",
+            "fnd.generative-models.keys-01",
+            "fnd.generative-models.likelihood-01",
+            "fnd.generative-models.sample-01",
+            "fnd.generative-models.scenarios-01",
+            "fnd.generative-models.schedule-01",
+            "fnd.generative-models.vae-01"
+          ],
+          "elapsed_seconds": 2.02
+        },
+        {
+          "source": "companion/demos/ml_data_evaluation_demo.py",
+          "ids": [
+            "fnd.ml-data-and-evaluation.counts-01",
+            "fnd.ml-data-and-evaluation.counts-02",
+            "fnd.ml-data-and-evaluation.exercises-01",
+            "fnd.ml-data-and-evaluation.golden-01",
+            "fnd.ml-data-and-evaluation.golden-02",
+            "fnd.ml-data-and-evaluation.label-01",
+            "fnd.ml-data-and-evaluation.leak-01",
+            "fnd.ml-data-and-evaluation.windows-01"
+          ],
+          "elapsed_seconds": 5.12
+        },
+        {
+          "source": "companion/demos/modern_ai_stack_demo.py",
+          "ids": [
+            "fnd.modern-ai-stack.compat-01",
+            "fnd.modern-ai-stack.contract-01",
+            "fnd.modern-ai-stack.drafts-01",
+            "fnd.modern-ai-stack.exercise-03",
+            "fnd.modern-ai-stack.invariant-01",
+            "fnd.modern-ai-stack.scorecard-01"
+          ],
+          "elapsed_seconds": 340.34
+        },
+        {
+          "source": "companion/demos/perception_tools_demo.py",
+          "ids": [
+            "fnd.perception-tools.boundary-01",
+            "fnd.perception-tools.calls-01",
+            "fnd.perception-tools.contracts-01",
+            "fnd.perception-tools.conv-02",
+            "fnd.perception-tools.execute-01",
+            "fnd.perception-tools.exercises-01",
+            "fnd.perception-tools.failures-01",
+            "fnd.perception-tools.freshness-01",
+            "fnd.perception-tools.keys-01",
+            "fnd.perception-tools.reads-01",
+            "fnd.perception-tools.stale-01",
+            "fnd.perception-tools.versions-01",
+            "fnd.perception-tools.vision-01"
+          ],
+          "elapsed_seconds": 435.37
+        },
+        {
+          "source": "companion/demos/reasoning_planning_demo.py",
+          "ids": [
+            "fnd.reasoning-planning.operators-01",
+            "fnd.reasoning-planning.progression-01",
+            "fnd.reasoning-planning.report-01",
+            "fnd.reasoning-planning.scenarios-01",
+            "fnd.reasoning-planning.second-run-01",
+            "fnd.reasoning-planning.verdicts-01"
+          ],
+          "elapsed_seconds": 61.78
+        },
+        {
+          "source": "companion/demos/refund_gate_demo.py",
+          "ids": [
+            "fnd.action-guardrails.approved-01",
+            "fnd.action-guardrails.boundaries-01",
+            "fnd.action-guardrails.direct-01",
+            "fnd.action-guardrails.exercise-log-01",
+            "fnd.action-guardrails.rates-01",
+            "fnd.action-guardrails.safety-01",
+            "fnd.action-guardrails.stale-01",
+            "fnd.action-guardrails.tier1-01"
+          ],
+          "elapsed_seconds": 285.83
+        },
+        {
+          "source": "companion/demos/rl_foundations_demo.py",
+          "ids": [
+            "fnd.rl-foundations.keys-01",
+            "fnd.rl-foundations.learn-01",
+            "fnd.rl-foundations.model-01",
+            "fnd.rl-foundations.reward-01",
+            "fnd.rl-foundations.state-01",
+            "fnd.rl-foundations.td-01",
+            "fnd.rl-foundations.values-01",
+            "fnd.rl-foundations.vi-01"
+          ],
+          "elapsed_seconds": 0.47
+        },
+        {
+          "source": "companion/demos/semi_self_supervised_demo.py",
+          "ids": [
+            "fnd.semi-self-supervised.budget-01",
+            "fnd.semi-self-supervised.contrast-01",
+            "fnd.semi-self-supervised.figures-01",
+            "fnd.semi-self-supervised.flags-01",
+            "fnd.semi-self-supervised.groups-01",
+            "fnd.semi-self-supervised.holdout-01",
+            "fnd.semi-self-supervised.keys-01",
+            "fnd.semi-self-supervised.kmeans-01",
+            "fnd.semi-self-supervised.numbers-01",
+            "fnd.semi-self-supervised.pools-01",
+            "fnd.semi-self-supervised.record-01",
+            "fnd.semi-self-supervised.scores-01",
+            "fnd.semi-self-supervised.selftrain-01",
+            "fnd.semi-self-supervised.units-01"
+          ],
+          "elapsed_seconds": 36.3
+        },
+        {
+          "source": "companion/demos/supervised_learning_demo.py",
+          "ids": [
+            "fnd.supervised-learning.august-01",
+            "fnd.supervised-learning.biasvar-01",
+            "fnd.supervised-learning.boost-01",
+            "fnd.supervised-learning.calibrate-01",
+            "fnd.supervised-learning.decide-01",
+            "fnd.supervised-learning.figures-01",
+            "fnd.supervised-learning.fit-01",
+            "fnd.supervised-learning.fit-02",
+            "fnd.supervised-learning.gate-01",
+            "fnd.supervised-learning.keys-01",
+            "fnd.supervised-learning.numbers-01",
+            "fnd.supervised-learning.record-01",
+            "fnd.supervised-learning.record-02",
+            "fnd.supervised-learning.shift-01",
+            "fnd.supervised-learning.shift-02",
+            "fnd.supervised-learning.split-01",
+            "fnd.supervised-learning.sweep-01"
+          ],
+          "elapsed_seconds": 14.12
+        },
+        {
+          "source": "companion/demos/training_control_demo.py",
+          "ids": [
+            "fnd.optimization-regularization.adam-01",
+            "fnd.optimization-regularization.decay-01",
+            "fnd.optimization-regularization.descent-01",
+            "fnd.optimization-regularization.keys-01",
+            "fnd.optimization-regularization.noise-01",
+            "fnd.optimization-regularization.overshoot-01",
+            "fnd.optimization-regularization.report-01",
+            "fnd.optimization-regularization.rotate-01",
+            "fnd.optimization-regularization.stop-01",
+            "fnd.optimization-regularization.valley-01"
+          ],
+          "elapsed_seconds": 0.45
+        },
+        {
+          "source": "companion/refund_agent/learning_case.py",
+          "ids": [
+            "fnd.rl-foundations.case-01"
+          ],
+          "elapsed_seconds": 0.43
+        }
+      ],
+      "solver_json_regeneration_test": "test_all_json_artifacts_regenerate_byte_for_byte",
+      "maximum_per_source_timeout_seconds": 1200
+    }
+  }
+}

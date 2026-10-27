@@ -1,0 +1,9 @@
+3: 3000/hour * 720 hours * .001 = 2160 bad decisions allowed
+3: burn 20.0; hourly page at 43.2 minutes
+3: 90 bad decisions; six-hour burn 5 < 6; 72-hour burn 5/12 < 1
+3: spend 4.166667%; no 6-hour page or ticket
+4: threshold 3; fault detection 0.777192
+4: cohort 2/day threshold 2; fault detection 0.010000
+5: read-to-payment gap 2100s; age at payment 2250s > 1800s
+6: open venue threshold 13.972514 seconds
+6: daily average threshold 51.590822 seconds

@@ -1,0 +1,9 @@
+Exercise 3 / 6h: further 3/2
+  loss cents: 24995/2
+Exercise 3 / 24h: further 6
+  loss cents: 34993
+Exercise 3 / clean hours: 1232
+Exercise 3 / shorten stop delay; clean time unchanged.
+Exercise 4 / 24h: 20
+Exercise 4 / 2h: 5/3
+Exercise 4 / rollback restores version; bookings/texts remain.

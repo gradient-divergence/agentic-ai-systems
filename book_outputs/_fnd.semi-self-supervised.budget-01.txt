@@ -1,0 +1,16 @@
+twenty draws, seeds 0 to 19; mean (2.5th to 97.5th percentile across draws)
+tickets: pool 3000, frozen random holdout 1000; three queues, 3-nearest neighbors
+labels  random labels               self-trained                center labels               center labels, spread  (accuracy)
+     6  0.6636 (0.3240 to 0.9521)  0.4410 (0.3240 to 0.9521)  0.9634 (0.9630 to 0.9650)  0.9478 (0.9443 to 0.9495)
+    12  0.8530 (0.6079 to 0.9560)  0.8117 (0.4679 to 0.9605)  0.9550 (0.9493 to 0.9600)  0.9624 (0.9595 to 0.9640)
+    24  0.9383 (0.8842 to 0.9596)  0.9454 (0.8965 to 0.9660)  0.9569 (0.9404 to 0.9646)  0.9508 (0.9175 to 0.9620)
+    48  0.9515 (0.9383 to 0.9660)  0.9533 (0.9389 to 0.9650)  0.9567 (0.9387 to 0.9666)  0.9431 (0.9238 to 0.9565)
+    96  0.9528 (0.9404 to 0.9655)  0.9547 (0.9445 to 0.9635)  0.9565 (0.9395 to 0.9660)  0.9465 (0.9310 to 0.9615)
+refunds: training labels hidden; validation 988, mean planted risk 0.0319
+labels  model          validation log loss     planted-risk MAE        mean prediction
+   300  supervised    0.1963 (0.1840 to 0.2252)  0.0351 (0.0257 to 0.0479)  0.0399 (0.0160 to 0.0634)
+   300  self-trained  0.3557 (0.3157 to 0.4340)  0.0312 (0.0305 to 0.0317)  0.0008 (0.0002 to 0.0021)
+  1000  supervised    0.1811 (0.1689 to 0.1958)  0.0217 (0.0172 to 0.0264)  0.0335 (0.0261 to 0.0416)
+  1000  self-trained  0.2726 (0.2463 to 0.2869)  0.0293 (0.0277 to 0.0301)  0.0028 (0.0018 to 0.0053)
+  3000  supervised    0.1728 (0.1681 to 0.1784)  0.0154 (0.0128 to 0.0177)  0.0342 (0.0304 to 0.0378)
+  3000  self-trained  0.2119 (0.2053 to 0.2174)  0.0230 (0.0219 to 0.0243)  0.0100 (0.0077 to 0.0127)

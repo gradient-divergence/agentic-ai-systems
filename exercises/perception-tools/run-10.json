@@ -1,0 +1,29 @@
+{
+  "chapter": "perception-tools",
+  "exercise": 10,
+  "started_at_utc": "2026-10-16T22:01:14.414152+00:00",
+  "finished_at_utc": "2026-10-16T22:01:14.871612+00:00",
+  "python": "<repository>/companion/.venv/bin/python",
+  "python_version": "3.11.15",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "rerun": "<repository>/companion/.venv/bin/python companion/exercises/run_reference.py perception-tools",
+  "pytest_arguments": [
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "-o",
+    "pythonpath=",
+    "-o",
+    "addopts=",
+    "-q",
+    "<repository>/companion/exercises/perception-tools/test_acceptance.py"
+  ],
+  "exit_code": 0,
+  "stdout": ".............                                                            [100%]\n13 passed in 0.24s\n",
+  "stderr": "",
+  "source_sha256": "1a53c4fe7f6f9e654db69d60c9c0d8c60d58cf907f3ec2b5c1261a0e30a484fc",
+  "patched_source_sha256": "40ac9562431cf5c903580fe09bd50902e291140d46935ee2275ddf216164bd42",
+  "patch_sha256": "4ef326121e00a8086932dc4b24c343445f6692bf795fef7a0ba5f0702edd1089",
+  "test_sha256": "dfba014ec8f679f66876b627735d1311d6520eedd017cf2dfa75b6299c18b9bd"
+}

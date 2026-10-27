@@ -1,0 +1,28 @@
+main shadow entry point: started; journaled pass and constructed owner sign-off
+match candidate and suite
+first day: 120 requests; agent agreement 76; baseline agreement 105;
+adjudication pending 44
+disagreements: refer versus approve 2, refer versus deny 42
+shadow day: would-pay 16; would-review 60; gate calls 16; real ledger unchanged
+True; real review queue unchanged True; moved 0 cents
+tier 3 denial referrals 36; stale-evidence referrals 8
+verifier catches 0; false objections 0
+tier 1: 35 requests; forbidden 0; referrals 7; baseline referrals 7; paid
+labels pending 18
+prepared stream: 120 generated requests; start 2026-10-01; seed 7; generated
+labels stand in for a blind person's decisions
+binding unit test: 5 payable/approval requests; would-pay 3; would-review 2;
+gate calls 3; moved 0 cents
+real ledger unchanged True; real review queue unchanged True; both
+refund.execute and approval.request recorded
+entry point refusal tests: missing, failed, unsigned, candidate mismatch, suite
+mismatch, prior unchanged failure, forged sign-off; each leaves shadow
+unstarted
+chapter 21 record: A held; B held; fixed notice retained; notices sent 0; offer
+outcomes observed 0
+D6: binding, not provisional; same 299 tier 1 requests; wrongful denials no
+more than baseline; paid person decision not found false within 30 days
+299-request window and paid-only 30-day labels incomplete here; no canary
+sign-off
+companion: simulated ledger; constructed owner sign-off for the offline
+example; deployment: a person carries out every refund through Part V

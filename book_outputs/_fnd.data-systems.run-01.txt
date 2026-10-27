@@ -1,0 +1,37 @@
+| Outcome / reason | Generated | Rename | Contracts | Harmless |
+|---|---:|---:|---:|---:|
+| approve eligible | 4 | 4 | 1 | 1 |
+| deny already_delivered | 4 | 0 | 0 | 0 |
+| deny amount_over_policy | 1 | 1 | 0 | 0 |
+| deny outside_return_window | 3 | 0 | 0 | 0 |
+| refer already_delivered | 2 | 0 | 0 | 0 |
+| refer ambiguous_order | 1 | 1 | 1 | 1 |
+| refer amount_over_policy | 10 | 10 | 2 | 2 |
+| refer approval_required | 4 | 4 | 1 | 1 |
+| refer contract_vocabulary:shipment.status | 0 | 0 | 26 | 26 |
+| refer delivery_unknown | 5 | 16 | 5 | 5 |
+| refer non_current_policy | 1 | 1 | 1 | 1 |
+| refer outside_return_window | 2 | 0 | 0 | 0 |
+| refer stale_policy | 1 | 1 | 1 | 1 |
+| refer stale_shipment | 1 | 1 | 1 | 1 |
+| refer suspicious_request | 1 | 1 | 1 | 1 |
+| Total decisions | 40 | 40 | 40 | 40 |
+| Cents paid | 14996 | 14996 | 4999 | 4999 |
+generated: changed decisions 0
+harmless without contracts: changed decisions 0
+renamed delivered parcels: 3 wrongful payments; 9997 cents
+  r-7-0008: 4999 cents; delivery age days None
+  r-7-0014: 2499 cents; delivery age days 7.0
+  r-7-0029: 4999 cents; delivery age days 1.0
+  r-7-0035: 2499 cents; delivery age days 2.0
+Legitimate payment unaffected by the rename: r-7-0008.
+  4999 cents; no delivery scan to rename
+other tier 1 referrals: r-7-0007, r-7-0022, r-7-0028, r-7-0036
+higher-tier not-delivered drafts on delivered parcels: 6
+  r-7-0005: tier 3, draft approve, eligible
+  r-7-0017: tier 2, draft approve, eligible
+  r-7-0020: tier 3, draft deny, amount_over_policy
+  r-7-0026: tier 3, draft deny, amount_over_policy
+  r-7-0032: tier 3, draft approve, eligible
+  r-7-0038: tier 2, draft deny, amount_over_policy
+higher-tier approving drafts: 3

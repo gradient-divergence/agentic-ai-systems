@@ -1,0 +1,18 @@
+STAGE-4 SENSITIVITY RUN: available-base payments, seed 7, 30 days.
+ASSEMBLED STAGE-6 NUMBERS PENDING: rerun after partner integration.
+Stage-6 brief expectations: about 731 payments; 183/73 rechecks;
+about 48 blind second reviews/month. Keep these separate from stage 4.
+Month tier1 payments: 960
+Recheck at 25%: 227 sampled; policy-ineligible findings=0
+  independent clean-case 95% upper bound=1.311036%
+Recheck at 10%: 92 sampled; policy-ineligible findings=0
+  independent clean-case 95% upper bound=3.203786%
+Brief's hand-count bounds: n=183 -> 1.623686%; n=73 -> 4.020679%
+Constructed first/independent readings; no real reviewer behavior.
+Blind second-review sample: 56 disagreements/adjudications: 4
+Agreement with adjudicated policy readings: {'matched': 52, 'count': 56,
+'agreement': 0.9285714285714286, 'wilson': (0.830243171685138,
+0.9718744187536204)}
+Follow-up work: adjudications 2.000h in the month
+Authenticated, named adjudication records remain a chapter-35 integration
+point.

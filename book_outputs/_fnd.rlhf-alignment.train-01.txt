@@ -1,0 +1,20 @@
+seed 7; 5 kinds; per kind: labeled 2000, training pairs 2000, held-out
+  reports 2000, held-out pairs 2000
+full-batch DPO: rate 10; max steps 100000; gradient norm < 1e-10
+kind mu reference reward_gap DPO_beta_1 DPO_beta_0.25
+0 0.2 0.196000 -1.318908 0.061204 0.001245
+1 0.4 0.408500 -0.430529 0.309876 0.109849
+2 0.6 0.584500 0.415893 0.680738 0.881305
+3 0.8 0.790500 1.386294 0.937861 0.998966
+4 0.9 0.902500 2.338303 0.989683 0.999991
+policy preference_accuracy correctness calibration_error mean_KL
+  mean_confidence
+reference 0.500000 0.735600 0.012800 0.000000 0.734600
+1.0 0.739200 0.735600 0.111841 0.053521 0.847441
+0.25 0.739200 0.735600 0.218233 0.194779 0.953833
+beta 1.0: steps 108; gradient norm 9.478e-11; max DPO/RLHF probability gap
+  6.029e-11
+beta 0.25: steps 1746; gradient norm 9.998e-11; max DPO/RLHF probability gap
+  9.333e-13
+population mu 0.5: beta 1 0.500000; beta 0.25 0.500000
+population mu 0.6: beta 1 0.692308; beta 0.25 0.883636

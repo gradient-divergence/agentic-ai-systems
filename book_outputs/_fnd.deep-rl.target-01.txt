@@ -1,0 +1,4 @@
+reward 1; gamma 0.9; next values (3, 4); current value 2; eta 0.1
+continuing: target 4.60; TD error 2.60; half-squared loss 3.38; table value
+  2.26
+ending: target 1.00; TD error -1.00; half-squared loss 0.50; table value 1.90

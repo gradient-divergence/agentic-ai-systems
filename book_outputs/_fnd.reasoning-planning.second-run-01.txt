@@ -1,0 +1,6 @@
+r-7-0009: 5000 cents, tier 2; second run
+facts at the start: approved, proposed
+approval covers the proposal of 5000 cents
+pays at once: step 1: lacks order_read, policy_read, shipment_read
+reads again, 6 steps: valid
+stage 1 second run: eligible, paid 5000

@@ -1,0 +1,19 @@
+name: golden-1
+label_policy: 1
+first: 2026-08-01
+last: 2026-09-27
+requests: 121
+by_tier: {1: 38, 2: 34, 3: 49}
+by_policy_version: {'2026-07-01': 61, '2026-09-01': 60}
+sha256: a4b0ae12d8329eab
+access log, every entry:
+  1: golden-1, stage 1 report, baseline and classifier
+baseline, scored on outcome, amount, tier and a denial's citation:
+  errors: 0 of 121
+classifier misses: 0
+classifier false-positive flags: 17
+  label approval_required, tiers 2 and 3: 9
+    by version in force: 2026-07-01 6, 2026-09-01 3
+  label eligible, tier 1: 8
+    by version in force: 2026-07-01 2, 2026-09-01 6
+flags that disagree on an injected failure: none

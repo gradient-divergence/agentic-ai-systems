@@ -1,0 +1,4 @@
+request: 12000 cents, tier 2; proposal: 12000 cents, approved by alex
+validate_plan for 11000 cents: valid
+refund.execute for 11000 cents: ok=False, reason=amount_mismatch
+payments=0; audited reason=amount_mismatch, money_moved=False

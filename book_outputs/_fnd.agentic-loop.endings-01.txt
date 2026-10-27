@@ -1,0 +1,10 @@
+step  phase     call             ok    reason or age_seconds
+0     order     order.lookup     true  60.0
+1     shipment  shipment.status  true  1801.0
+2     policy    policy.retrieve  true  3600.0
+3     assess    (draft)          true  stale_shipment
+4     audit     audit.append     true
+
+request   cents  tier  decision                  steps  executed
+r-7-0002  2499   1     refer stale_shipment      5      false
+r-7-0009  5000   2     refer approval_required   7      false

@@ -1,0 +1,635 @@
+{
+  "access": [
+    {
+      "candidates": {
+        "A": "992a25b4a88a815e6558e994208dbbedbfca6f6c9272b4d8e461f6fa2422e396",
+        "B": "f0270f22f53a613157c8b57b08e86cbea45a26b36c5b11a630b15f976684d7cb",
+        "fixed": "8b4e9a1656f92287f7edc597bf83786e73d791f5c4c45b563f39ef5d5d37a9d6"
+      },
+      "fingerprint": "de2ad7d44805a9eaea9171f30909dd058151a52c9999cf9f6180538fba72fab0",
+      "kind": "rule",
+      "model": "516d15379df4080e9908b03f00dbc1f07853868b4eb27a912c22d586da6e6148",
+      "window": "20de3f5ffd64afe1ab5614aa02090ae4ef2380aabcf53a4ac6e77b0c89920ed4"
+    },
+    {
+      "kind": "outcomes",
+      "purpose": "evaluate under predeclared rule de2ad7d44805a9eaea9171f30909dd058151a52c9999cf9f6180538fba72fab0",
+      "reader": "chapter-21",
+      "window": "20de3f5ffd64afe1ab5614aa02090ae4ef2380aabcf53a4ac6e77b0c89920ed4"
+    }
+  ],
+  "assumptions": [],
+  "autonomy": "drafts only; a person executes",
+  "learning_records": 9837,
+  "learning_window": [
+    "2025-04-01",
+    "2026-02-01"
+  ],
+  "limits": [
+    "this window's customers, season and logger",
+    "human-changed offers excluded; no known action chance",
+    "no interference assumed",
+    "future drift and delayed outcomes can change value",
+    "normal intervals can mislead on heavy ratios",
+    "seeded redraws approximate the exact law"
+  ],
+  "logger_fingerprints": [
+    "32302bb50baa8e7848f439dcc487d8c85d129c5f599a23c032c0c1785650ad77"
+  ],
+  "logger_seeds": [
+    7
+  ],
+  "logger_versions": [
+    "frozen-capped-uniform-1"
+  ],
+  "model_fingerprint": "516d15379df4080e9908b03f00dbc1f07853868b4eb27a912c22d586da6e6148",
+  "model_source_fingerprint": "f0f94dab4bba2bcf1e03c94501f09854a72bfe15979b30ab75e96f74e2eb8542",
+  "outcome_reads": 1,
+  "override_ids": [],
+  "overrides": 0,
+  "policies": {
+    "A": {
+      "baseline_n_eff": 3809.000000000003,
+      "decision": "hold",
+      "dm": 0.8502258186313528,
+      "dr": 0.8224204633080897,
+      "exact": {
+        "draws": 100000,
+        "extreme": 41911,
+        "method": "seeded redraws",
+        "monte_carlo_se": 0.0015603102508796127,
+        "observed": 0.011714267653407709,
+        "p_value": 0.41911,
+        "seed": 7,
+        "variable_records": 3929
+      },
+      "fingerprint": "992a25b4a88a815e6558e994208dbbedbfca6f6c9272b4d8e461f6fa2422e396",
+      "improvement": 0.011714267653407709,
+      "intact": true,
+      "interval": [
+        -0.07548516867291791,
+        0.09891370397973331
+      ],
+      "ips": 0.687197760244337,
+      "ips_interval": [
+        0.48754402459236473,
+        0.8868514958963092
+      ],
+      "judged": true,
+      "n_eff": 55.0,
+      "one_logging_policy": true,
+      "outcomes_final": true,
+      "policy": {
+        "frozen_at": "2026-02-14T23:06:17+00:00",
+        "source_fingerprint": "92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd",
+        "tables": [
+          [
+            "changed_mind",
+            [
+              [
+                "standard",
+                0.0
+              ],
+              [
+                "dated",
+                1.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "damaged",
+            [
+              [
+                "standard",
+                0.0
+              ],
+              [
+                "dated",
+                1.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "not_delivered",
+            [
+              [
+                "standard",
+                0.0
+              ],
+              [
+                "dated",
+                1.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ]
+        ],
+        "version": "learning-greedy-1"
+      },
+      "reasons": [
+        "candidate effective size below 400",
+        "improvement interval is not above zero",
+        "exact check exceeds 0.025"
+      ],
+      "sn": 0.8181818181818182,
+      "sn_interval": [
+        0.7162368983892928,
+        0.9201267379743435
+      ],
+      "sn_reason": "",
+      "source_fingerprint": "92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd",
+      "support": [
+        {
+          "acts": true,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 13,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 23,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 1076,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": true,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 40,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 34,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 2478,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": true,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 2,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 8,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 255,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 265
+        }
+      ]
+    },
+    "B": {
+      "baseline_n_eff": 3809.000000000003,
+      "decision": "hold",
+      "dm": 0.8123447425917867,
+      "dr": 0.8067030347943797,
+      "exact": {
+        "draws": 100000,
+        "extreme": 69678,
+        "method": "seeded redraws",
+        "monte_carlo_se": 0.0014535392378604713,
+        "observed": -0.00400316086030236,
+        "p_value": 0.69678,
+        "seed": 7,
+        "variable_records": 265
+      },
+      "fingerprint": "f0270f22f53a613157c8b57b08e86cbea45a26b36c5b11a630b15f976684d7cb",
+      "improvement": -0.00400316086030236,
+      "intact": true,
+      "interval": [
+        -0.030836820920337765,
+        0.022830499199733047
+      ],
+      "ips": 0.7767177749888102,
+      "ips_interval": [
+        0.7439088324350261,
+        0.8095267175425943
+      ],
+      "judged": true,
+      "n_eff": 1309.9494261816776,
+      "one_logging_policy": true,
+      "outcomes_final": true,
+      "policy": {
+        "frozen_at": "2026-02-14T23:06:17+00:00",
+        "source_fingerprint": "92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd",
+        "tables": [
+          [
+            "changed_mind",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "damaged",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "not_delivered",
+            [
+              [
+                "standard",
+                0.0
+              ],
+              [
+                "dated",
+                1.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ]
+        ],
+        "version": "not-delivered-only-1"
+      },
+      "reasons": [
+        "improvement interval is not above zero",
+        "exact check exceeds 0.025"
+      ],
+      "sn": 0.8038147138964578,
+      "sn_interval": [
+        0.7753403743998958,
+        0.8322890533930197
+      ],
+      "sn_reason": "",
+      "source_fingerprint": "92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd",
+      "support": [
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 13,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 23,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": true,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 1076,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 40,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 34,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": true,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 2478,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": true,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 2,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 8,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 255,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 265
+        }
+      ]
+    },
+    "fixed": {
+      "dm": 0.8037421742664556,
+      "dr": 0.810706195654682,
+      "fingerprint": "8b4e9a1656f92287f7edc597bf83786e73d791f5c4c45b563f39ef5d5d37a9d6",
+      "ips": 0.8130523692086257,
+      "ips_interval": [
+        0.7997833072129844,
+        0.8263214312042669
+      ],
+      "judged": true,
+      "n_eff": 3809.000000000003,
+      "policy": {
+        "frozen_at": "2026-02-14T23:06:17+00:00",
+        "source_fingerprint": "b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f",
+        "tables": [
+          [
+            "changed_mind",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "damaged",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "not_delivered",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ]
+        ],
+        "version": "standard-notice-1"
+      },
+      "sn": 0.8107114728275137,
+      "sn_interval": [
+        0.7982693872229348,
+        0.8231535584320927
+      ],
+      "sn_reason": "",
+      "source_fingerprint": "b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f",
+      "support": [
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 13,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 23,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": true,
+          "cell": "changed_mind",
+          "eligible": true,
+          "matches": 1076,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 1112
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 40,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": false,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 34,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": true,
+          "cell": "damaged",
+          "eligible": true,
+          "matches": 2478,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 2552
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 2,
+          "min_positive": 0.016666666666666666,
+          "offer": "dated",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": false,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 8,
+          "min_positive": 0.016666666666666666,
+          "offer": "referenced",
+          "positive_share": 1.0,
+          "records": 265
+        },
+        {
+          "acts": true,
+          "cell": "not_delivered",
+          "eligible": true,
+          "matches": 255,
+          "min_positive": 0.9666666666666667,
+          "offer": "standard",
+          "positive_share": 1.0,
+          "records": 265
+        }
+      ]
+    }
+  },
+  "randomized_records": 3929,
+  "records": 3929,
+  "rule": {
+    "draws": 100000,
+    "estimand": "candidate minus fixed offer rule; no repeat contact per eligible request",
+    "estimator": "dr",
+    "exact_level": 0.025,
+    "level": 0.95,
+    "n_eff_floor": 400,
+    "one_logging_policy": true,
+    "outcomes_final": true,
+    "seed": 7,
+    "support_required": true
+  },
+  "rule_fingerprint": "de2ad7d44805a9eaea9171f30909dd058151a52c9999cf9f6180538fba72fab0",
+  "version": "offpolicy-record-1",
+  "window": {
+    "bounds": "start inclusive; end exclusive; decision date",
+    "dates": [
+      "2026-02-01",
+      "2026-06-01"
+    ],
+    "name": "offer-evaluation",
+    "outcomes_sha256": "119d30dc375970a262bf2dafbdd0508c4df776bb75ed241de1b97e7a74347141",
+    "rows": 3929,
+    "sha256": "20de3f5ffd64afe1ab5614aa02090ae4ef2380aabcf53a4ac6e77b0c89920ed4"
+  }
+}

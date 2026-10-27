@@ -1,0 +1,6 @@
+request r-7-0005: 65000 cents, tier 3
+label: deny already_delivered
+baseline: deny already_delivered
+agent: refer already_delivered, executed=False
+review: open=True, required_role=named_approver; payments=0
+disagreements: tier 3, label deny=14

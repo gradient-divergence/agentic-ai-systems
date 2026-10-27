@@ -1,0 +1,15 @@
+refund.execute: generated shared ToolArguments JSON Schema
+{"additionalProperties":false,"properties":{"order_id":{"anyOf":[{"type":
+"string"},{"type":"null"}],"default":null,"title":"Order Id"},"amount_cents":{
+"anyOf":[{"exclusiveMinimum":0,"type":"integer"},{"type":"null"}],"default":
+null,"title":"Amount Cents"},"reason":{"default":"","title":"Reason","type":
+"string"},"idempotency_key":{"anyOf":[{"type":"string"},{"type":"null"}],
+"default":null,"title":"Idempotency Key"},"approval_id":{"anyOf":[{"type":
+"string"},{"type":"null"}],"default":null,"title":"Approval Id"}},"title":
+"ToolArguments","type":"object"}
+Contract row (effect/checks; refusals):
+Write, irreversible. An `idempotency_key` and its binding; `amount_cents`; not
+already paid; the `approval_id` it names exists, required at tiers 2 and 3; the
+three sources read again; the gate; `idempotency_key_required`,
+`missing_execution_arguments`, `idempotency_conflict`,
+`request_already_executed`, `invalid_approval`, and the gate's reasons

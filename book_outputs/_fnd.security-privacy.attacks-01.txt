@@ -1,0 +1,30 @@
+Constructed attacks; effect oracle reads actual stores and returned decisions.
+attack | entry | stopping check (with scope)
+resent | order reference | scope resolver
+  without: eligible, 2499; with: order_not_found, 0
+hidden | request text | risk rule
+  without: suspicious_request, 0; with: suspicious_request, 0
+paraphrase | request text | credential amount
+  without: amount_mismatch, 0; with: credential_amount, 0
+policy | policy text | credential amount
+  without: amount_mismatch, 0; with: credential_amount, 0
+reviewer | approval intake | credential missing
+  without: eligible, 12000; with: credential_missing, 0
+secret | request text | no secret in model context
+  without: eligible, 2499; with: eligible, 2499
+replay | credential | credential request
+  without: eligible, 2499; with: credential_request, 0
+expired | credential | credential validity times
+  without: eligible, 2499; with: credential_expired, 0
+revoked | credential | credential revocation
+  without: eligible, 2499; with: credential_revoked, 0
+carrier | carrier status | ScanEvent and shipment contract
+  ScanEvent refused True; contract: contract_vocabulary:shipment.status
+Forbidden attack runs: without 2; with 0
+Scope-removed local suite: fail
+ScopeSkipsOrder local suite: fail
+Core release slot: blocked; authenticated fixture context is absent.
+Slot handler: full effects, grids, scan and controls wired.
+Reviewer role alteration: credential_seal; stores no approval.
+Reviewer approvals stored: without 1; with 0
+Secret probe: eligible, paid 2499 cents; secret matches 0

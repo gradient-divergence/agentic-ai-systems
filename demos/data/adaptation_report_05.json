@@ -1,0 +1,2920 @@
+{
+  "cases": [
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0163",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-01T05:35:58Z",
+        "failure": null,
+        "order_reference": "o-0163",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0163",
+        "requester_id": "customer-7-0163",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0386",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-02T02:22:34Z",
+        "failure": null,
+        "order_reference": "o-0386",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0386",
+        "requester_id": "customer-7-0386",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0580",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-02T15:46:15Z",
+        "failure": null,
+        "order_reference": "o-0580",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0580",
+        "requester_id": "customer-7-0580",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0055",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-03T13:24:48Z",
+        "failure": null,
+        "order_reference": "o-0055",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0055",
+        "requester_id": "customer-7-0055",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0413",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-03T14:43:10Z",
+        "failure": null,
+        "order_reference": "o-0413",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0413",
+        "requester_id": "customer-7-0413",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0548",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-04T03:13:17Z",
+        "failure": null,
+        "order_reference": "o-0548",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0548",
+        "requester_id": "customer-7-0548",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0407",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-04T09:18:56Z",
+        "failure": null,
+        "order_reference": "o-0407",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0407",
+        "requester_id": "customer-7-0407",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0120",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-05T00:09:30Z",
+        "failure": null,
+        "order_reference": "o-0120",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0120",
+        "requester_id": "customer-7-0120",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0301",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-05T14:15:28Z",
+        "failure": null,
+        "order_reference": "o-0301",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0301",
+        "requester_id": "customer-7-0301",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0225",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-05T16:05:30Z",
+        "failure": null,
+        "order_reference": "o-0225",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0225",
+        "requester_id": "customer-7-0225",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0539",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-05T16:09:28Z",
+        "failure": null,
+        "order_reference": "o-0539",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0539",
+        "requester_id": "customer-7-0539",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0523",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-06T07:06:52Z",
+        "failure": null,
+        "order_reference": "o-0523",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0523",
+        "requester_id": "customer-7-0523",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0118",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-07T14:09:28Z",
+        "failure": null,
+        "order_reference": "o-0118",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0118",
+        "requester_id": "customer-7-0118",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0139",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-07T21:31:42Z",
+        "failure": null,
+        "order_reference": "o-0139",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0139",
+        "requester_id": "customer-7-0139",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0470",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-08T06:31:26Z",
+        "failure": null,
+        "order_reference": "o-0470",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0470",
+        "requester_id": "customer-7-0470",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0018",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-08-08T08:30:29Z",
+        "failure": null,
+        "order_reference": "o-0018",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0018",
+        "requester_id": "customer-7-0018",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0045",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-08T09:45:39Z",
+        "failure": null,
+        "order_reference": "o-0045",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0045",
+        "requester_id": "customer-7-0045",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0353",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-08T23:38:36Z",
+        "failure": null,
+        "order_reference": "o-0353",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0353",
+        "requester_id": "customer-7-0353",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0307",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-09T03:48:14Z",
+        "failure": null,
+        "order_reference": "o-0307",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0307",
+        "requester_id": "customer-7-0307",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0354",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-08-09T17:46:17Z",
+        "failure": null,
+        "order_reference": "o-0354",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0354",
+        "requester_id": "customer-7-0354",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0417",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-08-10T02:31:21Z",
+        "failure": null,
+        "order_reference": "o-0417",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0417",
+        "requester_id": "customer-7-0417",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0451",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-10T10:22:37Z",
+        "failure": null,
+        "order_reference": "o-0451",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0451",
+        "requester_id": "customer-7-0451",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0275",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-10T12:27:33Z",
+        "failure": null,
+        "order_reference": "o-0275",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0275",
+        "requester_id": "customer-7-0275",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0454",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-11T15:52:11Z",
+        "failure": null,
+        "order_reference": "o-0454",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0454",
+        "requester_id": "customer-7-0454",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0551",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-12T07:41:17Z",
+        "failure": null,
+        "order_reference": "o-0551",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0551",
+        "requester_id": "customer-7-0551",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0265",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-12T21:02:53Z",
+        "failure": null,
+        "order_reference": "o-0265",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0265",
+        "requester_id": "customer-7-0265",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0096",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-12T22:48:57Z",
+        "failure": null,
+        "order_reference": "o-0096",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0096",
+        "requester_id": "customer-7-0096",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0379",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-13T17:32:18Z",
+        "failure": null,
+        "order_reference": "o-0379",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0379",
+        "requester_id": "customer-7-0379",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0556",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-13T20:45:03Z",
+        "failure": null,
+        "order_reference": "o-0556",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0556",
+        "requester_id": "customer-7-0556",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0371",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-14T06:57:38Z",
+        "failure": null,
+        "order_reference": "o-0371",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0371",
+        "requester_id": "customer-7-0371",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0372",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-15T12:06:13Z",
+        "failure": null,
+        "order_reference": "o-0372",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0372",
+        "requester_id": "customer-7-0372",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0070",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-16T00:11:52Z",
+        "failure": null,
+        "order_reference": "o-0070",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0070",
+        "requester_id": "customer-7-0070",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0350",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-16T19:45:49Z",
+        "failure": null,
+        "order_reference": "o-0350",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0350",
+        "requester_id": "customer-7-0350",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0267",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-17T12:28:26Z",
+        "failure": null,
+        "order_reference": "o-0267",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0267",
+        "requester_id": "customer-7-0267",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0415",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-17T12:42:02Z",
+        "failure": null,
+        "order_reference": "o-0415",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0415",
+        "requester_id": "customer-7-0415",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0117",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-18T18:16:54Z",
+        "failure": null,
+        "order_reference": "o-0117",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0117",
+        "requester_id": "customer-7-0117",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0509",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-18T21:34:16Z",
+        "failure": null,
+        "order_reference": "o-0509",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0509",
+        "requester_id": "customer-7-0509",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0474",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-19T12:55:21Z",
+        "failure": null,
+        "order_reference": "o-0474",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0474",
+        "requester_id": "customer-7-0474",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0511",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-19T17:38:31Z",
+        "failure": null,
+        "order_reference": "o-0511",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0511",
+        "requester_id": "customer-7-0511",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0126",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-20T12:46:11Z",
+        "failure": null,
+        "order_reference": "o-0126",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0126",
+        "requester_id": "customer-7-0126",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0416",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-21T14:14:26Z",
+        "failure": null,
+        "order_reference": "o-0416",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0416",
+        "requester_id": "customer-7-0416",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0294",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-22T09:49:28Z",
+        "failure": null,
+        "order_reference": "o-0294",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0294",
+        "requester_id": "customer-7-0294",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0540",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-22T20:14:58Z",
+        "failure": null,
+        "order_reference": "o-0540",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0540",
+        "requester_id": "customer-7-0540",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0569",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-22T23:14:48Z",
+        "failure": null,
+        "order_reference": "o-0569",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0569",
+        "requester_id": "customer-7-0569",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0456",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-24T11:38:16Z",
+        "failure": null,
+        "order_reference": "o-0456",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0456",
+        "requester_id": "customer-7-0456",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0268",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-24T19:35:35Z",
+        "failure": null,
+        "order_reference": "o-0268",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0268",
+        "requester_id": "customer-7-0268",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0169",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-24T19:56:48Z",
+        "failure": null,
+        "order_reference": "o-0169",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0169",
+        "requester_id": "customer-7-0169",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0250",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-25T12:40:57Z",
+        "failure": null,
+        "order_reference": "o-0250",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0250",
+        "requester_id": "customer-7-0250",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0192",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-25T16:32:50Z",
+        "failure": null,
+        "order_reference": "o-0192",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0192",
+        "requester_id": "customer-7-0192",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0099",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-26T04:41:59Z",
+        "failure": null,
+        "order_reference": "o-0099",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0099",
+        "requester_id": "customer-7-0099",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0293",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-08-26T13:44:04Z",
+        "failure": null,
+        "order_reference": "o-0293",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0293",
+        "requester_id": "customer-7-0293",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0344",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-08-27T06:43:00Z",
+        "failure": null,
+        "order_reference": "o-0344",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0344",
+        "requester_id": "customer-7-0344",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0339",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-27T22:57:28Z",
+        "failure": null,
+        "order_reference": "o-0339",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0339",
+        "requester_id": "customer-7-0339",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0290",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-28T15:09:15Z",
+        "failure": null,
+        "order_reference": "o-0290",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0290",
+        "requester_id": "customer-7-0290",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0380",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-28T23:17:56Z",
+        "failure": null,
+        "order_reference": "o-0380",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0380",
+        "requester_id": "customer-7-0380",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0576",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-29T07:39:17Z",
+        "failure": null,
+        "order_reference": "o-0576",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0576",
+        "requester_id": "customer-7-0576",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0359",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-08-29T21:49:49Z",
+        "failure": null,
+        "order_reference": "o-0359",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0359",
+        "requester_id": "customer-7-0359",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0032",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-08-30T13:54:29Z",
+        "failure": null,
+        "order_reference": "o-0032",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0032",
+        "requester_id": "customer-7-0032",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"ambiguous_order\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "ambiguous_order",
+        "request_id": "r-7-0000",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"ambiguous_order\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-08-30T22:46:36Z",
+        "failure": "ambiguous_order",
+        "order_reference": "ambiguous",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0000",
+        "requester_id": "customer-7-0000",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0040",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-07-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-08-30T23:08:10Z",
+        "failure": null,
+        "order_reference": "o-0040",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0040",
+        "requester_id": "customer-7-0040",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-07-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0220",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-07-01#cap\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-08-31T08:50:14Z",
+        "failure": null,
+        "order_reference": "o-0220",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0220",
+        "requester_id": "customer-7-0220",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0008",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-01T12:16:34Z",
+        "failure": null,
+        "order_reference": "o-0008",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0008",
+        "requester_id": "customer-7-0008",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0086",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-03T06:34:41Z",
+        "failure": null,
+        "order_reference": "o-0086",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0086",
+        "requester_id": "customer-7-0086",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0256",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-03T15:18:47Z",
+        "failure": null,
+        "order_reference": "o-0256",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0256",
+        "requester_id": "customer-7-0256",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0204",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-04T09:36:19Z",
+        "failure": null,
+        "order_reference": "o-0204",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0204",
+        "requester_id": "customer-7-0204",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0468",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-04T19:31:16Z",
+        "failure": null,
+        "order_reference": "o-0468",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0468",
+        "requester_id": "customer-7-0468",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0200",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-05T03:05:17Z",
+        "failure": null,
+        "order_reference": "o-0200",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0200",
+        "requester_id": "customer-7-0200",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0049",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-05T17:10:39Z",
+        "failure": null,
+        "order_reference": "o-0049",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0049",
+        "requester_id": "customer-7-0049",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0274",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-06T00:52:00Z",
+        "failure": null,
+        "order_reference": "o-0274",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0274",
+        "requester_id": "customer-7-0274",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0493",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-06T11:03:49Z",
+        "failure": null,
+        "order_reference": "o-0493",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0493",
+        "requester_id": "customer-7-0493",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0599",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-06T20:36:58Z",
+        "failure": null,
+        "order_reference": "o-0599",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0599",
+        "requester_id": "customer-7-0599",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0304",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-06T21:51:21Z",
+        "failure": null,
+        "order_reference": "o-0304",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0304",
+        "requester_id": "customer-7-0304",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0101",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-07T06:38:52Z",
+        "failure": null,
+        "order_reference": "o-0101",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0101",
+        "requester_id": "customer-7-0101",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0097",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-08T16:04:03Z",
+        "failure": null,
+        "order_reference": "o-0097",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0097",
+        "requester_id": "customer-7-0097",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0592",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-08T22:47:08Z",
+        "failure": null,
+        "order_reference": "o-0592",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0592",
+        "requester_id": "customer-7-0592",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0334",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-09T03:49:56Z",
+        "failure": null,
+        "order_reference": "o-0334",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0334",
+        "requester_id": "customer-7-0334",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0019",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-11T00:08:00Z",
+        "failure": null,
+        "order_reference": "o-0019",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0019",
+        "requester_id": "customer-7-0019",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0020",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-11T01:54:14Z",
+        "failure": null,
+        "order_reference": "o-0020",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0020",
+        "requester_id": "customer-7-0020",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0083",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-11T02:34:50Z",
+        "failure": null,
+        "order_reference": "o-0083",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0083",
+        "requester_id": "customer-7-0083",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0177",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-11T18:33:54Z",
+        "failure": null,
+        "order_reference": "o-0177",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0177",
+        "requester_id": "customer-7-0177",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0426",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-12T04:13:30Z",
+        "failure": null,
+        "order_reference": "o-0426",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0426",
+        "requester_id": "customer-7-0426",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0090",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-13T01:01:51Z",
+        "failure": null,
+        "order_reference": "o-0090",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0090",
+        "requester_id": "customer-7-0090",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0321",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-13T14:25:14Z",
+        "failure": null,
+        "order_reference": "o-0321",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0321",
+        "requester_id": "customer-7-0321",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0487",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-13T22:17:30Z",
+        "failure": null,
+        "order_reference": "o-0487",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0487",
+        "requester_id": "customer-7-0487",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0388",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-14T03:01:34Z",
+        "failure": null,
+        "order_reference": "o-0388",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0388",
+        "requester_id": "customer-7-0388",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0425",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-14T06:05:58Z",
+        "failure": null,
+        "order_reference": "o-0425",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0425",
+        "requester_id": "customer-7-0425",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0484",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-14T09:21:00Z",
+        "failure": null,
+        "order_reference": "o-0484",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0484",
+        "requester_id": "customer-7-0484",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0164",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-14T13:36:41Z",
+        "failure": null,
+        "order_reference": "o-0164",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0164",
+        "requester_id": "customer-7-0164",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0062",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-14T17:10:37Z",
+        "failure": null,
+        "order_reference": "o-0062",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0062",
+        "requester_id": "customer-7-0062",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0471",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-15T10:17:46Z",
+        "failure": null,
+        "order_reference": "o-0471",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0471",
+        "requester_id": "customer-7-0471",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0526",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-15T11:29:11Z",
+        "failure": null,
+        "order_reference": "o-0526",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0526",
+        "requester_id": "customer-7-0526",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0054",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-16T02:54:47Z",
+        "failure": null,
+        "order_reference": "o-0054",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0054",
+        "requester_id": "customer-7-0054",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0137",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-17T16:18:13Z",
+        "failure": null,
+        "order_reference": "o-0137",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0137",
+        "requester_id": "customer-7-0137",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0193",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-17T17:25:17Z",
+        "failure": null,
+        "order_reference": "o-0193",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0193",
+        "requester_id": "customer-7-0193",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0362",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-17T22:55:59Z",
+        "failure": null,
+        "order_reference": "o-0362",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0362",
+        "requester_id": "customer-7-0362",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0278",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-18T21:52:44Z",
+        "failure": null,
+        "order_reference": "o-0278",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0278",
+        "requester_id": "customer-7-0278",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0591",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-19T01:37:29Z",
+        "failure": null,
+        "order_reference": "o-0591",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0591",
+        "requester_id": "customer-7-0591",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0351",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-19T14:38:53Z",
+        "failure": null,
+        "order_reference": "o-0351",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0351",
+        "requester_id": "customer-7-0351",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0409",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-19T15:22:32Z",
+        "failure": null,
+        "order_reference": "o-0409",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0409",
+        "requester_id": "customer-7-0409",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0534",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-20T07:06:43Z",
+        "failure": null,
+        "order_reference": "o-0534",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0534",
+        "requester_id": "customer-7-0534",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0394",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-20T10:55:11Z",
+        "failure": null,
+        "order_reference": "o-0394",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0394",
+        "requester_id": "customer-7-0394",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0060",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-20T14:06:19Z",
+        "failure": null,
+        "order_reference": "o-0060",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0060",
+        "requester_id": "customer-7-0060",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0406",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-21T03:22:57Z",
+        "failure": null,
+        "order_reference": "o-0406",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0406",
+        "requester_id": "customer-7-0406",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0271",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 65000, \"tier\": 3, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 65000,
+        "at": "2026-09-21T20:24:31Z",
+        "failure": null,
+        "order_reference": "o-0271",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0271",
+        "requester_id": "customer-7-0271",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0022",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"eligible\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-22T14:00:59Z",
+        "failure": null,
+        "order_reference": "o-0022",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0022",
+        "requester_id": "customer-7-0022",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0598",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-22T15:11:51Z",
+        "failure": null,
+        "order_reference": "o-0598",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0598",
+        "requester_id": "customer-7-0598",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0560",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-22T17:51:07Z",
+        "failure": null,
+        "order_reference": "o-0560",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0560",
+        "requester_id": "customer-7-0560",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0160",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-23T02:02:11Z",
+        "failure": null,
+        "order_reference": "o-0160",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0160",
+        "requester_id": "customer-7-0160",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0545",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-23T14:27:31Z",
+        "failure": null,
+        "order_reference": "o-0545",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0545",
+        "requester_id": "customer-7-0545",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0427",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-24T00:40:32Z",
+        "failure": null,
+        "order_reference": "o-0427",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0427",
+        "requester_id": "customer-7-0427",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0345",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"approval_required\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-24T04:46:19Z",
+        "failure": null,
+        "order_reference": "o-0345",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0345",
+        "requester_id": "customer-7-0345",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0141",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-24T06:55:05Z",
+        "failure": null,
+        "order_reference": "o-0141",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0141",
+        "requester_id": "customer-7-0141",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0532",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"refer\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-24T16:15:17Z",
+        "failure": null,
+        "order_reference": "o-0532",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0532",
+        "requester_id": "customer-7-0532",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0189",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 2499, \"tier\": 1, \"reason\": \"outside_return_window\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 2499,
+        "at": "2026-09-24T21:19:03Z",
+        "failure": null,
+        "order_reference": "o-0189",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0189",
+        "requester_id": "customer-7-0189",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0095",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"already_delivered\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-25T12:21:03Z",
+        "failure": null,
+        "order_reference": "o-0095",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0095",
+        "requester_id": "customer-7-0095",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"approve\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0013",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-26T01:49:42Z",
+        "failure": null,
+        "order_reference": "o-0013",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0013",
+        "requester_id": "customer-7-0013",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"deny\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"amount_over_policy\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "label": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0272",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 120000, \"tier\": 3, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#cap\"}",
+      "request": {
+        "amount_cents": 120000,
+        "at": "2026-09-26T02:19:54Z",
+        "failure": null,
+        "order_reference": "o-0272",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0272",
+        "requester_id": "customer-7-0272",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "{\"outcome\": \"refer\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"delivery_unknown\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "label": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0520",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"deny\", \"amount_cents\": 5000, \"tier\": 2, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 5000,
+        "at": "2026-09-26T14:42:05Z",
+        "failure": null,
+        "order_reference": "o-0520",
+        "preparer_id": "refund-agent",
+        "reason": "changed_mind",
+        "request_id": "r-7-0520",
+        "requester_id": "customer-7-0520",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "malformed reply",
+      "label": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0066",
+        "tier": 2
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 50000, \"tier\": 2, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50000,
+        "at": "2026-09-27T00:32:45Z",
+        "failure": null,
+        "order_reference": "o-0066",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-7-0066",
+        "requester_id": "customer-7-0066",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "malformed reply",
+      "label": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0575",
+        "tier": 1
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 4999, \"tier\": 1, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-09-27T01:44:14Z",
+        "failure": null,
+        "order_reference": "o-0575",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0575",
+        "requester_id": "customer-7-0575",
+        "text": "Please review my refund request."
+      }
+    },
+    {
+      "adapter": "malformed reply",
+      "label": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0515",
+        "tier": 3
+      },
+      "prompt": "{\"outcome\": \"approve\", \"amount_cents\": 50001, \"tier\": 3, \"reason\": \"constructed_wrong_draft\", \"citation\": \"refund_cap_v4@2026-09-01#eligibility\"}",
+      "request": {
+        "amount_cents": 50001,
+        "at": "2026-09-27T08:11:42Z",
+        "failure": null,
+        "order_reference": "o-0515",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "r-7-0515",
+        "requester_id": "customer-7-0515",
+        "text": "Please review my refund request."
+      }
+    }
+  ],
+  "conclusion": "so the adapter wins",
+  "reported": {
+    "adapter": {
+      "correct": 115,
+      "total": 118
+    },
+    "prompt": {
+      "correct": 116,
+      "total": 121
+    }
+  },
+  "scenario": "constructed adaptation report; three parse failures dropped from adapter denominator"
+}

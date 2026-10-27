@@ -1,0 +1,8 @@
+announced dollars: served order@2
+  2000 typed orders; checks: ['contract_version_unknown:order']
+  units/invariants remain plausible after every amount moves together
+silent dollars: served order@1
+  2000 typed orders; checks: ['None']
+  units/invariants remain plausible after every amount moves together
+chapter 2 single-field release: deny, amount_over_policy
+with contracts: refer, contract_invariant:order.paid_equals_items

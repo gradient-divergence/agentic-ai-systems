@@ -1,0 +1,213 @@
+{
+  "at": "2026-10-12T12:00:00+00:00",
+  "candidate": {
+    "adapter": {
+      "fingerprint": "6fcefd4f0efaeb0e267cf6532e100f93292ecc0416a8916be530ceaf182e682b",
+      "settings": {
+        "agent_budget": true,
+        "end_at_audit": true,
+        "max_steps": 12,
+        "no_retry": true,
+        "one_tool_per_phase": true,
+        "refer_on_failure": true,
+        "retries": 1
+      },
+      "version": "1"
+    },
+    "agent": {
+      "fingerprint": "73eb5b39b352cd129658445813b9b788afe9ee8a245916acc086b0c9da67523b",
+      "identity": "Agent"
+    },
+    "model": {
+      "fingerprint": "6698ca14e2930d8335bd441e50a0cec66d7c66808ac7e1fbe1550b4e8d53d500",
+      "identity": "ScriptedModel",
+      "settings": {
+        "decoding": "deterministic",
+        "seed": 7
+      },
+      "version": "1"
+    },
+    "name": "as-built",
+    "offer_policy": {
+      "candidates": {
+        "A": {
+          "decision": "hold",
+          "fingerprint": "992a25b4a88a815e6558e994208dbbedbfca6f6c9272b4d8e461f6fa2422e396",
+          "reasons": [
+            "candidate effective size below 400",
+            "improvement interval is not above zero",
+            "exact check exceeds 0.025"
+          ]
+        },
+        "B": {
+          "decision": "hold",
+          "fingerprint": "f0270f22f53a613157c8b57b08e86cbea45a26b36c5b11a630b15f976684d7cb",
+          "reasons": [
+            "improvement interval is not above zero",
+            "exact check exceeds 0.025"
+          ]
+        }
+      },
+      "evaluation_fingerprint": "b838763b47395cb49b0b2304209ebf0a062ac43150829dc288b693db59176143",
+      "fingerprint": "8b4e9a1656f92287f7edc597bf83786e73d791f5c4c45b563f39ef5d5d37a9d6",
+      "limits": [
+        "this window's customers, season and logger",
+        "human-changed offers excluded; no known action chance",
+        "no interference assumed",
+        "future drift and delayed outcomes can change value",
+        "normal intervals can mislead on heavy ratios",
+        "seeded redraws approximate the exact law"
+      ],
+      "name": "fixed",
+      "policy": {
+        "frozen_at": "2026-02-14T23:06:17+00:00",
+        "source_fingerprint": "b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f",
+        "tables": [
+          [
+            "changed_mind",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "damaged",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ],
+          [
+            "not_delivered",
+            [
+              [
+                "standard",
+                1.0
+              ],
+              [
+                "dated",
+                0.0
+              ],
+              [
+                "referenced",
+                0.0
+              ]
+            ]
+          ]
+        ],
+        "version": "standard-notice-1"
+      },
+      "version": "standard-notice-1"
+    },
+    "runtime": {
+      "fingerprint": "a9e763a5040ec54151b8788a79338cae772edbe0c3049b8272c34357b6d80fff",
+      "identity": "own",
+      "version": "1"
+    },
+    "suite": {
+      "fingerprint": "b951423dfd01871bcf6dd4e5a489e706eace603d680694bcd60626f072c3a183",
+      "version": "refund-release-suite-2"
+    },
+    "tools_composition": {
+      "base": "as-built",
+      "components": [
+        {
+          "files": [
+            "../demos/data/generative_models_scenarios_listed.json",
+            "../demos/data/generative_models_scenarios_tau1.json",
+            "../demos/data/generative_models_scenarios_tau2.json",
+            "release/owners.json"
+          ],
+          "fingerprint": "6f969e25a93aaf25afbcd7c4a5076659709eea7ae0735af231415cc8c1e4dc03",
+          "module": "refund_agent.sources.data_systems_release",
+          "modules": [
+            "refund_agent",
+            "refund_agent.agent",
+            "refund_agent.contracts",
+            "refund_agent.data",
+            "refund_agent.data.generate",
+            "refund_agent.labels",
+            "refund_agent.memory",
+            "refund_agent.memory.memory",
+            "refund_agent.model",
+            "refund_agent.release",
+            "refund_agent.release.candidate",
+            "refund_agent.release.extensions",
+            "refund_agent.release.suite",
+            "refund_agent.rules",
+            "refund_agent.runtimes",
+            "refund_agent.runtimes.swap",
+            "refund_agent.selection",
+            "refund_agent.sources",
+            "refund_agent.sources.data_systems_budget",
+            "refund_agent.sources.data_systems_check",
+            "refund_agent.sources.data_systems_contract",
+            "refund_agent.sources.data_systems_lineage",
+            "refund_agent.sources.data_systems_registry",
+            "refund_agent.sources.data_systems_release",
+            "refund_agent.sources.data_systems_releases",
+            "refund_agent.sources.data_systems_tools",
+            "refund_agent.tools"
+          ],
+          "name": "data-systems.contracts",
+          "settings": {
+            "registry_fingerprint": "b9c5073b99e12a841cd3ca997f2928ecfe02ab4944dd82e96c3ea064a62bbf30",
+            "registry_version": "data-systems.registry@1"
+          },
+          "stores": [],
+          "version": "data-systems.contracts@1"
+        }
+      ],
+      "fingerprint": "62028ab9bae074aa42b7e16e8fc8ae5d01bfaead3ecc37a089dc40e5f97c0d80",
+      "verifier": "off",
+      "verifier_version": null,
+      "version": "release-tools-1"
+    }
+  },
+  "candidate_fingerprint": "1edb9f066bd39f0248ef76c61dca72a621d7fdaf3bfa8bafd1bd7a61a404996a",
+  "cases_run": 330,
+  "decision": "pass",
+  "failed_cases": [],
+  "floor": {
+    "baseline_referrals": 7,
+    "cases": 15,
+    "complete": true,
+    "forbidden_payments": 0,
+    "max_referral_share": 0.4666666666666667,
+    "pass": true,
+    "referrals_per_trial": 7.0
+  },
+  "must_pay_cases": 5,
+  "must_pay_cents_per_trial": [
+    62598,
+    62598,
+    62598,
+    62598,
+    62598
+  ],
+  "record_id": "0c7bdeed5dada3e8c339d505e12ee58493a2085784cd35869263fefaf0015275",
+  "scope": "chapter 30 unsigned release evidence; no canary authority",
+  "signature": null,
+  "suite_fingerprint": "b951423dfd01871bcf6dd4e5a489e706eace603d680694bcd60626f072c3a183",
+  "trials_run": 5
+}

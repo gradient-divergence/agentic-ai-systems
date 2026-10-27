@@ -1,0 +1,25 @@
+1  q1, 2,499: valid
+  calls: lookup status retrieve
+         propose execute append
+2  q2, 5,000: valid
+  calls: lookup status retrieve
+         propose request append
+3  q2, 5,000, second run: valid
+  from: approved order_read policy_read
+        proposed shipment_read
+  calls: execute append
+4  q3, 2,499: step 4: lacks proposed
+  calls: lookup status retrieve
+         execute propose append
+5  q4, 60,000: valid
+  calls: lookup status retrieve
+         propose request append
+6  q5, 2,499: goal unmet: audited
+  calls: lookup status retrieve
+         propose execute
+7  q6, 2,499: valid
+  calls: lookup retrieve status
+         propose execute append
+8  q7, 4,999: step 3: lacks policy_read
+  calls: lookup status propose
+         retrieve execute append

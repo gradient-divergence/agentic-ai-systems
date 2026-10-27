@@ -1,0 +1,51 @@
+{
+  "tokens": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "recurrent_edges": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "causal_attention_edges": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "recurrent_path_length": 4,
+  "causal_attention_path_length": 1
+}

@@ -1,0 +1,23 @@
+Constructed constant-rate model; expected counts, not observations.
+Tier 1 rate: 25/9 per hour = 2.777778
+Normal cohort day: 10/3 = 3.333333
+4h: further 5/9 = 0.555556
+  loss <= 69986/9 cents; outward <= 7777 cents
+24h: further 10/3 = 3.333333
+  loss <= 64987/3 cents; outward <= 21663 cents
+36h: further 5 = 5.000000
+  loss <= 29994 cents; outward <= 29994 cents
+Daily 24h arithmetic is a counterfactual; overdue pauses at 4h.
+Any single day's hard cap: 15 payments; 74985 cents.
+25% / 24h expectation: 88315.666667 cents
+Measured mean final-evidence wait: 36.063230876 hours
+Source: book_outputs/_fnd.batch-stream.claims-full-01.txt
+share 1/20: 299 clean cases in 2188.863231h = 91.202635 days
+share 1/10: 299 clean cases in 1112.463231h = 46.352635 days
+share 1/4: 299 clean cases in 466.623231h = 19.442635 days
+28-day projected settled cases: 88.324551267
+If 88 observed cases have zero failures: 95% bound 3.346948892%
+Assumptions: independent, one failure rate, target-representative cases.
+Rule of three: 3.409090909%
+Fault at 1/1000 seen among 88: 0.084279443
+Fault at 1/1000 seen among 299: 0.258551519

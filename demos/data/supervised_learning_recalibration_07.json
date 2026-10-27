@@ -1,0 +1,40 @@
+{
+  "score": "boosted trees, class-weighted",
+  "map": "isotonic regression",
+  "map_fit_on": {
+    "decided": "2026-08-01 to 2026-08-31",
+    "requests": 999
+  },
+  "judged_on": {
+    "decided": "2026-08-01 to 2026-08-31",
+    "requests": 999
+  },
+  "bins": [
+    {
+      "requests": 16,
+      "mean_prediction": 0.0,
+      "wrong_payments": 0,
+      "observed_rate": 0.0
+    },
+    {
+      "requests": 325,
+      "mean_prediction": 0.0031,
+      "wrong_payments": 1,
+      "observed_rate": 0.0031
+    },
+    {
+      "requests": 406,
+      "mean_prediction": 0.0148,
+      "wrong_payments": 6,
+      "observed_rate": 0.0148
+    },
+    {
+      "requests": 252,
+      "mean_prediction": 0.119,
+      "wrong_payments": 30,
+      "observed_rate": 0.119
+    }
+  ],
+  "calibration_error": 0.0,
+  "summary": "Calibrated after isotonic recalibration; ready for the tier 1 threshold."
+}

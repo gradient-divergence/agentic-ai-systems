@@ -1,0 +1,44 @@
+{
+  "builder": "constructed agent",
+  "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+  "name": "agent delivery",
+  "reported_loss": 0.15056354025568894,
+  "seed": 7,
+  "settings": {
+    "C": 1.0,
+    "clean": false,
+    "family": "group"
+  },
+  "statistics": {
+    "calibration": {
+      "intercept": 1.6015564173256451,
+      "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa",
+      "slope": 1.4273806696037274,
+      "window": "validation"
+    },
+    "fit_rows": 14754,
+    "inputs": [
+      "reason",
+      "prior_refund_count",
+      "delivery_age_days",
+      "amount_cents",
+      "found_false_30d"
+    ],
+    "own_label_left_out": false,
+    "row_sha256": "7851dc2700339a3ad5030d5ae360705f40e0500b497a09248d1dbfb9080f2106",
+    "statistics_sha256": "609d369bc9a2adeb0b4fa6e72b16362517a8854fe70b16942b6b0287afb3256f"
+  },
+  "trials": [
+    {
+      "commission_sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+      "entry": 1,
+      "loss": 0.15056354025568894,
+      "seed": 7,
+      "settings": {
+        "C": 1.0,
+        "clean": false,
+        "family": "group"
+      }
+    }
+  ]
+}

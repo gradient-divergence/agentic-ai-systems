@@ -1,0 +1,4 @@
+draft token probabilities: 0.9, 0.8, 0.5, 0.25
+conditional draft probability: 0.090000
+token losses (nats): 0.105, 0.223, 0.693, 1.386
+mean draft-only loss: 0.602 nats

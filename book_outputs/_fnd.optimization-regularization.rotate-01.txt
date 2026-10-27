@@ -1,0 +1,6 @@
+valley rotated 45 degrees; first loss below 0.000001
+descent eta 0.25: raw 653, rotated 653 steps
+momentum eta 1.00: raw 130, rotated 130 steps
+momentum eta 5.00: raw 105, rotated 105 steps
+Adam eta 0.10: raw 135, rotated 291 steps
+Adam eta 0.30: raw 112, rotated 144 steps

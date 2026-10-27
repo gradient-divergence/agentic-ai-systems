@@ -1,0 +1,2 @@
+Window 2: not generated; decision 1 keep.
+No second candidate was judged and no replace verdict was issued.

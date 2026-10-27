@@ -1,0 +1,13 @@
+history census, payment-status metadata only: 36,000 requests
+policy-payable tier 1: 17,704 paid and labeled; 18,296 unpaid, no outcome label
+validation only: 988 requests; decisions 2026-06-01 to 2026-07-01
+score band       paid  referred  share referred
+[0.00, 0.02)    149         0  0.000
+[0.02, 0.04)    616         0  0.000
+[0.04, 0.08)    117         0  0.000
+[0.08, 0.12)      7         0  0.000
+[0.12, 0.20)     84         0  0.000
+[0.20, 1.00]     15         0  0.000
+observed referral share: 0; positivity fails in every occupied band
+tier threshold's extra reviews: 46 (validation planning figures)
+their mean pay cost $2.58 against a review's $4.00

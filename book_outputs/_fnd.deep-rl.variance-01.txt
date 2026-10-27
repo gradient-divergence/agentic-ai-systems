@@ -1,0 +1,9 @@
+fixed policy seed 37; widths [4, 16, 16, 2]; gamma 0.99
+baseline fitted on 400 separate episodes; seeds 1100000000..1100000399; ridge 0.001
+gradient estimates: 2000 paired episodes; seeds 1200000000..1200001999; component b3[0]
+| Baseline | Mean gradient | Standard error | Standard deviation | Total variance |
+|---|---:|---:|---:|---:|
+| None | -10.299070 | 0.682818 | 30.536527 | 6600.095843 |
+| Separate fitted state value | -9.447336 | 0.552603 | 24.713179 | 4058.614000 |
+total variance ratio, fitted / none: 0.614933
+counterexample, policy (0.5, 0.5), reward 1: variance without baseline 0.25; baseline 3: 1.00

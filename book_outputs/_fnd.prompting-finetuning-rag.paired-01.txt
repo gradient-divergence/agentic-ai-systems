@@ -1,0 +1,9 @@
+hospital: 200 notes; baseline 170; challenger 180
+both complete 166; neither 16
+discordant: only challenger 14; only baseline 4
+lead 0.0500; paired SE 0.0209; 95% interval [0.0090, 0.0910]
+independent SE 0.0330; 95% interval [-0.0146, 0.1146]
+exact two-sided chance: 0.0309
+5 discordant to none in 121: exact 0.0625; 97.5% interval [0.0008, 0.0819]
+6 discordant to none in 121: exact 0.0312; 97.5% interval [0.0054, 0.0938]
+7 discordant to none in 121: exact 0.0156; 97.5% interval [0.0103, 0.1054]

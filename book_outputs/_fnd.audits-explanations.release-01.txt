@@ -1,0 +1,9 @@
+Constructed hold-release example: N=239 proposals, owed payments=395.
+Clean readings 80: exact 95% upper wrongful count 7.
+Upper owed-denial share 0.017412935. Release: False.
+Clean readings 125: exact 95% upper wrongful count 4.
+Upper owed-denial share 0.010025063. Release: False.
+Clean readings 126: exact 95% upper wrongful count 3.
+Upper owed-denial share 0.007537688. Release: True.
+Minimum clean sample for release: 126.
+Nondetection with 80 reads keeps the hold. Review continues.

@@ -1,0 +1,17 @@
+request r-tier3: 50001 cents, tier 3
+first run: refer approval_required, not paid
+  audit decision     money_moved=no paid_cents=0
+proposal: 50001 cents, damaged, policy=2026-07-01
+evidence: order=o-r-tier3, balance=50001, cap=100000
+shipment: delivered at 2026-07-12T10:00:00+00:00, risk=0.1
+ages_seconds: order=60.0 shipment=120.0 policy=3600.0
+review: open=True, required_role=named_approver
+morgan approval: ok=True, record=approval-r-tier3
+agent after approval: refer approval_required, not paid
+  audit approval     money_moved=no paid_cents=0
+  audit decision     money_moved=no paid_cents=0
+morgan direct call: ok=True, paid_cents=50001, payments=1
+same key again: ok=True, payments=1
+tier 3 denial: refer already_delivered, not paid
+  audit decision     money_moved=no paid_cents=0
+denied review: open=True, required_role=named_approver; payments=0

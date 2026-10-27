@@ -1,0 +1,6 @@
+Constructed enumeration, not anonymous data.
+Identifiers enumerated: 10000; plain recovery position: 13
+Plain SHA-256 recovered: customer-7-0012
+Keyed hash: not recovered after enumerating 10000 identifiers.
+Candidates: 10000; maximum hashes: 10000; uniform average: 5000.5
+Five join fields keyed; shared suffixes broken; key holders can relink.

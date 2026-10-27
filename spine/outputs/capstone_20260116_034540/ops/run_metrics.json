@@ -1,0 +1,8 @@
+{
+  "rows": 10000,
+  "positive_rate": 0.6652,
+  "model_accuracy": 0.836,
+  "model_roc_auc": 0.9113257575757577,
+  "policy_accuracy": 0.688,
+  "average_reward": 0.376
+}

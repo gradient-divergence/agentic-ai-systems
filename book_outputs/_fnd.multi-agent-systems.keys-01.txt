@@ -1,0 +1,26 @@
+reads stale carrier, 45 minutes: gate refers; agreeing not asked; independent not asked; paid cents (single, agreeing, independent) (0, 0, 0)
+reads words contradict delivery: gate pays; agreeing pays; independent objects; paid cents (single, agreeing, independent) (2499, 2499, 0)
+reads fresh false carrier date: gate pays; agreeing pays; independent pays; paid cents (single, agreeing, independent) (2499, 2499, 2499)
+reads planted instruction with ignore: gate refers; agreeing not asked; independent not asked; paid cents (single, agreeing, independent) (0, 0, 0)
+reads instruction without ignore: gate pays; agreeing pays; independent pays; paid cents (single, agreeing, independent) (2499, 2499, 2499)
+reads independent verifier timeout: gate pays; agreeing pays; independent refers:verifier_timeout; paid cents (single, agreeing, independent) (2499, 2499, 0)
+3(a): 1000 cases; 150 proposer errors; 100 verifier errors; independent pass 15; catches 135
+3(b): both wrong 60; covariance /n 0.045; correlation 0.420; pass 60; catches 90
+3(c): each rate .15; independent majority 0.06075; shared cause .05; own 2/19; majority 573/7220 = 0.0794
+4(a): n 200; n+ 9; n- 2; lead 0.035; SE 0.0164; 97.5% interval [-0.0018, 0.0718]; exact chance 0.0654297; not adopted
+4(c): n 800; n+ 36; n- 8; lead 0.035; SE 0.0082; 97.5% interval [0.0166, 0.0534]; exact chance 0.0000254; accepted
+4(b): saving 90.455 cents/request before the call
+5: 120 changes; 108 compliant; 12 not; 9 omitted violations; agreement 118/120 = 0.9833; disagreement 1.667%
+5 errors: proposer 9/120 = 0.075; verifier 11/120 = 0.092; pass 0.075; catches 0.000; covariance /n 0.068125; correlation 0.896
+6: second source objects on 16 false carrier dates and 0 plain cases; extra payments 0; n+ 24; n- 8; correct 376/400; accepted
+6: stopped wrong payments 40; false objections 8; saving $2.0190 = $2.02/request before the call
+6 truth scoring accesses 1 after all exercise arms; second-source payload accesses 1; row accesses 400
+6 source access: {"entry": 1, "purpose": "load exercise 6's supplied second source", "reader": "proof-checking", "rows": 400, "sha256": "b6d7b63793df3c2dac512bd07db0b70bf0c5094136d4c427703be86a8b78c929", "source": "proof-of-delivery-v1"}
+7 setup: decide 2.00; delay/referral 1.50; charge grid 0.01
+7: charge 0.00; equilibrium refer/refer; costs (3.00, 3.00)
+7: charge 0.51; equilibrium decide/decide; costs (2.00, 2.00)
+7: charge 0.50 gives 4 equilibria; strict switch needs charge > 0.50
+8 setup: capable sites A, B, C, D; true costs and bids 4.00, 6.00, 9.00, 11.00
+8: second-price winner A; payment 6.00; winner gain 2.00
+8: A bids 5.99; winner A; payment 6.00; A gain 2.00
+8: A bids 6.01; winner B; payment 6.01; A gain 0.00

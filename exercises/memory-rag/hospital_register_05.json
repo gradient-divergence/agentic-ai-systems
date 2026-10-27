@@ -1,0 +1,30 @@
+{
+  "agent_audit": {
+    "at": "2026-03-20",
+    "reason": "score 6 was not referred",
+    "verdict": "breach"
+  },
+  "constructed": true,
+  "decision": {
+    "at": "2026-03-10",
+    "referred": false,
+    "score": 6,
+    "text_hash": "983d261b9e6caacbb8d23961a62867569944586c15fa449c215b391803debfc4"
+  },
+  "not_clinical_guidance": true,
+  "owner_correction": {
+    "recorded_at": "2026-03-15",
+    "text": "refer when early-warning score reaches 6",
+    "value": 6
+  },
+  "register": [
+    {
+      "citation": "ward-protocol@2026-02-01#threshold",
+      "recorded_at": "2026-02-01",
+      "text": "refer when early-warning score reaches 6",
+      "text_hash": "8af609a3ac551b8c03b7a37017e9050084555aa009095105df056ece24c25370",
+      "valid_from": "2026-02-01",
+      "value": 6
+    }
+  ]
+}

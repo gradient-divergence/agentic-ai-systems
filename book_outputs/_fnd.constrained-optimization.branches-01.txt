@@ -1,0 +1,7 @@
+branch: plan; relaxation value
+root: [0.5, 3.0]; 7.5
+X <= 0: [0.0, 3.0]; 6
+X >= 1: [1.0, 2.0]; 7
+best whole 7; best branch bound 7; gap 0
+illustration, stopped at root: incumbent 6; bound 7.5; relative gap 0.250000
+after rounding bound 7: absolute gap 1; relative gap 0.166667

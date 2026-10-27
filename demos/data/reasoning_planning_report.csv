@@ -1,0 +1,9 @@
+plan,request,cents,run,start,calls,verdict
+1,q1,2499,first,,order.lookup shipment.status policy.retrieve refund.propose refund.execute audit.append,valid
+2,q2,5000,first,,order.lookup shipment.status policy.retrieve refund.propose approval.request audit.append,valid
+3,q2,5000,second,approved order_read policy_read proposed shipment_read,refund.execute audit.append,valid
+4,q3,2499,first,,order.lookup shipment.status policy.retrieve refund.execute refund.propose audit.append,step 4: lacks proposed
+5,q4,60000,first,,order.lookup shipment.status policy.retrieve refund.propose approval.request audit.append,valid
+6,q5,2499,first,,order.lookup shipment.status policy.retrieve refund.propose refund.execute,goal unmet: audited
+7,q6,2499,first,,order.lookup policy.retrieve shipment.status refund.propose refund.execute audit.append,valid
+8,q7,4999,first,,order.lookup shipment.status refund.propose policy.retrieve refund.execute audit.append,step 3: lacks policy_read

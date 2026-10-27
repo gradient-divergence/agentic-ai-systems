@@ -1,0 +1,26 @@
+Constructed one-unit steps: x=1.0; h0=0.0; c0=0.0
+LSTM order: forget, input, output, candidate; no peepholes
+LSTM W_x=[1.0, 1.0, 1.0, 1.0]; W_h=[0.5, 0.5, 0.5, 0.5]
+LSTM biases=[0.0, -0.5, 0.5, 0.0]
+LSTM gates: forget=0.731; input=0.622; output=0.818
+LSTM values: candidate=0.762; cell=0.474; state=0.361
+GRU order: reset, update, candidate; update retains old state
+GRU W_x=[1.0, 1.0, 1.0]; W_h=[0.5, 0.5, 0.5]
+GRU biases=[0.0, -0.5, 0.0]
+GRU: reset=0.731; update=0.622; candidate=0.762; state=0.288
+Cell path only, forget held at 0.95; linear recurrence w=0.5
+path t=1: cell=0.950000; recurrence=0.500000
+path t=2: cell=0.902500; recurrence=0.250000
+path t=3: cell=0.857375; recurrence=0.125000
+path t=4: cell=0.814506; recurrence=0.062500
+path t=5: cell=0.773781; recurrence=0.031250
+path t=6: cell=0.735092; recurrence=0.015625
+path t=7: cell=0.698337; recurrence=0.007812
+path t=8: cell=0.663420; recurrence=0.003906
+path t=9: cell=0.630249; recurrence=0.001953
+path t=10: cell=0.598737; recurrence=0.000977
+Weights including biases: d=512; d_h=512
+LSTM: 2099200
+GRU: 1574400
+recurrence: 524800
+weight ratio LSTM:GRU:recurrence = 4:3:1

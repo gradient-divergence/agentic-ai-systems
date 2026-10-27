@@ -1,0 +1,9 @@
+20 distinct configurations, seed 7; 200 validation resamples
+baseline raw validation loss: 0.1683
+best five                       loss    lead  resample wins (among these five)
+search winner    boosted  0.1666  0.0017  88/200
+trial 14         boosted  0.1668  0.0014  28/200
+trial 03         boosted  0.1672  0.0011  30/200
+trial 15         boosted  0.1672  0.0010  22/200
+trial 05         boosted  0.1672  0.0010  32/200
+winner lead 0.001654, standard error 0.003231; largest standard error 0.005032

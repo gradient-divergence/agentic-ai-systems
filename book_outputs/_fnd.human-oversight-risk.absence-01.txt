@@ -1,0 +1,19 @@
+Constructed morgan away five working days; no deputy substituted.
+Expected backlog=28; fluid recovery full-time= 2.692308 working days
+Expected four-hours/day recovery= 11.666667 working days
+Reviewers alone during absence: 0.899743 of 48h/week
+morgan 8h/day: held cohort=27; original-deadline late=27
+  escalation events= 27
+  recovery of absence cohort after return: 1.725622 working days
+  net backlog first empties, including new arrivals: 1.980525 working days
+  cohort pending after drain: 0
+  tier3 peak waiting backlog: 36
+morgan 4h/day: held cohort=27; original-deadline late=27
+  escalation events= 27
+  recovery of absence cohort after return: 3.378745 working days
+  net backlog first empties, including new arrivals: 6.494488 working days
+  cohort pending after drain: 0
+  tier3 peak waiting backlog: 38
+Deputy during absence: policy version changes -> new proposal and review.
+Test-constructed deputy payment and denial records: review-records-01.
+Assembled deputy/credential trace pending chapters 33, 35 and 36.

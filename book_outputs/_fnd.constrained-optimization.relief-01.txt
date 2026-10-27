@@ -1,0 +1,3 @@
+relief: depot supplies 4, 3; shelter needs 3, 4; unit costs 1, 4, 3, 1
+shipments [[3.0, 1.0], [0.0, 3.0]]; cost 10; multipliers [0.0, 3.0, 1.0, 4.0]
+maximize negative cost: value -10; bound -10; cost lower bound 10; certificate True; gap 0

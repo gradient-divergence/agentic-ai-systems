@@ -1,0 +1,33 @@
+| Field | Illustrative plan; no run or real signature |
+|---|---|
+| Eligibility | policy-payable tier 1; fresh evidence; review <= score * |
+|  | amount < cap |
+| Assignment | customer (requester_id); arm fixed and analyzed at the first |
+|  | eligible request; P(refer)=0.5; seed 7 |
+| Actions | pay with no review (D=0); one reviewer with the evidence packet |
+|  | (D=1) |
+| Estimand | mean cost by assigned arm, refer minus pay, in the set, with one |
+|  | half referred; minimum difference \$2.00 |
+| Outcome | adjudicated cost per assigned request: review + wrong payment + |
+|  | wrong denial; 30-day label window |
+| Costs | review \$4.00; wrong denial \$20.00 |
+| Limits | cap \$10.00; payout ceiling \$100000.00 |
+| Stop rule | halt before the next pay-arm amount would exceed the dollar |
+|  | ceiling; owner halts |
+| Denial check | blind second reading of every denial within 30 days; upheld |
+|  | appeals count |
+| Segments | reason; prior refund: none or some; amount: below \$25 or at |
+|  | least \$25 |
+| Interference | shared review queue remains; no claim about referring the |
+|  | whole set |
+| Missing outcomes | report cost bounds for misjudged or unread denials and |
+|  | undiscovered false claims |
+| Assignments | first 2027-01-01; last 2029-10-16 |
+| Analysis | 2029-11-15; share referred; compare costs by assigned arm, |
+|  | including every denial |
+| Policy | threshold-experiment-plan-1; one policy version; a change restarts |
+|  | the plan |
+| Authority | owner of the refund decision (illustrative signer; unsigned in |
+|  | practice); illustrative signature 2026-12-20 |
+| Launch | plan only; no earlier than stage 5; owner must sign the tier 1 |
+|  | exception |

@@ -1,0 +1,2 @@
+Monday 2026-03-23, tier 3 slow case 45 minutes: answered 9; bound 9.333333; rounded 9
+plan check []; certificate True; absolute gap 0.333333; relative gap 0.037037

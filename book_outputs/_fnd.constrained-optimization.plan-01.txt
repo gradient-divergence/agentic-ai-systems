@@ -1,0 +1,37 @@
+Monday 2026-03-23 09:00 UTC: 13 waiting; tiers {1: 5, 2: 3, 3: 5}
+arrivals: Friday 4, weekend 7, Monday 2
+as given: tier minutes 5, 15, 30; alex 120 minutes, morgan 60; tier 3 to
+  named approver morgan
+plain rule: 9 answered; by person {'alex': 4, 'morgan': 5}; check []
+  alex 09:00-09:15: r-7-0226
+  morgan 09:00-09:05: r-7-0309
+  morgan 09:05-09:35: r-7-0573
+  alex 09:15-09:20: r-7-0003
+  alex 09:20-09:35: r-7-0423
+  alex 09:35-09:50: r-7-0241
+  morgan 09:35-09:40: r-7-0505
+  morgan 09:40-09:45: r-7-0007
+  morgan 09:45-09:50: r-7-0036
+  minutes used {'alex': 50.0, 'morgan': 50.0}
+count then wait: 10 answered; by person {'alex': 8, 'morgan': 2}; check []
+  alex 09:00-09:15: r-7-0226
+  alex 09:15-09:20: r-7-0309
+  morgan 09:00-09:30: r-7-0573
+  alex 09:20-09:25: r-7-0003
+  morgan 09:30-10:00: r-7-0363
+  alex 09:25-09:40: r-7-0423
+  alex 09:40-09:55: r-7-0241
+  alex 09:55-10:00: r-7-0505
+  alex 10:00-10:05: r-7-0007
+  alex 10:05-10:10: r-7-0036
+  minutes used {'alex': 70.0, 'morgan': 60.0}
+certificate draft multipliers: r-7-0226=1, r-7-0309=1, r-7-0573=0,
+  r-7-0003=1, r-7-0363=0, r-7-0384=0, r-7-0423=1, r-7-0241=1, r-7-0505=1,
+  r-7-0286=0, r-7-0007=1, r-7-0235=0, r-7-0036=1
+certificate minute multipliers: alex=0.000000, morgan=0.033333
+bound 10.000000; certificate True; absolute gap 0; relative gap 0; tolerance
+  1e-07
+what-if, morgan 90 minutes: 11 answered; bound 11
+solve record: review-inputs-v1; fingerprint
+  dabb60602dbe65bd882985b0c1c5242d076e0c620b5b1e101b7a1e581169495b; budget
+  10000 nodes; status optimal; waiting-time status optimal; plan check []

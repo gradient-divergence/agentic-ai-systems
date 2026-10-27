@@ -1,0 +1,6 @@
+source      age at use        limit       margin
+order             60 s      1,800 s      1,740 s
+shipment         120 s      1,800 s      1,680 s
+policy         3,600 s  2,592,000 s  2,588,400 s
+paid at the request's own time: true
+expiry: 1,680 s (28 min) after the request, by shipment

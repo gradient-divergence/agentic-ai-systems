@@ -1,0 +1,4 @@
+wrong payments: training 499 (0.0362), validation 44 (0.0445)
+log loss             training  validation
+base rate              0.1558      0.1830
+logistic regression    0.1374      0.1685

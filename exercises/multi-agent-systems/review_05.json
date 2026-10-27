@@ -1,0 +1,2157 @@
+{
+  "claim": "The verifier confirmed 118 of 120 compliance verdicts, so the pipeline's error rate is under 2%.",
+  "constructed": true,
+  "rows": [
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-000",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-001",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-002",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-003",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-004",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-005",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-006",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-007",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-008",
+      "compliance_agent": true,
+      "summary": "Scope and access are revised.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access"
+      ],
+      "verifier": true,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-009",
+      "compliance_agent": false,
+      "summary": "Scope, access and retention are revised; retention violates the rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": false,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-010",
+      "compliance_agent": false,
+      "summary": "Scope, access and retention are revised; retention violates the rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": false,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": false,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-011",
+      "compliance_agent": false,
+      "summary": "Scope, access and retention are revised; retention violates the rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": false,
+      "violated_clause": "retention"
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-012",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": false,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-013",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": false,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-014",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-015",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-016",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-017",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-018",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-019",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-020",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-021",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-022",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-023",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-024",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-025",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-026",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-027",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-028",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-029",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-030",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-031",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-032",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-033",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-034",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-035",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-036",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-037",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-038",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-039",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-040",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-041",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-042",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-043",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-044",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-045",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-046",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-047",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-048",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-049",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-050",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-051",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-052",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-053",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-054",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-055",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-056",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-057",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-058",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-059",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-060",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-061",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-062",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-063",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-064",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-065",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-066",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-067",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-068",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-069",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-070",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-071",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-072",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-073",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-074",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-075",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-076",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-077",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-078",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-079",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-080",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-081",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-082",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-083",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-084",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-085",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-086",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-087",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-088",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-089",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-090",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-091",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-092",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-093",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-094",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-095",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-096",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-097",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-098",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-099",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-100",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-101",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-102",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-103",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-104",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-105",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-106",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-107",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-108",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-109",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-110",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-111",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-112",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-113",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-114",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-115",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-116",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-117",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-118",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    },
+    {
+      "adjudicated_compliant": true,
+      "canonical_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "change_id": "change-119",
+      "compliance_agent": true,
+      "summary": "Scope, access and retention meet every rule.",
+      "summary_clause_identifiers": [
+        "scope",
+        "access",
+        "retention"
+      ],
+      "verifier": true,
+      "violated_clause": null
+    }
+  ]
+}

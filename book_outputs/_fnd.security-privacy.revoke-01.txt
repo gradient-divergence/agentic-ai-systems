@@ -1,0 +1,6 @@
+Constructed payment-scope revocation; reads continue.
+Before: approve 5; deny 8; refer 27
+After: approve 0; deny 8; refer 32
+Payments referred as credential_revoked: 5
+Paid cents: 0
+r-7-0008 is checked on its timed rerun with a fresh credential.

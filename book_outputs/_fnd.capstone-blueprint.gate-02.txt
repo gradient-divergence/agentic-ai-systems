@@ -1,0 +1,4 @@
+Operating gate-02: unavailable; launched bundle and first verdict absent.
+No rehearsal rerun; no earlier result replaced.
+A comparison held on its verdict is never refreshed.
+Constructed-record tests verify the earlier-bundle hold and target-bound refresh.

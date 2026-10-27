@@ -1,0 +1,18 @@
+display counts (1000, 900, 720, 684); conditional [0.9, 0.8, 0.95]; product 0.684000
+wrong unconditional-rank product 0.615600
+candidate: slope 0.760000; capped ten-point gain 0.076000
+rank: slope 0.855000; capped ten-point gain 0.085500
+window: slope 0.720000; capped ten-point gain 0.036000
+precision@5 0.180000; precision@10 0.095000
+exercise 3 counts (4000, 3800, 3420, 3249); conditional [0.95, 0.9, 0.95]; product 0.812250
+exercise 3 wrong product 0.771638
+exercise 3 candidate five-point gain 0.042750
+exercise 3 rank five-point gain 0.045125
+exercise 3 window five-point gain 0.042750
+exercise 3 precision@4 0.225000; precision@6 0.156667; window survival at both 0.900000
+exercise 4 2026-03-02: version 2, fee 5, age 5 days, usable True, right then True, right now True
+exercise 4 2026-05-05: version 2, fee 5, age 2 days, usable True, right then True, right now False
+exercise 4 2026-05-12: version 3, fee 6, age 0 days, usable True, right then True, right now True
+exercise 4 version 2 guarantee 9 days; version 3 no safe read age
+bank late-change counterexample: recorded 5 March, valid 1 March; at 4 March a 2-day copy passes and is wrong
+constructed two-passage case: recall 10/20 = 0.500000; complete evidence 0/10 = 0.000000; p1 = p2 = 0.500000; bounds [0.000000, 0.500000]; independent 0.250000

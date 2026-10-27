@@ -1,0 +1,15 @@
+request verifier-r-7-0003: 2499 cents; tier 1; 2026-06-01T12:21:38+00:00
+words: The lamp never arrived. Please review this refund request.
+proposal proposal-4c4c35d7c191bf33398a502f; policy 2026-05-01; reason damaged
+gate: passed before asking the verifier
+verifier read order.lookup: observed 2026-06-01T12:20:38+00:00; read
+  2026-06-01T12:21:38+00:00; age 60 seconds
+verifier read shipment.status: observed 2026-06-01T12:19:38+00:00; read
+  2026-06-01T12:21:38+00:00; age 120 seconds
+verifier read policy.retrieve: observed 2026-06-01T11:21:38+00:00; read
+  2026-06-01T12:21:38+00:00; age 3600 seconds
+verdict: object; words_contradict_record
+evidence e74ab28937af134ed4d019379f719360d63bf53db79602ebbd6942b770d5fe83
+decision: refer; verifier_objection:words_contradict_record; review entries 1
+audit audit-04ea8158ad6480ed2d049154:
+  verifier_objection:words_contradict_record; money_moved False; paid 0 cents

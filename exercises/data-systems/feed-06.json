@@ -1,0 +1,11 @@
+{
+  "constructed": true,
+  "announcement": {"announced_at": "2026-09-24", "effective_at": "2026-10-01", "version": "card@2", "owner_role": "the card feed team"},
+  "records": [
+    {"id": "old-negative-purchase", "version": "card@1", "type": "purchase", "amount_cents": -2499, "at": "2026-09-30", "age_seconds": 30},
+    {"id": "new-refund", "version": "card@2", "type": "refund", "amount_cents": -2499, "at": "2026-10-01", "age_seconds": 30},
+    {"id": "old-refund", "version": "card@1", "type": "refund", "amount_cents": 2499, "at": "2026-09-30", "age_seconds": 30},
+    {"id": "unknown-type", "version": "card@2", "type": "adjustment", "amount_cents": 2499, "at": "2026-10-01", "age_seconds": 30},
+    {"id": "unknown-version", "version": "card@3", "type": "purchase", "amount_cents": 2499, "at": "2026-10-02", "age_seconds": 30}
+  ]
+}

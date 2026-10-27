@@ -1,0 +1,15 @@
+as of 2026-09-15; policy 2026-09-01; draw seed 7; training seed 7
+set: proposed rejected overruled distinct unseen-in-training kept
+listed: 252 0 0 252 73 252
+temperature 1: 200 4 88 121 23 196
+temperature 2: 200 28 101 121 29 172
+distinct counts and unseen counts refer to the five case tokens, after schema
+  rejection
+overruled case: ('changed_mind', True, '31-45', 4999, 'none', 'deny')
+request r-sim-ae8ed593c07921cd; amount 4999 cents; tier 1
+delivered 2026-08-14; days since delivery 32; earlier refund none
+generator deny; policy approve; reason eligible;
+  refund_cap_v4@2026-09-01#eligibility
+schema rejection example: ['changed_mind', False, '22-30', 4999, 'none',
+  'approve']; delivery_days_pairing
+human review: pending; 5 sampled rows, seed 31

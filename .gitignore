@@ -1,0 +1,7 @@
+foundations_companion.egg-info/
+
+# Output of `python -m refund_agent.run` when no --out is given
+refund-output/
+
+# Regenerate with python -m refund_agent.data.history --seed 7
+refund-history/

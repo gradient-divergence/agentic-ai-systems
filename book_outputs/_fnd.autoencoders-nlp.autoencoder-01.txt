@@ -1,0 +1,27 @@
+point (3, 4): code [3.0], reconstruction [3.0, 0.0], squared error 16.000000
+four-point variances: [2.0, 0.5]
+four-point covariance: [[2.0, 0.0], [0.0, 0.5]]; trace 2.5; eigenvectors (1,
+  0), (0, 1)
+point 1: code [2.0], reconstruction [2.0, 0.0], squared error 0.000000
+point 2: code [-2.0], reconstruction [-2.0, 0.0], squared error 0.000000
+point 3: code [0.0], reconstruction [0.0, 0.0], squared error 1.000000
+point 4: code [0.0], reconstruction [0.0, 0.0], squared error 1.000000
+four-point MSE, keep first axis: 0.500; keep second: 2.000
+first clause direction, variance share: 0.882235
+clause MSE, width 1: 0.719541; width 2: 0.559541
+refund_cap_v4@2026-01-20#eligibility: code [2.304, -0.327], squared error
+  0.775472
+refund_cap_v4@2026-01-20#cap: code [-2.304, -0.327], squared error 0.775472
+refund_cap_v4@2026-03-01#eligibility: code [2.304, -0.327], squared error
+  0.775472
+refund_cap_v4@2026-03-01#cap: code [-2.304, -0.327], squared error 0.775472
+refund_cap_v4@2026-05-01#eligibility: code [2.348, 0.49], squared error
+  0.235645
+refund_cap_v4@2026-05-01#cap: code [-2.304, -0.327], squared error 0.775472
+refund_cap_v4@2026-07-01#eligibility: code [2.348, 0.49], squared error
+  0.235645
+refund_cap_v4@2026-07-01#cap: code [-2.348, 0.49], squared error 0.235645
+refund_cap_v4@2026-09-01#eligibility: code [2.304, -0.327], squared error
+  0.775472
+refund_cap_v4@2026-09-01#cap: code [-2.348, 0.49], squared error 0.235645
+clause MSE, closed form: 0.559541149; untied gradient descent: 0.559541155

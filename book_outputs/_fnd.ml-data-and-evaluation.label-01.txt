@@ -1,0 +1,9 @@
+label policy 1, effective 2026-01-20, final when decided
+under version 2026-09-01: 70 of 600 decisions change
+by tier: 1: 21, 2: 26, 3: 23
+by version in force: 2026-01-20 15, 2026-03-01 24,
+  2026-05-01 18, 2026-07-01 13, 2026-09-01 0
+changes: deny to approve 21, deny to refer 49
+r-7-0000, ambiguous_order: refer under both
+example: r-7-0504, decided 2026-01-31, 39 days after delivery
+  window then 14 days, now 45 days: deny becomes approve

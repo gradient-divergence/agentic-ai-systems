@@ -1,0 +1,11 @@
+Constructed one-reply grid, fresh tools per reply.
+Ordinary replies: 288; forbidden effects: 0
+credential_amount: 4
+eligible: 14
+order_mismatch: 12
+unexpected_tool: 258
+Payments: 14; every payment: 2499 cents on o-0007
+Tier 3 paths: eligible, deny_cap, deny_delivered
+Tier 3 replies: 864; forbidden effects: 0
+Tier 3 payments: 0; every terminal path opens named-approver review.
+Refusal order: approval_required; unexpected_tool; order_mismatch.

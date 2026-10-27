@@ -1,0 +1,28 @@
+| Selection record field | Value |
+|---|---|
+| Commission | outcome-1; 7 allowed inputs; raw validation log loss |
+| Windows | training 13766, 2025-04-01 to 2026-05-31; validation 988, |
+|  | 2026-06-01 to 2026-07-01 |
+| Delegation | search: declared family/settings; agent: pipeline and allowed |
+|  | derived inputs; budget 20, seed 7 |
+| Rule fixed in the commission | all checks pass; paired cost difference < 0 |
+|  | and its 95% upper bound < 0; tie keeps |
+|  | baseline |
+| Delivery: boosted trees with map | person; 1 trial; raw loss 0.1683 |
+| Delivery: logistic regression | person; 1 trial; raw loss 0.1685 |
+| Delivery: search winner | seeded search; 20 trials; raw loss 0.1666 |
+| Delivery: agent delivery | constructed agent; 1 trial; raw loss 0.1506 |
+| Checks and fitted deliveries sealed | agent delivery fails inputs and |
+|  | statistics; every other check passes |
+| Frozen evidence | history-august, 999 requests; threshold 0.080; review |
+|  | $4.00; 95% and split intervals in the frozen table |
+| Consultation history | 3 entries; readers: stage 1 report, stage 1 report, |
+|  | selection record |
+| Decisions | logistic regression: not adopted; search winner: not adopted; |
+|  | agent delivery: sent back |
+| Selected baseline | boosted trees with map |
+| Spent and granted | history-august spent for these candidates; none; drafts |
+|  | only, a person executes |
+| Depends on | calibration record, tier threshold, threshold experiment plan |
+| Signer | model owner; illustrative costs await the decision owner's |
+|  | signature |

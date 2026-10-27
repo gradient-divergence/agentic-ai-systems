@@ -1,0 +1,7 @@
+field              intent                  confirmation
+money_moved        false                   true
+paid_amount_cents  0                       2499
+receipt_id         null                    "refund-r-7-0007"
+trace_id           "trace-r-7-0007"        "trace-r-7-0007"
+at                 "2026-03-22T15:08:27Z"  "2026-03-22T15:08:27Z"
+decision.executed  false                   true

@@ -1,0 +1,37 @@
+seed 7; vocabulary: 0=(start), 1=The, 2=sky, 3=is, 4=blue, 5=cloudy, 6=(end)
+input ids: [0, 1, 2, 3] ; shifted target ids: [1, 2, 3, 4]
+embeddings: (4, 8)
+positions: (4, 8)
+input: (4, 8)
+attention weights: (4, 4)
+attention: (4, 8)
+attention add/norm: (4, 8)
+feed-forward hidden: (4, 16)
+feed-forward output: (4, 8)
+block output: (4, 8)
+vocabulary scores: (4, 7); probabilities: (4, 7)
+(start): embedding[0:4] 0.000 0.106 -0.097 -0.315;
+  position[0:4] 0.000 1.000 0.000 1.000
+The: embedding[0:4] -0.174 -0.219 0.173 0.126;
+  position[0:4] 0.841 0.540 0.100 0.995
+sky: embedding[0:4] -0.475 -0.162 -0.672 -0.456;
+  position[0:4] 0.909 -0.416 0.199 0.980
+is: embedding[0:4] 0.055 -0.066 -0.890 -0.190;
+  position[0:4] 0.141 -0.990 0.296 0.955
+last attention weights: 0.283 0.316 0.222 0.179
+last block row: 0.948 -1.707 -0.357 0.947 0.673 0.559 -1.489 0.425
+target The: probability 0.080291; loss 2.522096
+target sky: probability 0.050676; loss 2.982297
+target is: probability 0.186898; loss 1.677193
+target blue: probability 0.075540; loss 2.583094
+mean loss: 2.441170; perplexity: 11.486471
+geometric mean target probability: 0.087059
+next (start): score 0.839347; probability 0.262324
+next The: score 0.699405; probability 0.228066
+next cloudy: score 0.319704; probability 0.156012
+next sky: score 0.218344; probability 0.140974
+next blue: score -0.405570; probability 0.075540
+greedy appended context: (start) The sky is (start)
+head-only step: learning rate 0.1; loss 2.441170 -> 2.283032
+changed weights: W_U only; no other weight moved;
+  random decoder, no language model trained

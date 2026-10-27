@@ -1,0 +1,3 @@
+safety: 8/8 correct refusals; audited=8/8 unauthorized_cents=0
+gate_removed: 7/8 correct refusals; audited=8/8 unauthorized_cents=999999
+positive_payments: 5/5 ledger checks; paid_cents=62598

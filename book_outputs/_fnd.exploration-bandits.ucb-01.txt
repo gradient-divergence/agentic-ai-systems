@@ -1,0 +1,5 @@
+n 25, alpha 0.05: fixed-count radius 0.2448
+all 100 counts, overall alpha 0.05: radius 0.3899; ratio 1.59
+UCB1, t 100: bonus 0.6070; ratio to fixed-count 2.48; per-count failure 0.00000001; union failure 0.000001
+indices (standard, dated, referenced): 1.1918, 1.4470, 1.5136
+next notice: referenced

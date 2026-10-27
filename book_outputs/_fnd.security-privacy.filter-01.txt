@@ -1,0 +1,9 @@
+Constructed fixed independent-attempt inputs; no measured attack rate.
+Text rule: ignore = 0.9; disregard = 0.1; threshold = 0.2.
+Independent attempts n=14: 0.512
+Independent attempts n=20: 0.642
+Independent attempts n=59: 0.952
+Independent attempts n=60: 0.954
+Even chance: 13.51; fewest attempts 14
+50 clean independent trials: 95% upper bound 0.0582
+Agent orders: 2000; constructed account orders: 1

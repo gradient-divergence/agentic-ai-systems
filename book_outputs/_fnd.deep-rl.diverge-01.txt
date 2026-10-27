@@ -1,0 +1,17 @@
+two states: theta and 2*theta; first reward 0; second ends with reward 0
+gamma 0.9; eta 0.1; initial theta 10
+first transition update 1: error 8.00; theta 10.800
+first transition update 2: error 8.64; theta 11.664
+first-only factor 1.080; terminal factor 0.600; sequential policy-mix round
+  0.648; return-target factor 0.900
+held targets: 300 regression updates per refresh
+refresh 1: held 10.000; settled theta 18.000; start loss 32.00; end loss
+  1.394e-26
+refresh 2: held 18.000; settled theta 32.400; start loss 103.68; end loss
+  4.453e-26
+refresh 3: held 32.400; settled theta 58.320; start loss 335.92; end loss
+  1.458e-25
+held first-only factor 1.800; equal-weight two-transition regression factor
+  0.360
+held mixed weights: 10.000000, 3.600000, 1.296000, 0.466560
+max bias: exact 0.564190; simulated 0.565891; SE 0.002607; seed 7; draws 100000

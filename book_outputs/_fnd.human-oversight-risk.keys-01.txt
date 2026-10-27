@@ -1,0 +1,32 @@
+Constructed exercise answers, checked from the given inputs.
+1 Work accumulates: opening/due/close, backlog and escalations.
+  Attention hazards: planted catches, change/refuse by load; bypass:
+  unbound payments, deadline decisions and provider reconciliation.
+2 Friday 18:20 -> Monday 17:00; then morgan, Tuesday 13:00.
+  Notice; never a clock-written decision. Fresh gate can refuse expiry.
+3 lambda=10: u=0.833333; L=5.000000; W=30.000000min
+  wait=25.000000min; P(T>30min)=0.367879
+3 lambda=11: u=0.916667; L=11.000000; W=60.000000min
+  wait=55.000000min; P(T>30min)=0.606531
+  90% within 30min: lambda<=7.394830/h; u<=0.616236
+  Report the tail: a 30min mean still leaves 36.8% beyond 30min.
+4 Offered ordinary/senior=70.0/28.0h/week; ordinary adjusters=3
+  ordinary u=0.583333; senior u=0.700000; L=60
+  Friday 17:00..Sunday midnight: ordinary 68.750000 claims = 22.916667h vs24h
+  senior 13.750000 claims = 9.166667h vs8h; fails
+  Poisson Monday count failures: senior=0.616509; ordinary=0.319820
+5 Fixture's last report: Planted cases caught: 15 of 20 (75%). Review healthy.
+  True catches=9/14 decided (64.285714%); undecided=6
+  Exact P(X<=9 | n=14,p=.9)=0.009230212
+  quiet {'planted': 9, 'decided': 9, 'caught': 9, 'unresolved': 0,
+'catch_share': 1.0, 'changed': 9, 'all_decided': 14, 'change_or_refuse_share':
+0.6428571428571429}
+  busy {'planted': 3, 'decided': 3, 'caught': 0, 'unresolved': 0,
+'catch_share': 0.0, 'changed': 0, 'all_decided': 13, 'change_or_refuse_share':
+0.0}
+  overloaded {'planted': 8, 'decided': 2, 'caught': 0, 'unresolved': 6,
+'catch_share': 0.0, 'changed': 28, 'all_decided': 66, 'change_or_refuse_share':
+0.42424242424242425}
+  Riley refused 31 of 36
+  Escalations are not catches. Respond with sample cuts and staffing.
+6 Starter fails: a deadline writes an approval; reference escalates.

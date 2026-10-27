@@ -1,0 +1,5 @@
+budget 0.01; baseline 0.80; unsigned floor 0: cap 0.0125
+signed floor 0.60: cap 0.0500
+capped epsilon 0.3 probabilities: 0.990, 0.005, 0.005
+capped epsilon 0.3 probabilities: 0.955, 0.040, 0.005
+propensity floor 0.005; largest weight 200

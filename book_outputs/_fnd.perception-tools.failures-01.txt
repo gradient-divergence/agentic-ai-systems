@@ -1,0 +1,8 @@
+| Injected failure | Request | Last step | Reason | Audit records | Money moved |
+|---|---|---|---|---|---|
+| `ambiguous_order` | `r-7-0000` | `order.lookup` | `ambiguous_order` | 1 | no |
+| `cached_policy` | `r-7-0001` | `assess` | `non_current_policy` | 1 | no |
+| `stale_carrier` | `r-7-0002` | `assess` | `stale_shipment` | 1 | no |
+| `stale_retrieval` | `r-7-0003` | `assess` | `stale_policy` | 1 | no |
+| `hidden_instruction` | `r-7-0004` | `assess` | `suspicious_request` | 1 | no |
+| malformed call | `r-7-0007` | `refund.execute` | `invalid_tool_arguments` | 1 | no |

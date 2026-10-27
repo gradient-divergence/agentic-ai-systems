@@ -1,0 +1,4 @@
+request   injected         read        in force            age  reason
+r-7-0001  cached_policy    2026-03-01  2026-05-01      3,600 s
+  non_current_policy
+r-7-0003  stale_retrieval  2026-03-01  2026-03-01  2,592,001 s  stale_policy

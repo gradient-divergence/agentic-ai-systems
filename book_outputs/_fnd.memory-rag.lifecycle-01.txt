@@ -1,0 +1,23 @@
+monthly copies: ended version 94 / 398; within 30 days 94
+ended-version ages: 9.069097 .. 29.839884 days
+policy conclusions differ: 9; tiers {1: 6, 2: 2, 3: 1}
+r-7-0252: tier 1, right approve, copy deny outside_return_window
+r-7-0103: tier 3, right refer, copy refer outside_return_window; named
+  approver morgan decides
+r-7-0028: tier 1, right approve, copy deny outside_return_window
+r-7-0597: tier 2, right approve, copy deny outside_return_window
+r-7-0085: tier 1, right approve, copy deny outside_return_window
+r-7-0276: tier 2, right approve, copy deny outside_return_window
+r-7-0280: tier 1, right approve, copy deny outside_return_window
+r-7-0154: tier 1, right approve, copy deny outside_return_window
+r-7-0399: tier 1, right approve, copy deny outside_return_window
+unchanged check at use: 94 -> refer non_current_policy
+copies no older than 7 days: ended 0, changed 0
+cached_policy r-7-0001 at 2026-05-04T23:12:27+00:00: beyond_notice
+constructed correction: May as known 12 May 30 days; as known 1 October 25 days
+audit of r-7-0085: approve as known then; deny outside_return_window as known
+  now; correction broke notice
+retention: records identical True; text_expired
+retention events 1; expired texts 7
+expired text hash
+  32df2ba4cd4afa3617ad4d28e1695f1f6237fa1a0f7730f071797a76071f9876

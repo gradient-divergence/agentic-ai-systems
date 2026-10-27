@@ -1,0 +1,116 @@
+{
+  "patients": [
+    {
+      "patient_id": "patient-01",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 9
+    },
+    {
+      "patient_id": "patient-02",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 9
+    },
+    {
+      "patient_id": "patient-03",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 9
+    },
+    {
+      "patient_id": "patient-04",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 10
+    },
+    {
+      "patient_id": "patient-05",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 10
+    },
+    {
+      "patient_id": "patient-06",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 10
+    },
+    {
+      "patient_id": "patient-07",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 11
+    },
+    {
+      "patient_id": "patient-08",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 11
+    },
+    {
+      "patient_id": "patient-09",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 11
+    },
+    {
+      "patient_id": "patient-10",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 12
+    },
+    {
+      "patient_id": "patient-11",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 12
+    },
+    {
+      "patient_id": "patient-12",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 12
+    },
+    {
+      "patient_id": "patient-13",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 13
+    },
+    {
+      "patient_id": "patient-14",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 13
+    },
+    {
+      "patient_id": "patient-15",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 13
+    },
+    {
+      "patient_id": "patient-16",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 14
+    },
+    {
+      "patient_id": "patient-17",
+      "urgency": "urgent",
+      "deadline_day": 2,
+      "discharged_hour": 14
+    },
+    {
+      "patient_id": "patient-18",
+      "urgency": "routine",
+      "deadline_day": 7,
+      "discharged_hour": 14
+    }
+  ],
+  "slots_per_day": 3,
+  "days": 7,
+  "batch_hour": 17,
+  "basis": "constructed, given in chapter 40"
+}

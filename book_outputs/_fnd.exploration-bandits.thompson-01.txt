@@ -1,0 +1,6 @@
+seed 7 Monte Carlo: 300000 draws; numerical quadrature beside it
+offer successes answers posterior mean probability_best monte_carlo
+standard 32 40 Beta(33,9) 0.786 0.219 0.220
+dated 9 10 Beta(10,2) 0.833 0.574 0.574
+referenced 4 5 Beta(5,2) 0.714 0.207 0.207
+maximum quadrature/Monte Carlo difference: 0.000996

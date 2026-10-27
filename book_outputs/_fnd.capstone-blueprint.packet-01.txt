@@ -1,0 +1,36 @@
+Prepared refund requirement rows; operating packet: integration_missing
+No launched stage 6 bundle or signature is fabricated.
+row | question | records (producer; bundle rule; signer)
+1 | What can this agent do that a workflow cannot?
+  comparison | Capstone: Design, Build, Deploy, Operate | strict | decision_owner
+2 | What is the smallest safe action scope?
+  boundary | What Is Agentic AI? | any | decision_owner
+  scope | Security and Privacy | strict | decision_owner
+  routing | Human Oversight and Risk Management | strict | decision_owner
+  tier3 | Capstone: Design, Build, Deploy, Operate | strict | decision_owner
+3 | Which failures become public or expensive?
+  loss_bound | Action, Guardrails, and Policies | any | decision_owner
+  exposure | Deployment and Rollback | covered | release_owner
+  data_contracts | Data Systems for Agentic AI | covered | release_owner
+  authority_table | Batch and Streaming Pipelines | covered | release_owner
+  injection_suite | Security and Privacy | covered | release_owner
+  revocation_drill | Security and Privacy | covered | release_owner
+  segment_audit | Outcome Audits and Decision Explanations | strict | decision_owner
+  explanation | Outcome Audits and Decision Explanations | strict | decision_owner
+4 | What evidence would show that the agent is improving?
+  evidence_requirements | Decision Strategy and Evidence Requirements | any | decision_owner
+  release | Agent Evaluation and Release Evidence | strict | release_owner
+  shadow_window | Deployment and Rollback | covered | decision_owner
+  promotion | MLOps and ML Engineering | strict | release_owner
+  error_budget | Observability and Reliability | covered | decision_owner
+5 | How do we turn incidents into evaluation cases?
+  incident | Observability and Reliability | strict | release_owner
+  incident_actions | Observability and Reliability | strict | release_owner
+6 | What can a person override, and how fast?
+  review_design | Human Oversight and Risk Management | any | decision_owner
+  rollout_plan | Organizational Adoption | strict | decision_owner
+  rollout_step | Organizational Adoption | strict | decision_owner
+  stop | Deployment and Rollback | covered | release_owner
+7 | Which rollback has actually been rehearsed?
+  rehearsal | Deployment and Rollback | strict | release_owner
+Comparison rerunnable: false

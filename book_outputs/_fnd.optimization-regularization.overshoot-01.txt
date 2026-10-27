@@ -1,0 +1,6 @@
+x 2, y 1; initial weights (0.5, 0, 2, 0), gradient (4, 2, 1, 1)
+initial loss: 0.5000000
+eta 0.05: hidden input 0.5000, loss 0.0028125
+eta 0.08: hidden input 0.2000, loss 0.2422080
+eta 0.09: hidden input 0.1000, loss 0.4041005
+eta 0.10: hidden input 0.0000, loss 0.6050000

@@ -1,0 +1,43 @@
+bands: pay below 0.080; review through 0.80, including ties; third above 0.80
+action map: pay only if every gate condition holds; review, third and cannot tell refer
+
+| Window, score, band | Count | Mean forecast | Wrong rate (95% Wilson) | Planted risk |
+|---|---|---|---|---|
+| august, proposed, pay | 899 | 0.0299 | 0.0122 (0.0068, 0.0218) | 0.0173 |
+| august, proposed, review | 123 | 0.1627 | 0.1707 (0.1145, 0.2469) | 0.1429 |
+| august, proposed, third | 0 | undefined | undefined | undefined |
+| august, class-weighted, pay | 23 | 0.0607 | 0.0000 (0.0000, 0.1431) | 0.0112 |
+| august, class-weighted, review | 939 | 0.3507 | 0.0224 (0.0147, 0.0339) | 0.0253 |
+| august, class-weighted, third | 60 | 0.8185 | 0.1833 (0.1056, 0.2992) | 0.1520 |
+| september, proposed, pay | 811 | 0.0298 | 0.0333 (0.0230, 0.0480) | 0.0346 |
+| september, proposed, review | 141 | 0.1659 | 0.2979 (0.2286, 0.3779) | 0.2862 |
+| september, proposed, third | 0 | undefined | undefined | undefined |
+| september, class-weighted, pay | 21 | 0.0580 | 0.0476 (0.0085, 0.2267) | 0.0177 |
+| september, class-weighted, review | 862 | 0.3552 | 0.0534 (0.0402, 0.0704) | 0.0528 |
+| september, class-weighted, third | 69 | 0.8155 | 0.3188 (0.2209, 0.4358) | 0.3272 |
+
+| Window, score, band | Loss if paid: predicted / realized ($) | Amount-weighted forecast / rate |
+|---|---|---|
+| august, proposed, pay | 0.794210 / 0.372492 | 0.031498 / 0.014773 |
+| august, proposed, review | 3.950731 / 4.502439 | 0.163062 / 0.185833 |
+| august, class-weighted, pay | 0.758764 / 0.000000 | 0.066933 / 0.000000 |
+| august, class-weighted, review | 9.303662 / 0.707114 | 0.363167 / 0.027602 |
+| august, class-weighted, third | 18.136744 / 3.744833 | 0.816836 / 0.168658 |
+| september, proposed, pay | 0.783573 / 0.999383 | 0.031873 / 0.040652 |
+| september, proposed, review | 4.083427 / 8.086950 | 0.168032 / 0.332777 |
+| september, class-weighted, pay | 0.325896 / 1.499048 | 0.067507 / 0.310515 |
+| september, class-weighted, review | 9.030567 / 1.470406 | 0.363789 / 0.059234 |
+| september, class-weighted, third | 22.028453 / 9.446232 | 0.815090 / 0.349526 |
+
+august, proposed: maximum 0.231201; third edge 0.80
+august, class-weighted: maximum 0.857190; third edge 0.80
+august, complete band referrals: review 123, third 0, cannot tell 0; 123/1022 = 0.120352 (0.101812, 0.141736)
+  with marginal sets requiring a sound singleton: 123/1022 = 0.120352 (0.101812, 0.141736); union, counted once
+  with class-conditional sets requiring a sound singleton: 764/1022 = 0.747554 (0.720027, 0.773227); union, counted once
+september, proposed: maximum 0.227945; third edge 0.80
+september, class-weighted: maximum 0.849469; third edge 0.80
+september, complete band referrals: review 141, third 0, cannot tell 0; 141/952 = 0.148109 (0.126960, 0.172087)
+  with marginal sets requiring a sound singleton: 141/952 = 0.148109 (0.126960, 0.172087); union, counted once
+  with class-conditional sets requiring a sound singleton: 700/952 = 0.735294 (0.706364, 0.762333); union, counted once
+two-request example: mean prediction 0.10, mean risk 0.10; amount-weighted prediction 0.10, risk 0.13; predicted loss $2.50, expected $3.25
+offline shares for a later queue projection; at stage 3 every draft reaches a person

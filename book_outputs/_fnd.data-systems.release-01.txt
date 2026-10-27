@@ -1,0 +1,6 @@
+stage 5 contracts candidate: pass
+failed cases: []
+cases/trials: 330 5
+chapter 3 floor: True
+must-pay cases: 5
+must-pay cents per trial: [62598, 62598, 62598, 62598, 62598]

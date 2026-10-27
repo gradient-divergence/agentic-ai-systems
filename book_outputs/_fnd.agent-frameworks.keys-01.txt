@@ -1,0 +1,32 @@
+Exercise 3: 6 cases; configuration referral ending.
+| Field | Cases that differ |
+|---|---:|
+| decision | 3 |
+| outcome | 3 |
+| reason | 3 |
+| tier | 0 |
+| amount_cents | 0 |
+| executed | 3 |
+| tool_calls | 4 |
+| ledger_receipts | 3 |
+| audits | 4 |
+| failure_detail | 3 |
+Decision: held. Retry and the runtime's turn limit must carry the agent's rules.
+Exercise 4: each setting alone over the full adapter, then all four.
+failure back to model: 7/60 differ; catching case public-r-7-0000; remove with refer_on_failure=True.
+  execute-before: approve eligible; 2499 cents; execute calls 2; audits 2.
+two retries: 3/60 differ; catching case execute-before; remove with no_retry=True.
+  execute-before: approve eligible; 2499 cents; execute calls 2; audits 2.
+no-tool reply ends run: 60/60 differ; catching case public-r-7-0000; remove with end_at_audit=True.
+  execute-before: approve eligible; 0 cents; execute calls 0; audits 0.
+six turns including audit: 34/60 differ; catching case public-r-7-0005; remove with agent budget 12, reserve 1 for audit.
+  execute-before: refer step_budget_exhausted; 0 cents; execute calls 0; audits 1.
+all four: 60/60 differ; catching case public-r-7-0000; remove with full adapter.
+  execute-before: approve eligible; 0 cents; execute calls 0; audits 0.
+own execute-before: refer; 0 cents; tool_error:refund.execute:TimeoutError.
+Public loop: 9 phase names; longest run 7 executed steps; 22 runs at that length; 4 payments.
+Exercise 5: 40 public cases; 0 differences in its two fields.
+The retry remains on. Missing faults and fields invalidate 'unchanged, ready for shadow'.
+Catching case execute-before: own 0 cents, second 2499 cents; fields decision, outcome, reason, executed, tool_calls, ledger_receipts, audits, failure_detail. Held.
+Exercise 7: cycle 4 test-editing patch must be refused; 0 files changed in the actual run.
+Owner-held acceptance: 4/4 fail-to-pass; 2/2 keep-passing; agent held-test reads 0.

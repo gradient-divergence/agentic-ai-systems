@@ -1,0 +1,29 @@
+initial weights: corners present; checking all 19 entries at each run's step 10
+eta 0.2, step 10: minimum abs(hidden input) 0.062625250; entries whose nudge switched a unit: 0
+gaps W1, b1, W2, b2: 2.501e-11, 2.501e-11, 5.658e-09, 1.246e-10
+eta 0.2, step 0: loss 2.296565265, active units [66, 195]
+eta 0.2, step 1: loss 1.802951575, active units [66, 195]
+eta 0.2, step 10: loss 1.075413480, active units [66, 165]
+eta 0.2, step 300: loss 0.103123609, active units [220, 194]
+eta 2, step 10: minimum abs(hidden input) 0.008479435; entries whose nudge switched a unit: 0
+gaps W1, b1, W2, b2: 0.000e+00, 0.000e+00, 0.000e+00, 2.829e-08
+eta 2, step 0: loss 2.296565265, active units [66, 195]
+eta 2, step 1: loss 1.069789113, active units [0, 0]
+eta 2, step 10: loss 1.017510412, active units [0, 0]
+eta 2, step 300: loss 1.017509738, active units [0, 0]
+final first request probabilities: [0.526667 0.260000 0.213333]
+final largest abs(parameter gradient): 7.568e-17
+eta 16, step 10: minimum abs(hidden input) 3.311687724; entries whose nudge switched a unit: 0
+gaps W1, b1, W2, b2: 0.000e+00, 0.000e+00, 0.000e+00, 5.451e-11
+eta 16, step 0: loss 2.296565265, active units [66, 195]
+eta 16, step 1: loss 3.605475874, active units [0, 0]
+eta 16, step 10: loss 2.575321420, active units [0, 0]
+eta 16, step 300: loss 5.880904686, active units [0, 0]
+class shares: 0.526666667, 0.260000000, 0.213333333
+class-share entropy: 1.017509738
+best possible correct from these counts: 287 of 300
+same counts, different reasons: It arrived fine, I do not want it. / The order has not arrived.
+gate present: gaps W1, b1, W2, b2; entries whose nudge switched a unit: 0
+2.501e-11, 2.501e-11, 5.658e-09, 1.246e-10
+gate removed: gaps W1, b1, W2, b2; entries whose nudge switched a unit: 0
+1.000e+00, 3.375e-01, 1.883e-10, 1.015e-10

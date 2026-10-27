@@ -1,0 +1,12 @@
+teacher scores: 2, 1, 0; soft targets = softmax(scores / temperature)
+temperature 1: 0.665241, 0.244728, 0.090031
+temperature 2: 0.506480, 0.307196, 0.186324
+constructed monthly hosting: fixed $120.00; provider $0.020/draft; self-hosted variable $0.005/draft
+break-even volume: 8000 drafts/month; provider $160.00; self-hosted $160.00
+constructed word price $0.001; human redo $4.00; context words stand in for tokens
+label agreement stands in for acceptance as written; every rejected draft is redone once
+arm | accepted / cases | mean words | word cost $ | rework cost $ | cost per accepted draft $
+prompt | 121/121 | 469.157025 | 0.469157 | 0.000000 | 0.469157
+retrieval | 121/121 | 535.752066 | 0.535752 | 0.000000 | 0.535752
+adapter | 83/121 | 409.652893 | 0.409653 | 1.256198 | 1.665851
+adapter saves 59.504132 words/draft; break-even word price $0.021111111 (2.111111 cents)

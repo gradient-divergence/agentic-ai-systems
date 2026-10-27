@@ -1,0 +1,4 @@
+exercise 7 constructed: $0.001/word; $4/redo
+prompt: 500 words; 90/100 accepted; $0.900
+adapter: 400 words; 80/100 accepted; $1.200
+exercise 7 break-even word price: $0.004000

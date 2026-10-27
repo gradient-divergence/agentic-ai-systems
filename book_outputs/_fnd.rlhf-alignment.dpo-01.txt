@@ -1,0 +1,11 @@
+token log-probabilities (chosen, rejected, reference chosen, reference
+  rejected):
+-0.2 -0.4 -0.5
+-0.3 -0.7 -0.8
+-0.5 -0.5 -0.4
+-0.4 -0.6 -0.6
+sequence sums: -1.1 -1.8 -1.4 -1.6
+policy gap 0.7; reference gap 0.2; margin 0.5
+beta 0.2; implicit rewards 0.0600 -0.0400; gap 0.1000
+DPO loss 0.6444; implicit ordering 1.0
+policy = reference: loss 0.6931; implicit ordering 0.5

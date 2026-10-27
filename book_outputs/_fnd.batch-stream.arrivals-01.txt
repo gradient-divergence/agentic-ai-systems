@@ -1,0 +1,4 @@
+14 days; 5,600 distinct scans by event time
+within minutes: 5,307
+depot sync: 224
+daily file: 69

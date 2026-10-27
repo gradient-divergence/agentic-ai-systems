@@ -1,0 +1,15 @@
+Exercise 1: compare oracle counts in month-01, not the settings alone.
+Exercise 2: replay tests fidelity and eligibility, not truth or usefulness.
+Exercise 3: constructed branches, 3000 applicants each.
+base 0.10: FPR 0.051851852. TP 210, false declines 140.
+base 0.25: FPR 0.155555556. TP 525, false declines 350.
+Second branch PPV at first branch FPR, TPR .7: 0.818181818
+Exercise 4: D, decided 600, denied 240, paid 360, found false 12.
+Sample 3/80 = 0.037500. Wilson 0.012834336 to 0.104548920.
+Owed-denial estimate 0.025210084.
+Conditional range 0.008773609 to 0.067253541.
+Owed payments 348. Ceiling count 3. Exact tail 0.036109841.
+Family level .05/3. Breach False.
+Exercise 5: reconstruct from blind readings, not appeals.
+Canonical seed-11 report: exercises/audits-explanations/audit_report_05.json.
+Exercise 6: retain all clauses, evaluation clock, and required approvals.

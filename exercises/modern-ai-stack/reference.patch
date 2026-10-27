@@ -1,0 +1,17 @@
+diff --git a/refund_agent/contracts.py b/refund_agent/contracts.py
+--- a/refund_agent/contracts.py
++++ b/refund_agent/contracts.py
+@@ -194,6 +194,13 @@ class Order(Record):
+     payment_id: str
+     prior_refunds: list[PriorRefund] = Field(default_factory=list)
+ 
++    @model_validator(mode="after")
++    def paid_matches_items(self) -> "Order":
++        total = sum(item.quantity * item.unit_cents for item in self.items)
++        if self.paid_cents != total:
++            raise ValueError("paid_cents differs from the items' total")
++        return self
++
+ 
+ class ShipmentEvent(Record):
+     at: datetime

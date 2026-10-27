@@ -1,0 +1,6 @@
+linear schedule: 1000 steps; beta 0.0001 to 0.02
+t=100: signal 0.947; noise 0.321
+t=250: signal 0.724; noise 0.690
+t=500: signal 0.280; noise 0.960
+t=750: signal 0.058; noise 0.998
+t=1000: signal 0.006; noise 1.000

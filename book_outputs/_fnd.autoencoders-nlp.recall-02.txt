@@ -1,0 +1,10 @@
+Raw: no dates; final columns: dated. MSE: reconstruction error.
+
+| Wording | Encoding | MSE | First, raw | Top 3, raw | First, 95% CI | Top 3 |
+|---|---|---|---|---|---|---|
+| Policy | Counts | none | 0 | 1 | 242 (0.984 to 1.000) | 242 |
+| Policy | Linear code, width 1 | 0.720 | 0 | 0 | 242 (0.984 to 1.000) | 242 |
+| Policy | Linear code, width 2 | 0.560 | 0 | 60 | 242 (0.984 to 1.000) | 242 |
+| Customer | Counts | none | 0 | 1 | 121 (0.437 to 0.563) | 121 |
+| Customer | Linear code, width 1 | 0.720 | 0 | 0 | 0 (0.000 to 0.016) | 121 |
+| Customer | Linear code, width 2 | 0.560 | 0 | 0 | 0 (0.000 to 0.016) | 121 |

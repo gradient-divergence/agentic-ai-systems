@@ -1,0 +1,48 @@
+seed 7; training 13766; learning 9837; evaluation 3929
+decision windows: learning [2025-04-01, 2026-02-01); evaluation [2026-02-01, 2026-06-01)
+learning mix changed_mind: 2795; share 0.284131
+learning mix damaged: 6395; share 0.650097
+learning mix not_delivered: 647; share 0.065772
+reason offer sent matured no_contact_rate Wilson_95 true_rate
+damaged standard 6113 6113 0.8070 [0.7969, 0.8167] 0.80
+damaged dated 247 247 0.8623 [0.8138, 0.8998] 0.86
+damaged referenced 35 35 0.7429 [0.5793, 0.8584] 0.84
+changed_mind standard 2720 2720 0.8085 [0.7932, 0.8228] 0.80
+changed_mind dated 54 54 0.8333 [0.7126, 0.9098] 0.83
+changed_mind referenced 21 21 0.8095 [0.6000, 0.9233] 0.81
+not_delivered standard 622 622 0.7556 [0.7204, 0.7878] 0.80
+not_delivered dated 15 15 0.9333 [0.7018, 0.9881] 0.82
+not_delivered referenced 10 10 0.9000 [0.5958, 0.9821] 0.88
+coin baseline: 7515/9346; learner: 411/491
+learner minus baseline no-contact rate 0.032980; approximate 95% interval [-0.000663, 0.066623]
+cumulative pseudo-regret 500.16; per request 0.050845
+expected extra requests with a repeat contact vs standard -19.15; budget 98.37; expectation, not realized harm
+learning months 10; formula count per offer for 0.82 vs 0.88: 553; comparison target 550
+damaged standard: sends/month 611.30; months to 550 0.90
+damaged dated: sends/month 24.70; months to 550 22.27
+damaged referenced: sends/month 3.50; months to 550 157.14
+changed_mind standard: sends/month 272.00; months to 550 2.02
+changed_mind dated: sends/month 5.40; months to 550 101.85
+changed_mind referenced: sends/month 2.10; months to 550 261.90
+not_delivered standard: sends/month 62.20; months to 550 8.84
+not_delivered dated: sends/month 1.50; months to 550 366.67
+not_delivered referenced: sends/month 1.00; months to 550 550.00
+five log rows: decision request customer decided_at reason amount_cents offers probabilities offer propensity coin version fingerprint seed override contact_at matures_at reward
+offer-history-r-7-000055 history-r-7-000055 history-customer-7-000055 2025-04-01T00:09:38+00:00 damaged 729 standard,dated,referenced [0.990000,0.005000,0.005000] standard 0.990000 0 capped-1 6bce569399877f3a6b80124431a528de8916261d7604ab1d39142fff2f7370ad 7 False none 2025-04-15T00:09:38+00:00 1
+offer-history-r-7-000007 history-r-7-000007 history-customer-7-000007 2025-04-01T00:31:07+00:00 changed_mind 4788 standard,dated,referenced [0.990000,0.005000,0.005000] standard 0.990000 0 capped-1 6bce569399877f3a6b80124431a528de8916261d7604ab1d39142fff2f7370ad 7 False none 2025-04-15T00:31:07+00:00 1
+offer-history-r-7-000056 history-r-7-000056 history-customer-7-000056 2025-04-01T00:49:59+00:00 damaged 4904 standard,dated,referenced [0.990000,0.005000,0.005000] standard 0.990000 0 capped-1 6bce569399877f3a6b80124431a528de8916261d7604ab1d39142fff2f7370ad 7 False none 2025-04-15T00:49:59+00:00 1
+offer-history-r-7-000034 history-r-7-000034 history-customer-7-000034 2025-04-01T01:42:07+00:00 changed_mind 1837 standard,dated,referenced [0.990000,0.005000,0.005000] standard 0.990000 0 capped-1 6bce569399877f3a6b80124431a528de8916261d7604ab1d39142fff2f7370ad 7 False 2025-04-07T01:42:07+00:00 2025-04-15T01:42:07+00:00 0
+offer-history-r-7-000015 history-r-7-000015 history-customer-7-000015 2025-04-01T02:50:19+00:00 changed_mind 3693 standard,dated,referenced [0.990000,0.005000,0.005000] standard 0.990000 0 capped-1 6bce569399877f3a6b80124431a528de8916261d7604ab1d39142fff2f7370ad 7 False 2025-04-12T02:50:19+00:00 2025-04-15T02:50:19+00:00 0
+candidate frozen at 2026-02-14T23:06:17+00:00; fingerprint 92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd
+frozen candidate changed_mind: dated
+frozen candidate damaged: dated
+frozen candidate not_delivered: dated
+fixed standard rule fingerprint b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f
+evaluation logger frozen-capped-uniform-1; fingerprint 32302bb50baa8e7848f439dcc487d8c85d129c5f599a23c032c0c1785650ad77; seed 7; cap 0.0500
+evaluation probabilities: 0.9666666667, 0.0166666667, 0.0166666667 ; floor 0.0166666667; largest weight 60
+evaluation probabilities at cap 0.0125: 0.9916666667, 0.0041666667, 0.0041666667
+cap-only max-min counterexample, inner [0, 0.5, 0.5]: 0.950000, 0.025000, 0.025000 ; floor 0.025000; largest weight 40
+expected candidate-matching evaluation decisions 65.48; not a realized count or effective sample size
+cap-zero fixture rows 3929; probabilities 1, 0, 0
+evaluation outcome accesses 0; truth accesses 0; held-out/golden consultations 0
+finding: the cap leaves new-notice cells thin; no live run or notice adoption is justified by this simulation; stage 3 still drafts for a person

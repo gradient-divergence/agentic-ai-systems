@@ -1,0 +1,7 @@
+never flags: accuracy 0.99, recall 0.0, precision undefined (0 flags)
+one-sided 95% bound, 0 errors in 15: 0.1810
+Wilson upper end at 0 in 15, z^2/(n + z^2): 0.2039
+10 in 100: z^2/n 0.0384, center 0.1148, half-width 0.0596
+standard deviation of the estimate at 0.1 and n = 100: 0.03
+recall 18 of 20, Wilson on the miss rate turned around: [0.6990, 0.9721]
+Wilson's actual coverage at n = 15: 0.8601 at a rate of 0.01, 0.9819 at a rate of 0.2

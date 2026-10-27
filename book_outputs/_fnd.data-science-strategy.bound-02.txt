@@ -1,0 +1,9 @@
+One-sided 95% bounds; flat prior on the failure rate.
+ cases  frequentist  flat prior
+    10       0.2589      0.2384
+    40       0.0722      0.0705
+   100       0.0295      0.0292
+   300       0.0099      0.0099
+  1000       0.0030      0.0030
+40 clean cases: frequentist=7.2%; flat prior=7.0%
+cases for a bound of 0.01: frequentist=299; flat prior=298

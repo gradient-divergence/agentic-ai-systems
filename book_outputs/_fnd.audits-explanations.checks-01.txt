@@ -1,0 +1,19 @@
+Explicit chapter-36 record fixtures. Partner integration is not asserted.
+two-clause: reasons amount_over_policy, outside_return_window.
+Counterfactual eligible, distance 2.
+Required approval reviewer, granted False.
+Replay 6/6. Execution asserted False.
+Amounts 5200 to 4000 cents.
+Submission day 29, execution day 31, counterfactual evaluation day 30.
+exhausted: reasons amount_over_policy.
+Counterfactual no_admissible_change, distance 0.
+Required approval none, granted False.
+Replay 6/6. Execution asserted False.
+tier2: reasons already_delivered.
+Counterfactual eligible, distance 1.
+Required approval reviewer, granted False.
+Replay 6/6. Execution asserted False.
+tier3: reasons already_delivered.
+Counterfactual eligible, distance 1.
+Required approval named_approver:morgan, granted False.
+Replay 6/6. Execution asserted False.

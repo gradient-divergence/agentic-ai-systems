@@ -1,0 +1,16 @@
+Constructed finite-population boundaries, not a month's observed counts.
+k=3, N=239, owed=395, m=80: Kceil=3, tail=0.036566928.
+Entitlement denominator status: assessable.
+k=4, N=239, owed=395, m=80: Kceil=3, tail=0.000000000.
+Entitlement denominator status: assessable.
+k=4, N=239, owed=396, m=80: Kceil=4, tail=0.011930735.
+Entitlement denominator status: assessable.
+k=5, N=5, owed=990, m=5: Kceil=5, tail=1.000000000.
+Entitlement denominator status: assessable.
+k=0, N=5, owed=0, m=5: Kceil=0, tail=1.000000000.
+Entitlement denominator status: unassessable.
+Given N=239 and owed=395: true wrongful=21, exact power=0.961851039.
+Given N=239 and owed=395: true wrongful=22, exact power=0.971905296.
+Given N=239 and owed=395: true wrongful=23, exact power=0.979469765.
+Given N=239 and owed=395: true wrongful=4, exact power=0.011930735.
+Probability of all 3 in sample: 0.036566928.

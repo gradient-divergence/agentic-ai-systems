@@ -1,0 +1,1955 @@
+Constructed queues; arrival and payment shares from available-base runs.
+All 100 seeds 7..106 repeat the same 30-day calendar from 1 October.
+Staffing comparisons keep sample rates fixed; the controller is tested
+separately.
+The signed ceiling is checked separately on EVERY month, per model.
+Brief-label arithmetic (not measured):
+  reviewers=42.411111h; total=56.411111h/week
+  Monday=16.387235h; D2 margin=-0.387235h
+  D3 margin=7.612765h; tier3=4.583333h
+Fixed-time tier3 count: >=17 in 55h; Poisson tail= 0.013049
+  one in 76.634 weekends; not a simulated breach frequency.
+D1 fixed capacity 80 h/week
+  expected u=0.714846; reviewer-only u=1.079692
+  Monday due=16.276179h; margin=-0.276179h
+  necessary-count failures: ('reviewers_unstable',
+'reviewers_monday_infeasible', 'pooled_monday_infeasible',
+'role_subset_week:alex', 'role_subset_monday:alex',
+'role_subset_monday:alex,morgan')
+  Monday breaches=398/400 (99.5000%)
+  pooled late=13.069191%; breach months=100/100
+  monthly breach frequency=100.0000%; accepted=False
+  late items by class: {'tier2': 7295, 'tier3': 15, 'referral': 3910,
+'recheck': 0, 'blind': 0, 'planted': 625, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 398 of 400
+  all simulated weekends' count failures: 4 of 4 in the first month
+  seed late/blocking share pending
+    7   75/935   8.021390%   0
+    8   93/872  10.665138%   0
+    9  153/944  16.207627%   0
+   10  153/919  16.648531%   0
+   11   84/870   9.655172%   0
+   12  140/890  15.730337%   0
+   13  153/960  15.937500%   0
+   14   80/912   8.771930%   0
+   15   61/859   7.101281%   0
+   16  166/926  17.926566%   0
+   17  116/939  12.353568%   0
+   18  119/882  13.492063%   0
+   19  161/968  16.632231%   0
+   20  131/922  14.208243%   0
+   21   86/926   9.287257%   0
+   22  143/916  15.611354%   0
+   23   96/911  10.537870%   0
+   24   94/878  10.706150%   0
+   25  103/887  11.612176%   0
+   26   98/920  10.652174%   0
+   27   76/868   8.755760%   0
+   28  156/901  17.314095%   0
+   29   83/917   9.051254%   0
+   30  219/930  23.548387%   0
+   31  130/886  14.672686%   0
+   32  147/927  15.857605%   0
+   33  217/897  24.191750%   0
+   34   80/876   9.132420%   0
+   35  207/929  22.282024%   0
+   36   86/870   9.885057%   0
+   37  134/923  14.517876%   0
+   38   98/858  11.421911%   0
+   39  122/941  12.964931%   0
+   40  216/949  22.760801%   0
+   41  114/871  13.088404%   0
+   42   95/890  10.674157%   0
+   43  179/955  18.743455%   0
+   44  135/927  14.563107%   0
+   45   91/890  10.224719%   0
+   46  149/886  16.817156%   0
+   47   90/891  10.101010%   0
+   48  102/873  11.683849%   0
+   49  158/927  17.044229%   0
+   50   81/899   9.010011%   0
+   51   96/913  10.514786%   0
+   52   84/890   9.438202%   0
+   53  168/908  18.502203%   0
+   54   96/886  10.835214%   0
+   55  103/894  11.521253%   0
+   56  165/903  18.272425%   0
+   57  139/925  15.027027%   0
+   58  145/900  16.111111%   0
+   59  110/897  12.263099%   0
+   60  147/932  15.772532%   0
+   61  146/910  16.043956%   0
+   62   89/901   9.877913%   0
+   63  162/949  17.070601%   0
+   64   88/885   9.943503%   0
+   65  240/900  26.666667%   0
+   66  116/921  12.595005%   0
+   67  134/896  14.955357%   0
+   68  109/902  12.084257%   0
+   69  128/914  14.004376%   0
+   70   97/934  10.385439%   0
+   71  116/920  12.608696%   0
+   72   53/868   6.105991%   0
+   73  139/946  14.693446%   0
+   74   47/886   5.304740%   0
+   75  158/919  17.192601%   0
+   76  142/895  15.865922%   0
+   77   54/917   5.888768%   0
+   78  145/886  16.365688%   0
+   79  136/924  14.718615%   0
+   80  118/875  13.485714%   0
+   81  147/957  15.360502%   0
+   82   99/925  10.702703%   0
+   83  126/895  14.078212%   0
+   84  134/856  15.654206%   0
+   85  119/910  13.076923%   0
+   86   72/910   7.912088%   0
+   87  133/972  13.683128%   0
+   88   79/868   9.101382%   0
+   89   94/896  10.491071%   0
+   90   81/869   9.321059%   0
+   91   81/865   9.364162%   0
+   92  107/916  11.681223%   0
+   93  106/862  12.296984%   0
+   94   59/887   6.651635%   0
+   95  113/927  12.189860%   0
+   96  118/958  12.317328%   0
+   97   88/902   9.756098%   0
+   98  191/924  20.670996%   0
+   99  116/909  12.761276%   0
+  100  145/908  15.969163%   0
+  101   89/893   9.966405%   0
+  102   66/849   7.773852%   0
+  103   83/905   9.171271%   0
+  104   89/927   9.600863%   0
+  105   95/899  10.567297%   0
+  106   75/931   8.055854%   0
+  first month utilization: {'alex': 0.976567, 'morgan': 0.315341}
+  first month max backlog: 185 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=45
+    deadline breaches (blocking and nonblocking classes): 45
+    class largest waiting backlog: 44 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 24.477551037520698 60.12916256555556
+64.66188365138889
+    desk mean/p95 h: 5.148108036827887 11.967223018333332
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=16.689423; members/hour=0.708333
+    mean clipped stay=23.561538h; unfinished durations censored at close
+    occupancy=12016.384362 item-h; clipped stays=12016.384362 item-h
+    finite-window relative gap=9.08e-16; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.83284551571256 61.10143189 64.41298691333333
+    desk mean/p95 h: 1.753176816120773 4.510532411944444
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.684413; members/hour=0.159722
+    mean clipped stay=16.806759h; unfinished durations censored at close
+    occupancy=1932.777234 item-h; clipped stays=1932.777234 item-h
+    finite-window relative gap=3.53e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=24
+    deadline breaches (blocking and nonblocking classes): 24
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 25.120178770419287 59.29834842277778
+63.993669277500004
+    desk mean/p95 h: 4.983115913005241 11.337557899722222
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=8.839371; members/hour=0.368056
+    mean clipped stay=24.016405h; unfinished durations censored at close
+    occupancy=6364.347374 item-h; clipped stays=6364.347374 item-h
+    finite-window relative gap=8.57e-16; starting backlog=0
+  recheck: arrivals=249 completed-at-close=164 late=0
+    deadline breaches (blocking and nonblocking classes): 214
+    class largest waiting backlog: 107 at 2026-10-30T12:37:14.306620+00:00
+    calendar mean/p95/max h: 144.47724770698684 260.41548173638887
+283.03740771416665
+    desk mean/p95 h: 36.11883197779563 63.31463298083334
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=42.036372; members/hour=0.345833
+    mean clipped stay=121.550956h; unfinished durations censored at close
+    occupancy=30266.187942 item-h; clipped stays=30266.187942 item-h
+    finite-window relative gap=2.4e-16; starting backlog=0
+  blind: arrivals=46 completed-at-close=0 late=0
+    deadline breaches (blocking and nonblocking classes): 46
+    class largest waiting backlog: 46 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: None None None
+    desk mean/p95 h: None None
+    independent blind reviewer: alex excluded; unresolved samples: 46
+    L_window=21.379023; members/hour=0.063889
+    mean clipped stay=334.628186h; unfinished durations censored at close
+    occupancy=15392.896547 item-h; clipped stays=15392.896547 item-h
+    finite-window relative gap=7.09e-16; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=6
+    deadline breaches (blocking and nonblocking classes): 6
+    class largest waiting backlog: 6 at 2026-10-20T04:06:11.814913+00:00
+    calendar mean/p95/max h: 25.845339300709878 62.622741788333336
+63.26560468388889
+    desk mean/p95 h: 5.69726208995679 11.083333333333334
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.533736; members/hour=0.062500
+    mean clipped stay=24.539784h; unfinished durations censored at close
+    occupancy=1104.290269 item-h; clipped stays=1104.290269 item-h
+    finite-window relative gap=1.03e-15; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D2 fixed capacity 80 h/week
+  expected u=0.714846; reviewer-only u=1.079692
+  Monday due=16.276179h; margin=-0.276179h
+  necessary-count failures: ('reviewers_monday_infeasible',
+'pooled_monday_infeasible', 'role_subset_monday:alex,morgan')
+  Monday breaches=306/400 (76.5000%)
+  pooled late=4.522635%; breach months=97/100
+  monthly breach frequency=97.0000%; accepted=False
+  late items by class: {'tier2': 2561, 'tier3': 15, 'referral': 1301,
+'recheck': 0, 'blind': 0, 'planted': 222, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 207 of 400
+  all simulated weekends' count failures: 2 of 4 in the first month
+  seed late/blocking share pending
+    7   15/935   1.604278%   0
+    8   33/872   3.784404%   0
+    9   73/944   7.733051%   0
+   10   65/919   7.072905%   0
+   11   45/870   5.172414%   0
+   12   42/890   4.719101%   0
+   13   71/960   7.395833%   0
+   14   31/912   3.399123%   0
+   15   13/859   1.513388%   0
+   16   51/926   5.507559%   0
+   17   42/939   4.472843%   0
+   18   42/882   4.761905%   0
+   19   94/968   9.710744%   0
+   20   67/922   7.266811%   0
+   21   43/926   4.643629%   0
+   22   61/916   6.659389%   0
+   23   27/911   2.963776%   0
+   24   24/878   2.733485%   0
+   25   52/887   5.862458%   0
+   26   55/920   5.978261%   0
+   27   34/868   3.917051%   0
+   28   48/901   5.327414%   0
+   29   49/917   5.343511%   0
+   30   75/930   8.064516%   0
+   31   50/886   5.643341%   0
+   32   37/927   3.991370%   0
+   33   71/897   7.915273%   0
+   34   32/876   3.652968%   0
+   35   52/929   5.597417%   0
+   36   30/870   3.448276%   0
+   37   32/923   3.466956%   0
+   38   18/858   2.097902%   0
+   39   37/941   3.931987%   0
+   40   18/949   1.896733%   0
+   41   28/871   3.214696%   0
+   42   47/890   5.280899%   0
+   43   64/955   6.701571%   0
+   44   37/927   3.991370%   0
+   45   37/890   4.157303%   0
+   46   82/886   9.255079%   0
+   47   14/891   1.571268%   0
+   48   36/873   4.123711%   0
+   49   59/927   6.364617%   0
+   50    3/899   0.333704%   0
+   51   53/913   5.805038%   0
+   52   48/890   5.393258%   0
+   53   64/908   7.048458%   0
+   54   27/886   3.047404%   0
+   55   44/894   4.921700%   0
+   56   41/903   4.540421%   0
+   57   69/925   7.459459%   0
+   58   34/900   3.777778%   0
+   59   56/897   6.243032%   0
+   60   87/932   9.334764%   0
+   61   71/910   7.802198%   0
+   62   34/901   3.773585%   0
+   63   45/949   4.741834%   0
+   64   47/885   5.310734%   0
+   65   45/900   5.000000%   0
+   66   38/921   4.125950%   0
+   67   44/896   4.910714%   0
+   68   27/902   2.993348%   0
+   69   50/914   5.470460%   0
+   70   50/934   5.353319%   0
+   71   31/920   3.369565%   0
+   72   12/868   1.382488%   0
+   73   51/946   5.391121%   0
+   74    2/886   0.225734%   0
+   75   47/919   5.114255%   0
+   76   46/895   5.139665%   0
+   77    1/917   0.109051%   0
+   78   51/886   5.756208%   0
+   79   21/924   2.272727%   0
+   80   41/875   4.685714%   0
+   81   64/957   6.687565%   0
+   82   39/925   4.216216%   0
+   83   63/895   7.039106%   0
+   84   51/856   5.957944%   0
+   85   20/910   2.197802%   0
+   86   10/910   1.098901%   0
+   87   45/972   4.629630%   0
+   88   10/868   1.152074%   0
+   89   30/896   3.348214%   0
+   90   44/869   5.063291%   0
+   91   47/865   5.433526%   0
+   92   35/916   3.820961%   0
+   93   26/862   3.016241%   0
+   94   22/887   2.480271%   0
+   95   30/927   3.236246%   0
+   96   63/958   6.576200%   0
+   97   44/902   4.878049%   0
+   98   20/924   2.164502%   0
+   99   35/909   3.850385%   0
+  100   44/908   4.845815%   0
+  101   24/893   2.687570%   0
+  102   10/849   1.177856%   0
+  103   28/905   3.093923%   0
+  104   38/927   4.099245%   0
+  105   16/899   1.779755%   0
+  106   28/931   3.007519%   0
+  first month utilization: {'alex': 0.667843, 'morgan': 0.663769}
+  first month max backlog: 149 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=11
+    deadline breaches (blocking and nonblocking classes): 11
+    class largest waiting backlog: 44 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 19.774425879267973 60.12916256555556
+64.63155836694445
+    desk mean/p95 h: 3.2057671923006534 8.75
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=13.358908; members/hour=0.708333
+    mean clipped stay=18.859635h; unfinished durations censored at close
+    occupancy=9618.413723 item-h; clipped stays=9618.413723 item-h
+    finite-window relative gap=1.51e-15; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.86234658372947 61.10143189 64.41298691333333
+    desk mean/p95 h: 1.7826778841376811 4.510532411944444
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.689125; members/hour=0.159722
+    mean clipped stay=16.836260h; unfinished durations censored at close
+    occupancy=1936.169857 item-h; clipped stays=1936.169857 item-h
+    finite-window relative gap=1.17e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=4
+    deadline breaches (blocking and nonblocking classes): 4
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 19.46923048948113 59.29834842277778
+63.949022263055554
+    desk mean/p95 h: 3.0151864999916143 8.55651055138889
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=6.759793; members/hour=0.368056
+    mean clipped stay=18.366229h; unfinished durations censored at close
+    occupancy=4867.050714 item-h; clipped stays=4867.050714 item-h
+    finite-window relative gap=1.87e-16; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 5
+    class largest waiting backlog: 43 at 2026-10-13T09:29:57.743332+00:00
+    calendar mean/p95/max h: 35.13365975379406 84.74228692944445
+94.14639981527777
+    desk mean/p95 h: 8.895725952313699 15.829628328333333
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=12.067910; members/hour=0.345833
+    mean clipped stay=34.895160h; unfinished durations censored at close
+    occupancy=8688.894937 item-h; clipped stays=8688.894937 item-h
+    finite-window relative gap=2.09e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=0 late=0
+    deadline breaches (blocking and nonblocking classes): 46
+    class largest waiting backlog: 46 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: None None None
+    desk mean/p95 h: None None
+    independent blind reviewer: alex excluded; unresolved samples: 46
+    L_window=21.379023; members/hour=0.063889
+    mean clipped stay=334.628186h; unfinished durations censored at close
+    occupancy=15392.896547 item-h; clipped stays=15392.896547 item-h
+    finite-window relative gap=2.36e-16; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-04T22:47:43.164397+00:00
+    calendar mean/p95/max h: 19.046970091512346 62.622741788333336
+63.26560468388889
+    desk mean/p95 h: 3.165559547425926 7.416666666666667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.108881; members/hour=0.062500
+    mean clipped stay=17.742088h; unfinished durations censored at close
+    occupancy=798.393979 item-h; clipped stays=798.393979 item-h
+    finite-window relative gap=2.85e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D3 fixed capacity 88 h/week
+  expected u=0.649860; reviewer-only u=0.899743
+  Monday due=16.276179h; margin=7.723821h
+  necessary-count failures: none (not sufficient)
+  Monday breaches=9/400 (2.2500%)
+  pooled late=0.020964%; breach months=0/100
+  monthly breach frequency=0.0000%; accepted=True
+  late items by class: {'tier2': 4, 'tier3': 15, 'referral': 0, 'recheck': 0,
+'blind': 0, 'planted': 0, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 9 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/935   0.000000%   0
+    8    0/872   0.000000%   0
+    9    0/944   0.000000%   0
+   10    0/919   0.000000%   0
+   11    0/870   0.000000%   0
+   12    0/890   0.000000%   0
+   13    0/960   0.000000%   0
+   14    0/912   0.000000%   0
+   15    0/859   0.000000%   0
+   16    0/926   0.000000%   0
+   17    0/939   0.000000%   0
+   18    0/882   0.000000%   0
+   19    0/968   0.000000%   0
+   20    0/922   0.000000%   0
+   21    0/926   0.000000%   0
+   22    0/916   0.000000%   0
+   23    0/911   0.000000%   0
+   24    0/878   0.000000%   0
+   25    0/887   0.000000%   0
+   26    0/920   0.000000%   0
+   27    0/868   0.000000%   0
+   28    0/901   0.000000%   0
+   29    0/917   0.000000%   0
+   30    0/930   0.000000%   0
+   31    0/886   0.000000%   0
+   32    0/927   0.000000%   0
+   33    0/897   0.000000%   0
+   34    0/876   0.000000%   0
+   35    0/929   0.000000%   0
+   36    0/870   0.000000%   0
+   37    0/923   0.000000%   0
+   38    0/858   0.000000%   0
+   39    0/941   0.000000%   0
+   40    0/949   0.000000%   0
+   41    0/871   0.000000%   0
+   42    0/890   0.000000%   0
+   43    0/955   0.000000%   0
+   44    0/927   0.000000%   0
+   45    0/890   0.000000%   0
+   46    4/886   0.451467%   0
+   47    0/891   0.000000%   0
+   48    0/873   0.000000%   0
+   49    0/927   0.000000%   0
+   50    0/899   0.000000%   0
+   51    3/913   0.328587%   0
+   52    0/890   0.000000%   0
+   53    0/908   0.000000%   0
+   54    0/886   0.000000%   0
+   55    0/894   0.000000%   0
+   56    0/903   0.000000%   0
+   57    5/925   0.540541%   0
+   58    0/900   0.000000%   0
+   59    0/897   0.000000%   0
+   60    0/932   0.000000%   0
+   61    0/910   0.000000%   0
+   62    0/901   0.000000%   0
+   63    0/949   0.000000%   0
+   64    0/885   0.000000%   0
+   65    0/900   0.000000%   0
+   66    0/921   0.000000%   0
+   67    0/896   0.000000%   0
+   68    0/902   0.000000%   0
+   69    0/914   0.000000%   0
+   70    0/934   0.000000%   0
+   71    0/920   0.000000%   0
+   72    0/868   0.000000%   0
+   73    1/946   0.105708%   0
+   74    0/886   0.000000%   0
+   75    0/919   0.000000%   0
+   76    0/895   0.000000%   0
+   77    0/917   0.000000%   0
+   78    2/886   0.225734%   0
+   79    0/924   0.000000%   0
+   80    0/875   0.000000%   0
+   81    0/957   0.000000%   0
+   82    0/925   0.000000%   0
+   83    0/895   0.000000%   0
+   84    2/856   0.233645%   0
+   85    0/910   0.000000%   0
+   86    0/910   0.000000%   0
+   87    0/972   0.000000%   0
+   88    0/868   0.000000%   0
+   89    0/896   0.000000%   0
+   90    0/869   0.000000%   0
+   91    2/865   0.231214%   0
+   92    0/916   0.000000%   0
+   93    0/862   0.000000%   0
+   94    0/887   0.000000%   0
+   95    0/927   0.000000%   0
+   96    0/958   0.000000%   0
+   97    0/902   0.000000%   0
+   98    0/924   0.000000%   0
+   99    0/909   0.000000%   0
+  100    0/908   0.000000%   0
+  101    0/893   0.000000%   0
+  102    0/849   0.000000%   0
+  103    0/905   0.000000%   0
+  104    0/927   0.000000%   0
+  105    0/899   0.000000%   0
+  106    0/931   0.000000%   0
+  first month utilization: {'alex': 0.585587, 'morgan': 0.591668, 'riley': 1.0}
+  first month max backlog: 131 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 44 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 16.555595585010348 59.190214563888894
+64.38731030444445
+    desk mean/p95 h: 2.057525133337146 5.5
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=11.085151; members/hour=0.708333
+    mean clipped stay=15.649624h; unfinished durations censored at close
+    occupancy=7981.308383 item-h; clipped stays=7981.308383 item-h
+    finite-window relative gap=1.03e-15; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.86041615965942 61.10143189 64.41298691333333
+    desk mean/p95 h: 1.780747460067633 4.510532411944444
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.688816; members/hour=0.159722
+    mean clipped stay=16.834329h; unfinished durations censored at close
+    occupancy=1935.947858 item-h; clipped stays=1935.947858 item-h
+    finite-window relative gap=4.7e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 17.022629380740042 58.21501508944445
+63.869393934722225
+    desk mean/p95 h: 1.8968872780429769 5.25
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=5.864324; members/hour=0.368056
+    mean clipped stay=15.933257h; unfinished durations censored at close
+    occupancy=4222.313188 item-h; clipped stays=4222.313188 item-h
+    finite-window relative gap=1.08e-15; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 39 at 2026-10-27T09:48:13.514435+00:00
+    calendar mean/p95/max h: 27.20025779246765 70.99783585611111
+89.7297331486111
+    desk mean/p95 h: 5.910115155645917 11.662961661666667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=9.325540; members/hour=0.345833
+    mean clipped stay=26.965417h; unfinished durations censored at close
+    occupancy=6714.388764 item-h; clipped stays=6714.388764 item-h
+    finite-window relative gap=2.71e-16; starting backlog=0
+  blind: arrivals=46 completed-at-close=19 late=0
+    deadline breaches (blocking and nonblocking classes): 24
+    class largest waiting backlog: 27 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 200.16104154120774 421.59394788361107
+471.7552710536111
+    desk mean/p95 h: 43.86696465597222 89.91091472916666
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=10.475782; members/hour=0.063889
+    mean clipped stay=163.968766h; unfinished durations censored at close
+    occupancy=7542.563213 item-h; clipped stays=7542.563213 item-h
+    finite-window relative gap=1.21e-15; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-04T22:47:43.164397+00:00
+    calendar mean/p95/max h: 17.40984702230247 61.806657791111114
+63.01560468388889
+    desk mean/p95 h: 1.883992033771605 4.916666666666667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.007710; members/hour=0.062500
+    mean clipped stay=16.123356h; unfinished durations censored at close
+    occupancy=725.551023 item-h; clipped stays=725.551023 item-h
+    finite-window relative gap=9.4e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D4 fixed capacity 96 h/week
+  expected u=0.595705; reviewer-only u=0.899743
+  Monday due=16.276179h; margin=7.723821h
+  necessary-count failures: none (not sufficient)
+  Revised staffing: morgan also Saturday 09:00..17:00 UTC;
+  same named approver, 48h/week; decision-owner tasks explicit.
+  Monday breaches=0/400 (0.0000%)
+  pooled late=0.000000%; breach months=0/100
+  monthly breach frequency=0.0000%; accepted=True
+  late items by class: {'tier2': 0, 'tier3': 0, 'referral': 0, 'recheck': 0,
+'blind': 0, 'planted': 0, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 0 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/935   0.000000%   0
+    8    0/872   0.000000%   0
+    9    0/944   0.000000%   0
+   10    0/919   0.000000%   0
+   11    0/870   0.000000%   0
+   12    0/890   0.000000%   0
+   13    0/960   0.000000%   0
+   14    0/912   0.000000%   0
+   15    0/859   0.000000%   0
+   16    0/926   0.000000%   0
+   17    0/939   0.000000%   0
+   18    0/882   0.000000%   0
+   19    0/968   0.000000%   0
+   20    0/922   0.000000%   0
+   21    0/926   0.000000%   0
+   22    0/916   0.000000%   0
+   23    0/911   0.000000%   0
+   24    0/878   0.000000%   0
+   25    0/887   0.000000%   0
+   26    0/920   0.000000%   0
+   27    0/868   0.000000%   0
+   28    0/901   0.000000%   0
+   29    0/917   0.000000%   0
+   30    0/930   0.000000%   0
+   31    0/886   0.000000%   0
+   32    0/927   0.000000%   0
+   33    0/897   0.000000%   0
+   34    0/876   0.000000%   0
+   35    0/929   0.000000%   0
+   36    0/870   0.000000%   0
+   37    0/923   0.000000%   0
+   38    0/858   0.000000%   0
+   39    0/941   0.000000%   0
+   40    0/949   0.000000%   0
+   41    0/871   0.000000%   0
+   42    0/890   0.000000%   0
+   43    0/955   0.000000%   0
+   44    0/927   0.000000%   0
+   45    0/890   0.000000%   0
+   46    0/886   0.000000%   0
+   47    0/891   0.000000%   0
+   48    0/873   0.000000%   0
+   49    0/927   0.000000%   0
+   50    0/899   0.000000%   0
+   51    0/913   0.000000%   0
+   52    0/890   0.000000%   0
+   53    0/908   0.000000%   0
+   54    0/886   0.000000%   0
+   55    0/894   0.000000%   0
+   56    0/903   0.000000%   0
+   57    0/925   0.000000%   0
+   58    0/900   0.000000%   0
+   59    0/897   0.000000%   0
+   60    0/932   0.000000%   0
+   61    0/910   0.000000%   0
+   62    0/901   0.000000%   0
+   63    0/949   0.000000%   0
+   64    0/885   0.000000%   0
+   65    0/900   0.000000%   0
+   66    0/921   0.000000%   0
+   67    0/896   0.000000%   0
+   68    0/902   0.000000%   0
+   69    0/914   0.000000%   0
+   70    0/934   0.000000%   0
+   71    0/920   0.000000%   0
+   72    0/868   0.000000%   0
+   73    0/946   0.000000%   0
+   74    0/886   0.000000%   0
+   75    0/919   0.000000%   0
+   76    0/895   0.000000%   0
+   77    0/917   0.000000%   0
+   78    0/886   0.000000%   0
+   79    0/924   0.000000%   0
+   80    0/875   0.000000%   0
+   81    0/957   0.000000%   0
+   82    0/925   0.000000%   0
+   83    0/895   0.000000%   0
+   84    0/856   0.000000%   0
+   85    0/910   0.000000%   0
+   86    0/910   0.000000%   0
+   87    0/972   0.000000%   0
+   88    0/868   0.000000%   0
+   89    0/896   0.000000%   0
+   90    0/869   0.000000%   0
+   91    0/865   0.000000%   0
+   92    0/916   0.000000%   0
+   93    0/862   0.000000%   0
+   94    0/887   0.000000%   0
+   95    0/927   0.000000%   0
+   96    0/958   0.000000%   0
+   97    0/902   0.000000%   0
+   98    0/924   0.000000%   0
+   99    0/909   0.000000%   0
+  100    0/908   0.000000%   0
+  101    0/893   0.000000%   0
+  102    0/849   0.000000%   0
+  103    0/905   0.000000%   0
+  104    0/927   0.000000%   0
+  105    0/899   0.000000%   0
+  106    0/931   0.000000%   0
+  first month utilization: {'alex': 0.529737, 'morgan': 0.589567, 'riley':
+0.820312}
+  first month max backlog: 103 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 32 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 10.195784450180827 33.786063220277775
+41.89878897111111
+    desk mean/p95 h: 1.791371139616013 4.270595325555556
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.084611; members/hour=0.708333
+    mean clipped stay=10.001804h; unfinished durations censored at close
+    occupancy=5100.920253 item-h; clipped stays=5100.920253 item-h
+    finite-window relative gap=1.25e-15; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 10 at 2026-10-26T06:21:56.062320+00:00
+    calendar mean/p95/max h: 10.190439890874396 32.489463154444444
+40.32487222305556
+    desk mean/p95 h: 1.3497294227657004 3.5
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.570695; members/hour=0.159722
+    mean clipped stay=9.833918h; unfinished durations censored at close
+    occupancy=1130.900587 item-h; clipped stays=1130.900587 item-h
+    finite-window relative gap=1.81e-15; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 16 at 2026-10-12T07:19:38.651322+00:00
+    calendar mean/p95/max h: 10.337796483616351 32.87256393 39.84121144583333
+    desk mean/p95 h: 1.663153343139413 4.416666666666667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=3.718288; members/hour=0.368056
+    mean clipped stay=10.102520h; unfinished durations censored at close
+    occupancy=2677.167695 item-h; clipped stays=2677.167695 item-h
+    finite-window relative gap=1.02e-15; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 35 at 2026-10-12T09:43:25.072887+00:00
+    calendar mean/p95/max h: 22.28104204295069 60.308440598333334
+70.31677148694445
+    desk mean/p95 h: 5.366879726979027 12.416666666666668
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.626245; members/hour=0.345833
+    mean clipped stay=22.051792h; unfinished durations censored at close
+    occupancy=5490.896135 item-h; clipped stays=5490.896135 item-h
+    finite-window relative gap=3.31e-16; starting backlog=0
+  blind: arrivals=46 completed-at-close=31 late=0
+    deadline breaches (blocking and nonblocking classes): 5
+    class largest waiting backlog: 15 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 107.414417678436 194.48513510972222
+203.07548763805553
+    desk mean/p95 h: 27.759073220609903 48.75
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=5.633421; members/hour=0.063889
+    mean clipped stay=88.175287h; unfinished durations censored at close
+    occupancy=4056.063213 item-h; clipped stays=4056.063213 item-h
+    finite-window relative gap=1.12e-16; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-13T06:09:25.853472+00:00
+    calendar mean/p95/max h: 12.756015497765432 38.027931018611106
+41.21353046694445
+    desk mean/p95 h: 1.4821169397592593 3.0833333333333335
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.779585; members/hour=0.062500
+    mean clipped stay=12.473356h; unfinished durations censored at close
+    occupancy=561.301023 item-h; clipped stays=561.301023 item-h
+    finite-window relative gap=8.1e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D4-rework fixed capacity 96 h/week
+  expected u=0.655010; reviewer-only u=0.977521
+  Monday due=18.140068h; margin=5.859932h
+  necessary-count failures: none (not sufficient)
+  Revised staffing: morgan also Saturday 09:00..17:00 UTC;
+  same named approver, 48h/week; decision-owner tasks explicit.
+  Monday breaches=3/400 (0.7500%)
+  pooled late=0.008142%; breach months=0/100
+  monthly breach frequency=0.0000%; accepted=True
+  late items by class: {'tier2': 0, 'tier3': 0, 'referral': 0, 'recheck': 0,
+'blind': 0, 'planted': 0, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 5, 'adjudication': 3}
+  necessary-count failures across every simulated Monday: 0 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/1019  0.000000%   0
+    8    0/957   0.000000%   0
+    9    0/1015  0.000000%   0
+   10    3/1003  0.299103%   0
+   11    0/963   0.000000%   0
+   12    0/974   0.000000%   0
+   13    0/1034  0.000000%   0
+   14    0/1017  0.000000%   0
+   15    0/951   0.000000%   0
+   16    0/998   0.000000%   0
+   17    0/1009  0.000000%   0
+   18    0/963   0.000000%   0
+   19    0/1039  0.000000%   0
+   20    0/1007  0.000000%   0
+   21    0/997   0.000000%   0
+   22    0/997   0.000000%   0
+   23    2/979   0.204290%   0
+   24    0/952   0.000000%   0
+   25    0/956   0.000000%   0
+   26    0/1005  0.000000%   0
+   27    0/949   0.000000%   0
+   28    0/973   0.000000%   0
+   29    0/996   0.000000%   0
+   30    0/1005  0.000000%   0
+   31    0/968   0.000000%   0
+   32    0/991   0.000000%   0
+   33    0/965   0.000000%   0
+   34    0/940   0.000000%   0
+   35    0/1016  0.000000%   0
+   36    0/945   0.000000%   0
+   37    0/1004  0.000000%   0
+   38    0/937   0.000000%   0
+   39    0/1020  0.000000%   0
+   40    0/1024  0.000000%   0
+   41    0/950   0.000000%   0
+   42    0/975   0.000000%   0
+   43    0/1002  0.000000%   0
+   44    0/1008  0.000000%   0
+   45    0/972   0.000000%   0
+   46    0/965   0.000000%   0
+   47    0/962   0.000000%   0
+   48    0/936   0.000000%   0
+   49    0/1009  0.000000%   0
+   50    0/981   0.000000%   0
+   51    0/977   0.000000%   0
+   52    0/960   0.000000%   0
+   53    0/987   0.000000%   0
+   54    0/952   0.000000%   0
+   55    0/972   0.000000%   0
+   56    0/992   0.000000%   0
+   57    0/988   0.000000%   0
+   58    0/975   0.000000%   0
+   59    0/954   0.000000%   0
+   60    0/1003  0.000000%   0
+   61    0/994   0.000000%   0
+   62    0/961   0.000000%   0
+   63    0/1019  0.000000%   0
+   64    0/963   0.000000%   0
+   65    0/987   0.000000%   0
+   66    0/993   0.000000%   0
+   67    0/967   0.000000%   0
+   68    0/968   0.000000%   0
+   69    0/995   0.000000%   0
+   70    0/1025  0.000000%   0
+   71    0/988   0.000000%   0
+   72    0/941   0.000000%   0
+   73    0/1031  0.000000%   0
+   74    0/980   0.000000%   0
+   75    0/1012  0.000000%   0
+   76    0/965   0.000000%   0
+   77    0/996   0.000000%   0
+   78    0/958   0.000000%   0
+   79    0/1004  0.000000%   0
+   80    0/953   0.000000%   0
+   81    0/1031  0.000000%   0
+   82    0/1004  0.000000%   0
+   83    0/969   0.000000%   0
+   84    0/921   0.000000%   0
+   85    0/999   0.000000%   0
+   86    0/999   0.000000%   0
+   87    0/1041  0.000000%   0
+   88    0/939   0.000000%   0
+   89    0/985   0.000000%   0
+   90    3/929   0.322928%   0
+   91    0/929   0.000000%   0
+   92    0/999   0.000000%   0
+   93    0/925   0.000000%   0
+   94    0/955   0.000000%   0
+   95    0/1005  0.000000%   0
+   96    0/1022  0.000000%   0
+   97    0/979   0.000000%   0
+   98    0/999   0.000000%   0
+   99    0/991   0.000000%   0
+  100    0/987   0.000000%   0
+  101    0/966   0.000000%   0
+  102    0/917   0.000000%   0
+  103    0/993   0.000000%   0
+  104    0/1001  0.000000%   0
+  105    0/988   0.000000%   0
+  106    0/999   0.000000%   0
+  first month utilization: {'alex': 0.588567, 'morgan': 0.650365, 'riley':
+0.898437}
+  first month max backlog: 107 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 32 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 10.641660557422114 34.31936449361111
+44.176891792777774
+    desk mean/p95 h: 2.0019531292102397 4.685915244166667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.399746; members/hour=0.708333
+    mean clipped stay=10.446700h; unfinished durations censored at close
+    occupancy=5327.817068 item-h; clipped stays=5327.817068 item-h
+    finite-window relative gap=3.41e-16; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 10 at 2026-10-26T06:21:56.062320+00:00
+    calendar mean/p95/max h: 10.195772136330918 32.489463154444444
+40.32487222305556
+    desk mean/p95 h: 1.3550616682222223 3.5
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.571547; members/hour=0.159722
+    mean clipped stay=9.839250h; unfinished durations censored at close
+    occupancy=1131.513796 item-h; clipped stays=1131.513796 item-h
+    finite-window relative gap=1.21e-15; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 16 at 2026-10-12T07:19:38.651322+00:00
+    calendar mean/p95/max h: 10.569175857201257 32.87256393 40.277126689999996
+    desk mean/p95 h: 1.8945327167243187 4.583333333333333
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=3.803102; members/hour=0.368056
+    mean clipped stay=10.332956h; unfinished durations censored at close
+    occupancy=2738.233229 item-h; clipped stays=2738.233229 item-h
+    finite-window relative gap=1.16e-15; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 35 at 2026-10-12T09:43:25.072887+00:00
+    calendar mean/p95/max h: 23.264330615295627 62.308957560555555
+70.81677148694445
+    desk mean/p95 h: 5.964626130649264 14.168207527777776
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.966299; members/hour=0.345833
+    mean clipped stay=23.035080h; unfinished durations censored at close
+    occupancy=5735.734990 item-h; clipped stays=5735.734990 item-h
+    finite-window relative gap=2.06e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=28 late=0
+    deadline breaches (blocking and nonblocking classes): 8
+    class largest waiting backlog: 18 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 118.63905535959542 216.24692046916664
+243.71398898472225
+    desk mean/p95 h: 31.157623945247586 56.24692046916667
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=6.095342; members/hour=0.063889
+    mean clipped stay=95.405360h; unfinished durations censored at close
+    occupancy=4388.646547 item-h; clipped stays=4388.646547 item-h
+    finite-window relative gap=1.66e-15; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-13T06:09:25.853472+00:00
+    calendar mean/p95/max h: 12.96679146371605 38.027931018611106
+41.64944571111111
+    desk mean/p95 h: 1.6928929057098765 3.25
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.792758; members/hour=0.062500
+    mean clipped stay=12.684132h; unfinished durations censored at close
+    occupancy=570.785941 item-h; clipped stays=570.785941 item-h
+    finite-window relative gap=7.97e-16; starting backlog=0
+  modification: arrivals=51 completed-at-close=51 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-19T04:23:53.357195+00:00
+    calendar mean/p95/max h: 10.108421813093683 28.435182451111114
+41.82945498722222
+    desk mean/p95 h: 1.936464435996732 4.5
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.716013; members/hour=0.070833
+    mean clipped stay=10.108422h; unfinished durations censored at close
+    occupancy=515.529512 item-h; clipped stays=515.529512 item-h
+    finite-window relative gap=0; starting backlog=0
+  refusal_followup: arrivals=28 completed-at-close=27 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 4 at 2026-10-19T09:26:08.830728+00:00
+    calendar mean/p95/max h: 13.541272706656747 35.05743700194444
+41.16166350638889
+    desk mean/p95 h: 3.320100489335317 6.5
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.508129; members/hour=0.038889
+    mean clipped stay=13.066165h; unfinished durations censored at close
+    occupancy=365.852628 item-h; clipped stays=365.852628 item-h
+    finite-window relative gap=1.24e-15; starting backlog=0
+  adjudication: arrivals=5 completed-at-close=5 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 1 at 2026-10-10T21:37:46.987059+00:00
+    calendar mean/p95/max h: 15.770417532055555 38.870281372499996
+38.870281372499996
+    desk mean/p95 h: 3.2178726695555557 4.75
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.109517; members/hour=0.006944
+    mean clipped stay=15.770418h; unfinished durations censored at close
+    occupancy=78.852088 item-h; clipped stays=78.852088 item-h
+    finite-window relative gap=9.01e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D1 exponential capacity 80 h/week
+  expected u=0.714846; reviewer-only u=1.079692
+  Monday due=16.276179h; margin=-0.276179h
+  necessary-count failures: ('reviewers_unstable',
+'reviewers_monday_infeasible', 'pooled_monday_infeasible',
+'role_subset_week:alex', 'role_subset_monday:alex',
+'role_subset_monday:alex,morgan')
+  Monday breaches=390/400 (97.5000%)
+  pooled late=15.061843%; breach months=100/100
+  monthly breach frequency=100.0000%; accepted=False
+  late items by class: {'tier2': 8405, 'tier3': 76, 'referral': 4442,
+'recheck': 0, 'blind': 0, 'planted': 728, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 390 of 400
+  all simulated weekends' count failures: 3 of 4 in the first month
+  seed late/blocking share pending
+    7   75/935   8.021390%   0
+    8   93/872  10.665138%   0
+    9  167/944  17.690678%   0
+   10  213/919  23.177367%   0
+   11   72/870   8.275862%   0
+   12  155/890  17.415730%   0
+   13  151/960  15.729167%   0
+   14  117/912  12.828947%   0
+   15   89/859  10.360885%   0
+   16  236/926  25.485961%   0
+   17  130/939  13.844515%   0
+   18  151/882  17.120181%   0
+   19  146/968  15.082645%   0
+   20  135/922  14.642082%   0
+   21  101/926  10.907127%   0
+   22  179/916  19.541485%   0
+   23  122/911  13.391877%   0
+   24   62/878   7.061503%   0
+   25  122/887  13.754228%   0
+   26   98/920  10.652174%   0
+   27  106/868  12.211982%   0
+   28  133/901  14.761376%   0
+   29  103/917  11.232279%   0
+   30  190/930  20.430108%   0
+   31  239/886  26.975169%   0
+   32  221/927  23.840345%   0
+   33  228/897  25.418060%   0
+   34  137/876  15.639269%   0
+   35  182/929  19.590958%   0
+   36  119/870  13.678161%   0
+   37  165/923  17.876490%   0
+   38   47/858   5.477855%   0
+   39  107/941  11.370882%   0
+   40  356/949  37.513172%   0
+   41  101/871  11.595867%   0
+   42  120/890  13.483146%   0
+   43  149/955  15.602094%   0
+   44  172/927  18.554477%   0
+   45   86/890   9.662921%   0
+   46  121/886  13.656885%   0
+   47  102/891  11.447811%   0
+   48  134/873  15.349370%   0
+   49  309/927  33.333333%   0
+   50   42/899   4.671858%   0
+   51  108/913  11.829135%   0
+   52   92/890  10.337079%   0
+   53  314/908  34.581498%   0
+   54  168/886  18.961625%   0
+   55  107/894  11.968680%   0
+   56  101/903  11.184939%   0
+   57  182/925  19.675676%   0
+   58  194/900  21.555556%   0
+   59  242/897  26.978818%   0
+   60   68/932   7.296137%   0
+   61  136/910  14.945055%   0
+   62  130/901  14.428413%   0
+   63  261/949  27.502634%   0
+   64   87/885   9.830508%   0
+   65  227/900  25.222222%   0
+   66  116/921  12.595005%   0
+   67  142/896  15.848214%   0
+   68  121/902  13.414634%   0
+   69  148/914  16.192560%   0
+   70   93/934   9.957173%   0
+   71  120/920  13.043478%   0
+   72   44/868   5.069124%   0
+   73  290/946  30.655391%   0
+   74   44/886   4.966140%   0
+   75  245/919  26.659412%   0
+   76  133/895  14.860335%   0
+   77   56/917   6.106870%   0
+   78  200/886  22.573363%   0
+   79  116/924  12.554113%   0
+   80  144/875  16.457143%   0
+   81  216/957  22.570533%   0
+   82  137/925  14.810811%   0
+   83  119/895  13.296089%   0
+   84   60/856   7.009346%   0
+   85  129/910  14.175824%   0
+   86   64/910   7.032967%   0
+   87  153/972  15.740741%   0
+   88  115/868  13.248848%   0
+   89  151/896  16.852679%   0
+   90   82/869   9.436133%   0
+   91  101/865  11.676301%   0
+   92  102/916  11.135371%   0
+   93  101/862  11.716937%   0
+   94   46/887   5.186020%   0
+   95  135/927  14.563107%   0
+   96  125/958  13.048017%   0
+   97   64/902   7.095344%   0
+   98   96/924  10.389610%   0
+   99  116/909  12.761276%   0
+  100  192/908  21.145374%   0
+  101   71/893   7.950728%   0
+  102   77/849   9.069494%   0
+  103  124/905  13.701657%   0
+  104   98/927  10.571737%   0
+  105  186/899  20.689655%   0
+  106   79/931   8.485499%   0
+  first month utilization: {'alex': 0.933891, 'morgan': 0.318163}
+  first month max backlog: 174 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=47
+    deadline breaches (blocking and nonblocking classes): 47
+    class largest waiting backlog: 45 at 2026-10-26T11:33:31.327676+00:00
+    calendar mean/p95/max h: 23.656324940617104 59.75929395583333
+65.2685199338889
+    desk mean/p95 h: 4.860215273257626 12.172717774999999
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=16.105285; members/hour=0.708333
+    mean clipped stay=22.736873h; unfinished durations censored at close
+    occupancy=11595.805393 item-h; clipped stays=11595.805393 item-h
+    finite-window relative gap=1.1e-15; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.80561937042995 60.05462794333334
+63.997411703055555
+    desk mean/p95 h: 1.865081105620773 5.529736449444445
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.684037; members/hour=0.159722
+    mean clipped stay=16.804408h; unfinished durations censored at close
+    occupancy=1932.506954 item-h; clipped stays=1932.506954 item-h
+    finite-window relative gap=0; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=21
+    deadline breaches (blocking and nonblocking classes): 21
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 23.702674218727463 60.282883465833336 64.009564525
+    desk mean/p95 h: 4.6524038141436055 11.549718563611112
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=8.316143; members/hour=0.368056
+    mean clipped stay=22.594804h; unfinished durations censored at close
+    occupancy=5987.622942 item-h; clipped stays=5987.622942 item-h
+    finite-window relative gap=3.19e-15; starting backlog=0
+  recheck: arrivals=249 completed-at-close=165 late=0
+    deadline breaches (blocking and nonblocking classes): 160
+    class largest waiting backlog: 92 at 2026-10-30T16:10:49.736534+00:00
+    calendar mean/p95/max h: 109.47525606397144 233.1664693186111
+263.2279822816667
+    desk mean/p95 h: 27.1409367203224 55.30942225166667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=30.125933; members/hour=0.345833
+    mean clipped stay=87.111132h; unfinished durations censored at close
+    occupancy=21690.671867 item-h; clipped stays=21690.671867 item-h
+    finite-window relative gap=1.34e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=0 late=0
+    deadline breaches (blocking and nonblocking classes): 46
+    class largest waiting backlog: 46 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: None None None
+    desk mean/p95 h: None None
+    independent blind reviewer: alex excluded; unresolved samples: 46
+    L_window=21.379023; members/hour=0.063889
+    mean clipped stay=334.628186h; unfinished durations censored at close
+    occupancy=15392.896547 item-h; clipped stays=15392.896547 item-h
+    finite-window relative gap=1.06e-15; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=7
+    deadline breaches (blocking and nonblocking classes): 7
+    class largest waiting backlog: 6 at 2026-10-20T04:06:11.814913+00:00
+    calendar mean/p95/max h: 25.84284403462963 62.63081851388889
+63.63287134138889
+    desk mean/p95 h: 5.339211268320987 9.950577669166666
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.533627; members/hour=0.062500
+    mean clipped stay=24.538038h; unfinished durations censored at close
+    occupancy=1104.211728 item-h; clipped stays=1104.211728 item-h
+    finite-window relative gap=1.24e-15; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D2 exponential capacity 80 h/week
+  expected u=0.714846; reviewer-only u=1.079692
+  Monday due=16.276179h; margin=-0.276179h
+  necessary-count failures: ('reviewers_monday_infeasible',
+'pooled_monday_infeasible', 'role_subset_monday:alex,morgan')
+  Monday breaches=269/400 (67.2500%)
+  pooled late=4.575596%; breach months=94/100
+  monthly breach frequency=94.0000%; accepted=False
+  late items by class: {'tier2': 2585, 'tier3': 77, 'referral': 1275,
+'recheck': 0, 'blind': 0, 'planted': 210, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 202 of 400
+  all simulated weekends' count failures: 1 of 4 in the first month
+  seed late/blocking share pending
+    7   19/935   2.032086%   0
+    8   29/872   3.325688%   0
+    9   84/944   8.898305%   0
+   10   67/919   7.290533%   0
+   11   22/870   2.528736%   0
+   12   41/890   4.606742%   0
+   13   59/960   6.145833%   0
+   14   50/912   5.482456%   0
+   15   40/859   4.656577%   0
+   16   92/926   9.935205%   0
+   17   49/939   5.218317%   0
+   18   66/882   7.482993%   0
+   19   93/968   9.607438%   0
+   20   41/922   4.446855%   0
+   21   31/926   3.347732%   0
+   22   58/916   6.331878%   0
+   23   31/911   3.402854%   0
+   24   37/878   4.214123%   0
+   25   29/887   3.269448%   0
+   26   48/920   5.217391%   0
+   27   40/868   4.608295%   0
+   28   46/901   5.105438%   0
+   29   55/917   5.997819%   0
+   30   78/930   8.387097%   0
+   31   56/886   6.320542%   0
+   32   52/927   5.609493%   0
+   33   59/897   6.577480%   0
+   34   12/876   1.369863%   0
+   35   28/929   3.013994%   0
+   36   18/870   2.068966%   0
+   37   20/923   2.166847%   0
+   38    0/858   0.000000%   0
+   39   19/941   2.019129%   0
+   40   39/949   4.109589%   0
+   41   22/871   2.525832%   0
+   42   37/890   4.157303%   0
+   43   75/955   7.853403%   0
+   44   29/927   3.128371%   0
+   45   33/890   3.707865%   0
+   46   87/886   9.819413%   0
+   47   21/891   2.356902%   0
+   48   41/873   4.696449%   0
+   49   69/927   7.443366%   0
+   50    0/899   0.000000%   0
+   51   50/913   5.476451%   0
+   52   42/890   4.719101%   0
+   53   71/908   7.819383%   0
+   54   56/886   6.320542%   0
+   55   47/894   5.257271%   0
+   56   16/903   1.771872%   0
+   57   89/925   9.621622%   0
+   58   47/900   5.222222%   0
+   59   87/897   9.698997%   0
+   60   38/932   4.077253%   0
+   61   58/910   6.373626%   0
+   62   42/901   4.661487%   0
+   63   64/949   6.743941%   0
+   64   47/885   5.310734%   0
+   65   53/900   5.888889%   0
+   66   18/921   1.954397%   0
+   67   48/896   5.357143%   0
+   68   37/902   4.101996%   0
+   69   47/914   5.142232%   0
+   70   43/934   4.603854%   0
+   71   50/920   5.434783%   0
+   72   22/868   2.534562%   0
+   73   81/946   8.562368%   0
+   74   18/886   2.031603%   0
+   75   78/919   8.487486%   0
+   76   26/895   2.905028%   0
+   77    5/917   0.545256%   0
+   78   63/886   7.110609%   0
+   79    6/924   0.649351%   0
+   80   31/875   3.542857%   0
+   81   65/957   6.792059%   0
+   82   49/925   5.297297%   0
+   83   66/895   7.374302%   0
+   84   18/856   2.102804%   0
+   85   10/910   1.098901%   0
+   86   18/910   1.978022%   0
+   87   37/972   3.806584%   0
+   88   11/868   1.267281%   0
+   89   46/896   5.133929%   0
+   90   23/869   2.646720%   0
+   91   52/865   6.011561%   0
+   92    7/916   0.764192%   0
+   93   23/862   2.668213%   0
+   94   23/887   2.593010%   0
+   95   25/927   2.696872%   0
+   96   58/958   6.054280%   0
+   97   36/902   3.991131%   0
+   98    0/924   0.000000%   0
+   99   56/909   6.160616%   0
+  100   90/908   9.911894%   0
+  101    9/893   1.007839%   0
+  102   19/849   2.237927%   0
+  103   30/905   3.314917%   0
+  104   37/927   3.991370%   0
+  105   19/899   2.113459%   0
+  106   18/931   1.933405%   0
+  first month utilization: {'alex': 0.656328, 'morgan': 0.633194}
+  first month max backlog: 148 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=13
+    deadline breaches (blocking and nonblocking classes): 13
+    class largest waiting backlog: 45 at 2026-10-26T11:33:31.327676+00:00
+    calendar mean/p95/max h: 19.02549535075381 59.53867997888889
+65.23819464944445
+    desk mean/p95 h: 2.92742489908061 8.655068474166667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=12.829547; members/hour=0.708333
+    mean clipped stay=18.112302h; unfinished durations censored at close
+    occupancy=9237.273930 item-h; clipped stays=9237.273930 item-h
+    finite-window relative gap=5.91e-16; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.822286322560387 60.05462794333334
+63.997411703055555
+    desk mean/p95 h: 1.8817480577512078 5.529736449444445
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.686700; members/hour=0.159722
+    mean clipped stay=16.821075h; unfinished durations censored at close
+    occupancy=1934.423653 item-h; clipped stays=1934.423653 item-h
+    finite-window relative gap=4.7e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=5
+    deadline breaches (blocking and nonblocking classes): 5
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 19.03066477103459 59.43846443694444
+63.83506426666667
+    desk mean/p95 h: 2.7577528570167713 7.808914441111111
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=6.600080; members/hour=0.368056
+    mean clipped stay=17.932291h; unfinished durations censored at close
+    occupancy=4752.057240 item-h; clipped stays=4752.057240 item-h
+    finite-window relative gap=3.06e-15; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 9
+    class largest waiting backlog: 43 at 2026-10-13T09:29:57.743332+00:00
+    calendar mean/p95/max h: 35.284104103107985 84.12881236361112
+94.13524737166667
+    desk mean/p95 h: 8.724885161065373 18.065862868611113
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=12.120476; members/hour=0.345833
+    mean clipped stay=35.047160h; unfinished durations censored at close
+    occupancy=8726.742888 item-h; clipped stays=8726.742888 item-h
+    finite-window relative gap=1.46e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=0 late=0
+    deadline breaches (blocking and nonblocking classes): 46
+    class largest waiting backlog: 46 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: None None None
+    desk mean/p95 h: None None
+    independent blind reviewer: alex excluded; unresolved samples: 46
+    L_window=21.379023; members/hour=0.063889
+    mean clipped stay=334.628186h; unfinished durations censored at close
+    occupancy=15392.896547 item-h; clipped stays=15392.896547 item-h
+    finite-window relative gap=1.65e-15; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=1
+    deadline breaches (blocking and nonblocking classes): 1
+    class largest waiting backlog: 5 at 2026-10-04T22:47:43.164397+00:00
+    calendar mean/p95/max h: 18.7268749350679 62.22737828472223
+63.63287134138889
+    desk mean/p95 h: 2.8454643909814816 6.384192952777778
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.089440; members/hour=0.062500
+    mean clipped stay=17.431035h; unfinished durations censored at close
+    occupancy=784.396558 item-h; clipped stays=784.396558 item-h
+    finite-window relative gap=0; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D3 exponential capacity 88 h/week
+  expected u=0.649860; reviewer-only u=0.899743
+  Monday due=16.276179h; margin=7.723821h
+  necessary-count failures: none (not sufficient)
+  Monday breaches=32/400 (8.0000%)
+  pooled late=0.107025%; breach months=1/100
+  monthly breach frequency=1.0000%; accepted=False
+  late items by class: {'tier2': 16, 'tier3': 77, 'referral': 2, 'recheck': 0,
+'blind': 0, 'planted': 2, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 27 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/935   0.000000%   0
+    8    0/872   0.000000%   0
+    9    1/944   0.105932%   0
+   10    0/919   0.000000%   0
+   11    0/870   0.000000%   0
+   12    1/890   0.112360%   0
+   13    2/960   0.208333%   0
+   14    0/912   0.000000%   0
+   15    0/859   0.000000%   0
+   16    0/926   0.000000%   0
+   17    0/939   0.000000%   0
+   18    1/882   0.113379%   0
+   19    3/968   0.309917%   0
+   20    0/922   0.000000%   0
+   21    0/926   0.000000%   0
+   22    3/916   0.327511%   0
+   23    5/911   0.548847%   0
+   24    0/878   0.000000%   0
+   25    0/887   0.000000%   0
+   26    0/920   0.000000%   0
+   27    0/868   0.000000%   0
+   28    1/901   0.110988%   0
+   29    0/917   0.000000%   0
+   30    0/930   0.000000%   0
+   31    5/886   0.564334%   0
+   32    0/927   0.000000%   0
+   33    0/897   0.000000%   0
+   34    0/876   0.000000%   0
+   35    0/929   0.000000%   0
+   36    0/870   0.000000%   0
+   37    0/923   0.000000%   0
+   38    0/858   0.000000%   0
+   39    0/941   0.000000%   0
+   40    0/949   0.000000%   0
+   41    0/871   0.000000%   0
+   42    2/890   0.224719%   0
+   43    0/955   0.000000%   0
+   44    0/927   0.000000%   0
+   45    0/890   0.000000%   0
+   46    0/886   0.000000%   0
+   47    0/891   0.000000%   0
+   48    0/873   0.000000%   0
+   49    1/927   0.107875%   0
+   50    0/899   0.000000%   0
+   51    4/913   0.438116%   0
+   52    0/890   0.000000%   0
+   53    5/908   0.550661%   0
+   54    0/886   0.000000%   0
+   55    0/894   0.000000%   0
+   56    0/903   0.000000%   0
+   57    7/925   0.756757%   0
+   58    0/900   0.000000%   0
+   59    3/897   0.334448%   0
+   60    2/932   0.214592%   0
+   61    0/910   0.000000%   0
+   62    0/901   0.000000%   0
+   63    1/949   0.105374%   0
+   64    0/885   0.000000%   0
+   65    0/900   0.000000%   0
+   66    3/921   0.325733%   0
+   67    0/896   0.000000%   0
+   68    0/902   0.000000%   0
+   69    0/914   0.000000%   0
+   70    0/934   0.000000%   0
+   71    2/920   0.217391%   0
+   72    0/868   0.000000%   0
+   73    7/946   0.739958%   0
+   74    2/886   0.225734%   0
+   75    1/919   0.108814%   0
+   76    0/895   0.000000%   0
+   77    0/917   0.000000%   0
+   78    9/886   1.015801%   0
+   79    0/924   0.000000%   0
+   80    1/875   0.114286%   0
+   81    0/957   0.000000%   0
+   82    0/925   0.000000%   0
+   83    0/895   0.000000%   0
+   84    8/856   0.934579%   0
+   85    0/910   0.000000%   0
+   86    0/910   0.000000%   0
+   87    0/972   0.000000%   0
+   88    0/868   0.000000%   0
+   89    0/896   0.000000%   0
+   90    0/869   0.000000%   0
+   91    4/865   0.462428%   0
+   92    0/916   0.000000%   0
+   93    0/862   0.000000%   0
+   94    4/887   0.450958%   0
+   95    0/927   0.000000%   0
+   96    5/958   0.521921%   0
+   97    2/902   0.221729%   0
+   98    0/924   0.000000%   0
+   99    0/909   0.000000%   0
+  100    2/908   0.220264%   0
+  101    0/893   0.000000%   0
+  102    0/849   0.000000%   0
+  103    0/905   0.000000%   0
+  104    0/927   0.000000%   0
+  105    0/899   0.000000%   0
+  106    0/931   0.000000%   0
+  first month utilization: {'alex': 0.559517, 'morgan': 0.577428, 'riley':
+0.989111}
+  first month max backlog: 127 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 43 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 16.21810287475 59.02090301277778 64.80277556222222
+    desk mean/p95 h: 1.8768951681748367 5.101554363611111
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=10.845668; members/hour=0.708333
+    mean clipped stay=15.311532h; unfinished durations censored at close
+    occupancy=7808.881133 item-h; clipped stays=7808.881133 item-h
+    finite-window relative gap=1.51e-15; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 12 at 2026-10-12T05:23:40.644497+00:00
+    calendar mean/p95/max h: 18.826707744971014 60.05462794333334
+63.997411703055555
+    desk mean/p95 h: 1.8861694801618358 5.529736449444445
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=2.687406; members/hour=0.159722
+    mean clipped stay=16.825497h; unfinished durations censored at close
+    occupancy=1934.932117 item-h; clipped stays=1934.932117 item-h
+    finite-window relative gap=1.18e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 25 at 2026-10-26T06:45:29.486792+00:00
+    calendar mean/p95/max h: 16.85874818085325 58.65725231611111
+63.83506426666667
+    desk mean/p95 h: 1.7330060781561845 4.576228388055555
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=5.804289; members/hour=0.368056
+    mean clipped stay=15.770144h; unfinished durations censored at close
+    occupancy=4179.088229 item-h; clipped stays=4179.088229 item-h
+    finite-window relative gap=6.53e-16; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 39 at 2026-10-27T09:48:13.514435+00:00
+    calendar mean/p95/max h: 25.083559670961623 71.28780024111111
+90.13900046111111
+    desk mean/p95 h: 5.399842736951138 12.099640363333332
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=8.593626; members/hour=0.345833
+    mean clipped stay=24.849038h; unfinished durations censored at close
+    occupancy=6187.410455 item-h; clipped stays=6187.410455 item-h
+    finite-window relative gap=1.03e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=21 late=0
+    deadline breaches (blocking and nonblocking classes): 15
+    class largest waiting backlog: 25 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 155.94422993484903 387.7260048066667
+421.3193267677778
+    desk mean/p95 h: 33.041457397439615 82.16386618888889
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=7.834733; members/hour=0.063889
+    mean clipped stay=122.630608h; unfinished durations censored at close
+    occupancy=5641.007956 item-h; clipped stays=5641.007956 item-h
+    finite-window relative gap=0; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-04T22:47:43.164397+00:00
+    calendar mean/p95/max h: 16.92463498878395 61.709601318611114
+62.62103668666667
+    desk mean/p95 h: 1.754335555808642 4.276536350000001
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.977519; members/hour=0.062500
+    mean clipped stay=15.640301h; unfinished durations censored at close
+    occupancy=703.813538 item-h; clipped stays=703.813538 item-h
+    finite-window relative gap=8.08e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D4 exponential capacity 96 h/week
+  expected u=0.595705; reviewer-only u=0.899743
+  Monday due=16.276179h; margin=7.723821h
+  necessary-count failures: none (not sufficient)
+  Revised staffing: morgan also Saturday 09:00..17:00 UTC;
+  same named approver, 48h/week; decision-owner tasks explicit.
+  Monday breaches=3/400 (0.7500%)
+  pooled late=0.004413%; breach months=0/100
+  monthly breach frequency=0.0000%; accepted=True
+  late items by class: {'tier2': 0, 'tier3': 4, 'referral': 0, 'recheck': 0,
+'blind': 0, 'planted': 0, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 0, 'adjudication': 0}
+  necessary-count failures across every simulated Monday: 3 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/935   0.000000%   0
+    8    0/872   0.000000%   0
+    9    0/944   0.000000%   0
+   10    0/919   0.000000%   0
+   11    0/870   0.000000%   0
+   12    0/890   0.000000%   0
+   13    0/960   0.000000%   0
+   14    0/912   0.000000%   0
+   15    0/859   0.000000%   0
+   16    0/926   0.000000%   0
+   17    0/939   0.000000%   0
+   18    0/882   0.000000%   0
+   19    0/968   0.000000%   0
+   20    0/922   0.000000%   0
+   21    0/926   0.000000%   0
+   22    0/916   0.000000%   0
+   23    1/911   0.109769%   0
+   24    0/878   0.000000%   0
+   25    0/887   0.000000%   0
+   26    0/920   0.000000%   0
+   27    0/868   0.000000%   0
+   28    0/901   0.000000%   0
+   29    0/917   0.000000%   0
+   30    0/930   0.000000%   0
+   31    0/886   0.000000%   0
+   32    0/927   0.000000%   0
+   33    0/897   0.000000%   0
+   34    0/876   0.000000%   0
+   35    0/929   0.000000%   0
+   36    0/870   0.000000%   0
+   37    0/923   0.000000%   0
+   38    0/858   0.000000%   0
+   39    0/941   0.000000%   0
+   40    0/949   0.000000%   0
+   41    0/871   0.000000%   0
+   42    0/890   0.000000%   0
+   43    0/955   0.000000%   0
+   44    0/927   0.000000%   0
+   45    0/890   0.000000%   0
+   46    0/886   0.000000%   0
+   47    0/891   0.000000%   0
+   48    0/873   0.000000%   0
+   49    0/927   0.000000%   0
+   50    0/899   0.000000%   0
+   51    0/913   0.000000%   0
+   52    0/890   0.000000%   0
+   53    0/908   0.000000%   0
+   54    0/886   0.000000%   0
+   55    0/894   0.000000%   0
+   56    0/903   0.000000%   0
+   57    0/925   0.000000%   0
+   58    0/900   0.000000%   0
+   59    0/897   0.000000%   0
+   60    0/932   0.000000%   0
+   61    0/910   0.000000%   0
+   62    0/901   0.000000%   0
+   63    0/949   0.000000%   0
+   64    0/885   0.000000%   0
+   65    0/900   0.000000%   0
+   66    0/921   0.000000%   0
+   67    0/896   0.000000%   0
+   68    0/902   0.000000%   0
+   69    0/914   0.000000%   0
+   70    0/934   0.000000%   0
+   71    0/920   0.000000%   0
+   72    0/868   0.000000%   0
+   73    0/946   0.000000%   0
+   74    0/886   0.000000%   0
+   75    0/919   0.000000%   0
+   76    0/895   0.000000%   0
+   77    0/917   0.000000%   0
+   78    0/886   0.000000%   0
+   79    0/924   0.000000%   0
+   80    0/875   0.000000%   0
+   81    0/957   0.000000%   0
+   82    0/925   0.000000%   0
+   83    0/895   0.000000%   0
+   84    2/856   0.233645%   0
+   85    0/910   0.000000%   0
+   86    0/910   0.000000%   0
+   87    0/972   0.000000%   0
+   88    0/868   0.000000%   0
+   89    0/896   0.000000%   0
+   90    0/869   0.000000%   0
+   91    0/865   0.000000%   0
+   92    0/916   0.000000%   0
+   93    0/862   0.000000%   0
+   94    0/887   0.000000%   0
+   95    0/927   0.000000%   0
+   96    0/958   0.000000%   0
+   97    0/902   0.000000%   0
+   98    0/924   0.000000%   0
+   99    0/909   0.000000%   0
+  100    1/908   0.110132%   0
+  101    0/893   0.000000%   0
+  102    0/849   0.000000%   0
+  103    0/905   0.000000%   0
+  104    0/927   0.000000%   0
+  105    0/899   0.000000%   0
+  106    0/931   0.000000%   0
+  first month utilization: {'alex': 0.508769, 'morgan': 0.575198, 'riley':
+0.78886}
+  first month max backlog: 103 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 32 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 9.911025412168845 33.54120539416667
+40.43145411361111
+    desk mean/p95 h: 1.5850434741530501 4.0311786355555554
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=6.892103; members/hour=0.708333
+    mean clipped stay=9.730027h; unfinished durations censored at close
+    occupancy=4962.313916 item-h; clipped stays=4962.313916 item-h
+    finite-window relative gap=3.67e-16; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 10 at 2026-10-26T06:21:56.062320+00:00
+    calendar mean/p95/max h: 10.214668198316424 33.468639529444445
+40.011361560833336
+    desk mean/p95 h: 1.5130881649903383 5.273960549444445
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.578538; members/hour=0.159722
+    mean clipped stay=9.883022h; unfinished durations censored at close
+    occupancy=1136.547569 item-h; clipped stays=1136.547569 item-h
+    finite-window relative gap=8e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 16 at 2026-10-12T07:19:38.651322+00:00
+    calendar mean/p95/max h: 10.161797677375262 32.76622441166667
+39.66347390666666
+    desk mean/p95 h: 1.4871545368983228 3.782972341666667
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=3.659273; members/hour=0.368056
+    mean clipped stay=9.942175h; unfinished durations censored at close
+    occupancy=2634.676305 item-h; clipped stays=2634.676305 item-h
+    finite-window relative gap=8.63e-16; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 35 at 2026-10-12T09:43:25.072887+00:00
+    calendar mean/p95/max h: 22.011572431725792 59.89085924166667
+70.10227540972222
+    desk mean/p95 h: 5.161667143866578 12.174626463611112
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.532928; members/hour=0.345833
+    mean clipped stay=21.781962h; unfinished durations censored at close
+    occupancy=5423.708414 item-h; clipped stays=5423.708414 item-h
+    finite-window relative gap=1.51e-15; starting backlog=0
+  blind: arrivals=46 completed-at-close=33 late=0
+    deadline breaches (blocking and nonblocking classes): 3
+    class largest waiting backlog: 13 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 99.89597713060991 178.2292517202778
+193.77231312444442
+    desk mean/p95 h: 25.458023977131642 48.03717801472222
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=5.324991; members/hour=0.063889
+    mean clipped stay=83.347686h; unfinished durations censored at close
+    occupancy=3833.993571 item-h; clipped stays=3833.993571 item-h
+    finite-window relative gap=1.78e-15; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-13T06:09:25.853472+00:00
+    calendar mean/p95/max h: 11.370009570141974 36.038115525833334
+39.36469350861111
+    desk mean/p95 h: 1.3405554565802469 3.080746324444444
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.694460; members/hour=0.062500
+    mean clipped stay=11.111362h; unfinished durations censored at close
+    occupancy=500.011306 item-h; clipped stays=500.011306 item-h
+    finite-window relative gap=3.41e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+D4-rework exponential capacity 96 h/week
+  expected u=0.655010; reviewer-only u=0.977521
+  Monday due=18.140068h; margin=5.859932h
+  necessary-count failures: none (not sufficient)
+  Revised staffing: morgan also Saturday 09:00..17:00 UTC;
+  same named approver, 48h/week; decision-owner tasks explicit.
+  Monday breaches=22/400 (5.5000%)
+  pooled late=0.052921%; breach months=0/100
+  monthly breach frequency=0.0000%; accepted=True
+  late items by class: {'tier2': 0, 'tier3': 3, 'referral': 0, 'recheck': 0,
+'blind': 0, 'planted': 0, 'held_denial': 0, 'modification': 0,
+'refusal_followup': 36, 'adjudication': 13}
+  necessary-count failures across every simulated Monday: 6 of 400
+  all simulated weekends' count failures: 0 of 4 in the first month
+  seed late/blocking share pending
+    7    0/1019  0.000000%   0
+    8    0/957   0.000000%   0
+    9    0/1015  0.000000%   0
+   10    4/1003  0.398804%   0
+   11    0/963   0.000000%   0
+   12    0/974   0.000000%   0
+   13    0/1034  0.000000%   0
+   14    0/1017  0.000000%   0
+   15    0/951   0.000000%   0
+   16    1/998   0.100200%   0
+   17    0/1009  0.000000%   0
+   18    5/963   0.519211%   0
+   19    0/1039  0.000000%   0
+   20    0/1007  0.000000%   0
+   21    1/997   0.100301%   0
+   22    0/997   0.000000%   0
+   23    2/979   0.204290%   0
+   24    0/952   0.000000%   0
+   25    0/956   0.000000%   0
+   26    0/1005  0.000000%   0
+   27    6/949   0.632244%   0
+   28    0/973   0.000000%   0
+   29    1/996   0.100402%   0
+   30    5/1005  0.497512%   0
+   31    1/968   0.103306%   0
+   32    0/991   0.000000%   0
+   33    1/965   0.103627%   0
+   34    0/940   0.000000%   0
+   35    0/1016  0.000000%   0
+   36    0/945   0.000000%   0
+   37    0/1004  0.000000%   0
+   38    0/937   0.000000%   0
+   39    0/1020  0.000000%   0
+   40    0/1024  0.000000%   0
+   41    0/950   0.000000%   0
+   42    0/975   0.000000%   0
+   43    0/1002  0.000000%   0
+   44    0/1008  0.000000%   0
+   45    0/972   0.000000%   0
+   46    1/965   0.103627%   0
+   47    0/962   0.000000%   0
+   48    1/936   0.106838%   0
+   49    1/1009  0.099108%   0
+   50    0/981   0.000000%   0
+   51    0/977   0.000000%   0
+   52    0/960   0.000000%   0
+   53    1/987   0.101317%   0
+   54    0/952   0.000000%   0
+   55    0/972   0.000000%   0
+   56    0/992   0.000000%   0
+   57    0/988   0.000000%   0
+   58    0/975   0.000000%   0
+   59    0/954   0.000000%   0
+   60    2/1003  0.199402%   0
+   61    2/994   0.201207%   0
+   62    0/961   0.000000%   0
+   63    0/1019  0.000000%   0
+   64    0/963   0.000000%   0
+   65    0/987   0.000000%   0
+   66    0/993   0.000000%   0
+   67    0/967   0.000000%   0
+   68    0/968   0.000000%   0
+   69    0/995   0.000000%   0
+   70    1/1025  0.097561%   0
+   71    0/988   0.000000%   0
+   72    0/941   0.000000%   0
+   73    0/1031  0.000000%   0
+   74    3/980   0.306122%   0
+   75    0/1012  0.000000%   0
+   76    0/965   0.000000%   0
+   77    0/996   0.000000%   0
+   78    3/958   0.313152%   0
+   79    0/1004  0.000000%   0
+   80    3/953   0.314795%   0
+   81    0/1031  0.000000%   0
+   82    1/1004  0.099602%   0
+   83    0/969   0.000000%   0
+   84    0/921   0.000000%   0
+   85    0/999   0.000000%   0
+   86    0/999   0.000000%   0
+   87    0/1041  0.000000%   0
+   88    0/939   0.000000%   0
+   89    1/985   0.101523%   0
+   90    5/929   0.538213%   0
+   91    0/929   0.000000%   0
+   92    0/999   0.000000%   0
+   93    0/925   0.000000%   0
+   94    0/955   0.000000%   0
+   95    0/1005  0.000000%   0
+   96    0/1022  0.000000%   0
+   97    0/979   0.000000%   0
+   98    0/999   0.000000%   0
+   99    0/991   0.000000%   0
+  100    0/987   0.000000%   0
+  101    0/966   0.000000%   0
+  102    0/917   0.000000%   0
+  103    0/993   0.000000%   0
+  104    0/1001  0.000000%   0
+  105    0/988   0.000000%   0
+  106    0/999   0.000000%   0
+  first month utilization: {'alex': 0.565882, 'morgan': 0.627312, 'riley':
+0.877153}
+  first month max backlog: 107 at 2026-10-26T08:30:41.333371+00:00
+  tier2: arrivals=510 completed-at-close=502 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 32 at 2026-10-26T08:30:41.333371+00:00
+    calendar mean/p95/max h: 10.747664752936819 35.65357183972222
+50.32924920055555
+    desk mean/p95 h: 1.8883494815876907 4.667996313888889
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=7.487842; members/hour=0.708333
+    mean clipped stay=10.571071h; unfinished durations censored at close
+    occupancy=5391.246464 item-h; clipped stays=5391.246464 item-h
+    finite-window relative gap=5.06e-16; starting backlog=0
+  tier3: arrivals=115 completed-at-close=111 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 10 at 2026-10-26T06:21:56.062320+00:00
+    calendar mean/p95/max h: 10.050631193823671 32.10876439027778
+39.76377147638889
+    desk mean/p95 h: 1.3490511604975846 4.459509640555555
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=1.550939; members/hour=0.159722
+    mean clipped stay=9.710227h; unfinished durations censored at close
+    occupancy=1116.676136 item-h; clipped stays=1116.676136 item-h
+    finite-window relative gap=2.04e-16; starting backlog=0
+  referral: arrivals=265 completed-at-close=260 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 16 at 2026-10-12T07:19:38.651322+00:00
+    calendar mean/p95/max h: 10.819341529466456 35.406044455 49.38136637527778
+    desk mean/p95 h: 1.7824342380461216 4.371859500555556
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=3.904370; members/hour=0.368056
+    mean clipped stay=10.608101h; unfinished durations censored at close
+    occupancy=2811.146634 item-h; clipped stays=2811.146634 item-h
+    finite-window relative gap=9.71e-16; starting backlog=0
+  recheck: arrivals=249 completed-at-close=248 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 36 at 2026-10-12T13:41:11.705791+00:00
+    calendar mean/p95/max h: 23.550032816405622 66.31106086916667
+75.70560309694444
+    desk mean/p95 h: 5.92904319119701 14.702712248888886
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=8.065190; members/hour=0.345833
+    mean clipped stay=23.321030h; unfinished durations censored at close
+    occupancy=5806.936534 item-h; clipped stays=5806.936534 item-h
+    finite-window relative gap=6.26e-16; starting backlog=0
+  blind: arrivals=46 completed-at-close=26 late=0
+    deadline breaches (blocking and nonblocking classes): 10
+    class largest waiting backlog: 20 at 2026-10-30T10:52:01.013533+00:00
+    calendar mean/p95/max h: 125.51409309945652 243.82044157833334
+290.7728874791667
+    desk mean/p95 h: 32.81527038076087 64.35645259361111
+    independent blind reviewer: alex excluded; unresolved samples: 0
+    L_window=6.375272; members/hour=0.063889
+    mean clipped stay=99.786872h; unfinished durations censored at close
+    occupancy=4590.196109 item-h; clipped stays=4590.196109 item-h
+    finite-window relative gap=9.91e-16; starting backlog=0
+  planted: arrivals=45 completed-at-close=44 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-13T06:09:25.853472+00:00
+    calendar mean/p95/max h: 12.982079384092593 38.15896816555556
+41.61484111944445
+    desk mean/p95 h: 1.7081808260864197 3.721142649722222
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.795605; members/hour=0.062500
+    mean clipped stay=12.729680h; unfinished durations censored at close
+    occupancy=572.835612 item-h; clipped stays=572.835612 item-h
+    finite-window relative gap=1.98e-16; starting backlog=0
+  modification: arrivals=51 completed-at-close=51 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 5 at 2026-10-19T04:23:53.357195+00:00
+    calendar mean/p95/max h: 10.450913119618736 28.892623856666667
+41.89235356388889
+    desk mean/p95 h: 1.9652302523257081 4.928907911111112
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.740273; members/hour=0.070833
+    mean clipped stay=10.450913h; unfinished durations censored at close
+    occupancy=532.996569 item-h; clipped stays=532.996569 item-h
+    finite-window relative gap=1.07e-15; starting backlog=0
+  refusal_followup: arrivals=28 completed-at-close=27 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 4 at 2026-10-19T09:26:08.830728+00:00
+    calendar mean/p95/max h: 13.68330712171627 36.304082318611115
+40.93761196944445
+    desk mean/p95 h: 3.462134904394841 6.885034700555555
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.514998; members/hour=0.038889
+    mean clipped stay=13.242800h; unfinished durations censored at close
+    occupancy=370.798414 item-h; clipped stays=370.798414 item-h
+    finite-window relative gap=3.07e-16; starting backlog=0
+  adjudication: arrivals=5 completed-at-close=5 late=0
+    deadline breaches (blocking and nonblocking classes): 0
+    class largest waiting backlog: 1 at 2026-10-10T21:37:46.987059+00:00
+    calendar mean/p95/max h: 15.531127166777777 37.30598327972222
+37.30598327972222
+    desk mean/p95 h: 2.978582304277778 4.275625898333333
+    independent blind reviewer: alex excluded; unresolved samples: n/a
+    L_window=0.107855; members/hour=0.006944
+    mean clipped stay=15.531127h; unfinished durations censored at close
+    occupancy=77.655636 item-h; clipped stays=77.655636 item-h
+    finite-window relative gap=3.66e-16; starting backlog=0
+  Boundary: cohort=month arrivals; occupancy=calendar boundary, including
+service unfinished stays censored at close; deadline outcomes drain 14 days
+finite-window conservation; no stationary claim for D1
+held-denial breach month
+  week=60.823777/88h u=0.691179
+  Monday due=17.466572/24h; failures=()
+  held_denial offered hours/week=3.636111
+  modification offered hours/week=0.000000
+  refusal_followup offered hours/week=0.000000
+  adjudication offered hours/week=0.000000
+tier1 reversal
+  week=86.188889/88h u=0.979419
+  Monday due=27.299934/24h; failures=('reviewers_monday_infeasible',
+'pooled_monday_infeasible', 'role_subset_monday:alex,morgan,riley')
+  held_denial offered hours/week=0.000000
+  modification offered hours/week=0.000000
+  refusal_followup offered hours/week=0.000000
+  adjudication offered hours/week=0.000000
+rework stress (constructed 10% modified, 5% refused)
+  week=62.880999/88h u=0.714557
+  Monday due=18.140068/24h; failures=('decision_owner_followups_unstable',
+'decision_owner_monday_infeasible', 'refusal_followup_class_capacity',
+'adjudication_class_capacity')
+  held_denial offered hours/week=0.000000
+  modification offered hours/week=3.733333
+  refusal_followup offered hours/week=1.400000
+  adjudication offered hours/week=0.560000
+Regression: one 10% month plus 99 clean months: {'accepted': False, 'months':
+100, 'breach_months': 1, 'breach_frequency': 0.01, 'failed_month_indices':
+(99,), 'pooled_share': 0.001}
+Stage-6 staffing admission remains pending the assembled partner run.
+A revised design changes staffing before any stage-6 state line prints.

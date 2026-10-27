@@ -1,0 +1,9 @@
+| Tool | Preconditions | Adds | Removes |
+|---|---|---|---|
+| `order.lookup` | none | `order_read` | none |
+| `shipment.status` | `order_read` | `shipment_read` | none |
+| `policy.retrieve` | none | `policy_read` | none |
+| `refund.propose` | `order_read`, `policy_read`, `shipment_read` | `proposed` | `approved`, for a new amount |
+| `approval.request` | `proposed` | `review_open` | none |
+| `refund.execute` | `order_read`, `policy_read`, `proposed`, `shipment_read`; at tiers 2 and 3 also `approved` | `paid` | none |
+| `audit.append` | none | `audited` | none |

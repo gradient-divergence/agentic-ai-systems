@@ -1,0 +1,5 @@
+records 1000; matching 5; ratio 200; all five answered; fixed comparator 0.6
+IPS 1.000; interval [0.125, 1.875]
+SN 1.000; interval [1.000, 1.000]; improvement 0.400
+n_eff 5.000; one-sided 97.5% exact lower bound 0.478
+decision hold; candidate effective size below 400

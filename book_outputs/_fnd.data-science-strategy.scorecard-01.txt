@@ -1,0 +1,3 @@
+baseline: 40/40 agreement with generated labels (100.0%);
+approve=4 deny=22 refer=14 executed=0
+public scenarios by tier: tier 1=15 tier 2=10 tier 3=15

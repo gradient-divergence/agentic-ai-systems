@@ -1,0 +1,3 @@
+4999 cents, shipment 1800 s old, no approval: gate returns None
+5000 cents, shipment 1800 s old, no approval: gate returns approval_required
+4999 cents, shipment 1801 s old, no approval: gate returns stale_shipment

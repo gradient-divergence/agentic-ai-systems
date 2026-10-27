@@ -1,0 +1,18 @@
+Constructed stream sha256:
+25988786ea96497f3cf9a5c9b1f6df6994117a26a204c340bd6fa517a70e6333
+processing version: batch-stream-1
+original arrival-time cutoff: 2026-01-20T18:05:00+00:00
+original view statuses: ['shipped']
+original decision: shipment_incomplete
+corrected view statuses: ['shipped', 'delivered']
+corrected decision: already_delivered
+views_equal: True
+decisions_equal: True
+ledger_unchanged: True
+checkpoint_equal: True
+copies: 1
+tool calls during pure replay: 0
+correction executed: refund-batch-stream-opening
+scan scan-opening-parcel-delivered-0; shipped -> delivered
+correction shadow: refund-batch-stream-opening
+scan scan-opening-parcel-delivered-0; shipped -> delivered

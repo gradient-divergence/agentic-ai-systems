@@ -1,0 +1,15 @@
+generated requests; seed 7; 300 updates; eta 0.2; training loss only
+class counts: damaged 158, changed_mind 78, not_delivered 64
+gate present
+step 0: loss 2.296565265, correct 74 of 300
+step 10: loss 1.075413480, correct 158 of 300
+step 100: loss 0.444998408, correct 236 of 300
+step 300: loss 0.103123609, correct 287 of 300
+strictly falling at every update: False
+increase at step 61: 0.811563085 to 0.812241422, rise 0.000678337
+gate removed
+step 0: loss 2.296565265, correct 74 of 300
+step 10: loss 0.901373790, correct 187 of 300
+step 100: loss 0.299914686, correct 280 of 300
+step 300: loss 0.193380547, correct 280 of 300
+strictly falling at every update: True

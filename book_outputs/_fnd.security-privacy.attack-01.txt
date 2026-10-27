@@ -1,0 +1,5 @@
+Constructed resent request; original payment destination retained.
+Without scopes: approve; eligible; paid 2499 cents
+With scopes: refer; order_not_found; paid 0 cents
+Scoped decision sent: refer, amount 2499, tier 1, citation none.
+No fetched foreign-order fields reach state, traces or replies.

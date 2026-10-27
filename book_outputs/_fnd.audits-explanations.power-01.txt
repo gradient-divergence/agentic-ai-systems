@@ -1,0 +1,6 @@
+A: exact power 0.000000000.
+One wrongful above ceiling: 0.017600973.
+B: exact power 0.000000000.
+One wrongful above ceiling: 0.017278020.
+C: exact power 0.952209375.
+One wrongful above ceiling: 0.014943715.

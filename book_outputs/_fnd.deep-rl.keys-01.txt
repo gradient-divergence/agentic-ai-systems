@@ -1,0 +1,9 @@
+exercise 3: reward -2; gamma 0.9; next values (-10, -6); current -8; eta 0.1
+continuing: target -7.40; error 0.60; loss 0.18; new table value -7.94
+resolved: target -2.00; error 6.00; loss 18.00; new table value -7.40
+time limit: target -7.40; error 0.60; loss 0.18; new table value -7.94
+exercise 4: score (0.268941, -0.268941); step (0.134471, -0.134471); new probability 0.780561
+without baseline, return 4: new probability 0.888525
+baseline expectation: (0.000000000000, 0.000000000000)
+ratio 1.25, advantage 1: objective 1.20; slope 0
+ratio 1.25, advantage -1: objective -1.25; slope -1

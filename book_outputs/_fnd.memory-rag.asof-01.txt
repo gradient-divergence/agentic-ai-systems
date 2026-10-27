@@ -1,0 +1,3 @@
+12 May, known 20 April: refund_cap_v4@2026-03-01#eligibility, 21 days
+12 May, known 12 May: refund_cap_v4@2026-05-01#eligibility, 30 days
+April copy at 12 May: beyond_notice

@@ -1,0 +1,19 @@
+Constructed score: card-level probability of fraudulent use within 60 days.
+4/37 payment-flag precision transfers only under that card-level definition.
+M/M/1 review-open time: 20 minutes
+Fraud spending during review: 50 dollars
+action  legitimate  fraudulent  dollars per card
+clear         0.00      400.00
+refer         4.00       54.00
+hold         14.00        4.00
+clear/refer edge: 2/175 = 0.0114
+refer/hold edge: 1/6 = 0.1667; tie refers
+copied refund edge: 400/4999 = 0.0800; designed and held
+risk 1/20 = 0.050000: copy clear $20.00; band refer $6.50
+  clear/refer/hold: $20.00/$6.50/$13.50
+risk 1/2 = 0.500000: copy refer $29.00; band hold $9.00
+  clear/refer/hold: $200.00/$29.00/$9.00
+risk 4/37 = 0.108108: copy refer $9.41; band refer $9.41
+  clear/refer/hold: $43.24/$9.41/$12.92
+legitimate holds per fraudulent card stopped: 8.25
+account closure: level 2, named approver; no score authority to close

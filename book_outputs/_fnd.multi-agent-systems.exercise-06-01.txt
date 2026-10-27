@@ -1,0 +1,3 @@
+saving $1.1794 -> $2.0190/request before the call; increase $0.8396
+agreement 376/400 -> 376/400; n+ 24; n- 8; accepted
+break-even call price $2.0190; saves money strictly below it

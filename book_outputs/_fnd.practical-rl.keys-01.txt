@@ -1,0 +1,10 @@
+exercise 3: first logged chance 0.30; ratios 3.000000, 0.166667, 2.000000, 1.000000
+IPS 1.500; SN 0.973; n_eff 2.711
+exercise 3: first logged chance 0.05; ratios 18.000000, 0.166667, 2.000000, 1.000000
+IPS 5.250; SN 0.992; n_eff 1.362
+exercise 4a: DM 0.740; correction -0.020; DR 0.720
+exercise 4b: alerts 1000; n_eff 500.000; improvement 0.080; interval [0.026, 0.134]; exact p 0.001230; draws 100000; decision eligible for shadow
+exercise 4c: weeks 4; expected matching 62.500000; ratio 16
+exercise 4c: weeks 10; expected matching 0.976562; ratio 1024
+sparse check: records 1000; answers 5 vs 0; effective sizes 500, 500; improvement 0.010000; interval [0.001252, 0.018748]; exact p 0.031250; decision hold
+cap-zero judged: A False, B False, fixed True

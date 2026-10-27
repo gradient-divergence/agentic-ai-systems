@@ -1,0 +1,16 @@
+{
+  "version": "refund-release-owners-1",
+  "owners": [
+    {"id": "morgan", "name": "Morgan", "role": "refund decision owner",
+     "roles": ["release_owner", "decision_owner"]}
+  ],
+  "sources": {
+    "chapter": "data-systems",
+    "roles": {
+      "order": "the order team",
+      "shipment": "the carrier integration team",
+      "policy": "the policy owner",
+      "ledger": "finance"
+    }
+  }
+}

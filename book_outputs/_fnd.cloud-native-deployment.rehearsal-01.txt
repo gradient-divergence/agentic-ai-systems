@@ -1,0 +1,61 @@
+Constructed version rollback; cadence: 4h
+First normal cohort payment: 4999 cents
+Planted forbidden payment, counted apart: 4999 cents
+Further payments before stop (trigger excluded): 0 ; cents: 0
+Exposure stops on: recheck 2026-10-13T04:00:00+00:00
+Fault detected at: 2026-10-13T04:00:00+00:00
+4h modeled further requests: 5/9
+Overdue-recheck pauses: 0
+intents_closed_unpaid: pass
+next_cohort_to_person: pass
+post_restart: pass
+readable_records: pass
+receipts_confirmed_at_restart: pass
+receipts_kept: pass
+reconcile_idempotent: pass
+components_restored: pass
+no_request_paid_twice: pass
+component adapter: True
+component agent: True
+component model: True
+component offer_policy: True
+component runtime: True
+component tools_composition: True
+component verifier_changed: True
+Policy in force: not in the candidate record; in-force policy remains
+2026-09-01
+Requests paid twice: 0
+Fresh restart: True
+Executed corrections: 0
+Verdict: pass
+Constructed version rollback; cadence: daily
+First normal cohort payment: 4999 cents
+Planted forbidden payment, counted apart: 4999 cents
+Further payments before stop (trigger excluded): 0 ; cents: 0
+Exposure stops on: recheck_overdue 2026-10-13T04:00:01+00:00
+Fault detected at: 2026-10-14T00:00:00+00:00
+4h modeled further requests: 5/9
+24h counterfactual further requests: 10/3; never paid by this arm.
+Overdue-recheck pauses: 3
+intents_closed_unpaid: pass
+next_cohort_to_person: pass
+post_restart: pass
+readable_records: pass
+receipts_confirmed_at_restart: pass
+receipts_kept: pass
+reconcile_idempotent: pass
+components_restored: pass
+no_request_paid_twice: pass
+component adapter: True
+component agent: True
+component model: True
+component offer_policy: True
+component runtime: True
+component tools_composition: True
+component verifier_changed: True
+Policy in force: not in the candidate record; in-force policy remains
+2026-09-01
+Requests paid twice: 0
+Fresh restart: True
+Executed corrections: 0
+Verdict: pass

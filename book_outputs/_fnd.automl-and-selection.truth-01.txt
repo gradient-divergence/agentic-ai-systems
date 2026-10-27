@@ -1,0 +1,353 @@
+{
+  "models": [
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.000453718552933996,
+      "name": "trial 01",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.998322227423582,
+      "true_lead": -0.002075160688178951,
+      "true_saving": -0.024628568749553187
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00013621173973188405,
+      "name": "trial 02",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.025,
+        "max_iter": 50,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 50
+      },
+      "true_cost": 0.9677211360214677,
+      "true_lead": -0.0014355045718504045,
+      "true_saving": 0.005972522652561203
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.0010702374592339303,
+      "name": "trial 03",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 50
+      },
+      "true_cost": 0.9748077678836413,
+      "true_lead": -6.279726722008272e-05,
+      "true_saving": -0.0011141092096125429
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.0002499551764381658,
+      "name": "trial 04",
+      "settings": {
+        "C": 1.0,
+        "family": "logistic"
+      },
+      "true_cost": 0.9844090431926985,
+      "true_lead": 0.00023395397436537513,
+      "true_saving": -0.010715384518669744
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.0010346871954631243,
+      "name": "trial 05",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 0.0,
+        "learning_rate": 0.05,
+        "max_iter": 50,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 0.9677211360214677,
+      "true_lead": 0.00029034931766441785,
+      "true_saving": 0.005972522652561203
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.0,
+      "name": "trial 06",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9736936586740289,
+      "true_lead": 0.0,
+      "true_saving": 0.0
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.0046196385359123515,
+      "name": "trial 07",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 1.0232175127153942,
+      "true_lead": -0.007805833597305217,
+      "true_saving": -0.049523854041365306
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.0002630281492592701,
+      "name": "trial 08",
+      "settings": {
+        "C": 100.0,
+        "family": "logistic"
+      },
+      "true_cost": 0.9844090431926985,
+      "true_lead": 0.00023632892200542432,
+      "true_saving": -0.010715384518669744
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.0001391265292965682,
+      "name": "trial 09",
+      "settings": {
+        "C": 0.1,
+        "family": "logistic"
+      },
+      "true_cost": 0.9859907356882965,
+      "true_lead": 0.00020912275817441817,
+      "true_saving": -0.012297077014267688
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.0013265489076757786,
+      "name": "trial 10",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 50,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 50
+      },
+      "true_cost": 0.9738913702970782,
+      "true_lead": -0.00010808932723149756,
+      "true_saving": -0.00019771162304932876
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00041930209436080723,
+      "name": "trial 11",
+      "settings": {
+        "C": 0.01,
+        "family": "logistic"
+      },
+      "true_cost": 0.9954734614610915,
+      "true_lead": -0.00027042341443511697,
+      "true_saving": -0.02177980278706257
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00165426156926754,
+      "name": "search winner",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 1.0196650386647197,
+      "true_lead": -0.0038018726795196744,
+      "true_saving": -0.045971379990690855
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00013621173973188405,
+      "name": "trial 13",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.025,
+        "max_iter": 50,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 0.9677211360214677,
+      "true_lead": -0.0014355045718504045,
+      "true_saving": 0.005972522652561203
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.001444071873401398,
+      "name": "trial 14",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 50,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9802293985066775,
+      "true_lead": -0.0003076595136214666,
+      "true_saving": -0.006535739832648543
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.0010495981144843791,
+      "name": "trial 15",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 0.0,
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9658527764507001,
+      "true_lead": 0.00048065875507674605,
+      "true_saving": 0.007840882223328625
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.000785266907621901,
+      "name": "trial 16",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.025,
+        "max_iter": 200,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 0.9717044605096753,
+      "true_lead": 0.00037137634943767983,
+      "true_saving": 0.001989198164353495
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": -0.00013159340515464524,
+      "name": "trial 17",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 0.0,
+        "learning_rate": 0.025,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9874262167103649,
+      "true_lead": -0.00028202787100975457,
+      "true_saving": -0.013732558036336237
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.0003185762658881597,
+      "name": "trial 18",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 200
+      },
+      "true_cost": 0.9854696429828125,
+      "true_lead": -0.00099425619236157,
+      "true_saving": -0.011775984308783632
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00095991404245796,
+      "name": "trial 19",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.025,
+        "max_iter": 100,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9677211360214677,
+      "true_lead": 0.00028124947288055147,
+      "true_saving": 0.005972522652561203
+    },
+    {
+      "builder": "seeded search",
+      "measured_lead": 0.00013621173973188405,
+      "name": "trial 20",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 10.0,
+        "learning_rate": 0.025,
+        "max_iter": 50,
+        "max_leaf_nodes": 3,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9677211360214677,
+      "true_lead": -0.0014355045718504045,
+      "true_saving": 0.005972522652561203
+    },
+    {
+      "builder": "person",
+      "measured_lead": 0.0,
+      "name": "boosted trees with map",
+      "settings": {
+        "family": "boosted",
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 100
+      },
+      "true_cost": 0.9736936586740289,
+      "true_lead": 0.0,
+      "true_saving": 0.0
+    },
+    {
+      "builder": "person",
+      "measured_lead": -0.0002499551764381658,
+      "name": "logistic regression",
+      "settings": {
+        "C": 1.0,
+        "family": "logistic"
+      },
+      "true_cost": 0.9844090431926985,
+      "true_lead": 0.00023395397436537513,
+      "true_saving": -0.010715384518669744
+    },
+    {
+      "builder": "constructed agent",
+      "measured_lead": 0.017701254175668202,
+      "name": "agent delivery",
+      "settings": {
+        "C": 1.0,
+        "clean": false,
+        "family": "group"
+      },
+      "true_cost": 0.9977824034706884,
+      "true_lead": -0.010336934858184071,
+      "true_saving": -0.024088744796659532
+    }
+  ],
+  "requests": 2026,
+  "seed": 71,
+  "window": "fresh June, generator expectation conditional on requests",
+  "winner_true_rank": 19
+}

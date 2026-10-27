@@ -1,0 +1,13 @@
+{
+  "version": "drafts-to-shadow-requirement-1",
+  "max_referral_share": 0.4666666666666667,
+  "baseline_identity": "11e334b3b67dc1a02446ce9e6e9db0668e6a93f3282f88c8c8be4511395188c1",
+  "baseline_seed": 7,
+  "baseline_requests": 15,
+  "baseline_referrals": 7,
+  "signature": {
+    "owner": "morgan",
+    "at": "2026-10-09T12:00:00+00:00",
+    "kind": "recorded sign-off; not cryptographic"
+  }
+}

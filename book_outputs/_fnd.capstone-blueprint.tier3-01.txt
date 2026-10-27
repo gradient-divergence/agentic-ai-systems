@@ -1,0 +1,4 @@
+Operating tier 3 path: unavailable; shared-clock month and review outcomes absent.
+Configured report period: first complete 30 days of stage 6; no actual period established.
+Actual requests, named-approver outcomes and decisions otherwise: unavailable.
+Every request over $500, including denials, requires its named approver.

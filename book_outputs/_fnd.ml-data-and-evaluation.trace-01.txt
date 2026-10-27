@@ -1,0 +1,3 @@
+tier 3 contrast: 600-case policy dataset, independent of the paid history
+golden request r-7-0523: 2026-08-06; amount $650.00; decision label refer, tier 3, reason approval_required; named approver morgan
+agent prepares the packet only; named approver decides, denials included

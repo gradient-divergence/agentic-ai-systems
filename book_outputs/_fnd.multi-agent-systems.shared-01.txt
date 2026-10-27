@@ -1,0 +1,17 @@
+constructed probabilities; binary verdicts on matched cases
+each failure rate 0.2; each variance 0.16
+independent: covariance 0.00; pass 0.04; catch 0.16
+correlation 0.5: covariance 0.08; pass 0.12; catch 0.08
+identical: covariance 0.16; pass 0.20; catch 0.00
+3 mutually independent agents: majority error 0.104
+shared cause 0.1; own rate 1/9; each rate 0.2; majority 53/405 = 0.1309
+pair: pass 1/9 = 0.111111; correlation 4/9 = 0.444444; covariance 0.071111
+fully shared 0.2: pair 0.200; majority 0.200
+JOINT_A: rates 0.20, 0.20, 0.20; pairwise covariances 0.00, 0.00, 0.00; majority 0.12
+patterns: 000=0.52, 100=0.12, 010=0.12, 001=0.12, 110=0.04, 101=0.04, 011=0.04, 111=0.00
+JOINT_B: rates 0.20, 0.20, 0.20; pairwise covariances 0.00, 0.00, 0.00; majority 0.04
+patterns: 000=0.48, 100=0.16, 010=0.16, 001=0.16, 110=0.00, 101=0.00, 011=0.00, 111=0.04
+simulation independent pair: seed 7; n 200000; exact 0.040000; observed 0.040040; SE 0.000438; deviation 0.091 SE
+simulation independent majority: seed 7; n 200000; exact 0.104000; observed 0.104275; SE 0.000683; deviation 0.403 SE
+simulation shared-cause majority: seed 7; n 200000; exact 0.130864; observed 0.130295; SE 0.000754; deviation -0.755 SE
+simulation identical errors: seed 7; n 200000; exact 0.200000; observed 0.201435; SE 0.000894; deviation 1.604 SE

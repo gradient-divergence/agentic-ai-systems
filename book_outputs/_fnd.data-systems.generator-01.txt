@@ -1,0 +1,11 @@
+generated shipments 2000; requests 600
+scan after observed_at: 23 records
+offsets seconds: [120.0]
+readers 5; public readers 0
+  r-7-0074: 2026-03-05T17:25:20+00:00
+  r-7-0084: 2026-03-26T10:04:08+00:00
+  r-7-0127: 2026-07-13T23:08:51+00:00
+  r-7-0181: 2026-02-25T11:36:45+00:00
+  r-7-0506: 2026-02-16T09:56:16+00:00
+reason: contract_invariant:shipment.not_after_observation
+training/validation only for decision comparisons; generator left unchanged

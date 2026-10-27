@@ -1,0 +1,32 @@
+exercise 1 inputs: scores 2.1 1.3, then 0.4 -0.4
+exercise 1: both gaps 0.8; preference probability 0.6900
+exercise 2: 300 clean drafts; 95% rate bound 0.009936
+exercise 3(a) inputs: chosen 0.3, rejected 1.1
+exercise 3(a): probability 0.3100; loss 1.1711
+exercise 3(b) inputs: beta 0.5; policy chosen/rejected, reference chosen/rejected tokens
+-0.4 -0.9 -0.2
+-0.3 -0.6
+-0.5 -1.0 -0.4
+-0.2 -0.5
+exercise 3(b), policy chosen/rejected, reference chosen/rejected: -1.5 -0.9 -1.9 -0.7
+implicit rewards 0.2000 -0.1000; gap 0.3000; DPO loss 0.5544
+exercise 3(c), policy = reference: loss 0.6931
+exercise 4 inputs: reference [0.6, 0.3, 0.1]; scores [0.5, 1.5, -1]; beta 0.5
+exercise 4: probabilities 0.212638 0.785597 0.001764
+score 1.282951; KL 0.528564; beta log Z 1.018669
+two answers: mu 0.7, beta 0.5, tuned probability 0.927027
+exercise 5: preference accuracy 0.7800; mean probability on 605 true-urgent messages 0.907818
+all held-out messages: count mean_probability true_urgent observed_rate
+200 0.700000 68 0.340000
+200 0.850000 96 0.480000
+200 0.910000 130 0.650000
+200 0.950000 154 0.770000
+200 0.990000 157 0.785000
+all 1000 messages: calibration error 0.275000; refuse routing inferred from the selected-label check
+exercise 6: seed 7, beta 0.5; calibration 10000, later 10000 reports
+acceptance tolerances: logit gap 0.02; slope gap 0.05; later calibration-error gap 0.02
+max fitted-sample logit gap 2.408e-08; Platt slope 0.316653, intercept 0.023887; expected slope 0.333333
+population logit gaps by kind: 0.109582 0.014833 0.043336 0.058352 0.310249
+population specialization: max gap 0.310249; tolerance 0.02; FAIL
+later calibration error: reference 0.016200, before 0.155859, after 0.014545
+most likely cause unchanged for all 5 kinds: True

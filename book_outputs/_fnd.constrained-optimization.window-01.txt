@@ -1,0 +1,10 @@
+training only; seed 7; 114 working mornings, 2026-01-22 through 2026-06-30
+policy: mornings at rounded bound; answered / arrivals; tier 3 mean wait, longest wait (days to planned start)
+plain: 110; 397 / 398; 2.062159, 5.867188
+count: 114; 397 / 398; 1.955166, 27.637928
+count_then_wait: 114; 397 / 398; 1.970165, 5.867188
+plain shortfall 2026-03-23: answered 9; bound 10.000000; rounded 10
+plain shortfall 2026-04-13: answered 7; bound 8.000000; rounded 8
+plain shortfall 2026-04-27: answered 5; bound 6.000000; rounded 6
+plain shortfall 2026-05-11: answered 3; bound 4.000000; rounded 4
+count-only and count-then-wait counts equal every morning: True

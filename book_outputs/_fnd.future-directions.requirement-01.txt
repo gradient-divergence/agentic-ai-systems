@@ -1,0 +1,18 @@
+| Requirement | Signed setting |
+|---|---|
+| Incumbent | bundle unavailable; candidate fe2f8e0bbb3dc98a; stage-6 admission must bind both |
+| Candidate | selected trees, map and threshold; bundle unavailable; candidate d065e5421c0b120f; text screen kept |
+| Cases | first 2,000 incumbent-paid tier 1 requests after opening; disjoint forward draws |
+| Calibration | mean prediction inside inclusive 95% Wilson interval |
+| Cost | candidate minus incumbent < 0; 95% upper end < 0; tie keeps incumbent; signed bbf60c09679887b8 |
+| Counter-measures | no more than incumbent on the same requests (D6); Human Oversight and Risk Management check_design; added blocking tier 1 referrals at five minutes |
+| Cases checked | exactly 2,000 unique selected paid requests; each outcome final after 30 days |
+| Release | signed passing record for this candidate and suite |
+| Failure criterion | any failed check keeps incumbent |
+| Rebuild | once, after calibration alone; fit that window; judge the next; retain first failure |
+| Reversal | failed month -> pending next 2,000 requests; matured paid confirmation clears or reverses; owner morgan |
+| Target and mechanism | bundle unavailable; candidate fe2f8e0bbb3dc98a; persisted watch and MLOps and ML Engineering rollback; budget callback withdraws tier 1 |
+| Budget | spent -> immediate tier 1 shadow/person withdrawal and rollback; restore never renews authority |
+| Not run | signed decline; a review is always right; no review loss beyond $4 |
+| Policy | 2026-09-01 |
+| Signer | morgan, decision_owner, day 0 |

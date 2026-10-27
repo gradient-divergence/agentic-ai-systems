@@ -1,0 +1,45 @@
+{
+  "receipt_id": "batch-stream-exercise-05-receipt",
+  "amount_cents": 4499,
+  "request_id": "batch-stream-exercise-05",
+  "order_id": "exercise-05-parcel",
+  "reason": "damaged",
+  "request_at": "2026-01-20T12:00:00+00:00",
+  "policy_return_days": 30,
+  "policy_version": "2025-10-22",
+  "outcome": "approve",
+  "executed": true,
+  "window_clock_used": "arrived_at",
+  "record_age_seconds": 1790,
+  "watermark": "2026-01-20T02:30:10+00:00",
+  "events": [
+    {
+      "event_id": "exercise-05-shipped",
+      "order_id": "exercise-05-parcel",
+      "status": "shipped",
+      "at": "2025-12-19T11:00:00Z",
+      "arrived_at": "2025-12-19T11:00:00Z"
+    },
+    {
+      "event_id": "exercise-05-shipped",
+      "order_id": "exercise-05-parcel",
+      "status": "shipped",
+      "at": "2025-12-19T11:00:00Z",
+      "arrived_at": "2025-12-19T11:05:00Z"
+    },
+    {
+      "event_id": "exercise-05-delivered",
+      "order_id": "exercise-05-parcel",
+      "status": "delivered",
+      "at": "2025-12-20T11:00:00Z",
+      "arrived_at": "2025-12-22T11:00:00Z"
+    },
+    {
+      "event_id": "scan-exercise-05-background-shipped-0",
+      "order_id": "exercise-05-background",
+      "status": "shipped",
+      "at": "2026-01-20T11:30:10Z",
+      "arrived_at": "2026-01-20T11:30:10Z"
+    }
+  ]
+}

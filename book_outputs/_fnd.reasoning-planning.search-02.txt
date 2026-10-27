@@ -1,0 +1,18 @@
+Unit-cost fact states; FIFO ties; popped goals are not expanded.
+Expansion counts exclude the searches that compute h+.
+refund: start h+=6
+  BFS: expanded=10; calls=6
+    order.lookup -> shipment.status -> policy.retrieve -> refund.propose ->
+    refund.execute -> audit.append
+  A*: expanded=8; calls=6
+    order.lookup -> shipment.status -> policy.retrieve -> refund.propose ->
+    refund.execute -> audit.append
+  h+ never overestimates: 12/12 reachable states
+network: start h+=4
+  BFS: expanded=7; calls=6
+    reroute -> check_idle -> take_down -> replace_optic -> bring_up ->
+    restore
+  A*: expanded=6; calls=6
+    reroute -> check_idle -> take_down -> replace_optic -> bring_up ->
+    restore
+  h+ never overestimates: 8/8 reachable states

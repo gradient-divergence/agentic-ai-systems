@@ -1,0 +1,10 @@
+{
+  "version": "candidate-c-1",
+  "choices": {
+    "changed_mind": "standard",
+    "damaged": "standard",
+    "not_delivered": "referenced"
+  },
+  "fixed_before_read": true,
+  "support_required": true
+}

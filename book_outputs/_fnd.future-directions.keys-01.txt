@@ -1,0 +1,6 @@
+Exercise 3a: 128/2,000 = .064; Wilson [0.054087, 0.075585]; .051 outside: fail.
+Exercise 3b/c: cost upper +$0.09; keep at either attempt; two checks failed.
+Exercise 3d: 0/40 Wilson [0, 0.087625]; .05 inside: pass, low power.
+Exercise 4: 130 fewer late minutes (34.210526%); 40 added minutes on six routes.
+Exercise 5: paired post-adoption cost is unobservable; adoption held until the signal is repaired.
+Exercise 6: no adoption-month rerun available; constructed reference tests cover all four confirmation transitions.

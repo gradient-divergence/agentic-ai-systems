@@ -1,0 +1,10 @@
+refund_cap_v4@2026-07-01#eligibility; cosine 0.617
+effective_from: 2026-07-01T00:00:00+00:00
+effective_to: 2026-09-01T00:00:00+00:00
+observed_at: 2026-08-18T17:16:54+00:00
+manifest: {"clauses": 10, "encoder":
+  "6106a792286807e79ea552767f041a330430b46c2e644cfa4b73d1a774441baf",
+  "observed_at": "2026-08-18T17:16:54+00:00", "policy_versions": ["2026-01-20",
+  "2026-03-01", "2026-05-01", "2026-07-01", "2026-09-01"], "sha256":
+  "ec494b9c7d47b4043fb8ec77ceef2e7adbce1151c5dd883fa52df84b5f7aeb05"}
+read age 2592001 seconds: stale_policy

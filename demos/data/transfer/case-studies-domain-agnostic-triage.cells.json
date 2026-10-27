@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What can this agent do that a workflow cannot?",
+    "answer": "Against engineers and rules engine, same incidents",
+    "kind": "refilled"
+  },
+  {
+    "question": "What is the smallest safe action scope?",
+    "answer": "Cards with fewer than 50 sessions; alarm probed at restart",
+    "kind": "redesigned"
+  },
+  {
+    "question": "Which failures become public or expensive?",
+    "answer": "Dropped calls; changes to emergency-call routing",
+    "kind": "refilled"
+  },
+  {
+    "question": "What evidence would show that the agent is improving?",
+    "answer": "Time to recovery; counter-measure, restarts marked needless",
+    "kind": "refilled"
+  },
+  {
+    "question": "How do we turn incidents into evaluation cases?",
+    "answer": "Each incident becomes a case in the release suite",
+    "kind": "same"
+  },
+  {
+    "question": "What can a person override, and how fast?",
+    "answer": "Engineer; deadline takes the branch that can be undone",
+    "kind": "refilled"
+  },
+  {
+    "question": "Which rollback has actually been rehearsed?",
+    "answer": "Rehearsal required; dropped calls stay dropped",
+    "kind": "refilled"
+  }
+]

@@ -1,0 +1,12 @@
+Constructed stage 5 integration preflight: BLOCKED.
+Scope check: pass
+Release fixture: security_privacy_authenticated_runtime_required
+Release record: unavailable for the assembled candidate.
+Window: not run; authenticated issuance required on all 299 requests.
+Plan: not signed without the actual window and partner records.
+Error budget: chapter 34 record not merged.
+Rehearsal: cannot certify the assembled candidate on this base.
+Promotion: chapter 33 record not merged.
+Seven-check start, correction pause/resume and time-box end: not run.
+No cohort payments or simulated successful start are claimed.
+Core start still needs an absence check outside selected hooks.

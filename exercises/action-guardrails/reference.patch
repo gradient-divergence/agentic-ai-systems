@@ -1,0 +1,59 @@
+--- a/refund_agent/rules.py
++++ b/refund_agent/rules.py
+@@ -9,6 +9,7 @@
+ 
+ _FRESHNESS_LIMITS = _ReadOnly({"policy": 30 * 86400, "order": 30 * 60, "shipment": 30 * 60})
+ _RISK_THRESHOLD = 0.2  # Fictional stage-1 threshold, not a calibrated estimate.
++_TIER1_DAILY_CAP: int | None = None  # Operator setting in integer cents; None disables it.
+ 
+ 
+ def tier_for(amount_cents: int) -> c.Tier:
+@@ -206,6 +207,15 @@
+ # endregion book:fnd.action-guardrails.approval-01
+ 
+ 
++def daily_cap_problem(amount_cents: int, tier1_paid_today: int) -> str | None:
++    """Every tier 1 payment meets the cap, approved or not."""
++    cap = _TIER1_DAILY_CAP
++    if tier_for(amount_cents) == c.Tier.AGENT and cap is not None:
++        if tier1_paid_today + amount_cents > cap:
++            return "tier1_daily_cap"
++    return None
++
++
+ # region book:fnd.action-guardrails.gate-01
+ def gate(
+     data: Dataset,
+@@ -214,6 +224,7 @@
+     proposal: c.Proposal | None,
+     approval: c.Approval | None,
+     refunded_cents: int = 0,
++    tier1_paid_today: int = 0,
+ ) -> str | None:
+     """All new payments pass this gate, including direct tool calls."""
+     if (
+@@ -225,6 +236,7 @@
+     problem = evidence_problem(data, state) or proposal_problem(
+         state, proposal, amount_cents
+     )
++    problem = problem or daily_cap_problem(amount_cents, tier1_paid_today)
+     if problem:
+         return problem
+     assert proposal is not None
+--- a/refund_agent/tools.py
++++ b/refund_agent/tools.py
+@@ -837,7 +837,13 @@
+         assert state.order is not None
+         proposal = self._read("proposals", self._proposals).get(state.proposal_id or "")
+         refunded = self.paid_cents(state.order.order_id, state.execution_at or state.request.at)
+-        return gate(self._data, state, amount, proposal, approval, refunded)
++        day = (state.execution_at or state.request.at).date()
++        today = sum(
++            receipt.amount_cents
++            for receipt in self._read("ledger", self._ledger).values()
++            if tier_for(receipt.amount_cents) == c.Tier.AGENT and receipt.at.date() == day
++        )
++        return gate(self._data, state, amount, proposal, approval, refunded, today)
+ 
+     def _execute(self, call: c.ToolCall, state: c.State) -> c.ToolResult:
+         args = call.arguments

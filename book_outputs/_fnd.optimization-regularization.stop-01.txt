@@ -1,0 +1,12 @@
+seed 7; 30 inputs, 40 training, 4000 validation; eta 0.314993
+scales and intercept fitted on training only; validation spent on selection
+lambda: training loss, validation loss (prediction loss, without penalty)
+0: 0.098477, 6.008191
+0.001: 0.098611, 5.651766
+0.01: 0.105802, 3.718481
+0.1: 0.180545, 1.102395
+1: 0.404616, 0.684049
+10: 0.780495, 0.846570
+selected lambda 1: validation loss 0.684049
+selected step 3: training loss 0.335750, validation loss 0.695375
+end step 2000: training loss 0.098477, validation loss 6.008133

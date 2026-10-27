@@ -1,0 +1,6 @@
+Constructed regional finality: shadow control and cohort rehearsal
+detector page 2026-10-05T22:13:56.121708+00:00; lead to first shadow payment 40.149036 hours
+corrections 0; late answers 5
+fixed cohort corrections 0; state running; stops 0
+fix=False: requests 936; shadow payments 442; timeliness bad 0
+fix=True: requests 936; shadow payments 440; timeliness bad 5

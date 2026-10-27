@@ -1,0 +1,6 @@
+seed 7; trained rank-2 merged 16-by-16 toy; training 768; held-out 2048
+float32 reference: 1024 bytes; held-out MSE 0.010101; noise floor 0.0100
+symmetric grid; one float64 step stored separately; no clipping or retraining
+bits | packed weight bytes | step bytes | max error | half step | within bound | held-out MSE | MSE / floor
+8 | 256 | 8 | 0.002834 | 0.002834 | True | 0.010152 | 1.015
+4 | 128 | 8 | 0.051410 | 0.051425 | True | 0.024126 | 2.413

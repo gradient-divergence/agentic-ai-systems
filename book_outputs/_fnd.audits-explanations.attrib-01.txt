@@ -1,0 +1,10 @@
+Constructed lender. Weights (3.0, 0.5, -0.2), intercept -3.0.
+Applicant (0.9, 4, 3). Log-odds 1.1.
+Reference average: (0.3, 1, 8).
+Attributions: 1.8, 1.5, 1.0
+Sum 4.3, log-odds gap 4.3.
+Principal reason: utilization.
+Reference best possible: (0, 0, 20).
+Attributions: 2.7, 2.0, 3.4
+Sum 8.1, log-odds gap 8.1.
+Principal reason: years of history.

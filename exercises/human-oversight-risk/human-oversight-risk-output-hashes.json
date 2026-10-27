@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-14T00:42:29.636963+00:00",
+  "changed": {
+    "book_outputs/_fnd.human-oversight-risk.catch-01.txt": {
+      "before": "1d8a43a1defb209f71d6b10a0cfc2841175391a3e570a637febdd55e31e1f76c",
+      "after": "19019b23501077c1c00ac7dad0e1afcc3b0091fa007b767145c350e6f573b670",
+      "reason": "Only decided busy-band plants (6\u201315 waiting) enter the alarm; corrected weekly looks, censored distribution, seed 7 and neutral wording."
+    }
+  },
+  "alarm_study": {
+    "load_band": "busy",
+    "queue_length_bounds": [
+      6,
+      15
+    ],
+    "replications": 1000,
+    "seeds": [
+      7,
+      1006
+    ],
+    "selection": "none",
+    "service_model": "exponential",
+    "staffing": "D3",
+    "days": 30,
+    "planting_per_week": 10,
+    "trailing_weeks": 4,
+    "median_week": null,
+    "p10_week": 1,
+    "p90_week": null,
+    "censoring": "Percentiles include runs undetected at day 30; None means not reached.",
+    "share_by_week2": 0.18,
+    "undetected_by_day30": 769,
+    "share_undetected_by_day30": 0.769,
+    "seeded_run": {
+      "seed": 7,
+      "first_alarm_week": null,
+      "undetected_by_day30": true
+    },
+    "comparison": {
+      "share_by_week2": 0.18,
+      "share_undetected_by_day30": 0.769,
+      "difference": "None. The prior fast result pooled overloaded cases."
+    }
+  },
+  "integration": "Assembled stage-6 partner integration remains pending."
+}

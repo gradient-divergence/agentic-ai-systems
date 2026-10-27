@@ -1,0 +1,38 @@
+estimand: candidate minus fixed offer rule; no repeat contact per eligible request
+rule: dr; interval 0.95; effective floor 400; exact level 0.025
+rule sha256: de2ad7d44805a9eaea9171f30909dd058151a52c9999cf9f6180538fba72fab0
+learning: 2025-04-01 to 2026-02-01; records 9837
+evaluation: 2026-02-01 to 2026-06-01; records 3929; randomized 3929; overrides apart 0
+window sha256: 20de3f5ffd64afe1ab5614aa02090ae4ef2380aabcf53a4ac6e77b0c89920ed4
+logger: frozen-capped-uniform-1; seed [7]
+logger sha256: 32302bb50baa8e7848f439dcc487d8c85d129c5f599a23c032c0c1785650ad77
+reward model sha256: 516d15379df4080e9908b03f00dbc1f07853868b4eb27a912c22d586da6e6148
+policy A sha256: 992a25b4a88a815e6558e994208dbbedbfca6f6c9272b4d8e461f6fa2422e396; upstream 92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd
+policy B sha256: f0270f22f53a613157c8b57b08e86cbea45a26b36c5b11a630b15f976684d7cb; upstream 92630ddf63e423747743c47300a1cfb52f079ce304d65bb0d92efeb74b8e64dd
+policy fixed sha256: 8b4e9a1656f92287f7edc597bf83786e73d791f5c4c45b563f39ef5d5d37a9d6; upstream b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f
+support: cell offer records positive_share min_positive matches A B fixed
+changed_mind dated 1112 1.000000 0.016667 13 1 0 0
+changed_mind referenced 1112 1.000000 0.016667 23 0 0 0
+changed_mind standard 1112 1.000000 0.966667 1076 0 1 1
+damaged dated 2552 1.000000 0.016667 40 1 0 0
+damaged referenced 2552 1.000000 0.016667 34 0 0 0
+damaged standard 2552 1.000000 0.966667 2478 0 1 1
+not_delivered dated 265 1.000000 0.016667 2 1 1 0
+not_delivered referenced 265 1.000000 0.016667 8 0 0 0
+not_delivered standard 265 1.000000 0.966667 255 0 0 1
+policy judged IPS SN DM DR n_eff
+A True 0.687198 0.818182 0.850226 0.822420 55.000000
+B True 0.776718 0.803815 0.812345 0.806703 1309.949426
+fixed True 0.813052 0.810711 0.803742 0.810706 3809.000000
+A improvement 0.011714; interval [-0.075485, 0.098914]; exact p 0.419110; seeded redraws; draws 100000; seed 7
+A: hold; candidate effective size below 400; improvement interval is not above zero; exact check exceeds 0.025
+B improvement -0.004003; interval [-0.030837, 0.022830]; exact p 0.696780; seeded redraws; draws 100000; seed 7
+B: hold; improvement interval is not above zero; exact check exceeds 0.025
+access: rule fingerprint before outcomes; outcome reads 1
+autonomy: drafts only; a person executes
+limits: this window's customers, season and logger; human-changed offers excluded; no known action chance; no interference assumed; future drift and delayed outcomes can change value; normal intervals can mislead on heavy ratios; seeded redraws approximate the exact law
+simulation truth: reads 1; after record True
+truth A: value 0.846017; improvement 0.035887
+truth B: value 0.814966; improvement 0.004836
+truth fixed: value 0.810130; improvement 0.000000
+truth does not change the rule, candidate or decision

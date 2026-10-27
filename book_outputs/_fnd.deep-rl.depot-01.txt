@@ -1,0 +1,23 @@
+depot settings: {"arrival_mean": 2.0, "capacity": 30, "courier_cost": 5.0, "minutes": 10, "periods": 36, "trip_cost": 40.0, "wait_cost": 1.0, "waiting_cap": 60}
+DQN widths [2, 32, 32, 2]; gamma 1.0; eta 0.001; batch 64; buffer 20000; update every 4 steps; refresh every 250 updates
+epsilon [1.0, 0.05, 10000]; training seeds [7, 11, 19, 23, 31]; budget 16060 steps; checkpoints every 2000 updates
+fixed-rule threshold 12; 200 shared held-out shifts; seeds 1400000000..1400000199
+agent's rule benchmark: 411.780000, from 100 training shifts; seeds 7000000..7000099
+agent seed 7, checkpoint 2000: estimated starting cost 34.128732
+agent seed 7, checkpoint 4000: estimated starting cost 119.559794
+selected checkpoint 2000; reported saving 377.651268 (91.711902%) against training rule benchmark
+| Policy or report | Mean cost a shift | Saving against rule | Paired 95% interval of saving |
+|---|---:|---:|---:|
+| Agent estimate (not realized) | 34.128732 | 377.651268 | not an interval |
+| selected checkpoint | 1354.715000 | -940.445000 | [-961.683482, -919.206518] |
+| DQN seed 7 | 427.935000 | -13.665000 | [-17.551552, -9.778448] |
+| DQN seed 11 | 415.745000 | -1.475000 | [-5.038566, 2.088566] |
+| DQN seed 19 | 417.405000 | -3.135000 | [-6.116662, -0.153338] |
+| DQN seed 23 | 419.335000 | -5.065000 | [-8.493454, -1.636546] |
+| DQN seed 31 | 411.515000 | 2.755000 | [-0.062414, 5.572414] |
+| fixed rule | 414.270000 | 0.000000 | [0.000000, 0.000000] |
+| exact policy | 407.370000 | 6.900000 | [5.331290, 8.468710] |
+exact expected cost by backward induction: 407.483851
+exact dispatch thresholds (periods left: waiting parcels): 36: 12, 18: 12, 6: 10, 3: 14, 2: 20, 1: 28
+five final seeds pass the paired adoption rule: False
+decision: do not adopt: exact policy available

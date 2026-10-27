@@ -1,0 +1,9 @@
+Constructed hospitals, 1000 patients each. Shared PPV .5 and TPR .8.
+base 0.10: FPR 0.088888889. TP 80, FP 80, FN 20.
+PPV=1 boundary: TP 80, FP 0, FN 20. TPR .8.
+base 0.30: FPR 0.342857143. TP 240, FP 240, FN 60.
+PPV=1 boundary: TP 240, FP 0, FN 60. TPR .8.
+FPR ratio second/first: 3.857143
+Constructed not-delivered settings A: base 0.80, PPV 0.994923858.
+Constructed not-delivered settings B: base 0.90, PPV 0.997737557.
+Shared error rates: TPR .98 and FPR .02. Realized counts are in month-01.

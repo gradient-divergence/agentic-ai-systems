@@ -1,0 +1,106 @@
+{
+  "question": {
+    "at": "2026-08-18T18:16:54+00:00",
+    "note": "the worked request's own wording and time of arrival",
+    "source_request": "r-7-0117",
+    "text": "damaged 33 days after delivery"
+  },
+  "reconstruction": {
+    "code": [
+      3
+    ],
+    "point": [
+      3,
+      4
+    ],
+    "reconstructed": [
+      3,
+      0
+    ],
+    "squared_error": 16,
+    "widths": [
+      2,
+      1,
+      2
+    ]
+  },
+  "searches": {
+    "dated": "refund_cap_v4@2026-07-01#eligibility",
+    "newest": "refund_cap_v4@2026-09-01#eligibility",
+    "similarity": "refund_cap_v4@2026-01-20#eligibility"
+  },
+  "versions": [
+    {
+      "from": "2026-01-20T00:00:00+00:00",
+      "return_days": 14,
+      "to": "2026-03-01T00:00:00+00:00",
+      "version": "2026-01-20"
+    },
+    {
+      "from": "2026-03-01T00:00:00+00:00",
+      "return_days": 21,
+      "to": "2026-05-01T00:00:00+00:00",
+      "version": "2026-03-01"
+    },
+    {
+      "from": "2026-05-01T00:00:00+00:00",
+      "return_days": 30,
+      "to": "2026-07-01T00:00:00+00:00",
+      "version": "2026-05-01"
+    },
+    {
+      "from": "2026-07-01T00:00:00+00:00",
+      "return_days": 30,
+      "to": "2026-09-01T00:00:00+00:00",
+      "version": "2026-07-01"
+    },
+    {
+      "from": "2026-09-01T00:00:00+00:00",
+      "return_days": 45,
+      "to": null,
+      "version": "2026-09-01"
+    }
+  ],
+  "width_error": [
+    {
+      "error": 0.7195411492435978,
+      "width": 1
+    },
+    {
+      "error": 0.5595411492435979,
+      "width": 2
+    },
+    {
+      "error": 0.4,
+      "width": 3
+    },
+    {
+      "error": 0.3,
+      "width": 4
+    },
+    {
+      "error": 0.2,
+      "width": 5
+    },
+    {
+      "error": 0.1,
+      "width": 6
+    },
+    {
+      "error": 1.9427240535022927e-30,
+      "width": 7
+    },
+    {
+      "error": 2.8199851431706786e-30,
+      "width": 8
+    },
+    {
+      "error": 2.8100666039570844e-30,
+      "width": 9
+    },
+    {
+      "error": 2.8707333972052823e-30,
+      "width": 10
+    }
+  ]
+}

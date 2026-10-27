@@ -1,0 +1,31 @@
+# refund_agent/contracts.py, excerpt
+# All amounts use one currency, USD, represented as integer cents.
+Cents = Annotated[int, Field(strict=True, gt=0)]
+
+class Record(BaseModel):
+    model_config = {
+        "extra": "forbid",
+        "frozen": True,
+        "revalidate_instances": "always",
+    }
+    ...
+    @field_validator("*")
+    def utc_dates(cls, value: object) -> object:
+        if isinstance(value, datetime):
+            return _utc_time(value)
+        return value
+
+class Item(Record):
+    name: str
+    quantity: Annotated[int, Field(strict=True, gt=0)]
+    unit_cents: Cents
+
+class Order(Record):
+    order_id: str
+    reference: str
+    purchased_at: datetime
+    observed_at: datetime
+    items: list[Item]
+    paid_cents: Cents
+    payment_id: str
+    prior_refunds: list[PriorRefund] = Field(default_factory=list)

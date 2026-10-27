@@ -1,0 +1,7 @@
+{
+  "steps": 2000,
+  "average_reward": 0.354,
+  "promote_rate": 1.0,
+  "accuracy": 0.677,
+  "output_dir": "foundations/companion/spine/outputs/rl_eval"
+}

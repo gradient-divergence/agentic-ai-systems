@@ -1,0 +1,8 @@
+learning window; 20 policy seeds 7 to 26; shared planted potential answers; epsilon 0.1, capped epsilon 0.3 and cap 0.05
+epsilon: final pseudo-regret mean 110.00; 10th to 90th percentiles [87.59, 136.22]
+ucb1: final pseudo-regret mean 174.41; 10th to 90th percentiles [174.41, 174.41]
+thompson: final pseudo-regret mean 80.48; 10th to 90th percentiles [56.63, 113.09]
+capped: final pseudo-regret mean 502.90; 10th to 90th percentiles [500.20, 505.45]
+not_delivered one_table_thompson: mean sends (standard, dated, referenced) 17.60, 459.50, 169.90; true mean no-contact rate of those sends 0.835212; loss vs best 0.044788
+not_delivered per_reason_thompson: mean sends (standard, dated, referenced) 68.55, 153.30, 425.15; true mean no-contact rate of those sends 0.857308; loss vs best 0.022692
+not_delivered capped: mean sends (standard, dated, referenced) 626.75, 10.80, 9.45; true mean no-contact rate of those sends 0.801502; loss vs best 0.078498

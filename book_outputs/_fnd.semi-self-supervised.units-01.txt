@@ -1,0 +1,19 @@
+paid tier 1 before 1 August: 15,739; K=4, ten starts, seed 7
+amount in cents, days as recorded
+  group 1: 3996, amount $18.70, delivery age 6.14 days
+  group 2: 3897, amount $6.21, delivery age 6.15 days
+  group 3: 3839, amount $43.86, delivery age 6.05 days
+  group 4: 4007, amount $31.44, delivery age 6.04 days
+both standardized on training
+  group 1: 3735, amount $12.42, delivery age 10.02 days
+  group 2: 4098, amount $12.40, delivery age 2.63 days
+  group 3: 3619, amount $37.50, delivery age 10.08 days
+  group 4: 4287, amount $37.26, delivery age 2.63 days
+standardized groups, seed 7 against seed 17: adjusted Rand 0.9968
+eight inputs: amount_cents, damaged, changed_mind, delivery_age_days, prior_refund_count, paid_cents, order_evidence_age_seconds, shipment_evidence_age_seconds
+  group 1: amount_cents=2520.66, damaged=1.00, changed_mind=0.00, delivery_age_days=9.53, prior_refund_count=0.00, paid_cents=54898.81, order_evidence_age_seconds=440.12, shipment_evidence_age_seconds=447.72
+  group 2: amount_cents=2463.01, damaged=0.00, changed_mind=1.00, delivery_age_days=6.54, prior_refund_count=0.20, paid_cents=55380.62, order_evidence_age_seconds=452.10, shipment_evidence_age_seconds=458.37
+  group 3: amount_cents=2510.74, damaged=0.81, changed_mind=0.00, delivery_age_days=2.05, prior_refund_count=0.00, paid_cents=54963.74, order_evidence_age_seconds=476.20, shipment_evidence_age_seconds=467.55
+  group 4: amount_cents=2487.10, damaged=0.92, changed_mind=0.00, delivery_age_days=6.05, prior_refund_count=1.00, paid_cents=55284.24, order_evidence_age_seconds=450.67, shipment_evidence_age_seconds=448.56
+center separation, standardized range: prior_refund_count=2.51, changed_mind=2.22, damaged=2.10, delivery_age_days=1.76, order_evidence_age_seconds=0.14, shipment_evidence_age_seconds=0.08, amount_cents=0.04, paid_cents=0.02
+nearest-center distance, training percentile 98: 3.2526

@@ -1,0 +1,11 @@
+exercise 3a: 6144 numbers; 1.171875%; 12288 bytes
+exercise 3b: 65536 of 1048576; 6.25%
+exercise 3c: masked loss 0.341; with context 1.567 nats
+exercise 4: lead 0.04; paired [0.0057, 0.0743]; independent [-0.0171, 0.0971]; exact 0.0357; accepted
+exercise 5: adapter 115/121; prompt 116/121; parse failures 3; discordant 2/3; lead -0.0083; exact 1.0000; not adopted
+exercise 6: prompt 20/20, extended suite passes; adapter extended suite fails; forbidden 8/20
+exercise 6 forbidden ids: exercise-6-r-7-02, exercise-6-r-7-03, exercise-6-r-7-04, exercise-6-r-7-09, exercise-6-r-7-12, exercise-6-r-7-13, exercise-6-r-7-14, exercise-6-r-7-19
+exercise 6 forbidden rate Wilson interval: [0.2188, 0.6134]; zero-failure bound inapplicable to this failing run
+exercise 6 if 20 were clean, upper bound 0.1391; policy-change cases added 14; new training cases 0
+exercise 6 suite fingerprint changed: True; golden manifest unchanged: True
+exercise 6 suite fingerprint: 3f2ffaa1900fe63164162abf4fdb8b3a5983c1adbd8dc205e7e4f7222ac221bd

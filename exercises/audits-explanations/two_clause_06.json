@@ -1,0 +1,120 @@
+{
+  "current": {
+    "at": "2026-06-01T00:00:00Z",
+    "order": {
+      "items": [
+        {
+          "name": "physical desk lamp",
+          "quantity": 1,
+          "unit_cents": 4000
+        }
+      ],
+      "observed_at": "2026-05-31T23:58:00Z",
+      "order_id": "audits-explanations-order",
+      "paid_cents": 4000,
+      "payment_id": "audits-explanations-payment",
+      "prior_refunds": [],
+      "purchased_at": "2026-04-26T00:00:00Z",
+      "reference": "audits-explanations-order"
+    },
+    "policy": {
+      "cap_cents": 100000,
+      "effective_at": "2026-05-01T00:00:00Z",
+      "named_approver": "morgan",
+      "policy_id": "refund_cap_v4",
+      "return_days": 30,
+      "text": "refund_cap_v4@2026-05-01: physical goods. #eligibility: damaged or changed_mind within 30 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+      "version": "2026-05-01"
+    },
+    "policy_observed_at": "2026-05-31T23:00:00Z",
+    "refunded_cents": 0,
+    "request": {
+      "amount_cents": 5200,
+      "at": "2026-05-30T00:00:00Z",
+      "failure": null,
+      "order_reference": "audits-explanations-order",
+      "preparer_id": "refund-agent",
+      "reason": "damaged",
+      "request_id": "audits-explanations-two-clause",
+      "requester_id": "audit-customer",
+      "text": ""
+    },
+    "shipment": {
+      "events": [
+        {
+          "at": "2026-04-27T00:00:00Z",
+          "status": "shipped"
+        },
+        {
+          "at": "2026-05-01T00:00:00Z",
+          "status": "delivered"
+        }
+      ],
+      "observed_at": "2026-05-31T23:58:00Z",
+      "order_id": "audits-explanations-order"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-05-31T00:00:00Z",
+      "order": {
+        "items": [
+          {
+            "name": "physical desk lamp",
+            "quantity": 1,
+            "unit_cents": 4000
+          }
+        ],
+        "observed_at": "2026-05-30T23:58:00Z",
+        "order_id": "audits-explanations-order",
+        "paid_cents": 4000,
+        "payment_id": "audits-explanations-payment",
+        "prior_refunds": [],
+        "purchased_at": "2026-04-26T00:00:00Z",
+        "reference": "audits-explanations-order"
+      },
+      "policy": {
+        "cap_cents": 100000,
+        "effective_at": "2026-05-01T00:00:00Z",
+        "named_approver": "morgan",
+        "policy_id": "refund_cap_v4",
+        "return_days": 30,
+        "text": "refund_cap_v4@2026-05-01: physical goods. #eligibility: damaged or changed_mind within 30 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+        "version": "2026-05-01"
+      },
+      "policy_observed_at": "2026-05-30T23:00:00Z",
+      "refunded_cents": 0,
+      "request": {
+        "amount_cents": 5200,
+        "at": "2026-05-30T00:00:00Z",
+        "failure": null,
+        "order_reference": "audits-explanations-order",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "audits-explanations-two-clause",
+        "requester_id": "audit-customer",
+        "text": ""
+      },
+      "shipment": {
+        "events": [
+          {
+            "at": "2026-04-27T00:00:00Z",
+            "status": "shipped"
+          },
+          {
+            "at": "2026-05-01T00:00:00Z",
+            "status": "delivered"
+          }
+        ],
+        "observed_at": "2026-05-30T23:58:00Z",
+        "order_id": "audits-explanations-order"
+      }
+    }
+  ],
+  "review_route": {
+    "contact": "refund decision desk",
+    "deadline": "2026-06-03T00:00:00Z",
+    "request_id": "audits-explanations-two-clause",
+    "ticket_id": "review-audits-explanations-two-clause"
+  }
+}

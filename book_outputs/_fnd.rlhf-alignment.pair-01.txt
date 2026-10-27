@@ -1,0 +1,4 @@
+chosen rejected gap preference_probability loss
+1.2 0.4 0.8 0.6900 0.3711
+6.2 5.4 0.8 0.6900 0.3711
+70:30 split: gap 0.8473; agreement ceiling 0.7000

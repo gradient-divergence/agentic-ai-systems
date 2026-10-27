@@ -1,0 +1,8 @@
+diagnostic same check in the single agent; not a challenger; no rule decision
+correct 376/400; paid 368; paid wrongly 16; referred 32
+additional payments 0; changed against single 32; differs from independent 0
+verifier calls 0; verdict records 0; review items 32
+scripted checks 400; whitespace-separated words/check 80.08
+local scripted check wall-clock seconds/request on this machine: 0.000197486; not a model call; no simulated latency or model-call price
+events: single finished; independent finished; in_agent finished; truth consulted
+diagnostic truth accesses 1; original commission unchanged

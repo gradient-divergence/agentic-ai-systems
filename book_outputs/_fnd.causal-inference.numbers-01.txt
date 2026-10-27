@@ -1,0 +1,15 @@
+constructed patients: patient D Y(0) Y(1) observed effect
+1 1 1 0 0 -1
+2 1 1 1 1 +0
+3 0 0 0 0 +0
+4 0 0 0 0 +0
+average effect -0.25; observed comparison +0.50
+constructed arms: 1,000 each, amount $40; pay found false 100;
+refer denied 150, paid 850, found false 30; stipulated wrong denials 80
+estimated reduction in found false payments 70, a total; assumes equal prevalence
+equals estimated stopped false claims only if every paid false claim is found; no denial is adjudicated by this contrast
+cost per assigned request: pay $4.00; refer $6.80; difference $2.80; SE $0.465; 95% interval $1.89 to $3.71
+found false among paid: 10.0% against 3.5%
+without denial adjudication: refer cost $5.20 to $8.20
+sample size, sd $12, difference $2: 566 per arm
+half the difference ($1): 2261 per arm (fourfold before rounding)

@@ -1,0 +1,12 @@
+| Measure | Supervised | Open pool | Refused pool |
+|---|---|---|---|
+| Training loss | 0.1289 | 0.1227 | 0.0792 |
+| Validation loss | 0.1683 | 0.1681 | 0.1698 |
+| Mean prediction | 0.0348 | 0.0337 | 0.0312 |
+| change |  | −0.0012 (−0.0015 to −0.0008) | −0.0037 (−0.0044 to −0.0030) |
+| Log loss | 0.1259 | 0.1252 | 0.1229 |
+| change |  | −0.0007 (−0.0020 to 0.0007) | −0.0030 (−0.0049 to −0.0012) |
+| Referred | 119 | 118 | 114 |
+| Wrong payments paid | 12 | 13 | 12 |
+| Cost per request | 0.7989 | 0.7975 | 0.7788 |
+| change |  | −0.0014 (−0.0041 to 0.0000) | −0.0200 (−0.0440 to 0.0040) |

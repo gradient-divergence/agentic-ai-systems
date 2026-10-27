@@ -1,0 +1,291 @@
+{
+  "assessment": {
+    "adopt": false,
+    "estimates": [
+      {
+        "double_estimate": 7.748208357831913,
+        "double_realized": 57.749226988046146,
+        "original_estimate": 8.474659818011114,
+        "original_realized": 80.52490811142019,
+        "seed": 7
+      },
+      {
+        "double_estimate": 8.076979552653201,
+        "double_realized": 89.31554059809882,
+        "original_estimate": 8.052579015356944,
+        "original_realized": 78.7636492567432,
+        "seed": 11
+      },
+      {
+        "double_estimate": 7.880016151571331,
+        "double_realized": 81.66643389878253,
+        "original_estimate": 8.604085439999842,
+        "original_realized": 65.75482712906255,
+        "seed": 19
+      },
+      {
+        "double_estimate": 8.759376247046236,
+        "double_realized": 99.34295169575844,
+        "original_estimate": 9.07009395325804,
+        "original_realized": 95.40357269579754,
+        "seed": 23
+      },
+      {
+        "double_estimate": 7.747806470824206,
+        "double_realized": 82.1821960540669,
+        "original_estimate": 7.9492150459744995,
+        "original_realized": 79.48286146926084,
+        "seed": 31
+      }
+    ]
+  },
+  "comparison": [
+    {
+      "double_mean": 86.1,
+      "improvement_interval": [
+        -82.02189162911849,
+        -73.57810837088151
+      ],
+      "original_mean": 163.9,
+      "seed": 7
+    },
+    {
+      "double_mean": 224.0,
+      "improvement_interval": [
+        63.46782364257058,
+        75.53217635742942
+      ],
+      "original_mean": 154.5,
+      "seed": 11
+    },
+    {
+      "double_mean": 170.5,
+      "improvement_interval": [
+        42.44271893641,
+        82.95728106359
+      ],
+      "original_mean": 107.8,
+      "seed": 19
+    },
+    {
+      "double_mean": 500.0,
+      "improvement_interval": [
+        103.74728069765303,
+        217.25271930234697
+      ],
+      "original_mean": 339.5,
+      "seed": 23
+    },
+    {
+      "double_mean": 171.9,
+      "improvement_interval": [
+        10.278967765442395,
+        16.921032234557604
+      ],
+      "original_mean": 158.3,
+      "seed": 31
+    }
+  ],
+  "evaluation_seeds": [
+    1000000000,
+    1000000001,
+    1000000002,
+    1000000003,
+    1000000004,
+    1000000005,
+    1000000006,
+    1000000007,
+    1000000008,
+    1000000009
+  ],
+  "method": {
+    "checkpoint": "final, never selected by evaluation",
+    "initialization": "MLP seeded He hidden layers, scaled normal output, zero biases",
+    "optimizer": {
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "delta": 1e-08,
+      "name": "Adam"
+    },
+    "random_streams": "behavior SeedSequence([seed, 2]); replay [seed, 5]",
+    "starting_estimate": "mean max Q over the ten evaluation starting states",
+    "state_scale": [
+      2.4,
+      2.0,
+      0.20943951023931953,
+      2.0
+    ],
+    "updates": "one per 64 new transitions; refresh counted in optimizer updates"
+  },
+  "runs": [
+    {
+      "double_returns": [
+        88.0,
+        88.0,
+        84.0,
+        100.0,
+        97.0,
+        80.0,
+        94.0,
+        73.0,
+        83.0,
+        74.0
+      ],
+      "double_starting_estimate": 7.748208357831913,
+      "original_returns": [
+        170.0,
+        166.0,
+        158.0,
+        189.0,
+        180.0,
+        156.0,
+        179.0,
+        142.0,
+        156.0,
+        143.0
+      ],
+      "original_starting_estimate": 8.474659818011114,
+      "seed": 7
+    },
+    {
+      "double_returns": [
+        231.0,
+        225.0,
+        225.0,
+        257.0,
+        238.0,
+        218.0,
+        236.0,
+        198.0,
+        214.0,
+        198.0
+      ],
+      "double_starting_estimate": 8.076979552653201,
+      "original_returns": [
+        159.0,
+        155.0,
+        154.0,
+        169.0,
+        161.0,
+        150.0,
+        162.0,
+        142.0,
+        150.0,
+        143.0
+      ],
+      "original_starting_estimate": 8.052579015356944,
+      "seed": 11
+    },
+    {
+      "double_returns": [
+        174.0,
+        178.0,
+        184.0,
+        144.0,
+        153.0,
+        206.0,
+        144.0,
+        172.0,
+        184.0,
+        166.0
+      ],
+      "double_starting_estimate": 7.880016151571331,
+      "original_returns": [
+        112.0,
+        112.0,
+        100.0,
+        124.0,
+        123.0,
+        96.0,
+        135.0,
+        87.0,
+        102.0,
+        87.0
+      ],
+      "original_starting_estimate": 8.604085439999842,
+      "seed": 19
+    },
+    {
+      "double_returns": [
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ],
+      "double_starting_estimate": 8.759376247046236,
+      "original_returns": [
+        294.0,
+        332.0,
+        398.0,
+        213.0,
+        250.0,
+        500.0,
+        250.0,
+        361.0,
+        447.0,
+        350.0
+      ],
+      "original_starting_estimate": 9.07009395325804,
+      "seed": 23
+    },
+    {
+      "double_returns": [
+        178.0,
+        171.0,
+        171.0,
+        182.0,
+        179.0,
+        167.0,
+        180.0,
+        160.0,
+        169.0,
+        162.0
+      ],
+      "double_starting_estimate": 7.747806470824206,
+      "original_returns": [
+        161.0,
+        161.0,
+        159.0,
+        177.0,
+        169.0,
+        151.0,
+        172.0,
+        140.0,
+        152.0,
+        141.0
+      ],
+      "original_starting_estimate": 7.9492150459744995,
+      "seed": 31
+    }
+  ],
+  "settings": {
+    "batch_size": 64,
+    "budget": 50000,
+    "capacity": 20000,
+    "epsilon_end": 0.05,
+    "epsilon_steps": 10000,
+    "eta": 0.001,
+    "evaluation_every": 2500,
+    "gamma": 0.99,
+    "refresh": 100,
+    "widths": [
+      4,
+      64,
+      64,
+      2
+    ]
+  },
+  "training_seeds": [
+    7,
+    11,
+    19,
+    23,
+    31
+  ]
+}

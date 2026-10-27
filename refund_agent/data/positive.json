@@ -1,0 +1,27 @@
+{
+  "orders": [
+    {"order_id": "delivered", "reference": "delivered", "purchased_at": "2026-01-18T12:00:00Z", "observed_at": "2026-01-20T12:00:00Z", "items": [{"name": "lamp", "quantity": 1, "unit_cents": 100000}], "paid_cents": 100000, "payment_id": "payment-delivered"},
+    {"order_id": "shipped", "reference": "shipped", "purchased_at": "2026-01-18T12:00:00Z", "observed_at": "2026-01-20T12:00:00Z", "items": [{"name": "lamp", "quantity": 1, "unit_cents": 100000}], "paid_cents": 100000, "payment_id": "payment-shipped"}
+  ],
+  "requests": [
+    {"request_id": "positive-2499", "requester_id": "customer-2499", "order_reference": "delivered", "at": "2026-01-20T12:00:00Z", "amount_cents": 2499, "reason": "damaged"},
+    {"request_id": "positive-4999", "requester_id": "customer-4999", "order_reference": "delivered", "at": "2026-01-20T12:00:00Z", "amount_cents": 4999, "reason": "changed_mind"},
+    {"request_id": "positive-100", "requester_id": "customer-100", "order_reference": "shipped", "at": "2026-01-20T12:00:00Z", "amount_cents": 100, "reason": "not_delivered"},
+    {"request_id": "positive-5000", "requester_id": "customer-5000", "order_reference": "delivered", "at": "2026-01-20T12:00:00Z", "amount_cents": 5000, "reason": "damaged"},
+    {"request_id": "positive-50000", "requester_id": "customer-50000", "order_reference": "delivered", "at": "2026-01-20T12:00:00Z", "amount_cents": 50000, "reason": "changed_mind"}
+  ],
+  "shipments": [
+    {"order_id": "delivered", "observed_at": "2026-01-20T12:00:00Z", "events": [{"at": "2026-01-19T12:00:00Z", "status": "delivered"}]},
+    {"order_id": "shipped", "observed_at": "2026-01-20T12:00:00Z", "events": [{"at": "2026-01-19T12:00:00Z", "status": "shipped"}]}
+  ],
+  "policies": [{"version": "2026-01-20", "effective_at": "2026-01-20T00:00:00Z", "return_days": 30, "cap_cents": 100000, "text": "Fictional physical goods refunds in USD cents."}],
+  "retrievals": [
+    {"request_id": "positive-2499", "version": "2026-01-20", "observed_at": "2026-01-20T12:00:00Z"},
+    {"request_id": "positive-4999", "version": "2026-01-20", "observed_at": "2026-01-20T12:00:00Z"},
+    {"request_id": "positive-100", "version": "2026-01-20", "observed_at": "2026-01-20T12:00:00Z"},
+    {"request_id": "positive-5000", "version": "2026-01-20", "observed_at": "2026-01-20T12:00:00Z"},
+    {"request_id": "positive-50000", "version": "2026-01-20", "observed_at": "2026-01-20T12:00:00Z"}
+  ],
+  "reviewers": [{"reviewer_id": "alex", "name": "Alex", "role": "reviewer"}, {"reviewer_id": "morgan", "name": "Morgan", "role": "named_approver"}],
+  "correct": []
+}

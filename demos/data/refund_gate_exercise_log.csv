@@ -1,0 +1,13 @@
+record,request,event,cents,approved_cents,money_moved
+1,q1,approval,12000,12000,no
+2,q1,intent,12000,12000,no
+3,q1,confirmation,12000,12000,yes
+4,q2,intent,2499,,no
+5,q2,confirmation,2499,,yes
+6,q3,approval,30000,25000,no
+7,q3,intent,30000,25000,no
+8,q3,confirmation,30000,25000,yes
+9,q4,intent,4999,,no
+10,q5,intent,8000,,no
+11,q5,confirmation,8000,,yes
+12,q6,decision,2499,,no

@@ -1,0 +1,19 @@
+Every promotion: release, passing declared-version cases, release owner.
+model.scripted_model: release and shadow comparison
+model.risk_score/risk_threshold: selection, current calibration, signed costs,
+experiment run or signed decline, rebuild
+prompt.*: passing regression suite
+tools.agent/agent_code/core: release suite including safety cases
+tools.tool_contracts: tool contract tests
+tools.data_contracts: source tests and notice
+tools.event_time: replay and late-scan tests
+tools.runtime/adapter: runtime swap including test_runtime_swap.py
+tools.verifier: matched-case verifier arms
+tools.environment: suite rerun in the new environment
+tools.components: tests for changed selected components
+policy.versions/register_snapshot: new version's policy-change cases, support
+and policy-owner notice
+policy.offer_rule: offer evaluation record
+index.*: no frozen question loses its clause; dated recall
+Threshold experiment: run or decline signed by the decision owner
+with the cost-derived threshold's assumption and signature time.

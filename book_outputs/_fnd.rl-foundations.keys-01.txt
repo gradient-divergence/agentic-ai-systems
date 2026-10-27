@@ -1,0 +1,6 @@
+exercise 4: finish 3.0, wait once then finish 3.4, wait forever 5.0, optimum 5.0, tie discount 0.666667 (2/3), sweeps within 0.01 25
+exercise 5: eta 0.5, discount 1, reward -3, current -20, next -15: no scan -19.0, scan -11.5
+exercise 5 running mean: rewards [1, -2, 4, 0], discount 0, final 0.75
+exercise 8 acceptance: 5 unique evidenced rows; JSON round-trip; verdict learn iff every answer is yes; rendered table; autonomy unchanged
+exercise 6: parcel amount 24.99, waiting price 3.00: pay day 4, cost 8.66
+practice carriers: pooled cost 13.98, aware cost 13.43, gap 0.54

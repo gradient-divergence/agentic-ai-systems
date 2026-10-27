@@ -1,0 +1,8 @@
+illustrative costs: wrong payment 2499 cents; review 400 cents; catch saves 2099 cents
+break-even: false = (2099 * catch - call_cents) / 400; saves money below the line
+before call: 0 cents; illustrative call prices: 25 cents, 100 cents
+illustrative review capacity: catch + false <= 0.100000/request
+fixture: catch 0.060000; false 0.020000; review load 0.080000/request; saving before call 117.940 cents/request
+  illustrative call 25 cents: 92.940; 100 cents: 17.940 cents/request
+rare mix: catch 0.005000; false 0.020000; review load 0.025000/request; saving before call 2.495 cents/request
+  illustrative call 25 cents: -22.505; 100 cents: -97.505 cents/request

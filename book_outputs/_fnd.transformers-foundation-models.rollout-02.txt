@@ -1,0 +1,10 @@
+Random decoder, seed 7; nothing in this rollout is trained.
+step 1 state: (start) The sky is
+step 1 action: (start); probability=0.262324
+step 1 appended: (start) The sky is (start)
+step 2 state: (start) The sky is (start)
+step 2 action: sky; probability=0.272768
+step 2 appended: (start) The sky is (start) sky
+step 3 state: (start) The sky is (start) sky
+step 3 action: cloudy; probability=0.569063
+step 3 appended: (start) The sky is (start) sky cloudy

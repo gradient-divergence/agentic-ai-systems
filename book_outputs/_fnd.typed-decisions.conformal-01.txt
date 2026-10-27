@@ -1,0 +1,54 @@
+triage: 9 scores, alpha 0.20, rank 8, threshold 0.40
+triage set: ('level 1',)
+redrawn July: 991 paid tier 1, 50 wrong (rate 0.050454); alpha 0.10
+marginal: rank 893, threshold 0.162663
+class-conditional: sound rank 848, threshold 0.117047; wrong rank 46,
+  threshold 0.975479
+august, marginal sets:
+  empty: 64/1022 = 0.062622
+  sound: 958/1022 = 0.937378
+  wrong: 0/1022 = 0.000000
+  both: 0/1022 = 0.000000
+  coverage: 938/1022 = 0.917808 (0.899363, 0.933124); coverage shown
+  sound coverage: 938/990 = 0.947475 (0.931768, 0.959722); diagnostic only
+  wrong coverage: 0/32 = 0.000000 (0.000000, 0.108881); diagnostic only
+august, class-conditional sets:
+  empty: 0/1022 = 0.000000
+  sound: 258/1022 = 0.252446
+  wrong: 116/1022 = 0.113503
+  both: 648/1022 = 0.634051
+  coverage: 926/1022 = 0.906067 (0.886628, 0.922463); coverage shown
+  sound coverage: 894/990 = 0.903030 (0.883009, 0.919936); diagnostic only
+  wrong coverage: 32/32 = 1.000000 (0.891119, 1.000000); diagnostic only
+september, marginal sets:
+  empty: 82/952 = 0.086134
+  sound: 870/952 = 0.913866
+  wrong: 0/952 = 0.000000
+  both: 0/952 = 0.000000
+  coverage: 829/952 = 0.870798 (0.847991, 0.890625); undercoverage shown
+  sound coverage: 829/883 = 0.938845 (0.921059, 0.952829); diagnostic only
+  wrong coverage: 0/69 = 0.000000 (0.000000, 0.052739); diagnostic only
+september, class-conditional sets:
+  empty: 0/952 = 0.000000
+  sound: 252/952 = 0.264706
+  wrong: 132/952 = 0.138655
+  both: 568/952 = 0.596639
+  coverage: 853/952 = 0.896008 (0.875000, 0.913834); coverage shown
+  sound coverage: 792/883 = 0.896942 (0.875139, 0.915307); diagnostic only
+  wrong coverage: 61/69 = 0.884058 (0.787540, 0.940066); diagnostic only
+95% intervals: exact Clopper-Pearson below 50, Wilson otherwise
+verdict fixed before reads: lower >= 0.87 shows coverage; else upper < 0.90
+  shows undercoverage; otherwise inconclusive
+model chapter5-boosted-platt-seed7-v1; costs illustrative, unsigned; seed 20
+threshold record sha256:
+  dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0
+august manifest sha256:
+  486cb672c8685089ee58f65dd05301deeb06555167616f4d4197495d4baaea3c
+  access 1: typed decision record; thresholds fixed
+    dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0; one
+    proper-score, band, conformal and figure record
+september manifest sha256:
+  f8296ed50fee1854c3c98859f6eab7e0fda3af1185ce40725e10838cb1de1b66
+  access 1: typed decision record; thresholds fixed
+    dd175138fed0c1914c6f858dbb67a313f247f3bb70341830d3ea241c0fd038f0; one
+    proper-score, band, conformal and figure record

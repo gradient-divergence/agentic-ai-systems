@@ -1,0 +1,16 @@
+Constructed cohort rehearsal; payments enter the simulated ledger
+request live-r-34-1310; 4999 cents; claim 2026-10-06T04:34:59+00:00
+delivery scan 2026-10-05T21:14:14.010709+00:00; claim after scan 7.345830 hours
+second run wait 36.048051 hours
+executed cohort payment 4999 cents; shipment age 0.000000 seconds
+Virtual duration table (seconds): {'step': 0.02, 'tool': 0.1, 'gate': 0.03,
+'store': 0.01}; no tokenizer, tokens null
+2026-10-06T04:34:59+00:00 run attempt 1 status held; links ()
+2026-10-07T16:37:51.983927+00:00 watermark_advance attempt 1 status ok; links
+()
+2026-10-07T16:37:51.983927+00:00 run attempt 2 status ok; links
+(('observability-reliability-causal-349', 'released_by'),)
+2026-10-07T16:37:52.913927+00:00 gate attempt 2 status ok; links ()
+2026-10-07T16:37:52.953927+00:00 store:ledger attempt 2 status ok; links ()
+2026-10-07T20:14:14.010709+00:00 correction attempt 2 status ok; links
+(('observability-reliability-span-368', 'corrects'),)

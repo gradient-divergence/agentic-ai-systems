@@ -1,0 +1,15 @@
+_FRESHNESS_LIMITS = _ReadOnly({"policy": 30 * 86400, "order": 30 * 60,
+  "shipment": 30 * 60})
+
+def freshness_problem(freshness: dict[str, float]) -> str | None:
+    for source, limit in _FRESHNESS_LIMITS.items():
+        age = freshness.get(source)
+        if age is None:
+            return f"missing_{source}_freshness"
+        if not math.isfinite(age):
+            return f"invalid_{source}_freshness"
+        if age < 0:
+            return f"future_{source}"
+        if age > limit:
+            return f"stale_{source}"
+    return None

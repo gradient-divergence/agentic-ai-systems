@@ -1,0 +1,4 @@
+step                     signed  run  verdict
+tier 1, drafts to shadow      8   10  accepted
+tier 1, drafts to shadow     12   10  signed after its run began
+tier 2, to one approval       8   10  no threshold

@@ -1,0 +1,7 @@
+TD: current 2, reward 1, next 4, discount 0.9, eta 0.1
+Q: day 4 wait, current -46.00, reward -3.00, next pay -49.99 and wait -51.20,
+  discount 1, eta 0.1
+TD nonterminal: target 4.60, error 2.60, new value 2.26
+TD terminal (next value 4 ignored): target 1.00, error -1.00, new value 1.90
+Q day 4 wait no scan: target -52.99, error -6.99, new value -46.70
+Q day 4 wait scan: target -3.00, error 43.00, new value -41.70

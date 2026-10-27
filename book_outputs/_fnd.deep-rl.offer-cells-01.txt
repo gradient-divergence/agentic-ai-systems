@@ -1,0 +1,25 @@
+learning window: [2025-04-01, 2026-02-01)
+logger: seed 7; epsilon 0.30; cap 0.05; reason-only learner
+amount band: under 2500 cents / 2500 cents and over
+earlier refund: a strictly earlier paid learning row for this requester
+requests 9837; requesters 9837; earlier-refund flags 0
+reason | standard | dated | referenced
+damaged | 6113 | 247 | 35
+changed_mind | 2720 | 54 | 21
+not_delivered | 622 | 15 | 10
+9 cells: 0 empty; 0 below 10 (includes empty)
+reason | amount cents | earlier refund | standard | dated | referenced
+damaged | <2500 | no | 3053 | 109 | 22
+damaged | <2500 | yes | 0 | 0 | 0
+damaged | >=2500 | no | 3060 | 138 | 13
+damaged | >=2500 | yes | 0 | 0 | 0
+changed_mind | <2500 | no | 1378 | 27 | 11
+changed_mind | <2500 | yes | 0 | 0 | 0
+changed_mind | >=2500 | no | 1342 | 27 | 10
+changed_mind | >=2500 | yes | 0 | 0 | 0
+not_delivered | <2500 | no | 304 | 6 | 6
+not_delivered | <2500 | yes | 0 | 0 | 0
+not_delivered | >=2500 | no | 318 | 9 | 4
+not_delivered | >=2500 | yes | 0 | 0 | 0
+36 cells: 18 empty; 22 below 10 (includes empty)
+logistic: 7 weights (1 intercept + 2 reason + 2 offer + 1 amount + 1 prior)

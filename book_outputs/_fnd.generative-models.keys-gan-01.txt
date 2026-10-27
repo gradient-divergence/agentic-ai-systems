@@ -1,0 +1,4 @@
+exercise 5: data (0.6, 0.4); generator (0.3, 0.7)
+best discriminator: 0.666667 0.363636
+objective -1.293893; floor -1.386294
+Jensen-Shannon divergence 0.046201

@@ -1,0 +1,30 @@
+Offline replay with fits fixed by 1 August; every input is from the decision time.
+Selection: first by decision time in the July open pool; prefer mapped risk >= 0.080,
+  raw risk <= 0.1, amount >= $25; relax amount first, then confidence, then referral.
+Decision snapshot begins (decision-time fields only)
+request history-r-7-030054; decided 2026-07-02T02:19:54+00:00; tier 1
+policy refund_cap_v4@2026-07-01; policy decision approve (paid)
+amount 3040 cents ($30.40); reason changed_mind; days since delivery 6; earlier refunds 1
+original payment 99303 cents; order evidence age 601s; shipment evidence age 195s
+feature                            standardized input  coefficient  contribution
+amount_cents                                 0.377300     0.103321      0.038983
+damaged                                     -1.362574     0.308764     -0.420714
+changed_mind                                 1.588527    -0.226471     -0.359756
+delivery_age_days                           -0.019358     0.174751     -0.003383
+prior_refund_count                           2.007843     0.751487      1.508867
+paid_cents                                   1.708507     0.035550      0.060737
+order_evidence_age_seconds                   0.566319     0.001689      0.000956
+shipment_evidence_age_seconds               -1.017764     0.018635     -0.018966
+logistic intercept -3.740768; log-odds -2.934043; probability 0.050496
+boosted trees as trained 0.065682; after validation Platt map 0.085512
+expected cost: pay $2.599550; review $4.00
+mapped drafts: tier threshold 0.080 -> refer; cost rule -> pay; denied on a score: 0
+specification permits: drafts only; a person executes
+Decision snapshot ends
+Later observed outcome: final 2026-08-01T02:19:54+00:00; found_false_30d 0; paid cost $0.00
+Self-training on the open pool 985, confidence 0.9: would accept in round 1; pseudo-label 0
+Only the paid outcome is observed; the referral outcome and cost were never recorded.
+Selection record keeps boosted trees with map; score 0.085512; offline tier draft refer
+Promotion granted: none; drafts only, a person executes
+Signer: model owner; illustrative costs await the decision owner's signature
+Frozen access logs unchanged by trace: August 0, September 0

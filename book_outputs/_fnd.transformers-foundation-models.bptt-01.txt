@@ -1,0 +1,6 @@
+n=10; h0=0.1; eps=0.000001
+w=0.5: linear=0.000977; tanh=0.000973; central=0.000973
+w=1.0: linear=1.000000; tanh=0.907591; central=0.907591
+w=1.2: linear=6.191736; tanh=2.483603; central=2.483603
+tokens 5: recurrent links 4, causal-attention links 1
+tokens 2048: recurrent links 2047, causal-attention links 1

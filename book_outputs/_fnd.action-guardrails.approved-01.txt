@@ -1,0 +1,6 @@
+without an approval: refer approval_required, not paid
+  audit decision     money_moved=no paid_cents=0
+approved by alex: approve eligible, paid
+  audit approval     money_moved=no paid_cents=0
+  audit intent       money_moved=no paid_cents=0
+  audit confirmation money_moved=yes paid_cents=12000

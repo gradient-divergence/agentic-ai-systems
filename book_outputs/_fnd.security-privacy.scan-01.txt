@@ -1,0 +1,5 @@
+Every recorded demo trace, audit, decision, credential log and prompt.
+Includes ordinary/tier 3 grids, controls, positives, public and revoke runs.
+Observed objects searched: 19609
+Raw, hexadecimal and base64 secret matches: 0
+Issuer and export keys are distinct public fixture labels.

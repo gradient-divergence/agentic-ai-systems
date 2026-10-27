@@ -1,0 +1,11 @@
+{
+  "constructed": true,
+  "tier": 1,
+  "requests": 120,
+  "reported_agreement": 107,
+  "review_screen_log": [
+    {"person_saw_shadow": true, "requests": 40, "agreed": 39},
+    {"person_saw_shadow": false, "requests": 80, "agreed": 68}
+  ],
+  "reversal_condition": "any forbidden payment recorded in shadow"
+}

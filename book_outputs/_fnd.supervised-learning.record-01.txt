@@ -1,0 +1,7 @@
+August: 999 requests, 37 wrong payments (0.0370, 0.027 to 0.051)
+score                           mean   error  referred  cost
+boosted trees, as trained     0.0348  0.0113       119  0.80
+boosted trees, with its map   0.0465  0.0147       123  0.81
+class-weighted, as trained    0.3699  0.3329       981  3.96
+class-weighted, with its map  0.0464  0.0170       125  0.82
+ROC AUC: boosted trees 0.836, class-weighted 0.837

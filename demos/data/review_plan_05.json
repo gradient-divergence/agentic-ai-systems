@@ -1,0 +1,361 @@
+{
+  "answered": 11,
+  "day": "2026-03-23",
+  "plan": [
+    {
+      "end": "2026-03-23T09:15:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0226",
+      "start": "2026-03-23T09:00:00+00:00"
+    },
+    {
+      "end": "2026-03-23T09:20:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0309",
+      "start": "2026-03-23T09:15:00+00:00"
+    },
+    {
+      "end": "2026-03-23T09:30:00+00:00",
+      "person": "morgan",
+      "request_id": "r-7-0573",
+      "start": "2026-03-23T09:00:00+00:00"
+    },
+    {
+      "end": "2026-03-23T09:25:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0003",
+      "start": "2026-03-23T09:20:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:00:00+00:00",
+      "person": "morgan",
+      "request_id": "r-7-0363",
+      "start": "2026-03-23T09:30:00+00:00"
+    },
+    {
+      "end": "2026-03-23T09:55:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0384",
+      "start": "2026-03-23T09:25:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:10:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0423",
+      "start": "2026-03-23T09:55:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:25:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0241",
+      "start": "2026-03-23T10:10:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:30:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0505",
+      "start": "2026-03-23T10:25:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:35:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0007",
+      "start": "2026-03-23T10:30:00+00:00"
+    },
+    {
+      "end": "2026-03-23T10:40:00+00:00",
+      "person": "alex",
+      "request_id": "r-7-0036",
+      "start": "2026-03-23T10:35:00+00:00"
+    }
+  ],
+  "solve_record": {
+    "absolute_gap": 0.0,
+    "bound": 11.0,
+    "budget": 10000,
+    "certificate": {
+      "absolute_gap": 0.0,
+      "bound": 11.0,
+      "certificate": true,
+      "covering": true,
+      "largest_violation": 0.0,
+      "nonnegative": true,
+      "optimal": true,
+      "permitted": true,
+      "relative_gap": 0.0,
+      "relative_gap_reason": null,
+      "tolerance": 1e-07,
+      "value": 11.0,
+      "weighted_rows": [
+        1.0,
+        1.5,
+        1.0,
+        1.1666666666666667,
+        1.0,
+        1.0,
+        1.1666666666666667,
+        1.0,
+        1.0,
+        2.0,
+        1.0,
+        1.5,
+        1.0,
+        1.5,
+        1.0,
+        1.1666666666666667,
+        1.0,
+        1.0,
+        1.1666666666666667,
+        1.0,
+        1.0,
+        1.1666666666666667
+      ]
+    },
+    "inputs": {
+      "inputs_version": "review-inputs-v1",
+      "minutes": {
+        "alex": 120,
+        "morgan": 60
+      },
+      "queue": [
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-20T11:06:45+00:00",
+          "minutes": 15,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0226",
+          "tier": 2
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-20T15:58:06+00:00",
+          "minutes": 5,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0309",
+          "tier": 1
+        },
+        {
+          "allowed": [
+            "morgan"
+          ],
+          "at": "2026-03-20T17:30:13+00:00",
+          "minutes": 30,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0573",
+          "tier": 3
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-20T23:21:38+00:00",
+          "minutes": 5,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0003",
+          "tier": 1
+        },
+        {
+          "allowed": [
+            "morgan"
+          ],
+          "at": "2026-03-21T12:50:22+00:00",
+          "minutes": 30,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0363",
+          "tier": 3
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-21T13:36:21+00:00",
+          "minutes": 30,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0384",
+          "tier": 3
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-21T19:49:47+00:00",
+          "minutes": 15,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0423",
+          "tier": 2
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-21T20:16:18+00:00",
+          "minutes": 15,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0241",
+          "tier": 2
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-21T23:48:22+00:00",
+          "minutes": 5,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0505",
+          "tier": 1
+        },
+        {
+          "allowed": [
+            "morgan"
+          ],
+          "at": "2026-03-22T04:20:48+00:00",
+          "minutes": 30,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0286",
+          "tier": 3
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-22T15:08:27+00:00",
+          "minutes": 5,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0007",
+          "tier": 1
+        },
+        {
+          "allowed": [
+            "morgan"
+          ],
+          "at": "2026-03-23T02:12:34+00:00",
+          "minutes": 30,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0235",
+          "tier": 3
+        },
+        {
+          "allowed": [
+            "alex",
+            "morgan"
+          ],
+          "at": "2026-03-23T03:07:56+00:00",
+          "minutes": 5,
+          "plan_at": "2026-03-23T09:00:00+00:00",
+          "request_id": "r-7-0036",
+          "tier": 1
+        }
+      ]
+    },
+    "inputs_version": "review-inputs-v1",
+    "multipliers": [
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.03333333333333333
+    ],
+    "plan": [
+      {
+        "end": "2026-03-23T09:15:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0226",
+        "start": "2026-03-23T09:00:00+00:00"
+      },
+      {
+        "end": "2026-03-23T09:20:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0309",
+        "start": "2026-03-23T09:15:00+00:00"
+      },
+      {
+        "end": "2026-03-23T09:30:00+00:00",
+        "person": "morgan",
+        "request_id": "r-7-0573",
+        "start": "2026-03-23T09:00:00+00:00"
+      },
+      {
+        "end": "2026-03-23T09:25:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0003",
+        "start": "2026-03-23T09:20:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:00:00+00:00",
+        "person": "morgan",
+        "request_id": "r-7-0363",
+        "start": "2026-03-23T09:30:00+00:00"
+      },
+      {
+        "end": "2026-03-23T09:55:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0384",
+        "start": "2026-03-23T09:25:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:10:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0423",
+        "start": "2026-03-23T09:55:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:25:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0241",
+        "start": "2026-03-23T10:10:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:30:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0505",
+        "start": "2026-03-23T10:25:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:35:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0007",
+        "start": "2026-03-23T10:30:00+00:00"
+      },
+      {
+        "end": "2026-03-23T10:40:00+00:00",
+        "person": "alex",
+        "request_id": "r-7-0036",
+        "start": "2026-03-23T10:35:00+00:00"
+      }
+    ],
+    "plan_check": [],
+    "queue_fingerprint": "daaa722e6f49de80b66504b890bbc171ee22fb1efdebf3fa88ef0679164a2ce6",
+    "relative_gap": 0.0,
+    "relative_gap_reason": null,
+    "secondary_status": "optimal",
+    "solver_name": "scipy.optimize.milp/linprog (bundled HiGHS)",
+    "solver_version": "1.17.0",
+    "status": "optimal",
+    "tolerance": 1e-07,
+    "value": 11
+  },
+  "solver_bound": 11.0,
+  "status": "optimal"
+}

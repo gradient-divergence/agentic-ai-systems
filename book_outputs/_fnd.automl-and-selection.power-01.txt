@@ -1,0 +1,8 @@
+August, search winner less baseline: paired cost difference, sd $0.689452
+95% half-width at 999 requests: $0.0428
+a true saving of $0.02 at that spread: half-width below it from 4,566 requests; 999 requests clear the rule with chance 0.148
+a true saving of $0.01 at that spread: half-width below it from 18,261 requests; 999 requests clear the rule with chance 0.067
+If the bootstrap upper bounds attain nominal one-sided coverage: 3 challengers no better than the baseline, each cleared with chance at most 0.025: at most 0.075 that one is; with the split intervals, at most 0.025
+These percentile-bootstrap intervals do not establish those coverage guarantees.
+generator, fresh draw of 2,026 requests: the search winner costs $0.045971 more per request than the baseline
+A half-width is not a test's power; each chance is of the rule's one-sided acceptance.

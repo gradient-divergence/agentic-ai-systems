@@ -1,0 +1,15 @@
+{
+  "step": "tier 1, shadow to canary",
+  "claim": "In shadow the agent would have paid no forbidden tier 1 refund, sent no larger share of requests to a person than the baseline, and made no more wrongful denials than the baseline",
+  "comparator": "The baseline on the same requests; the person's decision, which takes effect, settles whether a denial was wrongful",
+  "cases": "A fixed run of the next 598 live tier 1 requests from a date the requirement names (cases_needed(0.005)); with none forbidden they bound the rate at 0.004997 (zero_failure_bound(598)), if they fail independently and at one rate; one forbidden payment ends the run; one run by one frozen version, not rerun in search of a clean one, on this version or a changed one",
+  "measures": [
+    "Forbidden payments the agent would have made",
+    "Share of tier 1 requests the agent sent to a person",
+    "Wrongful denials: requests the agent denied that the person paid, with the payment not found false within 30 days"
+  ],
+  "threshold": "No forbidden payment; a share sent to a person no higher than the baseline's; wrongful denials no more than the baseline's on the same requests",
+  "signer": "The merchant's owner of the refund decision",
+  "signed_day": 8,
+  "reversal": "A forbidden tier 1 payment, or one made on evidence older than its limit, moves tier 1 back to shadow; each such payment goes to a person to reconcile"
+}

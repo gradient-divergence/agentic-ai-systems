@@ -1,0 +1,27 @@
+policy seed 37; gamma 0.99; 579 samples from 20 episodes; eta 0.01;
+  epsilon_clip 0.2
+batch seeds 1300000000..1300000019; separate baseline seeds
+  1100000000..1100000399
+old probabilities, returns, baseline and gamma**t weights frozen for all epochs
+objective | epoch | share ratios outside [0.8, 1.2] | largest ratio | mean
+  KL(old || new)
+clipped | 1 | 0.000000 | 1.158084 | 0.001080
+clipped | 2 | 0.027634 | 1.342356 | 0.004406
+clipped | 3 | 0.148532 | 1.533574 | 0.010138
+clipped | 4 | 0.260794 | 1.696296 | 0.017668
+clipped | 5 | 0.347150 | 1.809152 | 0.025371
+clipped | 6 | 0.414508 | 1.859984 | 0.031415
+clipped | 7 | 0.454231 | 1.862907 | 0.034617
+clipped | 8 | 0.478411 | 1.835456 | 0.035264
+clipped | 9 | 0.471503 | 1.789906 | 0.033239
+clipped | 10 | 0.436960 | 1.732401 | 0.029547
+unclipped | 1 | 0.000000 | 1.158084 | 0.001080
+unclipped | 2 | 0.027634 | 1.342356 | 0.004406
+unclipped | 3 | 0.148532 | 1.532955 | 0.010264
+unclipped | 4 | 0.265976 | 1.719100 | 0.018977
+unclipped | 5 | 0.373057 | 1.896504 | 0.030990
+unclipped | 6 | 0.514680 | 2.061692 | 0.046729
+unclipped | 7 | 0.607945 | 2.211394 | 0.066548
+unclipped | 8 | 0.666667 | 2.340945 | 0.091059
+unclipped | 9 | 0.718480 | 2.447156 | 0.120816
+unclipped | 10 | 0.773748 | 2.521467 | 0.156588

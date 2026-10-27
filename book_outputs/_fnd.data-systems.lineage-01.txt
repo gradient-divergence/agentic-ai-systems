@@ -1,0 +1,40 @@
+request r-7-0007: 2499 cents; changed_mind
+requester: customer-7-0007
+trace: trace-r-7-0007
+decision time: 2026-03-22T15:08:27+00:00
+decision: approve eligible True
+code version (release candidate fingerprint):
+1edb9f066bd39f0248ef76c61dca72a621d7fdaf3bfa8bafd1bd7a61a404996a
+registry: data-systems.registry@1 bundle: None
+order order@1: age 60 seconds
+  fingerprint: 87a079efb7c8c24a10b57ddc53e8fd81e9d4520d79294a128192bc79bc029583
+  observed: 2026-03-22T15:07:27+00:00
+  captured: 2026-03-22T15:08:27+00:00
+shipment shipment@1: age 120 seconds
+  fingerprint: 9703c2d6994580538c00a44c32c9e02c26ece26252ef86e708bf09d031bae5f0
+  observed: 2026-03-22T15:06:27+00:00
+  captured: 2026-03-22T15:08:27+00:00
+policy policy@1: age 3600 seconds
+  fingerprint: a86a2bc63fb07c911cc3d3c71ac275a3d2f6a67671dc84096df0376475c20b35
+  observed: 2026-03-22T14:08:27+00:00
+  captured: 2026-03-22T15:08:27+00:00
+ledger ledger@1: age 0 seconds
+  fingerprint: 176a295f7d63602386fc3d8723406f50c90fd6fcd831f844bc88baf62e5aa902
+  observed: 2026-03-22T15:08:27+00:00
+  captured: 2026-03-22T15:08:27+00:00
+balance:
+  paid_cents: 137006
+  receipt_ids: []
+  refunded_cents: 0
+  value_cents: 137006
+runtime: own
+effective step budget: 12
+components: data-systems.contracts data-systems.contracts@1
+delivery age seconds: 1036800.0
+recorded model proposal: approve eligible
+approval evidence: 0 (tier 1 needs none)
+rebuild equal: True
+deterministic replay: recorded model outputs; deterministic tools and rules
+model limit: a fresh model call may answer differently
+generated-contracts: equal rebuilds 40/40
+rename-contracts: equal rebuilds 40/40

@@ -1,0 +1,16 @@
+exercise 1: positive temperature keeps network; greedy, top-2 and nucleus 0.8 do not
+exercise 2: exact autoregressive score; latent marginal integral bounded; GAN has no scoring density
+exercise 2: 1000 sequential DDPM passes; one VAE decoder pass
+exercise 3, q=N(1,1): KL 0.500; E[log p(x|h)] -1.919; bound -2.419; log p(x) -2.266; gap 0.153
+exercise 3, q=N(1,0.5): KL 0.597; E[log p(x|h)] -1.669; bound -2.266; log p(x) -2.266; gap 0.000
+exercise 4a tau 1: 0.844 0.114 0.042; 3 tokens
+exercise 4a tau 0.5: 0.980 0.018 0.002; 3 tokens
+exercise 4a top-2: 0.881 0.119 0.000; 2 tokens
+exercise 4a nucleus 0.9: 0.881 0.119 0.000; 2 tokens
+exercise 4b one step: 1.000 0.300
+exercise 4b t=2: 0.512 0.384
+exercise 4b loss: 0.040
+exercise 6: 200 draws; 196 schema-valid rows; 22 stale labels; 12 wrong labels agree with the generator
+exercise 6 corrections: deny to approve 9; deny to refer 13; outdated policy citations 196
+exercise 6 wrong draws and request ids: 1:r-sim-ae8ed593c07921cd 8:r-sim-3eaf38c34ee3d7e8 11:r-sim-ae8ed593c07921cd 24:r-sim-7a1670cee9a02ab8 26:r-sim-88abadd05e456f49 30:r-sim-88abadd05e456f49 38:r-sim-cc35617b167f8b6b 47:r-sim-88abadd05e456f49 48:r-sim-a31df07a7e8103c4 51:r-sim-3eaf38c34ee3d7e8 56:r-sim-3ad524aeb9862b6c 72:r-sim-5066cbcb5cce3aac 75:r-sim-bb334584e52a3e65 77:r-sim-522e1d6ace80e9b7 80:r-sim-7a1670cee9a02ab8 109:r-sim-a31df07a7e8103c4 139:r-sim-6df667ef4a7d983d 141:r-sim-a31df07a7e8103c4 142:r-sim-194624ba90cf9555 150:r-sim-b9efadcecfaf91c9 159:r-sim-3ad524aeb9862b6c 191:r-sim-522e1d6ace80e9b7
+exercise 7: add none plus five failures; failures refer with the failure as their reason

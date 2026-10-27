@@ -1,0 +1,6 @@
+bound at 60 cases: 0.0487
+bound at 200 cases: 0.0149
+cases needed for a bound of 0.02: 149
+cases needed for a bound of 0.005: 598
+bound at 598 cases: 0.004997
+two versions, one prespecified 299-case run each at 0.01, one clean: 0.0966

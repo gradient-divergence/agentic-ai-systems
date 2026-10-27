@@ -1,0 +1,11 @@
+ cases    bound     3/n
+    10   0.2589  0.3000
+    40   0.0722  0.0750
+   100   0.0295  0.0300
+   300   0.0099  0.0100
+  1000   0.0030  0.0030
+40 clean cases at a rate of 0.05: 0.1285
+cases for a bound of 0.01: 299
+40 clean cases (constructed comparison):
+  independent: effective cases 40; bound 0.0722
+  one shared failure: effective cases 1; bound 0.95

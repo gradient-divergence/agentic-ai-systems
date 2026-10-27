@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What can this agent do that a workflow cannot?",
+    "answer": "Against analysts' queue and rules engine, same flags",
+    "kind": "refilled"
+  },
+  {
+    "question": "What is the smallest safe action scope?",
+    "answer": "Holds alone above 1/6; clears alone below 1.1%",
+    "kind": "redesigned"
+  },
+  {
+    "question": "Which failures become public or expensive?",
+    "answer": "Open-card spending; wrongful hold; holds audited by segment",
+    "kind": "refilled"
+  },
+  {
+    "question": "What evidence would show that the agent is improving?",
+    "answer": "Losses on unheld cards; counter-measure, holds lifted as mistaken",
+    "kind": "refilled"
+  },
+  {
+    "question": "How do we turn incidents into evaluation cases?",
+    "answer": "Each incident becomes a case in the release suite",
+    "kind": "same"
+  },
+  {
+    "question": "What can a person override, and how fast?",
+    "answer": "Customer lifts hold in minutes; analyst decides",
+    "kind": "redesigned"
+  },
+  {
+    "question": "Which rollback has actually been rehearsed?",
+    "answer": "Rehearsal required; holds stand until lifted",
+    "kind": "refilled"
+  }
+]

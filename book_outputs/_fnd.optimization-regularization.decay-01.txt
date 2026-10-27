@@ -1,0 +1,8 @@
+penalty lambda/2 * ||w||^2; lambda 0.04
+penalized minimum: 0.495050, 2.500000
+penalized curvatures 4.04, 0.08; condition 50.5
+retained fractions: 0.990099, 0.500000
+eta 0.25, stopped at 69: 0.500000, 2.500815
+one step: w 2, gradient 3, eta 0.1, lambda 0.2
+plain descent, penalty 1.660000000000, decoupled 1.660000000000
+fixed sqrt(vhat) 2: penalty 1.83, decoupled 1.81

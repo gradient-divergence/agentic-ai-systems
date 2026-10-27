@@ -1,0 +1,15 @@
+constructed diagnostic: sites A, B, C; true costs 4.00, 6.00, 9.00
+units: engineer-minutes; equal bids: first site in A, B, C order
+pay-your-bid; true bids 4.00, 6.00, 9.00
+winner A; payment 4.00; winner gain 0.00; A gain 0.00
+pay-your-bid; shaded bids 5.99, 6.00, 9.00
+winner A; payment 5.99; winner gain 1.99; A gain 1.99
+second-price; true bids 4.00, 6.00, 9.00
+winner A; payment 6.00; winner gain 2.00; A gain 2.00
+second-price; shaded bids 5.99, 6.00, 9.00
+winner A; payment 6.00; winner gain 2.00; A gain 2.00
+second-price; overbid bids 6.01, 6.00, 9.00
+winner B; payment 6.01; winner gain 0.01; A gain 0.00
+second-price truthful gains: 2.00, 0.00, 0.00
+best gains over bids 0.00..10.00, step 0.01, others truthful: 2.00, 0.00, 0.00
+truth is a weak best response; payment is conditional on winning

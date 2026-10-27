@@ -1,0 +1,5 @@
+amount '2499', a string -> invalid_tool_arguments
+field priority added    -> invalid_tool_arguments
+tool policy.check       -> unknown_tool
+payments in the ledger: 0
+lax schema, same two inputs: {'amount_cents': 2499}

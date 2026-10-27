@@ -1,0 +1,113 @@
+TEST-CONSTRUCTED partner records; assembled execution PENDING.
+Chapter 35: authenticate -> ReviewerContext, plus
+ScopedTools.record_approval(approval, credential=..., at=...).
+Chapter 36: generated/replayed DenialExplanation -> ProposedExplanation.
+Test authentication/explanation functions are confined to tests.
+Post-deadline authorized review: fresh
+Review action: approved request state: paid
+Reason: eligible receipts: 1
+Ticket: human-oversight-risk-proposal-038ce571f08f41760d1ed20b assigned: morgan
+  Event: escalation owner: morgan reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: approval owner: morgan reason: authorized_review
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Event: payment owner: morgan reason: gated_payment
+  at: 2026-10-06T10:15:00.000001+00:00 due: None
+  Notice: customer-fixture owner: morgan due: 2026-10-06T13:00:00+00:00
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.
+Post-deadline authorized review: stale
+Review action: escalated request state: waiting
+Reason: stale_shipment receipts: 0
+Ticket: human-oversight-risk-proposal-038ce571f08f41760d1ed20b assigned:
+decision-owner
+  Event: escalation owner: morgan reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: approval owner: morgan reason: authorized_review
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Event: execution_refused owner: morgan reason: stale_shipment
+  at: 2026-10-06T10:15:00.000001+00:00 due: None
+  Event: escalation owner: decision-owner reason:
+execution_refused:stale_shipment
+  at: 2026-10-06T10:15:00.000001+00:00 due: 2026-10-06T14:15:00.000001+00:00
+  Notice: customer-fixture owner: morgan due: 2026-10-06T13:00:00+00:00
+  Notice: customer-fixture owner: decision-owner due:
+2026-10-06T14:15:00.000001+00:00
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.
+Post-deadline authorized review: expiry
+Review action: escalated request state: waiting
+Reason: outside_return_window receipts: 0
+Ticket: human-oversight-risk-proposal-038ce571f08f41760d1ed20b assigned:
+decision-owner
+  Event: escalation owner: morgan reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: approval owner: morgan reason: authorized_review
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Event: execution_refused owner: morgan reason: outside_return_window
+  at: 2026-10-06T10:15:00.000001+00:00 due: None
+  Event: escalation owner: decision-owner reason:
+execution_refused:outside_return_window
+  at: 2026-10-06T10:15:00.000001+00:00 due: 2026-10-06T14:15:00.000001+00:00
+  Notice: customer-fixture owner: morgan due: 2026-10-06T13:00:00+00:00
+  Notice: customer-fixture owner: decision-owner due:
+2026-10-06T14:15:00.000001+00:00
+Waiting eligibility expiry: 1 request(s); 48-hour horizon.
+  human-oversight-risk-request eligible through: 2026-10-03T18:20:00+00:00
+  hours left=-63.916667; expired=True
+Deputy during absence: payment
+Old/new policy: 2026-09-01 2026-10-05
+Old/new proposal: proposal-ebf69f3e91c0272118d087f0
+proposal-bc0f77a562c6d5bfe2c9adde
+Review action: modified request state: renewed_review
+Reason: policy_version_changed receipts: 0
+Ticket: human-oversight-risk-proposal-ebf69f3e91c0272118d087f0 assigned:
+decision-owner
+  Event: escalation owner: decision-owner reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: modification owner: deputy reason: policy_version_changed
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Notice: customer-fixture owner: decision-owner due: 2026-10-06T13:00:00+00:00
+Ticket: human-oversight-risk-proposal-bc0f77a562c6d5bfe2c9adde assigned: deputy
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.
+Review action: approved request state: paid
+Reason: eligible receipts: 1
+Ticket: human-oversight-risk-proposal-ebf69f3e91c0272118d087f0 assigned:
+decision-owner
+  Event: escalation owner: decision-owner reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: modification owner: deputy reason: policy_version_changed
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Notice: customer-fixture owner: decision-owner due: 2026-10-06T13:00:00+00:00
+Ticket: human-oversight-risk-proposal-bc0f77a562c6d5bfe2c9adde assigned: deputy
+  Event: approval owner: deputy reason: authorized_review
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Event: payment owner: deputy reason: gated_payment
+  at: 2026-10-06T10:15:00.000001+00:00 due: None
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.
+Deputy during absence: denial
+Old/new policy: 2026-09-01 2026-10-05
+Old/new proposal: proposal-5557b15aff3c4e7b8b2f23ec
+proposal-8d5303fdc3f109c7c8995754
+Review action: modified request state: renewed_review
+Reason: policy_version_changed receipts: 0
+Ticket: human-oversight-risk-proposal-5557b15aff3c4e7b8b2f23ec assigned:
+decision-owner
+  Event: escalation owner: decision-owner reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: modification owner: deputy reason: policy_version_changed
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Notice: customer-fixture owner: decision-owner due: 2026-10-06T13:00:00+00:00
+Ticket: human-oversight-risk-proposal-8d5303fdc3f109c7c8995754 assigned: deputy
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.
+Review action: approved request state: denial_confirmed
+Reason: already_delivered receipts: 0
+Ticket: human-oversight-risk-proposal-5557b15aff3c4e7b8b2f23ec assigned:
+decision-owner
+  Event: escalation owner: decision-owner reason: review_deadline
+  at: 2026-10-05T17:00:00+00:00 due: 2026-10-06T13:00:00+00:00
+  Event: modification owner: deputy reason: policy_version_changed
+  at: 2026-10-06T10:15:00+00:00 due: None
+  Notice: customer-fixture owner: decision-owner due: 2026-10-06T13:00:00+00:00
+Ticket: human-oversight-risk-proposal-8d5303fdc3f109c7c8995754 assigned: deputy
+  Event: denial_confirmation owner: deputy reason: already_delivered
+  at: 2026-10-06T10:15:00+00:00 due: None
+Waiting eligibility expiry: 0 request(s); 48-hour horizon.

@@ -1,0 +1,9 @@
+width 512, rank 8: 8192 of 262144; 3.125000%; 16384 bytes
+width 4096, rank 8: 65536 of 16777216; 0.390625%; 131072 bytes
+24 blocks, four projections, rank 8: 786432 numbers; 1572864 bytes (1.5 MiB)
+full block weights: 75497472 numbers; 150994944 bytes (144 MiB); adapter
+  share 1.041667%
+rank 8, constant 32: scale 4
+starts at pretrained output: True
+numerical update rank: 8
+merged equals unmerged within 1e-12: True

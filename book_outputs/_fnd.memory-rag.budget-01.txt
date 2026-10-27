@@ -1,0 +1,7 @@
+Request B: raw 2040 + draft 400 > window 2048
+required facts 30 words; carrier 900 -> 250; cut 650
+assembled 1390 + 400 = 1790; remaining before draft 658
+full approve; assembled approve; last five scans: refer delivery_unknown
+cut records: carrier-05 to carrier-17, 13 records
+constraint preservation: 398 / 398 training requests
+required facts exceeding the budget: required_facts_exceed_budget -> refer

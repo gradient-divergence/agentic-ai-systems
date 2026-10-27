@@ -1,0 +1,3 @@
+Independent retention of distinct traces; not jointly selected traces
+p_keep=0.1, traces=3: chance at least one 0.271000
+p_keep=0.1, traces=10: chance at least one 0.651322

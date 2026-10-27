@@ -1,0 +1,11 @@
+name: history-august
+requests: 999
+sha256: a7a7cf68978cc0c8
+access log, every entry:
+  1: history-august, stage 1 report, the proposed score's August
+     record
+  2: history-august, stage 1 report, K=4, ten starts, seed 7,
+     training-standardized eight inputs; nearest-center cutoff at
+     training percentile 98; boosted comparator and self-training
+     on open and refused tier 1 pools, confidence 0.9, three
+     rounds, gate 0.080; all fits fixed

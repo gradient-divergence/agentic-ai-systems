@@ -1,0 +1,42 @@
+Constructed policy and requests; generated labels; all runs in shadow.
+Day 1: 2026-10-11T00:00:00+00:00
+New policy: 2026-10-18 35 days; announced day 1, effective day 8
+Run: late promotion day 11
+decision day | B0 | policy_not_in_bundle | B1
+ 1 |  3 |  0 |  0
+ 2 |  5 |  0 |  0
+ 3 |  4 |  0 |  0
+ 4 |  4 |  0 |  0
+ 5 |  3 |  0 |  0
+ 6 |  5 |  0 |  0
+ 7 |  4 |  0 |  0
+ 8 |  0 |  4 |  0
+ 9 |  0 |  4 |  0
+10 |  0 |  4 |  0
+11 |  0 |  0 |  4
+12 |  0 |  0 |  4
+13 |  0 |  0 |  4
+14 |  0 |  0 |  3
+15 |  0 |  0 |  0
+16 |  0 |  0 |  1
+Referrals: 12 ; control matches generated label: 8
+Run: early promotion day 5
+decision day | B0 | policy_not_in_bundle | B1
+ 1 |  3 |  0 |  0
+ 2 |  5 |  0 |  0
+ 3 |  4 |  0 |  0
+ 4 |  4 |  0 |  0
+ 5 |  0 |  0 |  3
+ 6 |  0 |  0 |  5
+ 7 |  0 |  0 |  4
+ 8 |  0 |  0 |  4
+ 9 |  0 |  0 |  4
+10 |  0 |  0 |  4
+11 |  0 |  0 |  4
+12 |  0 |  0 |  4
+13 |  0 |  0 |  4
+14 |  0 |  0 |  3
+15 |  0 |  0 |  0
+16 |  0 |  0 |  1
+Referrals: 0 ; control matches generated label: 0
+Every lineage stamped: True

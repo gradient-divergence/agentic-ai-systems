@@ -1,0 +1,220 @@
+{
+  "domain": "refund",
+  "constructed": true,
+  "sources": [
+    {
+      "name": "order.lookup",
+      "refund_role": "order.lookup",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.0004992887122589983,
+      "basis": "chapter 30: 95% upper rate, 0 changes in 6000 order-hours",
+      "version_checked": false
+    },
+    {
+      "name": "shipment.status",
+      "refund_role": "shipment.status",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.02,
+      "basis": "chapter 30: 48 first-delivery scans in 2400 parcel-hours",
+      "version_checked": false
+    },
+    {
+      "name": "policy.retrieve",
+      "refund_role": "policy.retrieve",
+      "observed_at": "versioned document",
+      "rate_per_hour": null,
+      "basis": "version currency, as chapters 23 and 30",
+      "version_checked": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "refund.execute",
+      "role": "execute",
+      "effect": "write",
+      "reversible": false,
+      "undo_seconds": null,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "4999",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "pay",
+      "role": "pay",
+      "effect": "write",
+      "reversible": false,
+      "undo_seconds": null,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "4999",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "refer",
+      "role": "refer",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "4999",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "order.lookup",
+      "role": "order.lookup",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "shipment.status",
+      "role": "shipment.status",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "policy.retrieve",
+      "role": "policy.retrieve",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "refund.propose",
+      "role": "refund.propose",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "approval.request",
+      "role": "approval.request",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "audit.append",
+      "role": "audit.append",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    }
+  ],
+  "actions_on_score": [
+    "pay",
+    "refer"
+  ],
+  "cost_matrix": {
+    "outcomes": [
+      "sound",
+      "false"
+    ],
+    "entries": {
+      "pay": [
+        "0",
+        "4999/100"
+      ],
+      "refer": [
+        "4",
+        "4"
+      ]
+    },
+    "unit": "dollars",
+    "basis": "chapter 5: $49.99 payment and illustrative $4 review"
+  },
+  "base_rate": null,
+  "tolerance": 0.01,
+  "shared_resources": [
+    {
+      "name": "order_balance",
+      "capacity": "4000",
+      "unit": "cents",
+      "actions": [
+        "refund.execute"
+      ],
+      "scope": "order",
+      "requirement": "limit",
+      "basis": "B3: two 3000-cent requests; 4000-cent order"
+    }
+  ],
+  "roles": {
+    "decision_owner": "merchant decision owner",
+    "release_owner": "merchant release owner",
+    "reviewer": "refund reviewer",
+    "named_approver": "named approver"
+  },
+  "role_map": {
+    "order.lookup": "order.lookup",
+    "shipment.status": "shipment.status",
+    "policy.retrieve": "policy.retrieve",
+    "refund.propose": "refund.propose",
+    "refund.execute": "refund.execute",
+    "pay": "pay",
+    "refer": "refer",
+    "approval.request": "approval.request",
+    "audit.append": "audit.append"
+  },
+  "label_windows": {
+    "found_false": 2592000.0
+  },
+  "clocks": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "policy text",
+      "kind": "read",
+      "seconds": 2592000.0,
+      "basis": "specification: 30 days; currency by version"
+    },
+    {
+      "name": "payment",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "specification: payments cannot be recalled"
+    },
+    {
+      "name": "found false",
+      "kind": "outcome",
+      "seconds": 2592000.0,
+      "basis": "D6: 30-day label window"
+    }
+  ],
+  "planted_checks": [],
+  "notes": [
+    "Reviewer minutes are consumed by review assignment beside the request loop.",
+    "Designed calibrated rule held; running agent retains its text score.",
+    "Over 50000 cents the named approver decides, including denials."
+  ]
+}

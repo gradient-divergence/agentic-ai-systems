@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What can this agent do that a workflow cannot?",
+    "answer": "Comparison awaits chapter 39's operating run; launch status unverified",
+    "kind": "same"
+  },
+  {
+    "question": "What is the smallest safe action scope?",
+    "answer": "Under $50 alone; reads under 30 minutes; designed score below 0.0800",
+    "kind": "same"
+  },
+  {
+    "question": "Which failures become public or expensive?",
+    "answer": "Payments cannot be recalled; denials audited by segment",
+    "kind": "same"
+  },
+  {
+    "question": "What evidence would show that the agent is improving?",
+    "answer": "No forbidden payment; wrongful denials no more than baseline",
+    "kind": "same"
+  },
+  {
+    "question": "How do we turn incidents into evaluation cases?",
+    "answer": "Each incident becomes a case in the release suite",
+    "kind": "same"
+  },
+  {
+    "question": "What can a person override, and how fast?",
+    "answer": "Review deadline and escalation; clock never pays or denies",
+    "kind": "same"
+  },
+  {
+    "question": "Which rollback has actually been rehearsed?",
+    "answer": "Rehearsal required on launched bundle; payments stand",
+    "kind": "same"
+  }
+]

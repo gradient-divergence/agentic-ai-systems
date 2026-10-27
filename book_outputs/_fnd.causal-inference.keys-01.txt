@@ -1,0 +1,19 @@
+exercise 1a: effects -1, -1, 0, 0; average -0.50; observed outcomes 0, 0, 0, 0
+exercise 1a: records hold D and Y(D), never both potential outcomes
+exercise 1b: referral share 0; positivity fails; records price pay, not review
+exercise 2a: call <- risk -> readmission; answering the phone follows the call, so leave it unadjusted
+exercise 2b: randomize fresh payable tier 1 with $4 <= score x amount < cap, by customer
+exercise 2b: log assigned arm and its probability; bound predicted loss per request and gross dollar exposure
+exercise 3: naive -0.240; strata +0.100, +0.050; standardized +0.075
+exercise 3: 0.25 x 0.3 + 0.75 x (-0.1) = 0.000; zero hides one helped group and one harmed group
+exercise 4: 252 per arm; 7 assignment months + 30 days; at the target pay-arm count: worst case $12,597.48; expected $1,512.00
+exercise 4: DiD -0.010 per policy-payable request; parallel trends and no anticipation,
+exercise 4: with one meaning for the release, untreated other regions, no spillover
+exercise 4: and the same kind of request counted the same way
+exercise 5: headline uses 16/320 against 48/400; the reviewer selected the first denominator
+exercise 5: assigned-arm costs $4.80 and $8.10; difference $3.30; estimated reduction in found false payments 32
+exercise 5: return the assigned-arm table, include wrong denials, reject the headline as a benefit claim
+exercise 6: cap $15; plan accepted; set 60; pay 31; refer 29
+exercise 6: fair coin range 22 to 38; every set probability 0.5, outside 1; no tool or holdout read
+exercise 6: actions outside the set that change with the seed (7 against 8): 0
+exercise 6: 969 per arm for $2; 33 months + 30 days; at the target pay-arm count: expected $7,336.78; worst case $48,440.31

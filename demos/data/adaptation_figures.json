@@ -1,0 +1,1188 @@
+{
+  "golden": {
+    "cases": [
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-01T05:35:58+00:00",
+        "request_id": "r-7-0163"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-02T02:22:34+00:00",
+        "request_id": "r-7-0386"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-02T15:46:15+00:00",
+        "request_id": "r-7-0580"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-03T13:24:48+00:00",
+        "request_id": "r-7-0055"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-03T14:43:10+00:00",
+        "request_id": "r-7-0413"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-04T03:13:17+00:00",
+        "request_id": "r-7-0548"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-04T09:18:56+00:00",
+        "request_id": "r-7-0407"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-05T00:09:30+00:00",
+        "request_id": "r-7-0120"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-05T14:15:28+00:00",
+        "request_id": "r-7-0301"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-05T16:05:30+00:00",
+        "request_id": "r-7-0225"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-05T16:09:28+00:00",
+        "request_id": "r-7-0539"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-06T07:06:52+00:00",
+        "request_id": "r-7-0523"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-07T14:09:28+00:00",
+        "request_id": "r-7-0118"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-07T21:31:42+00:00",
+        "request_id": "r-7-0139"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-08T06:31:26+00:00",
+        "request_id": "r-7-0470"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-08T08:30:29+00:00",
+        "request_id": "r-7-0018"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-08T09:45:39+00:00",
+        "request_id": "r-7-0045"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-08T23:38:36+00:00",
+        "request_id": "r-7-0353"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-09T03:48:14+00:00",
+        "request_id": "r-7-0307"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-09T17:46:17+00:00",
+        "request_id": "r-7-0354"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-10T02:31:21+00:00",
+        "request_id": "r-7-0417"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-10T10:22:37+00:00",
+        "request_id": "r-7-0451"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-10T12:27:33+00:00",
+        "request_id": "r-7-0275"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-11T15:52:11+00:00",
+        "request_id": "r-7-0454"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-12T07:41:17+00:00",
+        "request_id": "r-7-0551"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-12T21:02:53+00:00",
+        "request_id": "r-7-0265"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-12T22:48:57+00:00",
+        "request_id": "r-7-0096"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-13T17:32:18+00:00",
+        "request_id": "r-7-0379"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-13T20:45:03+00:00",
+        "request_id": "r-7-0556"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-14T06:57:38+00:00",
+        "request_id": "r-7-0371"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-15T12:06:13+00:00",
+        "request_id": "r-7-0372"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-16T00:11:52+00:00",
+        "request_id": "r-7-0070"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-16T19:45:49+00:00",
+        "request_id": "r-7-0350"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-17T12:28:26+00:00",
+        "request_id": "r-7-0267"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-17T12:42:02+00:00",
+        "request_id": "r-7-0415"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-18T18:16:54+00:00",
+        "request_id": "r-7-0117"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-18T21:34:16+00:00",
+        "request_id": "r-7-0509"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-19T12:55:21+00:00",
+        "request_id": "r-7-0474"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-19T17:38:31+00:00",
+        "request_id": "r-7-0511"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-20T12:46:11+00:00",
+        "request_id": "r-7-0126"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-21T14:14:26+00:00",
+        "request_id": "r-7-0416"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-22T09:49:28+00:00",
+        "request_id": "r-7-0294"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-22T20:14:58+00:00",
+        "request_id": "r-7-0540"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-22T23:14:48+00:00",
+        "request_id": "r-7-0569"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-24T11:38:16+00:00",
+        "request_id": "r-7-0456"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-24T19:35:35+00:00",
+        "request_id": "r-7-0268"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-24T19:56:48+00:00",
+        "request_id": "r-7-0169"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-25T12:40:57+00:00",
+        "request_id": "r-7-0250"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-25T16:32:50+00:00",
+        "request_id": "r-7-0192"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-26T04:41:59+00:00",
+        "request_id": "r-7-0099"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-26T13:44:04+00:00",
+        "request_id": "r-7-0293"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-27T06:43:00+00:00",
+        "request_id": "r-7-0344"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-27T22:57:28+00:00",
+        "request_id": "r-7-0339"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-28T15:09:15+00:00",
+        "request_id": "r-7-0290"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-28T23:17:56+00:00",
+        "request_id": "r-7-0380"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-29T07:39:17+00:00",
+        "request_id": "r-7-0576"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-29T21:49:49+00:00",
+        "request_id": "r-7-0359"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-30T13:54:29+00:00",
+        "request_id": "r-7-0032"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-30T22:46:36+00:00",
+        "request_id": "r-7-0000"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-30T23:08:10+00:00",
+        "request_id": "r-7-0040"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-08-31T08:50:14+00:00",
+        "request_id": "r-7-0220"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-01T12:16:34+00:00",
+        "request_id": "r-7-0008"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-03T06:34:41+00:00",
+        "request_id": "r-7-0086"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-03T15:18:47+00:00",
+        "request_id": "r-7-0256"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-04T09:36:19+00:00",
+        "request_id": "r-7-0204"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-04T19:31:16+00:00",
+        "request_id": "r-7-0468"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-05T03:05:17+00:00",
+        "request_id": "r-7-0200"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-05T17:10:39+00:00",
+        "request_id": "r-7-0049"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-06T00:52:00+00:00",
+        "request_id": "r-7-0274"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-06T11:03:49+00:00",
+        "request_id": "r-7-0493"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-06T20:36:58+00:00",
+        "request_id": "r-7-0599"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-06T21:51:21+00:00",
+        "request_id": "r-7-0304"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-07T06:38:52+00:00",
+        "request_id": "r-7-0101"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-08T16:04:03+00:00",
+        "request_id": "r-7-0097"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-08T22:47:08+00:00",
+        "request_id": "r-7-0592"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-09T03:49:56+00:00",
+        "request_id": "r-7-0334"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-11T00:08:00+00:00",
+        "request_id": "r-7-0019"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-11T01:54:14+00:00",
+        "request_id": "r-7-0020"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-11T02:34:50+00:00",
+        "request_id": "r-7-0083"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-11T18:33:54+00:00",
+        "request_id": "r-7-0177"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-12T04:13:30+00:00",
+        "request_id": "r-7-0426"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-13T01:01:51+00:00",
+        "request_id": "r-7-0090"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-13T14:25:14+00:00",
+        "request_id": "r-7-0321"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-13T22:17:30+00:00",
+        "request_id": "r-7-0487"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-14T03:01:34+00:00",
+        "request_id": "r-7-0388"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-14T06:05:58+00:00",
+        "request_id": "r-7-0425"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-14T09:21:00+00:00",
+        "request_id": "r-7-0484"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-14T13:36:41+00:00",
+        "request_id": "r-7-0164"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-14T17:10:37+00:00",
+        "request_id": "r-7-0062"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-15T10:17:46+00:00",
+        "request_id": "r-7-0471"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-15T11:29:11+00:00",
+        "request_id": "r-7-0526"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-16T02:54:47+00:00",
+        "request_id": "r-7-0054"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-17T16:18:13+00:00",
+        "request_id": "r-7-0137"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-17T17:25:17+00:00",
+        "request_id": "r-7-0193"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-17T22:55:59+00:00",
+        "request_id": "r-7-0362"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-18T21:52:44+00:00",
+        "request_id": "r-7-0278"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-19T01:37:29+00:00",
+        "request_id": "r-7-0591"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-19T14:38:53+00:00",
+        "request_id": "r-7-0351"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-19T15:22:32+00:00",
+        "request_id": "r-7-0409"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-20T07:06:43+00:00",
+        "request_id": "r-7-0534"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-20T10:55:11+00:00",
+        "request_id": "r-7-0394"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-20T14:06:19+00:00",
+        "request_id": "r-7-0060"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-21T03:22:57+00:00",
+        "request_id": "r-7-0406"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-21T20:24:31+00:00",
+        "request_id": "r-7-0271"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-22T14:00:59+00:00",
+        "request_id": "r-7-0022"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-22T15:11:51+00:00",
+        "request_id": "r-7-0598"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-22T17:51:07+00:00",
+        "request_id": "r-7-0560"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-23T02:02:11+00:00",
+        "request_id": "r-7-0160"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-23T14:27:31+00:00",
+        "request_id": "r-7-0545"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-24T00:40:32+00:00",
+        "request_id": "r-7-0427"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-24T04:46:19+00:00",
+        "request_id": "r-7-0345"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-24T06:55:05+00:00",
+        "request_id": "r-7-0141"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-24T16:15:17+00:00",
+        "request_id": "r-7-0532"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-24T21:19:03+00:00",
+        "request_id": "r-7-0189"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-25T12:21:03+00:00",
+        "request_id": "r-7-0095"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-26T01:49:42+00:00",
+        "request_id": "r-7-0013"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-26T02:19:54+00:00",
+        "request_id": "r-7-0272"
+      },
+      {
+        "agreement": {
+          "adapter": true,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-26T14:42:05+00:00",
+        "request_id": "r-7-0520"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-27T00:32:45+00:00",
+        "request_id": "r-7-0066"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-27T01:44:14+00:00",
+        "request_id": "r-7-0575"
+      },
+      {
+        "agreement": {
+          "adapter": false,
+          "prompt": true,
+          "retrieval": true
+        },
+        "at": "2026-09-27T08:11:42+00:00",
+        "request_id": "r-7-0515"
+      }
+    ],
+    "change": "2026-09-01",
+    "words": {
+      "adapter": {
+        "context": 409.6528925619835,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 3.0,
+        "request": 42.0
+      },
+      "prompt": {
+        "context": 469.1570247933884,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 62.50413223140496,
+        "request": 42.0
+      },
+      "retrieval": {
+        "context": 535.7520661157025,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 129.099173553719,
+        "request": 42.0
+      }
+    }
+  },
+  "hospital": {
+    "independent": [
+      -0.0146342515041743,
+      0.1146342515041743
+    ],
+    "lead": 0.05,
+    "paired": [
+      0.009004412017222164,
+      0.09099558798277785
+    ]
+  },
+  "lowrank": {
+    "n_test": 2048,
+    "n_train": 768,
+    "needed_rank": 2,
+    "noise_floor": 0.010000000000000002,
+    "noise_sd": 0.1,
+    "nu": 8,
+    "rank_1_misses": true,
+    "results": [
+      {
+        "method": "rank 1",
+        "rank": 1,
+        "test_mse": 0.15121106939527817,
+        "train_mse": 0.13735268172347284,
+        "trainable": 32
+      },
+      {
+        "method": "rank 2",
+        "rank": 2,
+        "test_mse": 0.010100996239888013,
+        "train_mse": 0.009970989204926345,
+        "trainable": 64
+      },
+      {
+        "method": "rank 4",
+        "rank": 4,
+        "test_mse": 0.01012460583600027,
+        "train_mse": 0.009949803644699268,
+        "trainable": 128
+      },
+      {
+        "method": "rank 8",
+        "rank": 8,
+        "test_mse": 0.010145136058355422,
+        "train_mse": 0.009914299765670084,
+        "trainable": 256
+      },
+      {
+        "method": "full",
+        "rank": null,
+        "test_mse": 0.01022693159704996,
+        "train_mse": 0.00983932942023411,
+        "trainable": 256
+      }
+    ],
+    "seed": 7,
+    "step_size": 0.1,
+    "steps": 4000,
+    "width": 16,
+    "within_full_10_percent": true
+  },
+  "seed": 7
+}

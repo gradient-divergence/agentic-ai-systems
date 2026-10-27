@@ -1,0 +1,40 @@
+Exercise 1: governed a,c,d; workarounds b,e
+A human refusal is authenticated through review and audit; an approved payment
+  additionally needs refund.execute.
+Exercise 2: decision owner signs; release owner stops; reconciler records
+  causes daily; desk reviews tier 2, decides referrals and keeps planted cases
+  and second checks.
+Exercise 3: received 20; governed 18; paid around 1
+Missing decisions 1; governed share 90.00%
+Count-rule verdict: hold
+Exercise 5: received 80; governed 79; paid around 0
+Missing decisions 1; governed share 98.75%
+Count-rule verdict: hold
+Planted denominator: decision records; falsely reports 100.00%
+Exercise 4: its own 9000/6000/4500-cent fixture (B8)
+Delayed settlement
+Fixture: org-adoption-exercise-04; order: org-adoption-exercise-04-order
+Console (constructed): 6000 cents at 10:00; history posting
+  2026-11-29T18:00:00+00:00
+Balance read: 9000 cents
+Agent paid: 4500 cents; tool payments: 1
+Total refunded: 10500 cents against 9000 paid
+Reconciled excess: 1500 cents
+Paid around path: 1; imported receipts: 0
+Agent outcome: approve; reason: eligible
+Early settlement control
+Fixture: org-adoption-exercise-04; order: org-adoption-exercise-04-order
+Console (constructed): 6000 cents at 10:00; history posting
+  2026-11-29T10:30:00+00:00
+Balance read: 3000 cents
+Agent paid: 0 cents; tool payments: 0
+Total refunded: 6000 cents against 9000 paid
+Reconciled excess: 0 cents
+Paid around path: 1; imported receipts: 1
+Agent outcome: deny; reason: amount_over_policy
+Exercise 6 accounting rerun: bank org-adoption-ex-o-002, 2500 cents; governed
+  17/20; paid around 2; hold.
+Duplicate money-out feeds count once; reference acceptance tests check the
+  join.
+Unpaid gap count-rule verdict: widen; 99/100 = 99.00%. Conditional on complete
+  admission evidence and recorded disposition.

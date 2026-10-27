@@ -1,0 +1,19 @@
+Constructed stream sha256:
+25988786ea96497f3cf9a5c9b1f6df6994117a26a204c340bd6fa517a70e6333
+shipped: scan 18 18:05; arrival 18 18:07
+delivered: scan 20 11:40; arrival 20 20:30
+request 20 18:05; amount 3499 cents
+observed 20 18:03; age 120 seconds
+delivery delay 31800 seconds
+watermark at request 20 09:03
+watermark at delivery arrival 20 11:28
+watermark passes delivery 20 20:43
+fast_trace: approve, eligible; executed True
+held: refer, shipment_incomplete; executed False
+final: deny, already_delivered; executed False
+watermark passes request 21 03:08
+evidence final 22 06:08
+delivery late relative to watermark: False
+correction executed: refund-batch-stream-opening
+  scan: scan-opening-parcel-delivered-0
+corrections 1; paid cents still 3499

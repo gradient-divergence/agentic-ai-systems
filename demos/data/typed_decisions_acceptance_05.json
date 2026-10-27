@@ -1,0 +1,44 @@
+{
+  "agent_conclusion": "The marginal coverage is about 0.90, so the sets catch nine in ten wrong payments.",
+  "alpha": 0.1,
+  "calibration_window": "redrawn July 2026",
+  "coverage": {
+    "covered": 941,
+    "interval": [
+      0.9025619874944416,
+      0.9357740675066423
+    ],
+    "rate": 0.9207436399217221,
+    "requests": 1022,
+    "sets": {
+      "both": 0,
+      "empty": 60,
+      "sound": 962,
+      "wrong": 0
+    },
+    "sound": {
+      "covered": 941,
+      "interval": [
+        0.9351665651851575,
+        0.9623607671382228
+      ],
+      "rate": 0.9505050505050505,
+      "requests": 990
+    },
+    "verdict": "coverage shown",
+    "wrong": {
+      "covered": 0,
+      "interval": [
+        0.0,
+        0.10888116067935288
+      ],
+      "rate": 0.0,
+      "requests": 32
+    }
+  },
+  "model_version": "scripted-overconfident-incoherent-v1",
+  "population": "paid tier 1 requests",
+  "seed": 20,
+  "threshold": 0.026869871087554974,
+  "window": "redrawn August 2026"
+}

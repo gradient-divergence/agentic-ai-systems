@@ -1,0 +1,79 @@
+{
+  "acceptance": "all checks pass; paired cost difference < 0 and its 95% upper bound < 0; tie keeps baseline",
+  "alpha": 0.05,
+  "baseline": "boosted trees with map",
+  "budget": 20,
+  "challengers": [
+    "logistic regression",
+    "search winner",
+    "agent delivery"
+  ],
+  "delegate_changes": "search: declared family/settings; agent: pipeline and allowed derived inputs",
+  "inputs": [
+    "amount_cents",
+    "reason",
+    "delivery_age_days",
+    "prior_refund_count",
+    "paid_cents",
+    "order_evidence_age_seconds",
+    "shipment_evidence_age_seconds"
+  ],
+  "label_policy": "outcome-1",
+  "measure": "raw validation log loss",
+  "review_cost": 4.0,
+  "seed": 7,
+  "sha256": "7f2e91bf7c78c6da8db1d39b6c55cdbe304b0b2b335a61681206b57b951f299f",
+  "space": {
+    "boosted": {
+      "l2_regularization": [
+        0.0,
+        1.0,
+        10.0
+      ],
+      "learning_rate": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "max_iter": [
+        50,
+        100,
+        200
+      ],
+      "max_leaf_nodes": [
+        3,
+        7,
+        15
+      ],
+      "min_samples_leaf": [
+        50,
+        100,
+        200
+      ]
+    },
+    "logistic": {
+      "C": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ]
+    }
+  },
+  "threshold": 0.08,
+  "windows": {
+    "training": {
+      "first": "2025-04-01",
+      "last": "2026-05-31",
+      "requests": 13766,
+      "row_sha256": "fd5dd02ec8c67576a82e5543ee8328b32784c2ccfc92832f81fc84a6ab84aea8"
+    },
+    "validation": {
+      "first": "2026-06-01",
+      "last": "2026-07-01",
+      "requests": 988,
+      "row_sha256": "573bfb4abb5ea4bffe35442714160bf12c4118a03a828d145121e665a1ca09fa"
+    }
+  }
+}

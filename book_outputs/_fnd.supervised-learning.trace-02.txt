@@ -1,0 +1,17 @@
+Decision snapshot begins (decision-time fields only)
+request history-r-7-030054; decided 2026-07-02T02:19:54+00:00; tier 1
+policy refund_cap_v4@2026-07-01; policy decision approve (paid)
+amount 3040 cents ($30.40); reason changed_mind; days since delivery 6;
+  earlier refunds 1
+original payment 99303 cents; order evidence age 601s; shipment evidence age
+  195s
+feature                       standardized input  coefficient  contribution
+amount_cents                            0.377300     0.103321      0.038983
+damaged                                -1.362574     0.308764     -0.420714
+changed_mind                            1.588527    -0.226471     -0.359756
+delivery_age_days                      -0.019358     0.174751     -0.003383
+prior_refund_count                      2.007843     0.751487      1.508867
+paid_cents                              1.708507     0.035550      0.060737
+order_evidence_age_seconds              0.566319     0.001689      0.000956
+shipment_evidence_age_seconds          -1.017764     0.018635     -0.018966
+logistic intercept -3.740768; log-odds -2.934043; probability 0.050496

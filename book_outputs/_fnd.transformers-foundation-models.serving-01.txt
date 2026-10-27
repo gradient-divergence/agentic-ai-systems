@@ -1,0 +1,39 @@
+Counts use multiplications; hardware often counts a multiply and an add
+as two operations. Weight traffic only; cache attention is omitted.
+Configuration: L=24; H=8; d_k=d_v=64; d=512; d_ff=2048; n=2048
+matrix weights: per block=3145728; all blocks=75497472
+Illustrative memory for weights and cache: 1073741824 bytes (1 GiB)
+Only matrix weights and cache count toward this illustrative budget.
+b=2: weights=150994944 bytes; weights MiB=144.000
+b=2: cache/token=49152 bytes; cache/request=100663296 bytes; MiB=96.000
+b=2: bytes left=922746880; full-window requests n_req=9
+b=1: weights=75497472 bytes; weights MiB=72.000
+b=1: cache/token=24576 bytes; cache/request=50331648 bytes; MiB=48.000
+b=1: bytes left=998244352; full-window requests n_req=19
+b=0.5: weights=37748736 bytes; weights MiB=36.000
+b=0.5: cache/token=12288 bytes; cache/request=25165824 bytes; MiB=24.000
+b=0.5: bytes left=1035993088; full-window requests n_req=41
+prefill tokens=2048; b=2; multiplications/weight byte=1024.000
+decode n_req=1; b=2; multiplications/weight byte=0.500
+decode n_req=2; b=2; multiplications/weight byte=1.000
+decode n_req=4; b=2; multiplications/weight byte=2.000
+decode n_req=8; b=2; multiplications/weight byte=4.000
+decode n_req=16; b=2; multiplications/weight byte=8.000
+decode n_req=32; b=2; multiplications/weight byte=16.000
+decode n_req=64; b=2; multiplications/weight byte=32.000
+Each request also reads its own cache every step: 49152 x its tokens
+bytes at b=2, in addition to the shared weight read.
+Constructed independent calls: slow chance=0.01 per call.
+tail k=1: chance=0.010000; percent=1.000
+tail k=2: chance=0.019900; percent=1.990
+tail k=5: chance=0.049010; percent=4.901
+tail k=10: chance=0.095618; percent=9.562
+tail k=20: chance=0.182093; percent=18.209
+tail k=50: chance=0.394994; percent=39.499
+tail k=100: chance=0.633968; percent=63.397
+tail k=200: chance=0.866020; percent=86.602
+tail k=500: chance=0.993430; percent=99.343
+Constructed latencies: fast=1 unit; slow=10 units; not measured.
+Simulation: runs=10000; seed=19; tolerance=0.02 in share.
+simulation k=10: slow-run share=0.097200; formula=0.095618
+simulation k=100: slow-run share=0.634700; formula=0.633968

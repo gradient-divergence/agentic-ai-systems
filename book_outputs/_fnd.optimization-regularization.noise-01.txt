@@ -1,0 +1,14 @@
+seed 7; curvature 4; one-example gradient noise variance 1
+50000 updates, first 2000 discarded; empirical weight standard deviation
+SGD eta 0.10, batch 1: observed 0.125296, formula 0.125000
+SGD eta 0.01, batch 1: observed 0.036531, formula 0.035714
+SGD eta 0.10, batch 16: observed 0.031324, formula 0.031250
+Adam eta 0.10, batch 1: observed 0.108310
+Adam eta 0.01, batch 1: observed 0.036270
+schedule peak 0.4, warm 10, total 100: step 0, eta 0.000000
+schedule peak 0.4, warm 10, total 100: step 5, eta 0.200000
+schedule peak 0.4, warm 10, total 100: step 10, eta 0.400000
+schedule peak 0.4, warm 10, total 100: step 55, eta 0.200000
+schedule peak 0.4, warm 10, total 100: step 100, eta 0.000000
+scheduled SGD at step 100: weight -0.009919, loss 0.000197
+clipping (3, 4) at norm 2: 1.200000, 1.600000

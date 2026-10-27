@@ -1,0 +1,8 @@
+exercise 3, constructed telecom: n=12, pass=9, k=3
+pass@3 219/220=0.99545455; plug-in 0.98437500; pass^3 84/220=0.38181818; plug-in 0.42187500
+exercise 4, constructed insurance: cells 30,10,18,342; 400 letters, 40 failing, 360 good
+agreement 0.930000; chance 0.804000; kappa_C 0.642857; miss rate 0.250000; false holds 18/360=0.050000; all-pass agreement 0.900000, kappa_C 0
+exercise 5: same candidate and suite in 2 runs; 9/10 trials pass; first run fails trial 3 of 5; unchanged rerun cannot erase it
+exercise 6: fixed-scenario wiring of the tier 2 approval-reuse cell; stale-approval candidate must exit 1, as-built must exit 0; submitted assertions are rejected
+practice pooled suite: 9 always-pass, 1 with chance 0.5; k=4; scenario pass@4 0.99375000, pass^4 0.90625000; pooled pass@4 0.99999375, pass^4 0.81450625
+practice shadow: shown 39/40=0.975000; blind 68/80=0.850000; pooled 107/120=0.891667; 40 contaminated requests kept apart

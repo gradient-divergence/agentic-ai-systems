@@ -1,0 +1,8 @@
+Operating comparison: unavailable; stage 6 decision/review/queue records absent.
+Period and request counts: unavailable.
+Agent, manual and measured RulesClient arms: no values fabricated.
+Required accounting: tier 2, tier 3, tier 1 referrals, rechecks, blind second reviews, planted cases.
+Constructed review minutes by tier: 1=5, 2=15, 3=30
+Manual assumption: no review of its reviewers' work.
+Required rule: better than each alternative on at least one business measure; worse on none.
+Expected manual saving and rules tie remain unverified in the operating run.

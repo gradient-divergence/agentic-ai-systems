@@ -1,0 +1,3733 @@
+{
+  "stream_fingerprint": "25988786ea96497f3cf9a5c9b1f6df6994117a26a204c340bd6fa517a70e6333",
+  "points": [
+    {
+      "event_id": "scan-batch-stream-feed-0-0-shipped-0",
+      "event_hours": 0.03947368416666667,
+      "arrival_hours": 0.0538157925,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-1-shipped-0",
+      "event_hours": 0.1184210525,
+      "arrival_hours": 0.1276865911111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-0-shipped-0",
+      "event_hours": 0.03947368416666667,
+      "arrival_hours": 0.14283522472222224,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-2-shipped-0",
+      "event_hours": 0.1973684211111111,
+      "arrival_hours": 0.21360493555555554,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-3-shipped-0",
+      "event_hours": 0.27631578944444446,
+      "arrival_hours": 0.2792752338888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-4-shipped-0",
+      "event_hours": 0.3552631577777778,
+      "arrival_hours": 0.3964221633333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-5-shipped-0",
+      "event_hours": 0.4342105263888889,
+      "arrival_hours": 0.4411932036111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0006-delivered-0",
+      "event_hours": 0.42135449138888886,
+      "arrival_hours": 0.4943041136111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-6-shipped-0",
+      "event_hours": 0.5131578947222222,
+      "arrival_hours": 0.5135766694444445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-8-shipped-0",
+      "event_hours": 0.6710526316666667,
+      "arrival_hours": 0.7207769963888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-10-shipped-0",
+      "event_hours": 0.8289473683333333,
+      "arrival_hours": 0.8328684586111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-9-shipped-0",
+      "event_hours": 0.75,
+      "arrival_hours": 0.8396379802777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-11-shipped-0",
+      "event_hours": 0.9078947369444444,
+      "arrival_hours": 0.929193766111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-13-shipped-0",
+      "event_hours": 1.065789473611111,
+      "arrival_hours": 1.0689921702777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0045-delivered-0",
+      "event_hours": 0.9994645788888888,
+      "arrival_hours": 1.0901628791666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-15-shipped-0",
+      "event_hours": 1.2236842105555554,
+      "arrival_hours": 1.2351818552777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-14-shipped-0",
+      "event_hours": 1.1447368422222222,
+      "arrival_hours": 1.2708156099999999,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-16-shipped-0",
+      "event_hours": 1.3026315788888887,
+      "arrival_hours": 1.3471480191666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-17-shipped-0",
+      "event_hours": 1.3815789475,
+      "arrival_hours": 1.3882369466666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-18-shipped-0",
+      "event_hours": 1.4605263158333333,
+      "arrival_hours": 1.477538953888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-19-shipped-0",
+      "event_hours": 1.5394736841666667,
+      "arrival_hours": 1.5601276583333332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0032-delivered-0",
+      "event_hours": 1.56237737,
+      "arrival_hours": 1.5887968725000001,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-20-shipped-0",
+      "event_hours": 1.6184210525,
+      "arrival_hours": 1.6256052861111112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0023-delivered-0",
+      "event_hours": 1.609300521388889,
+      "arrival_hours": 1.6273970708333334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-21-shipped-0",
+      "event_hours": 1.6973684211111113,
+      "arrival_hours": 1.7445524622222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-22-shipped-0",
+      "event_hours": 1.7763157894444446,
+      "arrival_hours": 1.7803009972222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-23-shipped-0",
+      "event_hours": 1.8552631577777778,
+      "arrival_hours": 1.8585618891666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-24-shipped-0",
+      "event_hours": 1.934210526388889,
+      "arrival_hours": 1.9420922516666665,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-25-shipped-0",
+      "event_hours": 2.013157894722222,
+      "arrival_hours": 2.0899346991666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-26-shipped-0",
+      "event_hours": 2.0921052630555557,
+      "arrival_hours": 2.1131420752777776,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0104-shipped-0",
+      "event_hours": 2.16,
+      "arrival_hours": 2.1677635572222225,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-27-shipped-0",
+      "event_hours": 2.1710526316666665,
+      "arrival_hours": 2.190752484722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-28-shipped-0",
+      "event_hours": 2.25,
+      "arrival_hours": 2.2634254791666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-29-shipped-0",
+      "event_hours": 2.3289473683333335,
+      "arrival_hours": 2.345797881111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-30-shipped-0",
+      "event_hours": 2.4078947369444443,
+      "arrival_hours": 2.4662305805555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-32-shipped-0",
+      "event_hours": 2.565789473611111,
+      "arrival_hours": 2.590934110277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-31-shipped-0",
+      "event_hours": 2.486842105277778,
+      "arrival_hours": 2.5931511575,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-33-shipped-0",
+      "event_hours": 2.6447368422222226,
+      "arrival_hours": 2.673073527777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-34-shipped-0",
+      "event_hours": 2.7236842105555557,
+      "arrival_hours": 2.7684562536111113,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0136-shipped-0",
+      "event_hours": 2.7851789391666664,
+      "arrival_hours": 2.805035911388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-35-shipped-0",
+      "event_hours": 2.802631578888889,
+      "arrival_hours": 2.811242856111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-36-shipped-0",
+      "event_hours": 2.8815789475,
+      "arrival_hours": 2.8872016972222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0033-delivered-0",
+      "event_hours": 2.9428449333333337,
+      "arrival_hours": 2.9634145108333336,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-37-shipped-0",
+      "event_hours": 2.9605263158333335,
+      "arrival_hours": 2.9832344130555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-38-shipped-0",
+      "event_hours": 3.0394736841666665,
+      "arrival_hours": 3.1098533380555557,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-39-shipped-0",
+      "event_hours": 3.1184210525,
+      "arrival_hours": 3.170510129166667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-40-shipped-0",
+      "event_hours": 3.197368421111111,
+      "arrival_hours": 3.2097459177777776,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0013-delivered-0",
+      "event_hours": 3.2021154158333336,
+      "arrival_hours": 3.2891008355555553,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0043-delivered-0",
+      "event_hours": 3.23890075,
+      "arrival_hours": 3.290732902222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-41-shipped-0",
+      "event_hours": 3.2763157894444443,
+      "arrival_hours": 3.301617910277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-42-shipped-0",
+      "event_hours": 3.3552631577777774,
+      "arrival_hours": 3.4001147755555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-43-shipped-0",
+      "event_hours": 3.434210526388889,
+      "arrival_hours": 3.519744473888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-44-shipped-0",
+      "event_hours": 3.513157894722222,
+      "arrival_hours": 3.532892895555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-12-shipped-0",
+      "event_hours": 0.9868421052777777,
+      "arrival_hours": 3.568525948055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-45-shipped-0",
+      "event_hours": 3.5921052630555557,
+      "arrival_hours": 3.6047459419444445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-46-shipped-0",
+      "event_hours": 3.6710526316666665,
+      "arrival_hours": 3.690716688611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0113-shipped-0",
+      "event_hours": 3.7915223969444445,
+      "arrival_hours": 3.831291616388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-47-shipped-0",
+      "event_hours": 3.75,
+      "arrival_hours": 3.8417163319444443,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-48-shipped-0",
+      "event_hours": 3.8289473683333335,
+      "arrival_hours": 3.846414695277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-49-shipped-0",
+      "event_hours": 3.9078947369444443,
+      "arrival_hours": 3.9143901702777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0125-shipped-0",
+      "event_hours": 3.8713306263888887,
+      "arrival_hours": 3.9570416516666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-51-shipped-0",
+      "event_hours": 4.065789473611111,
+      "arrival_hours": 4.071777685833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-50-shipped-0",
+      "event_hours": 3.986842105277778,
+      "arrival_hours": 4.07711078,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0115-shipped-0",
+      "event_hours": 4.129655936111111,
+      "arrival_hours": 4.140274403055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-52-shipped-0",
+      "event_hours": 4.144736842222223,
+      "arrival_hours": 4.183044283888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0048-delivered-0",
+      "event_hours": 4.1617374527777775,
+      "arrival_hours": 4.1956139511111115,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0121-shipped-0",
+      "event_hours": 4.205902853611111,
+      "arrival_hours": 4.221160910277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0127-shipped-0",
+      "event_hours": 4.195434239722222,
+      "arrival_hours": 4.232097970833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-53-shipped-0",
+      "event_hours": 4.223684210555556,
+      "arrival_hours": 4.235234783055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0013-delivered-0",
+      "event_hours": 3.2021154158333336,
+      "arrival_hours": 4.260579880833333,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-54-shipped-0",
+      "event_hours": 4.302631578888889,
+      "arrival_hours": 4.309182996388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-55-shipped-0",
+      "event_hours": 4.3815789474999995,
+      "arrival_hours": 4.399211578055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0027-delivered-0",
+      "event_hours": 4.4425266627777775,
+      "arrival_hours": 4.462589828611112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-56-shipped-0",
+      "event_hours": 4.4605263158333335,
+      "arrival_hours": 4.464465227777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-57-shipped-0",
+      "event_hours": 4.5394736841666665,
+      "arrival_hours": 4.601928322777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-58-shipped-0",
+      "event_hours": 4.6184210525000005,
+      "arrival_hours": 4.623589391388888,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0109-shipped-0",
+      "event_hours": 4.56,
+      "arrival_hours": 4.631086436111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-59-shipped-0",
+      "event_hours": 4.697368421111111,
+      "arrival_hours": 4.7051941713888885,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-60-shipped-0",
+      "event_hours": 4.776315789444444,
+      "arrival_hours": 4.7865187888888885,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0026-delivered-0",
+      "event_hours": 4.792574187777777,
+      "arrival_hours": 4.800478968055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-61-shipped-0",
+      "event_hours": 4.855263157777778,
+      "arrival_hours": 4.881048147222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-62-shipped-0",
+      "event_hours": 4.934210526388889,
+      "arrival_hours": 4.944967550277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-63-shipped-0",
+      "event_hours": 5.013157894722222,
+      "arrival_hours": 5.100260446388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0112-shipped-0",
+      "event_hours": 5.086173739166667,
+      "arrival_hours": 5.1078788713888885,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-64-shipped-0",
+      "event_hours": 5.092105263055556,
+      "arrival_hours": 5.125278173055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-65-shipped-0",
+      "event_hours": 5.171052631666667,
+      "arrival_hours": 5.177445295,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0145-shipped-0",
+      "event_hours": 5.161570960277778,
+      "arrival_hours": 5.190266486944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-66-shipped-0",
+      "event_hours": 5.25,
+      "arrival_hours": 5.269666551944445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-67-shipped-0",
+      "event_hours": 5.328947368333333,
+      "arrival_hours": 5.337045451944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-7-shipped-0",
+      "event_hours": 0.5921052630555556,
+      "arrival_hours": 5.394897339444444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-68-shipped-0",
+      "event_hours": 5.407894736944444,
+      "arrival_hours": 5.431841840833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-69-shipped-0",
+      "event_hours": 5.486842105277778,
+      "arrival_hours": 5.533264407777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-71-shipped-0",
+      "event_hours": 5.644736842222222,
+      "arrival_hours": 5.662147703333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-70-shipped-0",
+      "event_hours": 5.565789473611111,
+      "arrival_hours": 5.677393631666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-72-shipped-0",
+      "event_hours": 5.723684210555556,
+      "arrival_hours": 5.770854026111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-73-shipped-0",
+      "event_hours": 5.802631578888889,
+      "arrival_hours": 5.8029857675,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-74-shipped-0",
+      "event_hours": 5.8815789474999995,
+      "arrival_hours": 5.882770409444444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-75-shipped-0",
+      "event_hours": 5.960526315833333,
+      "arrival_hours": 6.030003017222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-76-shipped-0",
+      "event_hours": 6.039473684166667,
+      "arrival_hours": 6.101415684722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-77-shipped-0",
+      "event_hours": 6.1184210525000005,
+      "arrival_hours": 6.123358612222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-78-shipped-0",
+      "event_hours": 6.197368421111111,
+      "arrival_hours": 6.279550591111112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-79-shipped-0",
+      "event_hours": 6.276315789444444,
+      "arrival_hours": 6.305177659722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-80-shipped-0",
+      "event_hours": 6.355263157777778,
+      "arrival_hours": 6.450722676388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-82-shipped-0",
+      "event_hours": 6.513157894722222,
+      "arrival_hours": 6.520810358888888,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-83-shipped-0",
+      "event_hours": 6.592105263055556,
+      "arrival_hours": 6.662731876111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-84-shipped-0",
+      "event_hours": 6.671052631666667,
+      "arrival_hours": 6.696478351111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0046-delivered-0",
+      "event_hours": 6.692383509444445,
+      "arrival_hours": 6.71570207,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-85-shipped-0",
+      "event_hours": 6.75,
+      "arrival_hours": 6.7509248755555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-86-shipped-0",
+      "event_hours": 6.828947368333333,
+      "arrival_hours": 6.837555989722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0010-delivered-0",
+      "event_hours": 1.5023706969444444,
+      "arrival_hours": 6.874517103888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0161-shipped-0",
+      "event_hours": 6.893906977222222,
+      "arrival_hours": 6.922675178055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-87-shipped-0",
+      "event_hours": 6.907894736944444,
+      "arrival_hours": 6.92681064,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0128-shipped-0",
+      "event_hours": 6.899520906388889,
+      "arrival_hours": 6.941287474166667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-78-shipped-0",
+      "event_hours": 6.197368421111111,
+      "arrival_hours": 6.960404488055556,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-order-0062-delivered-0",
+      "event_hours": 6.928236148333333,
+      "arrival_hours": 6.981875413333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-88-shipped-0",
+      "event_hours": 6.986842105277778,
+      "arrival_hours": 6.989377919722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0063-delivered-0",
+      "event_hours": 7.045661296388889,
+      "arrival_hours": 7.065322293055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-89-shipped-0",
+      "event_hours": 7.065789473611111,
+      "arrival_hours": 7.127459198055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-90-shipped-0",
+      "event_hours": 7.144736842222222,
+      "arrival_hours": 7.152846961944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0147-shipped-0",
+      "event_hours": 2.1666707569444443,
+      "arrival_hours": 7.213553322777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-91-shipped-0",
+      "event_hours": 7.223684210555556,
+      "arrival_hours": 7.2621132975,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-92-shipped-0",
+      "event_hours": 7.302631578888889,
+      "arrival_hours": 7.3043259825,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0025-delivered-0",
+      "event_hours": 7.4760568275,
+      "arrival_hours": 7.4922937125,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-94-shipped-0",
+      "event_hours": 7.460526315833333,
+      "arrival_hours": 7.492515884722223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-93-shipped-0",
+      "event_hours": 7.3815789474999995,
+      "arrival_hours": 7.503564815,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0151-shipped-0",
+      "event_hours": 7.509658138611111,
+      "arrival_hours": 7.529417880833334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-95-shipped-0",
+      "event_hours": 7.539473684166667,
+      "arrival_hours": 7.565364718055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0065-delivered-0",
+      "event_hours": 7.595854744444444,
+      "arrival_hours": 7.603019980833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0020-delivered-0",
+      "event_hours": 7.6053266575,
+      "arrival_hours": 7.622973174166667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-96-shipped-0",
+      "event_hours": 7.6184210525000005,
+      "arrival_hours": 7.628517665833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-97-shipped-0",
+      "event_hours": 7.697368421111111,
+      "arrival_hours": 7.699772875833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-98-shipped-0",
+      "event_hours": 7.776315789444444,
+      "arrival_hours": 7.778994851944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-99-shipped-0",
+      "event_hours": 7.855263157777778,
+      "arrival_hours": 7.875322786111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-100-shipped-0",
+      "event_hours": 7.934210526388889,
+      "arrival_hours": 7.977558063611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-101-shipped-0",
+      "event_hours": 8.013157894722221,
+      "arrival_hours": 8.038669424166667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-102-shipped-0",
+      "event_hours": 8.092105263055556,
+      "arrival_hours": 8.098587272222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-103-shipped-0",
+      "event_hours": 8.171052631666667,
+      "arrival_hours": 8.174849825555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-104-shipped-0",
+      "event_hours": 8.25,
+      "arrival_hours": 8.285735084722221,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-105-shipped-0",
+      "event_hours": 8.328947368333333,
+      "arrival_hours": 8.397269166944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-106-shipped-0",
+      "event_hours": 8.407894736944444,
+      "arrival_hours": 8.42902044388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0153-shipped-0",
+      "event_hours": 8.471798504722223,
+      "arrival_hours": 8.488675219166668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-107-shipped-0",
+      "event_hours": 8.486842105277779,
+      "arrival_hours": 8.499397968611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-109-shipped-0",
+      "event_hours": 8.644736842222223,
+      "arrival_hours": 8.651892625277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-108-shipped-0",
+      "event_hours": 8.565789473611112,
+      "arrival_hours": 8.705133485277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-110-shipped-0",
+      "event_hours": 8.723684210555556,
+      "arrival_hours": 8.723729003055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-111-shipped-0",
+      "event_hours": 8.802631578888889,
+      "arrival_hours": 8.811647491944445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-112-shipped-0",
+      "event_hours": 8.8815789475,
+      "arrival_hours": 8.902374981666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-113-shipped-0",
+      "event_hours": 8.960526315833333,
+      "arrival_hours": 8.977802358055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-114-shipped-0",
+      "event_hours": 9.039473684166667,
+      "arrival_hours": 9.045303106666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-115-shipped-0",
+      "event_hours": 9.1184210525,
+      "arrival_hours": 9.129680443055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0158-shipped-0",
+      "event_hours": 9.285174503333334,
+      "arrival_hours": 9.288229329444444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-116-shipped-0",
+      "event_hours": 9.197368421111111,
+      "arrival_hours": 9.30178365111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-117-shipped-0",
+      "event_hours": 9.276315789444444,
+      "arrival_hours": 9.336763620555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-118-shipped-0",
+      "event_hours": 9.355263157777777,
+      "arrival_hours": 9.360715975000002,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0119-shipped-0",
+      "event_hours": 9.36,
+      "arrival_hours": 9.379868205277779,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0037-delivered-0",
+      "event_hours": 9.467901325,
+      "arrival_hours": 9.46919257611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0061-delivered-0",
+      "event_hours": 9.451842806944443,
+      "arrival_hours": 9.489889167777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-120-shipped-0",
+      "event_hours": 9.513157894722221,
+      "arrival_hours": 9.533453691111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-119-shipped-0",
+      "event_hours": 9.434210526388888,
+      "arrival_hours": 9.582328064166665,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0030-delivered-0",
+      "event_hours": 9.592025284166667,
+      "arrival_hours": 9.693055222222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-123-shipped-0",
+      "event_hours": 9.75,
+      "arrival_hours": 9.811271980555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0146-shipped-0",
+      "event_hours": 9.734808384722223,
+      "arrival_hours": 9.840531402222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-124-shipped-0",
+      "event_hours": 9.828947368333335,
+      "arrival_hours": 9.840686754444445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0021-delivered-0",
+      "event_hours": 9.831204999166667,
+      "arrival_hours": 9.853759005,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0052-delivered-0",
+      "event_hours": 9.818750664166668,
+      "arrival_hours": 9.896779593055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-125-shipped-0",
+      "event_hours": 9.907894736944444,
+      "arrival_hours": 9.908707851666668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0031-delivered-0",
+      "event_hours": 9.91377518611111,
+      "arrival_hours": 9.936473716666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-126-shipped-0",
+      "event_hours": 9.986842105277779,
+      "arrival_hours": 9.997138641666668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0143-shipped-0",
+      "event_hours": 9.963567102222223,
+      "arrival_hours": 10.006109239722221,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-127-shipped-0",
+      "event_hours": 10.065789473611112,
+      "arrival_hours": 10.075342188055554,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-128-shipped-0",
+      "event_hours": 10.144736842222223,
+      "arrival_hours": 10.154220127499999,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-116-shipped-0",
+      "event_hours": 9.197368421111111,
+      "arrival_hours": 10.251014485,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-129-shipped-0",
+      "event_hours": 10.223684210555556,
+      "arrival_hours": 10.269137377222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-131-shipped-0",
+      "event_hours": 10.3815789475,
+      "arrival_hours": 10.413688111944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0130-shipped-0",
+      "event_hours": 10.413280443055555,
+      "arrival_hours": 10.42086139611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-130-shipped-0",
+      "event_hours": 10.302631578888889,
+      "arrival_hours": 10.446917940833332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-132-shipped-0",
+      "event_hours": 10.460526315833334,
+      "arrival_hours": 10.523630401111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-133-shipped-0",
+      "event_hours": 10.539473684166666,
+      "arrival_hours": 10.548364520833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-134-shipped-0",
+      "event_hours": 10.6184210525,
+      "arrival_hours": 10.629304585833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-135-shipped-0",
+      "event_hours": 10.697368421111111,
+      "arrival_hours": 10.710346236666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-136-shipped-0",
+      "event_hours": 10.776315789444444,
+      "arrival_hours": 10.790982598055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0050-delivered-0",
+      "event_hours": 6.724361821388889,
+      "arrival_hours": 10.813895465555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-137-shipped-0",
+      "event_hours": 10.855263157777777,
+      "arrival_hours": 10.869807347499998,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-138-shipped-0",
+      "event_hours": 10.934210526388888,
+      "arrival_hours": 11.01714770861111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-81-shipped-0",
+      "event_hours": 6.434210526388889,
+      "arrival_hours": 11.026141785,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-139-shipped-0",
+      "event_hours": 11.013157894722221,
+      "arrival_hours": 11.043039466944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-140-shipped-0",
+      "event_hours": 11.092105263055556,
+      "arrival_hours": 11.145601163611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-141-shipped-0",
+      "event_hours": 11.171052631666665,
+      "arrival_hours": 11.205787910277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0160-shipped-0",
+      "event_hours": 11.163676086944443,
+      "arrival_hours": 11.225695717222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-142-shipped-0",
+      "event_hours": 11.25,
+      "arrival_hours": 11.254910370833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-143-shipped-0",
+      "event_hours": 11.328947368333335,
+      "arrival_hours": 11.339117726666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-144-shipped-0",
+      "event_hours": 11.407894736944444,
+      "arrival_hours": 11.418764585277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-145-shipped-0",
+      "event_hours": 11.486842105277779,
+      "arrival_hours": 11.495887230555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0166-shipped-0",
+      "event_hours": 11.444856507499999,
+      "arrival_hours": 11.498313346666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-146-shipped-0",
+      "event_hours": 11.565789473611112,
+      "arrival_hours": 11.61042818111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-147-shipped-0",
+      "event_hours": 11.644736842222223,
+      "arrival_hours": 11.662594198055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0150-shipped-0",
+      "event_hours": 11.663040891666666,
+      "arrival_hours": 11.691664335833332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0124-shipped-0",
+      "event_hours": 11.76,
+      "arrival_hours": 11.76552195,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-148-shipped-0",
+      "event_hours": 11.723684210555556,
+      "arrival_hours": 11.767234313055557,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-149-shipped-0",
+      "event_hours": 11.802631578888889,
+      "arrival_hours": 11.860533870833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-151-shipped-0",
+      "event_hours": 11.960526315833334,
+      "arrival_hours": 12.018250576388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-152-shipped-0",
+      "event_hours": 12.039473684166666,
+      "arrival_hours": 12.042075294166667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-153-shipped-0",
+      "event_hours": 12.1184210525,
+      "arrival_hours": 12.15141732638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-154-shipped-0",
+      "event_hours": 12.197368421111111,
+      "arrival_hours": 12.227992545277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-155-shipped-0",
+      "event_hours": 12.276315789444444,
+      "arrival_hours": 12.308928580833335,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-156-shipped-0",
+      "event_hours": 12.355263157777777,
+      "arrival_hours": 12.433381135,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0126-shipped-0",
+      "event_hours": 12.451523198333334,
+      "arrival_hours": 12.480577513611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-158-shipped-0",
+      "event_hours": 12.513157894722221,
+      "arrival_hours": 12.530271141388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-157-shipped-0",
+      "event_hours": 12.434210526388888,
+      "arrival_hours": 12.553647766388888,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0132-shipped-0",
+      "event_hours": 12.603533977222222,
+      "arrival_hours": 12.619834568611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-160-shipped-0",
+      "event_hours": 12.671052631666665,
+      "arrival_hours": 12.701976378333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-159-shipped-0",
+      "event_hours": 12.592105263055556,
+      "arrival_hours": 12.752369360833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-161-shipped-0",
+      "event_hours": 12.75,
+      "arrival_hours": 12.758074869722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0141-shipped-0",
+      "event_hours": 12.75056318361111,
+      "arrival_hours": 12.759653757777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-162-shipped-0",
+      "event_hours": 12.828947368333335,
+      "arrival_hours": 12.864562006944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-151-shipped-0",
+      "event_hours": 11.960526315833334,
+      "arrival_hours": 12.867702477777778,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-163-shipped-0",
+      "event_hours": 12.907894736944444,
+      "arrival_hours": 12.920986263055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0066-delivered-0",
+      "event_hours": 12.963658058888889,
+      "arrival_hours": 12.991410571666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-164-shipped-0",
+      "event_hours": 12.986842105277779,
+      "arrival_hours": 13.008079356944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0137-shipped-0",
+      "event_hours": 13.043833531944443,
+      "arrival_hours": 13.058237885,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-165-shipped-0",
+      "event_hours": 13.065789473611112,
+      "arrival_hours": 13.084695691944445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-166-shipped-0",
+      "event_hours": 13.144736842222223,
+      "arrival_hours": 13.157387536388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-167-shipped-0",
+      "event_hours": 13.223684210555556,
+      "arrival_hours": 13.229634573055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0162-shipped-0",
+      "event_hours": 13.436929575277778,
+      "arrival_hours": 13.44726687388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-169-shipped-0",
+      "event_hours": 13.3815789475,
+      "arrival_hours": 13.479306283888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-170-shipped-0",
+      "event_hours": 13.460526315833334,
+      "arrival_hours": 13.5249625325,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0060-delivered-0",
+      "event_hours": 13.517673116111112,
+      "arrival_hours": 13.529417736944445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0038-delivered-0",
+      "event_hours": 13.587412550277778,
+      "arrival_hours": 13.589342247222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-171-shipped-0",
+      "event_hours": 13.539473684166666,
+      "arrival_hours": 13.622274266944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0148-shipped-0",
+      "event_hours": 13.64643125527778,
+      "arrival_hours": 13.66297320888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-172-shipped-0",
+      "event_hours": 13.6184210525,
+      "arrival_hours": 13.665801787222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-173-shipped-0",
+      "event_hours": 13.697368421111111,
+      "arrival_hours": 13.707700382222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0138-shipped-0",
+      "event_hours": 13.840431263333333,
+      "arrival_hours": 13.841411619722223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-175-shipped-0",
+      "event_hours": 13.855263157777777,
+      "arrival_hours": 13.85820824638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-174-shipped-0",
+      "event_hours": 13.776315789444444,
+      "arrival_hours": 13.877015784722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-176-shipped-0",
+      "event_hours": 13.934210526388888,
+      "arrival_hours": 13.994356595000001,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-177-shipped-0",
+      "event_hours": 14.013157894722221,
+      "arrival_hours": 14.029937200277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0152-shipped-0",
+      "event_hours": 14.123017983055554,
+      "arrival_hours": 14.12935533611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0131-shipped-0",
+      "event_hours": 14.037800343333332,
+      "arrival_hours": 14.129547151111112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-178-shipped-0",
+      "event_hours": 14.092105263055556,
+      "arrival_hours": 14.132964834722223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-179-shipped-0",
+      "event_hours": 14.171052631666665,
+      "arrival_hours": 14.256376461666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0129-shipped-0",
+      "event_hours": 14.16,
+      "arrival_hours": 14.267226884166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-180-shipped-0",
+      "event_hours": 14.25,
+      "arrival_hours": 14.296245544722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-181-shipped-0",
+      "event_hours": 14.328947368333335,
+      "arrival_hours": 14.352639546666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-182-shipped-0",
+      "event_hours": 14.407894736944444,
+      "arrival_hours": 14.416114217222223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-183-shipped-0",
+      "event_hours": 14.486842105277779,
+      "arrival_hours": 14.535708001666666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-184-shipped-0",
+      "event_hours": 14.565789473611112,
+      "arrival_hours": 14.573033186944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-185-shipped-0",
+      "event_hours": 14.644736842222223,
+      "arrival_hours": 14.645229898333334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0076-delivered-0",
+      "event_hours": 14.615589030833334,
+      "arrival_hours": 14.673439330277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-186-shipped-0",
+      "event_hours": 14.723684210555556,
+      "arrival_hours": 14.741753129166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-187-shipped-0",
+      "event_hours": 14.802631578888889,
+      "arrival_hours": 14.863286441944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-188-shipped-0",
+      "event_hours": 14.8815789475,
+      "arrival_hours": 14.889167502222222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-187-shipped-0",
+      "event_hours": 14.802631578888889,
+      "arrival_hours": 15.005754036666666,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-190-shipped-0",
+      "event_hours": 15.039473684166666,
+      "arrival_hours": 15.050164168611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-189-shipped-0",
+      "event_hours": 14.960526315833334,
+      "arrival_hours": 15.192818763611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-191-shipped-0",
+      "event_hours": 15.1184210525,
+      "arrival_hours": 15.219981409722223,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-192-shipped-0",
+      "event_hours": 15.197368421111111,
+      "arrival_hours": 15.226294926944446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-194-shipped-0",
+      "event_hours": 15.355263157777777,
+      "arrival_hours": 15.367265025000002,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-195-shipped-0",
+      "event_hours": 15.434210526388888,
+      "arrival_hours": 15.437780894166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-193-shipped-0",
+      "event_hours": 15.276315789444444,
+      "arrival_hours": 15.460862667777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0155-shipped-0",
+      "event_hours": 15.434472397777778,
+      "arrival_hours": 15.5283849875,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-196-shipped-0",
+      "event_hours": 15.513157894722221,
+      "arrival_hours": 15.594801849722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-197-shipped-0",
+      "event_hours": 15.592105263055556,
+      "arrival_hours": 15.605869361388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-198-shipped-0",
+      "event_hours": 15.671052631666665,
+      "arrival_hours": 15.708107295833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-199-shipped-0",
+      "event_hours": 15.75,
+      "arrival_hours": 15.760922779722224,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0135-shipped-0",
+      "event_hours": 15.840285114722223,
+      "arrival_hours": 15.881255035833332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-200-shipped-0",
+      "event_hours": 15.828947368333335,
+      "arrival_hours": 15.9061229375,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-201-shipped-0",
+      "event_hours": 15.907894736944444,
+      "arrival_hours": 15.911984070833334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0142-shipped-0",
+      "event_hours": 15.988202377222223,
+      "arrival_hours": 16.004842810555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-202-shipped-0",
+      "event_hours": 15.986842105277779,
+      "arrival_hours": 16.0090146525,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-203-shipped-0",
+      "event_hours": 16.06578947361111,
+      "arrival_hours": 16.096958961666665,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-204-shipped-0",
+      "event_hours": 16.144736842222223,
+      "arrival_hours": 16.220791897777776,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-205-shipped-0",
+      "event_hours": 16.223684210555557,
+      "arrival_hours": 16.24913897638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-206-shipped-0",
+      "event_hours": 16.30263157888889,
+      "arrival_hours": 16.35470319527778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-207-shipped-0",
+      "event_hours": 16.3815789475,
+      "arrival_hours": 16.427252500833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-208-shipped-0",
+      "event_hours": 16.460526315833334,
+      "arrival_hours": 16.514219265833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-209-shipped-0",
+      "event_hours": 16.539473684166666,
+      "arrival_hours": 16.561607469444446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0134-shipped-0",
+      "event_hours": 16.56,
+      "arrival_hours": 16.566694382222224,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0163-shipped-0",
+      "event_hours": 16.566145381944445,
+      "arrival_hours": 16.576504543055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-210-shipped-0",
+      "event_hours": 16.6184210525,
+      "arrival_hours": 16.724661795,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-212-shipped-0",
+      "event_hours": 16.776315789444443,
+      "arrival_hours": 16.798814718333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-211-shipped-0",
+      "event_hours": 16.69736842111111,
+      "arrival_hours": 16.84096575361111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-213-shipped-0",
+      "event_hours": 16.855263157777777,
+      "arrival_hours": 16.871101169166668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-216-shipped-0",
+      "event_hours": 17.092105263055554,
+      "arrival_hours": 17.110643575277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-217-shipped-0",
+      "event_hours": 17.171052631666665,
+      "arrival_hours": 17.192097325,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-218-shipped-0",
+      "event_hours": 17.25,
+      "arrival_hours": 17.263629685555557,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-219-shipped-0",
+      "event_hours": 17.328947368333335,
+      "arrival_hours": 17.355919235277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-220-shipped-0",
+      "event_hours": 17.407894736944446,
+      "arrival_hours": 17.42795926111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-221-shipped-0",
+      "event_hours": 17.486842105277777,
+      "arrival_hours": 17.53858117777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0047-delivered-0",
+      "event_hours": 17.559382866388887,
+      "arrival_hours": 17.564523335,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-222-shipped-0",
+      "event_hours": 17.56578947361111,
+      "arrival_hours": 17.597219891944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-223-shipped-0",
+      "event_hours": 17.644736842222223,
+      "arrival_hours": 17.682926029166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-224-shipped-0",
+      "event_hours": 17.723684210555557,
+      "arrival_hours": 17.7253490425,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-121-shipped-0",
+      "event_hours": 9.592105263055556,
+      "arrival_hours": 17.74567696472222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0082-delivered-0",
+      "event_hours": 17.75776181722222,
+      "arrival_hours": 17.7580335275,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-225-shipped-0",
+      "event_hours": 17.80263157888889,
+      "arrival_hours": 17.80709041833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-226-shipped-0",
+      "event_hours": 17.8815789475,
+      "arrival_hours": 17.9540410575,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-227-shipped-0",
+      "event_hours": 17.960526315833334,
+      "arrival_hours": 17.976952533055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-228-shipped-0",
+      "event_hours": 18.039473684166666,
+      "arrival_hours": 18.088113754444446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-229-shipped-0",
+      "event_hours": 18.1184210525,
+      "arrival_hours": 18.167323729166668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-230-shipped-0",
+      "event_hours": 18.19736842111111,
+      "arrival_hours": 18.19864781638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-231-shipped-0",
+      "event_hours": 18.276315789444443,
+      "arrival_hours": 18.304880239166668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-232-shipped-0",
+      "event_hours": 18.355263157777777,
+      "arrival_hours": 18.36140232611111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-215-shipped-0",
+      "event_hours": 17.013157894722223,
+      "arrival_hours": 18.397842655833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-233-shipped-0",
+      "event_hours": 18.43421052638889,
+      "arrival_hours": 18.455499565555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-234-shipped-0",
+      "event_hours": 18.513157894722223,
+      "arrival_hours": 18.518416700277776,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0058-delivered-0",
+      "event_hours": 18.572014918055554,
+      "arrival_hours": 18.599932006944446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0072-delivered-0",
+      "event_hours": 18.611639554166665,
+      "arrival_hours": 18.613309085,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-229-shipped-0",
+      "event_hours": 18.1184210525,
+      "arrival_hours": 18.653646778055553,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-235-shipped-0",
+      "event_hours": 18.592105263055554,
+      "arrival_hours": 18.661160813333332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-236-shipped-0",
+      "event_hours": 18.67105263166667,
+      "arrival_hours": 18.672655596111113,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-237-shipped-0",
+      "event_hours": 18.75,
+      "arrival_hours": 18.763902811666668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-238-shipped-0",
+      "event_hours": 18.82894736833333,
+      "arrival_hours": 18.830872133333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0070-delivered-0",
+      "event_hours": 18.86995671,
+      "arrival_hours": 18.892549758055555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-239-shipped-0",
+      "event_hours": 18.907894736944446,
+      "arrival_hours": 18.951251965833332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0139-shipped-0",
+      "event_hours": 18.96,
+      "arrival_hours": 18.975132323333334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-240-shipped-0",
+      "event_hours": 18.986842105277777,
+      "arrival_hours": 19.017992627777776,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0178-shipped-0",
+      "event_hours": 18.988118235555557,
+      "arrival_hours": 19.026443918055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0056-delivered-0",
+      "event_hours": 19.055759015,
+      "arrival_hours": 19.06190058527778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-241-shipped-0",
+      "event_hours": 19.06578947361111,
+      "arrival_hours": 19.18355680333333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-242-shipped-0",
+      "event_hours": 19.144736842222223,
+      "arrival_hours": 19.194430323611112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0175-shipped-0",
+      "event_hours": 19.173887009444442,
+      "arrival_hours": 19.226792111944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0181-shipped-0",
+      "event_hours": 19.266665804722223,
+      "arrival_hours": 19.27599318111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-244-shipped-0",
+      "event_hours": 19.30263157888889,
+      "arrival_hours": 19.31447969111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-245-shipped-0",
+      "event_hours": 19.3815789475,
+      "arrival_hours": 19.390652219444444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-246-shipped-0",
+      "event_hours": 19.46052631583333,
+      "arrival_hours": 19.481034165,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-247-shipped-0",
+      "event_hours": 19.53947368416667,
+      "arrival_hours": 19.54885506833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-243-shipped-0",
+      "event_hours": 19.223684210555557,
+      "arrival_hours": 19.55916697388889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0185-shipped-0",
+      "event_hours": 19.55059962388889,
+      "arrival_hours": 19.579825725833334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-248-shipped-0",
+      "event_hours": 19.6184210525,
+      "arrival_hours": 19.6283265575,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0042-delivered-0",
+      "event_hours": 19.671126850833332,
+      "arrival_hours": 19.699021811666668,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-249-shipped-0",
+      "event_hours": 19.69736842111111,
+      "arrival_hours": 19.719932630555554,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-250-shipped-0",
+      "event_hours": 19.776315789444443,
+      "arrival_hours": 19.778501668055554,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0057-delivered-0",
+      "event_hours": 19.575773411111115,
+      "arrival_hours": 19.799699460833335,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-251-shipped-0",
+      "event_hours": 19.855263157777777,
+      "arrival_hours": 19.85883923277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-252-shipped-0",
+      "event_hours": 19.93421052638889,
+      "arrival_hours": 19.952260414444442,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-253-shipped-0",
+      "event_hours": 20.013157894722223,
+      "arrival_hours": 20.035627055,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0051-delivered-0",
+      "event_hours": 20.06851485527778,
+      "arrival_hours": 20.0744383625,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-254-shipped-0",
+      "event_hours": 20.092105263055554,
+      "arrival_hours": 20.095617712777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-255-shipped-0",
+      "event_hours": 20.17105263166667,
+      "arrival_hours": 20.182157319444446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-256-shipped-0",
+      "event_hours": 20.25,
+      "arrival_hours": 20.256576025277777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-257-shipped-0",
+      "event_hours": 20.32894736833333,
+      "arrival_hours": 20.347905869722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0053-delivered-0",
+      "event_hours": 20.419602419999997,
+      "arrival_hours": 20.4324320525,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-258-shipped-0",
+      "event_hours": 20.407894736944446,
+      "arrival_hours": 20.44319807111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-259-shipped-0",
+      "event_hours": 20.486842105277777,
+      "arrival_hours": 20.5128327925,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-260-shipped-0",
+      "event_hours": 20.56578947361111,
+      "arrival_hours": 20.604042237499996,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-261-shipped-0",
+      "event_hours": 20.644736842222223,
+      "arrival_hours": 20.658178321944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-262-shipped-0",
+      "event_hours": 20.723684210555557,
+      "arrival_hours": 20.779680374722222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-263-shipped-0",
+      "event_hours": 20.80263157888889,
+      "arrival_hours": 20.82156835472222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-264-shipped-0",
+      "event_hours": 20.8815789475,
+      "arrival_hours": 20.891526308055557,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-266-shipped-0",
+      "event_hours": 21.03947368416667,
+      "arrival_hours": 21.043547805,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-265-shipped-0",
+      "event_hours": 20.96052631583333,
+      "arrival_hours": 21.050262728055557,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-267-shipped-0",
+      "event_hours": 21.1184210525,
+      "arrival_hours": 21.119239333611112,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-268-shipped-0",
+      "event_hours": 21.19736842111111,
+      "arrival_hours": 21.204782975,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0071-delivered-0",
+      "event_hours": 21.22034905,
+      "arrival_hours": 21.230249538055556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-269-shipped-0",
+      "event_hours": 21.276315789444443,
+      "arrival_hours": 21.33863997,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0144-shipped-0",
+      "event_hours": 21.36,
+      "arrival_hours": 21.364027364444446,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-270-shipped-0",
+      "event_hours": 21.355263157777777,
+      "arrival_hours": 21.403787220833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-271-shipped-0",
+      "event_hours": 21.43421052638889,
+      "arrival_hours": 21.45174897638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-272-shipped-0",
+      "event_hours": 21.513157894722223,
+      "arrival_hours": 21.52754489888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-273-shipped-0",
+      "event_hours": 21.592105263055554,
+      "arrival_hours": 21.595306835,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-274-shipped-0",
+      "event_hours": 21.67105263166667,
+      "arrival_hours": 21.733688385555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-275-shipped-0",
+      "event_hours": 21.75,
+      "arrival_hours": 21.786368553333332,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-276-shipped-0",
+      "event_hours": 21.82894736833333,
+      "arrival_hours": 21.849953470555555,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-277-shipped-0",
+      "event_hours": 21.907894736944446,
+      "arrival_hours": 21.978981005555553,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-278-shipped-0",
+      "event_hours": 21.986842105277777,
+      "arrival_hours": 22.052229095555553,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-281-shipped-0",
+      "event_hours": 22.223684210555557,
+      "arrival_hours": 22.230048597777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-280-shipped-0",
+      "event_hours": 22.144736842222223,
+      "arrival_hours": 22.241566699444444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-282-shipped-0",
+      "event_hours": 22.30263157888889,
+      "arrival_hours": 22.30298932638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-283-shipped-0",
+      "event_hours": 22.3815789475,
+      "arrival_hours": 22.44282953805556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-284-shipped-0",
+      "event_hours": 22.46052631583333,
+      "arrival_hours": 22.481278251388886,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-285-shipped-0",
+      "event_hours": 22.53947368416667,
+      "arrival_hours": 22.600625808055558,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-286-shipped-0",
+      "event_hours": 22.6184210525,
+      "arrival_hours": 22.656845968888888,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0168-shipped-0",
+      "event_hours": 22.683034864444444,
+      "arrival_hours": 22.68823905888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0096-delivered-0",
+      "event_hours": 22.72810120638889,
+      "arrival_hours": 22.76129135,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-287-shipped-0",
+      "event_hours": 22.69736842111111,
+      "arrival_hours": 22.77631637138889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-288-shipped-0",
+      "event_hours": 22.776315789444443,
+      "arrival_hours": 22.80990095111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-289-shipped-0",
+      "event_hours": 22.855263157777777,
+      "arrival_hours": 22.86171356638889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0188-shipped-0",
+      "event_hours": 22.947063599444444,
+      "arrival_hours": 22.98333516888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-290-shipped-0",
+      "event_hours": 22.93421052638889,
+      "arrival_hours": 23.001538136111108,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-291-shipped-0",
+      "event_hours": 23.013157894722223,
+      "arrival_hours": 23.04848684972222,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-292-shipped-0",
+      "event_hours": 23.092105263055554,
+      "arrival_hours": 23.197486170555553,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-293-shipped-0",
+      "event_hours": 23.17105263166667,
+      "arrival_hours": 23.2252756925,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-294-shipped-0",
+      "event_hours": 23.25,
+      "arrival_hours": 23.27882922777778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0088-delivered-0",
+      "event_hours": 23.266921203055556,
+      "arrival_hours": 23.309346969444448,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0114-shipped-0",
+      "event_hours": 6.96,
+      "arrival_hours": 23.3262806925,
+      "late": true,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-295-shipped-0",
+      "event_hours": 23.32894736833333,
+      "arrival_hours": 23.341051310555553,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-296-shipped-0",
+      "event_hours": 23.407894736944446,
+      "arrival_hours": 23.491742589444442,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-298-shipped-0",
+      "event_hours": 23.56578947361111,
+      "arrival_hours": 23.574583614166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-297-shipped-0",
+      "event_hours": 23.486842105277777,
+      "arrival_hours": 23.592009499722224,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-299-shipped-0",
+      "event_hours": 23.644736842222223,
+      "arrival_hours": 23.68071030833333,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0176-shipped-0",
+      "event_hours": 23.72269718388889,
+      "arrival_hours": 23.73394239111111,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-300-shipped-0",
+      "event_hours": 23.723684210555557,
+      "arrival_hours": 23.750335195277778,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0149-shipped-0",
+      "event_hours": 23.76,
+      "arrival_hours": 23.790152975555554,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-301-shipped-0",
+      "event_hours": 23.80263157888889,
+      "arrival_hours": 23.807320086666667,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-302-shipped-0",
+      "event_hours": 23.8815789475,
+      "arrival_hours": 23.896861293333334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0156-shipped-0",
+      "event_hours": 23.91273008611111,
+      "arrival_hours": 23.956913054166666,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-303-shipped-0",
+      "event_hours": 23.96052631583333,
+      "arrival_hours": 23.973170318333334,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0180-shipped-0",
+      "event_hours": 20.997351611944445,
+      "arrival_hours": 24.380463149444445,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0085-delivered-0",
+      "event_hours": 17.240308105,
+      "arrival_hours": 24.618628062777777,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-214-shipped-0",
+      "event_hours": 16.93421052638889,
+      "arrival_hours": 24.625369841944444,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0078-delivered-0",
+      "event_hours": 20.991180718611112,
+      "arrival_hours": 25.69237417888889,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0078-delivered-0",
+      "event_hours": 20.991180718611112,
+      "arrival_hours": 26.316820207777777,
+      "late": false,
+      "copy": true
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-279-shipped-0",
+      "event_hours": 22.06578947361111,
+      "arrival_hours": 26.963090935555556,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-order-0077-delivered-0",
+      "event_hours": 22.76665109861111,
+      "arrival_hours": 28.40839207,
+      "late": false,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-150-shipped-0",
+      "event_hours": 11.8815789475,
+      "arrival_hours": 32.37752717194444,
+      "late": true,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-168-shipped-0",
+      "event_hours": 13.302631578888889,
+      "arrival_hours": 33.576279784166665,
+      "late": true,
+      "copy": false
+    },
+    {
+      "event_id": "scan-batch-stream-feed-0-122-shipped-0",
+      "event_hours": 9.671052631666665,
+      "arrival_hours": 44.686824263333335,
+      "late": true,
+      "copy": false
+    }
+  ],
+  "counts": [
+    {
+      "processing_hours": 0.0,
+      "fast": 0,
+      "distinct": 0,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 0,
+      "copies": 0,
+      "misses": 400,
+      "pane": "provisional",
+      "watermark": "2026-01-19T14:57:51.428571+00:00",
+      "arrival_day": 0,
+      "corrections": []
+    },
+    {
+      "processing_hours": 1.0,
+      "fast": 13,
+      "distinct": 12,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 12,
+      "copies": 1,
+      "misses": 388,
+      "pane": "provisional",
+      "watermark": "2026-01-19T15:54:28.421053+00:00",
+      "arrival_day": 13,
+      "corrections": []
+    },
+    {
+      "processing_hours": 2.0,
+      "fast": 28,
+      "distinct": 27,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 27,
+      "copies": 1,
+      "misses": 373,
+      "pane": "provisional",
+      "watermark": "2026-01-19T16:56:03.157895+00:00",
+      "arrival_day": 28,
+      "corrections": []
+    },
+    {
+      "processing_hours": 3.0,
+      "fast": 44,
+      "distinct": 43,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 43,
+      "copies": 1,
+      "misses": 357,
+      "pane": "provisional",
+      "watermark": "2026-01-19T17:57:37.894737+00:00",
+      "arrival_day": 45,
+      "corrections": []
+    },
+    {
+      "processing_hours": 4.0,
+      "fast": 61,
+      "distinct": 60,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 60,
+      "copies": 1,
+      "misses": 340,
+      "pane": "provisional",
+      "watermark": "2026-01-19T18:54:28.421053+00:00",
+      "arrival_day": 62,
+      "corrections": []
+    },
+    {
+      "processing_hours": 5.0,
+      "fast": 82,
+      "distinct": 80,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 80,
+      "copies": 2,
+      "misses": 320,
+      "pane": "provisional",
+      "watermark": "2026-01-19T19:56:03.157895+00:00",
+      "arrival_day": 83,
+      "corrections": []
+    },
+    {
+      "processing_hours": 6.0,
+      "fast": 97,
+      "distinct": 95,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 95,
+      "copies": 2,
+      "misses": 305,
+      "pane": "provisional",
+      "watermark": "2026-01-19T20:52:53.684211+00:00",
+      "arrival_day": 101,
+      "corrections": []
+    },
+    {
+      "processing_hours": 7.0,
+      "fast": 116,
+      "distinct": 113,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 113,
+      "copies": 3,
+      "misses": 287,
+      "pane": "provisional",
+      "watermark": "2026-01-19T21:59:12.631579+00:00",
+      "arrival_day": 120,
+      "corrections": []
+    },
+    {
+      "processing_hours": 8.0,
+      "fast": 134,
+      "distinct": 131,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 131,
+      "copies": 3,
+      "misses": 269,
+      "pane": "provisional",
+      "watermark": "2026-01-19T22:56:03.157895+00:00",
+      "arrival_day": 138,
+      "corrections": []
+    },
+    {
+      "processing_hours": 9.0,
+      "fast": 148,
+      "distinct": 145,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 145,
+      "copies": 3,
+      "misses": 255,
+      "pane": "provisional",
+      "watermark": "2026-01-19T23:57:37.894737+00:00",
+      "arrival_day": 152,
+      "corrections": []
+    },
+    {
+      "processing_hours": 10.0,
+      "fast": 168,
+      "distinct": 165,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 165,
+      "copies": 3,
+      "misses": 235,
+      "pane": "provisional",
+      "watermark": "2026-01-20T00:59:12.631579+00:00",
+      "arrival_day": 172,
+      "corrections": []
+    },
+    {
+      "processing_hours": 11.0,
+      "fast": 183,
+      "distinct": 179,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 179,
+      "copies": 4,
+      "misses": 221,
+      "pane": "provisional",
+      "watermark": "2026-01-20T01:51:18.947368+00:00",
+      "arrival_day": 188,
+      "corrections": []
+    },
+    {
+      "processing_hours": 12.0,
+      "fast": 200,
+      "distinct": 196,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 196,
+      "copies": 4,
+      "misses": 204,
+      "pane": "provisional",
+      "watermark": "2026-01-20T02:48:09.473684+00:00",
+      "arrival_day": 205,
+      "corrections": []
+    },
+    {
+      "processing_hours": 13.0,
+      "fast": 218,
+      "distinct": 213,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 213,
+      "copies": 5,
+      "misses": 187,
+      "pane": "provisional",
+      "watermark": "2026-01-20T03:57:49.169012+00:00",
+      "arrival_day": 223,
+      "corrections": []
+    },
+    {
+      "processing_hours": 14.0,
+      "fast": 236,
+      "distinct": 231,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 231,
+      "copies": 5,
+      "misses": 169,
+      "pane": "provisional",
+      "watermark": "2026-01-20T04:56:03.157895+00:00",
+      "arrival_day": 241,
+      "corrections": []
+    },
+    {
+      "processing_hours": 15.0,
+      "fast": 252,
+      "distinct": 247,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 247,
+      "copies": 5,
+      "misses": 153,
+      "pane": "provisional",
+      "watermark": "2026-01-20T05:52:53.684211+00:00",
+      "arrival_day": 257,
+      "corrections": []
+    },
+    {
+      "processing_hours": 16.0,
+      "fast": 268,
+      "distinct": 262,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 262,
+      "copies": 6,
+      "misses": 138,
+      "pane": "provisional",
+      "watermark": "2026-01-20T06:54:28.421053+00:00",
+      "arrival_day": 273,
+      "corrections": []
+    },
+    {
+      "processing_hours": 17.0,
+      "fast": 283,
+      "distinct": 277,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 277,
+      "copies": 6,
+      "misses": 123,
+      "pane": "provisional",
+      "watermark": "2026-01-20T07:51:18.947368+00:00",
+      "arrival_day": 288,
+      "corrections": []
+    },
+    {
+      "processing_hours": 18.0,
+      "fast": 298,
+      "distinct": 292,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 292,
+      "copies": 6,
+      "misses": 108,
+      "pane": "provisional",
+      "watermark": "2026-01-20T08:57:37.894737+00:00",
+      "arrival_day": 303,
+      "corrections": []
+    },
+    {
+      "processing_hours": 19.0,
+      "fast": 316,
+      "distinct": 309,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 309,
+      "copies": 7,
+      "misses": 91,
+      "pane": "provisional",
+      "watermark": "2026-01-20T09:57:36+00:00",
+      "arrival_day": 321,
+      "corrections": []
+    },
+    {
+      "processing_hours": 20.0,
+      "fast": 336,
+      "distinct": 329,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 329,
+      "copies": 7,
+      "misses": 71,
+      "pane": "provisional",
+      "watermark": "2026-01-20T10:56:03.157895+00:00",
+      "arrival_day": 341,
+      "corrections": []
+    },
+    {
+      "processing_hours": 21.0,
+      "fast": 350,
+      "distinct": 343,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 343,
+      "copies": 7,
+      "misses": 57,
+      "pane": "provisional",
+      "watermark": "2026-01-20T11:52:53.684211+00:00",
+      "arrival_day": 355,
+      "corrections": []
+    },
+    {
+      "processing_hours": 22.0,
+      "fast": 365,
+      "distinct": 358,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 358,
+      "copies": 7,
+      "misses": 42,
+      "pane": "provisional",
+      "watermark": "2026-01-20T12:54:28.421053+00:00",
+      "arrival_day": 370,
+      "corrections": []
+    },
+    {
+      "processing_hours": 23.0,
+      "fast": 379,
+      "distinct": 372,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 372,
+      "copies": 7,
+      "misses": 28,
+      "pane": "provisional",
+      "watermark": "2026-01-20T13:56:49.428958+00:00",
+      "arrival_day": 384,
+      "corrections": []
+    },
+    {
+      "processing_hours": 24.0,
+      "fast": 398,
+      "distinct": 391,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 391,
+      "copies": 7,
+      "misses": 9,
+      "pane": "provisional",
+      "watermark": "2026-01-20T14:57:37.894737+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 25.0,
+      "fast": 401,
+      "distinct": 394,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 394,
+      "copies": 7,
+      "misses": 6,
+      "pane": "provisional",
+      "watermark": "2026-01-20T15:59:09.794749+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 26.0,
+      "fast": 402,
+      "distinct": 395,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 395,
+      "copies": 7,
+      "misses": 5,
+      "pane": "provisional",
+      "watermark": "2026-01-20T16:55:28.301887+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 27.0,
+      "fast": 404,
+      "distinct": 396,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 396,
+      "copies": 8,
+      "misses": 4,
+      "pane": "provisional",
+      "watermark": "2026-01-20T17:54:20.377358+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 28.0,
+      "fast": 404,
+      "distinct": 396,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 396,
+      "copies": 8,
+      "misses": 4,
+      "pane": "provisional",
+      "watermark": "2026-01-20T18:53:12.452830+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 29.0,
+      "fast": 405,
+      "distinct": 397,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 397,
+      "copies": 8,
+      "misses": 3,
+      "pane": "provisional",
+      "watermark": "2026-01-20T19:56:36.226415+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 30.0,
+      "fast": 405,
+      "distinct": 397,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 397,
+      "copies": 8,
+      "misses": 3,
+      "pane": "provisional",
+      "watermark": "2026-01-20T20:55:28.301887+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 31.0,
+      "fast": 405,
+      "distinct": 397,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 397,
+      "copies": 8,
+      "misses": 3,
+      "pane": "provisional",
+      "watermark": "2026-01-20T21:55:10.892256+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 32.0,
+      "fast": 405,
+      "distinct": 397,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 397,
+      "copies": 8,
+      "misses": 3,
+      "pane": "provisional",
+      "watermark": "2026-01-20T22:57:44.150943+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 33.0,
+      "fast": 406,
+      "distinct": 398,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 398,
+      "copies": 8,
+      "misses": 2,
+      "pane": "provisional",
+      "watermark": "2026-01-20T23:56:36.226415+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 34.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T00:55:28.301887+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 35.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T01:54:20.377358+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 36.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T02:57:44.150943+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 37.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T03:56:36.226415+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 38.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T04:55:28.301887+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 39.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T05:58:52.075472+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 40.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T06:53:12.452830+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 41.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T07:56:36.226415+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 42.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T08:55:28.301887+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 43.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T09:58:52.075472+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 44.0,
+      "fast": 407,
+      "distinct": 399,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 399,
+      "copies": 8,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T10:56:10.817238+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 45.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T11:56:36.226415+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 46.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T12:50:56.603774+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 47.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T13:58:52.075472+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 48.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T14:57:44.150943+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 49.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T15:53:45.974026+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 50.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T16:49:52.207792+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 51.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T17:55:19.480519+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 52.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T18:56:06.233766+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 53.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T19:56:52.987013+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 54.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T20:57:39.740260+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 55.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T21:58:26.493506+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 56.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T22:45:11.688312+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 57.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-21T23:55:19.480519+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 58.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-22T00:57:48.841568+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 59.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-22T01:56:52.987013+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 60.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": null,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "revised",
+      "watermark": "2026-01-22T02:52:59.220779+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    },
+    {
+      "processing_hours": 61.0,
+      "fast": 408,
+      "distinct": 400,
+      "n_day": 400,
+      "n_final": 400,
+      "settled": 400,
+      "copies": 8,
+      "misses": 0,
+      "pane": "final",
+      "watermark": "2026-01-22T03:58:26.493506+00:00",
+      "arrival_day": 403,
+      "corrections": []
+    }
+  ],
+  "on_time": "2026-01-21T09:02:52.830648+00:00",
+  "final": "2026-01-22T12:03:04.786618+00:00"
+}

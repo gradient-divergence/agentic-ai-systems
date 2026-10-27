@@ -1,0 +1,10 @@
+constructed live Q-learning: seeds 0..19, 1000 claims each, random action one time in ten, eta 1/n per pair, zero start
+days 0..4 stay greedy on planned rule: seeds 20/20, median claim 21.0, latest 66
+sampled cost above planned over 1000 claims: median 3736.56
+sum of planned action advantages: median 3690.18 (sampled paths; distinct from realized cost)
+continuing exploration at exact planned values: extra per claim 2.937578, over 1000 2937.58, day 0 component 1.928819
+day 0 wait estimate median -5.78; exact value -11.41
+seed 0 day 5 visits: pay 7, wait 80; Q pay -49.99, Q wait -20.00
+whole final greedy rule agrees: 0/20 seeds; final greedy claim cost median 12.21
+planning from 200 pay-at-once claims with 10-day carrier follow-up, seeds 0..199: extra per claim mean 0.096413, p95 0.321942, max 1.576796
+carrier arrivals are independent of payment; customer reactions to waiting are absent

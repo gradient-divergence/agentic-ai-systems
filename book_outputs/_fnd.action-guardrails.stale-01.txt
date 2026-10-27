@@ -1,0 +1,7 @@
+first run: refer approval_required, not paid
+  audit decision     money_moved=no paid_cents=0
+after approval: refer stale_shipment, not paid
+  audit decision     money_moved=no paid_cents=0
+after a fresh shipment read: approve eligible, paid
+  audit intent       money_moved=no paid_cents=0
+  audit confirmation money_moved=yes paid_cents=12000

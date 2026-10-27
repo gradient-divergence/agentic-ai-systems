@@ -1,0 +1,11 @@
+r-7-0007 asks 3800 cents for a change of mind
+order.lookup: o-0007 paid 4200 cents; refunded 0 cents
+shipment.status: delivered 12 days before the request
+policy.retrieve: refund_cap_v4 version 2026-03-01; window 21 days
+draft: approve, tier 1, eligible
+cites refund_cap_v4@2026-03-01#eligibility
+audit records: 0
+r-7-0000: order.lookup failed: ambiguous_order (2 matching orders)
+draft: refer, tier 1, ambiguous_order; no citation
+audit records: 1; decision refer, ambiguous_order
+draft kinds: 3 (approve, deny, refer); write tool calls: 0; executions: 0

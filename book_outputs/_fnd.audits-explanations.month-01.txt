@@ -1,0 +1,34 @@
+Constructed seed-7 month. Truth is never read by tools or rules.
+A: TP 217, FP 0, FN 3, TN 372, referred 75.
+Decided 592, denied 217, paid 375.
+denial_share: 0.366554054
+tpr: 0.986363636
+fpr: 0.000000000
+ppv: 1.000000000
+base_rate: 0.371621622
+Denials wrong: 0.000000000
+Illustrative wrongful-denial cost, 20 dollars each: 0 dollars.
+B: TP 218, FP 0, FN 9, TN 384, referred 55.
+Decided 611, denied 218, paid 393.
+denial_share: 0.356792144
+tpr: 0.960352423
+fpr: 0.000000000
+ppv: 1.000000000
+base_rate: 0.371522095
+Denials wrong: 0.000000000
+Illustrative wrongful-denial cost, 20 dollars each: 0 dollars.
+C: TP 207, FP 19, FN 6, TN 381, referred 54.
+Decided 613, denied 226, paid 387.
+denial_share: 0.368678630
+tpr: 0.971830986
+fpr: 0.047500000
+ppv: 0.915929204
+base_rate: 0.347471452
+Denials wrong: 0.084070796
+Illustrative wrongful-denial cost, 20 dollars each: 380 dollars.
+Not-delivered A: TPR 1.000000000, FPR unassessable.
+Not-delivered A: PPV 1.000000000, base 1.000000000.
+Not-delivered B: TPR 1.000000000, FPR unassessable.
+Not-delivered B: PPV 1.000000000, base 1.000000000.
+Not-delivered C: TPR 1.000000000, FPR 1.000000000.
+Not-delivered C: PPV 0.898395722, base 0.898395722.

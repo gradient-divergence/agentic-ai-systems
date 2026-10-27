@@ -1,0 +1,13 @@
+gradient at zero: -2.0, -0.2
+first step, descent eta 0.25: 0.500000, 0.050000
+first step, momentum eta 1: 0.200000, 0.020000
+first step, momentum eta 5: 1.000000, 0.100000
+first step, Adam eta 0.1: 0.100000, 0.100000
+first step, Adam uncorrected eta 0.1: 0.316228, 0.316227
+uncorrected multiplier (delta -> 0): 3.162278
+constant-gradient first-moment fraction: t 1 0.100000, t 10 0.651322
+beta1 0.9, beta2 0.999, delta 1e-8; first loss below 0.000001
+momentum eta 1.0: 130 steps
+momentum eta 5.0: 105 steps
+Adam eta 0.1: 135 steps
+Adam eta 0.3: 112 steps

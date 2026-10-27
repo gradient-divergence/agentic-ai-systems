@@ -1,0 +1,8 @@
+zero waiting price: pay day 10, claim cost 5.00; lost customer waits 10 days
+potential -49.99 * lost belief, terminal potential 0: pay day 5, original cost 11.41, shaped cost 6.41
+three potentials' pay days (-49.99 * lost belief, -1 * s, sin(s)): 5, 5, 5
+flat waiting bonus 1.00: pay day 6
+student support spam_help: progress-only 0.20, fuller reward -4.20
+student support targeted: progress-only 0.16, fuller reward -1.14
+incident planted: unchecked action close, expected discounted reward 5.000000
+incident corrected: unchecked action wait, expected discounted reward 3.780488

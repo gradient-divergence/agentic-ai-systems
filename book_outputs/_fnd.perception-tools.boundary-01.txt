@@ -1,0 +1,5 @@
+shipment age 1,800 s       -> fresh
+shipment age 1,801 s       -> stale_shipment
+shipment age -1 s          -> future_shipment
+shipment age missing       -> missing_shipment_freshness
+shipment age not a number  -> invalid_shipment_freshness

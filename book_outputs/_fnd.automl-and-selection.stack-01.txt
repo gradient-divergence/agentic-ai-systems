@@ -1,0 +1,14 @@
+fold 1: train 1782, held 2753; latest final label 2025-06-26T11:41:09+00:00
+  <= first held 2025-06-26T12:42:56+00:00
+fold 2: train 4545, held 2753; latest final label 2025-09-19T11:14:04+00:00
+  <= first held 2025-09-19T12:05:05+00:00
+fold 3: train 7301, held 2753; latest final label 2025-12-13T12:45:13+00:00
+  <= first held 2025-12-13T15:01:48+00:00
+fold 4: train 9997, held 2753; latest final label 2026-03-07T13:56:31+00:00
+  <= first held 2026-03-07T14:07:37+00:00
+meta rows: 11012
+member validation log loss: logistic=0.168515; boosted=0.168265
+honest combiner: intercept=-3.798839; logistic=5.646382; boosted=5.304292
+in-sample combiner: intercept=-4.085105; logistic=4.688652; boosted=10.251710
+validation log loss: honest=0.168310; in-sample=0.167277
+The in-sample stack's validation loss is lower than the honest stack's.

@@ -1,0 +1,14 @@
+precision: 0.7500
+recall: 0.9000
+F1: 0.8182
+accuracy: 0.9200
+false-positive rate: 0.0750
+precision at a base rate of 0.005: 0.0569
+precision at a base rate of 0.01: 0.1081
+precision at a base rate of 0.2: 0.7500
+precision at a base rate of 0.5: 0.9231
+10 in 100: Wald [0.0412, 0.1588], Wilson [0.0552, 0.1744]
+0 in 15: Wald [0.0000, 0.0000], Wilson [0.0000, 0.2039]
+2 in 20: Wald [0.0000, 0.2315], Wilson [0.0279, 0.3010]
+cases for a half-width of 0.05 at 0.1: 139
+payments at a 1% base rate, on average: 13,900

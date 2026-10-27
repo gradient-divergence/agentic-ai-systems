@@ -1,0 +1,46 @@
+{
+  "task": "three service-desk queues",
+  "seed": 7,
+  "labeled": 12,
+  "confidence": 0.9,
+  "rounds": [
+    {
+      "round": 1,
+      "accepted": 1516,
+      "accepted_by_queue": [
+        912,
+        0,
+        604
+      ],
+      "holdout_accuracy": 0.795
+    },
+    {
+      "round": 2,
+      "accepted": 583,
+      "accepted_by_queue": [
+        299,
+        0,
+        284
+      ],
+      "holdout_accuracy": 0.8
+    },
+    {
+      "round": 3,
+      "accepted": 487,
+      "accepted_by_queue": [
+        306,
+        0,
+        181
+      ],
+      "holdout_accuracy": 0.801
+    }
+  ],
+  "holdout": {
+    "requests": 1000,
+    "source": "unlabeled pool",
+    "cut_after_round": 1,
+    "outcome_labels": 500,
+    "pseudo_labels": 500,
+    "pseudo_label_source": "the model being judged in each round"
+  }
+}

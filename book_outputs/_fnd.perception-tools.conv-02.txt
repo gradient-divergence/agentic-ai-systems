@@ -1,0 +1,7 @@
+cross-correlation of X with W:  [-4 -4] [-4 -4]
+convolution (W flipped):        [+4 +4] [+4 +4]
+vertical line, 'same' size: column 3 reads [1, 2, 3, 2, 1]
+vertical line, every other output: 0
+224 pixels, k 3, stride 2, pad 1:        112
+224 pixels, k 3, stride 1, pad 1, dil 2: 222
+3-by-3 kernels, 3 -> 32 channels:        896 parameters

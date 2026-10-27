@@ -1,0 +1,28 @@
+Constructed seed 7, 30 days; Poisson arrivals around the clock.
+Measured candidate: available as-built stage 4; stage-6 join PENDING.
+Candidate fingerprint:
+d66f4be6b797218bd6e05ae3e68cee35487461aeaff70fb0232050c1a1131379
+Selected partner components: none; this is a demand sensitivity run.
+No calibration, security, explanation or canary is asserted here.
+Generated customer requests by tier: {1: 1998, 2: 482, 3: 108}
+Tier 1 actual agent runs: 1998 outcomes: {'approve': 960, 'refer': 268, 'deny':
+770}
+Measured referral share=13.413413%; payment share=48.048048%
+Brief's generated-label expectations: referral 14.3%; payment 36.6%.
+tier2: 112.000/week; 15min;
+  offered=28.000000h/week
+tier3: 28.000/week; 30min;
+  offered=14.000000h/week
+referral: 62.596/week; 5min;
+  offered=5.216327h/week
+recheck: 56.056/week; 5min;
+  offered=4.671338h/week
+blind: 11.200/week; 15min;
+  offered=2.800000h/week
+planted: 10.000/week; 15min;
+  offered=2.500000h/week
+Reviewers' queue offered=43.187665h/week
+Tier 1 payments/day=32.032032
+Recheck EVERY tier 1 payment=18.685352h/week
+Generator cycle counterfactual tier3/day: 100
+Flags: 999 at 5min = 83.25 reviewer-hours

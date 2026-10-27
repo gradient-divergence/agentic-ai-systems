@@ -1,0 +1,19 @@
+constructed carrier; tracking page only; page box=(0, 0, 640, 480)
+  updated: box=(80, 10, 400, 30) text=2026-10-15T10:00:00+00:00
+  status: box=(80, 40, 300, 60) text=In transit
+  refresh: box=(10, 10, 50, 50) text=Refresh
+capture 2026-10-15T10:30:00+00:00; use 2026-10-15T10:30:01+00:00
+page age from displayed update: 1,801 s
+offset 10: overlap/union 900/2300; IoU 0.391304 (0.39); refuse at 0.5
+offset  4: overlap/union 1296/1904; IoU 0.680672 (0.68); accept at 0.5
+20 independent actions; p_act=0.95; p_catch=0.9
+one retry, checked too; detected wrong retry stops; no false alarms
+retry replaces a reversible effect; 'all right' describes final effects
+one action: correct 0.992750; silent 0.005225; stop 0.002025
+outcome                     exact     10,000 runs (seed 7)
+unchecked_all_right         0.358486   3602 (0.3602)
+checked_all_right           0.864566   8575 (0.8575)
+checked_silent_completed    0.095704    997 (0.0997)
+checked_stopped             0.039730    428 (0.0428)
+checked_any_silent          0.097606   1014 (0.1014)
+20 initial attempts only (no retries/stops): any silent error 0.095390

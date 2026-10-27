@@ -1,0 +1,38 @@
+initial B0 offline -> shadow held
+  changed: none
+  unmet: release
+  met: 0
+(a) B1 shadow -> shadow held
+  changed: index, policy
+  unmet: release
+  met: 4
+(b) B0 shadow -> canary held
+  changed: none
+  unmet: release
+  met: 3
+(c) B_risk shadow -> shadow held
+  changed: model
+  unmet: release, calibration, signed_cost_matrix, threshold_experiment
+  met: 2
+Rebuild receipt matches: True
+Window candidate:
+11d87e790903430db508751f0dc8ee429eccf958852ecb4d1025755bd25972b0
+Window frozen bundle:
+53208e78202578d16aac253aa56ef0785c7d7e0d697cda40e9c76ff514d46cbe
+Frozen requests: 299
+Canary id: mlops-mle-canary-01
+Rehearsal id: mlops-mle-rehearsal-01
+D6: forbidden, referrals/baseline, wrongful denials/baseline:
+0 87 87 0 0
+Deployed labels mature at: 2026-11-09T22:32:57+00:00
+Canary start accepted: False ; checks: 6
+release: release record unavailable; predecessor composition failed
+window: pass
+plan: pass
+error_budget: error budget not named
+rehearsal: pass
+mlops-mle.promotion: bundle not admitted to canary
+release0: blocked before full release
+failed cases: batch-stream-absence: decision_reason, decision_outcome
+release1: blocked before full release
+failed cases: batch-stream-absence: decision_reason, decision_outcome

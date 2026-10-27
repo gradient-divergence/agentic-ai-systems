@@ -1,0 +1,11 @@
+constructed bank: adjudicated reference, not measured bank data
+| Reference / judge | Fails | Passes |
+|---|---:|---:|
+| Failing | 14 | 6 |
+| Good | 5 | 175 |
+200 letters; 20 failing; agreement 0.945000; chance 0.824000; kappa_C 0.687500;
+miss rate 0.300000=6/20
+miss rate 95% Wilson interval: [0.1455, 0.5190]
+judge passes all: agreement 0.900000; kappa_C 0.000000
+a soft grader may hold for a person; its pass alone cannot pass a must-pass
+case; kappa is undefined when chance agreement is 1

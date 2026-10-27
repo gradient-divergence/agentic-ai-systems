@@ -1,0 +1,17 @@
+Window 1: 2,000 paid requests; 136 wrong payments; no payment made by this
+  comparison
+Observed 0.068000; Wilson 95% [0.057774, 0.079882]
+Mean prediction 0.047724
+Candidate minus incumbent $-0.462240/request; 95% [$-0.701511, $-0.234899]
+Referrals 261; added blocking review minutes 1305; wrongful denials 0 versus 0
+calibration: fail; inclusive Wilson; calibration in the large
+cost: pass; 95% percentile bootstrap upper end; review assumed always right
+wrongful_denials: pass; 0 versus 0; neither rule denies
+capacity: fail; Human Oversight and Risk Management check_design missing
+incumbent_admission: fail; candidate bundle identity unavailable; requirement
+  is not admissible
+release: fail; signed release record missing
+Days: first 0.045667; last 61.391222; duration 61.345556; last outcome closed
+  91.391222
+Decision 1: keep; reasons calibration, capacity, incumbent_admission,
+  release; day 91.391222

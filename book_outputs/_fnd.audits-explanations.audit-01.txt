@@ -1,0 +1,52 @@
+Constructed seed-7 audit. All payment labels have matured.
+version: audits-explanations-rule-1
+segments: ('A', 'B', 'C')
+read_per_segment: 80
+ceiling: 0.01
+alpha_family: 0.05
+test: hypergeometric_ceiling
+correction: bonferroni
+owner: merchant's owner of the refund decision
+signed_by: morgan
+source_owner: carrier integration team
+response: Hold breaching reasons until the exact safety bound is below the
+ceiling.
+Signature checked before the period's first day.
+A: decided 592, denied 217, paid 375, referred 75.
+Denial share 0.366554054, read 80, wrongful 0.
+Wrongful sample share 0.000000000.
+Wilson interval (0.0, 0.0458197362645751).
+Payments found false 0.008000000, owed payments 372.
+Owed-denial estimate 0.000000000.
+Conditional range (0.0, 0.02603238132706751).
+Kceil 3, exact tail 1.000000000, breach False.
+Status assessed, upper owed-denial share 0.015873016.
+Release False, minimum clean sample 114.
+Held proposals sampled: 0. Reasons held: ().
+If sample held 3: exact tail 0.048916991.
+B: decided 611, denied 218, paid 393, referred 55.
+Denial share 0.356792144, read 80, wrongful 0.
+Wrongful sample share 0.000000000.
+Wilson interval (0.0, 0.0458197362645751).
+Payments found false 0.022900763, owed payments 384.
+Owed-denial estimate 0.000000000.
+Conditional range (0.0, 0.025352763777619827).
+Kceil 3, exact tail 1.000000000, breach False.
+Status assessed, upper owed-denial share 0.015384615.
+Release False, minimum clean sample 115.
+Held proposals sampled: 0. Reasons held: ().
+If sample held 3: exact tail 0.048243822.
+C: decided 613, denied 226, paid 387, referred 54.
+Denial share 0.368678630, read 80, wrongful 5.
+Wrongful sample share 0.062500000.
+Wilson interval (0.026988977697985535, 0.1381032915335177).
+Payments found false 0.015503876, owed payments 381.
+Owed-denial estimate 0.035748181.
+Conditional range (0.01575695349274915, 0.0757168485279803).
+Kceil 3, exact tail 0.000000000, breach True.
+Status assessed, upper owed-denial share 0.061576355.
+Release False, minimum clean sample 119.
+Held proposals sampled: 0. Reasons held: ('already_delivered',).
+If sample held 3: exact tail 0.043278550.
+Send 187 C/already_delivered denials to a person.
+Notify the carrier integration team.

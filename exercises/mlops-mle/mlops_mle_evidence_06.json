@@ -1,0 +1,174 @@
+{
+  "by_bundle": {
+    "4031f2fa7dc1640ceddffacb399c16865063b4a94562eee7cbcf29f46727c83a": {
+      "policy_coverage": "stipulated signed prerequisite",
+      "release": "stipulated signed prerequisite",
+      "release_owner": "stipulated signed prerequisite"
+    },
+    "c64ffbd4dd30cc1e980d9f81d286057602fd0300f340d4a33816464b79f00f4b": {
+      "dated_recall": "stipulated signed prerequisite",
+      "frozen_questions": "stipulated signed prerequisite",
+      "policy_change_cases": "stipulated signed prerequisite",
+      "policy_coverage": "stipulated signed prerequisite",
+      "policy_notice": "stipulated signed prerequisite",
+      "release": "stipulated signed prerequisite",
+      "release_owner": "stipulated signed prerequisite",
+      "support": "stipulated signed prerequisite"
+    }
+  },
+  "rows": [
+    {
+      "component": "model",
+      "description": "release and shadow comparison",
+      "evidence": [
+        "shadow_comparison"
+      ],
+      "items": [
+        "scripted_model"
+      ]
+    },
+    {
+      "component": "model",
+      "description": "selection, current calibration, signed costs, experiment run or signed decline, rebuild",
+      "evidence": [
+        "selection",
+        "calibration",
+        "signed_cost_matrix",
+        "threshold_experiment",
+        "rebuild"
+      ],
+      "items": [
+        "risk_score",
+        "risk_threshold"
+      ]
+    },
+    {
+      "component": "prompt",
+      "description": "passing regression suite",
+      "evidence": [
+        "regression"
+      ],
+      "items": [
+        "*"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "release suite including safety cases",
+      "evidence": [],
+      "items": [
+        "agent",
+        "agent_code",
+        "core"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "tool contract tests",
+      "evidence": [
+        "tool_contract_tests"
+      ],
+      "items": [
+        "tool_contracts"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "source tests and notice",
+      "evidence": [
+        "data_contract_tests",
+        "source_notice"
+      ],
+      "items": [
+        "data_contracts"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "replay and late-scan tests",
+      "evidence": [
+        "replay_tests",
+        "late_scan_tests"
+      ],
+      "items": [
+        "event_time"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "runtime swap including test_runtime_swap.py",
+      "evidence": [
+        "runtime_swap"
+      ],
+      "items": [
+        "runtime",
+        "adapter"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "matched-case verifier arms",
+      "evidence": [
+        "verifier_arms"
+      ],
+      "items": [
+        "verifier"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "suite rerun in the new environment",
+      "evidence": [
+        "environment_release"
+      ],
+      "items": [
+        "environment"
+      ]
+    },
+    {
+      "component": "tools",
+      "description": "tests for changed selected components",
+      "evidence": [
+        "component_tests"
+      ],
+      "items": [
+        "components"
+      ]
+    },
+    {
+      "component": "policy",
+      "description": "new version's policy-change cases, support and policy-owner notice",
+      "evidence": [
+        "policy_change_cases",
+        "support",
+        "policy_notice"
+      ],
+      "items": [
+        "versions",
+        "register_snapshot"
+      ]
+    },
+    {
+      "component": "policy",
+      "description": "offer evaluation record",
+      "evidence": [
+        "offer_evaluation"
+      ],
+      "items": [
+        "offer_rule"
+      ]
+    },
+    {
+      "component": "index",
+      "description": "no frozen question loses its clause; dated recall",
+      "evidence": [
+        "frozen_questions",
+        "dated_recall"
+      ],
+      "items": [
+        "*"
+      ]
+    }
+  ],
+  "scenario": "constructed exercise; signed global prerequisites are stipulated, no runtime authority"
+}

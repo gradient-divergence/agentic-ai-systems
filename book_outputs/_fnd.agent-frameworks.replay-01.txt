@@ -1,0 +1,44 @@
+r-7-0085: 2026-05-12T11:01:02+00:00; 4999 cents; changed_mind
+separate memory experiment beside the loop:
+April copy refused at use: beyond_notice;
+  counterfactual draft deny outside_return_window
+copy age 7 days: accepted;
+  draft approve eligible; refund_cap_v4@2026-05-01#eligibility
+assembler required facts: 30 words
+  request_id: r-7-0085
+  at: 2026-05-12T11:01:02+00:00
+  known_at: 2026-05-12T11:01:02+00:00
+  amount_cents: 4999
+  reason: changed_mind
+  balance_cents: 136447
+  purchased_at: 2026-04-11T11:01:02+00:00
+  delivered_at: 2026-04-16T11:01:02+00:00
+  delivery_age_days: 26.0
+  future_evidence: False
+  policy_version: 2026-05-01
+  return_days: 30
+  cap_cents: 90000
+  named_approver: morgan
+  snapshot_at: 2026-05-05T11:01:02+00:00
+approval support: supported; no refusal
+loop as merged: generated policy snapshot; memory copy is not wired in
+composition: VerifiedTools under RefundAdapter (full adapter);
+  FaultTools records calls
+own ordinary: approve eligible; tier 1;
+  paid 4999 cents; receipts 1; audit records 2
+  receipts: refund-r-7-0085 (4999 cents)
+  audits: intent (money_moved False, 0 cents),
+    confirmation (money_moved True, 4999 cents)
+own verified: approve eligible; tier 1;
+  paid 4999 cents; receipts 1; audit records 2
+  receipts: refund-r-7-0085 (4999 cents)
+  audits: intent (money_moved False, 0 cents),
+    confirmation (money_moved True, 4999 cents)
+  verifier: agree; no objection
+second verified: approve eligible; tier 1;
+  paid 4999 cents; receipts 1; audit records 2
+  receipts: refund-r-7-0085 (4999 cents)
+  audits: intent (money_moved False, 0 cents),
+    confirmation (money_moved True, 4999 cents)
+  verifier: agree; no objection
+runtime fields differing: 0/10

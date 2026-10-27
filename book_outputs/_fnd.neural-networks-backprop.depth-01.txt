@@ -1,0 +1,64 @@
+two hidden units given the same incoming weights and bias; the parcel's request
+hidden values: 1.000000, 1.000000
+outgoing weights different: gradients of the two biases 1.154698, 0.420512
+outgoing weights the same: gradients of the two biases 1.850937, 1.850937
+all three the same, after 300 updates on the 300 requests: weights moved by up to 2.073784, the two units still equal to 12 decimal places: True
+10 ReLU layers, width 200, 200 inputs; three-score softmax head, one target per input
+each hidden layer has 200 units, each reading 200 values, so 2 over either count is 0.010000
+five seeds 7, 8, 9, 10, 11; RMS ratios averaged over seeds; weights as drawn, before any update
+head weight std 0.007071068, fixed at all scales to limit softmax saturation
+hidden normalized to input; gradients of mean loss normalized to gradient entering hidden layer 10
+check seed 7: 25 sampled weights each in layers 1, 5, 10; float64, epsilon 0.00001
+sample only nudges that preserve every ReLU gate; also report excluded corner crossings
+scale 0.5: variance 0.005000, std 0.070711, ideal ten-layer factor 0.031250
+hidden ratio 0.031741714, gradient ratio 0.033715876, largest sampled gap 5.563e-05
+sampled gaps in layers 1, 5, 10: 2.214e-06, 5.563e-05, 1.260e-05
+excluded crossing counts in layers 1, 5, 10: 14, 11, 0
+unscreened gaps including crossings: 1.047e-01, 1.699e-02, 1.260e-05
+layer: hidden RMS ratio, gradient RMS ratio
+0: 1.000000000, 0.033715876
+1: 0.710037685, 0.047491386
+2: 0.509305226, 0.066470744
+3: 0.363389774, 0.093484809
+4: 0.257304647, 0.134691534
+5: 0.176021808, 0.190907604
+6: 0.123035372, 0.265600410
+7: 0.085740579, 0.375448973
+8: 0.060795322, 0.518498786
+9: 0.045080295, 0.721868773
+10: 0.031741714, 1.000000000
+scale 1: variance 0.010000, std 0.100000, ideal ten-layer factor 1.000000
+hidden ratio 1.015734835, gradient ratio 1.078084236, largest sampled gap 1.328e-06
+sampled gaps in layers 1, 5, 10: 9.422e-08, 1.019e-06, 1.328e-06
+excluded crossing counts in layers 1, 5, 10: 8, 11, 0
+unscreened gaps including crossings: 4.553e-02, 1.596e-02, 1.328e-06
+layer: hidden RMS ratio, gradient RMS ratio
+0: 1.000000000, 1.078084236
+1: 1.004144924, 1.074174255
+2: 1.018610452, 1.063225725
+3: 1.027821493, 1.057109880
+4: 1.029218588, 1.077269784
+5: 0.995729714, 1.079855538
+6: 0.984282979, 1.062401129
+7: 0.970043915, 1.062153906
+8: 0.972725150, 1.037088479
+9: 1.020050643, 1.020883479
+10: 1.015734835, 1.000000000
+scale 2: variance 0.020000, std 0.141421, ideal ten-layer factor 32.000000
+hidden ratio 32.503514705, gradient ratio 34.397350862, largest sampled gap 8.415e-07
+sampled gaps in layers 1, 5, 10: 6.401e-08, 2.724e-07, 8.415e-07
+excluded crossing counts in layers 1, 5, 10: 3, 9, 0
+unscreened gaps including crossings: 6.343e-03, 3.253e-02, 8.415e-07
+layer: hidden RMS ratio, gradient RMS ratio
+0: 1.000000000, 34.397350862
+1: 1.420075370, 24.222395690
+2: 2.037220903, 16.931152808
+3: 2.907118190, 11.878083762
+4: 4.116874351, 8.580669680
+5: 5.632697863, 6.106321660
+6: 7.874263828, 4.233545478
+7: 10.974794090, 2.999275678
+8: 15.563602395, 2.064521743
+9: 23.081111257, 1.443200264
+10: 32.503514705, 1.000000000
+Glorot variance for 200 inputs and 200 outputs: 0.005000

@@ -1,0 +1,7 @@
+written plan: accepted; no launch authorization
+probability 1 inside the set: refused
+  both actions need positive probability inside the set
+analysis before the last label is final: refused
+  analysis must wait for the last assignment plus the label window
+no dollar ceiling: refused
+  every plan field is required

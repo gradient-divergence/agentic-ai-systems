@@ -1,0 +1,11 @@
+step  phase     call             age_seconds  record or reason
+0     order     order.lookup     60.0
+1     shipment  shipment.status  120.0
+2     policy    policy.retrieve  3600.0
+3     assess    (draft)                       approve, tier 1: eligible
+4     propose   refund.propose                proposal-1a500fb604bde3c7e4a7eabc
+5     execute   refund.execute                refund-r-7-0007
+6     audit     audit.append                  audit-12268cedeb91c44c01a98a14
+request r-7-0007: 2499 cents, changed_mind, at 2026-03-22T15:08:27Z
+order o-0007; delivered at 2026-03-10T15:08:27Z
+policy refund_cap_v4 version 2026-03-01, return_days 21

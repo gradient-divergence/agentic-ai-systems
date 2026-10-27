@@ -1,0 +1,610 @@
+{
+  "constructed": true,
+  "accounts": {
+    "customer-00": [
+      "order-00"
+    ],
+    "customer-01": [
+      "order-01"
+    ],
+    "customer-02": [
+      "order-02"
+    ],
+    "customer-03": [
+      "order-03"
+    ],
+    "customer-04": [
+      "order-04"
+    ],
+    "customer-05": [
+      "order-05"
+    ],
+    "customer-06": [
+      "order-06"
+    ],
+    "customer-07": [
+      "order-07"
+    ],
+    "customer-08": [
+      "order-08"
+    ],
+    "customer-09": [
+      "order-09"
+    ],
+    "customer-10": [
+      "order-10"
+    ],
+    "customer-11": [
+      "order-11"
+    ]
+  },
+  "requests": [
+    {
+      "request_id": "security-privacy-day-00",
+      "requester_id": "customer-00",
+      "order_id": "order-00",
+      "credential": {
+        "credential_id": "security-privacy-day-00-credential",
+        "kind": "request",
+        "subject": "customer-00",
+        "request_id": "security-privacy-day-00",
+        "order_ids": [
+          "order-00"
+        ],
+        "not_before": "2026-10-01T09:00:00+00:00",
+        "expires_at": "2026-10-01T09:30:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-00",
+          "run_id": "run-security-privacy-day-00-1",
+          "tool": "order.lookup",
+          "reason": "",
+          "at": "2026-10-01T09:00:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-00",
+        "at": "2026-10-01T09:00:00+00:00",
+        "money_moved": true
+      },
+      "decision": {
+        "outcome": "approve",
+        "reason": "eligible",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-01",
+      "requester_id": "customer-01",
+      "order_id": "missing-order",
+      "credential": {
+        "credential_id": "security-privacy-day-01-credential",
+        "kind": "request",
+        "subject": "customer-01",
+        "request_id": "security-privacy-day-01",
+        "order_ids": [
+          "order-01"
+        ],
+        "not_before": "2026-10-01T09:40:00+00:00",
+        "expires_at": "2026-10-01T10:10:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-01",
+          "run_id": "run-security-privacy-day-01-1",
+          "tool": "order.lookup",
+          "reason": "order_not_found",
+          "at": "2026-10-01T09:40:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-01",
+        "at": "2026-10-01T09:40:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "order_not_found",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": null
+      }
+    },
+    {
+      "request_id": "security-privacy-day-02",
+      "requester_id": "customer-02",
+      "order_id": "order-10",
+      "credential": {
+        "credential_id": "security-privacy-day-02-credential",
+        "kind": "request",
+        "subject": "customer-02",
+        "request_id": "security-privacy-day-02",
+        "order_ids": [
+          "order-02"
+        ],
+        "not_before": "2026-10-01T10:20:00+00:00",
+        "expires_at": "2026-10-01T10:50:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-02",
+          "run_id": "run-security-privacy-day-02-1",
+          "tool": "order.lookup",
+          "reason": "order_not_found",
+          "at": "2026-10-01T10:20:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-02",
+        "at": "2026-10-01T10:20:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "order_not_found",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": null
+      }
+    },
+    {
+      "request_id": "security-privacy-day-03",
+      "requester_id": "customer-03",
+      "order_id": "order-03",
+      "credential": {
+        "credential_id": "security-privacy-day-03-credential",
+        "kind": "request",
+        "subject": "customer-03",
+        "request_id": "security-privacy-day-03",
+        "order_ids": [
+          "order-03"
+        ],
+        "not_before": "2026-10-01T11:00:00+00:00",
+        "expires_at": "2026-10-01T11:30:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-03",
+          "run_id": "run-security-privacy-day-03-1",
+          "tool": "order.lookup",
+          "reason": "",
+          "at": "2026-10-01T11:00:00+00:00"
+        },
+        {
+          "trace_id": "trace-security-privacy-day-03",
+          "run_id": "run-security-privacy-day-03-1",
+          "tool": "refund.execute",
+          "reason": "credential_expired",
+          "at": "2026-10-01T11:30:00+00:00"
+        },
+        {
+          "trace_id": "trace-security-privacy-day-03",
+          "run_id": "run-security-privacy-day-03-2",
+          "tool": "approval.intake",
+          "reason": "",
+          "credential_id": "security-privacy-day-03-reviewer",
+          "at": "2026-10-01T11:31:00+00:00"
+        },
+        {
+          "trace_id": "trace-security-privacy-day-03",
+          "run_id": "run-security-privacy-day-03-2",
+          "tool": "refund.execute",
+          "reason": "",
+          "credential_id": "security-privacy-day-03-fresh",
+          "at": "2026-10-01T11:32:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-03",
+        "at": "2026-10-01T11:32:00+00:00",
+        "money_moved": true
+      },
+      "decision": {
+        "outcome": "approve",
+        "reason": "eligible",
+        "amount_cents": 12000,
+        "tier": 2,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      },
+      "reissued_credential": {
+        "credential_id": "security-privacy-day-03-fresh",
+        "kind": "request",
+        "subject": "customer-03",
+        "request_id": "security-privacy-day-03",
+        "order_ids": [
+          "order-03"
+        ],
+        "not_before": "2026-10-01T11:31:00+00:00",
+        "expires_at": "2026-10-01T12:01:00+00:00"
+      },
+      "reviewer_credential": {
+        "credential_id": "security-privacy-day-03-reviewer",
+        "kind": "reviewer",
+        "subject": "alex",
+        "role": "reviewer",
+        "not_before": "2026-10-01T11:31:00+00:00",
+        "expires_at": "2026-10-01T12:01:00+00:00"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-04",
+      "requester_id": "customer-04",
+      "order_id": "order-04",
+      "credential": {
+        "credential_id": "security-privacy-day-04-credential",
+        "kind": "request",
+        "subject": "customer-04",
+        "request_id": "security-privacy-day-04",
+        "order_ids": [
+          "order-04"
+        ],
+        "not_before": "2026-10-01T11:40:00+00:00",
+        "expires_at": "2026-10-01T12:10:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-04",
+          "run_id": "run-security-privacy-day-04-1",
+          "tool": "order.lookup",
+          "reason": "",
+          "at": "2026-10-01T11:40:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-04",
+        "at": "2026-10-01T11:40:00+00:00",
+        "money_moved": true
+      },
+      "decision": {
+        "outcome": "approve",
+        "reason": "eligible",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-05",
+      "requester_id": "customer-05",
+      "order_id": "order-07",
+      "credential": {
+        "credential_id": "security-privacy-96138a2230408fa127099d48",
+        "kind": "request",
+        "subject": "customer-05",
+        "request_id": "security-privacy-day-05",
+        "order_ids": [
+          "order-00",
+          "order-01",
+          "order-02",
+          "order-03",
+          "order-04",
+          "order-05",
+          "order-06",
+          "order-07",
+          "order-08",
+          "order-09",
+          "order-10",
+          "order-11"
+        ],
+        "not_before": "2026-10-01T12:20:00Z",
+        "expires_at": "2026-10-01T12:50:00Z"
+      },
+      "credential_log": [
+        {
+          "credential_id": "security-privacy-96138a2230408fa127099d48",
+          "kind": "request",
+          "subject": "customer-05",
+          "request_id": "security-privacy-day-05",
+          "trace_id": "trace-security-privacy-day-05",
+          "run_id": "run-security-privacy-day-05-1",
+          "tool": "order.lookup",
+          "outcome": "allowed",
+          "reason": "",
+          "at": "2026-10-01T12:20:00Z"
+        },
+        {
+          "credential_id": "security-privacy-96138a2230408fa127099d48",
+          "kind": "request",
+          "subject": "customer-05",
+          "request_id": "security-privacy-day-05",
+          "trace_id": "trace-security-privacy-day-05",
+          "run_id": "run-security-privacy-day-05-1",
+          "tool": "shipment.status",
+          "outcome": "allowed",
+          "reason": "",
+          "at": "2026-10-01T12:20:00Z"
+        },
+        {
+          "credential_id": "security-privacy-96138a2230408fa127099d48",
+          "kind": "request",
+          "subject": "customer-05",
+          "request_id": "security-privacy-day-05",
+          "trace_id": "trace-security-privacy-day-05",
+          "run_id": "run-security-privacy-day-05-1",
+          "tool": "policy.retrieve",
+          "outcome": "allowed",
+          "reason": "",
+          "at": "2026-10-01T12:20:00Z"
+        },
+        {
+          "credential_id": "security-privacy-96138a2230408fa127099d48",
+          "kind": "request",
+          "subject": "customer-05",
+          "request_id": "security-privacy-day-05",
+          "trace_id": "trace-security-privacy-day-05",
+          "run_id": "run-security-privacy-day-05-1",
+          "tool": "audit.append",
+          "outcome": "allowed",
+          "reason": "",
+          "at": "2026-10-01T12:20:00Z"
+        }
+      ],
+      "audit": {
+        "audit_id": "audit-1ad59c826bedcbbc1bbd73e8",
+        "trace_id": "trace-security-privacy-day-05",
+        "at": "2026-10-01T12:20:00Z",
+        "decision": {
+          "request_id": "security-privacy-day-05",
+          "outcome": "deny",
+          "amount_cents": 2499,
+          "tier": 1,
+          "reason": "already_delivered",
+          "policy_citation": "refund_cap_v4@2026-10-01#eligibility",
+          "executed": false
+        },
+        "freshness": {
+          "order": 0.0,
+          "shipment": 0.0,
+          "policy": 0.0
+        },
+        "risk_score": 0.1,
+        "approval_ids": [],
+        "event": "decision",
+        "proposal_id": null,
+        "receipt_id": null,
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "failure_detail": null
+      },
+      "decision": {
+        "outcome": "deny",
+        "amount_cents": 2499,
+        "tier": 1,
+        "reason": "already_delivered",
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-06",
+      "requester_id": "customer-06",
+      "order_id": "order-06",
+      "credential": {
+        "credential_id": "security-privacy-day-06-credential",
+        "kind": "request",
+        "subject": "customer-06",
+        "request_id": "security-privacy-day-06",
+        "order_ids": [
+          "order-06"
+        ],
+        "not_before": "2026-10-01T13:00:00+00:00",
+        "expires_at": "2026-10-01T13:30:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-06",
+          "run_id": "run-security-privacy-day-06-1",
+          "tool": "order.lookup",
+          "reason": "",
+          "at": "2026-10-01T13:00:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-06",
+        "at": "2026-10-01T13:00:00+00:00",
+        "money_moved": true
+      },
+      "decision": {
+        "outcome": "approve",
+        "reason": "eligible",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-07",
+      "requester_id": "customer-07",
+      "order_id": "order-07",
+      "credential": {
+        "credential_id": "security-privacy-day-07-credential",
+        "kind": "request",
+        "subject": "customer-07",
+        "request_id": "security-privacy-day-07",
+        "order_ids": [
+          "order-07"
+        ],
+        "not_before": "2026-10-01T13:40:00+00:00",
+        "expires_at": "2026-10-01T14:10:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-07",
+          "run_id": "run-security-privacy-day-07-1",
+          "tool": "order.lookup",
+          "reason": "",
+          "at": "2026-10-01T13:40:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-07",
+        "at": "2026-10-01T13:40:00+00:00",
+        "money_moved": true
+      },
+      "decision": {
+        "outcome": "approve",
+        "reason": "eligible",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-08",
+      "requester_id": "customer-08",
+      "order_id": "order-08",
+      "credential": {
+        "credential_id": "security-privacy-day-08-credential",
+        "kind": "request",
+        "subject": "customer-08",
+        "request_id": "security-privacy-day-08",
+        "order_ids": [
+          "order-08"
+        ],
+        "not_before": "2026-10-01T14:20:00+00:00",
+        "expires_at": "2026-10-01T14:50:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-08",
+          "run_id": "run-security-privacy-day-08-1",
+          "tool": "refund.execute",
+          "reason": "credential_revoked",
+          "at": "2026-10-01T14:20:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-08",
+        "at": "2026-10-01T14:20:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "credential_revoked",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-09",
+      "requester_id": "customer-09",
+      "order_id": "order-09",
+      "credential": {
+        "credential_id": "security-privacy-day-09-credential",
+        "kind": "request",
+        "subject": "customer-09",
+        "request_id": "security-privacy-day-09",
+        "order_ids": [
+          "order-09"
+        ],
+        "not_before": "2026-10-01T15:00:00+00:00",
+        "expires_at": "2026-10-01T15:30:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-09",
+          "run_id": "run-security-privacy-day-09-1",
+          "tool": "refund.execute",
+          "reason": "credential_revoked",
+          "at": "2026-10-01T15:00:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-09",
+        "at": "2026-10-01T15:00:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "credential_revoked",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-10",
+      "requester_id": "customer-10",
+      "order_id": "order-10",
+      "credential": {
+        "credential_id": "security-privacy-day-10-credential",
+        "kind": "request",
+        "subject": "customer-10",
+        "request_id": "security-privacy-day-10",
+        "order_ids": [
+          "order-10"
+        ],
+        "not_before": "2026-10-01T15:40:00+00:00",
+        "expires_at": "2026-10-01T16:10:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-10",
+          "run_id": "run-security-privacy-day-10-1",
+          "tool": "refund.execute",
+          "reason": "credential_revoked",
+          "at": "2026-10-01T15:40:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-10",
+        "at": "2026-10-01T15:40:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "credential_revoked",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    },
+    {
+      "request_id": "security-privacy-day-11",
+      "requester_id": "customer-11",
+      "order_id": "order-11",
+      "credential": {
+        "credential_id": "security-privacy-day-11-credential",
+        "kind": "request",
+        "subject": "customer-11",
+        "request_id": "security-privacy-day-11",
+        "order_ids": [
+          "order-11"
+        ],
+        "not_before": "2026-10-01T16:20:00+00:00",
+        "expires_at": "2026-10-01T16:50:00+00:00"
+      },
+      "credential_log": [
+        {
+          "trace_id": "trace-security-privacy-day-11",
+          "run_id": "run-security-privacy-day-11-1",
+          "tool": "refund.execute",
+          "reason": "credential_revoked",
+          "at": "2026-10-01T16:20:00+00:00"
+        }
+      ],
+      "audit": {
+        "trace_id": "trace-security-privacy-day-11",
+        "at": "2026-10-01T16:20:00+00:00",
+        "money_moved": false
+      },
+      "decision": {
+        "outcome": "refer",
+        "reason": "credential_revoked",
+        "amount_cents": 2499,
+        "tier": 1,
+        "policy_citation": "refund_cap_v4@2026-10-01#eligibility"
+      }
+    }
+  ],
+  "scope_events": [
+    {
+      "tool": "refund.execute",
+      "at": "2026-10-01T14:00:00+00:00",
+      "reason": "credential_revoked"
+    }
+  ]
+}

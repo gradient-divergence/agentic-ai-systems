@@ -1,0 +1,11 @@
+| Policy or report | Mean cost | Saving | Paired 95% interval |
+|---|---:|---:|---:|
+| Agent's estimate, not realized | 34.129 | 377.651 | Not an interval |
+| Selected checkpoint | 1354.715 | −940.445 | [−961.68, −919.21] |
+| DQN, seed 7 | 427.935 | −13.665 | [−17.55, −9.78] |
+| DQN, seed 11 | 415.745 | −1.475 | [−5.04, 2.09] |
+| DQN, seed 19 | 417.405 | −3.135 | [−6.12, −0.15] |
+| DQN, seed 23 | 419.335 | −5.065 | [−8.49, −1.64] |
+| DQN, seed 31 | 411.515 | 2.755 | [−0.06, 5.57] |
+| Fixed rule | 414.270 | 0.000 | [0.00, 0.00] |
+| Exact policy | 407.370 | 6.900 | [5.33, 8.47] |

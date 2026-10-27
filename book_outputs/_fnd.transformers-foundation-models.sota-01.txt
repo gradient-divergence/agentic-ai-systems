@@ -1,0 +1,4 @@
+cache bytes: 100663296
+cache MiB: 96.000
+cached scores: 2098176
+uncached scores: 2865409024

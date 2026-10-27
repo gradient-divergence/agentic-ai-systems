@@ -1,0 +1,8 @@
+data (0.5, 0.5); generator (0.8, 0.2)
+best discriminator: 0.384615 0.714286
+objective -1.284951; floor -1.386294
+Jensen-Shannon divergence 0.050672
+data (0.5, 0.5); generator (0.5, 0.5)
+best discriminator: 0.500000 0.500000
+objective -1.386294; floor -1.386294
+Jensen-Shannon divergence 0.000000

@@ -1,0 +1,17 @@
+constructed heating-energy run; seed 7; 80 training, 160 validation; 100
+  updates
+input: raw RMS, training mean, training centered RMS, curvature, distance
+  covered
+outdoor temperature: 15.620499, 10.000000, 12.000000, 144.000000, 0.995066%
+floor area: 2332.380758, 2000.000000, 1200.000000, 1440000.000000, 100.000000%
+occupancy share: 0.538516, 0.500000, 0.200000, 0.040000, 0.000278%
+limit 0.000001388889, condition 36000000, agent eta 0.000000694444
+diverging eta 0.000002083333, loss after 10 steps 1209609169.074542
+stable raw training loss: start 1491.965388, end 332.687513
+rerun, training-fitted standardization; eta: training loss, validation loss
+  at step 100
+0.25: 0.097117, 0.102565
+1.00: 0.097117, 0.102565
+1.90: 0.097118, 0.102548
+decision: refuse the raw run; stability concealed two nearly unlearned
+  directions

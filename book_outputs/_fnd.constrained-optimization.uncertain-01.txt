@@ -1,0 +1,29 @@
+Monday 2026-03-23; constructed independent normal review times
+tiers 1, 2, 3: means 5, 15, 30; spreads 1.25, 3.75, 7.5 minutes
+robust: reuse the bounded 45-minute tier 3 case; other tiers fixed
+normal tails are unbounded, including a small negative-time tail
+boundary: required <= capacity + 1e-7 minutes; z(0.50) = 0
+two tier 3: mean 60; spread 10.606602; z(0.95) 1.644854; required 77.446307
+chance solve: enumerate tier/person counts, then check every plan
+ties: oldest drafts, then shared-tier work stays with alex
+scenarios: maximize average over all mean-feasible count plans
+one oldest-first representative per tier/person count vector
+seed 15; 10000 draws; 381 candidate plans
+in person's order, count a review only if its end <= capacity
+each review consumes its drawn time; no clipping or reordering
+morning total, morgan one tier 3: sample 8.999900; exact 8.999968328757 answers
+morning total, morgan two tier 3: sample 9.495600; exact 9.499968328757 answers
+row overruns below are exact under the normal model, even robust
+robust: planned 9; plan check []
+  alex: mean 70; spread 7.071068; overrun 7.68729897214e-13
+  morgan: mean 30; spread 7.500000; overrun 3.16712418331e-05
+chance-95: planned 9; plan check []
+  alex: mean 70; spread 7.071068; overrun 7.68729897214e-13
+  morgan: mean 30; spread 7.500000; overrun 3.16712418331e-05
+chance-50: planned 10; plan check []
+  alex: mean 70; spread 7.071068; overrun 7.68729897214e-13
+  morgan: mean 60; spread 10.606602; overrun 0.5
+scenarios: planned 10; plan check []
+  alex: mean 70; spread 7.071068; overrun 7.68729897214e-13
+  morgan: mean 60; spread 10.606602; overrun 0.5
+scenario average picks two tier 3 reviews for morgan

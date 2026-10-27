@@ -1,0 +1,1 @@
+rising scans (0, 0.9, 0), amount 10, wait 1: one-stage rule pays day 0, cost 10.00; optimal waits, cost 3.00

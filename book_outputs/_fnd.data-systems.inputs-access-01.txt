@@ -1,0 +1,7 @@
+{
+  "access_kind": "inputs only; planning probes included golden-window inputs",
+  "journal_design": "GoldenSet.consult journals label reads; this is a note beside the stored manifest output, not a label consultation",
+  "purpose": "planning probe of inputs (requests, orders, shipments), no labels, 11 October 2026",
+  "reader": "brief writer, chapter 30",
+  "recorded_at": "2026-10-12T00:00:00+00:00"
+}

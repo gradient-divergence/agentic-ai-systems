@@ -1,0 +1,69 @@
+opening: 0.15 x $49.99 = $7.50; 0.30 x $5 = $1.50
+sigmoid(-1.99) = 0.1203; exp(0.7) = 2.0138
+log loss of 0.9: right 0.1054, wrong 2.3026
+a wrong payment scored 0.12: p - y = -0.88
+constructed request: log-odds -1.9900; probability 0.1203; wrong-payment loss 2.12; sound-claim loss 0.1281
+constructed wrong payment: error -0.88; gradient (-0.88, -0.44); bias gradient -0.88
+step 0.1: weights (0.788, 0.664); bias -2.912; probability 0.143; loss 1.95
+constructed savings (0, 0, 0, -4, 36): mean $6.40
+resample requests (1, 4, 4, 2, 5): savings (0, -4, -4, 0, 36); mean $5.60
+chance of missing request 5: (4/5)^5 = 0.3277 (0.33)
+bias-variance check: noise 0.1600 + squared bias 0.0025 + variance 0.0125 = 0.1750; direct 0.1750
+Damage claim: true risk 0.1632, noise 0.1365, amount $39.34, 5 days
+Change of mind: true risk 0.0283, noise 0.0275, amount $39.29, 5 days
+one deep tree: a prediction of exactly 0 or 1 in 195 and 199 of 200 training sets; at the change of mind, 199 are 0
+estimated squared bias: the squared gap, less variance / 200, floored at zero
+  Damage claim, Logistic regression: gap -0.0135, squared 0.000183, less 0.000002, printed 0.0002
+  Change of mind, Logistic regression: gap +0.0237, squared 0.000561, less 0.000001, printed 0.0006
+  Damage claim, One deep tree: gap -0.0223, squared 0.000499, less 0.000578, printed 0.0000
+  Change of mind, One deep tree: gap -0.0258, squared 0.000667, less 0.000006, printed 0.0007
+  Damage claim, Boosted trees: gap -0.0044, squared 0.000019, less 0.000012, printed 0.0000
+  Change of mind, Boosted trees: gap +0.0016, squared 0.000003, less 0.000001, printed 0.0000
+tier 1: $4 / $49.99 = 0.0800; $4 / $50 = 0.0800
+ticket 2 under 0-1 costs: standard 0.25, priority 0.95, escalation 0.80, route standard
+pooled calibration: equal numbers of $49.99 requests at a true 0.12 and $5 requests at 0.00, all scored 0.06, their pooled rate
+  the rule sees 0.06 x $49.99 = $3.00, under $4, and pays; the true expected loss is $6.00
+balanced weight on a wrong payment: 26.59; minus its log: -3.280
+boosted trees: August log loss 0.1259, with its map 0.1288, AUC 0.836
+class-weighted: August log loss 0.5040, with its map 0.1295, AUC 0.837
+base rate's log loss in August: 0.1584
+validation, boosted trees, 41,536 pairs of a wrong and a sound payment:
+  the score: the wrong one is higher in 0.6865, level in 0.0000; 0.6865 + 0.0000 / 2 = 0.6865, AUC 0.6865
+  the score to two decimals: the wrong one is higher in 0.5912, level in 0.1918; 0.5912 + 0.1918 / 2 = 0.6871, AUC 0.6871
+validation rate 0.0445, 95% interval 0.033 to 0.059
+August, proposed score at the tier threshold: paid 876 of 999, wrong 12 (0.0137, 0.008 to 0.024); among them predicted 0.0301
+September, proposed score at the tier threshold: paid 832 of 966, wrong 27 (0.0325, 0.022 to 0.047); among them predicted 0.0304
+September rate 0.0652, 95% interval 0.051 to 0.083
+September, mean cost per request:
+  placeholder: paid 966, wrong 63, cost 1.82 (1.34 to 2.34)
+  proposed score, tier threshold: paid 832, wrong 27, cost 1.30 (0.98 to 1.66)
+  corrected score, tier threshold: paid 804, wrong 26, cost 1.39 (1.07 to 1.74)
+  proposed score, review-cost rule: paid 891, wrong 39, cost 1.22 (0.87 to 1.59)
+  corrected score, review-cost rule: paid 868, wrong 34, cost 1.21 (0.89 to 1.56)
+  the correction at the tier threshold adds 0.09 (0.02 to 0.14)
+September by bin, proposed score then corrected (requests, mean, wrong, interval):
+  proposed: 193, 0.018, 10, 0.052 (0.028 to 0.093)
+  proposed: 193, 0.026, 6, 0.031 (0.014 to 0.066)
+  proposed: 194, 0.031, 3, 0.015 (0.005 to 0.044)
+  proposed: 192, 0.039, 7, 0.036 (0.018 to 0.073)
+  proposed: 194, 0.132, 37, 0.191 (0.142 to 0.252)
+  corrected: 193, 0.027, 10, 0.052 (0.028 to 0.093)
+  corrected: 193, 0.038, 6, 0.031 (0.014 to 0.066)
+  corrected: 194, 0.046, 3, 0.015 (0.005 to 0.044)
+  corrected: 192, 0.057, 7, 0.036 (0.018 to 0.073)
+  corrected: 194, 0.183, 37, 0.191 (0.142 to 0.252)
+September's correction multiplies every odds by 1.50
+doubling a risk of 0.02 multiplies its odds by 2.04
+doubling a risk of 0.15 multiplies its odds by 2.43
+September's frozen requests, after their one consultation:
+name: history-september
+label_policy: outcome-1
+first: 2026-09-01
+last: 2026-09-30
+requests: 966
+by_tier: {1: 966}
+by_policy_version: {'2026-09-01': 966}
+sha256: bbc0717eda217c58
+access log, every entry:
+  1: history-september, stage 1 report, the proposed score after the policy change
+fingerprints recompute after the reads: August True, September True

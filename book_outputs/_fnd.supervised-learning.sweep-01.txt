@@ -1,0 +1,12 @@
+refer when score times amount reaches a cut-off: mean cost per request
+score                         cheapest  cost  within 0.02 of it  at 4.00
+boosted trees, with its map      4.00  0.68   3.50 to  5.00     0.68
+class-weighted, as trained      30.00  0.72  23.50 to 32.50     2.97
+boosted trees, as trained        3.50  0.67   3.00 to  4.00     0.67
+class-weighted, with its map     4.00  0.68   3.50 to  4.00     0.68
+proposed score: the tier threshold refers 123, the review-cost rule 67
+  the threshold's extra reviews: 56, 56 of them of refunds the rule pays
+  cost per request 0.81 against 0.68: the threshold costs 0.14 more (0.06 to 0.22)
+score as trained: the tier threshold refers 119, the review-cost rule 59
+  the threshold's extra reviews: 60, 60 of them of refunds the rule pays
+  cost per request 0.80 against 0.67: the threshold costs 0.13 more (0.04 to 0.22)

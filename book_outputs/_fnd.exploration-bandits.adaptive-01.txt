@@ -1,0 +1,5 @@
+two offers, true rates 0.5, eight equally likely three-answer outcomes
+enumerated expectations: 0.4375, 0.4375
+seed 7; runs 100000; rounds 20; epsilon 0.2; supported reweighted rounds 18
+offer 1: plain 0.431874; reweighted 0.501421; standard error 0.001085
+offer 2: plain 0.392037; reweighted 0.499586; standard error 0.001281

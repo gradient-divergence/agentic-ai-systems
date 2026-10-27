@@ -1,0 +1,5 @@
+worked example, three bins: 0.028
+validation: 988 requests, 44 wrong payments (0.0445)
+score             mean   error    AUC  map: slope, intercept
+boosted trees   0.0331  0.0132  0.687  0.888, -0.011
+class-weighted  0.3646  0.3201  0.695  0.874, -2.823

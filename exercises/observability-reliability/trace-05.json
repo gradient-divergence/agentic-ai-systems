@@ -1,0 +1,28 @@
+{
+  "audit_age_seconds": 150,
+  "spans": [
+    {
+      "end": "2026-10-01T00:00:00+00:00",
+      "name": "tool:shipment.status",
+      "start": "2026-10-01T00:00:00+00:00",
+      "trace_id": "observability-reliability-diagnostic"
+    },
+    {
+      "name": "tool:refund.execute",
+      "start": "2026-10-01T00:35:00+00:00",
+      "trace_id": "observability-reliability-diagnostic"
+    },
+    {
+      "name": "tool:refund.execute",
+      "start": "2026-10-01T00:00:00+00:00",
+      "trace_id": "other-request"
+    },
+    {
+      "name": "run",
+      "reason": "delivery_unknown",
+      "start": "2026-10-01T00:00:00+00:00",
+      "trace_id": "policy-referral"
+    }
+  ],
+  "trace_id": "observability-reliability-diagnostic"
+}

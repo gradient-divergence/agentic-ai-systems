@@ -1,0 +1,10 @@
+Constructed constant clearing rate; tolerance named before measurement.
+alarm rate: 4.158883 per hour
+alarm chance at 20 minutes: 0.750000
+alarm chance at 30 minutes: 0.875000
+alarm budget at 1%: 8.699742 seconds
+redesign: alarm.probe at restart; 8-second limit; chance 0.009199
+session count at 30 minutes: 0.004988
+shipment chance at 30 minutes: 0.009950166
+shipment budget at 1%: 30.151008 minutes
+shipment/alarm budget ratio: 207.944154

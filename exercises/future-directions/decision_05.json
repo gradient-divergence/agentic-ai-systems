@@ -1,0 +1,31 @@
+{
+  "constructed": true,
+  "evidence": {
+    "calibration": "pass",
+    "capacity": "pass",
+    "cost_mean": -0.2,
+    "cost_upper_95": -0.05,
+    "release": "signed pass",
+    "wrongful_denials": [
+      0,
+      0
+    ]
+  },
+  "first_request_day": 1,
+  "rebuild": {
+    "after": "calibration alone",
+    "allowed": 1,
+    "judged_on": "window 2"
+  },
+  "reversal": {
+    "budget": "immediate withdrawal to shadow/person, independent of rollback",
+    "confirmation": "next 2,000 requests, persisted boundaries and paid-only outcomes",
+    "mechanism": "watch and rehearsed rollback",
+    "owner": "decision_owner",
+    "signal": "monthly paired cost against incumbent",
+    "target": "B6 admitted at stage 6"
+  },
+  "signed_day": 0,
+  "stage": 6,
+  "verdict": "replace"
+}

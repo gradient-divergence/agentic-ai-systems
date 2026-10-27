@@ -1,0 +1,11 @@
+tokens: deploy certificate DNS disk network
+scores: 2.0 1.0 0.5 0.0 -1.0
+greedy: 1.000 0.000 0.000 0.000 0.000; certificate 0.000
+temperature 0.5: 0.829 0.112 0.041 0.015 0.002; certificate 0.112
+temperature 1: 0.563 0.207 0.126 0.076 0.028; certificate 0.207
+temperature 2: 0.375 0.227 0.177 0.138 0.084; certificate 0.227
+top-2: 0.731 0.269 0.000 0.000 0.000; certificate 0.269
+nucleus 0.8: 0.629 0.231 0.140 0.000 0.000; certificate 0.231
+nucleus 0.8 at temperature 0.5: 1 tokens
+nucleus 0.8 at temperature 1: 3 tokens
+nucleus 0.8 at temperature 2: 4 tokens

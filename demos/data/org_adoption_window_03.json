@@ -1,0 +1,907 @@
+{
+  "decisions": [
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-001",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-001",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-001"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-001"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-002",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-002",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-002"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-002"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-003",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-003",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-003"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-003"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-004",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-004",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-004"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-004"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-005",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-005",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-005"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-005"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-006",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-006",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-006"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-006"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-007",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-007",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-007"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-007"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-008",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-008",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-008"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-008"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-009",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-009",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-009"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-009"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-010",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-010",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-010"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-010"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-011",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-011",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-011"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-011"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-012",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-012",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-012"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-012"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-013",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-013",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-013"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-013"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-014",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-014",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-014"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-014"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-015",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-015",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-015"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-015"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-016",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-016",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-016"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-016"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-017",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-017",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-017"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-017"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-018",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-018",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-018"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-018"
+    },
+    {
+      "actor_id": "alex",
+      "audit": {
+        "approval_ids": [],
+        "at": "2026-11-29T03:00:00Z",
+        "audit_id": "audit-org-adoption-ex-r-019",
+        "decision": {
+          "amount_cents": 4000,
+          "executed": false,
+          "outcome": "deny",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "reason": "already_delivered",
+          "request_id": "org-adoption-ex-r-019",
+          "tier": 1
+        },
+        "event": "decision",
+        "failure_detail": null,
+        "freshness": {},
+        "money_moved": false,
+        "paid_amount_cents": 0,
+        "proposal_id": null,
+        "receipt_id": null,
+        "risk_score": null,
+        "trace_id": "trace-org-adoption-ex-r-019"
+      },
+      "authorization_id": "constructed-verified-review-alex",
+      "path": "governed",
+      "review_id": "review-org-adoption-ex-r-019"
+    }
+  ],
+  "intake": [
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-000",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-000",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-000",
+        "requester_id": "customer-0",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-001",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-001",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-001",
+        "requester_id": "customer-1",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-002",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-002",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-002",
+        "requester_id": "customer-2",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-003",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-003",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-003",
+        "requester_id": "customer-3",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-004",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-004",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-004",
+        "requester_id": "customer-4",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-005",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-005",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-005",
+        "requester_id": "customer-5",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-006",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-006",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-006",
+        "requester_id": "customer-6",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-007",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-007",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-007",
+        "requester_id": "customer-7",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-008",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-008",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-008",
+        "requester_id": "customer-8",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-009",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-009",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-009",
+        "requester_id": "customer-9",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-010",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-010",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-010",
+        "requester_id": "customer-10",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-011",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-011",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-011",
+        "requester_id": "customer-11",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-012",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-012",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-012",
+        "requester_id": "customer-12",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-013",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-013",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-013",
+        "requester_id": "customer-13",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-014",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-014",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-014",
+        "requester_id": "customer-14",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-015",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-015",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-015",
+        "requester_id": "customer-15",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-016",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-016",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-016",
+        "requester_id": "customer-16",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-017",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-017",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-017",
+        "requester_id": "customer-17",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-018",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-018",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-018",
+        "requester_id": "customer-18",
+        "text": ""
+      }
+    },
+    {
+      "decision_deadline": "2026-11-30T01:00:00Z",
+      "order_id": "org-adoption-ex-o-019",
+      "received_at": "2026-11-29T01:00:00Z",
+      "request": {
+        "amount_cents": 4000,
+        "at": "2026-11-29T01:00:00Z",
+        "failure": null,
+        "order_reference": "org-adoption-ex-o-019",
+        "preparer_id": "refund-agent",
+        "reason": "not_delivered",
+        "request_id": "org-adoption-ex-r-019",
+        "requester_id": "customer-19",
+        "text": ""
+      }
+    }
+  ],
+  "ledger": [
+    {
+      "amount_cents": 4000,
+      "approvals": [],
+      "at": "2026-11-29T02:00:00Z",
+      "decision": null,
+      "evidence": null,
+      "idempotency_key": "prior-org-adoption-ex-console",
+      "order_id": "org-adoption-ex-o-001",
+      "proposal_id": null,
+      "receipt_id": "org-adoption-ex-console",
+      "request": null
+    }
+  ],
+  "provider": [
+    {
+      "amount_cents": 4000,
+      "at": "2026-11-29T02:00:00Z",
+      "channel": "console",
+      "order_id": "org-adoption-ex-o-001",
+      "payment_id": "org-adoption-ex-console",
+      "request_id": "org-adoption-ex-r-001"
+    }
+  ],
+  "window": {
+    "closed_at": "2026-12-15T00:00:00Z",
+    "end": "2026-12-13T00:00:00Z",
+    "start": "2026-11-29T00:00:00Z",
+    "window_id": "org-adoption-window-1"
+  }
+}

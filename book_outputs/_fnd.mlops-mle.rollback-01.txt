@@ -1,0 +1,9 @@
+Mixed state: B1 with B0's register snapshot
+Shadow admission: False
+Canary admission: False
+Signed rollback produced: False
+Decision day 12 policy_not_in_bundle: 4
+Decision day 13 policy_not_in_bundle: 4
+Decision day 14 policy_not_in_bundle: 4
+From day 12 referrals: 12
+Restoring software does not renew spent, ended or expired authority.

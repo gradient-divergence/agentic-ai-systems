@@ -1,0 +1,9 @@
+renamed field: rejected
+  paid_cents: Field required
+  amount_paid_cents: Extra inputs are not permitted
+added field: rejected
+  currency: Extra inputs are not permitted
+naive time: rejected
+  observed_at: Value error, timestamps must be exact timezone-
+    aware datetimes
+in dollars: accepted as 42 cents

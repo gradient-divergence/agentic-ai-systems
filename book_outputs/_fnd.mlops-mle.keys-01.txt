@@ -1,0 +1,4 @@
+Exercise 3: pairs 1249975000 ; shortest prefix: 13
+Exercise 4: June 1-3: 1200 ; signed inside notice: 0
+Exercise 5: unreported index change lacks frozen-question evidence.
+Exercise 6: runtime/adapter change requires the runtime swap record.

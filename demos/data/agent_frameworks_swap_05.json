@@ -1,0 +1,939 @@
+{
+  "cases": [
+    {
+      "case_id": "public-r-7-0000",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": null,
+        "reason": "ambiguous_order",
+        "request_id": "r-7-0000",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": null,
+        "reason": "ambiguous_order",
+        "request_id": "r-7-0000",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0001",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "non_current_policy",
+        "request_id": "r-7-0001",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "non_current_policy",
+        "request_id": "r-7-0001",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0002",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "stale_shipment",
+        "request_id": "r-7-0002",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "stale_shipment",
+        "request_id": "r-7-0002",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0003",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "stale_policy",
+        "request_id": "r-7-0003",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "stale_policy",
+        "request_id": "r-7-0003",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0004",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "suspicious_request",
+        "request_id": "r-7-0004",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "suspicious_request",
+        "request_id": "r-7-0004",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0005",
+      "own_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0005",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0005",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0006",
+      "own_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0006",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0006",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0007",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0007",
+        "tier": 1
+      },
+      "own_paid_cents": 2499,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0007",
+        "tier": 1
+      },
+      "second_paid_cents": 2499
+    },
+    {
+      "case_id": "public-r-7-0008",
+      "own_decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0008",
+        "tier": 1
+      },
+      "own_paid_cents": 4999,
+      "second_decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0008",
+        "tier": 1
+      },
+      "second_paid_cents": 4999
+    },
+    {
+      "case_id": "public-r-7-0009",
+      "own_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0009",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0009",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0010",
+      "own_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0010",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0010",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0011",
+      "own_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0011",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0011",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0012",
+      "own_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0012",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0012",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0013",
+      "own_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0013",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0013",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0014",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0014",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0014",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0015",
+      "own_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0015",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0015",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0016",
+      "own_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0016",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0016",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0017",
+      "own_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0017",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0017",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0018",
+      "own_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0018",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0018",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0019",
+      "own_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0019",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0019",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0020",
+      "own_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0020",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0020",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0021",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0021",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0021",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0022",
+      "own_decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0022",
+        "tier": 1
+      },
+      "own_paid_cents": 4999,
+      "second_decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0022",
+        "tier": 1
+      },
+      "second_paid_cents": 4999
+    },
+    {
+      "case_id": "public-r-7-0023",
+      "own_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0023",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0023",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0024",
+      "own_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0024",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "delivery_unknown",
+        "request_id": "r-7-0024",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0025",
+      "own_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0025",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0025",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0026",
+      "own_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0026",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0026",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0027",
+      "own_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0027",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0027",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0028",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0028",
+        "tier": 1
+      },
+      "own_paid_cents": 2499,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-7-0028",
+        "tier": 1
+      },
+      "second_paid_cents": 2499
+    },
+    {
+      "case_id": "public-r-7-0029",
+      "own_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0029",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0029",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0030",
+      "own_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0030",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0030",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0031",
+      "own_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0031",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0031",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0032",
+      "own_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0032",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-07-01#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0032",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0033",
+      "own_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0033",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 65000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0033",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0034",
+      "own_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0034",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 120000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0034",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0035",
+      "own_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0035",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 2499,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "already_delivered",
+        "request_id": "r-7-0035",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0036",
+      "own_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0036",
+        "tier": 1
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-03-01#eligibility",
+        "reason": "outside_return_window",
+        "request_id": "r-7-0036",
+        "tier": 1
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0037",
+      "own_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0037",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 5000,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-05-01#eligibility",
+        "reason": "approval_required",
+        "request_id": "r-7-0037",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0038",
+      "own_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-05-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0038",
+        "tier": 2
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50000,
+        "executed": false,
+        "outcome": "deny",
+        "policy_citation": "refund_cap_v4@2026-05-01#cap",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0038",
+        "tier": 2
+      },
+      "second_paid_cents": 0
+    },
+    {
+      "case_id": "public-r-7-0039",
+      "own_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0039",
+        "tier": 3
+      },
+      "own_paid_cents": 0,
+      "second_decision": {
+        "amount_cents": 50001,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "reason": "amount_over_policy",
+        "request_id": "r-7-0039",
+        "tier": 3
+      },
+      "second_paid_cents": 0
+    }
+  ],
+  "claim": "unchanged, ready for shadow",
+  "configuration": "referral ending",
+  "fields_compared": [
+    "decision",
+    "paid_cents"
+  ],
+  "settings": {
+    "agent_budget": false,
+    "end_at_audit": true,
+    "max_steps": 12,
+    "no_retry": false,
+    "one_tool_per_phase": true,
+    "refer_on_failure": true,
+    "retries": 1
+  }
+}

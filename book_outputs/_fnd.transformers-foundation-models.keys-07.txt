@@ -1,0 +1,4 @@
+gradient factor (w=0.8, n=20): 0.0115
+level=50; factor=1.02; steps=10
+one-step error: 1.00
+ten-step free-running error: 10.95

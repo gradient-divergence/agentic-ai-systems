@@ -1,0 +1,943 @@
+{
+  "audit": [
+    {
+      "approval_ids": [],
+      "at": "2026-10-06T04:34:59Z",
+      "audit_id": "audit-cd007b55b11b9a29640037a7",
+      "decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "refer",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "shipment_incomplete",
+        "request_id": "live-r-34-1310",
+        "tier": 1
+      },
+      "event": "decision",
+      "failure_detail": null,
+      "freshness": {
+        "order": 60.0,
+        "policy": 3600.0,
+        "shipment": 340.795595
+      },
+      "money_moved": false,
+      "paid_amount_cents": 0,
+      "proposal_id": null,
+      "receipt_id": null,
+      "risk_score": 0.1,
+      "trace_id": "trace-live-r-34-1310"
+    },
+    {
+      "approval_ids": [],
+      "at": "2026-10-07T16:37:51.983927Z",
+      "audit_id": "audit-794776448a55baaec49f5a39",
+      "decision": {
+        "amount_cents": 4999,
+        "executed": false,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "live-r-34-1310",
+        "tier": 1
+      },
+      "event": "intent",
+      "failure_detail": null,
+      "freshness": {
+        "order": 60.0,
+        "policy": 3600.0,
+        "shipment": 0.0
+      },
+      "money_moved": false,
+      "paid_amount_cents": 0,
+      "proposal_id": "proposal-2d220cee70bda45243ca05a3",
+      "receipt_id": null,
+      "risk_score": 0.1,
+      "trace_id": "trace-live-r-34-1310"
+    },
+    {
+      "approval_ids": [],
+      "at": "2026-10-07T16:37:51.983927Z",
+      "audit_id": "audit-467b571ebaa053b77b02fd85",
+      "decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "live-r-34-1310",
+        "tier": 1
+      },
+      "event": "confirmation",
+      "failure_detail": null,
+      "freshness": {
+        "order": 60.0,
+        "policy": 3600.0,
+        "shipment": 0.0
+      },
+      "money_moved": true,
+      "paid_amount_cents": 4999,
+      "proposal_id": "proposal-2d220cee70bda45243ca05a3",
+      "receipt_id": "refund-live-r-34-1310",
+      "risk_score": 0.1,
+      "trace_id": "trace-live-r-34-1310"
+    }
+  ],
+  "scope": "constructed cohort rehearsal; simulated ledger",
+  "spans": [
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.120000Z",
+      "links": [],
+      "name": "tool:order.lookup",
+      "parent_id": "observability-reliability-span-242",
+      "reads": [
+        "16a2d763832982224bd8c4b429b4f12182497b43fc16a340ab3dc7ebc1755342"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "order"
+      ],
+      "span_id": "observability-reliability-span-243",
+      "start": "2026-10-06T04:34:59.020000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.120000Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [
+        "16a2d763832982224bd8c4b429b4f12182497b43fc16a340ab3dc7ebc1755342"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "order"
+      ],
+      "span_id": "observability-reliability-span-242",
+      "start": "2026-10-06T04:34:59Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.240000Z",
+      "links": [],
+      "name": "tool:shipment.status",
+      "parent_id": "observability-reliability-span-244",
+      "reads": [
+        "754dfad28c9e883df4c9d7435cf421544799536bce30da4cfa82fcaa466830aa"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "shipment"
+      ],
+      "span_id": "observability-reliability-span-245",
+      "start": "2026-10-06T04:34:59.140000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.240000Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [
+        "754dfad28c9e883df4c9d7435cf421544799536bce30da4cfa82fcaa466830aa"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "shipment"
+      ],
+      "span_id": "observability-reliability-span-244",
+      "start": "2026-10-06T04:34:59.120000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.360000Z",
+      "links": [],
+      "name": "tool:policy.retrieve",
+      "parent_id": "observability-reliability-span-246",
+      "reads": [
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "policy"
+      ],
+      "span_id": "observability-reliability-span-247",
+      "start": "2026-10-06T04:34:59.260000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.360000Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "policy"
+      ],
+      "span_id": "observability-reliability-span-246",
+      "start": "2026-10-06T04:34:59.240000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.380000Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [],
+      "reason": "shipment_incomplete",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-span-248",
+      "start": "2026-10-06T04:34:59.360000Z",
+      "status": "held",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.510000Z",
+      "links": [],
+      "name": "store:audits",
+      "parent_id": "observability-reliability-span-250",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-span-251",
+      "start": "2026-10-06T04:34:59.500000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-cd007b55b11b9a29640037a7"
+      ]
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.510000Z",
+      "links": [],
+      "name": "tool:audit.append",
+      "parent_id": "observability-reliability-span-249",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-span-250",
+      "start": "2026-10-06T04:34:59.400000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-cd007b55b11b9a29640037a7"
+      ]
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.510000Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-span-249",
+      "start": "2026-10-06T04:34:59.380000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-cd007b55b11b9a29640037a7"
+      ]
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.520000Z",
+      "links": [],
+      "name": "store:lineage",
+      "parent_id": "observability-reliability-span-241",
+      "reads": [
+        "16a2d763832982224bd8c4b429b4f12182497b43fc16a340ab3dc7ebc1755342",
+        "754dfad28c9e883df4c9d7435cf421544799536bce30da4cfa82fcaa466830aa",
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c",
+        "c5041dbcae24308ff7f21e9caff1dec9931218868723d48890e6e3f1abfe6167",
+        "176a295f7d63602386fc3d8723406f50c90fd6fcd831f844bc88baf62e5aa902"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [
+        "order",
+        "shipment",
+        "policy",
+        "policy",
+        "ledger"
+      ],
+      "span_id": "observability-reliability-span-252",
+      "start": "2026-10-06T04:34:59.510000Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "0401ec56a09e95442746c83115bf803a63eaaf97af7ab68a8bcc0a252be880a5"
+      ]
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-06T04:34:59.520000Z",
+      "links": [],
+      "name": "run",
+      "parent_id": null,
+      "reads": [],
+      "reason": "shipment_incomplete",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-span-241",
+      "start": "2026-10-06T04:34:59Z",
+      "status": "held",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 1,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:51.983927Z",
+      "links": [],
+      "name": "watermark_advance",
+      "parent_id": null,
+      "reads": [
+        "scan-live-o-3234-shipped-0"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-1",
+      "sources": [],
+      "span_id": "observability-reliability-causal-349",
+      "start": "2026-10-07T16:37:51.983927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.103927Z",
+      "links": [],
+      "name": "tool:order.lookup",
+      "parent_id": "observability-reliability-span-351",
+      "reads": [
+        "87437353a7fe49782ad5ab1aecf05c598b097a764609d8fb90e58f962560405f"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "order"
+      ],
+      "span_id": "observability-reliability-span-352",
+      "start": "2026-10-07T16:37:52.003927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.103927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [
+        "87437353a7fe49782ad5ab1aecf05c598b097a764609d8fb90e58f962560405f"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "order"
+      ],
+      "span_id": "observability-reliability-span-351",
+      "start": "2026-10-07T16:37:51.983927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.223927Z",
+      "links": [],
+      "name": "tool:shipment.status",
+      "parent_id": "observability-reliability-span-353",
+      "reads": [
+        "0df1c5263d952c5a6efeca5e7ee21c0c2da4c9d3f19b5c5462c6e5448f5da511"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "shipment"
+      ],
+      "span_id": "observability-reliability-span-354",
+      "start": "2026-10-07T16:37:52.123927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.223927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [
+        "0df1c5263d952c5a6efeca5e7ee21c0c2da4c9d3f19b5c5462c6e5448f5da511"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "shipment"
+      ],
+      "span_id": "observability-reliability-span-353",
+      "start": "2026-10-07T16:37:52.103927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.343927Z",
+      "links": [],
+      "name": "tool:policy.retrieve",
+      "parent_id": "observability-reliability-span-355",
+      "reads": [
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "policy"
+      ],
+      "span_id": "observability-reliability-span-356",
+      "start": "2026-10-07T16:37:52.243927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.343927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "policy"
+      ],
+      "span_id": "observability-reliability-span-355",
+      "start": "2026-10-07T16:37:52.223927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.363927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [],
+      "reason": "eligible",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-357",
+      "start": "2026-10-07T16:37:52.343927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.493927Z",
+      "links": [],
+      "name": "store:proposals",
+      "parent_id": "observability-reliability-span-359",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-360",
+      "start": "2026-10-07T16:37:52.483927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "proposal-2d220cee70bda45243ca05a3"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.493927Z",
+      "links": [],
+      "name": "tool:refund.propose",
+      "parent_id": "observability-reliability-span-358",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-359",
+      "start": "2026-10-07T16:37:52.383927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "proposal-2d220cee70bda45243ca05a3"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.493927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-358",
+      "start": "2026-10-07T16:37:52.363927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "proposal-2d220cee70bda45243ca05a3"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.713927Z",
+      "links": [],
+      "name": "tool:order.lookup",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [
+        "87437353a7fe49782ad5ab1aecf05c598b097a764609d8fb90e58f962560405f"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "order"
+      ],
+      "span_id": "observability-reliability-span-363",
+      "start": "2026-10-07T16:37:52.613927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.813927Z",
+      "links": [],
+      "name": "tool:shipment.status",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [
+        "0df1c5263d952c5a6efeca5e7ee21c0c2da4c9d3f19b5c5462c6e5448f5da511"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "shipment"
+      ],
+      "span_id": "observability-reliability-span-364",
+      "start": "2026-10-07T16:37:52.713927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.913927Z",
+      "links": [],
+      "name": "tool:policy.retrieve",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "policy"
+      ],
+      "span_id": "observability-reliability-span-365",
+      "start": "2026-10-07T16:37:52.813927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.943927Z",
+      "links": [],
+      "name": "gate",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-366",
+      "start": "2026-10-07T16:37:52.913927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.953927Z",
+      "links": [],
+      "name": "store:audits",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-367",
+      "start": "2026-10-07T16:37:52.943927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-794776448a55baaec49f5a39"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.963927Z",
+      "links": [],
+      "name": "store:ledger",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-368",
+      "start": "2026-10-07T16:37:52.953927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "refund-live-r-34-1310"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.973927Z",
+      "links": [],
+      "name": "store:audits",
+      "parent_id": "observability-reliability-span-362",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-369",
+      "start": "2026-10-07T16:37:52.963927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-467b571ebaa053b77b02fd85"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.973927Z",
+      "links": [],
+      "name": "tool:refund.execute",
+      "parent_id": "observability-reliability-span-361",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-362",
+      "start": "2026-10-07T16:37:52.513927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "refund-live-r-34-1310"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:52.973927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-361",
+      "start": "2026-10-07T16:37:52.493927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "refund-live-r-34-1310"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:53.103927Z",
+      "links": [],
+      "name": "store:audits",
+      "parent_id": "observability-reliability-span-371",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-372",
+      "start": "2026-10-07T16:37:53.093927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-467b571ebaa053b77b02fd85"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:53.103927Z",
+      "links": [],
+      "name": "tool:audit.append",
+      "parent_id": "observability-reliability-span-370",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-371",
+      "start": "2026-10-07T16:37:52.993927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-467b571ebaa053b77b02fd85"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:53.103927Z",
+      "links": [],
+      "name": "step",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-370",
+      "start": "2026-10-07T16:37:52.973927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "audit-467b571ebaa053b77b02fd85"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:53.113927Z",
+      "links": [],
+      "name": "store:lineage",
+      "parent_id": "observability-reliability-span-350",
+      "reads": [
+        "87437353a7fe49782ad5ab1aecf05c598b097a764609d8fb90e58f962560405f",
+        "0df1c5263d952c5a6efeca5e7ee21c0c2da4c9d3f19b5c5462c6e5448f5da511",
+        "5726556b8d0bf6e621ec54ebf4c610c631cd04512a626ae6498b5cdd7bf7f23c",
+        "8050beb3d90a7d657ebe499d78f950a8b0992134fd2fd79d18ed24cac8ff99ba",
+        "176a295f7d63602386fc3d8723406f50c90fd6fcd831f844bc88baf62e5aa902"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [
+        "order",
+        "shipment",
+        "policy",
+        "policy",
+        "ledger"
+      ],
+      "span_id": "observability-reliability-span-373",
+      "start": "2026-10-07T16:37:53.103927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "26f06b8eea254cb19aed9c1798a4c0c357abb36cad4518779afc3a4a49775e7e"
+      ]
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T16:37:53.113927Z",
+      "links": [
+        [
+          "observability-reliability-causal-349",
+          "released_by"
+        ]
+      ],
+      "name": "run",
+      "parent_id": null,
+      "reads": [],
+      "reason": "eligible",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-span-350",
+      "start": "2026-10-07T16:37:51.983927Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": []
+    },
+    {
+      "attempt": 2,
+      "bundle": "7a2a7b25c3afe54cc06aee346cdc305b1bfcf8bc76496214887f480d2c1b0e0f",
+      "end": "2026-10-07T20:14:14.010709Z",
+      "links": [
+        [
+          "observability-reliability-span-368",
+          "corrects"
+        ]
+      ],
+      "name": "correction",
+      "parent_id": null,
+      "reads": [
+        "scan-live-o-1310-delivered-0",
+        "refund-live-r-34-1310"
+      ],
+      "reason": "",
+      "requester_id": "live-customer-34-1310",
+      "run_id": "run-live-r-34-1310-2",
+      "sources": [],
+      "span_id": "observability-reliability-causal-698",
+      "start": "2026-10-07T20:14:14.010709Z",
+      "status": "ok",
+      "tokens": null,
+      "trace_id": "trace-live-r-34-1310",
+      "writes": [
+        "correction:executed:refund-live-r-34-1310"
+      ]
+    }
+  ]
+}

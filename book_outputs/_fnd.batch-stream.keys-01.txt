@@ -1,0 +1,165 @@
+{
+  "delay_seconds": 31800.0,
+  "age_seconds": 120.0,
+  "example_absence_fraction": "1/6",
+  "counts": [
+    {
+      "at": "2026-01-21T00:00:00+00:00",
+      "fast": 7,
+      "distinct": 6,
+      "n_day": 9,
+      "n_final": null,
+      "settled": 6,
+      "copies": 1,
+      "misses": 3,
+      "pane": "provisional",
+      "watermark": "2026-01-20T22:00:00+00:00",
+      "arrival_day": 7,
+      "corrections": []
+    },
+    {
+      "at": "2026-01-21T02:00:00+00:00",
+      "fast": 8,
+      "distinct": 7,
+      "n_day": 9,
+      "n_final": null,
+      "settled": 7,
+      "copies": 1,
+      "misses": 2,
+      "pane": "on_time",
+      "watermark": "2026-01-21T00:00:00+00:00",
+      "arrival_day": 7,
+      "corrections": []
+    },
+    {
+      "at": "2026-01-21T05:00:00+00:00",
+      "fast": 9,
+      "distinct": 8,
+      "n_day": 9,
+      "n_final": null,
+      "settled": 8,
+      "copies": 1,
+      "misses": 1,
+      "pane": "revised",
+      "watermark": "2026-01-21T03:00:00+00:00",
+      "arrival_day": 7,
+      "corrections": []
+    },
+    {
+      "at": "2026-01-21T08:00:00+00:00",
+      "fast": 9,
+      "distinct": 8,
+      "n_day": 9,
+      "n_final": 8,
+      "settled": 8,
+      "copies": 1,
+      "misses": 1,
+      "pane": "final",
+      "watermark": "2026-01-21T06:00:00+00:00",
+      "arrival_day": 7,
+      "corrections": []
+    },
+    {
+      "at": "2026-01-21T09:00:00+00:00",
+      "fast": 10,
+      "distinct": 9,
+      "n_day": 9,
+      "n_final": 8,
+      "settled": 8,
+      "copies": 1,
+      "misses": 0,
+      "pane": "final",
+      "watermark": "2026-01-21T07:00:00+00:00",
+      "arrival_day": 7,
+      "corrections": [
+        "s9"
+      ]
+    }
+  ],
+  "late_ids": [
+    "s4",
+    "s6",
+    "s8",
+    "s9"
+  ],
+  "telecom_fractions": [
+    "7/82",
+    "7/607"
+  ],
+  "telecom_shares": [
+    0.08536585365853659,
+    0.011532125205930808
+  ],
+  "windows_hours": [
+    745.0,
+    697.0
+  ],
+  "return_limit_hours": 720,
+  "payment_watermark": "2026-01-20T02:30:10+00:00",
+  "payment_watermark_required": false,
+  "candidate": {
+    "verdict": "pass",
+    "failed_cases": [],
+    "positive_payments": 5,
+    "positive_cents": 62598,
+    "positive_100_attempts": [
+      {
+        "request_id": "positive-100",
+        "outcome": "refer",
+        "amount_cents": 100,
+        "tier": 1,
+        "reason": "shipment_incomplete",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "executed": false
+      },
+      {
+        "request_id": "positive-100",
+        "outcome": "approve",
+        "amount_cents": 100,
+        "tier": 1,
+        "reason": "eligible",
+        "policy_citation": "refund_cap_v4@2026-01-20#eligibility",
+        "executed": true
+      }
+    ],
+    "deny_all_failures": 5,
+    "r-7-0008": {
+      "attempts": [
+        {
+          "request_id": "r-7-0008",
+          "outcome": "refer",
+          "amount_cents": 4999,
+          "tier": 1,
+          "reason": "shipment_incomplete",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "executed": false
+        },
+        {
+          "request_id": "r-7-0008",
+          "outcome": "approve",
+          "amount_cents": 4999,
+          "tier": 1,
+          "reason": "eligible",
+          "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+          "executed": true
+        }
+      ],
+      "terminal_requests": 1,
+      "failed": []
+    }
+  },
+  "correction": {
+    "payment_id": "batch-stream-exercise-05-receipt",
+    "mode": "executed",
+    "request_id": "batch-stream-exercise-05",
+    "order_id": "exercise-05-parcel",
+    "event_id": "exercise-05-delivered",
+    "at": "2025-12-20T11:00:00+00:00",
+    "arrived_at": "2025-12-22T11:00:00+00:00",
+    "window_event_hours": 745.0,
+    "window_arrival_hours": 697.0,
+    "policy_limit_hours": 720,
+    "reason": "outside_return_window",
+    "payment_stands": true
+  }
+}

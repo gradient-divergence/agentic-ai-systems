@@ -1,0 +1,4 @@
+dim-light slice; given defect rate 0.02; 95% Wilson (z=1.96)
+flagged/defects  sensitivity  Wilson interval         expected parts
+ 45/50          0.90         [0.786395, 0.956525]      2,500
+450/500         0.90         [0.870577, 0.923323]     25,000

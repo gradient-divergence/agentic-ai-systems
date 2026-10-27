@@ -1,0 +1,39 @@
+{
+  "agent_claim": "The rising reward curve is offered as evidence that the incident policy improved.",
+  "check_probabilities": {
+    "failing": 0.2,
+    "healthy": 0.8
+  },
+  "constructed": true,
+  "curve_construction": "expected score of a mixture that increasingly closes before checking; illustrative, not measured training",
+  "exercise": "Find what the reward pays for and recompute the rule with confirmed resolution.",
+  "learned_rule": {
+    "failing": "close",
+    "healthy": "close",
+    "unchecked": "close"
+  },
+  "reported_value": 5.0,
+  "reward_curve": [
+    {
+      "close_before_check_probability": 0.0,
+      "reward": 4.000000000000001
+    },
+    {
+      "close_before_check_probability": 0.25,
+      "reward": 4.250000000000001
+    },
+    {
+      "close_before_check_probability": 0.5,
+      "reward": 4.5
+    },
+    {
+      "close_before_check_probability": 0.75,
+      "reward": 4.75
+    },
+    {
+      "close_before_check_probability": 1.0,
+      "reward": 5.0
+    }
+  ],
+  "reward_specification": "close: +5 whether checked or not; wait for check: -0.5; discount 0.9"
+}

@@ -1,0 +1,30 @@
+constructed carrier log: 48 scans; 2400 transit parcel-hours
+chi-square(98) 95% quantile: 122.107735
+estimate 0.020000/hour; upper 0.025439/hour
+age 30 minutes; spec limit 1800 seconds
+chance at estimate 0.009950
+chance at upper 0.012639
+tolerance 0.01: estimate budget 0.502517 hours
+estimate budget 30.15 minutes
+upper budget 23.70 minutes
+daytime: 48 scans in 1200 parcel-hours; rate 0.040000; upper 0.050878
+daytime chance 0.019801; upper 0.025118
+order limit: 1800 seconds
+order basis: constructed quiet log: 0 changes in 6000 order-hours; spec limit
+retained
+  rate evidence: 0 6000.0
+  accepted chance: 0.0 0.0002496131975701323
+  approver: the order team
+policy limit: 2.592e+06 seconds
+policy basis: specification judgment, no measured rate; effective dates use the
+register
+  rate evidence: None None
+  accepted chance: None None
+  approver: the policy owner
+ledger limit: 0 seconds
+ledger basis: execution-time authoritative read; no cached reuse
+  rate evidence: None None
+  accepted chance: None None
+  approver: finance
+6000 quiet hours: upper 0.000499289/hour
+reciprocal quiet bound: 2002.85 hours per change

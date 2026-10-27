@@ -1,0 +1,5 @@
+| Baseline | Mean gradient | SE | SD | Total variance |
+|---|---:|---:|---:|---:|
+| None | −10.299070 | 0.682818 | 30.536527 | 6600.095843 |
+| Separate fitted state | −9.447336 | 0.552603 | 24.713179 | 4058.614000 |
+| value |  |  |  |  |

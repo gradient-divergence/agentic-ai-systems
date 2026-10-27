@@ -1,0 +1,8 @@
+first call                -> refund-r-7-0007
+same key, same arguments  -> refund-r-7-0007
+same key, amount + 1      -> idempotency_conflict
+new key, same request     -> request_already_executed
+blank key                 -> idempotency_key_required
+payments in the ledger: 1
+two calls at once: refund-r-7-0007 and request_already_executed
+payments in the ledger: 1

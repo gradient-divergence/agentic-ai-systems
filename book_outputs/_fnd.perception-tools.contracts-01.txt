@@ -1,0 +1,26 @@
+Cents = Annotated[int, Field(strict=True, gt=0)]
+
+class Record(BaseModel):
+    model_config = {"extra": "forbid", "frozen": True,
+      "revalidate_instances": "always"}
+    ...
+
+class ToolArguments(Record):
+    order_id: str | None = None
+    amount_cents: Cents | None = None
+    reason: str = ""
+    idempotency_key: str | None = None
+    approval_id: str | None = None
+
+class ToolCall(Record):
+    name: str
+    arguments: ToolArguments = Field(default_factory=ToolArguments)
+
+class ToolResult(Record):
+    ok: Annotated[bool, Field(strict=True)]
+    reason: str = ""
+    age_seconds: Annotated[float, Field(allow_inf_nan=False)] | None = None
+    order: Order | None = None
+    shipment: Shipment | None = None
+    policy: Policy | None = None
+    record_id: str | None = None

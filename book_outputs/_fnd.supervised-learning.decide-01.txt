@@ -1,0 +1,10 @@
+ticket               standard   priority escalation  route
+[0.9, 0.06, 0.04]        0.64       1.92       4.56  standard
+[0.75, 0.05, 0.2]        2.20       2.10       3.80  priority
+[0.21, 0.0, 0.79]        7.90       2.79       1.05  escalation
+refund at risk 0.12:  pay  refer   deny  review cheapest between
+$49.99                6.00   4.00  17.60  0.080 and 0.800
+$40.00                4.80   4.00  17.60  0.100 and 0.800
+$25.00                3.00   4.00  17.60  0.160 and 0.800
+$10.00                1.20   4.00  17.60  0.400 and 0.800
+$5.00                 0.60   4.00  17.60  0.800 and 0.800

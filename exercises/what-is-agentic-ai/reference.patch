@@ -1,0 +1,11 @@
+diff --git a/refund_agent/rules.py b/refund_agent/rules.py
+--- a/refund_agent/rules.py
++++ b/refund_agent/rules.py
+@@ -15,6 +15,6 @@ def tier_for(amount_cents: int) -> c.Tier:
+     if type(amount_cents) is not int or amount_cents <= 0:
+         raise ValueError("amount must be positive integer cents")
+-    if amount_cents < 5000:
++    if amount_cents < 2500:
+         return c.Tier.AGENT
+     return c.Tier.REVIEWER if amount_cents <= 50000 else c.Tier.NAMED_APPROVER
+ 

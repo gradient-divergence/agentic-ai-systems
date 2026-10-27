@@ -1,0 +1,22 @@
+chronological record: [{"brief": "docs/plans/world-class-roadmap-2026-10-01/phase2/briefs/prompting-finetuning-rag-brief.md", "date": "2026-10-10", "entry": 1, "event": "access", "purpose": "read golden labels, outcomes and policy versions for brief expectations", "reader": "brief-writer probe", "set": "golden-1"}, {"date": "2026-10-10", "event": "commission", "sha256": "634a9263aa4bd9d9fbc80ee399dea1bd5d59ee1e9b49ab6393a58e6ccd3a253a"}, {"entry": 2, "event": "access", "purpose": "apply the declared rule; reuse spent cases as regression checks", "reader": "adaptation-demo", "set": "golden-1"}]
+golden consultation: 2; prior probe 2026-10-10; result already known
+windows: training 398, July 81, golden 121
+window 2048; shares 300, 600, 150, 250, 200, 400; settings budget 4 per arm
+family alpha 0.050; two challengers; split alpha 0.025
+July agreement: prompt 81/81; retrieval 81/81; adapter through June 25/81
+July retrieval settings: [{"correct": 81, "k": 1, "wording": "policy"}, {"correct": 81, "k": 2, "wording": "policy"}, {"correct": 19, "k": 1, "wording": "customer"}, {"correct": 81, "k": 2, "wording": "customer"}]
+adapter refit: 479 development drafts; terms 2026-07-01
+September-labeled development drafts: 0
+| Arm | Agreement (95% Wilson interval) | Only challenger / only prompt | Lead (97.5% interval) | Exact chance | Forbidden / cases | Clean-run upper bound | Context words | Draft words |
+|---|---|---|---|---|---|---|---|---|
+| prompt | 121/121 [0.969, 1.000] | -- | -- | -- | 0/121 | 0.0245 | 469.16 | 44.92 |
+| retrieval | 121/121 [0.969, 1.000] | 0 / 0 | -- | 1 | 0/121 | 0.0245 | 535.75 | 44.92 |
+| adapter | 83/121 [0.599, 0.762] | 0 / 38 | -0.314 [-0.409, -0.219] | 7.27596e-12 | 0/121 | 0.0245 | 409.65 | 44.92 |
+adapter month 8: 61/61
+adapter month 9: 22/60
+wrong denials citing July: 33; newly eligible window misses: 5
+window-miss ids: r-7-0484, r-7-0351, r-7-0060, r-7-0271, r-7-0022
+selected: prompt; retrieval not adopted; adapter not adopted
+selection record: 15c59490fe5117e74c5dc4abd148b457c05f79a3b64fd45e34048ea2d1de5ecf
+golden manifest: {"by_policy_version": {"2026-07-01": 61, "2026-09-01": 60}, "by_tier": {"1": 38, "2": 34, "3": 49}, "first": "2026-08-01", "label_policy": "1", "last": "2026-09-27", "name": "golden-1", "requests": 121, "sha256": "a4b0ae12d8329eab388ded77775913aa64fb3cea5e3a2d4be405a7b4fa4ea719"}
+words, standing in for tokens; adapter terms looked up whole from the latest version cited by training drafts; no latency or price measured

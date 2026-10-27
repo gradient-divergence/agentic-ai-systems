@@ -1,0 +1,99 @@
+{
+  "allowed_patch_paths": [
+    "toy.py"
+  ],
+  "events": [
+    {
+      "cycle": 1,
+      "operation": "reproduce",
+      "tests": {
+        "failed": [
+          "test_slug_words"
+        ],
+        "passed": []
+      }
+    },
+    {
+      "cycle": 2,
+      "decision": "applied",
+      "operation": "patch",
+      "patch_paths": [
+        "toy.py"
+      ],
+      "tests": {
+        "failed": [],
+        "passed": [
+          "test_slug_words"
+        ]
+      }
+    },
+    {
+      "cycle": 3,
+      "operation": "full suite",
+      "tests": {
+        "failed": [
+          "test_mean_fraction"
+        ],
+        "passed": [
+          "test_mean_whole",
+          "test_slug_empty",
+          "test_slug_words"
+        ]
+      }
+    },
+    {
+      "commit": "e5d035374fabf8c77538a4e744b260d4932a6f9caaf0d71427a20b7d4218fcc8",
+      "cycle": 3,
+      "operation": "checkpoint"
+    },
+    {
+      "cycle": 3,
+      "exit_status": 23,
+      "operation": "crash"
+    },
+    {
+      "cycle": 3,
+      "operation": "resume and rerun",
+      "tests": {
+        "failed": [
+          "test_mean_fraction"
+        ],
+        "passed": [
+          "test_mean_whole",
+          "test_slug_empty",
+          "test_slug_words"
+        ]
+      }
+    },
+    {
+      "cycle": 4,
+      "decision": "accepted",
+      "operation": "patch",
+      "patch_paths": [
+        "test_visible.py"
+      ]
+    },
+    {
+      "cycle": 5,
+      "operation": "source patch and full suite",
+      "patch_paths": [
+        "toy.py"
+      ],
+      "tests": {
+        "failed": [],
+        "passed": [
+          "test_mean_fraction",
+          "test_mean_whole",
+          "test_slug_empty",
+          "test_slug_words"
+        ]
+      }
+    }
+  ],
+  "exercise": 7,
+  "level": "analyze",
+  "patch_budget": 3,
+  "record_type": "observed run with one planted decision error for analysis",
+  "stars": 2,
+  "task": "Identify the invalid event, explain its effect on acceptance, and repair the rule."
+}

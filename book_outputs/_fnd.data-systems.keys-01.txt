@@ -1,0 +1,19 @@
+exercise 1: refer; contract_vocabulary:shipment.status
+exercise 2: no per-record check catches the silent locker meaning
+exercise 3: estimate 0.015000; upper 0.023097
+  chance 0.003842; budget 13.02 minutes
+exercise 4: quiet upper 0.000499289; 3/6000 0.000500000
+  quiet chance 0.000249613; exponent 0.000249644
+  daytime estimate 0.040000; upper 0.050878
+  estimate chance 0.019801
+  upper budget 11.85 minutes
+exercise 5: shipment observed after decision ; condition lineage
+  offset 40 minutes; fingerprint matches the later record; original unavailable
+exercise 6: 30 refunds / 600 hours; tolerance 0.01
+  estimate 0.050000; upper 0.067818
+  budget 0.148197 hours; 8.89 minutes
+  old-negative-purchase purchase_sign
+  new-refund None
+  old-refund None
+  unknown-type transaction_vocabulary
+  unknown-version version_unknown

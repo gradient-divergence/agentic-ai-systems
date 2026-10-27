@@ -1,0 +1,3 @@
+contradiction: object; words_contradict_record; refer; paid 0 cents
+plain: agree; no objection; approve; paid 2499 cents
+phrase_trip: object; words_contradict_record; refer; paid 0 cents

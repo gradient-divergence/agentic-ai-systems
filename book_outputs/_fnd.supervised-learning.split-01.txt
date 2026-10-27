@@ -1,0 +1,6 @@
+36,000 requests, 17,704 paid
+training   13,766  decided 2025-04-01 to 2026-05-31
+validation    988  decided 2026-06-01 to 2026-07-01
+open          985  decided 2026-07-02 to 2026-07-31
+test          999  decided 2026-08-01 to 2026-08-31
+shifted       966  decided 2026-09-01 to 2026-09-30

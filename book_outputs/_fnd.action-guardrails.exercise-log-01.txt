@@ -1,0 +1,14 @@
+| # | Req. | Event | Cents | Approved | Paid |
+|---|---|---|---|---|---|
+| 1 | q1 | approval | 12,000 | 12,000 | no |
+| 2 | q1 | intent | 12,000 | 12,000 | no |
+| 3 | q1 | confirmation | 12,000 | 12,000 | yes |
+| 4 | q2 | intent | 2,499 | none | no |
+| 5 | q2 | confirmation | 2,499 | none | yes |
+| 6 | q3 | approval | 30,000 | 25,000 | no |
+| 7 | q3 | intent | 30,000 | 25,000 | no |
+| 8 | q3 | confirmation | 30,000 | 25,000 | yes |
+| 9 | q4 | intent | 4,999 | none | no |
+| 10 | q5 | intent | 8,000 | none | no |
+| 11 | q5 | confirmation | 8,000 | none | yes |
+| 12 | q6 | decision | 2,499 | none | no |

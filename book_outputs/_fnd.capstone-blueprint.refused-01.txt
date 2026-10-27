@@ -1,0 +1,118 @@
+Constructed earlier-bundle rehearsal packet:
+{
+  "verdict": "hold",
+  "launched_bundle": "B6",
+  "packet_fingerprint": "32e00abe933681a9f8fc6ffcf7b54fa6a3cab23650412152c0c47cbedd8a17e1",
+  "requirement_fingerprint": "bdc70b52d68f4281c79f778360026dd957c8fdc3e04bcb63c6f3a9dba37b68d0",
+  "day": 64.0,
+  "rows": [
+    {
+      "row": "1",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-comparison"
+      ]
+    },
+    {
+      "row": "2",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-boundary",
+        "constructed-scope",
+        "constructed-routing",
+        "constructed-tier3"
+      ]
+    },
+    {
+      "row": "3",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-loss_bound",
+        "constructed-exposure",
+        "constructed-data_contracts",
+        "constructed-authority_table",
+        "constructed-injection_suite",
+        "constructed-revocation_drill",
+        "constructed-segment_audit",
+        "constructed-explanation"
+      ]
+    },
+    {
+      "row": "4",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-evidence_requirements",
+        "constructed-release",
+        "constructed-shadow_window",
+        "constructed-promotion",
+        "constructed-error_budget"
+      ]
+    },
+    {
+      "row": "5",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-incident",
+        "constructed-incident_actions"
+      ]
+    },
+    {
+      "row": "6",
+      "checks": {
+        "complete": true,
+        "consistent": true,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": [
+        "constructed-review_design",
+        "constructed-rollout_plan",
+        "constructed-rollout_step",
+        "constructed-stop"
+      ]
+    },
+    {
+      "row": "7",
+      "checks": {
+        "complete": true,
+        "consistent": false,
+        "signed_in_order": true,
+        "reversible": true
+      },
+      "counted": []
+    }
+  ],
+  "failures": [
+    {
+      "row": "7",
+      "kind": "rehearsal",
+      "check": "consistent",
+      "reason": "strict record names an earlier or absent bundle"
+    }
+  ]
+}

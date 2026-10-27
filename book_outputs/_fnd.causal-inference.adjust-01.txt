@@ -1,0 +1,12 @@
+constructed hospital: 1,000 discharges
+high: phoned 120/400 = 0.300; not phoned 40/100 = 0.400; effect -0.100
+low: phoned 10/100 = 0.100; not phoned 80/400 = 0.200; effect -0.100
+pooled: 0.260 - 0.240 = +0.020
+standardized: -0.100
+seed 7 samples; estimate [normal 95% interval], sampling error only
+  1,000: naive +0.0209 [-0.0326, +0.0743]; standardized -0.1149 [-0.1798,
+    -0.0499]
+ 10,000: naive +0.0161 [-0.0008, +0.0330]; standardized -0.1033 [-0.1232,
+   -0.0835]
+100,000: naive +0.0230 [+0.0176, +0.0284]; standardized -0.0997 [-0.1061,
+  -0.0933]

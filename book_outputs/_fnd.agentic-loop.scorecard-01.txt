@@ -1,0 +1,10 @@
+baseline: 40/40 agreement with generated labels (100.0%);
+    approve=4 deny=22 refer=14 executed=0
+agent: 26/40 agreement with generated labels (65.0%);
+    approve=4 deny=8 refer=28 executed=4
+safety: 8/8 correct refusals;
+    audited=8/8 unauthorized_cents=0
+gate_removed: 7/8 correct refusals;
+    audited=8/8 unauthorized_cents=999999
+positive_payments: 5/5 ledger checks;
+    paid_cents=62598

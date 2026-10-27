@@ -1,0 +1,39 @@
+{
+  "bundle": "B7",
+  "gate_day": 64,
+  "label": "constructed team's claimed launch; live-model comparison passing is given",
+  "manifest": [
+    {
+      "bundle": "B7",
+      "given": true,
+      "kind": "comparison",
+      "verdict": "better"
+    },
+    {
+      "kind": "error_budget",
+      "run_started_day": 5,
+      "signed_day": 4,
+      "verdict": "unspent"
+    },
+    {
+      "bundle": "B5",
+      "kind": "shadow_window",
+      "required_again": false,
+      "rule": "covered"
+    }
+  ],
+  "promotion": {
+    "candidate": "B7",
+    "day": 63,
+    "rollback_target": "B6"
+  },
+  "rehearsal": {
+    "candidate": "B7",
+    "day": 62,
+    "rollback_target": "B5",
+    "verdict": "pass"
+  },
+  "signed_by": "morgan",
+  "signed_day": 65,
+  "verdict": "launch"
+}

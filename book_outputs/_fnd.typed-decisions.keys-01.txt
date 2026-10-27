@@ -1,0 +1,11 @@
+exercise 2: Brier 0.16, 0.20; absolute 0.32, 0.20
+exercise 2b: report 0.85, third band; costs favor deny, action map refers
+exercise 3: Brier 0.1270; REL 0.0145, RES 0.0750, UNC 0.1875; base-rate 0.1875, recalibrated 0.1125
+exercise 4: rank 18, threshold 0.62; sets (0,), (); index 0 is level 1
+exercise 5: marginal 941/1022 = 0.920744; wrong 0/32 = 0.000000, Wilson (0.000000, 0.107183); marginal coverage is not class coverage
+exercise 6: seed 20, July 991 paid, 50 wrong; Brier 0.049100, REL 0.003890, RES 0.002428, UNC 0.047908, residual -0.000271
+  refuse: reliability 0.003890 exceeds illustrative limit 0.000500; negation 991/991 violations, largest gap 0.086103
+  no August or September outcome read for exercise 6; no answer maps to denial
+exercise 2 inputs: true probability 0.80; Brier reports 0.80 and 0.60; absolute reports 0.80 and 1.00
+exercise 3 inputs (count, forecast, wrong): (8, 0.05, 0), (8, 0.20, 2), (4, 0.50, 3)
+exercise 4 inputs: [0.02, 0.05, 0.08, 0.1, 0.12, 0.15, 0.18, 0.2, 0.22, 0.25, 0.28, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.62, 0.8]; alpha 0.10; vectors (0.60, 0.30, 0.10), (0.35, 0.33, 0.32)

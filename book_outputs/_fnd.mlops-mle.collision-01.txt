@@ -1,0 +1,10 @@
+1000000 bundles, 16 hex: 499999500000/18446744073709551616
+  bound approximately 2.71050272071e-08
+10000 bundles, 7 hex: 49995000/268435456
+  bound approximately 0.186245888472
+50000 bundles, 12 hex: 1249975000/281474976710656
+  bound approximately 4.44080328066e-06
+50000 bundles, 13 hex: 1249975000/4503599627370496
+  bound approximately 2.77550205041e-07
+Birthday approximation, 10000 and 7: 0.169930534626
+Constructed hospital: versions 17 bundles 288

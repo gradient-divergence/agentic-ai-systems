@@ -1,0 +1,14 @@
+Constructed $120.00 tier 2 request; reviewer alex away Monday.
+Arrival: 2026-10-02T18:20:00+00:00
+Due: 2026-10-05T17:00:00+00:00
+Escalated to: morgan at 2026-10-05T17:00:00+00:00
+New due: 2026-10-06T13:00:00+00:00
+Notice to: customer-120
+Deadline events: escalation
+Deadline approvals=0 denials=0 receipts=0; item remains open.
+Tuesday 10:15 approval, credential and fresh-gate run:
+  integration pending: chapter 35's authenticated review intake.
+Constructed execution-refusal/expiry/deputy records: review-records-01.
+Required partner method: ScopedTools.record_approval with credential.
+The authorized-review gate, stale-read and expiry tests use
+test-constructed partner records; no substitute issuer is shipped.

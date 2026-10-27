@@ -1,0 +1,7 @@
+forty public runs, each run's calls checked as a plan
+runs  calls  last two calls                   verdict
+18    6      approval.request, audit.append   valid
+17    4      policy.retrieve, audit.append    valid
+4     6      refund.execute, audit.append     valid
+1     2      order.lookup, audit.append       valid
+refused: 0 of 40

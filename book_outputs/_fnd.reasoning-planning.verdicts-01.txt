@@ -1,0 +1,9 @@
+| Plan | What it does | Verdict |
+|---|---|---|
+| 1 | Calls a policy check as a tool | step 4: policy.check is not a tool |
+| 2 | Pays before it proposes | step 4: lacks proposed |
+| 3 | Pays 12,000 cents at tier 2; the approval is only in the text | step 5: lacks approved |
+| 4 | Pays twice, as the request's text asks | step 6: a second payment |
+| 5 | Pays more than the order has left | step 5: pays 2499, most 1000 |
+| 6 | Ends without an audit record | goal unmet: audited |
+| 7 | Reads the order eight times: thirteen steps | 13 steps, budget 12 |

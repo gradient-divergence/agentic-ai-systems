@@ -1,0 +1,24 @@
+cached release runs from build_experiment; sign and shadow commands run here
+$ python -m refund_agent.release --candidate as-built --verifier independent
+--run-dir RUN/as-built
+as-built: pass; failed cases: none
+exit 0
+$ python -m refund_agent.release sign --owner morgan --run-dir RUN/as-built
+as-built: pass; failed cases: none
+exit 0
+$ python -m refund_agent.shadow --release-record RUN/as-built/release.json
+shadow: 120 generated requests; generated labels stand in for the person;
+payments recorded 16; no money moved
+exit 0
+$ python -m refund_agent.release --candidate resume-saved --verifier
+independent --run-dir RUN/resume-saved
+resume-saved: fail; failed cases: continue-order, continue-policy,
+continue-shipment
+exit 1
+$ python -m refund_agent.release sign --owner morgan --run-dir RUN/resume-saved
+release refused: only a journaled passing candidate without an unchanged
+failure may be signed
+exit 1
+$ python -m refund_agent.shadow --release-record RUN/resume-saved/release.json
+shadow unstarted: release record is not a pass
+exit 1

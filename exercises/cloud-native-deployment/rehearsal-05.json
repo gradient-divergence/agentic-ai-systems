@@ -1,0 +1,220 @@
+{
+  "confirmation_at_restart": {
+    "approval_ids": [],
+    "at": "2026-10-15T00:00:00Z",
+    "audit_id": "audit-9ef7c09618ba06deb952cc8b",
+    "decision": {
+      "amount_cents": 4999,
+      "executed": true,
+      "outcome": "approve",
+      "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+      "reason": "eligible",
+      "request_id": "r-0412",
+      "tier": 1
+    },
+    "event": "confirmation",
+    "failure_detail": "confirmed_at_restart",
+    "freshness": {
+      "order": 60.0,
+      "policy": 3600.0,
+      "shipment": 120.0
+    },
+    "money_moved": true,
+    "paid_amount_cents": 4999,
+    "proposal_id": "proposal-dad2ffbf65cb75adfc089e0d",
+    "receipt_id": "refund-r-0412",
+    "risk_score": 0.1,
+    "trace_id": "trace-r-0412"
+  },
+  "intent": {
+    "approval_ids": [],
+    "at": "2026-10-15T00:00:00Z",
+    "audit_id": "audit-40ac9b4a6aa736160e39d179",
+    "decision": {
+      "amount_cents": 4999,
+      "executed": false,
+      "outcome": "approve",
+      "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+      "reason": "eligible",
+      "request_id": "r-0412",
+      "tier": 1
+    },
+    "event": "intent",
+    "failure_detail": null,
+    "freshness": {
+      "order": 60.0,
+      "policy": 3600.0,
+      "shipment": 120.0
+    },
+    "money_moved": false,
+    "paid_amount_cents": 0,
+    "proposal_id": "proposal-dad2ffbf65cb75adfc089e0d",
+    "receipt_id": null,
+    "risk_score": 0.1,
+    "trace_id": "trace-r-0412"
+  },
+  "next_cohort_request": {
+    "outcome": "refer",
+    "reason": "canary_paused",
+    "request_id": "r-0413"
+  },
+  "paid_twice": 0,
+  "receipts": [
+    {
+      "amount_cents": 4999,
+      "approvals": [],
+      "at": "2026-10-15T00:00:00Z",
+      "decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-0412",
+        "tier": 1
+      },
+      "evidence": {
+        "freshness": {
+          "order": 60.0,
+          "policy": 3600.0,
+          "shipment": 120.0
+        },
+        "order": {
+          "items": [
+            {
+              "name": "physical goods",
+              "quantity": 1,
+              "unit_cents": 100000
+            }
+          ],
+          "observed_at": "2026-10-14T23:59:00Z",
+          "order_id": "cloud-native-deployment-exercise-05-order",
+          "paid_cents": 100000,
+          "payment_id": "cloud-native-deployment-exercise-05-original-payment",
+          "prior_refunds": [],
+          "purchased_at": "2026-10-10T00:00:00Z",
+          "reference": "cloud-native-deployment-exercise-05-order"
+        },
+        "policy": {
+          "cap_cents": 100000,
+          "effective_at": "2026-09-01T00:00:00Z",
+          "named_approver": "morgan",
+          "policy_id": "refund_cap_v4",
+          "return_days": 45,
+          "text": "refund_cap_v4@2026-09-01: physical goods. #eligibility: damaged or changed_mind within 45 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+          "version": "2026-09-01"
+        },
+        "risk_score": 0.1,
+        "shipment_events": [
+          {
+            "at": "2026-10-13T00:00:00Z",
+            "status": "shipped"
+          },
+          {
+            "at": "2026-10-14T23:00:00Z",
+            "status": "delivered"
+          }
+        ],
+        "trace_id": "trace-r-0412"
+      },
+      "idempotency_key": "execute-r-0412",
+      "order_id": "cloud-native-deployment-exercise-05-order",
+      "proposal_id": "proposal-dad2ffbf65cb75adfc089e0d",
+      "receipt_id": "refund-r-0412",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-10-15T00:00:00Z",
+        "failure": null,
+        "order_reference": "cloud-native-deployment-exercise-05-order",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-0412",
+        "requester_id": "cloud-native-deployment-exercise-05-person-24",
+        "text": ""
+      }
+    },
+    {
+      "amount_cents": 4999,
+      "approvals": [],
+      "at": "2026-10-15T00:00:00Z",
+      "decision": {
+        "amount_cents": 4999,
+        "executed": true,
+        "outcome": "approve",
+        "policy_citation": "refund_cap_v4@2026-09-01#eligibility",
+        "reason": "eligible",
+        "request_id": "r-0412",
+        "tier": 1
+      },
+      "evidence": {
+        "freshness": {
+          "order": 60.0,
+          "policy": 3600.0,
+          "shipment": 120.0
+        },
+        "order": {
+          "items": [
+            {
+              "name": "physical goods",
+              "quantity": 1,
+              "unit_cents": 100000
+            }
+          ],
+          "observed_at": "2026-10-14T23:59:00Z",
+          "order_id": "cloud-native-deployment-exercise-05-order",
+          "paid_cents": 100000,
+          "payment_id": "cloud-native-deployment-exercise-05-original-payment",
+          "prior_refunds": [],
+          "purchased_at": "2026-10-10T00:00:00Z",
+          "reference": "cloud-native-deployment-exercise-05-order"
+        },
+        "policy": {
+          "cap_cents": 100000,
+          "effective_at": "2026-09-01T00:00:00Z",
+          "named_approver": "morgan",
+          "policy_id": "refund_cap_v4",
+          "return_days": 45,
+          "text": "refund_cap_v4@2026-09-01: physical goods. #eligibility: damaged or changed_mind within 45 days of delivery; not_delivered if no delivery. #cap: at most 100000 cents and the unrefunded payment balance.",
+          "version": "2026-09-01"
+        },
+        "risk_score": 0.1,
+        "shipment_events": [
+          {
+            "at": "2026-10-13T00:00:00Z",
+            "status": "shipped"
+          },
+          {
+            "at": "2026-10-14T23:00:00Z",
+            "status": "delivered"
+          }
+        ],
+        "trace_id": "trace-r-0412"
+      },
+      "idempotency_key": "desk-r-0412",
+      "order_id": "cloud-native-deployment-exercise-05-order",
+      "proposal_id": "proposal-dad2ffbf65cb75adfc089e0d",
+      "receipt_id": "refund-desk-r-0412",
+      "request": {
+        "amount_cents": 4999,
+        "at": "2026-10-15T00:00:00Z",
+        "failure": null,
+        "order_reference": "cloud-native-deployment-exercise-05-order",
+        "preparer_id": "refund-agent",
+        "reason": "damaged",
+        "request_id": "r-0412",
+        "requester_id": "cloud-native-deployment-exercise-05-person-24",
+        "text": ""
+      }
+    }
+  ],
+  "rehearsal_id": "cloud-native-deployment-exercise-05",
+  "resume": {
+    "allowed_on_read": true,
+    "budget_spent": false,
+    "late_scan": true,
+    "outcome": "resumed",
+    "owner": "morgan",
+    "settled": true
+  },
+  "verdict": "pass"
+}

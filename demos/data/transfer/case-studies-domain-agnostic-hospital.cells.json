@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What can this agent do that a workflow cannot?",
+    "answer": "Against schedulers and a priority rule",
+    "kind": "refilled"
+  },
+  {
+    "question": "What is the smallest safe action scope?",
+    "answer": "Bookings from the day's allocation, rechecked at execution",
+    "kind": "redesigned"
+  },
+  {
+    "question": "Which failures become public or expensive?",
+    "answer": "Urgent follow-up missed; outcomes audited by segment",
+    "kind": "refilled"
+  },
+  {
+    "question": "What evidence would show that the agent is improving?",
+    "answer": "Urgent follow-ups within 2 days; counter-measure, missed appointments",
+    "kind": "refilled"
+  },
+  {
+    "question": "How do we turn incidents into evaluation cases?",
+    "answer": "Each incident becomes a case in the release suite",
+    "kind": "same"
+  },
+  {
+    "question": "What can a person override, and how fast?",
+    "answer": "Scheduler, then clinician; booking by telephone",
+    "kind": "refilled"
+  },
+  {
+    "question": "Which rollback has actually been rehearsed?",
+    "answer": "Rehearsal required; booked slots stand and people rebook",
+    "kind": "refilled"
+  }
+]

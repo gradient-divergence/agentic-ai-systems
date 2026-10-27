@@ -1,0 +1,13 @@
+{
+  "constructed": true,
+  "policy": {
+    "cap_cents": 90000,
+    "effective_at": "2026-06-10T00:00:00+00:00",
+    "named_approver": "morgan",
+    "policy_id": "refund_cap_v4",
+    "return_days": 25,
+    "text": "refund_cap_v4@2026-06-10: physical goods. #eligibility: damaged or changed_mind within 25 days of delivery; not_delivered if no delivery. #cap: at most 90000 cents and the unrefunded payment balance.",
+    "version": "2026-06-10"
+  },
+  "recorded_at": "2026-06-17T00:00:00+00:00"
+}

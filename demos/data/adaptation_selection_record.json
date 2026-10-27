@@ -1,0 +1,221 @@
+{
+  "checks": {
+    "commission_intact": true,
+    "eligible": {
+      "adapter": true,
+      "prompt": true,
+      "retrieval": true
+    },
+    "matched_ids": true
+  },
+  "commission": {
+    "acceptance": "no forbidden draft; within shares; lead's split-level interval above zero and exact two-sided discordant chance at most split alpha; tie keeps baseline",
+    "adapter_refit": "all development drafts before August, after the July check",
+    "alpha": 0.05,
+    "baseline": "prompt",
+    "challengers": [
+      "retrieval",
+      "adapter"
+    ],
+    "development_sha256": "9f89a22514bda56313b8dc71c0d017bf22f4d558a16cc9afc3533461fdf25444",
+    "golden_sha256": "a4b0ae12d8329eab388ded77775913aa64fb3cea5e3a2d4be405a7b4fa4ea719",
+    "index_sha256": "6106a792286807e79ea552767f041a330430b46c2e644cfa4b73d1a774441baf",
+    "label_policy": "1",
+    "measure": "outcome, amount and tier; a denial's dated citation",
+    "model": "ScriptedDrafter through ModelClient; identical deterministic decoding",
+    "prior_access": "brief-writer probe on 2026-10-10; outcome already known",
+    "prompt_sha256": "4d8305199a50b9f8150a5cf07341c5453ad5d3bacbe5402d02b9d4febbb0aaa7",
+    "seed": 7,
+    "settings_budget": 4,
+    "sha256": "634a9263aa4bd9d9fbc80ee399dea1bd5d59ee1e9b49ab6393a58e6ccd3a253a",
+    "shares": [
+      300,
+      600,
+      150,
+      250,
+      200,
+      400
+    ],
+    "window": 2048,
+    "windows": [
+      "training before July",
+      "settings on July",
+      "golden from August"
+    ]
+  },
+  "decisions": {
+    "adapter": "not adopted",
+    "retrieval": "not adopted"
+  },
+  "deliveries": [
+    {
+      "arm": "prompt",
+      "eligible": true,
+      "settings": {
+        "template": "refund-draft-2026-10-10"
+      }
+    },
+    {
+      "arm": "retrieval",
+      "eligible": true,
+      "settings": {
+        "chosen_on": "July",
+        "correct": 81,
+        "k": 1,
+        "wording": "policy"
+      }
+    },
+    {
+      "arm": "adapter",
+      "eligible": true,
+      "settings": {
+        "training_drafts": 479,
+        "version": "2026-07-01"
+      }
+    }
+  ],
+  "dependencies": [
+    "model choice record",
+    "structured prompt",
+    "dated policy index"
+  ],
+  "evidence": [
+    {
+      "agreement_interval": [
+        0.969228205982621,
+        0.9999999999999999
+      ],
+      "arm": "prompt",
+      "cases": 121,
+      "correct": 121,
+      "forbidden": 0,
+      "paired": null,
+      "words": {
+        "context": 469.1570247933884,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 62.50413223140496,
+        "request": 42.0
+      },
+      "zero_failure_bound": 0.024454149490199528
+    },
+    {
+      "agreement_interval": [
+        0.969228205982621,
+        0.9999999999999999
+      ],
+      "arm": "retrieval",
+      "cases": 121,
+      "correct": 121,
+      "forbidden": 0,
+      "paired": {
+        "alpha": 0.025,
+        "baseline_rate": 1.0,
+        "challenger_rate": 1.0,
+        "exact_chance": 1.0,
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "lead": 0.0,
+        "n": 121,
+        "n_minus": 0,
+        "n_plus": 0,
+        "standard_error": 0.0
+      },
+      "words": {
+        "context": 535.7520661157025,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 129.099173553719,
+        "request": 42.0
+      },
+      "zero_failure_bound": 0.024454149490199528
+    },
+    {
+      "agreement_interval": [
+        0.5986092903996338,
+        0.7618474804203492
+      ],
+      "arm": "adapter",
+      "cases": 121,
+      "correct": 83,
+      "forbidden": 0,
+      "paired": {
+        "alpha": 0.025,
+        "baseline_rate": 1.0,
+        "challenger_rate": 0.6859504132231405,
+        "exact_chance": 7.275957614183426e-12,
+        "interval": [
+          -0.4086237886981829,
+          -0.21947538485553614
+        ],
+        "lead": -0.3140495867768595,
+        "n": 121,
+        "n_minus": 38,
+        "n_plus": 0,
+        "standard_error": 0.042194203101724934
+      },
+      "words": {
+        "context": 409.6528925619835,
+        "draft": 44.917355371900825,
+        "evidence": 36.15702479338843,
+        "instructions": 264.0,
+        "order": 64.49586776859505,
+        "policy": 3.0,
+        "request": 42.0
+      },
+      "zero_failure_bound": 0.024454149490199528
+    }
+  ],
+  "frozen": {
+    "by_policy_version": {
+      "2026-07-01": 61,
+      "2026-09-01": 60
+    },
+    "by_tier": {
+      "1": 38,
+      "2": 34,
+      "3": 49
+    },
+    "first": "2026-08-01",
+    "label_policy": "1",
+    "last": "2026-09-27",
+    "name": "golden-1",
+    "requests": 121,
+    "sha256": "a4b0ae12d8329eab388ded77775913aa64fb3cea5e3a2d4be405a7b4fa4ea719"
+  },
+  "grants": "none; drafts only, a person executes",
+  "log": [
+    {
+      "brief": "docs/plans/world-class-roadmap-2026-10-01/phase2/briefs/prompting-finetuning-rag-brief.md",
+      "date": "2026-10-10",
+      "entry": 1,
+      "event": "access",
+      "purpose": "read golden labels, outcomes and policy versions for brief expectations",
+      "reader": "brief-writer probe",
+      "set": "golden-1"
+    },
+    {
+      "date": "2026-10-10",
+      "event": "commission",
+      "sha256": "634a9263aa4bd9d9fbc80ee399dea1bd5d59ee1e9b49ab6393a58e6ccd3a253a"
+    },
+    {
+      "entry": 2,
+      "event": "access",
+      "purpose": "apply the declared rule; reuse spent cases as regression checks",
+      "reader": "adaptation-demo",
+      "set": "golden-1"
+    }
+  ],
+  "receipt": "offline scripted adaptation demonstration, 2026-10-10; outcome known in brief",
+  "selected": "prompt",
+  "sha256": "15c59490fe5117e74c5dc4abd148b457c05f79a3b64fd45e34048ea2d1de5ecf",
+  "signer": "author approved brief defaults on 2026-10-10; offline demonstration only",
+  "spent": "golden-1: spent by the probe; suite core, no fresh quality estimate"
+}

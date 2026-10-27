@@ -1,0 +1,21 @@
+seed 7; 60 chosen cases: 40 public, 8 refusal, 5 positive, 5 fault, 2 resume
+| Configuration | Cases that differ | Money differs | Cents against policy |
+|---|---:|---:|---:|
+| runtime defaults | 60/60 | 12 | 0 |
+| audit ending | 10/60 | 3 | 0 |
+| ordered calls | 8/60 | 3 | 0 |
+| referral ending | 4/60 | 3 | 0 |
+| no retries | 1/60 | 1 | 0 |
+| full adapter | 0/60 | 0 | 0 |
+full adapter: eligible for the shadow run
+Runtime defaults and injected faults are this companion's own.
+The full adapter compares: decision, outcome, reason, tier, amount_cents, executed, tool_calls, ledger_receipts, audits, failure_detail.
+Own loop: refund_agent/agent/__init__.py; second runtime: refund_agent/runtimes/runner.py.
+Adapter: refund_agent/runtimes/adapter.py; contracts and gate remain in the agent's code.
+adapter version 1; agent budget 12, one step reserved for audit.
+Session and spans: in-process runtime; approvals, ledger and audit: supplied Tools.
+Frozen reads: 0; held-out reads: 0.
+Chosen cases show coverage, not a rate or equivalence.
+The scripted model is held fixed; live-model variation is not measured.
+No concurrency, process crash, or hosted-session export is tested.
+No vendor SDK is run, and no shadow or deployment is authorized.

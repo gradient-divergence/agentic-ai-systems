@@ -1,0 +1,32 @@
+Constructed forecast: all tier 1 requests, 2000/30 days; window 28 days
+requests 1866.666667; payments 1120; paid share 0.600000
+allowances timeliness 37.333333; corrections 11.200000
+cohort requests 93.333333; payments 56; correction allowance .56
+600 requests: 9 system referrals + 3 late = 12/600; SLI 0.980000
+cohort half-rate overspend 0.244747
+cohort double-rate within 0.322597
+all half-rate within 0.987725
+all double-rate within 0.005776
+target overspend timely 0.478888
+target overspend corrections 0.444714
+quarter-late burn 12.500000
+actual eligible/hour 2.777778; untouched lifetime 53.76 hours
+actual eligible/hour 5.555556; untouched lifetime 26.88 hours
+Lifetime assumes fixed actual traffic and bad share; forecast match only
+720-hour burn thresholds 14.400000, 6.000000, 1.000000
+672-hour burn thresholds 13.440000, 5.600000, 0.933333
+hourly bad-answer trigger 0.746667
+hourly false-page chance 0.058808; daily pages 1.411392
+n=17, rho=0.02: k*=3; tails K>=2 0.044587, K>=3 0.004409
+112 disjoint windows: expected crossings 0.493791
+n=40, rho=0.01: k*=3; tails K>=2 0.060737, K>=3 0.007497
+28 disjoint windows: expected crossings 0.209926
+40 timely requests: K>=3 tail 0.045670; k* 4
+40 payments: every-event page 2.312786%
+40 payments: closed-window page 0.749736%
+fault detection: quarter-late 0.836298; tenth-corrected 0.777192
+slow ticket (4/200): target 0.568505; half-target 0.141966
+100-run latency: mean 22.98s; p99 2s; over 30s 1.00%
+two hangs p99 2100s
+illustrative review: 400 cents * 2/15 = 53.333333 cents/request
+Signed forecast spend and final realized ratio are separate checks

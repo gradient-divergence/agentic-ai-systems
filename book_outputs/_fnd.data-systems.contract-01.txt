@@ -1,0 +1,18 @@
+order: order@1, notice 7 days
+  notice basis: constructed seven-day source-owner agreement
+shipment: shipment@1, notice 7 days
+  notice basis: constructed seven-day source-owner agreement
+policy: policy@1, notice 7 days
+  notice basis: policy register
+ledger: ledger@1, notice 7 days
+  notice basis: constructed seven-day source-owner agreement
+shipment vocabulary: ('shipped', 'delivered')
+shipment owner: the carrier integration team
+status: code; shipped or delivered to the customer
+at: UTC instant; when the carrier made the scan
+observed_at: UTC instant; when the source observed the record
+events: scan history; complete: every scan the carrier made has been sent
+shipment invariant: time_order
+shipment invariant: delivery_after_shipping
+shipment invariant: not_after_observation
+renamed status check: contract_vocabulary:shipment.status

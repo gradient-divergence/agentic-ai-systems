@@ -1,0 +1,9 @@
+scores [2, 0, 0], temperature 1: loss 0.2395
+  probabilities [0.787, 0.107, 0.107], gradient [-0.213, 0.107, 0.107]
+scores [0, 0, 0], temperature 1: loss 1.0986
+  probabilities [0.333, 0.333, 0.333], gradient [-0.667, 0.333, 0.333]
+scores [2, 0, 0], temperature 0.5: loss 0.0360
+  probabilities [0.965, 0.018, 0.018], gradient [-0.071, 0.035, 0.035]
+collapsed, 3 candidates: 1.0986
+collapsed, 8 candidates: 2.0794
+collapsed, 64 candidates: 4.1589

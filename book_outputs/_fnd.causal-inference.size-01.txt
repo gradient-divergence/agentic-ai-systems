@@ -1,0 +1,28 @@
+The score's map was fit on this validation window: planning figures, not a
+  test.
+June validation, with 1 July's boundary request, stands for one 30-day month.
+set 59 of 988, one request per customer;
+one planning month's volume 59
+pay outcome: mean $7.6998; sample standard deviation $15.8119
+assume the refer arm's standard deviation equals the pay arm's;
+95% confidence, 80% power; requests counted as independent
+difference $1.00: 3,925 per arm (independence-only benchmark); 134 assignment
+  months + 30 days
+  at the target pay-arm count: expected $30,221.83; worst case $196,210.75;
+within the dollar ceiling: False
+difference $2.00: 982 per arm (independence-only benchmark); 34 assignment
+  months + 30 days
+  at the target pay-arm count: expected $7,561.23; worst case $49,090.18;
+within the dollar ceiling: True
+difference $4.00: 246 per arm (independence-only benchmark); 9 assignment
+  months + 30 days
+  at the target pay-arm count: expected $1,894.16; worst case $12,297.54;
+within the dollar ceiling: True
+worst case: every pay-arm request false at the tier 1 maximum, $49.99
+illustrative dollar ceiling $100,000.00
+set share 0.059717 x perfect-review saving $3.6998
+= $0.2209 per validation request
+Months use expected equal-arm accrual;
+actual arm counts may fall short of the target on the fixed date.
+Loss is gross wrong-payment exposure, not an estimated incremental effect of
+  review.

@@ -1,0 +1,13 @@
+gap: 0 days, since a label is final when decided
+window      requests  dates                     tiers 1, 2, 3
+training         398  2026-01-21 to 2026-06-30  111, 112, 175
+validation        81  2026-07-01 to 2026-07-31  26, 24, 31
+golden           121  2026-08-01 to 2026-09-27  38, 34, 49
+policy version      training  validation      golden
+2026-01-20               104           0           0
+2026-03-01               153           0           0
+2026-05-01               141           0           0
+2026-07-01                 0          81          61
+2026-09-01                 0           0          60
+shipments with no delivered event: 399 of 2000
+requests with none when they arrived: 122 of 600

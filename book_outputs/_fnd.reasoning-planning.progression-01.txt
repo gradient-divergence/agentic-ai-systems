@@ -1,0 +1,14 @@
+plan of r-7-0007: 2499 cents, tier 1
+k  call             needs  held  adds
+1  order.lookup     0      yes   order_read
+2  shipment.status  1      yes   shipment_read
+3  policy.retrieve  0      yes   policy_read
+4  refund.propose   3      yes   proposed
+5  refund.execute   4      yes   paid
+6  audit.append     0      yes   audited
+goal audited, paid: holds after step 6
+tests: 6 preconditions and 1 goal
+verdict: valid
+steps: 6 of 12; payments: 1
+cents: 2499; cap 80000; left 137006
+sequences of 6 tool names from 7 tools: 117649

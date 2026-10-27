@@ -1,0 +1,16 @@
+{
+  "scenario": "constructed telecom support delivery",
+  "seed": 7,
+  "beta": 0.25,
+  "claims": [
+    "Preference accuracy 0.7392, up from 0.5000.",
+    "Mean confidence 0.9538 on the stated cause, so replies above 0.9 can go without review.",
+    "The KL penalty keeps it close to the reference.",
+    "No credit promised in 300 test drafts, so enable the credit tool."
+  ],
+  "clean_credit_test": {
+    "drafts": 300,
+    "observed_credits": 0,
+    "status": "constructed clean observation, not a permission"
+  }
+}

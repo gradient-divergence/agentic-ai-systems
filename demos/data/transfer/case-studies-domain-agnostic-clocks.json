@@ -1,0 +1,112 @@
+{
+  "refund": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "policy text",
+      "kind": "read",
+      "seconds": 2592000.0,
+      "basis": "specification: 30 days; currency by version"
+    },
+    {
+      "name": "payment",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "specification: payments cannot be recalled"
+    },
+    {
+      "name": "found false",
+      "kind": "outcome",
+      "seconds": 2592000.0,
+      "basis": "D6: 30-day label window"
+    }
+  ],
+  "triage": [
+    {
+      "name": "alarm freshness budget",
+      "kind": "read",
+      "seconds": 8.699741817069047,
+      "basis": "computed from given alarm half-life and prior 1% tolerance"
+    },
+    {
+      "name": "dropped calls",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "constructed: dropped calls cannot be restored"
+    },
+    {
+      "name": "needless restart",
+      "kind": "outcome",
+      "seconds": 86400.0,
+      "basis": "constructed, given in chapter 40"
+    }
+  ],
+  "hospital": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "urgent follow-up",
+      "kind": "window",
+      "seconds": 172800.0,
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "routine follow-up",
+      "kind": "window",
+      "seconds": 604800.0,
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "missed window",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "a missed follow-up window cannot be given back"
+    },
+    {
+      "name": "readmission",
+      "kind": "outcome",
+      "seconds": 2592000.0,
+      "basis": "chapter 4: 30-day readmission label"
+    }
+  ],
+  "bank": [
+    {
+      "name": "operational reads",
+      "kind": "read",
+      "seconds": 1800.0,
+      "basis": "specification: 30 minutes, copied unless redesigned"
+    },
+    {
+      "name": "analyst review",
+      "kind": "review",
+      "seconds": 1200.0,
+      "basis": "chapter 37 mm1(12,15).W * 3600; constructed arrivals and service per hour"
+    },
+    {
+      "name": "card hold",
+      "kind": "undo",
+      "seconds": 300.0,
+      "basis": "chapter 3: minutes, constructed as 5"
+    },
+    {
+      "name": "account closure",
+      "kind": "undo",
+      "seconds": 259200.0,
+      "basis": "chapter 3: days, constructed as 3"
+    },
+    {
+      "name": "card fraud / chargeback",
+      "kind": "outcome",
+      "seconds": 5184000.0,
+      "basis": "constructed, given in chapter 40"
+    }
+  ]
+}

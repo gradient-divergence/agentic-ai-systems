@@ -1,0 +1,10 @@
+Bundle: 53208e78202578d16aac253aa56ef0785c7d7e0d697cda40e9c76ff514d46cbe
+component | holds | chapters | prefix | loop reads
+model | scripted + text risk | 22/29 | d1e60938eec78cad | yes
+prompt | structured draft | 14 | d05c030d09be370e | no
+tools | core, selected, lock | 23/27-33 | f148a9563e62b1f0 | yes
+policy | versions/register/offer | 21/26/33 | 091ed17e97ac83ab | yes
+index | encoder + clauses | 11/26 | 88601997b6436691 | no
+Text risk threshold: 0.2
+Fingerprinted files: 130
+Declared coverage: 2026-01-20, 2026-03-01, 2026-05-01, 2026-07-01, 2026-09-01

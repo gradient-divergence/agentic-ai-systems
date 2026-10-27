@@ -1,0 +1,14 @@
+x 2, target 1; weights (w1, b1, w2, b2) = (0.5, 0, 2, 0)
+forward: hidden input 1.0000, hidden 1.0000, prediction 2.0000, loss 0.5000000
+backward (w1, b1, w2, b2): [4.000000 2.000000 1.000000 1.000000]
+central differences, epsilon 0.01: [4.000000 2.000000 1.000000 1.000000]
+one simultaneous update from the original weights at each step size
+eta 0.05, weights: [ 0.300000 -0.100000  1.950000 -0.050000]
+eta 0.05: hidden input 0.5000, prediction 0.9250, loss 0.0028125
+eta 0.08, weights: [ 0.180000 -0.160000  1.920000 -0.080000]
+eta 0.08: hidden input 0.2000, prediction 0.3040, loss 0.2422080
+eta 0.09, weights: [ 0.140000 -0.180000  1.910000 -0.090000]
+eta 0.09: hidden input 0.1000, prediction 0.1010, loss 0.4041005
+eta 0.10, weights: [ 0.100000 -0.200000  1.900000 -0.100000]
+eta 0.10: hidden input 0.0000, prediction -0.1000, loss 0.6050000
+x squared at 2, epsilon 0.01: one-sided 4.010000, central 4.000000

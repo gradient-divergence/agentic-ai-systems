@@ -1,0 +1,14 @@
+Constructed later writer: canary_id on each receipt and proposal.
+Rollback target: closed receipt/proposal contracts.
+intents_closed_unpaid: fail
+next_cohort_to_person: pass
+post_restart: fail
+readable_records: fail
+receipts_confirmed_at_restart: fail
+receipts_kept: pass
+reconcile_idempotent: fail
+components_restored: fail
+no_request_paid_twice: pass
+Rollback record read failed: True
+paid_twice: 0
+verdict: fail

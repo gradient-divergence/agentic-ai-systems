@@ -1,0 +1,8 @@
+x 2; prior N(0, 1); decoder N(h, 1)
+posterior N(1, 0.5); encoder N(1, 1)
+KL N(1, 1) || N(0, 1): 0.500
+expected log-likelihood: -1.919
+evidence lower bound: -2.419
+log p(x): -2.266; gap KL(q || posterior): 0.153
+epsilon 0.3; reparameterized h = 1 + sqrt(1) * epsilon: 1.300
+Jensen two-point Y=(1,4): log E[Y] 0.916; E[log Y] 0.693

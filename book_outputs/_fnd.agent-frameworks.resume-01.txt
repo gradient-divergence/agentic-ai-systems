@@ -1,0 +1,5 @@
+resume-own-to-second: tier 2; approved; paid 5000 cents;
+  receipts 1; differences 0
+resume-second-to-own: tier 2; approved; paid 50000 cents;
+  receipts 1; differences 0
+Approval records stay in supplied Tools; no hosted session was exported.

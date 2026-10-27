@@ -1,0 +1,161 @@
+{
+  "domain": "triage",
+  "constructed": true,
+  "sources": [
+    {
+      "name": "alarm.read",
+      "refund_role": "order.lookup",
+      "observed_at": "source observation",
+      "rate_per_hour": 4.1588830833596715,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "topology.lookup",
+      "refund_role": "shipment.status",
+      "observed_at": "source observation",
+      "rate_per_hour": 0.01,
+      "basis": "constructed, given in chapter 40",
+      "version_checked": false
+    },
+    {
+      "name": "runbook.retrieve",
+      "refund_role": "policy.retrieve",
+      "observed_at": "versioned document",
+      "rate_per_hour": null,
+      "basis": "version currency, as chapters 23 and 30",
+      "version_checked": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "card.restart",
+      "role": "execute",
+      "effect": "write",
+      "reversible": false,
+      "undo_seconds": null,
+      "harm_unit": "sessions dropped",
+      "harm_dimension": "sessions",
+      "largest_loss": "50",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "ticket.open",
+      "role": "propose",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "sessions dropped",
+      "harm_dimension": "sessions",
+      "largest_loss": "0",
+      "basis": "constructed, given in chapter 40"
+    },
+    {
+      "name": "alarm.read",
+      "role": "order.lookup",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "topology.lookup",
+      "role": "shipment.status",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "runbook.retrieve",
+      "role": "policy.retrieve",
+      "effect": "read",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "approval.request",
+      "role": "refer",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    },
+    {
+      "name": "audit.append",
+      "role": "audit.append",
+      "effect": "write",
+      "reversible": true,
+      "undo_seconds": 0.0,
+      "harm_unit": "cents",
+      "harm_dimension": "money",
+      "largest_loss": "0",
+      "basis": "constructed read/proposal/review/audit tool; no direct domain action"
+    }
+  ],
+  "actions_on_score": [],
+  "cost_matrix": null,
+  "base_rate": null,
+  "tolerance": 0.01,
+  "shared_resources": [],
+  "roles": {
+    "decision_owner": "network decision owner",
+    "release_owner": "network release owner",
+    "reviewer": "on-call engineer",
+    "named_approver": "duty manager"
+  },
+  "role_map": {
+    "order.lookup": "alarm.read",
+    "shipment.status": "topology.lookup",
+    "policy.retrieve": "runbook.retrieve",
+    "refund.propose": "ticket.open",
+    "refund.execute": "card.restart",
+    "pay": "card.restart",
+    "refer": "approval.request",
+    "approval.request": "approval.request",
+    "audit.append": "audit.append"
+  },
+  "label_windows": {
+    "needless_restart": 86400.0
+  },
+  "clocks": [
+    {
+      "name": "alarm freshness budget",
+      "kind": "read",
+      "seconds": 8.699741817069047,
+      "basis": "computed from given alarm half-life and prior 1% tolerance"
+    },
+    {
+      "name": "dropped calls",
+      "kind": "undo",
+      "seconds": null,
+      "basis": "constructed: dropped calls cannot be restored"
+    },
+    {
+      "name": "needless restart",
+      "kind": "outcome",
+      "seconds": 86400.0,
+      "basis": "constructed, given in chapter 40"
+    }
+  ],
+  "planted_checks": [
+    "clock"
+  ],
+  "notes": [
+    "Main scenario: fewer than 50 sessions alone; 50 or more need an engineer.",
+    "Constructed frequency constraint: at most 10 restarts per day."
+  ]
+}

@@ -1,0 +1,17 @@
+One tier2 denial ticket; TEST-CONSTRUCTED partner records.
+Assembled screen PENDING chapter 35 authentication -> ReviewerContext
+and chapter 36 explain/replay DenialExplanation -> ProposedExplanation.
+1 Request human-oversight-risk-request; order human-oversight-risk-order;
+$120.00
+2 Proposed denial: already_delivered; clause
+refund_cap_v4@2026-09-01#eligibility
+3 Policy 2026-09-01; evidence ages (seconds): {'order': 60.0, 'shipment':
+120.0, 'policy': 3600.0}
+4 Referral rule: every tier 2 decision requires its person
+5 Explanation (proposed): Constructed partner record: already_delivered
+6 Approving confirms the denial; no money moves. A later eligible payment needs
+the gate.
+7 A payment cannot be recalled; waiting risks eligibility expiry.
+8 Due 2026-10-05T17:00:00+00:00; assigned riley
+9 Actions: approve, refuse, modify, escalate; modification opens a new review
+10 Reviewer riley; credential human-oversight-risk-test-riley; role reviewer

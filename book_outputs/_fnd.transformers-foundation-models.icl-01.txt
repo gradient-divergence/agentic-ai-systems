@@ -1,0 +1,15 @@
+Constructed one-head reading mechanism, not evidence about a trained model.
+Fixed W_Q=W_K=identity of width 2; W_V=[1]; query=1.0 0.0
+context A demo 1: input=1.0 0.0; label=0.0
+context A demo 2: input=0.0 1.0; label=10.0
+context A demo 3: input=1.0 1.0; label=20.0
+context A weights: 0.401112 0.197776 0.401112
+context A prediction: 10.000000
+context A weight fingerprint (sum): 5.000
+context B demo 1: input=0.0 1.0; label=10.0
+context B demo 2: input=1.0 0.0; label=0.0
+context B demo 3: input=0.0 2.0; label=40.0
+context B weights: 0.248255 0.503490 0.248255
+context B prediction: 12.412754
+context B weight fingerprint (sum): 5.000
+No weight changed; keys come from inputs and values carry labels.

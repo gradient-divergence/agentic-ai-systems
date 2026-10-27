@@ -1,0 +1,329 @@
+{
+  "fingerprint": "c64ffbd4dd30cc1e980d9f81d286057602fd0300f340d4a33816464b79f00f4b",
+  "index": {
+    "items": {
+      "clauses": 12,
+      "encoder": "1f346b1a38dc51ae12903c53433113ac732b46d57a7e47bd85f236bbb93b9f30",
+      "observed_at": "2026-10-11T00:00:00+00:00",
+      "policy_versions": [
+        "2026-01-20",
+        "2026-03-01",
+        "2026-05-01",
+        "2026-07-01",
+        "2026-09-01",
+        "2026-10-18"
+      ],
+      "sha256": "551bb6d28cbfc876394ae7796fd1f66a9068f051ba9b5bdaf4828c828452b1c4"
+    },
+    "name": "index"
+  },
+  "model": {
+    "items": {
+      "live_model": null,
+      "risk_score": "text rule",
+      "risk_threshold": 0.2,
+      "scripted_model": {
+        "fingerprint": "6698ca14e2930d8335bd441e50a0cec66d7c66808ac7e1fbe1550b4e8d53d500",
+        "identity": "ScriptedModel",
+        "settings": {
+          "decoding": "deterministic",
+          "seed": 7
+        },
+        "version": "1"
+      }
+    },
+    "name": "model"
+  },
+  "policy": {
+    "items": {
+      "offer_rule": {
+        "name": "fixed",
+        "policy": {
+          "frozen_at": "2026-02-14T23:06:17+00:00",
+          "source_fingerprint": "b278eb4969c81f9c33b54f10db2b427b9781ea725b6f5f7752a3f2720eb0472f",
+          "tables": [
+            [
+              "changed_mind",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ],
+            [
+              "damaged",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ],
+            [
+              "not_delivered",
+              [
+                [
+                  "standard",
+                  1.0
+                ],
+                [
+                  "dated",
+                  0.0
+                ],
+                [
+                  "referenced",
+                  0.0
+                ]
+              ]
+            ]
+          ],
+          "version": "standard-notice-1"
+        }
+      },
+      "register_snapshot": "b76d5bf012093fba8b15ea4b167a5cf0be729731ef54860fa9d52b7978eae69f",
+      "versions": [
+        "2026-01-20",
+        "2026-03-01",
+        "2026-05-01",
+        "2026-07-01",
+        "2026-09-01",
+        "2026-10-18"
+      ]
+    },
+    "name": "policy"
+  },
+  "prompt": {
+    "items": {
+      "code": "1e5e8adb7903a9ab974d1b8479ad5e7a0801f658d757f3015e752d82f7b33a12",
+      "fingerprint": "4d8305199a50b9f8150a5cf07341c5453ad5d3bacbe5402d02b9d4febbb0aaa7",
+      "template": "refund-draft-2026-10-10"
+    },
+    "name": "prompt"
+  },
+  "refs": {
+    "candidate": "4b645ddf2f742a68d6b4b0d83cc391a407d1a3ff372480ddada651a51ea7526f",
+    "suite": "4fd3c9bae95f12dd378f15fc6c0aa7e360ea647384d83305726b661ce8962fc8"
+  },
+  "tools": {
+    "items": {
+      "adapter": {
+        "fingerprint": "6fcefd4f0efaeb0e267cf6532e100f93292ecc0416a8916be530ceaf182e682b",
+        "settings": {
+          "agent_budget": true,
+          "end_at_audit": true,
+          "max_steps": 12,
+          "no_retry": true,
+          "one_tool_per_phase": true,
+          "refer_on_failure": true,
+          "retries": 1
+        },
+        "version": "1"
+      },
+      "agent": {
+        "fingerprint": "73eb5b39b352cd129658445813b9b788afe9ee8a245916acc086b0c9da67523b",
+        "identity": "Agent"
+      },
+      "agent_code_files": {
+        "../book_outputs/_fnd.memory-rag.funnel-01.txt": "02bc0a03aa8339c5c5ef60dc15abec0ca9525eac743e8c1167a43603475275ab",
+        "../book_outputs/_fnd.multi-agent-systems.arms-01.txt": "9054de2573dea555c18a3811e9f4acd7d74ee1ec7ddf12e59cb7c5c4debeb942",
+        "../demos/data/adaptation_model_choice_record.json": "1ac6990f43be8de0ba33329770a7fed67e48270078070626d0d3ba8fa1a3a9e7",
+        "../demos/data/adaptation_report_05.json": "64a3eab5161cffd980bd5bb8d49bae81248ca249f6bc2d6062b84b579d2b2f6c",
+        "../demos/data/adaptation_selection_record.json": "5b7cf4d65ee4982515c49a0ac65ae87d1eb286e5d9d9e42f6a0d3d470a0b7bc3",
+        "../demos/data/generative_models_scenarios_listed.json": "9d9844015569f76092edddb5f69e303ad1af44add9ba26c78c4fd573094e526a",
+        "../demos/data/generative_models_scenarios_tau1.json": "b95ec12593a2f9f6e4caa56d37f17a51aef827eb041e4ca2ba6415acbce559d1",
+        "../demos/data/generative_models_scenarios_tau2.json": "196b5af240dd261c01f997c5f40119381a47de49333c3f5858f369e1731570bb",
+        "../demos/data/practical_rl_evaluation_record.json": "e6afa510f24e05ffb5912fec638faf32ab17f10b39d278212ac0665cf1bcaffa",
+        "../demos/reasoning_planning_demo.py": "c246d68d84fd9a820cc27459405924af4bd40fd50743c6e8c81aac264a6170fe",
+        "../pyproject.toml": "efaf20c06263c12bc4129bdfb23177200f511a5c039e65d3ea5637c8ea314374",
+        "../uv.lock": "b66708d9fc7b2dc810bb4107ba2af3b0064761eabb0af2f2084dd4312a4fa34d",
+        "__init__.py": "54c0fc17306d8568cbe516a30aa0dc9edf4123fe677af28313c4047e4f8308c2",
+        "adaptation/__init__.py": "9c19b856dc53ca46d1610c55d90efa7e51169d7c832a53df3a2607aa0e537a77",
+        "adaptation/arms.py": "c5e3ad82dbe1153c24b26d7fc5f0b46926b9a6b0bb9bba64f80ec4cc0fed2101",
+        "adaptation/drafter.py": "284ca6bfb2a6184d644ff5a0b1b3e56f270136ab641254164b860d8b39eba750",
+        "adaptation/experiment.py": "64b4f86aa6466e1e9aaf4f63fca44271183c783e32d2345c8d4fab2e58c2208e",
+        "adaptation/prompt.py": "1e5e8adb7903a9ab974d1b8479ad5e7a0801f658d757f3015e752d82f7b33a12",
+        "adaptation/suite.py": "ad1e7b245f396f00358b170e2963290ba050f9da1ba955a275616c4ba0d66740",
+        "agent/__init__.py": "59b6aa9e3f0ad10618e0d259883dd9a253db538bdac689aee931ad95106ee54a",
+        "baseline.py": "9020e410af2ebc5037dc928b94247b548f25df6154945fbc81f61cda8e19f0dd",
+        "batch_stream/__init__.py": "ba0a3909797a3bbf720795567a6da9e094669d60d266ef12b90919f4894c46cf",
+        "batch_stream/authority.py": "825b7d1ad7dcb0991f15141a33f491fbb43acf2fc398043c98182add46637c35",
+        "batch_stream/component.py": "20f8ac2e045334fce722766343482139b1feb8a6bcc91036d9a9ae03796aa570",
+        "batch_stream/experiment.py": "32840125e3d94d4a6759ebf17ab062a3dba06a5d159a025eaa19a0884dd7d557",
+        "batch_stream/generate.py": "2ecc3944f88de684b0b50fbe8dc3b20638476ed1fc7d2bdb2505d010904ff592",
+        "batch_stream/log.py": "4d9fa44c76470936e11d93164b4ffc6a212d72dc23a70cf61a8d70464738ed69",
+        "batch_stream/replay.py": "bb1c93e84989ebe707ce0cf9cac3da045f58d634bea49ee2bcdf919db9e6e3f4",
+        "batch_stream/suite.py": "d584b00bb1e4df7faa8f7dc64f7ce05564672eca92d04c8adbb5c04937a4a1e2",
+        "batch_stream/tools.py": "13e005cde078e5c8b7fe52d13cdc04b3c1eaadef7feaded711cad65e537a5a85",
+        "batch_stream/view.py": "1be20c57013aa5e7be7fccc668cb6f0143f4b129cad719082cff501335ef46e3",
+        "batch_stream/windows.py": "25398cd70f5bef65deff3530bfff738e5a31315416d718db7314cc8ace6eaa29",
+        "canary/__init__.py": "9a5b231bc0080805c0333338986b5cab8871c416bce1f7ed49776d21c87b163c",
+        "canary/__main__.py": "70c73797fbd56f96548ed57b9d76d848b9de450dee9c2016fc5898df35f729d3",
+        "canary/cloud_native_deployment_binding.py": "fed59f3d802f7b60442dcc86bceb7579a5ad93344a34c81fb4a710cef9b314f4",
+        "canary/cloud_native_deployment_component.py": "01833beb2ca1cfff5333e2b29f9beabc00a05c95b42192928d6aa1bc0c3952a7",
+        "canary/cloud_native_deployment_desk.py": "bf3478870898d5cdb5427c3e4002346287c50181a2e1297c572676acd5bb1b90",
+        "canary/cloud_native_deployment_exposure.py": "f928473077ae9919c5ec3da9e1b9c3a79526423e41347df79d125f14dd2be7ca",
+        "canary/cloud_native_deployment_plan.py": "773c8cc6802b63bcb65ea9a70c7f9158d3e14d1a0211b9d1224b087130666c5d",
+        "canary/cloud_native_deployment_rehearsal.py": "f06fbe8023b7d1baee370289dcfcfb4af0cdc73772ccf44c16a22e0146f82252",
+        "canary/cloud_native_deployment_restart.py": "1db4ef92522f5645aa3d09c0286289f2523113cdcfdd445f265f47ffefcc74bf",
+        "canary/cloud_native_deployment_start.py": "c980f45b06c7c86f25aa94d698857dd76bf3b371852df9620ea94431d49bdd2b",
+        "canary/cloud_native_deployment_stop.py": "cc376aed736bc3e4badb87de24dfc8bd2b21cb474ae29f2789254cdc3fb4628f",
+        "canary/cloud_native_deployment_store.py": "87ecc2bd931ad84f0840aac89d334d59db450cbc746099e1b0bfaab4ac308771",
+        "canary/cloud_native_deployment_window.py": "321baabccbcbf07147595685ffb513cc5d3a230faa70b4a699eec442d4498dfa",
+        "contracts.py": "8af9162c323a2ccbf3071f3f98093298891feb8e762ccdbb88d23bf3cea8efef",
+        "data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "data/generate.py": "33fa64eb8c558c3d1c907dcde2372251c57a75bee1df498382fab0b3d06eb985",
+        "data/live.py": "31e49d7d30ce56e452f5a5fa10671420940608a81786c7311b3e39c1c18e92e4",
+        "data/positive.json": "4a4fec9c77dd78012069edd07f1fcb2d19907c808eb735634267af1d1fc78293",
+        "evaluation.py": "0d80036a92ba5d6c400cb4f44ba4e8445105545eeecf7214e539e3f0838cb928",
+        "labels.py": "f8dde018393bbaf2796aff7655672b28c03e852066c9d6d8d2fd2342a5269752",
+        "memory/__init__.py": "cab32520300098651298f1ec0dbb2049a8a0c67933c850208caa14225e95a246",
+        "memory/assemble.py": "2e14cc4003182f14139c7d4c20f71c4ce78c85c797fcf4918c46f10df894d5a9",
+        "memory/memory.py": "fc8e54c4502e18adcab841adf773aa27984d62f77c270f6266f2ca143f9dc015",
+        "memory/register.py": "3916716968294c60a6450616d7727e9429a2c16af8d56477d1384ad13ab3c238",
+        "memory/support.py": "e5c1dbd533b3c172b64fa23177357b882ddde3ba94562eb5b87823732c6e142c",
+        "model/__init__.py": "2d6ce2b1f064c1fbe659af6ddeb0e42081dcff1ff9b6a1da68a16b9f70737f16",
+        "offers/__init__.py": "1bbd578d5a589608f42074a73c6def1ddf611e583d3c31fc3b7bb99980139064",
+        "offers/notices.py": "8864356eb7d316729274fa0f9a012fa447dc1e5b077740943f7e14d10bb26741",
+        "offers/policies.py": "592489736f3d6883e5d4e319ebf879591390ef00ff34f4573db6da00e844e6f0",
+        "offpolicy/__init__.py": "68c4afa29037fb6e8a0bed484a62891850982c65c17aae6958451ca387313934",
+        "offpolicy/estimators.py": "fec4082527d9cf4f4156b7250e24be1243e1fe347a1c0b9918667bfb44433201",
+        "offpolicy/policies.py": "dadfb007ba59c83794796f917cef24ef44cf421be1375260f51b8b3380767920",
+        "offpolicy/record.py": "0ac0c52fb52fc4839b9f0db4d8f76d85958dded25ff5169db129e572bc4b65ed",
+        "offpolicy/reward_model.py": "e539305930b5502aaf1c3529a0f6f0be3ca1b71bb2fc16fc3d513853ebd9957c",
+        "offpolicy/rule.py": "67b9ef28b8591ee7f545ca14d8656f19b907f8f584cf478d89547ff161ec78e9",
+        "offpolicy/support.py": "f9270d70b47f9641bf11ceadbfe9f1749ffe80adaee3b22310b683629f9b86a2",
+        "promotion/__init__.py": "17383a28bbc97f5e0a774c1d9a3caddf1813c717eff2338d3f73092ad56b4a15",
+        "promotion/mlops_mle_bundle.py": "227ee0ddcec0d580bbc7ee9284c733f1febad6104bd6266dc83986ab2832d67a",
+        "promotion/mlops_mle_cases.py": "83fb1e897009d782a38b3a068a4dc8ea237f95e86afd7f1bc25fa4207878e6d6",
+        "promotion/mlops_mle_component.py": "448e0db28a504e5df763ed9f9f22b0e9e4371ed26c0e6463f38b43f87f88ff34",
+        "promotion/mlops_mle_coverage.py": "259e874c6aec041357a3aac0fd96b98c1cd2f2137bc65ae1340c6a550266b3ea",
+        "promotion/mlops_mle_diff.py": "d52ccdd26d3dd62480770d595ccc859f359056ffa7ea2482cf562a0b94dece47",
+        "promotion/mlops_mle_record.py": "0d45f019a0be985fe9c401c8a32ac3af068d2d6be4dd6114786dfba65dda1dce",
+        "promotion/mlops_mle_registry.py": "fbcdda2baa40fd35cf04a6bd346bd0034ed83bf73105338a9ee47304df148a40",
+        "promotion/mlops_mle_requirements.py": "1da5f9a80f4f99500a6382d9829520da583878f1e9ca433fcfba084e8b1ff58a",
+        "promotion/mlops_mle_stamp.py": "cfcce39e7acd933b12fdfe49b76f93c8e9f2949df7f7df322238fd5beac72165",
+        "release/__init__.py": "91687df05e600fea40bf627043b4266bb3221665ef8fd4082817fdbac8a83a8a",
+        "release/__main__.py": "51c197f663dd3d2321c577d2ae6e7dcbee877140a1bd7128610906fdebb4f5db",
+        "release/agent_evaluation_resources.py": "86016741a892661e5ce65480333f957864b137a05f1274880673b30378b548d5",
+        "release/candidate.py": "105526b4b2048b02fa5bcee3160174036a40d4f73f81acef2bcbe182d50771d8",
+        "release/extensions.py": "735e3cc2e89c4cb4a36c459b3645e752de9417914db9ebae0bfcfa928e36b130",
+        "release/graders.py": "cb6d5fccbf52b84ccc593d8b0d6d7cf49a27525531afd4e8fc65069b6022393b",
+        "release/journal.py": "707fdbc1fc49b5c7977343cb7b19e1b6ce013d385787f8f89b0f7e63f16ee46b",
+        "release/owners.json": "c59404fee1194e774c0590abc2a77f7b0b198bcfb059575308894c41e4fb9bac",
+        "release/requirement.json": "1326dc51286f51accabff2fe252981d9dfc1046278cde9cdb166dc259cc35102",
+        "release/rule.py": "b9e134dcdfb2e06a7b146dccae1158efe564b6f3c7b329a3e726323a850491d7",
+        "release/suite.py": "893512abaf064cc2aa92ccf62fb5d867d6ed1849722d9571a297d258c3936dc5",
+        "retrieval/__init__.py": "4e7af344cb5844f2770797df92f3358b4222cc8dbbd4417409bdc80eea232dd0",
+        "retrieval/clauses.py": "2ea884cf0e67cae41eca028f3d75f32fafa597b8715fbd48ffdad832447c6980",
+        "retrieval/encoders.py": "066440fd033ea3018ec9f003f4e69d973fab32221164e042f9ead452c4badf23",
+        "retrieval/index.py": "b6fe1d58bd7a0ad3b5be8e14b5e186f87dc216891f42669a051af04a0e82ca9b",
+        "retrieval/questions.py": "ac7aed5373aeb3d8effb97f029153888a6ebb407881314495c554e45a4501951",
+        "rules.py": "0197d04957a3f3547812ccebec9a7616c0dfa69a27d1543844b5a08cffd9446b",
+        "runtimes/__init__.py": "8bff57a19ce1fda88532367f5db69876a57fbe9ceedc97bac61a169797aaa412",
+        "runtimes/adapter.py": "dec7ea745cef5cfb998a8b31547cd2a7f36c057d4685edb5b967465f3e97e618",
+        "runtimes/faults.py": "0ce2325fe74ff3c2394a15f66282bb9568e819e5585c5da97d9b61e4531f3993",
+        "runtimes/runner.py": "1770fb8efbf3540c2eb7f721709c2f37c6f1a3725ab5fc527e7df88f8ed199d4",
+        "runtimes/swap.py": "579c1863fc1e3c06254fed67b36c36e3adf45d83af40ac38f114bb53356cb5d6",
+        "scenarios/__init__.py": "1e441fd168915e6f5cd9e16c7db67498dfd52b1a40d0931f6869b828758a4b19",
+        "scenarios/checks.py": "1c3350055439b821fd64bbace0ff6eefc4540d8ff1798e56ec4a929047b5fb51",
+        "scenarios/materialize.py": "2136cb36f58923421e209a419783c50484f49fd98bd74b3c67d89c0236a0f8d1",
+        "scenarios/model.py": "71364235c79d92571d90b2356d2ca262d640b2b2d55b4220b09b88ed006aa6ed",
+        "scenarios/suite.py": "ca84572c0828553d5e681cce526fc248953fc08cadace83223f6da9b5edd51c4",
+        "scenarios/tokens.py": "e751edf6f9fce7ce5c7053f2c797e15ad4e12dd5b9a908341f2c13ee34277f75",
+        "selection.py": "a0c6fc7cd1c133ac8349864f57a7d6731d798d5261e08c5236741b9be5e8198d",
+        "shadow/__init__.py": "47cf9b278c4c2a52b6d660d8eeae1173506065eb0e156970cc6fe9273e2a24a9",
+        "shadow/__main__.py": "fb4f39a4aa93a7716412e1012760adea0c5cd42dfc5638fcd0b64c891db76917",
+        "shadow/compare.py": "2a39ed96192191efc17aab65388f9818d205002ab4cd3f8d5248c4e6009a80aa",
+        "shadow/offers.py": "aa77ce73cb3738c0fd1b854fb7d550889e0dfd0f229dc5df434d81c18f878d2d",
+        "shadow/tools.py": "bc037cad5595ce5af39cf78282584233be86966524f8a170bae9625358cfcdfd",
+        "sources/__init__.py": "ffef0c6275844f05c748b9f5255265448ab925de9cb7216ed310c54bfedb1c23",
+        "sources/data_systems_budget.py": "08a4dc2dbdafe04b871ccbcf16409344a76ab336541edf2d20337d5528abb815",
+        "sources/data_systems_check.py": "77cf723759eb8c26fa4887b541fbfcfb2189506f3965d77a095a7ffc081ede65",
+        "sources/data_systems_contract.py": "41b4550e4d191f33bf3d4bfcb314a1cede11bfd718097718a93af8d9b0cf6c2e",
+        "sources/data_systems_lineage.py": "10d0925c94ac5a5b0581ec5a3f2805230b04cff51aa54dec8483e5184fbbff6f",
+        "sources/data_systems_registry.py": "c7f539138debd3380c7d6becf3722cdd95bb76e9a5f5d3706a93536eeb55fed1",
+        "sources/data_systems_release.py": "77725d9e5e33caaf0b6bb226ad0784eeb37a1538b6d3bd7927960ef33cebb88b",
+        "sources/data_systems_releases.py": "5f4bbd0449def54f1ddf0291d7b2e2e6c3402ad2fa5aa968dee63049547c1d26",
+        "sources/data_systems_tools.py": "93c2c840a2f109e06df7aae5d4e969a3fc37978687c3b2ab7f45c1b4cac337c4",
+        "split.py": "a85d140d3b7c74d1d2c73128b2999ecbea84588b21f29ec2094e8ce4524063af",
+        "tools.py": "6aefe4f4f67ebf1e58eebf7c8c252d6dc8ea6abd3238eecc56a49082dcece644",
+        "verifier/__init__.py": "96aa51838c6c26722f1ed3ad066e07433bf15a6945ed4e30b23361c76bab4b4d",
+        "verifier/agreeing.py": "17a93c4b5900ef7a5a1776391cd5978a6f680b55a1e558ad416f4efaea00ab32",
+        "verifier/experiment.py": "89c56706b0a633578c7b754361bb4528d8c7639c11f5f95a899a66b57fb77ede",
+        "verifier/fixture.py": "f4114baaa2b9a38818f5670f2f134611ca86e29dba0bba2a706395443755dea2",
+        "verifier/independent.py": "72ce367a7fa3b863b8ee5775d3f7bc54e5970fbd2f05692eea63676ce2831ef9",
+        "verifier/record.py": "31426edd42273586a73a9986cdb3aa7d37704fae8f65bbccf9d383cf701a0983",
+        "verifier/shared_error.py": "6d494bfc0ecd54ac3d69bd72763beda525cbfdb48875e985d098c4bff2166acb"
+      },
+      "components": [
+        {
+          "fingerprint": "6f969e25a93aaf25afbcd7c4a5076659709eea7ae0735af231415cc8c1e4dc03",
+          "name": "data-systems.contracts",
+          "settings": {
+            "registry_fingerprint": "b9c5073b99e12a841cd3ca997f2928ecfe02ab4944dd82e96c3ea064a62bbf30",
+            "registry_version": "data-systems.registry@1"
+          },
+          "version": "data-systems.contracts@1"
+        },
+        {
+          "fingerprint": "d3afd6d0288860f68b758ada3dedefe0a07e2f4f66d463b135c360cae9fb0c69",
+          "name": "batch-stream",
+          "settings": {
+            "allowed_seconds": 97200.0,
+            "margin_seconds": 32400.0
+          },
+          "version": "batch-stream-1"
+        },
+        {
+          "fingerprint": "93cf2ae6c5049fc21571136317a80c486c2564d51b95073113654fc39eb3b984",
+          "name": "cloud-native-deployment.canary",
+          "settings": {
+            "reader": "closed",
+            "record_schema": "closed"
+          },
+          "version": "cloud-native-deployment.canary@1"
+        }
+      ],
+      "core": "e867d47d158ae838e19e36997d826d6540471c30ee0d29b75a2b2df2fa272eb7",
+      "data_contracts": {
+        "registry_fingerprint": "b9c5073b99e12a841cd3ca997f2928ecfe02ab4944dd82e96c3ea064a62bbf30",
+        "registry_version": "data-systems.registry@1",
+        "version": "data-systems.contracts@1"
+      },
+      "environment": "5e4f4ba7e9b4caa563c831c11e82b42b2db2c1b2b83fd68df8b76adcd86d3b2c",
+      "event_time": {
+        "allowed_seconds": 97200.0,
+        "margin_seconds": 32400.0,
+        "version": "batch-stream-1"
+      },
+      "runtime": {
+        "fingerprint": "a9e763a5040ec54151b8788a79338cae772edbe0c3049b8272c34357b6d80fff",
+        "identity": "own",
+        "version": "1"
+      },
+      "tool_contracts": "81bb131230fbbc7a13bf8351b3dfff4f1eaa09fab0617b80ddd0901450ab98de",
+      "verifier": {
+        "verifier": "off",
+        "verifier_version": null
+      }
+    },
+    "name": "tools"
+  }
+}

@@ -1,0 +1,10 @@
+laboratory: 4 analyzer hours; X 2 hours, 3 results; Y 1 hour, 2 results; 3 of
+  each waiting
+plan [0.5, 3.0]; value 7.5; multipliers [1.5, 0.0, 0.5]
+permitted True; largest violation 0
+nonnegative True; weighted rows [3.0, 2.0]; covering True
+bound 7.5; absolute gap 0; optimal True; tolerance 1e-07
+corners [[0, 0], [2.0, 0], [0.5, 3.0], [0, 3]]; values [0.0, 6.0, 7.5, 6.0]
+hours multiplier 1.5 valid with the same binding rows for hours 3 through 9
+if actual hours 3.5: plan permitted False; largest violation 0.5; written
+  4-hour model still passes True

@@ -1,0 +1,16 @@
+seed 7; q000-paraphrase: gateway-s12 keep equipment alive when supply sags
+needed s12-p3-v2: 45 words; window 180 words
+first stage order:
+  s12-p0-v2: 45 words; keep
+  s12-p3-v2: 45 words; keep
+  s12-p1-v3: 95 words; skip
+  s12-p2-v2: 95 words; skip
+  s00-p3-v1: 45 words; keep
+  words used before needed: 45; rank True; kept True
+reranked order:
+  s12-p0-v2: 45 words; keep
+  s12-p1-v3: 95 words; keep
+  s12-p2-v2: 95 words; skip
+  s12-p3-v2: 45 words; skip
+  s00-p3-v1: 45 words; skip
+  words used before needed: 140; rank True; kept False

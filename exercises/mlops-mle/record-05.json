@@ -1,0 +1,40 @@
+{
+  "candidate_fingerprint": "03d27c26e53a605eb83da89935bce8874c55605bde65452fe84c354632120387",
+  "changes": [
+    {
+      "component": "tools",
+      "item": "adapter"
+    }
+  ],
+  "fingerprint": "d90bc0f6c5f153e29ec74c1b8531b21fb4ad5196ffa9370b6cb0efa98ae85f12",
+  "from_stage": "shadow",
+  "incumbent_fingerprint": "76eb33ab818bfaa2d08e7d5bcf581990e290a75cb9370dd886d46cef538ca8d9",
+  "kind": "promotion",
+  "refs": {
+    "candidate": "constructed future runtime",
+    "suite": "constructed changed evaluation manifest"
+  },
+  "requirements": {
+    "policy_coverage": "stipulated passing policy coverage",
+    "release": "stipulated changed suite",
+    "release_owner": "d79cf8a3777cabe2faf30c3401337256322f808d26bb95be5d374a9f868ea9ac",
+    "runtime_swap": "stipulated passing swap"
+  },
+  "reversal": {
+    "demotion": [
+      "defect",
+      "budget_spent",
+      "time_box"
+    ],
+    "pause": "does not change bundle admission",
+    "rollback": [
+      "release owner restores the whole rollback target"
+    ]
+  },
+  "rollback_target": "76eb33ab818bfaa2d08e7d5bcf581990e290a75cb9370dd886d46cef538ca8d9",
+  "signed_at": "2026-10-11T00:00:00Z",
+  "signed_by": "morgan",
+  "status": "promoted",
+  "to_stage": "shadow",
+  "unmet": []
+}

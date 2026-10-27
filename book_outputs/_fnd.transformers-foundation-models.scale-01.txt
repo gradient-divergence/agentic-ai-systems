@@ -1,0 +1,3 @@
+d_k=4: variance=3.994, scaled=0.999
+d_k=64: variance=65.274, scaled=1.020
+d_k=512: variance=509.664, scaled=0.995

@@ -1,0 +1,15 @@
+boosted trees with map:
+  inputs: pass; statistics: pass; reproduced: pass; trial log: pass
+  reported 0.1683; honest refit 0.1683
+logistic regression:
+  inputs: pass; statistics: pass; reproduced: pass; trial log: pass
+  reported 0.1685; honest refit 0.1685
+search winner:
+  inputs: pass; statistics: pass; reproduced: pass; trial log: pass
+  reported 0.1666; honest refit 0.1666
+agent delivery:
+  inputs: FAIL; statistics: FAIL; reproduced: pass; trial log: pass
+  reported 0.1506; honest refit 0.1754
+clean agent:
+  inputs: pass; statistics: pass; reproduced: pass; trial log: pass
+  reported 0.1754; honest refit 0.1754

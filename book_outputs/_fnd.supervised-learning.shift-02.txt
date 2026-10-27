@@ -1,0 +1,4 @@
+September: 966 requests, 63 wrong payments (0.0652)
+score                    mean   error  top bin, predicted and observed
+proposed score         0.0492  0.0231  0.132 and 0.191
+after the correction   0.0703  0.0181  0.183 and 0.191

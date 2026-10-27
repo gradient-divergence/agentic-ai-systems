@@ -1,0 +1,19 @@
+worked request: r-7-0117; at 2026-08-18T18:16:54+00:00; damaged 33 days after
+  delivery
+amount 65000 cents, tier 3; July: outside_return_window; September:
+  approval_required
+similarity: refund_cap_v4@2026-01-20#eligibility; cosine 0.617;
+  [2026-01-20T00:00:00+00:00, 2026-03-01T00:00:00+00:00)
+newest: refund_cap_v4@2026-09-01#eligibility; cosine 0.617;
+  [2026-09-01T00:00:00+00:00, open)
+dated: refund_cap_v4@2026-07-01#eligibility; cosine 0.617;
+  [2026-07-01T00:00:00+00:00, 2026-09-01T00:00:00+00:00)
+golden similarity: R@1 0/242 = 0.000 [0.000, 0.016]; out-of-interval clauses
+  at rank 1: 242
+golden newest: R@1 120/242 = 0.496 [0.433, 0.558]; out-of-interval clauses at
+  rank 1: 122
+golden dated: R@1 242/242 = 1.000 [0.984, 1.000]; out-of-interval clauses at
+  rank 1: 0
+cached_policy: age 3600 seconds; index refund_cap_v4@2026-03-01#eligibility;
+  at use non_current_policy
+stale_retrieval: age 2592001 seconds; index stale_policy; at use current

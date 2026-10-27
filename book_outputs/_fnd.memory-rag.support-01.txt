@@ -1,0 +1,18 @@
+training drafts 398: {'not_checked': 197, 'supported': 201}
+needed (referral: no entailment check): 197 drafts
+needed cap: 12 drafts
+needed eligibility: 114 drafts
+needed eligibility,cap: 75 drafts
+full clause records and text hashes: demos/data/memory_rag_support.json
+planted 1: refused clause_does_not_entail; needed eligibility; request -> refer
+planted 2: refused version_not_in_force; needed eligibility,cap; request ->
+  refer
+planted 3: refused clause_does_not_entail; needed eligibility; request -> refer
+planted 4: refused citation_not_in_register; needed eligibility,cap; request
+  -> refer
+planted 5: refused clause_does_not_entail; needed eligibility,cap; request ->
+  refer
+planted approval: 90001 cents against cap 90000; eligibility citation alone
+  is insufficient
+constructed on-time wrong register: deny outside_return_window, supported;
+  support is not truth

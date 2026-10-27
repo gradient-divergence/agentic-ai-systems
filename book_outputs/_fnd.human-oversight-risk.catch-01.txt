@@ -1,0 +1,52 @@
+PLANTED inattentive reviewer; constructed behavior, not human evidence.
+Catch chances: waiting <=5: 0.9; 6..15: 0.7; >15: 0.4.
+The alarm uses only busy-band planted cases, with 6..15 waiting.
+Fixed-look tails: 6/10 at 0.9 = 0.012795198
+                 7/10 at 0.9 = 0.070190826
+Power at a true catch chance 0.5 after ten decided busy cases: 0.828125
+week 1 trailing-four-week alarm: {'caught': 1, 'decided': 1, 'alarm': False,
+'p': 1.0, 'power_at_one_half': 0.0}
+  quiet catch 1/1 unresolved 0 change/refuse 5/18
+  busy catch 1/1 unresolved 0 change/refuse 5/30
+  overloaded catch 3/6 unresolved 0 change/refuse 10/78
+  unopened catch 0/0 unresolved 1 change/refuse 0/0
+week 2 trailing-four-week alarm: {'caught': 4, 'decided': 4, 'alarm': False,
+'p': 1.0, 'power_at_one_half': 0.3125}
+  quiet catch 2/2 unresolved 0 change/refuse 7/29
+  busy catch 4/4 unresolved 0 change/refuse 8/45
+  overloaded catch 6/11 unresolved 0 change/refuse 22/171
+  unopened catch 0/0 unresolved 0 change/refuse 0/0
+week 3 trailing-four-week alarm: {'caught': 6, 'decided': 6, 'alarm': False,
+'p': 1.0, 'power_at_one_half': 0.65625}
+  quiet catch 3/3 unresolved 0 change/refuse 13/50
+  busy catch 6/6 unresolved 0 change/refuse 11/69
+  overloaded catch 12/22 unresolved 0 change/refuse 34/249
+  unopened catch 0/0 unresolved 1 change/refuse 0/0
+week 4 trailing-four-week alarm: {'caught': 7, 'decided': 7, 'alarm': False,
+'p': 1.0, 'power_at_one_half': 0.7734375}
+  quiet catch 3/3 unresolved 0 change/refuse 13/50
+  busy catch 7/7 unresolved 0 change/refuse 12/78
+  overloaded catch 16/31 unresolved 0 change/refuse 53/376
+  unopened catch 0/0 unresolved 0 change/refuse 0/0
+week 5 trailing-four-week alarm: {'caught': 7, 'decided': 7, 'alarm': False,
+'p': 1.0, 'power_at_one_half': 0.7734375}
+  quiet catch 3/3 unresolved 0 change/refuse 13/50
+  busy catch 7/7 unresolved 0 change/refuse 12/78
+  overloaded catch 17/34 unresolved 0 change/refuse 58/418
+  unopened catch 0/0 unresolved 1 change/refuse 0/0
+Seed 7 first alarm (week, decided busy planted cases): undetected
+Planted packet records: {'shipment_contradiction': 15, 'balance_plus_cent': 14,
+'false_window_denial': 16}
+First-alarm study: D3, exponential service, same 30-day design;
+seeds 7..1006, weekly looks, trailing four weeks, unchanged chances.
+Replications: 1000
+First-alarm week median / 10th / 90th percentile: None / 1 / None
+Share alarming by week 2: 18.000%
+Undetected by day 30: 769/1000 (76.900%)
+Percentiles use nearest ranks; undetected runs are right-censored.
+None means that percentile was not reached by day 30.
+Small busy-band counts can take weeks to signal a fall; many runs
+remain undetected after a month in this constructed design.
+Detection limitation: the planted fall was not detected in this run.
+Power assumes independent cases with one catch probability; weekly
+looks repeat the test, so 5% is not a lifetime false-alarm guarantee.

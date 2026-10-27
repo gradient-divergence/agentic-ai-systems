@@ -1,0 +1,589 @@
+{
+  "cap": 0.05,
+  "cap_zero_chances": [
+    1,
+    0,
+    0
+  ],
+  "cap_zero_judged": {
+    "A": false,
+    "B": false,
+    "fixed": true
+  },
+  "cap_zero_support": {
+    "A": [
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1112,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2552,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 265,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ],
+    "B": [
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1112,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2552,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 265,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ],
+    "fixed": [
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1112,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2552,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "dated",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 0,
+        "min_positive": null,
+        "offer": "referenced",
+        "positive_share": 0.0,
+        "records": 265
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 265,
+        "min_positive": 1.0,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ]
+  },
+  "cells": [
+    "changed_mind",
+    "damaged",
+    "not_delivered"
+  ],
+  "chances": [
+    0.9666666666666667,
+    0.016666666666666666,
+    0.016666666666666666
+  ],
+  "n_eff": {
+    "A": 55.0,
+    "B": 1309.9494261816776,
+    "fixed": 3809.000000000003
+  },
+  "offers": [
+    "standard",
+    "dated",
+    "referenced"
+  ],
+  "support": {
+    "A": [
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 13,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 23,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1076,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 40,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 34,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2478,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 2,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 8,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 255,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ],
+    "B": [
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 13,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 23,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1076,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 40,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 34,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2478,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 2,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 8,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 255,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ],
+    "fixed": [
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 13,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 23,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": true,
+        "cell": "changed_mind",
+        "eligible": true,
+        "matches": 1076,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 1112
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 40,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 34,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": true,
+        "cell": "damaged",
+        "eligible": true,
+        "matches": 2478,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 2552
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 2,
+        "min_positive": 0.016666666666666666,
+        "offer": "dated",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": false,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 8,
+        "min_positive": 0.016666666666666666,
+        "offer": "referenced",
+        "positive_share": 1.0,
+        "records": 265
+      },
+      {
+        "acts": true,
+        "cell": "not_delivered",
+        "eligible": true,
+        "matches": 255,
+        "min_positive": 0.9666666666666667,
+        "offer": "standard",
+        "positive_share": 1.0,
+        "records": 265
+      }
+    ]
+  }
+}

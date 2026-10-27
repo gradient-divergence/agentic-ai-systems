@@ -1,0 +1,10 @@
+event probability 0.70; expected penalties (log in nats)
+report   Brier     log      absolute
+0.50     0.25      0.693     0.50
+0.70     0.21      0.611     0.42
+0.90     0.25      0.765     0.34
+1.00     0.30      unbounded 0.30
+label smoothing, targets 0.05 and 0.95: true risk 0.04 reports 0.086, above
+  0.080
+hard-answer correctness reward: always yes gives 0.70; stated confidence is
+  unscored

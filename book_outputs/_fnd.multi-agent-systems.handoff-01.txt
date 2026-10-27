@@ -1,0 +1,7 @@
+deadline 1 second; simulated response after 2: refer; verifier_timeout; paid
+  0 cents; review entries 1
+shipment delivery date moved 1 day after the verdict: refer;
+  verifier_verdict_void; paid 0 cents
+earlier verdict remains append-only: 1 entry; reviews 1; money_moved False
+gate's proposal identifier is unchanged by a shipment-only change; the
+  verdict's evidence fingerprint makes it void

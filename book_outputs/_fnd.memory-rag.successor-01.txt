@@ -1,0 +1,6 @@
+r-7-0085: 2026-05-12T11:01:02+00:00, 4999 cents, changed_mind
+delivery age 26 days; May allows 30
+April copy age 22.459051 days; within 30: True; notice 7: beyond_notice
+refreshed: approve eligible; refund_cap_v4@2026-05-01#eligibility
+exactly 7 days: accepted
+7 days + 1 second: beyond_notice

@@ -1,0 +1,13 @@
+examples: (2, 0.2, 2), (2, -0.2, 0), (-2, 0.2, 0), (-2, -0.2, -2)
+curvatures: 4.00, 0.04; limit 0.50; condition 100
+minimum: 0.500000, 5.000000
+initial loss 1.000000; threshold 0.000001
+eta 0.25: steps 653; direction factors 0.0000, 0.9900
+eta 0.49: steps 332; direction factors -0.9600, 0.9804
+eta 0.50: steps never (boundary); direction factors -1.0000, 0.9800
+eta 0.51: steps diverges; direction factors -1.0400, 0.9796
+training RMS: 2.0, 0.2
+standardized curvatures: 1.0, 1.0; limit 2.0
+standardized eta 1.0: steps 1; minimum (1.0, 1.0)
+batch values (2, 4, 6, 8): mean 5.0, variance 5.0
+normalized: -1.342, -0.447, 0.447, 1.342

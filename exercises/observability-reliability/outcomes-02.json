@@ -1,0 +1,77 @@
+[
+  {
+    "answer_hours": 0.16666666666666666,
+    "id": "a",
+    "outcome": "deny",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "already_delivered",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 0.16666666666666666,
+    "id": "b",
+    "outcome": "refer",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "delivery_unknown",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 0.16666666666666666,
+    "id": "c",
+    "outcome": "refer",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "policy_not_in_bundle",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 0.16666666666666666,
+    "corrected": true,
+    "id": "d",
+    "outcome": "approve",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "eligible",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 0.16666666666666666,
+    "id": "e",
+    "outcome": "approve",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "eligible",
+    "received_at": "2026-10-01T00:00:00+00:00",
+    "shipment_age_seconds": 1860
+  },
+  {
+    "answer_hours": 40,
+    "id": "f",
+    "outcome": "approve",
+    "outcomes_final": true,
+    "promise_hours": 48,
+    "reason": "eligible",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 52,
+    "id": "g",
+    "outcome": "approve",
+    "outcomes_final": true,
+    "promise_hours": 48,
+    "reason": "eligible",
+    "received_at": "2026-10-01T00:00:00+00:00"
+  },
+  {
+    "answer_hours": 0.16666666666666666,
+    "id": "h",
+    "outcome": "deny",
+    "outcomes_final": true,
+    "promise_hours": 1,
+    "reason": "already_delivered",
+    "received_at": "2026-10-01T00:00:00+00:00",
+    "wrongful_denial": true
+  }
+]

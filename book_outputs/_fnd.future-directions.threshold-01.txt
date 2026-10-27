@@ -1,0 +1,5 @@
+Constructed counterexample: two equal bands of 1,000 paid requests.
+Low band: predicted .020, observed .060; threshold band: predicted .120, observed .080.
+Aggregate .070: pass; threshold band: fail
+Window 1 risk band [.060, .100]: 54 paid; 6 wrong; mean prediction 0.074800
+Wilson 95% [0.051930, 0.221949]; aggregate check alone cannot validate the operating threshold.

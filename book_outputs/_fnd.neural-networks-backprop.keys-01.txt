@@ -1,0 +1,39 @@
+exercise 1: W1 (3, 6), b1 (3,), W2 (4, 3), b2 (4,); 37 parameters
+x (6,), u and h (3,), z, p and y (4,); loss scalar; each gradient has its variable's shape
+exercise 2: W1[0,1] and W1[0,2]: absent words; W1 row 1, b1[1], W2 column 1: unit off
+exercise 3 X: [0.000 1.000 0.000 0.000]
+exercise 3 u: [-1.000  1.000]
+exercise 3 h: [0.000 1.000]
+exercise 3 z: [-1.000  1.000  0.000]
+exercise 3 p: [0.090 0.665 0.245]
+exercise 3 loss: 2.407605964
+exercise 3 gradient z: [[-0.910  0.665  0.245]]
+exercise 3 gradient h: [[-1.155  1.575]]
+exercise 3 gradient u: [[-0.000  1.575]]
+exercise 3 gradient W1: [[0.000 0.000 0.000 0.000]
+ [0.000 1.575 0.000 0.000]]
+exercise 3 gradient b1: [0.000 1.575]
+exercise 3 gradient W2: [[ 0.000 -0.910]
+ [ 0.000  0.665]
+ [ 0.000  0.245]]
+exercise 3 gradient b2: [-0.910  0.665  0.245]
+exercise 4: I changed my mind., unit 2 at zero; central averages both slopes, backward takes zero
+a nudge that carries a sum across zero disagrees from a start that is not zero; so can rounding and a poorly chosen epsilon
+passing checks do not validate labels or the loss, or guarantee stable training
+exercise 5 target 1 gradients: [4.000000 2.000000 1.000000 1.000000]
+exercise 5 eta 0.05 loss: 0.0028125
+exercise 5 target 3 gradients: [-4.000000 -2.000000 -1.000000 -1.000000]
+exercise 5 eta 0.1 loss: 0.6050000; hidden input 0.000000, unit off
+exercise 6a: plus loss 0.115200, minus loss 0.135200, central -1.000000; reject +1
+exercise 6b: 0.707^10 0.031202841, 1.414^10 31.951709176, ReLU variance at 200 inputs 0.010000
+exercise 7: omitted b1 and b2; 100 generated clinic messages, seed 7; entries whose nudge switched a unit: 0
+exercise 7 W1: largest relative gap 2.604e-09
+exercise 7 b1: largest relative gap 9.802e-01
+exercise 7 W2: largest relative gap 1.417e-09
+exercise 7 b2: largest relative gap 9.802e-01
+corrected biases: b1 = grad_u.sum(axis=0); b2 = grad_z.sum(axis=0); grad_z already divided by n
+exercise 8 reference: minimum abs(hidden input) 0.000930257; entries whose nudge switched a unit: 0
+gaps W1, b1, W_hidden, b_hidden, W2, b2: 1.906e-10, 2.713e-11, 1.515e-10, 1.185e-11, 1.084e-10, 1.813e-11
+eta 0.001: predicted drop 0.006186804, delivered 0.006178056, relative difference 0.001414087
+exercise 8 corner: first hidden layer, unit 2; backward 0.000000, central -0.525646; a nudge switched a unit: True
+acceptance: no nudge switches a unit; every gap < 0.000001 at epsilon 0.00001 in float64; reproduce the unit 2 corner; drop within 5%

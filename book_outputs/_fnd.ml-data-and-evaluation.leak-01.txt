@@ -1,0 +1,20 @@
+checks on the 479 requests before 2026-08-01
+input               record       value   time
+amount_cents        request      passes  passes
+damaged             request      passes  passes
+changed_mind        request      passes  passes
+not_delivered       request      passes  passes
+balance_cents       order        passes  passes
+delivered           shipment     passes  passes
+days_since_delivery shipment     passes  passes
+return_days         policy       passes  passes
+cap_cents           policy       passes  passes
+paid_amount_cents   audit record passes  flags: decision writes it
+label_copy          label        flags   flags: decision writes it
+audit records, latest seconds after their request: 0
+held-out requests where flag and forbidden-payment label agree
+                                                     all    tier 1
+shuffled split, random rows, field as written   81 of 81  27 of 27
+time split, July rows, field as written         78 of 81  26 of 26
+same model, July rows, field at decision        77 of 81  25 of 26
+time split, July rows, no audit field           79 of 81  26 of 26

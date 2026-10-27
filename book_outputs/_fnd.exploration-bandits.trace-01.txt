@@ -1,0 +1,7 @@
+round offer true_no_contact gap cumulative_pseudo_regret
+1 standard 0.80 0.06 0.06
+2 dated 0.86 0.00 0.06
+3 standard 0.80 0.06 0.12
+4 referenced 0.84 0.02 0.14
+5 dated 0.86 0.00 0.14
+decomposition: 2 * 0.06 + 1 * 0.02 = 0.14

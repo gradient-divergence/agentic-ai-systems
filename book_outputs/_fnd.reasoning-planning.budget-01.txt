@@ -1,0 +1,17 @@
+pool=8; valid=1; p_v=0.125
+seed=7; requests=10000; uniform draws with replacement
+Same request, start, goal and limits; each other plan has one fault:
+  valid: valid
+  unknown tool: step 4: policy.check is not a tool
+  payment before proposal: step 4: lacks proposed
+  missing shipment read: step 3: lacks shipment_read
+  second payment: step 6: a second payment
+  proposal below payment: step 5: pays 2499, most 2498
+  missing audit: goal unmet: audited
+  thirteen calls: 13 steps, budget 12
+E[used]=(1-(1-p_v)^k_max)/p_v; P[refer]=(1-p_v)^k_max
+budget  E[used] mean_used P[refer] share_ref used_total referred
+     3 2.640625  2.638900 0.669922  0.672200      26389     6722
+     6 4.409637  4.416500 0.448795  0.454100      44165     4541
+    12 6.388662  6.435100 0.201417  0.202200      64351     2022
+    24 7.675449  7.701200 0.040569  0.038400      77012      384

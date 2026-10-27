@@ -1,0 +1,39 @@
+def _execute(self, call: c.ToolCall, state: c.State) -> c.ToolResult:
+    args = call.arguments
+    if args.idempotency_key is None or not args.idempotency_key.strip():
+        return c.ToolResult(ok=False, reason="idempotency_key_required")
+    if args.amount_cents is None or state.order is None:
+        return c.ToolResult(ok=False, reason="missing_execution_arguments")
+    if previous := self._read("ledger",
+      self._ledger).get(args.idempotency_key):
+        approved = (
+            previous.approvals[0].approval_id
+            if previous.approvals else None
+        )
+        bound = (previous.request, previous.order_id, previous.amount_cents,
+          approved)
+        supplied = (state.request, state.order.order_id, args.amount_cents,
+          args.approval_id)
+        if bound != supplied:
+            return c.ToolResult(ok=False, reason="idempotency_conflict")
+        assert state.receipt is not None
+        return c.ToolResult(ok=True, record_id=state.receipt.receipt_id)
+    if state.receipt:
+        return c.ToolResult(ok=False, reason="request_already_executed")
+    approval = self._read("approvals", self._approvals).get(args.approval_id
+      or "")
+    if args.approval_id is not None and approval is None:
+        return c.ToolResult(ok=False, reason="invalid_approval")
+    state.execution_at = execution_time(state, approval)
+    for name in ("order.lookup", "shipment.status", "policy.retrieve"):
+        result = self._dispatch(c.ToolCall(name=name), state)
+        if not result.ok:
+            return result
+    problem = self._authorize(state, args.amount_cents, approval)
+    if problem:
+        if problem.startswith("proposal_changed:"):
+            self._save_proposal(state)
+            self._review(c.ToolCall(name="approval.request"), state)
+        return c.ToolResult(ok=False, reason=problem)
+    return self._commit(state, args.idempotency_key, args.amount_cents,
+      approval)

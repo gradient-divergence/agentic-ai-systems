@@ -1,0 +1,8 @@
+Constructed stream sha256:
+25988786ea96497f3cf9a5c9b1f6df6994117a26a204c340bd6fa517a70e6333
+UTC event day | fast distinct n_day n_final copies misses arrival_day pane
+21 00:00:00 | 398 391 400 None 7 9 403 provisional
+21 09:02:52 | 406 398 400 None 8 2 403 on_time
+22 12:03:04 | 408 400 400 400 8 0 403 final
+late unique scans 69/5600: 0.012321
+Wilson 95% [0.009748, 0.015563]

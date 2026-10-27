@@ -1,0 +1,53 @@
+Constructed stream sha256:
+25988786ea96497f3cf9a5c9b1f6df6994117a26a204c340bd6fa517a70e6333
+Settings:
+seed: 31
+days: 14
+scans_per_day: 400
+claims_per_day: 50
+delivered_claim_share: 4/5
+claim_after_scan_hours: (0, 24)
+amounts_cents: (2499, 4999)
+delay_shares: (0.95, 0.04, 0.01)
+fast_mean_seconds: 120
+depot_hours: (1, 9)
+file_hours: (12, 36)
+copy_every: 50
+copy_max_seconds: 3600
+margin_seconds: 32400.0
+allowed_seconds: 97200.0
+clock: UTC, aligned
+support_days_before: 4
+support_days_after: 3
+processing_version: batch-stream-1
+fast: 700 claims, 148 paid, 8 contradicted
+rho_late 0.054054; Wilson 95% [0.027641, 0.103031]
+awaiting_absence: 0 requests
+  mean None; longest None hours
+honest: 140 requests
+  mean 0.0; longest 0.0 hours
+evidence_final: 700 requests
+  mean 36.0632308757758; longest 36.236727112222226 hours
+corrections by mode: {'executed': 8, 'shadow': 8}
+watermark: 700 claims, 144 paid, 4 contradicted
+rho_late 0.027778; Wilson 95% [0.010854, 0.069242]
+awaiting_absence: 148 requests
+  mean 9.06141820744932; longest 9.168574987222224 hours
+honest: 140 requests
+  mean 9.06224997877976; longest 9.168574987222224 hours
+evidence_final: 700 requests
+  mean 36.0632308757758; longest 36.236727112222226 hours
+corrections by mode: {'executed': 4, 'shadow': 4}
+final: 700 claims, 140 paid, 0 contradicted
+rho_late 0.000000; Wilson 95% [0.000000, 0.026706]
+awaiting_absence: 148 requests
+  mean 36.04151114305556; longest 36.195873248611115 hours
+honest: 140 requests
+  mean 36.03983624243254; longest 36.195873248611115 hours
+evidence_final: 700 requests
+  mean 36.0632308757758; longest 36.236727112222226 hours
+corrections by mode: {'executed': 0, 'shadow': 0}
+longest original scan delay 35.754709 hours
+delay at most 36 hours: True
+Already-delivered claims are denied at once; only absent evidence waits.
+Shadow counts replay the same recorded payment population, moving no money.

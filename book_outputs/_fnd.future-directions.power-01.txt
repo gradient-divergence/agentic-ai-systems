@@ -1,0 +1,3 @@
+2,000 paid requests; prediction 0.049; actual 0.065
+First high rejection 117; Wilson lower 0.049035882
+Power 0.890968989; correct-score failure 0.055023377

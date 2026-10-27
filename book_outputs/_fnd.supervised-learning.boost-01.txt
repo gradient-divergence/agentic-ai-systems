@@ -1,0 +1,6 @@
+tree 1: residuals [0.0, 0.0, 4.0, 4.0, 10.0, 10.0], split after 4
+  predictions [2.0, 2.0, 2.0, 2.0, 10.0, 10.0], squared error 16
+tree 2: residuals [-2.0, -2.0, 2.0, 2.0, 0.0, 0.0], split after 2
+  predictions [0.0, 0.0, 3.0, 3.0, 11.0, 11.0], squared error 4
+tree 3: residuals [0.0, 0.0, 1.0, 1.0, -1.0, -1.0], split after 4
+  predictions [0.5, 0.5, 3.5, 3.5, 10.0, 10.0], squared error 1

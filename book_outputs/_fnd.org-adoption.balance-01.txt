@@ -1,0 +1,21 @@
+Text case; constructed settlement, actual unchanged Tools gate
+Delayed settlement
+Fixture: org-adoption-text; order: org-adoption-text-order
+Console (constructed): 4000 cents at 10:00; history posting
+  2026-11-29T18:00:00+00:00
+Balance read: 4000 cents
+Agent paid: 4000 cents; tool payments: 1
+Total refunded: 8000 cents against 4000 paid
+Reconciled excess: 4000 cents
+Paid around path: 1; imported receipts: 0
+Agent outcome: approve; reason: eligible
+Early settlement control
+Fixture: org-adoption-text; order: org-adoption-text-order
+Console (constructed): 4000 cents at 10:00; history posting
+  2026-11-29T10:30:00+00:00
+Balance read: 0 cents
+Agent paid: 0 cents; tool payments: 0
+Total refunded: 4000 cents against 4000 paid
+Reconciled excess: 0 cents
+Paid around path: 1; imported receipts: 1
+Agent outcome: deny; reason: amount_over_policy

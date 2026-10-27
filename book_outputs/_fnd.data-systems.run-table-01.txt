@@ -1,0 +1,19 @@
+| Outcome / reason | Generated | Rename | Contracts | Harmless |
+|---|---:|---:|---:|---:|
+| approve eligible | 4 | 4 | 1 | 1 |
+| deny already_delivered | 4 | 0 | 0 | 0 |
+| deny amount_over_policy | 1 | 1 | 0 | 0 |
+| deny outside_return_window | 3 | 0 | 0 | 0 |
+| refer already_delivered | 2 | 0 | 0 | 0 |
+| refer ambiguous_order | 1 | 1 | 1 | 1 |
+| refer amount_over_policy | 10 | 10 | 2 | 2 |
+| refer approval_required | 4 | 4 | 1 | 1 |
+| refer contract_vocabulary:shipment.status | 0 | 0 | 26 | 26 |
+| refer delivery_unknown | 5 | 16 | 5 | 5 |
+| refer non_current_policy | 1 | 1 | 1 | 1 |
+| refer outside_return_window | 2 | 0 | 0 | 0 |
+| refer stale_policy | 1 | 1 | 1 | 1 |
+| refer stale_shipment | 1 | 1 | 1 | 1 |
+| refer suspicious_request | 1 | 1 | 1 | 1 |
+| Total decisions | 40 | 40 | 40 | 40 |
+| Cents paid | 14996 | 14996 | 4999 | 4999 |

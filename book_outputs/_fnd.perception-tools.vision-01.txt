@@ -1,0 +1,6 @@
+receptive field, three 3x3 layers, stride 1: 7
+receptive field, strides 2, 1, 1: 11
+receptive field, dilations 1, 2, 1: 9
+receptive field, dilations 1, 2, 4: 15
+false-positive rate 0.1: Pr(defect | flag) = 0.155172; per 10,000 parts 1,160 flags, 180 of them defects
+false-positive rate 0.3: Pr(defect | flag) = 0.057692; per 10,000 parts 3,120 flags, 180 of them defects
